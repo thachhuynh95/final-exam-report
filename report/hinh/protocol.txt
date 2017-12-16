@@ -1,0 +1,81 @@
+- tap trung hoan thien nhan gui du lieu giua client vs server
+
+- timer 
+
+- huong phat trien: tu dong hoa viec tuoi nuoc theo thong so gui len, tu dong hoa pha dung dich dinh duong theo cong thuc cho truoc, moi giai phap cho cac thong so vuot nguong dinh trc, log cho server.
+
+- data gui xuong device co dang:
+
+
+gui schedule hoat dong moi ngay
+
+'{
+"mac" : "mac_address",
+
+"type": "schedule",
+
+"fan": "starttime_endtime_lasttime_delay",(starttime: hhmmss)
+
+"water": ,
+
+"oxy": ,
+
+"light": 
+
+}'
+
+
+gui real time de dong bo hoa
+
+'{
+"mac": ,
+
+"type": "time",
+
+"time": "dd_mm_yyyy_hh_mm_ss"
+}'
+
+
+gui setting danh cho data gui len.
+
+'{
+"mac": ,
+
+"type": "setting",
+
+"reporttime": mm,
+
+"startdate": "dd_mm_yyyy",
+
+"closedate": "dd_mm_yyyy"
+}
+
+
+
+data tu device gui len:
+
+'{
+"mac": mac,
+
+"type": "sensor_data",
+
+"temp": ,
+
+"humidity": ,
+
+"ppm": ,
+
+"ph": 
+}'
+
+
+goi tin ack phan hoi xac nhan: 
+
+'{
+"mac": ,
+
+"type": "ack",
+
+"message": "success"
+
+}'

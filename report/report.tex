@@ -1,0 +1,3543 @@
+\documentclass[a4paper,12pt,oneside]{article}
+\usepackage[utf8]{vietnam}
+\usepackage{graphicx}
+\graphicspath{ {figures/} }
+\usepackage{fancyhdr}
+\usepackage{geometry}
+\usepackage{array}
+\usepackage{float}
+\usepackage{morefloats}
+\usepackage[bottom]{footmisc}
+\usepackage{afterpage}
+\usepackage{makecell}
+\usepackage{multirow}
+\usepackage{pdflscape}
+\usepackage[table]{xcolor}
+\usepackage{indentfirst}%thut dau dong doan moi
+\usepackage[unicode]{hyperref}%tao bookmark
+\hypersetup{urlcolor=blue,linkcolor=black,citecolor=black,colorlinks=true}
+\usepackage{commath}
+\usepackage{amsmath}
+\usepackage{listings,xcolor}
+
+\DeclareMathOperator*{\argmin}{arg\,min}
+%\usepackage[pdftex,bookmarks,raiselinks,pageanchor,hyperindex,colorlinks]{hyperref}
+\definecolor{highlight}{RGB}{230, 230, 230}
+\newcommand{\kb}{\textit{KB/s}}
+\newcommand{\kbs}{\textit{Kbps}}
+\newcommand{\mbs}{\textit{Mbps}}
+\newcommand{\gbs}{\textit{Gbps}}
+\newcommand{\mb}{\textit{MB/s}}
+\newcommand\blankpage{%
+\null
+\thispagestyle{empty}%
+\addtocounter{page}{-1}%
+\newpage}
+\geometry{
+left=3cm, right=2cm,
+top=2cm, bottom=2cm,
+includefoot=true,
+includehead=true
+}
+% create the header for this file
+\pagestyle{fancy}
+
+\usepackage{tabularx}
+\usepackage{setspace}
+\usepackage{tikz}
+\usetikzlibrary{fit}
+\usetikzlibrary{arrows,automata}
+\usetikzlibrary{arrows,shapes,positioning,shadows,trees}
+\usepackage{booktabs}
+\setlength{\heavyrulewidth}{1.5pt}
+\setlength{\abovetopsep}{4pt}
+
+\usetikzlibrary{positioning,arrows.meta,spy}
+
+\definecolor{arrowblue}{RGB}{98,145,224}
+
+\newcommand\ImageNode[3][]{
+\node[draw=arrowblue!80!black,line width=1pt,#1] (#2) {\includegraphics[width=3cm,height=3cm]{#3}};
+}
+\renewcommand {\baselinestretch}{1.5}
+
+\usepackage{eso-pic}
+\newcommand\BackgroundPic{%
+\put(15,0){%
+\parbox[b][\paperheight]{\paperwidth}{%
+\vfill
+\centering
+\includegraphics[width=0.8\paperwidth,height=0.9\paperheight]{hinh/background.jpg}%
+\vfill
+}}}
+
+\usepackage[nottoc]{tocbibind}
+
+\pagenumbering{roman}
+
+\begin{document}
+\thispagestyle{empty}
+\AddToShipoutPicture*{\BackgroundPic}
+
+\begin{center}
+\begin{large}
+\textbf{ĐẠI HỌC QUỐC GIA THÀNH PHỐ HỒ CHÍ MINH}
+\end{large} \\
+\begin{large}
+\textbf{TRƯỜNG ĐẠI HỌC BÁCH KHOA}
+\end{large} \\
+\begin{large}
+\textbf{KHOA KHOA HỌC \& KỸ THUẬT MÁY TÍNH}
+\end{large} \\
+\textbf{-----------------------------------------}\\[1cm]
+\begin{center}
+\includegraphics[scale=.1]{hinh/logo.png}\\[1cm]
+\end{center}
+
+
+{\fontsize{15pt}{1}\selectfont \textbf{LUẬN VĂN TỐT NGHIỆP ĐẠI HỌC}}\\[1.75cm]
+
+\begin{spacing}{2}
+{\fontsize{18pt}{1}\selectfont \textbf{PHÁT TRIỂN BOARD ĐIỀU KHIỂN VÀ\\
+HỆ THỐNG HỖ TRỢ NÔNG NGHIỆP ĐÔ THỊ}}\\
+\end{spacing}
+\end{center}
+
+{\fontsize{13pt}{1}
+\begin{tabbing}
+
+\hspace*{5cm} \= \textbf{HỘI ĐỒNG:} \hspace*{0.01cm} \= \textbf{Công nghệ phần mềm} \\
+\> \textbf{GVHD:} \> \textbf{ThS. Nguyễn Cao Trí}\\
+\> \textbf{GVPB:} \> \textbf{ThS. Lê Đình Thuận}\\
+\> -----------------------------------------------------------------------------\\
+\> \textbf{SVTH 1:} \> \textbf{Huỳnh Bá Thạch} \hspace*{1cm} \= \textbf{(51303742)}\\
+\> \textbf{SVTH 2:} \> \textbf{Tạ Chí Tây} \> \textbf{(51303574)}\\
+\> \textbf{SVTH 3:} \> \textbf{Nguyễn Đình Dũng} \> \textbf{(51300665)}\\
+\> \textbf{SVTH 4:} \> \textbf{Nguyễn Lê Minh Khôi} \> \textbf{(51301906)}\\
+\end{tabbing}
+}
+
+\vspace{\fill}
+\begin{center}
+{\fontsize{20pt}{1} TP Hồ Chí Minh, 01/2018}\\
+\end{center}
+\ClearShipoutPicture
+
+\newpage
+
+\begin{center}
+{\fontsize{20pt}{1}\selectfont \textbf{LỜI CAM ĐOAN}}\\[1cm]
+\end{center}
+Tôi xin cam đoan đây là công trình nghiên cứu và thực hiện của nhóm và được sự
+hướng dẫn của ThS. Nguyễn Cao Trí. Các nội dung nghiên cứu, hiện thực trong đề tài
+này là trung thực và chưa được công bố dưới bất kỳ hình thức nào trước đây. Những
+thông tin phục vụ cho việc phân tích, nhận xét, đánh giá được chính
+nhóm thu thập từ các nguồn khác nhau có ghi rõ trong phần tài liệu tham khảo.
+Nếu phát hiện có bất kỳ sự gian lận nào nhóm xin hoàn toàn chịu trách nhiệm
+về mặt nội dung luận văn tốt nghiệp của mình. Trường đại học Bách Khoa – Đại Học
+Quốc Gia Thành Phố Hồ Chí Minh không liên quan đến những vi phạm tác quyền,
+bản quyền do nhóm gây ra trong quá trình thực hiện (nếu có).
+
+\newpage
+\begin{center}
+{\fontsize{20pt}{1}\selectfont \textbf{LỜI CẢM ƠN}}\\[1cm]
+\end{center}
+Trên thực tế không có sự thành công nào mà không gắn liền với những sự hỗ trợ, giúp
+đỡ dù ít hay nhiều, dù trực tiếp hay gián tiếp của người khác. Trong suốt thời gian từ
+khi bắt đầu học tập ở trường đại học Bách Khoa – Đại Học Quốc Gia Thành Phố Hồ
+Chí Minh cho đến nay, nhóm chúng tôi đã nhận được rất nhiều sự quan tâm, giúp đỡ
+của quý thầy, cô, gia đình và bạn bè.
+Với lòng biết ơn chân thành và sâu sắc nhất, chúng tôi xin gửi lời cảm ơn đến ThS. Nguyễn Cao Trí. Thầy đã tạo điều kiện cho chúng tôi có cơ hội được tham gia và thực hiện
+đề tài với chủ đề \textbf{"Phát triển board điều khiển và hệ thống hỗ trợ cho nông nghiệp đô thị"}. Trong quá trình thực hiện, thầy thường xuyên trao đổi, hỗ
+trợ tài liệu và giải đáp mọi thắc mắc liên quan đến nội dung cần tìm hiểu. Qua đó, chúng
+tôi có thể trau dồi kiến thức và ky năng giải quyết vấn đề cũng như định hướng được
+các công việc trong quá trình thực hiện thực tập tốt nghiệp cho đến luận văn tốt nghiệp.
+Ngoài ra, nhóm cũng xin gửi lời cảm ơn chân thành đến các thầy, cô của trường
+đại học Bách Khoa – Đại Học Quốc Gia Thành Phố Hồ Chí Minh nói chung cũng nhưiv
+các thầy, cô của khoa Khoa Học và Kỹ Thuật Máy Tính nói riêng, đã cung cấp những
+kiến thức nền tảng vô cung quý giá để chúng tôi có thể áp dụng nó vào đề tài luận
+văn tốt nghiệp này.
+Báo cáo luận văn tốt nghiệp được hoàn thành trong thời gian khoảng ba tuần. Do đó,
+không tránh khỏi những thiếu sót là điều chắc chắn, nhóm rất mong nhận được những
+ý kiến đóng góp quy báu của quý thầy, cô và các bạn sinh viên để nhóm ngày càng
+hoàn thiện hơn.
+Sau cùng, nhóm xin kính chúc các thầy, cô trong Khoa Khoa Học và Kỹ Thuật
+Máy Tính nói chung, ThS. Nguyễn Cao Trí nói riêng thật dồi dào sức khỏe, niềm tin
+để tiếp tục thực hiện sứ mệnh truyền đạt kiến thức cao đẹp của mình cho thế hệ sinh
+viên mai sau.
+\begin{flushright}
+Nhóm thực hiện đề tài
+\end{flushright}
+% %%%%%%%%%%%%_ MUC LUC_%%%%%%%%%%%%%%%
+\newpage
+\begin{center}
+{\fontsize{20pt}{1}\selectfont \textbf{TÓM TẮT}}\\[1cm]
+\end{center}
+Sự phát triển của công nghệ trong thời đại hiện nay đã  mang lại nhiều thay đổi tích cực trong tất cả các lĩnh vực. Và lĩnh vực nông nghiệp cũng có những bước tiến lớn trong thời đại của cuộc cách mạng công nghiệp 4.0. Hòa cùng với xu thế của thời đại, sinh viên nhóm chúng tôi đã tìm hiểu và thực hiện dự án về hệ thống công nghệ hỗ trợ dành cho nông nghiệp, đặc biệt đối với nông nghiệp trong đô thị. Sự phát triển mạnh mẽ của Internet of Things và sự cần thiết của nó dành cho nông nghiệp trong môi trường đô thị, nơi mà không có nhiều không gian dành cho nông nghiệp, đã được thực hiện ở giai đoạn Thực tập tốt nghiệp, đề tài tiếp tục được phát triển ở giai đoạn Luận văn tốt nghiệp. Tại giai đoạn này, nhóm tiếp tục xây dựng hệ thống hoàn chỉnh hơn từ hình mẫu đã được thiết kế và xây dựng từ giai đoạn trước, đầy đủ hơn các chứng năng cơ bản để hỗ trợ giám sát và chăm sóc cho một hệ thống thủy canh trong môi trường đô thị. Hệ thống bao gồm phần cứng và phần mềm trên nền tảng ứng dụng web và ứng dụng di động được cải thiện về mặt giao diện, tương tác thân thiện hơn với người dùng và cung cấp các API hữu ích cho những nhà phát triển.
+
+\newpage
+\tableofcontents
+
+\newpage
+\listoffigures
+
+\newpage
+\listoftables
+
+\newpage
+\section*{Danh sách chữ viết tắt}
+\label{sec:dsvt}
+\addcontentsline{toc}{section}{\nameref{sec:dsvt}}
+
+\begin{enumerate}
+\item \textbf{IoT} Internet of Things
+\item \textbf{RFID} Radio Frequency Identification
+\item \textbf{NFC} Near Field Communication
+\item \textbf{IP} Internet Protocol
+\item \textbf{API} Application Programming Interface
+\item \textbf{CSDL} Cơ Sở Dữ Liệu
+\item \textbf{HTML} Hypertext Markup Language
+\item \textbf{MVC} Model - Controller - View
+\item \textbf{SPA} Single Page Application
+\item \textbf{UI} User Interface
+\item \textbf{IDE} Integrated Development Environment
+\end{enumerate}
+
+\newpage
+\pagenumbering{arabic}
+\section{GIỚI THIỆU ĐỀ TÀI}
+
+\subsection{Ý tưởng}
+
+\noindent Công nghệ thủy canh đã được nghiên cứu từ thế kỷ 17. Đến nay, công nghệ này đã hoàn thiện, hướng đến những nông sản sạch, xanh, không ô nhiễm. Với quy mô gia đình nhỏ lẻ, những chậu hoa hay rau xanh có thể phát triển mạnh mẽ không cần đất nơi góc sân thượng, lan can, bậu cửa. Với quy mô thương mại, những nhà kính trồng hoa, rau, củ, quả...  phát triển sạch, năng suất cao, chủ động, đáp ứng đầy đủ các tiêu chuẩn an toàn vì không bị ảnh hưởng của những nguồn ô nhiễm từ đất. Không những vậy, vì trồng không cần đất nên có thể chia không gian thành nhiều tầng để mở rộng diện tích sản xuất.\\
+
+\noindent Trên thế giới hiện đã có những ứng dụng sử dụng IoT để tự động hóa hoàn toàn quy trình trồng rau sạch thủy canh nhà phố, trong khi ở Việt Nam còn khá mới mẻ. Với những yếu tố trên, nhóm đã hiện thực và phát triển Hệ thống thủy canh theo hướng IoT với mục đích tạo ra nông sản sạch, không ô nhiễm cho mọi người.
+
+
+\subsection{Mục tiêu}
+\subsubsection{Phần nghiên cứu}
+\begin{itemize}
+\item Tìm hiểu và thực hành quá trình thiết kế và xây dựng một dự án.
+\item Tìm hiểu nắm vững các nên tảng, thư viện cũng như các công cụ để thực hiện dự án này.
+\item Áp dụng các kiến thức về thiết kế mềm, kĩ thuật lập trình vào dự án.
+\item Tổ chức dự án cho phép dễ dàng bảo trì, mở rộng.
+\item Tìm hiểu về Hệ thống thủy canh Hydroponics: 
+	\begin{itemize}
+	\item Tổng quan, khái niệm về thủy canh.
+	\item Các mô hình thủy canh và cách vận hành của từng mô hình.
+	\end{itemize}
+\item Học hỏi và biết cách sử dụng các công nghệ mới hiện nay.
+\end{itemize}
+
+\subsubsection{Phần kết quả}
+
+\begin{itemize}
+\item Hiện thực mạch đo giá trị ppm (parts per million) trong môi trường dung dịch.
+\item Hệ thống board điều khiển với các cảm biến (nhiệt độ, độ ẩm, ánh sáng, ppm) và các relay điều khiển (máy bơm nước, quạt, đèn) có thể đáp ứng các tiêu chí:
+	\begin{itemize}
+		\item Vận hành trong thời gian dài, ổn định.
+		\item Chức năng thu thập dữ liệu các cảm biển phải hoạt động tốt, ổn định, sai số chấp nhận được.
+		\item Chức năng điều khiển các thiết bị như máy bơm nước, xục oxi, đèn chiếu sáng.. đáp ứng thời gian thực.
+		\item Các kết nối về sóng wifi ổn định, cung cấp chức năng cấu hình cho module wifi.
+		\item Protocol giao tiếp giữa board điều khiển và web-server hoạt động chính xác.
+		\item Thiết kế hiện thực board điều khiển về mặt phần cứng, phần khung, vỏ bảo vệ.
+	\end{itemize} 
+\item Xây dựng website cho người dùng với các chức năng:
+	\begin{itemize}
+		\item Thu nhận các thông tin từ thiết bị  gửi lên từ các cảm biến.
+		\item Phân tích các thông tin gửi lên, giám sát, đưa ra cảnh báo và giải pháp xử lý đối với trường hợp các thông tin vượt ngưỡng cho phép.
+		\item Tạo một lịch trình và nạp xuống cho thiết bị.
+		\item Theo dõi thường xuyên, upload hình ảnh về các mùa vụ đang trồng.
+		\item Chia sẻ thông tin của mình cho các người dùng khác, xây dựng một cộng đồng chung để mọi người trao đổi và chia sẻ thông tin trong lĩnh vực thủy canh.
+	\end{itemize}
+\item Hiện thực mô hình thủy canh thu nhỏ cho demo.
+\end{itemize}
+
+
+\newpage
+
+\section{CƠ SỞ LÝ THUYẾT}
+
+\subsection{Giới thiệu về Internet of Things}
+
+\subsubsection{Internet of Things (IoT)}
+
+\noindent Internet of Things - Mạng lưới vạn vật kết nối Internet là một kịch bản của thế giới, khi mà mỗi đồ vật, con người được cung cấp một định danh của riêng mình, và tất cả có khả năng truyền tải, trao đổi thông tin, dữ liệu qua một mạng duy nhất mà không cần đến sự tương tác trực tiếp giữa người với người, hay người với máy tính. IoT đã phát triển từ sự hội tụ của công nghệ không dây, công nghệ vi cơ điện tử và Internet. Nói đơn giản là một tập hợp các thiết bị có khả năng kết nối với nhau, với Internet và với thế giới bên ngoài để thực hiện một công việc nào đó.\\
+
+\begin{center}
+\begin{figure}[htp]
+\begin{center}
+\includegraphics[scale=1]{hinh/IoT_intro.jpg}
+\end{center}
+\caption{Mô hình tương tác của mạng lưới thiết bị kết nối Internet.}
+
+\end{figure}
+\end{center}
+
+
+\subsubsection{Khả năng định danh độc nhất}
+
+\noindent Điểm quan trọng của IoT đó là các đối tượng phải có thể được nhận biết và định dạng (identifiable). Nếu mọi đối tượng, kể cả con người, được "đánh dấu" để phân biệt bản thân đối tượng đó với những thứ xung quanh thì chúng ta có thể hoàn toàn quản lý được nó thông qua máy tính. Việc đánh dấu (tagging) có thể được thực hiện thông qua nhiều công nghệ, chẳng hạn như RFID, NFC, mã vạch, mã QR, watermark kĩ thuật số... Việc kết nối thì có thể thực hiện qua Wi-Fi, mạng viễn thông băng rộng (3G, 4G), Bluetooth, ZigBee, hồng ngoại...\\
+
+\noindent Ngoài những kĩ thuật nói trên, nếu nhìn từ thế giới web, chúng ta có thể sử dụng các địa chỉ độc nhất để xác định từng vật, chẳng hạn như địa chỉ IP. Mỗi thiết bị sẽ có một IP riêng biệt không nhầm lẫn. Sự xuất hiện của IPv6 với không gian địa chỉ cực kì rộng lớn sẽ giúp mọi thứ có thể dễ dàng kết nối vào Internet cũng như kết nối với nhau.\\
+
+\subsubsection{Xu hướng và tính chất}
+
+\noindent \textbf{Thông minh}\\
+\noindent Sự thông minh và tự động trong điều khiển thực chất không phải là một phần trong ý tưởng về IoT. Các máy móc có thể dễ dàng nhận biết và phản hồi lại môi trường xung quanh (ambient intelligence), chúng cũng có thể tự điều khiển bản thân (autonomous control) mà không cần đến kết nối mạng. Tuy nhiên, trong thời gian gần đây người ta bắt đầu nghiên cứu kết hợp hai khái niệm IoT và autonomous control lại với nhau. Tương lai của IoT có thể là một mạng lưới các thực thể thông minh có khả năng tự tổ chức và hoạt động riêng lẻ tùy theo tình huống, môi trường, đồng thời chúng cũng có thể liên lạc với nhau để trao đổi thông tin, dữ liệu.\\
+
+\noindent \textbf{Kiến trúc dựa trên sự kiện}\\
+\noindent Các thực thể, máy móc trong IoT sẽ phản hồi dựa theo các sự kiện diễn ra trong lúc chúng hoạt động theo thời gian thực. Một số nhà nghiên cứu từng nói rằng một mạng lưới các sensor chính là một thành phần đơn giản của IoT.\\
+
+\noindent \textbf{Là một hệ thống phức tạp}\\
+\noindent Trong một thế giới mở, IoT sẽ mang tính chất phức tạp bởi nó bao gồm một lượng lớn các đường liên kết giữa những thiết bị, máy móc, dịch vụ với nhau, ngoài ra còn bởi khả năng thêm vào các nhân tố mới.\\
+
+\noindent \textbf{Kích thước}\\
+\noindent Một mạng lưới IoT có thể chứa đến 50 đến 100 nghìn tỉ đối tượng được kết nối và mạng lưới này có thể theo dõi sự di chuyển của từng đối tượng. Một con người sống trong thành thị có thể bị bao bọc xung quanh bởi 1000 đến 5000 đối tượng có khả năng theo dõi.\\
+
+\noindent \textbf{Vấn đề không gian, thời gian}\\
+\noindent Trong IoT, vị trí địa lý chính xác của một vật nào đó là rất quan trọng. Hiện nay, Internet chủ yếu được sử dụng để quản lý thông tin được xử lý bởi con người. Do đó những thông tin như địa điểm, thời gian, không gian của đối tượng không mấy quan trọng bởi người xử lý thông tin có thể quyết định các thông tin này có cần thiết hay không, và nếu cần thì họ có thể bổ sung thêm. Trong khi đó, IoT về lý thuyết sẽ thu thập rất nhiều dữ liệu, trong đó có thể có dữ liệu thừa về địa điểm, và việc xử lý dữ liệu đó được xem như không hiệu quả. Ngoài ra, việc xử lý một khối lượng lớn dữ liệu trong thời gian ngắn đủ để đáp ứng cho hoạt động của các đối tượng cũng là một thách thức hiện nay.\\
+
+\noindent \textbf{Luồng năng lượng mới}\\
+\noindent Hiện nay, IoT đang trải qua giai đoạn phát triển "bộc phát" và điều này xảy ra nhờ vào một số nhân tố, trong đó gồm IPv6, 4G, chi phí, tính sẵn có của công nghệ.\\
+
+\subsubsection{Ứng dụng}
+
+\noindent IoT có ứng dụng rộng vô cùng, có thể kể ra một số thứ như sau:\\
+- Quản lý chất thải.\\
+- Quản lý và lập kế hoạch quản lý đô thị.\\
+- Quản lý môi trường.\\
+- Phản hồi trong các tinh huống khẩn cấp.\\
+- Mua sắm thông minh.\\
+- Quản lý các thiết bị cá nhân.\\
+- Đồng hồ đo thông minh.\\
+- Tự động hóa ngôi nhà.\\
+\begin{center}
+\begin{figure}[htp]
+\begin{center}
+\includegraphics[scale=.4]{hinh/IoT_ungdung.jpg}
+\end{center}
+\caption{Cả thế giới chìm trong Internet.}
+
+\end{figure}
+\end{center}
+
+\subsection{Giới thiệu về Hệ thống thủy canh}
+
+\noindent Trồng cây trong dung dịch ( thủy canh ) là kỹ thuật trồng cây không dùng đất mà trồng trực tiếp vào môi trường dinh dưỡng hoặc giá thể mà không phải là đất. Các giá thể có thể là cát, trấu, vỏ xơ dừa, than bùn, vermiculite perlite… Thường được định nghĩa như là “trồng cây trong nước” hoặc “trồng cây không cần đất”, kỹ thuật thủy canh là một trong những nghề làm vườn hiện đại. Bí quyết của kỹ thuật này là cung cấp đủ và đúng lúc cho cây trồng các nguyên tố khoáng cần thiết. Cung cấp đầy đủ cái ăn, bảo đảm đủ ánh sáng, CO2 cho quá trình quang hợp, O2 cho quá trình hô hấp, cây trồng có thể phát triển khỏe mạnh theo ý muốn của người trồng.\\
+
+\noindent Hiện nay hầu hết các máng trồng đều được làm bằng nhựa, nhưng có thể làm bằng các vật liệu khác như bê tông, thủy tinh, kim loại và gỗ. Các máng trồng nên được che nắng để không cho tảo, rong rêu phát triển trong dung dịch thủy canh. Các mô hình dưới đây có thể nghiên cứu, biến tấu thành các kiểu khác nhau phù hợp với điều kiện từng nơi.\\
+
+\subsubsection{Hệ thống dạng bấc (wick system)}
+\noindent Hệ thống dạng bấc cho đến nay là dạng hệ thống thủy canh đơn giản nhất. Đúng như tên gọi, bí quyết của hệ thống này nằm ở chỗ sợi bấc. Đặt một đầu của sợi bấc hút sao cho chạm vào phần rễ cây. Đầu kia của bấc chìm trong dung dịch dinh dưỡng. Sợi bấc này sẽ làm nhiệm vụ hút nước và dung dịch dinh dưỡng lên cung cấp cho rễ cây (tương tự như sợi bấc trong đèn dầu, hút dầu lên để duy trì sự cháy). Như vậy cây sẽ có đủ nước và chất dinh dưỡng để phát triển.\\
+\begin{center}
+\begin{figure}[htp]
+\begin{center}
+\includegraphics[scale=.8]{hinh/Wick_system.jpg}
+\end{center}
+\caption{Mô hình hệ thống dạng bấc.}
+
+\end{figure}
+\end{center}
+
+
+\subsubsection{Hệ thống thủy canh tĩnh (water culture)}
+\noindent Hệ thống thường thùng hay nước chứa dung dịch thủy canh, phần bệ giữ các cây thường làm bằng chất dẻo nhẹ như xốp và đặt nổi ngay trên dung dịch dinh dưỡng, rễ cây ngập chìm trong nước có chứa dung dịch dinh dưỡng. Vì môi trường thiếu khí oxy nên cần có 1 máy bơm bơm khí vào khối sủi bọt để cung cấp oxy cho rễ. Hệ thống thủy canh dạng này thường dùng phổ biến trong dạy học. Hệ thống ít tốn kém, có thể tận dụng bể chứa nước hay những bình chứa không rỉ khác.\\
+
+
+\begin{center}
+\begin{figure}[htp]
+\begin{center}
+\includegraphics[scale=.8]{hinh/Water_culture.jpg}
+\end{center}
+\caption{Mô hình hệ thống thủy canh tĩnh.}
+
+\end{figure}
+\end{center}
+
+
+\subsubsection{Hệ thống ngập và rút định kỳ (ebb and flow system)}
+
+\noindent Không giống như hệ thống thủy canh tĩnh ở trên, phần rễ cây luôn chìm trong nước chỉ thích hợp cho một số ít cây trồng. Hệ thống ngập và rút định kỳ có một máy bơm điều khiển để có thể bơm dung dịch dinh dưỡng vào khay trồng và rút ra theo chu kỳ đã được định sẵn. Như vậy rễ cây sẽ có những lúc không ngập trong nước để “thở” một cách tự nhiên, tránh bị ngập, úng. Hệ thống này thường được áp dụng cho mô hình aquaponics.\\
+\begin{center}
+\begin{figure}[htp]
+\begin{center}
+\includegraphics[scale=.9]{hinh/ebb_flow.jpg}
+\end{center}
+\caption{Mô hình hệ thống ngập và rút định kỳ.}
+
+\end{figure}
+\end{center}
+\subsubsection{Hệ thống nhỏ giọt (Drip system)}
+\noindent Hệ thống nhỏ giọt là loại hệ thống thủy canh được sử dụng rộng rãi nhất trên thế giới. Máy bơm sẽ bơm dung dịch dinh dưỡng lên, nhỏ trực tiếp vào gốc của cây trồng bởi những đường ống nhỏ giọt theo định kỳ. Dung dịch dinh dưỡng dư chảy xuống sẽ được thu hồi trong bể tái sử dụng. Như vậy, hệ thống này sử dụng dung dịch dinh dưỡng khá hiệu quả, nước dư ra được tái sử dụng, không bị hao phí. Hệ thống này có thể dùng để trồng cây thảo mộc và các loại hoa, các loại cây ăn trái như cà chua, dưa leo, dưa lưới, ớt,...\\
+
+\begin{center}
+
+\begin{figure}[htp]
+\begin{center}
+\includegraphics[scale=.9]{hinh/Drip_system.jpg}
+\end{center}
+\caption{Mô hình hệ thống nhỏ giọt.}
+
+\end{figure}
+\end{center}
+
+\subsubsection{Hệ thống màng dinh dưỡng NFT (Nutrient Film Technique)}
+\noindent Trong hệ thống màng dinh dưỡng, dung dịch dinh dưỡng được bơm liên tục vào khay trồng và chảy qua rễ của cây, sau đó chúng chảy về bồn chứa để tái sử dụng. Thường thì trong hệ thống màng dinh dưỡng không cần dùng thêm chất trồng, giúp tiết kiệm chi phí thay chất trồng sau mỗi vụ mùa. Hệ thống này thường sử dụng trong quy mô lớn với mục đích thương mại.\\
+
+\begin{center}
+\begin{figure}[htp]
+\begin{center}
+\includegraphics[scale=.8]{hinh/NFT_system.jpg}
+\end{center}
+\caption{Mô hình hệ thống màng dinh dưỡng NFT.}
+\end{figure}
+\end{center}
+
+
+\subsubsection{Khí canh (Aeroponics)}
+
+\noindent Khí canh là hệ thống thủy canh dạng kỹ thuật cao nhất. Giống như hệ thống màng dinh dưỡng, chất trồng chủ yếu là không khí. Rễ phơi trong không khí và được phun sương bằng dung dịch dinh dưỡng. Việc phun sương thường được thực hiện mỗi vài phút. Như vậy, cây vừa có đủ thức ăn, vừa có đủ nước uống và luôn có không khí để thở. Hiện nay khí canh được ứng dụng trong mô hình trồng khoai tây.\\
+
+\begin{center}
+\begin{figure}[htp]
+\begin{center}
+\includegraphics[scale=.9]{hinh/aeroponics.jpg}
+\end{center}
+\caption{Mô hình hệ thống khí canh.}
+\end{figure}
+\end{center}
+\subsection{Hệ thống thủy canh với IoT}
+\noindent Việc kết hợp thủy canh và IoT ở nước ngoài đã trở nên khá phổ biến trong khi ở Việt Nam vẫn còn mới mẻ. Việc kết hợp IoT vào thủy canh giúp người trồng rau kiểm soát một cách dễ dàng tình trạng vườn trồng của mình thông qua số liệu về nhiệt độ, độ ẩm, pH ... mà các cảm biến gửi về qua mạng Internet. Đồng thời người dùng có thể chăm sóc vườn rau của mình mà không cần thiết phải tiếp xúc với nó. Tất cả mọi hoạt động tưới tiêu, bơm oxy, cung cấp ánh sáng, phân bón,... đều được tự động hóa theo quy trình có sẵn. Người dùng chỉ việc thiết lập thông số phù hợp cho từng cây trồng trong mỗi mùa vụ và chờ ngày thu hoạch. Kiểm soát thông qua mạng Internet cho phép người dùng quản lý vườn trồng của mình ở bất kỳ đâu, trong mọi thời điểm.  Thủy canh kết hợp với IoT là xu hướng mới và là tương lai của nông nghiệp đô thị nhờ tính tiện ích của nó.
+
+\subsection{Các hệ thống thủy canh tự động hiện có trên thị trường}
+\noindent Theo thông tin nhóm nghiên cứu thì hiện nay trên thị trường chưa có nhiều hệ thống thủy canh tự động mang tính thương mại. Một số công ty start up nổi tiếng trong lĩnh vực này như Hachi, Lisado nhưng những hệ thống này có các đặc điểm chung:
+	\begin{itemize}
+		\item Mới chỉ phát triển ở khu vực phía Bắc.
+		\item Chỉ hỗ trợ nền tảng di động, chưa hỗ trợ môi trường web trên PC hay laptop.
+		\item Chưa có một hệ thống forum để cộng đồng có thể chia sẻ kinh nghiệm với nhau.
+		\item Chưa hỗ trợ tự động đo nồng độ dinh dưỡng ppm.
+	\end{itemize} 
+\noindent Nhóm đang hướng tới sự khác biệt bằng cách tạo ra một hệ thống hỗ trợ các tính năng nói trên.
+\subsection{Giới thiệu về các công nghệ được sử dụng}
+\subsubsection{RESTful web service}
+\noindent REST là viết tắt của cụm từ Representational State Transfer (đôi khi còn được viết là ReST) là một kiểu kiến trúc được sử dụng trong việc giao tiếp giữa các máy tính (máy tính cá nhân và máy chủ của trang web) trong việc quản lý các tài nguyên trên internet. Trong REST thì tất cả mọi thứ đều là tài nguyên và nguồn tài nguyên này sẽ được truy xuất thông qua giao thức HTTP.\\
+\noindent Một kiến trúc REST thường có một server cung cấp các API truy xuất tài nguyên và client truy xuất, chỉnh sửa các tài nguyên đó.\\
+\noindent REST cho phép các tài nguyên biểu diễn dưới dạng text, XML, JSON, … REST client có thể yêu cầu một kiểu dữ liệu cụ thể thông qua giao thức HTTP.\\
+\textbf{Các phương thức HTTP được sử dụng:}
+\begin{itemize}
+\item POST: sử dụng khi tạo một tài nguyên mới.
+\item GET: dùng để truy xuất tài nguyên.
+\item PUT: cập nhật tài nguyên.
+\item DELETE: dùng để xóa bỏ tài nguyên.
+\end{itemize}
+\textbf{JSON (Javascript Object Notation)}\\
+ Trong ứng dụng mà nhóm hiện thực sử dụng JSON để trao đổi dữ liệu.\\
+ JSON là 1 định dạng hoán vị dữ liệu nhanh. Chúng là cơ sở dựa trên tập hợp của Ngôn Ngữ Lập Trình JavaScript, tiêu chuẩn ECMA-262 phiên bản 3 - tháng 12 năm 1999.\\
+ JSON được biểu diễn dưới dạng cặp tên và giá trị name – value. Trong những ngôn ngữ khác nhau, đây được nhận thấy như là một đối tượng (object), bản ghi (record), cấu trúc (struct), từ điển (dictionary), bảng băm (hash table), danh sách khóa (keyed list), hay mảng liên hợp.\\
+ JSON có 5 kiểu dữ liệu chính:
+\begin{itemize}
+\item Number: kiểu số bao gồm số nguyên và số thực.
+\item String: kiểu chuỗi, nội dung bao bởi cặp dấu nháy kép “, những ký tự đặt biệt được escape bởi dấu \.Theo chuẩn JSON thì không sử dụng dấu nháy đơn như Javascript để bọc chuỗi.
+\item Boolean: kiểu luận lý bao gồm 2 giá trị là true và false.
+\item Array: kiểu mảng, gồm các phần tử phân cách nhau bởi dấu phẩy ‘,’ và mảng được bao bởi cặp dấu [ và ].
+\item Object: kiểu đối tượng, gồm những cặp giá trị đi cùng nhau, mỗi cặp phân cách bởi dấu phẩy’,’, đối tượng được bao bởi cặp dấu { và }, cặp giá trị bao gồm tên và giá trị được phân cách bởi dấu hai chấm’:’.
+\item Null: giá trị null.
+\end{itemize}
+
+\begin{center}
+\begin{figure}[h]
+\begin{center}
+\includegraphics[scale=.8]{hinh/json.png}
+\end{center}
+\caption{Cấu trúc một JSON.}
+
+\end{figure}
+\end{center}
+
+JSON được sử dụng rộng rãi vì những ưu điểm của nó:
+\begin{itemize}
+\item Có thể đọc hiểu được (human-readability).
+\item Là kiểu dữ liệu trên nền cơ sở Javascript nên dễ dàng tiếp cận.
+\item Dữ liệu truyền tải ngắn gọn so với những định dạng dữ liệu khác như: xml, html…
+\item Dễ dàng chuyển đổi(parse) dữ liệu từ dạng chuỗi (nhận từ server) sang dữ liệu có thể sử dụng được (thành Object, Number, Array)…
+\item Dễ truy cập nội dung.
+\end{itemize}
+
+
+
+\subsubsection{Nodejs}
+\noindent Node.js là một phần mềm mã nguồn mở được viết dựa trên ngôn ngữ JavaScript cho phép lập trình viên có thể xây dựng các ứng dụng chạy trên máy chủ. Ban đầu, Node.js được phát triển bởi Ryan Dahl. Phiên bản đầu tiên của Node.js được cho ra mắt vào năm 2009.\\
+ Node.js có thể chạy được trên nhiều nền tảng khác nhau như Windows, Linux hay Mac OS. Node.js được phát triển sử dụng V8 Engine là bộ thư viện JavaScript được Google phát triển để viết trình duyệt web Chrome.\\
+ Bản thân Node.js không phải là một ngôn ngữ lập trình mới, thay vào đó Node.js là một nền tảng mã nguồn mở được viết dựa trên ngôn ngữ JavaScript.
+
+\begin{figure}[htp]
+\centering
+\includegraphics[scale=.8]{hinh/nodejs.png}
+\caption{Cơ chế hoạt động của Nodejs.}
+\end{figure}
+
+Nodejs đang rất được ưa chuộng bởi tốc độ chạy rất nhanh của nó. Sở dĩ Nodejs chạy rất nhanh vì nó thực hiện cơ chế non-blocking I/O và asynchronous (bất đồng bộ). Khi một request đến, nó không dừng lại chờ cho request đó xử lý xong mà vòng lặp event loop sẽ tiếp nhận các request liên tục và xử lý chúng liên tục. Khi một request xử lý xong, hàm callback sẽ được gọi để trả về kết quả cho client hoặc thực hiện một tác vụ nào đó. Như vậy các request sẽ được xử lý song song với nhau, tiết kiệm được rất nhiều thời gian. Nhưng đây cũng là một điểm khó đòi hỏi người lập trình phải quản lý chặt chẽ thứ tự thực hiện các hành động vì không phải lúc nào các tác vụ cũng chạy song song nhau, có những tác vụ phải thực hiện theo tuần tự.
+\subsubsection{Framework Expressjs}
+\noindent Expressjs là một framework có thể coi là nhỏ gọn và đơn giản nhất của Nodejs. Với Expressjs, lập trình viên có thể tạo ra một RESTful web service một cách rất nhanh chóng, đơn giản và dễ dàng mở rộng.
+\subsubsection{Sequelizejs}
+\noindent Sequelize là một ORM dành cho Node.js. Nó hỗ trợ truy cập một cách dễ dàng đến PostgreSQL, MySQL, MariaDB, SQLite và MSSQL cùng với các tính năng như là relations, transaction, replication …\\
+ ORM (Object Relational Mapping) là một kỹ thuật lập trình để ánh xạ dữ liệu giữa các CSDL quan hệ và đối tượng trong các ngôn ngữ lập trình hướng đối tượng như Java, C\#, … Trong đó, các đối tượng ánh xạ với các bảng, các quan hệ của đối tượng ánh xạ với các ràng buộc liên quan giữa các bảng. Sequelizejs sẽ làm công việc này, nó giúp chúng ta gọi các hàm tương ứng thay vì viết những câu truy vấn bằng ngôn ngữ SQL. Đây là một module rất tiện lợi cho người lập trình web.
+\subsubsection{Angularjs}
+\noindent Angular là một bộ Javascript Framework rất mạnh và thường được sử dụng để xây dựng project Single Page Application (SPA). Nó hoạt động dựa trên các thuộc tính mở rộng HTML (các atributes theo quy tắc của Angular).\\
+Ưu điểm của Angularjs:
+\begin{itemize}
+\item Phát triển dự trên Javascript
+\item Tạo các ứng dụng client-side theo mô hình MVC.
+\item Khả năng tương thích cao, tự động xử lý mã javascript để phù hợp vứi mỗi trình duyệt.
+\item Mã nguồn mở, miễn phí hoàn toàn và được sủ dụng rộng rãi.
+
+\end{itemize}
+\subsubsection{Angular 2}
+\noindent Angular 2 là 1 framework UI để xây dựng ứng dụng web trên desktop và mobile. 
+Nó được xây dựng dựa trên Javascript. Chúng ta có thể dùng nó để xây dựng 1 ứng dụng client side thú vị dùng HTML, CSS và Javascript. 
+Angular 2 có rất nhiều cải tiến so với Angular 1 để dễ dàng học và phát triển các ứng dụng quy mô doanh nghiệp. 
+Với angular 2 thì chúng ta dễ dàng xây dựng được 1 ứng dụng có thể dễ dàng mở rộng, bảo trì, kiểm nghiệm và chuẩn hóa ứng dụng của mình. 
+Angular 2 hoàn toàn được viết bằng Typescript. Điều đó đồng nghĩa là nó hỗ trợ cho ES6 Modules, class, ...
+\subsubsection{Framework Ionic 2}
+\noindent Ionic là một framework dùng để xây dựng các ứng dụng lai bằng cách sử dụng HTML, CSS, và JavaScript. Nó đi kèm với một tập hợp các thành phần giao diện và các hàm mà bạn có thể sử dụng để tạo ra các ứng dụng di động đầy đủ chức năng và hấp dẫn. 
+Ionic được xây dựng trên Cordova stack. Bạn không thể tạo các ứng dụng di động với một mình Ionic bởi vì nó chỉ xử lý một phần giao diện người dùng. Nó cần phải làm việc với Angular, cái mà xử lý các logic của ứng dụng, và Cordova, framework ứng dụng đa nền tảng cho phép bạn biên dịch ứng dụng của bạn thành một tập tin có thể cài đặt và chạy nó bên trong web view của thiết bị di động. 
+Ứng dụng được xây dựng với Cordova và Ionic có thể chạy trên cả thiết bị Android và iOS.
+Điểm cải tiến so với phiên bản 1 là Ionic 2 sử dụng Angular 2 để phát triển các ứng dụng của mình.
+\subsubsection{Typescript}
+\noindent TypeScript là một ngôn ngữ mã nguồn mở miễn phí hiện đang được phát triển và bảo trì bởi Microsoft. Nó là tập cha của JavaScript, với các bổ sung các tuỳ chọn kiểu tĩnh và lớp trên cơ sở lập trình hướng đối tượng cho ngôn ngữ này. Anders Hejlsberg, kiến trúc sư ngôn ngữ C\# và là người tạo ra ngôn ngữ Delphi và Turbo Pascal đã tham gia phát triển TypeScript. TypeScript có thể sử dụng để phát triển ứng dụng chạy phía client, hay phía server (Node.js)  
+TypeScript được thiết kế để phát triển ứng dụng lớn và được biến đổi - biên dịch sang JavaScript. Vì TypeScript là tập cha của JavaScript nên bất kì chương trình JavaScript nào đã có cũng đều là chương trình TypeScript hợp lệ.  
+\subsubsection{JWT}
+\begin{center}
+\begin{figure}[htp]
+\begin{center}
+\includegraphics[scale=.35]{hinh/jwt2.png}
+\end{center}
+\caption{Quá trình đăng nhập bằng JWT.}
+\end{figure}
+\end{center}
+\noindent JSON Web Token (JWT) là 1 tiêu chuẩn mở (RFC 7519) định nghĩa cách thức truyền tin an toàn giữa các thành viên bằng 1 đối tượng JSON. Thông tin này có thể được xác thực và đánh dấu tin cậy nhờ vào "chữ ký" của nó. Phần chữ ký của JWT sẽ được mã hóa lại bằng HMAC hoặc RSA.\\
+JWT gồm có 3 phần: 
+\begin{itemize}
+\item Header\\
+Header bao gồm hai phần chính: loại token (mặc định là JWT - Thông tin này cho biết đây là một Token JWT) và thuật toán đã dùng để mã hóa (HMAC SHA256 - HS256 hoặc RSA). \\
+
+\begin{center}
+\{ "alg": "HS256", "typ": "JWT" \} 
+\end{center}
+
+\item Payload 
+Payload chứa các claims. Claims là một các biểu thức về một thực thể (chẳng hạn user) và một số metadata phụ trợ. Có 3 loại claims thường gặp trong Payload: reserved, public và private claims. 
+\item Signature 
+Chữ ký Signature trong JWT là một chuỗi được mã hóa bởi header, payload cùng với một chuỗi bí mật theo nguyên tắc sau: 
+\begin{center}
+HMACSHA256(  base64UrlEncode(header) + "." +  base64UrlEncode(payload),  secret) 
+\end{center}
+Do bản thân Signature đã bao gồm cả header và payload nên Signature có thể dùng để kiểm tra tính toàn vẹn của dữ liệu khi truyền tải. 
+ 
+\end{itemize}
+
+\subsubsection{Postgresql}
+\noindent PostgreSQL là một hệ quản trị cơ sở dữ liệu quan hệ và đối tượng dựa trên POSTGRES, bản 4.2, được khoa điện toán của đại học California tại Berkeley phát triển. POSTGRES mở đường cho nhiều khái niệm quan trọng mà các hệ quản trị dữ liệu thương mại rất lâu sau mới có.\\
+PostgreSQL được phổ biến bằng giấy phép BSD cổ điển. Nó không quy định những hạn chế trong việc sử dụng mã nguồn của phần mềm. Bởi vậy PostgreSQL có thể được dùng, sửa đổi và phổ biến bởi bất kỳ ai cho bất kỳ mục đích nào.\\
+PostgreSQL cũng là hệ quản trị cơ sở dữ liệu hỗ trợ mạnh trong việc lưu trữ dữ liệu không gian. PostgreSQL kết hợp với module Postgis cho phép người dùng lưu trữ các lớp dữ liệu không gian. Khi sử dụng PostgreSQL, Postgis kết hợp với các phần mềm GIS hỗ trợ hiển thị, truy vấn, thống kê hoặc xử lý dữ liệu không gian.
+
+\subsubsection{NodeBB}
+\noindent NodeBB là một nền tảng diễn đàn thế hệ mới sử dụng công nghệ web sockets để có thể tương tác ngay lập tức và thông báo thời gian thực. NodeBB có nhiều tính năng hiện đại với tư duy sáng tạo như tương tác mạng xã hội và dòng chảy thảo luận.\\
+
+\noindent NodeBB là một phần mềm mã nguồn mở được sử dụng khá rộng rãi.
+\subsubsection{Git và GitHub}
+\noindent \textbf{Git}\\
+Git là một hệ thống quản lý phiên bản cho những tập tin trên máy tính và các công việc chung cùng thực
+hiện trên những tập tin này giữa nhiều người. Git là một trong những hệ thống quản lý phiên bản phân tán
+phổ biến nhất hiện nay. Nó giúp mỗi máy tính có thể lưu trữ nhiều phiên bản khác nhau của một mã nguồn được nhân bản (clone) từ một kho chứa mã nguồn (repository), mỗi thay đổi vào mã nguồn trên máy tính sẽ có thể ủy thác (commit) rồi đưa lên máy chủ nơi đặt kho chứa chính. Một máy tính khác (nếu họ có quyền
+truy cập) cũng có thể clone lại mã nguồn từ kho chứa.\\ 
+Do đó Git có nhiều ưu điểm:
+\begin{itemize}
+\item Giúp làm việc và quản lý mã nguồn của hệ thống đang xây dựng theo nhóm một cách đơn giản và hiệu quả.
+\item Dễ sử dụng và an toàn.
+\item Quản lý mã nguồn và tài liệu, có một host đóng vai trò là server làm kho chứa mã nguồn,
+các máy khác có thể clone mã nguồn từ server này ở bất kỳ đâu.
+\end{itemize}
+
+\noindent \textbf{GitHub}\\
+Trong quá trình xây dựng hệ thống này, nhóm sử dụng GitHub làm công cụ để quản lý mã nguồn của hệ
+thống được xây dựng và các tài liệu thực hiện cho luận văn. GitHub là một dịch vụ máy chủ
+repository công cộng, người dùng có thể tạo tài khoản trên GitHub để tạo ra các kho chứa của riêng mình.\\
+Đường dẫn mã nguồn của hệ thống này trên GitHub:
+\begin{itemize}
+\item Mã nguồn web server: \href{https://github.com/bathach95/hydroponic}{https://github.com/bathach95/hydroponic}
+\item Mã nguồn mobile application: \href{https://github.com/bathach95/HydroponicMobileApp}{https://github.com/bathach95/HydroponicMobileApp}
+\end{itemize}
+
+\subsubsection{XXTEA}
+\noindent XXTEA là một thuật toán mã hóa nâng cấp của XTEA.\\
+
+\noindent XTEA viết tắt của Extended Tiny Encryption Aglorithm, được thiết kế bởi David Wheeler and Roger Needham của phòng thí nghiệm máy tính Cambridge. Giải thuật này không hề được đăng ký bản quyền do đó bất kỳ ai cũng có thể sử dụng nó một cách tự do. \\
+ 
+\noindent XTEA là dạng mã hóa mật mã khối, kích thước khối 64 bit, khóa bí mật 128 bit. \\
+ 
+\noindent Đúng theo tên gọi Tiny, XTEA là 1 giải thuật cực kỳ đơn giản và rất dễ code. Nó vốn được thiết kế với mục đích áp dụng trong các hệ thống với cấu hình phần cứng hạn chế 
+
+\subsubsection{Arduino}
+\noindent Arduino là một board mạch vi xử lý, nhằm xây dựng các ứng dụng tương tác với nhau hoặc với môi trường được thuận lợi hơn. Phần cứng bao gồm một board mạch nguồn mở được thiết kế trên nền tảng vi xử lý AVR Atmel 8bit, hoặc ARM Atmel 32-bit. Những Model hiện tại được trang bị gồm 1 cổng giao tiếp USB, 6 chân đầu vào analog, 14 chân I/O kỹ thuật số tương thích với nhiều board mở rộng khác nhau. Nền tảng Arduino là mã nguồn mở bao gồm cả phần mềm và phần cứng \
+hướng tới việc 'easy to use' đới với những người mới bắt đầu.\
+Arduino cung cấp:
+\begin{itemize}
+\item Ngôn ngữ lập trình Arduino dựa trên C/C++.
+\item Môi trường phát triển ứng dụng (IDE) Arduino IDE,\
+ngoài ra rất nhiều phần mềm hỗ trợ lập trình arduino.
+\item Thư viện mã nguồn mở.
+\item Hệ thống các board tham chiếu như Arduino Uno, Due, Mega.
+\end{itemize}
+Tạo sao lại lựa chọn arduino:
+\begin{itemize}
+\item Chi phí: các board arduino có giá tương đối so với các board khác,\
+ngoài ra arduino còn là mã nguồn mở sẽ tiết kiệm được tiền bản quyền.
+\item Đa nền tảng: Arduino IDE được hỗ trỡ trên nhiều nền tảng như windows, linux, macOS.
+\item Môi trường lập trình, nghiên cứu đơn giản và dễ tiếp cận, tiết kiệm thời gian.
+\item Hệ thống phần mềm mã nguồn mở được xây dựng bởi cộng đồng người dùng lớn.
+\item Phần cứng có thể được phát triển theo mục đích người sử dụng dựa trên các board sẵn có.
+\end{itemize}
+
+\subsubsection{ARM}
+\noindent Cấu trúc ARM (viết tắt từ tên gốc là Advanced RISC Machine) là một loại cấu trúc vi xử lí kiểu RSIC được sử dụng rộng rãi trong các thiết kế nhúng. Do có đặc điểm tiết kiệm năng lượng, các bộ cpu ARM chiếm ưu thế trong các sản phẩm điện tử di động, mà với các sản phẩm này việc tiêu tán công suất thấp là một mục tiêu thiết kế quan trọng hàng đầu.\\
+\noindent Đi kèm với hệ thống vi xử lí là nền tảng lập trình đa dạng, các thư viện mã nguồn mở, hệ thống các board tham chiếu.
+
+\subsubsection{Mbed}
+\noindent Mbed là nền tảng và hệ điều hành được phát triển cho các thiết bị kết nối internet dữa trên các thiết bị 32-bit Arm Cortex-M.\\
+\noindent Mbed cung cấp nhiều phương pháp tiếp cận lập trình khác nhau:
+\begin{itemize}
+	\item Online
+	\item Hinh ảnh (DevicePhotos/mbed.PNG)
+	\item Chúng ta có thể lập trình online, biên dịch, tải file thực thi về rồi nạp vào thiết bị.
+	\item Offline
+	\item Lập trình trên nền tảng linux và make.
+\end{itemize}
+
+\subsubsection{MQTT}
+\noindent MQTT (Message Queuing Telemetry Transport) là một giao thức gởi dạng publish/subscribe sử dụng cho các thiết bị Internet of Things với băng thông thấp, độ tin cậy cao và khả năng được sử dụng trong mạng lưới không ổn định.
+Bởi vì giao thức này sử dụng băng thông thấp trong môi trường có độ trễ cao nên nó là một giao thức lý tưởng cho các ứng dụng M2M (Machine to Machine).\\
+ MQTT có mô hình client/server, nơi mà mỗi cảm biến là một khách hàng (client) và kết nối đến một máy chủ, có thể hiểu như một nhà môi giới (broker), thông qua giao thức TCP (Transmission Control Protocol).\\
+ MQTT là giao thức định hướng bản tin. Mỗi bản tin là một đoạn rời rạc của tín hiệu và broker không thể nhìn thấy.
+Mỗi bản tin được publish một địa chỉ, có thể hiểu như một kênh. Client đăng kí vào một vài kênh để nhận/gửi dữ liệu, gọi là subscribe. Client có thể subscribe vào nhiều kênh. Mỗi client sẽ nhận được dữ liệu khi bất kì trạm nào khác gửi dữ liệu vào kênh đã đăng kí. Khi một client gửi một bản tin đến một kênh vào đó, gọi là publish.
+\begin{center}
+\begin{figure}[htp]
+\begin{center}
+\includegraphics[scale=.7]{hinh/mqtt.png}
+\end{center}
+\caption{Mô tả các thiết bị liên lạc với nhau thông qua MQTT broker.}
+\end{figure}
+\end{center}
+
+\newpage
+\section{THIẾT KẾ HỆ THỐNG}
+\subsection{Kiến trúc mô hình hệ thống}
+\noindent Kiến trúc hệ thống bao gồm các thành phần: web server, web app, database và hệ thống board điều khiển. 
+
+\begin{center}
+\begin{figure}[htp]
+\begin{center}
+\includegraphics[scale=.5]{hinh/system.png}
+\end{center}
+\caption{Kiến trúc hệ thống.}
+
+\end{figure}
+\end{center}
+
+
+
+\subsection{Hệ thống board điều khiển}
+
+\subsubsection{Tổng quan mô hình board điều khiển}
+
+\noindent \textbf{Hệ thống Board điều khiển có các chức năng}
+\begin{itemize}
+\item Lấy dữ liệu, lưu trữ và xử lý từ các sensors được đặt trong môi trường thủy canh.
+\item Điều khiển các hệ thống: tưới tiêu, bơm, chiếu sáng thông qua relay.
+\item Liên kết với Web Server thông qua môi trường Wifi để trao đổi thông tin:
+\begin{itemize}
+\item Gửi dữ liệu sensor lên Server.
+\item Nhận dữ liệu, lịch trình hoạt động của các hệ thống điều khiển.
+\end{itemize}
+
+\item Các chức năng liên quan đến Wifi được thực hiện bởi module ESP8266 v1.
+\end{itemize}
+
+
+\noindent \textbf{Các module, cảm biến của hệ thống}
+\begin{itemize}
+
+\item Cảm biến nhiệt độ, độ ẩm\\
+\noindent Nhiệt đô, độ ẩm được đo bởi module DHT22.
+\begin{center}
+\begin{figure}[htp]
+\begin{center}
+\includegraphics[scale=.5]{hinh/DHT22.jpg}
+\end{center}
+\caption{Cảm biến nhiệt độ, độ ẩm.}
+
+\end{figure}
+\end{center}
+
+\noindent Thông tin kỹ thuật:
+\begin{itemize}
+\item Nguồn 3-5 VDC.
+\item Dòng sử dụng: max là 2.5mA.
+\item Đo tốt ở độ ẩm 0x100\%RH, sai số 2-5\%.
+\item Đo tốt ở nhiệt độ 0-50\textsuperscript{o}C, sai số 2\textsuperscript{o}C.
+\item Tần số lấy mẫu tối đa 0.5Hz (2 giây 1 lần).
+\item Kích thước 27mm x 58mm x 13.5mm
+\item 3 chân, khoảng cách 0.1 inch.
+\end{itemize}
+
+
+\item Module PPM
+\begin{center}
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[scale=.6]{hinh/tds.jpg}
+\end{center}
+\caption{Module đo ppm.}
+
+\end{figure}
+\end{center}
+PPM(parts per million) là đơn vị đo mật độ thường dành cho \
+các mật độ tương đối thấp. Nó thường chỉ tỷ lệ của lượng\
+một chất trong tổng số lượng của hỗn hợp chứa chất đó.\\
+
+\item Cường độ ánh sáng\\
+\noindent Cường độ ánh sáng được đo bởi module BH1750.
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=.8]{hinh/BH175.png}
+\caption{Module BH1750.}
+\end{figure}
+
+\noindent Thông tin kỹ thuật:
+\begin{itemize}
+\item Nguồn 3-5 VDC.
+\item Protocol giao tiếp: I2C
+\item Khoảng đo: 1->65535 lux.
+\item Đo tốt ở nhiệt độ 0-50\textsuperscript{o}C, sai số 2\textsuperscript{o}C.
+\item Kích cỡ: 21x16x3.3 mm.
+\end{itemize}
+
+\item Module Wifi\\
+\noindent Module ESP8266 V1 là module truyền nhận Wifi đơn giản dựa trên chip ESP8266 SoC (System on Chip) của hãng Espressif. Module này đã được nạp sẵn firmware giúp người dùng giao tiếp với Wifi rất dễ dàng qua tập lệnh AT thông qua giao tiếp UART.\\
+\noindent Thông tin kỹ thuật
+\begin{itemize}
+\item Hỗ trợ chuẩn 802.11 b/g/n.
+\item Wifi 2.4GHz, hỗ trợ WPA/WPA2.
+\item Chuẩn điện áp hoạt động: 3.3V
+\item Chuẩn giao tiếp nối tiếp UART với baudrate lên đến 115200.
+\item Có 3 chế độ hoạt động: Client, Access point, Both Client and Access point.
+\item Hỗ trợ các chuẩn bảo mật: OPEN, WEP, WPA...
+\item Hỗ trợ cả 2 giao tiếp TCP và UDP.
+\item Làm việc như các máy chủ có thể kết nối với 5 máy con.
+\end{itemize}
+
+\begin{center}
+\begin{figure}[htp]
+\begin{center}
+\includegraphics[scale=.4]{hinh/ESP8266.png}
+\end{center}
+\caption{ESP8266.}
+
+\end{figure}
+\end{center}
+
+
+\item Module Realtime
+
+\begin{center}
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[scale=.6]{hinh/rtc.png}
+\end{center}
+\caption{RTC-DS1307}
+
+\end{figure}
+\end{center}
+Thời gian thực được đo sử dụng module Realtime clock DS1307. Module có chức năng lưu trữ thông tin ngày tháng năm cũng như giờ phút giây, nó sẽ hoạt đông như một chiếc đồng hồ và có thể xuất dữ liệu ra ngoài qua giao thức I2C.Module được thiết kế kèm theo một viên pin có khả năng cung cấp năng lượng tới 10 năm. Module đi kèm với EEPROM AT14C32 có khả năng lưu trữ lên đến 32Kbit.\\
+\begin{center}
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[scale=.4]{hinh/DS1307.PNG}
+\end{center}
+\caption{Module Realtime Clock DS1307.}
+\end{figure}
+\end{center}
+
+Thông tin kĩ thuật:
+\begin{itemize}
+\item Nguồn cấp: 5VDC.
+\item Khả năng lưu trữ: 32K (EEPROM AT24C32).
+\item Protocol: I2C.
+\item Có pin chạy độc lập.
+\item Tần số ra 1 HZ.
+\item Kích thước 16x22x23mm.
+\end{itemize}
+
+
+\item Module Arduino UNO R3
+\begin{center}
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[scale=.4]{hinh/arduino_r3.jpg}
+\end{center}
+\caption{Arduino UNO R3.}
+
+\end{figure}
+\end{center}
+\noindent Arduino UNO là board mạch rất phổ biến trong dòng Arduino hiện nay. Nó có ứng dụng rất mạnh mẽ từ đơn giản đến phức tạp như điều khiển đèn LED nhấp nháy, xử lý tín hiệu cho xe điều khiển từ xa, làm một trạm đo nhiệt độ, độ ẩm và hiển thị lên màn hình LCD...\\
+\noindent Thông tin kỹ thuật
+\begin{itemize}
+\item Chip điều khiển chính: ATmega328.
+\item Nguồn: 5VDC từ cổng USB được kết nối với PC.
+\item Số chân Digital: 14 (hỗ trợ 6 chân PWM).
+\item Số chân Analog: 6.
+\item Dòng ra trên chân Digital: 40mA max.
+\item Dòng ra trên chân 3.3V: 50mA.
+\item Dung lượng bộ nhớ FLASH: 32KB.
+\item SRAM: 2KB.
+\item EEPROM: 1KB.
+\item Tốc độ: 16MHz.
+\end{itemize}
+
+\item Relay\\
+\noindent Các actuators (Máy bơm nước, xục Oxi, led...) được kích thông qua relay.\\
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=.6]{hinh/Relay.jpg}
+\caption{Relay.}
+\end{figure}
+\noindent Thông số kĩ thuật:
+\begin{itemize}
+	\item Nguồn: 5 VDC.
+	\item Điện áp kích: 5 VDC.
+\end{itemize}
+
+\item Thanh ghi dịch\\
+\noindent Thanh ghi dịch sử dụng chip 74HC595.\\
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=.2]{hinh/Register.jpg}
+\caption{Thanh ghi dịch.}
+\end{figure}
+\noindent Thông số kĩ thuật:
+\begin{itemize}
+	\item Nguồn: 5 VDC.
+	\item Các chân Output: 5 VDC.
+	\item Protocol giao tiếp: SPI.
+\end{itemize}
+
+\item Board ARM STM32F03C8T6\\
+\noindent Board ARM STM32F103C8T6 được sử dụng để làm board điều khiển các actuators.\\
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=.8]{hinh/stm32.jpg}
+\caption{Board ARM STM32F03C8T6.}
+\end{figure}
+\noindent Thông số kĩ thuật:\\
+\begin{center}
+\includegraphics[scale=.6]{hinh/stm32KT.png}
+\end{center}
+\item Board NodeMCU ESP8266\\
+\noindent Board NodeMCU được sử dụng để làm board truyền nhận dữ liệu qua wifi.\\
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=.4]{hinh/NodeMCU.jpg}
+\caption{Board NodeMCU ESP8266}
+\end{figure}
+\noindent Thông số kĩ thuật:\\
+\begin{center}
+\includegraphics[scale=1]{hinh/NodeMCUKT.jpg}
+\end{center}
+
+\end{itemize}
+
+\subsubsection{Sơ đồ hoạt động}
+\begin{center}
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[scale=1]{hinh/mohinh.png}
+\end{center}
+\caption{Mô hình tổng quan.}
+\end{figure}
+\end{center}
+\begin{itemize}
+\item Arduino Uno đóng vai trò là board điều khiển trung tâm, có nhiệm vụ lấy tin từ các\
+cảm biển và các module như: nhiệt độ, độ ẩm, pH và ppm.
+\item Các sensor được đặt trong môi trường thủy canh, lấy thông tin từ môi trường kết nối trực tiếp\
+với board điều khiển.
+\item Các thiết bị máy bơm, đèn chiếu sáng, quạt làm mát sẽ được điều khiển bởi board Arduino Uno\
+thông qua relay(chức năng của relay như là công tắc).
+\item Hệ thộng hoạt động theo thời gian thực được lấy từ module RTC-DS1307.
+\item Hệ thống sử dụng module wifi ESP8266 để kết nối với server thông qua internet,\
+Giao tiếp giữa ESP8266 với Arduino Uno là UART(Serial).
+
+\textbf{Thu thập dữ liệu cảm biến}\\
+\noindent Các cảm biến được kết nối trực tiếp với board NodeMCU và lấy dữ liệu trực tiếp.
+\begin{itemize}
+	\item Nhiệt độ, độ ẩm: module DHT22 giao tiếp 1 wire với board NodeMCU. Dữ liệu nhiệt độ (C), độ ẩm (%) được đọc sau mỗi (1s).
+	\item Cường độ ánh sáng: module BH1750 giao tiếp I2C với board NodeMCU. Dữ liệu cường độ ánh sáng (lux) được đọc sau mỗi (1s).
+	\item Module ppm hoạt động độc lập, đọc dữ liệu từ môi trường dung dịch, xuất đầu ra analog được đọc bởi board NodeMCU sau mỗi (1s).
+	\item Định thời đọc dữ liệu cảm biến sử dụng timer, timeout là 1s.
+\end{itemize}
+\noindent Hoạt động đọc, quản lí dữ liệu cảm biến sẽ được thực hiện bởi 1 đối tượng:
+\begin{itemize}
+\item Quản lí các thông tin: nhiệt độ, độ ẩm, PPM, ánh sáng.
+\item Hoạt động độc lập, định thời đọc dữ liệu theo sơ đồ sau:
+\begin{center}
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[scale=1]{hinh/sensor.PNG}
+\end{center}
+\caption{Hoạt động độc lập, định thời đọc dữ liệu.}
+\end{figure}
+\end{center}
+\end{itemize}
+
+\noindent \textbf{Điều khiển các actuators}\\
+\noindent \textbf{Thông số các actuator:}\\
+
+Máy bơm nước:
+\begin{itemize}
+\item Nguồn: 12 VDC.
+\item Công suất:
+\item Khả năng phun nước độ cao 2m phương thẳng đứng.
+\end{itemize}
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[scale=0.15]{hinh/pump.jpg}\\
+\end{center}
+\caption{Máy bơm nước.}
+\end{figure}
+
+Máy sục oxy:
+\begin{itemize}
+\item Nguồn: 12 VDC.
+\item Công suất:
+\end{itemize}
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[scale=0.7]{hinh/oxi.png}\\
+\end{center}
+\caption{Máy sục oxy.}
+\end{figure}
+
+Đèn chiếu sáng:
+\begin{itemize}
+\item Nguồn: 12 VDC. 
+\item Công suất:
+\end{itemize}
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[scale=0.4]{hinh/led.jpg}\\
+\end{center}
+\caption{Đèn led.}
+\end{figure}
+
+Quạt:
+\begin{itemize}
+\item Nguồn: 12 VDC. 
+\item Công suất: 
+\end{itemize}
+
+%\begin{center}
+%\begin{figure}[h!]
+%\begin{center}
+%\includegraphics[scale=1]{hinh/fan.jpg}
+%\end{center}
+%\caption{Quạt.}
+%\end{figure}
+%\end{center}
+
+\noindent \textbf{Cách điều khiển:}\\
+\noindent Hoạt động của thanh ghi dịch:\\
+\begin{center}
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[scale=0.8]{hinh/stm_register.PNG}
+\end{center}
+\caption{Hoạt động của thanh ghi dịch.}
+\end{figure}
+\end{center}
+
+\noindent Giao tiếp của thanh ghi dịch với board điều khiển là SPI, các chân điều khiển:
+\begin{itemize}
+\item DATA: chân dữ liệu.
+\item LATCH: đẩy dữ liệu từ thanh ghi bên trong chip xuống các pinout, cụ thể là 8 chân, điện áp ra là 5V.
+\item CLOCK: tín hiệu clock lấy từ board điều khiển.
+\end{itemize}
+
+\noindent Chân DATA của thanh ghi đầu tiên sẽ nối với chân tín hiệu đầu ra của board điều khiển, DATA của các thanh ghi tiếp theo sẽ lấy từ pinout thứ 9 của thanh ghi liền trước nó.
+%\begin{center}
+%\begin{figure}[h!]
+%\begin{center}
+%\includegraphics[scale=1]{hinh/register_register.PNG}
+%\end{center}
+%\caption{Hoạt động của thanh ghi dịch.}
+%\end{figure}
+%\end{center}
+\noindent Các actuators sẽ được kích hoạt trực tiếp thông qua relay:
+\begin{center}
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[scale=0.9]{hinh/actuator.PNG}
+\end{center}
+\caption{Hoạt động của các actuators.}
+\end{figure}
+\end{center}
+\noindent Tín hiệu điều khiển relay sẽ lấy từ thanh ghi:
+\begin{center}
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[scale=0.7]{hinh/register_relay.PNG}
+\end{center}
+\caption{Hoạt động của tín hiệu điều khiển relay.}
+\end{figure}
+\end{center}
+
+\noindent \textbf{Thời gian thực:}\\
+\noindent Module Realtime Clock DS1307 sẽ hoạt động độc lập với pin, cụ thể, các thông số thời gian thực trong module không bị ảnh hưởng bởi nguồn nuôi của toàn mạch. Thời gian thực (year, month, day, hour, min, sec) có thể được đọc và ghi bởi board điều khiển, cụ thể là NodeMCU.
+\begin{center}
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[scale=0.8]{hinh/Node_Realtime.PNG}
+\end{center}
+\caption{Hoạt động Thời gian thực.}
+\end{figure}
+\end{center}
+\noindent Định thời đọc dữ liệu thời gian thực sử dụng timer, timeout là 1/3s.\\
+
+\noindent \textbf{Tổ chức, quản lí hoạt động của các actuators.}\\
+\noindent Chân điều khiển: Các actuator được điểu khiển (tắt, mở) thông qua tín hiệu các chân của thanh ghi dịch (74HC595) và relay nên không phụ thuộc vào các pinout của board điều khiển (STM32F103C8T6). Có thể tăng số chân điều khiển (cũng như tăng số actuators) bằng cách thêm các thanh ghi dịch, số pinout sử dụng luôn là 3, cụ thể là các chân SPI (DATA, LATCH, CLOCK).\\
+\noindent Thời gian biểu: Mỗi actuator sẽ hoạt động theo một thời gian biểu, cụ thể trong thủy canh:
+
+\begin{center}
+\begin{tabularx}{\linewidth}{ |X|X|X|X| }
+\hline
+Start & Duration & Repeat Interval & Stop\\
+\hline
+Thời điểm bắt đầu hoạt động. & Thời lượng actuator được mở. & Thời lượng tắt actuator giữa hai lần mở. & Thời điểm tắt actuator cho đến thời điểm Start kế tiếp.\\
+\hline
+\end{tabularx}
+\end{center}
+
+\noindent Định dạng thời gian cho mỗi kiểu như trên là hhmmss. Mỗi thời gian biểu cho mỗi ngày sẽ bao gồm nhiều mẫu như trên, ví dụ với máy bơm: Máy bơm sẽ bắt đầu bơm nước từ 08:00:00 (start), mỗi lần tưới sẽ kéo dài trong 15s (duration), sau đó sẽ tắt trong 10s (repeat interval), lại bật tiếp 15s, cứ thế cho đến 09:00:00 (stop).\\
+\noindent Lifetime của mỗi actuator (phần mềm).
+\begin{center}
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[scale=0.7]{hinh/actuator_lifetime.PNG}
+\end{center}
+\caption{Hoạt động thời gian biểu.}
+\end{figure}
+\end{center}
+\noindent Mỗi actuator sẽ là một đối tượng (phần mềm), giải thích lifetime: Ban đầu, sẽ không có actuator nào, các actuator không được sét tĩnh. Khi nhận gói tin (Add) từ web-server, một đối tượng actuator sẽ được tạo ra, là một node trong danh sách liên kết (linked-list) các actuators. Mỗi đối tượng chứa các thông tin:
+\begin{itemize}
+\item Actuator ID: định danh của actuator.
+\item Primary: là actuator chính hay phụ.
+\item Schedule: thời gian biểu hoạt động.
+\item Started: điều kiện để hoạt động.
+\end{itemize}
+Sau khi được add (Added), đối tượng sẽ chờ nhận thêm hai gói tin (thứ tự bất kì) là (Start) và (Schedule) để chuyển sang trạng thái (Actived). Nhận gói (Schedule): đối tượng sẽ lưu lại thông tin schedule. Nhận gói (Start): đối tượng sẽ cập nhập thông tin (Started). Ở trạng thái (Added) và (Actived) khi nhận được gói (Remove) , đối tượng sẽ bị xóa. Ở trạng thái (Actived), đối tượng actuator sẽ hoạt động với thông tin (Schedule) theo thời gian thực đọc được từ module Realtime Clock DS1307.
+
+\noindent Lưu trữ thông tin actuator.\\
+\noindent Để đáp ứng tính độc lập của board điều khiển, các thông tin của mỗi actuator sẽ được lưu lại trong bộ nhớ ROM, tránh trường hợp reset của board ( có thể do nhiều nguyên nhân khác nhau: mất điện, crash..). Thông tin actuator được thêm trong trong lúc board đang hoạt động ở thời điểm ngẫu nhiên (runtime), không sét tĩnh, đây là ưu điểm của giải pháp này, cho phép mở rộng, thay đổi các actuator. Bộ nhớ lưu trữ là EEPROM, phân vùng lưu trữ sẽ nêu cụ thể trong phần (Lưu trữ dữ liệu) nằm trên board NodeMCU. Cấu trúc dữ liệu lưu trữ được nêu cụ thể trong phần hiện thực.\\
+Dưới đây là cách hoạt động của việc lưu trữ (Save) và tải lại (Load). Qui ước: Các sự kiện (Add), (Start), (Schedule), (Update) (Remove) sẽ được gọi chung là (Update). Các trạng thái (Added), (Actived) được gọi chung là (Running).
+\begin{center}
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[scale=.6]{hinh/persistent_actuator.PNG}
+\end{center}
+\caption{Hoạt động Lưu trữ thông tin actuator.}
+\end{figure}
+\end{center}
+\end{itemize}
+\noindent \textbf{Truyền nhận dữ liệu với giao thức MQTT.}
+	\begin{itemize}
+	\item Đối tượng thực hiện công việc này hoạt động trên board NodeMCU với vai trò là một MQTT Client, bao gồm:
+		\begin{itemize}
+		\item Lưu trữ các thông tin:
+			\begin{itemize}
+			\item	MQTT broker.
+			\item	MQTT port.
+			\item	MQTT subcribe channel.
+			\item	MQTT publish channel.
+			\end{itemize}
+		\item	Các chức năng:
+			\begin{itemize}
+				\item Publish: truyền dữ liệu tới kênh web-server đăng kí( cũng đóng vai trò là một MQTT Client).
+				\item	Subcribe: đăng kí kênh nhận dữ liệu từ web-server.
+			\end{itemize}
+		\item Các thông tin của đối tượng MQTT Client cũng được lưu trữ trong ROM, nêu trong phần (Lưu trữ dữ liệu), và cho phép cấu hình (Cấu hình WiFi).
+		
+			\begin{center}
+			\begin{figure}[h!]
+			\begin{center}
+			\includegraphics[scale=.6]{hinh/mqtt_client.PNG}
+			\end{center}
+			\caption{MQTT client.}
+			\end{figure}
+			\end{center}
+
+		\end{itemize}
+	\end{itemize}
+\noindent	\textbf{Cấu hình, hoạt động của các chế độ WiFi.}
+
+	\begin{itemize}
+	\item	Board NodeMCU cho phép hoạt động ở 3 chế độ:
+		\begin{itemize}
+		\item	Station: đóng vai trò là một thiết bị kết nối vào mạng wifi tương tự như điện thoại.
+		\item	Access Point: Phát wifi, cho phép thiết bị khác kết nối vào.
+		\item	Both: cả hai chức năng trên.
+		\end{itemize}
+
+	\item	Ở dự án này, 2 chế độ được sử dụng là (Station) và (Access Point), cụ thể:
+		\begin{itemize}
+		\item	Station: Ở chế độ này, board sẽ thực hiện chức năng của MQTT Client.
+		\item	Access Point: cung cấp chức năng của một Web-server nhỏ, cho phép cấu hình:
+			\begin{itemize}
+				\item	Các thông  số wifi (tên wifi, mật khẩu) khi board hoạt động ở (Station). 
+				\item	Thông tin của đối tượng MQTT Client (broker, port...).
+				\item	Các thông tin sau khi cấu hình sẽ được lưu trữ trong EEPROM.
+			\end{itemize}
+		\end{itemize}
+
+
+	\item	Chức năng chuyển chế độ sẽ được thực hiện bởi một nút nhấn.
+	\item	Các chế độ hoạt động như sau:
+	
+			\begin{center}
+			\begin{figure}[h!]
+			\begin{center}
+			\includegraphics[scale=.6]{hinh/wifi_station.PNG}
+			\end{center}
+			\caption{Wifi station.}
+			\end{figure}
+			\end{center}
+			
+			\begin{center}
+			\begin{figure}[h!]
+			\begin{center}
+			\includegraphics[scale=.6]{hinh/wifi_ap.PNG}
+			\end{center}
+			\caption{Wifi AP.}
+			\end{figure}
+			\end{center}
+			
+			\begin{center}
+			\begin{figure}[h!]
+			\begin{center}
+			\includegraphics[scale=.6]{hinh/wifi_application.PNG}
+			\end{center}
+			\caption{Wifi application.}
+			\end{figure}
+			\end{center}
+
+	\end{itemize}
+
+\noindent	\textbf{Đệm dữ liệu (FIFO)}
+	\begin{itemize}
+	\item Chức năng:
+		\begin{itemize}
+		\item	Để đảm bảo tính ổn định, đồng bộ giữa quá trình nhận - xử lí các gói tin.
+		\item	Giảm tải thời gian xử lí interrupt (có khả năng gây xung đột các task).
+		\end{itemize}
+	\item	Các vị trí cần sử dụng bộ đệm:
+		\begin{itemize}
+		\item	Khi  nhận các gói tin serial (uart).
+		\item	Khi gửi các gói tin MQTT: việc gửi các gói tin MQTT là thông qua môi trường wifi, nên không phải lúc nào cũng đảm bảo tính kết nối giữa client với broker, vì vậy cần bộ đệm để lưu trữ các gói tin trước khi gửi.
+		\end{itemize}
+	\item	Cấu trúc bộ đệm: các gói tin xếp theo thứ tự FIFO.
+	\end{itemize}
+
+
+\noindent	\textbf{Lưu trữ dữ liệu.}
+	\begin{itemize}
+	\item	Các thông tin cần được lưu trữ trong EEPROM:
+		\begin{itemize}
+		\item	Thông tin wifi station: ssid, password.
+		\item	Thông tin MQTT: broker, port, subcribe channel, publish channel.
+		\item	Actuators.
+		\end{itemize}
+	\item	Việc lưu trữ và quản lí sẽ do một đối tượng thực hiện.
+	
+	\item	EEPROM đặt trên board NodeMCU, đối tượng Actuators lại hoạt động trên board STM nên sẽ cần một giao thức để tải dữ liệu từ NodeMCU sang STM. 
+
+	\end{itemize}
+
+\noindent	\textbf{Giao tiếp giữa NodeMCU và STM32F103C8T6.}
+	\begin{itemize}
+	\item  Giao thức lớp dưới được sử dụng là UART.
+	\item	Một giao thức đơn giản được xây dựng trên lớp UART nhằm:
+		\begin{itemize}
+		\item	Truyền, nhận các gói tin lớn.
+		\item	Đảm bảo tính toàn vẹn của gói tin.
+		\item Cấu trúc giao thức:
+			\begin{center}
+			\begin{figure}[h!]
+			\begin{center}
+			\includegraphics[scale=.6]{hinh/uart_protocol.PNG}
+			\end{center}
+			\caption{Cấu trúc giao thức UART.}
+			\end{figure}
+			\end{center}
+		  \begin{itemize}
+		  \item	Các thành phần chính:
+		  	\begin{itemize}
+		  		\item	Timer: định thời đọc dữ liệu có sẵn trong UART ở lớp dưới.
+				\item	Buffer: bộ đệm tạm thời cho dữ liệu rời rạc.
+				\item	Privacy: chính sách truyền nhận.
+				\item	Data Queue: gói tin toàn vẹn được đưa vào queue (FIFO), nêu cụ thể trong phần (Đệm dữ liệu). 
+				\item	UART: giao thức truyền nhận lớp dưới.
+		  	\end{itemize}
+		  	
+		  	\begin{center}
+			\begin{figure}[h!]
+			\begin{center}
+			\includegraphics[scale=.6]{hinh/uart_flow.PNG}
+			\end{center}
+			\caption{Cách hoạt động của giao thức UART.}
+			\end{figure}
+			\end{center}
+					  	
+		  	
+		  \end{itemize}
+		\end{itemize}
+	\end{itemize}
+
+
+\subsubsection{Sơ đồ Use case}
+\begin{center}
+\begin{figure}[htp]
+\begin{center}
+\includegraphics[scale=.3]{hinh/D-usecase.jpg}
+\end{center}
+\caption{Device use case.}
+\end{figure}
+\end{center}
+
+\newpage
+\subsubsection{Class Diagram}
+\begin{center}
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[scale=.3]{hinh/UnoClass.jpg}
+\end{center}
+\caption{Arduino Uno class diagram.}
+\end{figure}
+
+
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[scale=.5]{hinh/EspClass.jpg}
+\end{center}
+\caption{Esp8266 class diagram.}
+\end{figure}
+\end{center}
+\newpage
+\subsection{Ứng dụng web}
+\subsubsection{Sơ đồ use case}
+\indent \textbf{Các chức năng của tài khoản khi chưa thực hiện đăng nhập tài khoản.}\\
+
+\begin{figure}[htp]
+\centering
+\includegraphics[scale=.9]{hinh/uc_web1.png}
+\caption{Các chức năng của khách.}
+\end{figure}
+
+\newpage
+\begin{figure}[htp]
+\centering
+\includegraphics[scale=.9]{hinh/reg.png}
+\caption{Đăng ký.}
+\end{figure}
+
+\begin{table}[!htp]
+\centering
+\begin{tabularx}{\linewidth}{ |c||c|c|c| }
+\hline
+ID & Name & Created by & Created at\\
+UC\_REG\_001 & Đăng ký tài khoản & Tạ Chí Tây & 20/3/2017\\
+\hline
+\multicolumn{4}{|X|}{\textbf{Actor:} Khách }\\
+\hline
+\multicolumn{4}{|X|}{\textbf{Mô tả ngắn gọn:} khách có thể đăng ký thành viên }\\
+\hline
+\multicolumn{4}{|X|}{\textbf{Kịch bản chính:}}\\
+\multicolumn{4}{|X|}{1. Người dùng khởi động khung đăng ký bằng cách nhấn nút Register}\\
+\multicolumn{4}{|X|}{
+2.	Người dùng nhập các thông tin cần thiết trong khung đăng ký và nhấn Register.}\\
+\multicolumn{4}{|X|}{
+3.	Hệ thống tạo người dùng mới}\\
+\multicolumn{4}{|X|}{
+4.	Hệ thống thông báo người dùng đã đăng ký thành công.}\\
+\hline
+\multicolumn{4}{|X|}{\textbf{Kịch bản phụ:}}\\
+\multicolumn{4}{|X|}{2.1. Các ô thông tin bị để trống hoặc nhập sai định dạng, mật khẩu không khớp, email đã đăng ký thì hệ thống sẽ thông báo.}\\
+\hline
+\multicolumn{4}{|X|}{\textbf{Các quan hệ khác:}}\\
+\multicolumn{4}{|X|}{- Include: nhập họ tên}\\
+\multicolumn{4}{|X|}{- Include: nhập email}\\
+\multicolumn{4}{|X|}{- Include: nhập mật khẩu}\\
+\multicolumn{4}{|X|}{- Include: nhập số điện thoại}\\
+\hline
+\end{tabularx}
+\caption{Mô tả use case đăng ký.}
+\end{table}
+
+\begin{figure}[htp]
+\centering
+\includegraphics[scale=.9]{hinh/login.png}
+\caption{Đăng nhập.}
+\end{figure}
+
+\begin{table}[!htp]
+\centering
+\begin{tabularx}{\linewidth}{ |c||c|c|c| }
+\hline
+ID & Name & Created by & Created at\\
+UC\_LOGIN\_001 & Đăng nhập & Tạ Chí Tây & 20/3/2017\\
+\hline
+\multicolumn{4}{|X|}{\textbf{Actor:} Khách }\\
+\hline
+\multicolumn{4}{|X|}{\textbf{Mô tả ngắn gọn:} khách có thể đăng nhập vào hệ thống }\\
+\hline
+\multicolumn{4}{|X|}{\textbf{Tiền điều kiện:} người dùng đã đăng ký thành công}\\
+\hline
+\multicolumn{4}{|X|}{\textbf{Kịch bản chính:}}\\
+\multicolumn{4}{|X|}{1. Người dùng khởi động khung đăng nhập bằng cách nhấn vào nút Login.}\\
+\multicolumn{4}{|X|}{
+2.	Người dùng nhập email và mật khẩu vào các ô tương ứng và nhấn nút Sign In.}\\
+\multicolumn{4}{|X|}{
+3.	Hệ thống xác thực người dùng thông qua email và mật khẩu.}\\
+\multicolumn{4}{|X|}{
+4.	Hệ thống thông báo người dùng đã đăng nhập thành công.}\\
+\hline
+\multicolumn{4}{|X|}{\textbf{Kịch bản phụ:}}\\
+\multicolumn{4}{|X|}{2.1 Tên truy cập không tồn tại trong cơ sở dữ liệu hoặc mật khẩu không chính xác. Hệ thống hiển thị lại biểu mẫu Đăng nhập và hiển thị thông báo lỗi trên màn hình và yêu cầu nhập lại.}\\
+\multicolumn{4}{|X|}{5. Nhấn vào nút "Quên mật khẩu". Hệ thống sẽ gửi đường link reset mật khẩu đến email của người dùng và thông báo cho người dùng biết.}\\
+\hline
+\multicolumn{4}{|X|}{\textbf{Các quan hệ khác:}}\\
+\multicolumn{4}{|X|}{- Include: nhập email}\\
+\multicolumn{4}{|X|}{- Include: nhập mật khẩu}\\
+\hline
+\end{tabularx}
+\caption{Mô tả use case đăng nhập.}
+\end{table}
+
+\newpage
+\indent \textbf{Các chức năng của tài khoản thành viên sau khi đăng nhập.}\\
+
+\begin{figure}[htp]
+\centering
+\includegraphics[scale=.9]{hinh/cntv.png}
+\caption{Các chức năng của thành viên.}
+\end{figure}
+
+\newpage
+\begin{figure}[htp]
+\centering
+\includegraphics[scale=.6]{hinh/tdtt.png}
+\caption{Use case thay đổi thông tin.}
+\end{figure}
+
+\begin{table}[!htp]
+\centering
+\begin{tabularx}{\linewidth}{ |c||c|c|c| }
+\hline
+ID & Name & Created by & Created at\\
+UC\_CHANGEINFO\_001 & Thay đổi thông tin cá nhân & Tạ Chí Tây & 20/3/2017\\
+\hline
+\multicolumn{4}{|X|}{\textbf{Actor:} Thành viên }\\
+\hline
+\multicolumn{4}{|X|}{\textbf{Mô tả ngắn gọn:} người dùng nhập tên và số điện thoại mình muốn thay đổi để cập nhật thông tin}\\
+\hline
+\multicolumn{4}{|X|}{\textbf{Tiền điều kiện:} người dùng đã đăng nhập thành công}\\
+\hline
+\multicolumn{4}{|X|}{\textbf{Kịch bản chính:}}\\
+\multicolumn{4}{|X|}{1. Người dùng khởi động khung thay đổi thông tin bằng cách nhấn vào nút Edit.}\\
+\multicolumn{4}{|X|}{
+2.	Người dùng nhập tên và số điện thoại mới vào các ô tương ứng và nhấn nút OK.}\\
+\multicolumn{4}{|X|}{
+3.	Hệ thống xác thực người dùng và cập nhật thông tin.}\\
+\multicolumn{4}{|X|}{
+4.	Hệ thống thông báo người dùng đã thay đổi thành công.}\\
+\hline
+\multicolumn{4}{|X|}{\textbf{Kịch bản phụ:}}\\
+\multicolumn{4}{|X|}{\makecell[l]{2.1    Người dùng để các ô nhập rỗng, hệ thống sẽ báo lỗi.}}\\
+\hline
+\multicolumn{4}{|X|}{\textbf{Các quan hệ khác:}}\\
+\multicolumn{4}{|X|}{- Include: nhập tên}\\
+\multicolumn{4}{|X|}{- Include: nhập số điện thoại}\\
+\hline
+\end{tabularx}
+\caption{Mô tả use case hay đổi thông tin cá nhân.}
+\end{table}
+
+\begin{table}[!htp]
+\centering
+\begin{tabularx}{\linewidth}{ |c||c|c|c| }
+\hline
+ID & Name & Created by & Created at\\
+UC\_CHANGEINFO\_002 & Thay đổi ảnh cá nhân & Tạ Chí Tây & 20/3/2017\\
+\hline
+\multicolumn{4}{|X|}{\textbf{Actor:} Thành viên }\\
+\hline
+\multicolumn{4}{|X|}{\textbf{Mô tả ngắn gọn:} người dùng thay đổi ảnh đại diện của mình}\\
+\hline
+\multicolumn{4}{|X|}{\textbf{Tiền điều kiện:} người dùng đã đăng nhập thành công}\\
+\hline
+\multicolumn{4}{|X|}{\textbf{Kịch bản chính:}}\\
+\multicolumn{4}{|X|}{1. Người dùng khởi động khung thay đổi ảnh cá nhân bằng cách nhấn chọn "Change avatar".}\\
+\multicolumn{4}{|X|}{
+2.	Người dùng chọn đường dẫn đến tập tin ảnh mới trên máy và nhấn OK.}\\
+\multicolumn{4}{|X|}{
+3.	Hệ thống xác thực người dùng và cập nhật thông tin.}\\
+\multicolumn{4}{|X|}{
+4.	Hệ thống thông báo người dùng đã thay đổi thành công.}\\
+\hline
+\multicolumn{4}{|X|}{\textbf{Kịch bản phụ:}}\\
+\multicolumn{4}{|X|}{2.1    Người dùng không chọn đường dẫn thì hệ thống sẽ thông báo lỗi.}\\
+\hline
+\end{tabularx}\\
+\caption{Use case thay đổi hình ảnh cá nhân.}
+\end{table}
+
+\begin{table}[!htp]
+\centering
+\begin{tabularx}{\linewidth}{ |c||c|c|c| }
+\hline
+ID & Name & Created by & Created at\\
+UC\_CHANGEINFO\_003 & Thay đổi mật khẩu & Tạ Chí Tây & 20/3/2017\\
+\hline
+\multicolumn{4}{|X|}{\textbf{Actor:} Thành viên }\\
+\hline
+\multicolumn{4}{|X|}{\textbf{Mô tả ngắn gọn:} người dùng thay đổi mật khẩu của mình}\\
+\hline
+\multicolumn{4}{|X|}{\textbf{Tiền điều kiện:} người dùng đã đăng nhập thành công}\\
+\hline
+\multicolumn{4}{|X|}{\textbf{Kịch bản chính:}}\\
+\multicolumn{4}{|X|}{1. Người dùng khởi động khung thay đổi mật khẩu bằng cách nhấn nút "Change password".}\\
+\multicolumn{4}{|X|}{
+2.	Người dùng nhập thông tin vào các ô tương ứng và nhấn OK.}\\
+\multicolumn{4}{|X|}{
+3.	Hệ thống xác thực người dùng và cập nhật thông tin.}\\
+\multicolumn{4}{|X|}{
+4.	Hệ thống thông báo người dùng đã thay đổi thành công.}\\
+\hline
+\multicolumn{4}{|X|}{\textbf{Kịch bản phụ:}}\\
+\multicolumn{4}{|X|}{2.1    Người dùng nhập sai mật khẩu cũ, nhập mật khẩu mới không trùng nhau hoặc để trống các ô thì hệ thống sẽ thông báo.}\\
+\hline
+\multicolumn{4}{|X|}{\textbf{Các ràng buộc:} thông tin hiển thị dưới dạng ký tự *.}\\
+\hline
+\multicolumn{4}{|X|}{\textbf{Các quan hệ khác:}}\\
+\multicolumn{4}{|X|}{- Include: nhập mật khẩu cũ}\\
+\multicolumn{4}{|X|}{- Include: nhập mật khẩu mới}\\
+\hline
+\end{tabularx}
+\caption{Mô tả use case thay đổi mật khẩu.}
+\end{table}
+
+\begin{figure}[htp]
+\centering
+\includegraphics[scale=.9]{hinh/adddevice.png}
+\caption{Use case thêm thiết bị.}
+\end{figure}
+
+\begin{table}[!htp]
+\centering
+\begin{tabularx}{\linewidth}{ |c||c|c|c| }
+\hline
+ID & Name & Created by & Created at\\
+UC\_ADDDEVICE\_001 & Thêm board điều khiển & Tạ Chí Tây & 20/3/2017\\
+\hline
+\multicolumn{4}{|X|}{\textbf{Actor:} Thành viên }\\
+\hline
+\multicolumn{4}{|X|}{\textbf{Mô tả ngắn gọn:} người dùng thêm board điều khiển mới.}\\
+\hline
+\multicolumn{4}{|X|}{\textbf{Tiền điều kiện:} người dùng đã đăng nhập thành công}\\
+\hline
+\multicolumn{4}{|X|}{\textbf{Kịch bản chính:}}\\
+\multicolumn{4}{|X|}{1. Người dùng nhấn vào nút thêm thiết bị mới trong trang quản lý board điều khiển.}\\
+\multicolumn{4}{|X|}{
+2.	Người dùng nhập thông tin vào các ô tương ứng và nhấn OK.}\\
+\multicolumn{4}{|X|}{
+3.	Hệ thống xác thực người dùng và thêm board điều khiển mới.}\\
+\multicolumn{4}{|X|}{
+4.	Hệ thống thông báo người dùng đã thay đổi thành công.}\\
+\hline
+\multicolumn{4}{|X|}{\textbf{Kịch bản phụ:}}\\
+\multicolumn{4}{|X|}{2.1    Địa chỉ MAC nhập không đúng định dạng, các ô nhập để trống hệ thống sẽ báo lỗi.}\\
+\hline
+\multicolumn{4}{|X|}{\textbf{Các ràng buộc:} địa chỉ MAC phải đúng định dạng.}\\
+\hline
+\multicolumn{4}{|X|}{\textbf{Các quan hệ khác:}}\\
+\multicolumn{4}{|X|}{- Include: nhập MAC}\\
+\multicolumn{4}{|X|}{- Include: nhập tên board điều khiển}\\
+\multicolumn{4}{|X|}{- Include: nhập tên nhà sản xuất}\\
+\hline
+\end{tabularx}
+\caption{Mô tả use case thêm thiết bị.}
+\end{table}
+
+\begin{figure}[htp]
+\centering
+\includegraphics[scale=.8]{hinh/newthread.png}
+\caption{Use case tương tác với diễn đàn.}
+\end{figure}
+
+\begin{table}[!htp]
+\centering
+\begin{tabular}{ |c||c|c|c| }
+\hline
+ID & Name & Created by & Created at\\
+UC\_FORUM\_001 & Tạo bài viết mới & Tạ Chí Tây & 20/3/2017\\
+\hline
+\multicolumn{4}{|l|}{\textbf{Actor:} Thành viên }\\
+\hline
+\multicolumn{4}{|l|}{\makecell[l]{\textbf{Mô tả ngắn gọn:} thành viên tạo một bài viết mới.} }\\
+\hline
+\multicolumn{4}{|l|}{\textbf{Tiền điều kiện:} người dùng đã đăng nhập thành công và đang ở mục Bài viết}\\
+\hline
+\multicolumn{4}{|l|}{\textbf{Kịch bản chính:}}\\
+\multicolumn{4}{|l|}{1.Người dùng khởi động khung tạo bài viết mới bằng cách nhấn nút New article.}\\
+\multicolumn{4}{|l|}{
+2.	Người dùng nhập tiêu đề của bài viết, nội dung cụ thể và nhấn OK.}\\
+\multicolumn{4}{|l|}{
+3.	Hệ thống xác thực người dùng và tạo bài viết mới.}\\
+\multicolumn{4}{|l|}{
+4.	Hệ thống thông báo người dùng đã tạo thành công.}\\
+\hline
+\multicolumn{4}{|l|}{\textbf{Kịch bản phụ:}}\\
+\multicolumn{4}{|l|}{\makecell[l]{ 2.1 Các ô thông tin bị để trống thì hệ thống sẽ thông báo lỗi.}}\\
+\hline
+\end{tabular}
+\caption{Mô tả use case tạo bài viết mới.}
+\end{table}
+
+\begin{table}[!htp]
+\centering
+\begin{tabular}{ |c||c|c|c| }
+\hline
+ID & Name & Created by & Created at\\
+UC\_FORUM\_002 & Xóa bài viết & Tạ Chí Tây & 20/3/2017\\
+\hline
+\multicolumn{4}{|l|}{\textbf{Actor:} Mod }\\
+\hline
+\multicolumn{4}{|l|}{\makecell[l]{\textbf{Mô tả ngắn gọn:} mod thực hiện xóa bài viết. } }\\
+\hline
+\multicolumn{4}{|l|}{\textbf{Tiền điều kiện:} người dùng đã đăng nhập thành công và có quyền là mod}\\
+\hline
+\multicolumn{4}{|l|}{\textbf{Kịch bản chính:}}\\
+\multicolumn{4}{|l|}{1. Người dùng nhấn vào nút xóa bài viết trên danh sách các bài viết.}\\
+\multicolumn{4}{|l|}{
+2.	Hệ thống hỏi lại người dùng có chắc chắn hay không.}\\
+\multicolumn{4}{|l|}{
+3.	Hệ thống xóa bài đăng nếu người dùng nhấn OK.}\\
+\multicolumn{4}{|l|}{
+4.	Hệ thống thông báo người dùng đã xóa thành công.}\\
+\hline
+\end{tabular}
+\caption{Mô tả use case xóa bài viết.}
+\end{table}
+
+\begin{table}[!htp]
+\centering
+\begin{tabular}{ |c||c|c|c| }
+\hline
+ID & Name & Created by & Created at\\
+UC\_FORUM\_003 & Bình luận bài viết & Tạ Chí Tây & 20/3/2017\\
+\hline
+\multicolumn{4}{|l|}{\textbf{Actor:} Thành viên }\\
+\hline
+\multicolumn{4}{|l|}{\makecell[l]{\textbf{Mô tả ngắn gọn:} thành viên tạo một bình luận mới trong bài viết.} }\\
+\hline
+\multicolumn{4}{|l|}{\textbf{Tiền điều kiện:} người dùng đã đăng nhập thành công và đang xem bài viết.}\\
+\hline
+\multicolumn{4}{|l|}{\textbf{Kịch bản chính:}}\\
+\multicolumn{4}{|l|}{1. Người dùng nhấn chọn vào nút bên luận trên bài đăng đang xem.}\\
+\multicolumn{4}{|l|}{
+2.	Người dùng nhập nội dung bình luận của mình vào bài đăng và nhấn OK.}\\
+\multicolumn{4}{|l|}{
+3.	Hệ thống xác thực người dùng và tạo bình luận mới.}\\
+\hline
+\multicolumn{4}{|l|}{\textbf{Kịch bản phụ:}}\\
+\multicolumn{4}{|l|}{\makecell[l]{ 2.1    Các ô thông tin bị để trống thì hệ thống sẽ thông báo lỗi.}}\\
+\hline
+\end{tabular}
+\caption{Mô tả use case thêm bình luận bài viết.}
+\end{table}
+
+\begin{table}[!htp]
+\centering
+\begin{tabularx}{\linewidth}{ |c||c|c|c| }
+\hline
+ID & Name & Created by & Created at\\
+UC\_REMOVEDEVICE\_001 & Xóa board điều khiển & Tạ Chí Tây & 20/3/2017\\
+\hline
+\multicolumn{4}{|X|}{\textbf{Actor:} Thành viên }\\
+\hline
+\multicolumn{4}{|X|}{\makecell[l]{\textbf{Mô tả ngắn gọn:} người dùng xóa board điều khiển của mình.} }\\
+\hline
+\multicolumn{4}{|X|}{\textbf{Tiền điều kiện:} người dùng đã đăng nhập thành công và đang ở trang hiển thị các board điều khiển.}\\
+\hline
+\multicolumn{4}{|X|}{\textbf{Kịch bản chính:}}\\
+\multicolumn{4}{|X|}{1. Người dùng nhấn nút xóa một board điều khiển trong danh sách.}\\
+\multicolumn{4}{|X|}{
+2.	 Hệ thống hiển thị thông báo xác nhận xóa board điều khiển của người dùng.}\\
+\multicolumn{4}{|X|}{
+3.	Người dùng chọn OK để xóa đi board điều khiển muốn xóa.}\\
+\hline
+\multicolumn{4}{|X|}{\textbf{Kịch bản phụ:}}\\
+\multicolumn{4}{|X|}{\makecell[l]{2.1    Người dùng chọn hủy để hủy xóa board điều khiển.}}\\
+\hline
+\end{tabularx}
+\caption{Mô tả use case xóa thiết bị.}
+\end{table}
+
+\begin{figure}[htp]
+\centering
+\includegraphics[scale=.9]{hinh/TimKiemMuaVu.png}
+\caption{Use case tìm kiếm mùa vụ.}
+\end{figure}
+
+\begin{table}[!htp]
+\centering
+\begin{tabularx}{\linewidth}{ |c||c|c|c| }
+\hline
+ID & Name & Created by & Created at\\
+UC\_FIND\_001 & Tìm kiếm mùa vụ & Tạ Chí Tây & 20/3/2017\\
+\hline
+\multicolumn{4}{|X|}{\textbf{Actor:} Thành viên }\\
+\hline
+\multicolumn{4}{|X|}{\textbf{Mô tả ngắn gọn:} người dùng thực hiện Tìm kiếm mùa vụ để xem thông tin mùa được chia sẻ. }\\
+\hline
+\multicolumn{4}{|X|}{\textbf{Tiền điều kiện:} người dùng đã đăng nhập thành công.}\\
+\hline
+\multicolumn{4}{|X|}{\textbf{Kịch bản chính:}}\\
+\multicolumn{4}{|X|}{ 
+1. Người dùng nhấn vào nút tìm kiếm trong trang của mình sau khi đã đăng nhập.}\\
+\multicolumn{4}{|X|}{ 
+2.	Người dùng nhâp vào thông tin của mùa vụ cần tìm kiếm: tìm kiếm theo tên loại cây trồng, tìm kiếm theo tháng…}\\
+\multicolumn{4}{|X|}{
+3. Hệ thống thực hiện tìm kiếm các mùa vụ thỏa điều kiện tìm kiếm của người dùng và hiển thị trong trang kết quả tìm kiếm.}\\
+\multicolumn{4}{|X|}{
+4.	Người sử dụng nhấn chọn vào mục mong muốn để xem thông tin của mùa vụ.}\\
+\hline
+\multicolumn{4}{|X|}{\textbf{Kịch bản phụ:}}\\
+\multicolumn{4}{|X|}{3.1	Hệ thống không hiển thị kết quả tìm kiếm nào phù hợp với yêu cầu của người dùng.}\\
+\hline
+\end{tabularx}
+\caption{Mô tả use case tìm kiếm mùa vụ.}
+\end{table}
+
+\begin{table}[!htp]
+\centering
+\begin{tabularx}{\linewidth}{ |c||c|c|c| }
+\hline
+ID & Name & Created by & Created at\\
+UC\_FIND\_002 & Gửi bình luận mùa vụ & Tạ Chí Tây & 20/3/2017\\
+\hline
+\multicolumn{4}{|X|}{\textbf{Actor:} Thành viên }\\
+\hline
+\multicolumn{4}{|X|}{\textbf{Mô tả ngắn gọn:} người dùng thực hiện bình luận mùa vụ của người khác.}\\
+\hline
+\multicolumn{4}{|X|}{\textbf{Tiền điều kiện:} người dùng đã đăng nhập thành công và đang xem thông tin mùa vụ của người khác chia sẻ.}\\
+\hline
+\multicolumn{4}{|X|}{\textbf{Kịch bản chính:}}\\
+\multicolumn{4}{|X|}{ 
+1. Người dùng nhập bình luận cho mùa vụ.}\\
+\multicolumn{4}{|X|}{ 
+2.	Người dùng chọn điểm đánh giá cho mùa vụ.}\\
+\multicolumn{4}{|X|}{
+3. Người dùng nhấn nút để gửi bình luận lên server.} \\
+\multicolumn{4}{|X|}{
+4. Hệ thống hiển thị thông báo người dùng gửi bình luận thành công.}\\
+\hline
+\multicolumn{4}{|X|}{\textbf{Kịch bản phụ:}}\\
+\multicolumn{4}{|X|}{4.1	Hệ thống hiển thị người dùng gửi không thành công do có lỗi.}\\
+\hline
+\end{tabularx}
+\caption{Mô tả use case gửi bình luận mùa vụ.}
+\end{table}
+
+\begin{figure}[htp]
+\centering
+\includegraphics[scale=.9]{hinh/tttb.png}
+\caption{Use case xem thông tin thiết bị.}
+\end{figure}
+
+\begin{figure}[htp]
+\centering
+\includegraphics[scale=.9]{hinh/stttb.png}
+\caption{Use case sửa thông tin thiết bị.}
+\end{figure}
+
+\begin{table}[!htp]
+\centering
+\begin{tabularx}{\linewidth}{ |c||c|c|c| }
+\hline
+ID & Name & Created by & Created at\\
+UC\_DEVICE\_001 & Sửa thông tin board điều khiển & Tạ Chí Tây & 20/3/2017\\
+\hline
+\multicolumn{4}{|X|}{\textbf{Actor:} Thành viên }\\
+\hline
+\multicolumn{4}{|X|}{\textbf{Mô tả ngắn gọn:} người dùng thực hiện chỉnh sửa thông tin của một board điều khiển của mình. }\\
+\hline
+\multicolumn{4}{|X|}{\textbf{Tiền điều kiện:} người dùng đã đăng nhập thành công và đang ở trang board điều khiển.}\\
+\hline
+\multicolumn{4}{|X|}{\textbf{Kịch bản chính:}}\\
+\multicolumn{4}{|X|}{1. Người dùng nhấn vào nút chỉnh sửa thông tin board điều khiển.}\\
+\multicolumn{4}{|X|}{ 
+2.	Người dùng nhập vào các thông tin cập nhật mới về board điều khiển của mình và nhấn OK.}\\
+\multicolumn{4}{|X|}{
+3.	Hệ thống thực hiện cập nhật thông tin của board điều khiển mới.}\\
+
+\multicolumn{4}{|X|}{4. Hệ thống thông báo người dùng đã cập nhật thành công.}\\
+\hline
+\multicolumn{4}{|X|}{\textbf{Kịch bản phụ:}}\\
+\multicolumn{4}{|X|}{2.1    Người dùng nhập thông tin sai hệ thống sẽ báo lỗi.}\\
+\hline
+\multicolumn{4}{|X|}{\textbf{Các quan hệ khác:}}\\
+\multicolumn{4}{|X|}{- Include: nhập MAC}\\
+\multicolumn{4}{|X|}{- Include: nhập tên thiết bị}\\
+\multicolumn{4}{|X|}{- Include: nhập tên nhà sản xuất}\\
+\hline
+
+\end{tabularx}
+\caption{Mô tả use case sửa thông tin thiết bị.}
+\end{table}
+
+\begin{figure}[htp]
+\centering
+\includegraphics[scale=1]{hinh/addrelay.png}
+\caption{Use case tạo relay.}
+\end{figure}
+
+\begin{table}[!htp]
+\centering
+\begin{tabularx}{\linewidth}{ |c||c|c|c| }
+\hline
+ID & Name & Created by & Created at\\
+UC\_RELAY\_001 & Tạo relay & Tạ Chí Tây & 20/3/2017\\
+\hline
+\multicolumn{4}{|X|}{\textbf{Actor:} Thành viên }\\
+\hline
+\multicolumn{4}{|X|}{\textbf{Mô tả ngắn gọn:} người dùng thêm relay mới vào hệ thống. }\\
+\hline
+\multicolumn{4}{|X|}{\textbf{Tiền điều kiện:} người dùng đã đăng nhập, vào xem thông tin thiết bị.}\\
+\hline
+\multicolumn{4}{|X|}{\textbf{Kịch bản chính:}}\\
+\multicolumn{4}{|X|}{1.	Người dùng nhấn vào nút tạo mới relay trên trang thông tin của thiết bị.}\\
+\multicolumn{4}{|X|}{ 
+2.	Người dùng nhập các dữ liệu cân thiết: ID của relay trên thiết bị, tên, loại relay.}\\
+\multicolumn{4}{|X|}{
+3.	Hệ thống tạo một relay mới.}\\
+
+\multicolumn{4}{|X|}{4. Hệ thống thông báo người dùng đã thực hiện thành công.}\\
+\hline
+\multicolumn{4}{|X|}{\textbf{Kịch bản phụ:}}\\
+\multicolumn{4}{|X|}{2.1    Người dùng nhập thông tin sai hệ thống sẽ báo lỗi.}\\
+\hline
+
+\end{tabularx}
+\caption{Mô tả use case tạo relay.}
+\end{table}
+
+\begin{table}[!htp]
+\centering
+\begin{tabularx}{\linewidth}{ |c||c|c|c| }
+\hline
+ID & Name & Created by & Created at\\
+UC\_RELAY\_002 & Xóa relay & Tạ Chí Tây & 20/3/2017\\
+\hline
+\multicolumn{4}{|X|}{\textbf{Actor:} Thành viên }\\
+\hline
+\multicolumn{4}{|X|}{\textbf{Mô tả ngắn gọn:} người dùng xóa relay trên thiết bị.}\\
+\hline
+\multicolumn{4}{|X|}{\textbf{Tiền điều kiện:} người dùng đã đăng nhập thành công và đang ở trang hiển thị thông tin thiết bị (có danh sách các relay).}\\
+\hline
+\multicolumn{4}{|X|}{\textbf{Kịch bản chính:}}\\
+\multicolumn{4}{|X|}{1. Người dùng nhấn nút xóa một relay trong danh sách.}\\
+\multicolumn{4}{|X|}{
+2.	 Hệ thống hiển thị thông báo xác nhận xóa relay của người dùng.}\\
+\multicolumn{4}{|X|}{
+3.	Người dùng chọn OK để xóa đi relay muốn xóa.}\\
+\hline
+\multicolumn{4}{|X|}{\textbf{Kịch bản phụ:}}\\
+\multicolumn{4}{|X|}{2.1    Người dùng chọn hủy để hủy xóa relay.}\\
+\hline
+\end{tabularx}
+\caption{Mô tả use case xóa relay.}
+\end{table}
+
+\begin{table}[!htp]
+\centering
+\begin{tabularx}{\linewidth}{ |c||c|c|c| }
+\hline
+ID & Name & Created by & Created at\\
+UC\_RELAY\_003 & Sửa relay & Tạ Chí Tây & 20/3/2017\\
+\hline
+\multicolumn{4}{|X|}{\textbf{Actor:} Thành viên }\\
+\hline
+\multicolumn{4}{|X|}{\textbf{Mô tả ngắn gọn:} người dùng sửa trạng thái của relay trên thiết bị.}\\
+\hline
+\multicolumn{4}{|X|}{\textbf{Tiền điều kiện:} người dùng đã đăng nhập thành công và đang ở trang hiển thị thông tin thiết bị (có danh sách các relay).}\\
+\hline
+\multicolumn{4}{|X|}{\textbf{Kịch bản chính:}}\\
+\multicolumn{4}{|X|}{1. Người dùng nhấn nút chuyển trạng thái của relay hoặc nhấn nút chuyển ưu tiên relay thành Primary/Secondary.}\\
+\multicolumn{4}{|X|}{
+2.	 Hệ thống hiển thị thông báo xác nhận thay đổi trên relay của người dùng.}\\
+\multicolumn{4}{|X|}{
+3.	Người dùng chọn OK để xác nhận sự thay đổi muốn thực hiện.}\\
+\hline
+\multicolumn{4}{|X|}{\textbf{Kịch bản phụ:}}\\
+\multicolumn{4}{|X|}{2.1    Người dùng chọn hủy để hủy thao tác thay đổi relay.}\\
+\hline
+\end{tabularx}
+\caption{Mô tả use case sửa relay.}
+\end{table}
+
+\begin{figure}[htp]
+\centering
+\includegraphics[scale=.7]{hinh/sttmv.png}
+\caption{Use case thêm mùa vụ mới.}
+\end{figure}
+
+\begin{table}[!htp]
+\centering
+\begin{tabularx}{\linewidth}{ |c||c|c|c| }
+\hline
+ID & Name & Created by & Created at\\
+UC\_CROP\_001 & Tạo mùa vụ mới & Tạ Chí Tây & 20/3/2017\\
+\hline
+\multicolumn{4}{|X|}{\textbf{Actor:} Thành viên }\\
+\hline
+\multicolumn{4}{|X|}{\textbf{Mô tả ngắn gọn:} người dùng tạo thêm mùa vụ mới cho thiết bị. }\\
+\hline
+\multicolumn{4}{|X|}{\textbf{Tiền điều kiện:} người dùng đã đăng nhập, vào xem thông tin của thiết bị.}\\
+\hline
+\multicolumn{4}{|X|}{\textbf{Kịch bản chính:}}\\
+\multicolumn{4}{|X|}{1. Người dùng khởi động khung thêm thiết thị mới bằng cách nhấn vào nút thêm thiết bị mới trong trang thông tin thiết bị của mình.}\\
+\multicolumn{4}{|X|}{
+2.	Người dùng nhập thông tin của mùa vụ mới vào và nhấn OK.}\\
+\multicolumn{4}{|X|}{
+3.	Hệ thống thực hiện lưu thông tin mùa vụ mới vào cơ sở dữ liệu.}\\
+\multicolumn{4}{|X|}{
+4. Hệ thống thông báo người dùng đã thực hiện thêm mùa vụ mới vào thành công.}\\
+\hline
+\multicolumn{4}{|X|}{\textbf{Kịch bản phụ:}}\\
+\multicolumn{4}{|X|}{
+2.1    Người dùng nhập thông tin sai hệ thống sẽ báo lỗi.}\\
+\hline
+\multicolumn{4}{|X|}{\textbf{Các quan hệ khác:}}\\
+\multicolumn{4}{|X|}{- Include: nhập tên mùa vụ. / - Include: nhập loại vây trồng. / - Include: nhập ngày bắt đầu. / - Include: nhập ngày kết thúc. / - Include: nhập thời gian gửi dữ liệu. / - Include: nhập kiểu thủy canh.}\\
+\hline
+
+\end{tabularx}
+\caption{Mô tả use case tạo mùa vụ mới.}
+\end{table}
+
+\begin{figure}[htp]
+\centering
+\includegraphics[scale=.8]{hinh/sttmv.png}
+\caption{Use case sửa thông tin mùa vụ.}
+\end{figure}
+
+\begin{table}[!htp]
+\centering
+\begin{tabularx}{\linewidth}{ |c||c|c|c| }
+\hline
+ID & Name & Created by & Created at\\
+UC\_CROP\_003 & Sửa thông tin mùa vụ & Tạ Chí Tây & 20/3/2017\\
+\hline
+\multicolumn{4}{|X|}{\textbf{Actor:} Thành viên }\\
+\hline
+\multicolumn{4}{|X|}{\textbf{Mô tả ngắn gọn:} người dùng sửa thông tin mùa vụ hiện có. }\\
+\hline
+\multicolumn{4}{|X|}{\textbf{Tiền điều kiện:} người dùng đã đăng nhập, vào xem thông tin mùa vụ.}\\
+\hline
+\multicolumn{4}{|X|}{\textbf{Kịch bản chính:}}\\
+\multicolumn{4}{|X|}{ 1.	Người dùng khởi động khung chỉnh sửa thông tin mùa vụ bằng cách nhấn vào nút chỉnh sửa.}\\
+\multicolumn{4}{|X|}{
+2.	Người dùng nhập thông tin cập nhật mới của mùa vụ và nhấn nút cập nhập.}\\
+\multicolumn{4}{|X|}{
+3.	Hệ thống cập nhật thông tin mùa vụ mới đã được người dùng nhập.}\\
+\multicolumn{4}{|X|}{4. Hệ thống thông báo người dùng đã thực hiện thành công.}\\
+\hline
+\multicolumn{4}{|X|}{\textbf{Kịch bản phụ:}}\\
+\multicolumn{4}{|X|}{2.1    Người dùng nhập thông tin sai hệ thống sẽ báo lỗi.}\\
+\hline
+\multicolumn{4}{|X|}{\textbf{Các quan hệ khác:}}\\
+\multicolumn{4}{|X|}{- Include: nhập tên mùa vụ. / - Include: nhập loại vây trồng. / - Include: nhập ngày bắt đầu. / - Include: nhập ngày kết thúc./ - Include: nhập thời gian gửi dữ liệu. / - Include: nhập kiểu thủy canh}\\
+\hline
+
+\end{tabularx}
+\caption{Mô tả use case sửa thông tin mùa vụ.}
+\end{table}
+
+\begin{table}[!htp]
+\centering
+\begin{tabular}{ |c||c|c|c| }
+\hline
+ID & Name & Created by & Created at\\
+UC\_CROP\_002 & Xóa mùa vụ & Tạ Chí Tây & 20/3/2017\\
+\hline
+\multicolumn{4}{|l|}{\textbf{Actor:} Thành viên }\\
+\hline
+\multicolumn{4}{|l|}{\makecell[l]{\textbf{Mô tả ngắn gọn:} người dùng xóa mùa vụ của mình. }}\\
+\hline
+\multicolumn{4}{|l|}{\textbf{Tiền điều kiện:} người dùng đã đăng nhập, vào xem thông tin của thiết bị.}\\
+\hline
+\multicolumn{4}{|l|}{\textbf{Kịch bản chính:}}\\
+\multicolumn{4}{|l|}{ \makecell[l]{1.	Người dùng nhấn nút xóa một mùa vụ trong danh sách các mùa vụ đã có.}}\\
+\multicolumn{4}{|l|}{ \makecell[l]{
+2.	 Hệ thống hiển thị thông báo xác nhận xóa mùa vụ của người dùng.}}\\
+
+\multicolumn{4}{|l|}{\makecell[l]{
+3.	Người dùng chọn OK để xóa mùa vụ.}}\\
+
+\multicolumn{4}{|l|}{\makecell[l]{
+4. Hệ thống xóa mùa vụ được chọn.}}\\
+
+\multicolumn{4}{|l|}{\makecell[l]{
+5. Hệ thống thông báo xóa thành công.}}\\
+
+\hline
+\multicolumn{4}{|l|}{\textbf{Kịch bản phụ:}}\\
+\multicolumn{4}{|l|}{\makecell[l]{3.1    Người dùng chọn hủy để hủy xóa mùa vụ.}}\\
+
+\hline
+
+\end{tabular}
+\caption{Mô tả use case xóa mùa vụ.}
+\end{table}
+
+\begin{figure}[htp]
+\centering
+\includegraphics[scale=.8]{hinh/cdctmv.png}
+\caption{Use case cài đặt chương trình mùa vụ.}
+\end{figure}
+
+\begin{table}[!htp]
+\centering
+\begin{tabular}{ |c||c|c|c| }
+\hline
+ID & Name & Created by & Created at\\
+UC\_CROP\_004 & Cài đặt chương trình & Tạ Chí Tây & 20/3/2017\\
+\hline
+\multicolumn{4}{|l|}{\textbf{Actor:} Thành viên }\\
+\hline
+\multicolumn{4}{|l|}{\makecell[l]{\textbf{Mô tả ngắn gọn:} người dùng cài đặt lịch trình cho mùa vụ. }}\\
+\hline
+\multicolumn{4}{|l|}{\textbf{Tiền điều kiện:} người dùng đã đăng nhập, vào xem thông tin mùa vụ.}\\
+\hline
+\multicolumn{4}{|l|}{\textbf{Kịch bản chính:}}\\
+\multicolumn{4}{|l|}{ \makecell[l]{1.	Người dùng mở khung cài đặt bằng cách nhấn vào nút Edit bên lịch trình.}}\\
+\multicolumn{4}{|l|}{ \makecell[l]{
+2.	Người dùng nhập các dữ liệu cân thiết.}}\\
+\multicolumn{4}{|l|}{\makecell[l]{
+3.	Hệ thống tạo một lịch trình mới, lưu vào database và gửi xuống thiết bị.}}\\
+
+\multicolumn{4}{|l|}{\makecell[l]{4. Hệ thống thông báo người dùng đã thực hiện thành công.}}\\
+\hline
+\multicolumn{4}{|l|}{\textbf{Kịch bản phụ:}}\\
+\multicolumn{4}{|l|}{\makecell[l]{2.1    Người dùng nhập thông tin sai hệ thống sẽ báo lỗi.}}\\
+\hline
+
+\end{tabular}
+\caption{Mô tả use case cài đặt chương trình cho mùa vụ.}
+\end{table}
+
+\begin{figure}[htp]
+\centering
+\includegraphics[scale=.8]{hinh/cdtn.png}
+\caption{Use case cài đặt ngưỡng dữ liệu.}
+\end{figure}
+
+\newpage
+\begin{table}[!htp]
+\centering
+\begin{tabularx}{\linewidth}{ |c||c|c|c| }
+\hline
+ID & Name & Created by & Created at\\
+UC\_CROP\_005 & Cài đặt ngưỡng dữ liệu & Tạ Chí Tây & 20/3/2017\\
+\hline
+\multicolumn{4}{|X|}{\textbf{Actor:} Thành viên }\\
+\hline
+\multicolumn{4}{|X|}{\textbf{Mô tả ngắn gọn:} người dùng cài đặt ngưỡng cảnh báo dữ liệu. }\\
+\hline
+\multicolumn{4}{|X|}{\textbf{Tiền điều kiện:} người dùng đã đăng nhập, vào xem thông tin mùa vụ.}\\
+\hline
+\multicolumn{4}{|X|}{\textbf{Kịch bản chính:}}\\
+\multicolumn{4}{|X|}{ 1.	Người dùng nhấn vào nút Edit bên ô hiển thị ngưỡng để mở ô cài đặt.}\\
+\multicolumn{4}{|X|}{
+2.	Người dùng nhập các dữ liệu cân thiết.}\\
+\multicolumn{4}{|X|}{
+3.	Hệ thống tạo một ngưỡng mới.}\\
+
+\multicolumn{4}{|X|}{4. Hệ thống thông báo người dùng đã thực hiện thành công.}\\
+\hline
+\multicolumn{4}{|X|}{\textbf{Kịch bản phụ:}}\\
+\multicolumn{4}{|X|}{2.1    Người dùng nhập thông tin sai hệ thống sẽ báo lỗi.}\\
+\hline
+
+\end{tabularx}
+\caption{Mô tả use case cài đặt ngưỡng dữ liệu.}
+\end{table}
+
+\subsubsection{Thiết kế database}
+
+\begin{landscape}
+\begin{figure}[b]
+\includegraphics[scale=1.1]{hinh/database.jpg}
+\caption{ Thiết kế database}
+\label{xyz}
+\end{figure}
+\end{landscape}
+
+\subsubsection{Thiết kế API}
+\begin{center}
+\begin{figure}[htp]
+\begin{center}
+\includegraphics[scale=.9]{hinh/server.png}
+\end{center}
+\caption{Mô hình cụm server}
+\label{refhinh1}
+\end{figure}
+\end{center}
+
+\noindent API được thiết kế theo chuẩn RESTful
+\begin{center}
+\begin{figure}[htp]
+\begin{center}
+\includegraphics[scale=.5]{hinh/RESTful-API-design.jpg}
+\end{center}
+\caption{Mô hình RESTful API}
+\label{refhinh1}
+\end{figure}
+\end{center}
+
+\subsection{Ứng dụng di động}
+\noindent Ứng dụng được viết trên framework Ionic 2, sử dụng angular 2 và có thể chạy trên android hoặc iOS (hiện tại nhóm mới thử nghiệm trên android) 
+\begin{itemize}
+\item Ứng dụng nhằm mục đích giúp người dùng có thể theo dõi trạng thái của hệ thống một cách nhanh chóng.
+\item Chức năng chính:
+\begin{itemize}
+\item Thêm một board mạch mới bằng cách quét mã QR. 
+\item Xem thông tin tình trạng hệ thống hiện tại (nhiệt độ, độ ẩm, cường độ ánh sáng, nồng độ dinh dưỡng).
+\item Xem số lượng và trạng thái các relay trên board. 
+\item Có thể tắt, mở các relay trên board.
+\end{itemize}
+\item Cách thức hoạt động: truy vấn API của web service để lấy và gửi thông tin.
+\end{itemize}
+
+
+
+\subsection{Giao tiếp giữa Board điều khiển và Web}
+\subsubsection{Giao thức}
+
+\begin{center}
+\begin{figure}[htp]
+\begin{center}
+\includegraphics[scale=.5]{hinh/system-protocol.png}
+\end{center}
+\caption{Mô hình các giao thức trong hệ thống}
+\label{refhinh1}
+\end{figure}
+\end{center}
+
+\noindent Sử dụng giao thức MQTT cho cả hai chiều tương tác là gửi dữ liệu từ thiết bị lên và từ server gửi xuống.
+\subsubsection{Cấu trúc các gói tin}
+\noindent Các bảng sau mô tả cụ thể cấu trúc các gói tin:\\
+\\
+\begin{table}[!htp]
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline 
+ & Số thứ tự & \multicolumn{4}{|c|}{Cấu trúc gói tin} \\ 
+\hline 
+Trường & SN & MAC & CMD\_ID & DATA\_LENGTH  & DATA \\ 
+\hline 
+\makecell{Kích thước\\ (byte)} & 4 & 12 & 2 & 4 & >0 \\ 
+\hline 
+Mô tả & \makecell{số thứ tự \\ gói tin\\ gửi và nhận} & địa chỉ MAC & định danh gói tin & độ dài gói tin & dữ liệu \\ 
+\hline 
+\end{tabular} 
+\caption{Cấu trúc chung của các gói tin}
+\end{table}
+\\
+\\
+\noindent Chi tiết các gói tin
+
+
+\begin{table}[!htp]
+\centering
+\begin{tabular}{|c|c|c|c|}
+\hline 
+Gửi từ & \multicolumn{3}{c|}{Server} \\ 
+\hline 
+CMD\_ID & \multicolumn{3}{c|}{01} \\ 
+\hline 
+DATA\_LENGTH & \multicolumn{3}{c|}{0034} \\ 
+\hline 
+Trường dữ liệu & thời gian bắt đầu & thời gian kết thúc & thời gian gửi dữ liệu \\ 
+\hline 
+Kích thước (byte) & 14 & 14 & 6 \\ 
+\hline 
+Cấu trúc & yyyymmddhhmmss & yyyymmddhhmmss & hhmmss \\ 
+\hline 
+Mô tả, ví dụ & \makecell{yyyy: năm \\
+mm: tháng \\ dd: ngày \\ hh: giờ \\ mm: phút \\ ss: giây} &  &  \\ 
+\hline 
+\end{tabular} 
+\caption{Cấu hình}
+\end{table}
+
+\begin{table}[!htp]
+\centering
+\begin{tabular}{|c|c|c|c|c|}
+\hline 
+Gửi từ & \multicolumn{4}{c|}{Server} \\ 
+\hline 
+CMD\_ID & \multicolumn{4}{c|}{02} \\ 
+\hline 
+DATA\_LENGTH & \multicolumn{4}{c|}{(2+2+6x4xSCH\_NUM)xIO\_NUM}\\ 
+\hline 
+Trường dữ liệu & IO\_NUM & IO\_ID & SCH\_NUM & lịch trình \\ 
+\hline 
+Kích thước (byte) & 2 & 2 & 2 & 6x4xSCH\_NUM \\ 
+\hline 
+Cấu trúc & XX & XX & XX & 4x[hhmmss]xSCH\_NUM \\ 
+\hline 
+Mô tả, ví dụ & \makecell{số lượng \\actuator} & \makecell{ID actuator \\ trên board} & số lịch trình & hhmmss: 050000 \\ 
+\hline 
+\end{tabular} 
+\caption{Lịch trình cho actuator}
+\end{table}
+
+\begin{table}[!htp]
+\centering
+\begin{tabular}{|c|c|c|}
+\hline 
+Gửi từ & \multicolumn{2}{c|}{Server} \\ 
+\hline 
+CMD\_ID & \multicolumn{2}{c|}{03} \\ 
+\hline 
+DATA\_LENGTH & \multicolumn{2}{c|}{0003} \\ 
+\hline 
+Trường dữ liệu & IO\_ID & lệnh điều khiển \\ 
+\hline 
+Kích thước (byte) & 2 & 1 \\ 
+\hline 
+Cấu trúc & XX & X \\ 
+\hline 
+Mô tả, ví dụ &  & \makecell{giá trị: 0/1 \\ 0: tắt \\ 1: bật} \\ 
+\hline 
+\end{tabular} 
+\caption{Điều khiển actuator}
+\end{table}
+
+\begin{table}[!htp]
+\centering
+\begin{tabular}{|c|c|c|c|c|}
+\hline 
+Gửi từ & \multicolumn{4}{c|}{Board điều khiển} \\ 
+\hline 
+CMD\_ID & \multicolumn{4}{c|}{04} \\ 
+\hline 
+DATA\_LENGTH & \multicolumn{4}{c|}{0012} \\ 
+\hline 
+Trường dữ liệu & nhiệt độ & độ ẩm & ánh sáng & ppm \\ 
+\hline 
+Kích thước (byte) & 2 & 2 & 4 & 4 \\ 
+\hline 
+Cấu trúc & XX & XX & XXXX & XXXX \\ 
+\hline 
+\end{tabular} 
+\caption{Dữ liệu gửi từ các cảm biến}
+\end{table}
+
+\begin{table}[!htp]
+\centering
+\begin{tabular}{|c|c|}
+\hline 
+Gửi từ & Board điều khiển \\ 
+\hline 
+CMD\_ID & 05 \\ 
+\hline 
+DATA\_LENGTH & 0014 \\ 
+\hline 
+Trường dữ liệu & REAL\_TIME \\ 
+\hline 
+Kích thước (byte) & 14 \\ 
+\hline 
+Cấu trúc & yyyymmddhhmmss \\ 
+\hline 
+\end{tabular} 
+\caption{Đồng bộ thời gian thực}
+\end{table}
+
+\begin{table}[!htp]
+\centering
+\begin{tabular}{|c|c|c|c|}
+\hline 
+Gửi từ & \multicolumn{3}{c|}{Server} \\ 
+\hline 
+CMD\_ID & \multicolumn{3}{c|}{06} \\ 
+\hline 
+DATA\_LENGTH & \multicolumn{3}{c|}{0004} \\ 
+\hline 
+Trường dữ liệu & IO\_ID & lệnh điều khiển & mức ưu tiên \\ 
+\hline 
+Kích thước (byte) & 2 & 1 & 1 \\ 
+\hline 
+Cấu trúc & XX & X & X \\ 
+\hline 
+Mô tả, ví dụ & \makecell{11 - 19: bơm nước \\ 21 - 29: đèn \\ 31 - 39: quạt \\ 41 - 49: bơm oxy} & \makecell{0: thêm actuator \\ 1: xóa actuator} & \makecell{0: primary \\ 1: secondary} \\ 
+\hline 
+\end{tabular} 
+\caption{Thêm bớt actuator}
+\end{table}
+
+\begin{table}[!htp]
+\centering
+\begin{tabular}{|c|c|}
+\hline 
+Gửi từ & Board điều khiển \\ 
+\hline 
+CMD\_ID & 07 \\ 
+\hline 
+DATA\_LENGTH & 0001 \\ 
+\hline 
+Trường dữ liệu & HANDLED \\ 
+\hline 
+Kích thước (byte) & 1 \\ 
+\hline 
+Cấu trúc & X \\ 
+\hline 
+Mô tả, ví dụ & \makecell{0: gói tin sai, không nhận được \\ 1: xử lý thành công gói tin} \\ 
+\hline 
+\end{tabular} 
+    \caption{Gói tin phản hồi}
+\end{table}
+
+\begin{table}[!htp]
+\centering
+\begin{tabular}{|c|c|}
+\hline 
+Gửi từ & Server \\ 
+\hline 
+CMD\_ID & 08 \\ 
+\hline 
+DATA\_LENGTH & 0001 \\ 
+\hline 
+Trường dữ liệu & ACTIVE \\ 
+\hline 
+Kích thước (byte) & 1 \\ 
+\hline 
+Cấu trúc & X \\ 
+\hline 
+Mô tả, ví dụ & \makecell{0: thêm board mới \\ 1: xóa board} \\ 
+\hline 
+\end{tabular} 
+\caption{Thêm, bớt một board điều khiển}
+\end{table}
+
+\newpage
+\section{HIỆN THỰC HỆ THỐNG}
+
+\subsection{Hệ thống Board điều khiển}
+\subsubsection{Cài đặt phần mềm}
+\begin{itemize}
+\item Môi trường lập trình ứng dụng (IDE) ở đây sử dụng Visual Studio 2017\
+download từ trang chủ Microsoft.
+\begin{center}
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[scale=0.4]{hinh/vs.png}
+\end{center}
+\caption{ Visual Studio 2017}
+\end{figure}
+\end{center}
+Sau khi cài đặt Visual Studio, tải plugin Arduino từ https://marketplace.visualstudio.com/
+\item Cài đặt Sublime Text để lập trình giao diện web. \\
+Link download https://www.sublimetext.com/
+\begin{center}
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[scale=0.4]{hinh/sublime.png}
+\end{center}
+\caption{Sublime Text 2}
+\end{figure}
+\end{center}
+\end{itemize}
+\newpage
+\subsubsection{Sử dụng cảm biến}
+\begin{itemize}
+\item Nhiệt độ, độ ẩm
+\begin{center}
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[scale=0.4]{hinh/dht.png}
+\end{center}
+\caption{Sublime Text 2}
+\end{figure}
+\end{center}
+
+\begin{itemize}
+\item Thư viện giao tiếp DHT có sẵn trên github.
+\item Như đã trình bày trong phần thiết kế,dòng cấp cho DHT 11 là 3-5V.
+\item Dữ liệu đầu ra là digital
+\item Thư viện tải về có kèm theo ví dụ, dưới đây là kết quả:
+\begin{center}
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[scale=0.4]{hinh/dhtexample.png}
+\end{center}
+\caption{Kết quả đọc DHT}
+\end{figure}
+\end{center}
+\end{itemize}
+\subsubsection{Thời gian thực(RTC-DS1307)} 
+\begin{itemize}
+\item Nhắc lại về I2C: I2C là viết tắt của "Inter-Integrated Circuit", một chuẩn giao tiếp được phát minh bởi Philips’ semiconductor division (giờ là NXP) nhằm đơn giản hóa việc trao đổi dữ liệu giữa các ICs. Đôi khi nó cũng được gọi là Two Wire Interface (TWI) vì chỉ sử dụng 2 kết nối để truyền tải dữ liệu, 2 kết nối của giao tiếp I2C gồm: SDA (Serial Data Line) và SCL (Serial Clock Line).
+\item Trên board Arduino UNO, SDA là chân analog 4, SCL là chân analog 5.
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[scale=0.5]{hinh/unoI2C.png}
+
+\end{center}
+\caption{Pin I2C trên board Arduino Uno.}
+\end{figure}
+\item Lưu ý: Vì Arduino sử dụng điện áp 5V nên các thiết bị khác cũng phải sử dụng mức này.
+\item Sử dụng thư viện I2C-\textbf{Wire.h}.
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[scale=0.8]{hinh/wire.png}
+\end{center}
+\caption{Một số hàm trong thư viện \textbf{Wire.h}.}
+\end{figure}
+\item Chúng ta sẽ lắp module Real time clock với Arduino như sau:
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.8]{hinh/lapdatRTC.png}
+\end{center}
+\caption{Sơ đồ lắp đặt RTC với board Uno}
+\end{figure}
+\item Đây là các Timekeeper registers của DS1307, chúng ta sẽ dựa vào bảng này để read/write IC  DS1307 qua I2C:
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.8]{hinh/timekeeper.png}
+\end{center}
+\caption{DS1307 Timekeeper}
+\end{figure}
+\end{itemize}
+
+\subsubsection{Sử dụng Relay}
+\begin{itemize}
+\item Thông số của một relay\\
+Một module rơ-le được tạo nên bởi 2 linh kiện thụ động cơ bản là rơ-le và transistor, nên module rơ-le có những thông số của chúng:
+\begin{itemize}%1.2.3
+\item Hiệu điện thế kích tối ưu
+\item Các mức hiệu điện thế tối đa và cường độ dòng điện tối đa của đồ dùng điện khi nối vào module rơ-le
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.8]{hinh/relay.png}
+\end{center}
+\caption{Thông số trên relay.}
+\end{figure}
+\begin{itemize}%1.2.3.4
+\item 10A - 250VAC: Cường độ dòng điện tối đa qua các tiếp điểm của rơ-le với hiệu điện thế <= 250V (AC) là 10A.
+\item 10A - 30VDC: Cường độ dòng điện tối đa qua các tiếp điểm của rơ-le với hiệu điện thế <= 30V (DC) là 10A.
+\item 10A - 30VDC: Cường độ dòng điện tối đa qua các tiếp điểm của rơ-le với hiệu điện thế <= 30V (DC) là 10A.
+\item 10A - 28VDC: Cường độ dòng điện tối đa qua các tiếp điểm của rơ-le với hiệu điện thế <= 28V (DC) là 10A.
+\item SRD-05VDC-SL-C: Hiện điện thế kích tối ưu là 5V.
+\end{itemize}%1.2.3.4
+
+\end{itemize}%1.2.3
+
+
+\item Cách sử dụng Relay
+\begin{itemize}
+\item Relay bình thường gồm có 6 chân. Trong đó có 3 chân để kích, 3 chân còn lại nối với đồ dùng điện công suất cao.
+\item 3 chân dùng để kích
+\begin{itemize}
+\item +: cấp hiệu điện thế kích tối ưu vào chân này.
+\item - : nối với cực âm
+\item S: chân tín hiệu, tùy vào loại module rơ-le mà nó sẽ làm nhiệm vụ kích rơ-le
+\end{itemize}
+
+\item 3 chân còn lại nối với đồ dùng điện công suất cao
+\begin{itemize}
+\item COM: chân nối với 1 chân bất kỳ của đồ dùng điện, nhưng mình khuyên bạn nên mắc vào đây chân lửa (nóng) nếu dùng hiệu điện thế xoay chiều và cực dương nếu là hiệu điện một chiều.
+\item ON hoặc NO: chân này bạn sẽ nối với chân lửa (nóng) nếu dùng điện xoay chiều và cực dương của nguồn nếu dòng điện một chiều.
+\item OFF hoặc NC: chân này bạn sẽ nối chân lạnh (trung hòa) nếu dùng điện xoay chiều và cực âm của nguồn nếu dùng điện một chiều.
+\end{itemize}
+\end{itemize}
+
+\end{itemize}%1.2
+\end{itemize}%1
+
+\subsubsection{Sử dụng module wifi ESP8266}
+\begin{itemize}
+\item Cách nạp firmware cho Esp8266V1.\\
+Để nạp firmware cho Esp8266, sử dụng module PL2102-USB2UART
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.8]{hinh/cp2102.png}
+\end{center}
+\caption{Module CP2102-USB2UART.}
+\end{figure}
+Nối chân(pin) giữa Esp8266 với CP2102:
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.8]{hinh/noichanesp.png}
+\end{center}
+\caption{Bảng nối chân Esp với CP2102.}
+\end{figure}
+\textbf{Lưu ý}:ESP8266V1 hoạt động ở mức điện áp 3.3V\\
+Sau khi nối chân ta tiến hành nạp code tương tự với board Arduino Uno.
+\item Lập trình Esp8266\\
+Để lập trình cho Esp8266, trước tiên phải cài gói thư viện dành cho board này\
+Đây là thư viện mã nguồn mở có sẵn trên github.\\
+%\textit{ http://arduino.esp8266.com/stable/package_esp8266com_index.json}
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.8]{hinh/caidatesp.png}
+\end{center}
+\caption{Step 1.}
+\end{figure}
+
+Tiếp theo vào \textbf{Tool/BoardBoards/Manager}.
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=1]{hinh/caidatesp2.png}
+\end{center}
+\caption{Step 2.}
+\end{figure}
+Đợi một lát để chương trình tìm kiếm. Ta kéo xuống và click vào ESP8266 by ESP8266 Community, click vào Install.\
+Chờ phần mềm tự động download và cài đặt.
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.7]{hinh/caidatesp3.png}
+\end{center}
+\caption{Step 3.}
+\end{figure}
+Kết nối mudule USB-to-UART vào máy tính. Vào Tool/Board/Generic ESP8266 Module, chọn cổng COM tương ứng với module USB-to-UART tương ứng.
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.7]{hinh/caidatesp4.png}
+\end{center}
+\caption{Step 4.}
+\end{figure}
+\end{itemize}
+\subsubsection{Cấu trúc thư mục mã nguồn}
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.9]{hinh/structure.png}
+\end{center}
+\caption{Cấu trúc thư mục mã nguồn.}
+\end{figure}
+Mã nguồn được chia làm 2 thành phần chính:
+\begin{itemize}
+\item Thư mục Arduino Uno: chứa mã nguồn thực thi chương trình nạp lên board Arduino Uno
+\item Thư mục ESP8266: chứa mã nguồn thực thi chường trình nạp lên board ESP8266.
+\item Trong mỗi thư mục file có đuôi \textbf{ino} là file thực thi chính, còn lại là các lớp(class).
+\end{itemize}
+\subsubsection{Hoạt động của Esp8266}
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.9]{hinh/espweb.png}
+\end{center}
+\caption{Giao diện web của esp8266.}
+\end{figure}
+\noindent Khi triển khai thiết bị, để thiết bị wifi Esp8266 cần được cấu hình để có thể\
+tham gia vào mạng internet.\\
+Để thực hiện chức năng này module Esp8266 cần hoạt động ở hai chế độ
+\begin{itemize}
+\item Mqtt Client-ở chế độ này nó thực hiện chức năng:
+\begin{itemize}
+\item Hoạt động ở chế độ STA (station): là một wifi client truy cập vào điểm phát wifi\
+gần đó.
+\item Là một \textbf{MQTT} client trao đổi thông tin với Web server (cũng là một MQTT\
+client)
+\item Kết nối với mạch điều khiển Arduino Uno thông qua UART để trao đổi một số thông tin: dữ liệu các sensor, dữ liệu về lịch trình hoạt đông các bộ điều khiển, thời gian thưc.
+\end{itemize}
+\item Web server-thực hiện các chức năng:
+\begin{itemize}
+\item Hoạt động ở chế độ AP(Access Point), nó sẽ phát wifi, laptop có thể truy cập wifi của nó.
+\item Là một Web server đơn giản cho mục đích cấu hình wifi để Esp8266 có thể tham gia vào internet.
+\end{itemize}
+\item Chế độ tự chuyển chế độ giữa STA và AP.
+\end{itemize}
+
+\subsubsection{Thiết kế mạch điều khiển}
+\begin{itemize}
+\item Sơ đồ nguyên lí (Schematic)
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.8]{hinh/schematic.png}
+\end{center}
+\caption{Sơ đồ nguyên lí mạch điều khiển.}
+\end{figure}
+\newpage
+\item Sơ đồ mạch in 3D (PCB)
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.8]{hinh/pcb.png}
+\end{center}
+\caption{Sơ đồ mạch in.}
+\end{figure}
+\end{itemize}
+
+\subsection{Ứng dụng web}
+\subsubsection{Hiện thực server API}
+
+
+\noindent Mẫu dữ liệu trả về cho tất cả các API:
+\begin{itemize}
+\item Không có data:\\
+\{\\
+\indent success: success,\\
+\indent message: message\\
+\}
+\item Có data:\\
+\{\\
+\indent success: success,\\
+\indent data: data (*),\\
+\indent message: message\\
+\}
+
+\end{itemize}
+Trong đó success nhận giá trị true nếu request được xử lý thành công và fail nếu thất bại.
+\noindent API được thiết kế cho các resource:
+
+
+\begin{itemize}
+\item Người dùng (User) 
+\begin{itemize}
+\item Lấy thông tin người dùng: 
+	\begin{itemize}
+	\item Phương thức: GET
+	\item URL: /user/info
+	\item Yêu cầu đăng nhập: có
+	\item Quyền truy cập: member
+	\item Dữ liệu gửi lên: \{ user.id: 12 \}
+	\item Dữ liệu trả về (*): thông tin của người dùng (không chứa mật khẩu và token kích hoạt).
+	\end{itemize}
+
+\item Kiểm tra email mới có hợp lệ không: 
+	\begin{itemize}
+	\item Phương thức: POST
+	\item URL: /user/checkemail
+	\item Yêu cầu đăng nhập: không
+	\item Quyền truy cập: không yêu cầu
+	\item Dữ liệu gửi lên: \{ email: "email" \}
+	\end{itemize}
+	
+\item Đăng ký người dùng: 
+	\begin{itemize}
+	\item Phương thức: POST
+	\item URL: /user/register
+	\item Yêu cầu đăng nhập: không
+	\item Quyền truy cập: không yêu cầu
+	\item Dữ liệu gửi lên:\\ 
+		\{
+  			name: "name",\\
+  			password: "123",\\
+  			email: "email",\\
+  			phone: "12345"
+		\}
+
+	\end{itemize}
+	
+\item Đăng nhập: 
+	\begin{itemize}
+	\item Phương thức: POST
+	\item URL: /user/login
+	\item Yêu cầu đăng nhập: không
+	\item Quyền truy cập: không yêu cầu
+	\item Dữ liệu gửi lên:\\ 
+		\{
+  			password: "123",\\
+  			email: "email",
+		\}
+
+	\end{itemize}
+	
+\item Cập nhật thông tin người dùng: 
+	\begin{itemize}
+	\item Phương thức: PUT
+	\item URL: /user/update
+	\item Yêu cầu đăng nhập: có
+	\item Quyền truy cập: member
+	\item Dữ liệu gửi lên:\\ 
+		\{
+  			name: "name",\\
+  			email: "email",\\
+  			phone: "1234567"
+		\}
+
+	\end{itemize}
+	
+\item Thay đổi mật khẩu người dùng: 
+	\begin{itemize}
+	\item Phương thức: PUT
+	\item URL: /user/changepass
+	\item Yêu cầu đăng nhập: có
+	\item Quyền truy cập: member
+	\item Dữ liệu gửi lên:\\ 
+		\{
+  			currPass: "123",\\
+  			newPass: "567"
+		\}
+
+	\end{itemize}
+
+\item Reset mật khẩu người dùng:
+	\begin{itemize}
+	\item Phương thức: POST
+	\item URL: /user/resetpass
+	\item Yêu cầu đăng nhập: có
+	\item Quyền truy cập: member
+	\item Dữ liệu gửi lên:\\ 
+		\{
+  			email: "email"
+		\}
+	\end{itemize}
+
+\item Kích hoạt tài khoản người dùng:
+	\begin{itemize}
+	\item Phương thức: PUT
+	\item URL: /user/active
+	\item Yêu cầu đăng nhập: có
+	\item Quyền truy cập: member
+	\item Dữ liệu gửi lên:\\ 
+		\{
+  			email: "email",\\
+  			activeToken: "abc"
+		\}
+	\end{itemize}
+
+\item Chứng thực JWT token của người dùng:
+	\begin{itemize}
+	\item Phương thức: GET
+	\item URL: /user/verifytoken
+	\item Yêu cầu đăng nhập: không
+	\item Quyền truy cập: không yêu cầu
+	\item Dữ liệu gửi lên:\\ 
+		\{
+  			token: "abc"
+		\}
+	\end{itemize}
+
+\item Lấy danh sách tất cả người dùng:
+	\begin{itemize}
+	\item Phương thức: GET
+	\item URL: /user/all
+	\item Yêu cầu đăng nhập: có
+	\item Quyền truy cập: admin
+	\item Dữ liệu trả về: mảng các đối tượng người dùng
+	\end{itemize}
+
+\item Xóa người dùng:
+	\begin{itemize}
+	\item Phương thức: DELETE
+	\item URL: /user/delete
+	\item Yêu cầu đăng nhập: có
+	\item Quyền truy cập: admin
+	\item Dữ liệu gửi lên:\\ 
+		\{
+  			userId: 12
+		\}
+	\end{itemize}
+
+\item Lấy thông tin người dùng:
+	\begin{itemize}
+	\item Phương thức: GET
+	\item URL: /user/detail
+	\item Yêu cầu đăng nhập: có
+	\item Quyền truy cập: member
+	\item Dữ liệu gửi lên:\\ 
+		\{
+  			userId: 12
+		\}
+	\item Dữ liệu trả về: tất cả thông tin của người dùng (bao gồm mật khẩu và token kích hoạt).
+	\end{itemize}
+
+\item Cập nhật role của người dùng:
+	\begin{itemize}
+	\item Phương thức: PUT
+	\item URL: /user/detail
+	\item Yêu cầu đăng nhập: có
+	\item Quyền truy cập: admin
+	\item Dữ liệu gửi lên:\\ 
+		\{
+  			userId: 12, \\
+  			newRole: "mod"
+		\}
+	\end{itemize}
+
+\end{itemize}
+
+\item Board điều khiển (Device):
+\begin{itemize}
+\item Lấy tất cả board điều khiển:
+	\begin{itemize}
+	\item Phương thức: GET
+	\item URL: /device/all
+	\item Yêu cầu đăng nhập: có
+	\item Quyền truy cập: member
+	\item Dữ liệu gửi lên:\\ 
+		\{
+  			user.id: 12
+  		\}
+  	\item Dữ liệu trả về: mảng các đối tượng board điều khiển.
+	\end{itemize} 
+
+\item Lấy thông tin của các board đang chạy:
+	\begin{itemize}
+	\item Phương thức: GET
+	\item URL: /device/running
+	\item Yêu cầu đăng nhập: có
+	\item Quyền truy cập: member
+	\item Dữ liệu gửi lên:\\ 
+		\{
+  			user.id: 12
+  		\}
+  	\item Dữ liệu trả về: mảng các đối tượng board điều khiển đang chạy..
+	\end{itemize} 
+	
+\item Cập nhật trạng thái board điều khiển:
+	\begin{itemize}
+	\item Phương thức: PUT
+	\item URL: /device/status
+	\item Yêu cầu đăng nhập: có
+	\item Quyền truy cập: member
+	\item Dữ liệu gửi lên:\\ 
+		\{
+  			mac: "112233445566",\\
+  			newStatus: "running"
+  		\}
+	\end{itemize} 
+	
+\item Lấy thông tin của một board điều khiển:
+	\begin{itemize}
+	\item Phương thức: GET
+	\item URL: /device/one
+	\item Yêu cầu đăng nhập: có
+	\item Quyền truy cập: member
+	\item Dữ liệu gửi lên:\\ 
+		\{
+  			mac: "112233445566",
+  		\}
+  	\item Dữ liệu trả về: một đối tượng board điều khiển
+	\end{itemize} 
+
+\item Thêm board điều khiển mới:
+	\begin{itemize}
+	\item Phương thức: POST
+	\item URL: /device/add
+	\item Yêu cầu đăng nhập: có
+	\item Quyền truy cập: member
+	\item Dữ liệu gửi lên:\\ 
+		\{
+  			mac: "112233445566",\\
+  			name: "device 1",\\
+  			manufacture: "sony",\\
+  			status: "no connection",
+		\}
+	\end{itemize} 
+
+\item Thêm board điều khiển mới:
+	\begin{itemize}
+	\item Phương thức: POST
+	\item URL: /device/add
+	\item Yêu cầu đăng nhập: có
+	\item Quyền truy cập: member
+	\item Dữ liệu gửi lên:\\ 
+		\{
+  			mac: "112233445566",\\
+  			name: "device 1",\\
+  			manufacture: "sony",\\
+  			status: "no connection",
+		\}
+	\end{itemize} 
+
+
+\item Xóa board điều khiển:
+	\begin{itemize}
+	\item Phương thức: DELETE
+	\item URL: /device/delete
+	\item Yêu cầu đăng nhập: có
+	\item Quyền truy cập: member
+	\item Dữ liệu gửi lên:\\ 
+		\{
+  			mac: "112233445566"
+		\}
+	\end{itemize} 
+\end{itemize}
+
+\item Lịch trình (schedule)
+\begin{itemize}
+\item Lấy thông tin tất cả lịch trình hiện tại của một mùa vụ:
+	\begin{itemize}
+	\item Phương thức: GET
+	\item URL: /schedule/all
+	\item Yêu cầu đăng nhập: có
+	\item Quyền truy cập: member
+	\item Dữ liệu gửi lên:\\ 
+		\{
+  			cropId: 12
+		\}
+	\item Dữ liệu trả về: mảng các đối tượng lịch trình (schedule)
+	\end{itemize} 
+	
+\item Xóa một lịch trình:
+	\begin{itemize}
+	\item Phương thức: DELETE
+	\item URL: /schedule/delete
+	\item Yêu cầu đăng nhập: có
+	\item Quyền truy cập: member
+	\item Dữ liệu gửi lên:\\ 
+		\{
+  			cropId: 12,\\
+  			scheduleId: 12
+		\}
+	\end{itemize} 
+	
+\item Đồng bộ lịch trình hiện tại xuống thiết bị:
+	\begin{itemize}
+	\item Phương thức: GET
+	\item URL: /schedule/sync
+	\item Yêu cầu đăng nhập: có
+	\item Quyền truy cập: member
+	\item Dữ liệu gửi lên:\\ 
+		\{
+  			cropId: 12,\\
+  			mac: "112233445566"
+		\}
+	\end{itemize} 
+	
+\item Thêm vào một lịch trình cài đặt:
+	\begin{itemize}
+	\item Phương thức: POST
+	\item URL: /schedule/add
+	\item Yêu cầu đăng nhập: có
+	\item Quyền truy cập: member
+	\item Dữ liệu gửi lên:\\ 
+		\{
+  			cropId: 12,\\
+ 			actuatorId: 12,\\
+  			starttime: 030303,\\
+ 			endtime: 050505,\\
+  			intervaltime: 45,\\
+  			delaytime: 5
+		\}
+
+	\end{itemize} 
+\end{itemize}
+
+\item Ngưỡng dữ liệu (threshold):
+\begin{itemize}
+\item Lấy ngưỡng dữ liệu mới nhất:
+\begin{itemize}
+	\item Phương thức: GET
+	\item URL: /threshold/newest
+	\item Yêu cầu đăng nhập: có
+	\item Quyền truy cập: member
+	\item Dữ liệu gửi lên:\\ 
+		\{
+  			cropId: 12
+		\}
+	\item Dữ liệu trả về: Ngưỡng dữ liệu cao và thấp mới nhất của mùa vụ hiện tại.
+	\end{itemize} 
+	
+\item Thêm vào một ngưỡng dữ liệu mới:
+\begin{itemize}
+	\item Phương thức: POST
+	\item URL: /threshold/add
+	\item Yêu cầu đăng nhập: có
+	\item Quyền truy cập: member
+	\item Dữ liệu gửi lên:\\ 
+		\{
+  			temperatureLower: 23,\\
+  			temperatureUpper: 25,\\
+  			humidityLower: 45,\\
+  			humidityUpper: 50,\\
+  			ppmLower: 100,\\
+  			ppmUpper: 200,\\
+  			lightLower: 1000,\\
+  			lightUpper: 3000
+		\}
+	\end{itemize} 
+	
+	
+\end{itemize}
+
+\item Actuator (máy bơm, quạt, đèn, ...)
+\begin{itemize}
+\item Thêm một actuator mới cho board
+\begin{itemize}
+	\item Phương thức: POST
+	\item URL: /actuator/add
+	\item Yêu cầu đăng nhập: có
+	\item Quyền truy cập: member
+	\item Dữ liệu gửi lên:\\ 
+		\{
+  			actuator: \{
+  				status: "off",\\
+  				idonboard: 12,\\
+  				name: "water 1", \\
+  				type: "water",\\
+  				priority: "Primary"
+  			\},\\
+  			deviceMac: "112233445566"
+		\}
+	\end{itemize} 
+	
+\item Lấy tất cả các actuator trên board:
+\begin{itemize}
+	\item Phương thức: GET
+	\item URL: /actuator/all
+	\item Yêu cầu đăng nhập: có
+	\item Quyền truy cập: member
+	\item Dữ liệu gửi lên:\\ 
+		\{
+  			deviceMac: "112233445566"
+		\}
+	\item Dữ liệu trả về: mảng các đối tượng actuator
+	\end{itemize}
+
+\item Thay đổi trạng thái của actuator:
+\begin{itemize}
+	\item Phương thức: PUT
+	\item URL: /actuator/status
+	\item Yêu cầu đăng nhập: có
+	\item Quyền truy cập: member
+	\item Dữ liệu gửi lên:\\ 
+		\{
+			Id: 12,\\
+			Status: "on"
+		\}
+	\end{itemize}
+
+\item Thay đổi độ ưu tiên của một actuator:
+\begin{itemize}
+	\item Phương thức: PUT
+	\item URL: /actuator/priority
+	\item Yêu cầu đăng nhập: có
+	\item Quyền truy cập: member
+	\item Dữ liệu gửi lên:\\ 
+		\{
+			Id: 12,\\
+			priority: "Secondary"
+		\}
+	\end{itemize}
+
+\item Xóa một actuator:
+	\begin{itemize}
+	\item Phương thức: DELETE
+	\item URL: /actuator/priority
+	\item Yêu cầu đăng nhập: có
+	\item Quyền truy cập: member
+	\item Dữ liệu gửi lên:\\ 
+		\{
+			Id: 12
+		\}
+	\end{itemize}
+
+\end{itemize}
+
+\item Bài viết (article)
+\begin{itemize}
+\item Lấy tất cả các bài viết:
+	\begin{itemize}
+	\item Phương thức: GET
+	\item URL: /article/all
+	\item Yêu cầu đăng nhập: không
+	\item Quyền truy cập: không yêu cầu
+	\item Dữ liệu trả về: mảng các đối tượng article
+	\end{itemize}
+
+\item Lấy một bài viết theo ID:
+	\begin{itemize}
+	\item Phương thức: GET
+	\item URL: /article/one
+	\item Yêu cầu đăng nhập: không
+	\item Quyền truy cập: không yêu cầu
+	\item Dữ liệu trả về: đối tượng article
+	\end{itemize}
+
+\item Thêm một bài viết mới:
+	\begin{itemize}
+	\item Phương thức: POST
+	\item URL: /article/add
+	\item Yêu cầu đăng nhập: có
+	\item Quyền truy cập: member
+	\item Dữ liệu gửi lên:\\
+		\{
+			content: "content",\\
+			title: "title"
+		\}
+	
+	\end{itemize}
+
+\item Xóa một bài viết:
+	\begin{itemize}
+	\item Phương thức: DELETE
+	\item URL: /article/delete
+	\item Yêu cầu đăng nhập: có
+	\item Quyền truy cập: mod
+	\item Dữ liệu gửi lên:\\
+		\{
+			id: 12
+		\}
+	
+	\end{itemize}
+
+\item Kiểm duyệt bài viết:
+	\begin{itemize}
+	\item Phương thức: PUT
+	\item URL: /article/check
+	\item Yêu cầu đăng nhập: có
+	\item Quyền truy cập: mod
+	\item Dữ liệu gửi lên:\\
+		\{
+			id: 12, \\
+			checked: true
+		\}
+	
+	\end{itemize}
+
+\end{itemize}
+
+\item Bình luận (comment)
+
+\begin{itemize}
+\item Thêm một bình luận cho bài viết:
+	\begin{itemize}
+	\item Phương thức: POST
+	\item URL: /comment/add
+	\item Yêu cầu đăng nhập: có
+	\item Quyền truy cập: member
+	\item Dữ liệu gửi lên:\\ 
+		\{
+			content: "content",\\
+			ArticleId: 12
+		\}
+
+	\end{itemize}
+
+\item Lấy tất cả các comment trong bài viết:
+	\begin{itemize}
+	\item Phương thức: GET
+	\item URL: /comment/all
+	\item Yêu cầu đăng nhập: không
+	\item Quyền truy cập: không yêu cầu
+	\item Dữ liệu gửi lên:\\ 
+		\{
+			ArticleId: 12
+		\}
+	\item Dữ liệu trả về: mảng các đối tượng comment
+	\end{itemize}
+
+\item Xóa một comment:
+	\begin{itemize}
+	\item Phương thức: DELETE
+	\item URL: /comment/delete
+	\item Yêu cầu đăng nhập: có
+	\item Quyền truy cập: mod
+	\item Dữ liệu gửi lên:\\ 
+		\{
+			commentId : 12
+		\}
+	\end{itemize}
+\end{itemize}
+
+\item Mùa vụ (crop)
+\begin{itemize}
+\item Lấy tất cả các mùa vụ của một board:
+	\begin{itemize}
+	\item Phương thức: GET
+	\item URL: /crop/all
+	\item Yêu cầu đăng nhập: có
+	\item Quyền truy cập: member
+	\item Dữ liệu gửi lên:\\ 
+		\{
+			mac: "112233445566"
+		\}
+	\end{itemize}
+	
+\item Lấy một mùa vụ bằng ID:
+	\begin{itemize}
+	\item Phương thức: GET
+	\item URL: /crop/one
+	\item Yêu cầu đăng nhập: có
+	\item Quyền truy cập: member
+	\item Dữ liệu gửi lên:\\ 
+		\{
+			cropId: 12
+		\}
+	\item Dữ liệu trả về: một đối tượng crop
+	\end{itemize}
+	
+\item Lấy mùa vụ mới nhất đang chạy trên board:
+	\begin{itemize}
+	\item Phương thức: GET
+	\item URL: /crop/newest
+	\item Yêu cầu đăng nhập: có
+	\item Quyền truy cập: member
+	\item Dữ liệu gửi lên:\\ 
+		\{
+			mac: "112233445566"
+		\}
+	\item Dữ liệu trả về: một đối tượng crop
+	\end{itemize}
+
+\item Thêm một mùa vụ mới:
+	\begin{itemize}
+	\item Phương thức: POST
+	\item URL: /crop/add
+	\item Yêu cầu đăng nhập: có
+	\item Quyền truy cập: member
+	\item Dữ liệu gửi lên:\\ 
+		\{
+			DeviceMac: "112233445566",\\
+			status: "pending",\\
+			name: "crop 1",\\
+			startdate: "12-20-2017 05:00:00",\\
+			closedate: "01-20-2017 05:00:00",\\
+			treetype: "salad",\\
+			reporttime: 60
+		\}
+	\end{itemize}
+
+\item Xóa một mùa vụ:
+	\begin{itemize}
+	\item Phương thức: DELETE
+	\item URL: /crop/delete
+	\item Yêu cầu đăng nhập: có
+	\item Quyền truy cập: member
+	\item Dữ liệu gửi lên:\\ 
+		\{
+			cropId: 12
+		\}
+	\end{itemize}
+	
+\item Thay đổi thông tin mùa vụ:
+	\begin{itemize}
+	\item Phương thức: PUT
+	\item URL: /crop/edit
+	\item Yêu cầu đăng nhập: có
+	\item Quyền truy cập: member
+	\item Dữ liệu gửi lên:\\ 
+		\{
+			name: "crop 1",\\
+			startdate: "12-20-2017 05:00:00",\\
+			closedate: "01-20-2017 05:00:00",\\
+			treetype: "salad",\\
+			reporttime: 60
+		\}
+	\end{itemize}
+	
+\item Thay đổi chế độ chia sẻ:
+	\begin{itemize}
+	\item Phương thức: PUT
+	\item URL: /crop/share
+	\item Yêu cầu đăng nhập: có
+	\item Quyền truy cập: member
+	\item Dữ liệu gửi lên:\\ 
+		\{
+			Id: 12,\\
+			share: true
+		\}
+	\end{itemize}
+
+\item Tìm mùa vụ:
+	\begin{itemize}
+	\item Phương thức: GET
+	\item URL: /crop/search
+	\item Yêu cầu đăng nhập: không
+	\item Quyền truy cập: không yêu cầu
+	\item Dữ liệu gửi lên:\\ 
+		\{
+			tree: “salad”,\\
+			month: 12
+		\}
+	\end{itemize}
+\end{itemize}
+\item Dữ liệu cảm biến (data):
+
+\begin{itemize}
+\item Lấy tất cả dữ liệu từ board gửi lên :
+	\begin{itemize}
+	\item Phương thức: GET
+	\item URL: /data/all
+	\item Yêu cầu đăng nhập: có
+	\item Quyền truy cập: member
+	\item Dữ liệu gửi lên:\\ 
+		\{
+			cropId: 12
+		\}
+	\item Dữ liệu trả về: mảng các đối tượng data.
+	\end{itemize}
+	
+\item Lấy dữ liệu mới nhất:
+	\begin{itemize}
+	\item Phương thức: GET
+	\item URL: /data/newest
+	\item Yêu cầu đăng nhập: có
+	\item Quyền truy cập: member
+	\item Dữ liệu gửi lên:\\ 
+		\{
+			cropId: 12
+		\}
+	\item Dữ liệu trả về: đối tượng data.
+	\end{itemize}
+\end{itemize}
+
+\end{itemize}
+
+\paragraph{Mô hình cụm server}
+
+\begin{center}
+\begin{figure}[htp]
+\begin{center}
+\includegraphics[scale=.5]{hinh/folder.png}
+\end{center}
+\caption{Cây thư mục}
+\label{refhinh1}
+\end{figure}
+\end{center}
+\paragraph{Cấu trúc thư mục}
+
+Server được tổ chức theo mô hình MVC với các thư mục chính:
+\begin{itemize}
+\item Models: chứa các model cho các đối tượng tương ứng trong database
+\item Routes: controller tiếp nhận các request và xử lý
+\item Views : các file html hiển thị
+\end{itemize}
+
+Ngoài ra, các thư mục khác:
+\begin{itemize}
+\item Config: thiết lập thông tin database khi kết nối
+\item Public: chứa mã css, javascript, angularjs, images, các thư viện front-end cần dùng.
+\item Run: cấu hình cho server như port,…
+\item File app.js: file server chính
+\item File package.js: các gói hỗ trợ trong ứng dụng dành cho nodejs
+\end{itemize}
+\subsubsection{Xây đựng database}
+\noindent Sử dụng Sequelizejs để hiện thực database giống như sơ đồ sau:
+\begin{landscape}
+\begin{center}
+\begin{figure}[b]
+\begin{center}
+\includegraphics[scale=0.62]{hinh/class_diagram.jpg}
+\end{center}
+\caption{ Thiết kế class}
+\label{xyz}
+\end{figure}
+\end{center}
+\end{landscape}
+\subsubsection{Một số hình ảnh}
+\begin{center}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=.4]{hinh/web_home.jpg}
+\end{center}
+\caption{Trang chủ.}
+\end{figure}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=.6]{hinh/web_register.jpg}
+\end{center}
+\caption{Trang đăng ký.}
+\end{figure}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=.5]{hinh/web_login.jpg}
+\end{center}
+\caption{Trang đăng nhập.}
+\end{figure}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=.6]{hinh/web_profile.jpg}
+\end{center}
+\caption{Trang cá nhân.}
+\end{figure}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=.5]{hinh/web_add_device.jpg}
+\end{center}
+\caption{Thêm một board mới.}
+\end{figure}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=.5]{hinh/web_devices.jpg}
+\end{center}
+\caption{Danh sách các board điều khiển.}
+\end{figure}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=.4]{hinh/web_actuator_list.png}
+\end{center}
+\caption{Danh sách các actuator của một board.}
+\end{figure}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=.5]{hinh/web_add_actuator.png}
+\end{center}
+\caption{Thêm một actuator.}
+\end{figure}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=.4]{hinh/web_crop_list.png}
+\end{center}
+\caption{Danh sách các mùa vụ.}
+\end{figure}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=.5]{hinh/web_add_crop.png}
+\end{center}
+\caption{Thêm một mùa vụ.}
+\end{figure}
+
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=.4]{hinh/web_crop_overview.png}
+\end{center}
+\caption{Thông tin mùa vụ.}
+\end{figure}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=.4]{hinh/web_crop_detail.png}
+\end{center}
+\caption{Chi tiết mùa vụ.}
+\end{figure}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=.4]{hinh/web_schedule.png}
+\end{center}
+\caption{Lich trình hoạt động của các actuator.}
+\end{figure}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=.5]{hinh/web_add_schedule.png}
+\end{center}
+\caption{Thêm lịch trình cho actuator.}
+\end{figure}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=.5]{hinh/web_threshold.png}
+\end{center}
+\caption{Ngưỡng dữ liệu.}
+\end{figure}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=.5]{hinh/web_forum.jpg}
+\end{center}
+\caption{Trang forum.}
+\end{figure}
+
+
+
+\end{center}
+
+\subsection{Ứng dụng di động}
+\subsubsection{Một số hình ảnh}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=.25]{hinh/mobile_login.png}
+\end{center}
+\caption{Trang đăng nhập.}
+\end{figure}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=.25]{hinh/mobile_home.png}
+\end{center}
+\caption{Trang chủ sau khi đăng nhập.}
+\end{figure}
+
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=.7]{hinh/mobile_crop.png}
+\end{center}
+\caption{Thông tin mùa vụ và dữ liệu.}
+\end{figure}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=.7]{hinh/mobile_actuator_list.png}
+\end{center}
+\caption{Danh sách các actuator.}
+\end{figure}
+
+\subsection{Tương tác hệ thống}
+Các biểu đồ tuần tự sau sẽ thể hiện sự tương tác giữa người dùng và hệ thống:
+
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=.5]{hinh/seq-login.png}
+\end{center}
+\caption{Thao tác đăng nhập vào hệ thống sử dụng JWT.}
+\end{figure}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=.65]{hinh/seq-CRUD.png}
+\end{center}
+\caption{Nhóm các thao tác CRUD.}
+\end{figure}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=.6]{hinh/seq-board-communication.png}
+\end{center}
+\caption{Nhóm các thao tác tương tác với board điều khiển.}
+\end{figure}
+
+\noindent Toàn bộ các gói tin truyền giữa board điều khiển và web server đều được mã hóa XXTEA.
+
+\newpage
+\section{KIỂM THỬ HỆ THỐNG}
+\subsection{Web server}
+
+\subsection{Board điều khiển}
+Hệ thống mạch điều khiển đã thực hiện được các chức năng:
+\begin{itemize}
+\item Lấy được dữ liệu từ các sensor nhiệt độ, độ ẩm.
+\item Lấy được dữ liệu từ module thời gian thực.
+\item Điều khiển được relay cho các bộ điều khiển.
+\item Chức năng Web server của Esp8266.
+\item Chức năng Mqtt client của Esp8266.
+\end{itemize}
+
+\newpage
+\section{TỔNG KẾT VÀ HƯỚNG PHÁT TRIỂN CHO TƯƠNG LAI}
+\subsection{Tổng kết}
+	\subsubsection{Kết quả đạt được}
+	\begin{itemize}
+	\item Web server API và web app: \\
+	Sử dụng Nodejs và Angularjs hiện thực thành công các chức năng: 
+		\begin{itemize}
+			\item Cung cấp hệ thống API cho web app và mobile app. 
+
+			\item Phân quyền người dùng: member, mod và admin. 
+
+			\item Vẽ đồ thị theo dõi các thông số môi trường. 
+
+			\item Giao tiếp với board điều khiển thông qua hệ thống giao thức đã thiết kế. 
+		\end{itemize}
+
+	\item Mobile app: \\
+	Sử dụng framework Ionic 2 hiện thực thành công các chức năng: 
+		\begin{itemize}
+			\item Đăng nhập 
+
+			\item Xem danh sách các board điều khiển. 
+
+			\item Quét mã QR để nhanh chóng thêm board điều khiển mới. 
+
+			\item Giám sát thông tin môi trường. 
+
+			\item Theo dõi các actuator và điều khiển bật, tắt chúng. 
+		\end{itemize}
+	\end{itemize}
+	
+	\subsubsection{Thuận lợi và khó khăn trong quá trình thực hiện đề tài}	
+	\paragraph{Thuận lợi}
+		\begin{itemize}
+		\item Được sự hỗ trợ về kinh phí và kiến thức từ giáo viên hướng dẫn. 
+		\end{itemize}
+	\paragraph{Khó khăn}
+		\begin{itemize}
+		\item Dành nhiều thời gian để tìm hiểu các công nghệ mới. 
+
+		\item Dành nhiều thời gian cho việc hiện thực, chưa có nhiều thời gian để thử nghiệm hệ thống. 
+
+		\item Thiếu các thiết bị di động để thử nghiệm ứng dụng di động trên nhiều nền tảng khác nhau. 
+
+		\item  Khó khăn trong việc tìm thiết kế và hiện thực giao thức giao tiếp, gửi nhận các gói tin giữa board điều khiển và web api. 
+		\end{itemize}
+	
+	\subsubsection{Hướng phát triển}
+\paragraph{Ứng dụng web}
+\begin{itemize}
+\item Nghiên cứu kỹ hơn về ảnh hưởng của các nhân tố môi trường (nhiệt độ, độ ẩm, pH, ppm, ánh sáng, oxy) đến sự phát triển của các loại cây phổ biến trong từng thời kỳ, từ đó đưa ra các giải pháp tự động hóa việc chăm sóc cho từng giai đoạn phát triển của cây.
+\item Người dùng có thể upload ảnh đại diện, upload ảnh về các mùa vụ mà mình đang trồng và chia sẻ nó.
+\item Cho phép người dùng xuất ra các file setting của một mùa vụ nào đó và chia sẻ nó, người dùng khác có thể nạp file đó vào profile của mình và chạy trên thiết bị.
+\item Khắc phục thời gian chờ gói tin ACK từ board điều khiển bằng cách thiết lập một khoảng thời gian nhất định cho việc chờ gói tin ACK. Quá khoảng thời gian đó thì phản hồi về cho website là gói tin không đến được board điều khiển.
+\item Cải thiện hơn về giao diện.
+\end{itemize}
+
+\paragraph{Ứng dụng di động}
+\begin{itemize}
+\item Cải thiện hơn về giao diện.
+\end{itemize}
+
+\paragraph{Board điều khiển}
+\begin{itemize}
+\item Thay thế board Arduino + ESP8266 bằng một board khác tích hợp cả hai chức năng.
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=.8]{hinh/nodeMCU.png}
+\end{center}
+\caption{Kit RF thu phát wifi Node MCU.}
+\end{figure}
+\item Cải tiến module đo pH, ppm
+\item Cải tiến tính năng điều khiển tự động của board.
+\item Cải thiện tính thời gian thực.
+\item Cải tiến chức năng web server của ESP8266.
+\end{itemize}
+\newpage
+
+
+\subsubsection{Kiến thức thu thập được}
+
+\begin{thebibliography}{80}
+\bibitem{http://wikipedia:2012} http://vietjack.com/nodejs/nodejs\_la\_gi.jsp
+
+\bibitem{http://wikipedia:2012} https://freetuts.net/javascript-la-gi-viet-ung-dung-javascript-dau-tien-263.html
+
+\bibitem{http://wikipedia:2012} http://docs.sequelizejs.com/
+
+\bibitem{http://wikipedia:2012} https://freetuts.net/json-la-gi-cau-truc-chuoi-json-236.html
+
+\bibitem{http://wikipedia:2012} https://freetuts.net/tong-quan-ve-angularjs-200.html
+
+\bibitem{http://wikipedia:2012} http://arduino.vn/bai-viet/1236-tim-hieu-giao-thuc-mqtt
+\bibitem{http://wikipedia:2012} https://viblo.asia/p/gioi-thieu-ve-angular-2-APqzearpzVe 
+\bibitem{http://wikipedia:2012} https://code.tutsplus.com/vi/articles/introduction-to-ionic-2--cms-28193 
+\bibitem{http://wikipedia:2012} https://vi.wikipedia.org/wiki/Typescript 
+\bibitem{http://wikipedia:2012} https://vi.wikipedia.org/wiki/PostgreSQL 
+\bibitem{http://wikipedia:2012} https://docs.archive.nodebb.org/vi/latest/index.html 
+\bibitem{http://wikipedia:2012} https://en.wikipedia.org/wiki/XXTEA
+\end{thebibliography}
+
+\end{document}
