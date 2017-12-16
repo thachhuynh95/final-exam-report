@@ -42,6 +42,7 @@ includehead=true
 % create the header for this file
 \pagestyle{fancy}
 
+\usepackage{textcomp}
 \usepackage{tabularx}
 \usepackage{setspace}
 \usepackage{tikz}
@@ -544,7 +545,6 @@ PostgreSQL cũng là hệ quản trị cơ sở dữ liệu hỗ trợ mạnh tr
 
 \subsubsection{NodeBB}
 \noindent NodeBB là một nền tảng diễn đàn thế hệ mới sử dụng công nghệ web sockets để có thể tương tác ngay lập tức và thông báo thời gian thực. NodeBB có nhiều tính năng hiện đại với tư duy sáng tạo như tương tác mạng xã hội và dòng chảy thảo luận.\\
-
 \noindent NodeBB là một phần mềm mã nguồn mở được sử dụng khá rộng rãi.
 \subsubsection{Git và GitHub}
 \noindent \textbf{Git}\\
@@ -572,11 +572,8 @@ repository công cộng, người dùng có thể tạo tài khoản trên GitHu
 
 \subsubsection{XXTEA}
 \noindent XXTEA là một thuật toán mã hóa nâng cấp của XTEA.\\
-
-\noindent XTEA viết tắt của Extended Tiny Encryption Aglorithm, được thiết kế bởi David Wheeler and Roger Needham của phòng thí nghiệm máy tính Cambridge. Giải thuật này không hề được đăng ký bản quyền do đó bất kỳ ai cũng có thể sử dụng nó một cách tự do. \\
- 
+\noindent XTEA viết tắt của Extended Tiny Encryption Aglorithm, được thiết kế bởi David Wheeler and Roger Needham của phòng thí nghiệm máy tính Cambridge. Giải thuật này không hề được đăng ký bản quyền do đó bất kỳ ai cũng có thể sử dụng nó một cách tự do. \\ 
 \noindent XTEA là dạng mã hóa mật mã khối, kích thước khối 64 bit, khóa bí mật 128 bit. \\
- 
 \noindent Đúng theo tên gọi Tiny, XTEA là 1 giải thuật cực kỳ đơn giản và rất dễ code. Nó vốn được thiết kế với mục đích áp dụng trong các hệ thống với cấu hình phần cứng hạn chế 
 
 \subsubsection{Arduino}
@@ -608,11 +605,8 @@ ngoài ra arduino còn là mã nguồn mở sẽ tiết kiệm được tiền b
 \noindent Mbed là nền tảng và hệ điều hành được phát triển cho các thiết bị kết nối internet dữa trên các thiết bị 32-bit Arm Cortex-M.\\
 \noindent Mbed cung cấp nhiều phương pháp tiếp cận lập trình khác nhau:
 \begin{itemize}
-	\item Online
-	\item Hinh ảnh (DevicePhotos/mbed.PNG)
-	\item Chúng ta có thể lập trình online, biên dịch, tải file thực thi về rồi nạp vào thiết bị.
-	\item Offline
-	\item Lập trình trên nền tảng linux và make.
+	\item Online: Chúng ta có thể lập trình online, biên dịch, tải file thực thi về rồi nạp vào thiết bị.
+	\item Offline: Lập trình trên nền tảng linux và make.
 \end{itemize}
 
 \subsubsection{MQTT}
@@ -673,7 +667,7 @@ Mỗi bản tin được publish một địa chỉ, có thể hiểu như một
 \begin{center}
 \begin{figure}[htp]
 \begin{center}
-\includegraphics[scale=.5]{hinh/DHT22.jpg}
+\includegraphics[scale=.3]{hinh/DHT22.jpg}
 \end{center}
 \caption{Cảm biến nhiệt độ, độ ẩm.}
 
@@ -696,7 +690,7 @@ Mỗi bản tin được publish một địa chỉ, có thể hiểu như một
 \begin{center}
 \begin{figure}[h!]
 \begin{center}
-\includegraphics[scale=.6]{hinh/tds.jpg}
+\includegraphics[scale=.5]{hinh/tds.jpg}
 \end{center}
 \caption{Module đo ppm.}
 
@@ -723,7 +717,7 @@ một chất trong tổng số lượng của hỗn hợp chứa chất đó.\\
 \item Kích cỡ: 21x16x3.3 mm.
 \end{itemize}
 
-\item Module Wifi\\
+\item Module Wifi
 \noindent Module ESP8266 V1 là module truyền nhận Wifi đơn giản dựa trên chip ESP8266 SoC (System on Chip) của hãng Espressif. Module này đã được nạp sẵn firmware giúp người dùng giao tiếp với Wifi rất dễ dàng qua tập lệnh AT thông qua giao tiếp UART.\\
 \noindent Thông tin kỹ thuật
 \begin{itemize}
@@ -784,12 +778,12 @@ Thông tin kĩ thuật:
 \begin{center}
 \begin{figure}[h!]
 \begin{center}
-\includegraphics[scale=.4]{hinh/arduino_r3.jpg}
+\includegraphics[scale=.3]{hinh/arduino_r3.jpg}
 \end{center}
 \caption{Arduino UNO R3.}
-
 \end{figure}
 \end{center}
+
 \noindent Arduino UNO là board mạch rất phổ biến trong dòng Arduino hiện nay. Nó có ứng dụng rất mạnh mẽ từ đơn giản đến phức tạp như điều khiển đèn LED nhấp nháy, xử lý tín hiệu cho xe điều khiển từ xa, làm một trạm đo nhiệt độ, độ ẩm và hiển thị lên màn hình LCD...\\
 \noindent Thông tin kỹ thuật
 \begin{itemize}
@@ -876,7 +870,7 @@ thông qua relay(chức năng của relay như là công tắc).
 \item Hệ thộng hoạt động theo thời gian thực được lấy từ module RTC-DS1307.
 \item Hệ thống sử dụng module wifi ESP8266 để kết nối với server thông qua internet,\
 Giao tiếp giữa ESP8266 với Arduino Uno là UART(Serial).
-
+\end{itemize}
 \textbf{Thu thập dữ liệu cảm biến}\\
 \noindent Các cảm biến được kết nối trực tiếp với board NodeMCU và lấy dữ liệu trực tiếp.
 \begin{itemize}
@@ -901,7 +895,6 @@ Giao tiếp giữa ESP8266 với Arduino Uno là UART(Serial).
 
 \noindent \textbf{Điều khiển các actuators}\\
 \noindent \textbf{Thông số các actuator:}\\
-
 Máy bơm nước:
 \begin{itemize}
 \item Nguồn: 12 VDC.
@@ -910,7 +903,7 @@ Máy bơm nước:
 \end{itemize}
 \begin{figure}[h!]
 \begin{center}
-\includegraphics[scale=0.15]{hinh/pump.jpg}\\
+\includegraphics[scale=0.1]{hinh/pump.jpg}
 \end{center}
 \caption{Máy bơm nước.}
 \end{figure}
@@ -922,7 +915,7 @@ Máy sục oxy:
 \end{itemize}
 \begin{figure}[h!]
 \begin{center}
-\includegraphics[scale=0.7]{hinh/oxi.png}\\
+\includegraphics[scale=0.7]{hinh/oxi.png}
 \end{center}
 \caption{Máy sục oxy.}
 \end{figure}
@@ -934,7 +927,7 @@ Máy sục oxy:
 \end{itemize}
 \begin{figure}[h!]
 \begin{center}
-\includegraphics[scale=0.4]{hinh/led.jpg}\\
+\includegraphics[scale=0.4]{hinh/led.jpg}
 \end{center}
 \caption{Đèn led.}
 \end{figure}
@@ -1056,7 +1049,7 @@ Dưới đây là cách hoạt động của việc lưu trữ (Save) và tải 
 \caption{Hoạt động Lưu trữ thông tin actuator.}
 \end{figure}
 \end{center}
-\end{itemize}
+
 \noindent \textbf{Truyền nhận dữ liệu với giao thức MQTT.}
 	\begin{itemize}
 	\item Đối tượng thực hiện công việc này hoạt động trên board NodeMCU với vai trò là một MQTT Client, bao gồm:
@@ -1211,34 +1204,153 @@ Dưới đây là cách hoạt động của việc lưu trữ (Save) và tải 
 	\end{itemize}
 
 
-\subsubsection{Sơ đồ Use case}
-\begin{center}
-\begin{figure}[htp]
-\begin{center}
-\includegraphics[scale=.3]{hinh/D-usecase.jpg}
-\end{center}
-\caption{Device use case.}
-\end{figure}
-\end{center}
+%\subsubsection{Sơ đồ Use case}
+%\begin{center}
+%\begin{figure}[htp]
+%\begin{center}
+%\includegraphics[scale=.3]{hinh/D-usecase.jpg}
+%\end{center}
+%\caption{Device use case.}
+%\end{figure}
+%\end{center}
+
+%\newpage
+%\subsubsection{Class Diagram}
+%\begin{center}
+%\begin{figure}[h!]
+%\begin{center}
+%\includegraphics[scale=.3]{hinh/UnoClass.jpg}
+%\end{center}
+%\caption{Arduino Uno class diagram.}
+%\end{figure}
+
+
+%\begin{figure}[h!]
+%\begin{center}
+%\includegraphics[scale=.5]{hinh/EspClass.jpg}
+%\end{center}
+%\caption{Esp8266 class diagram.}
+%\end{figure}
+%\end{center}
+
 
 \newpage
-\subsubsection{Class Diagram}
+\subsection{Kiến trúc phần mềm}
+\subsubsection{Sequence diagram}
+\noindent \textbf{Cấu hình Wifi}
+\begin{figure}[H]
+\centering
 \begin{center}
-\begin{figure}[h!]
-\begin{center}
-\includegraphics[scale=.3]{hinh/UnoClass.jpg}
+\includegraphics[scale=.9]{hinh/sq_switch_wifi.PNG}
 \end{center}
-\caption{Arduino Uno class diagram.}
+\caption{Wifi sequence diagram.}
 \end{figure}
 
-
-\begin{figure}[h!]
+\noindent \textbf{Hoạt động của web-server hoạt động trên board NodeMCU}
+\begin{figure}[H]
+\centering
 \begin{center}
-\includegraphics[scale=.5]{hinh/EspClass.jpg}
+\includegraphics[scale=.8]{hinh/sq_web.PNG}
 \end{center}
-\caption{Esp8266 class diagram.}
+\caption{NodeMCU Server sequence diagram.}
 \end{figure}
+
+\noindent \textbf{Truyền nhận dữ liệu}
+\begin{figure}[H]
+\centering
+\begin{center}
+\includegraphics[scale=.8]{hinh/sq_mqtt.PNG}
 \end{center}
+\caption{Mqtt sequence diagram.}
+\end{figure}
+
+\subsubsection{Class diagram}
+\noindent \textbf{Các class hoạt động trên board NodeMCU}\\
+\begin{figure}[H]
+\centering
+\begin{center}
+\includegraphics[scale=.8]{hinh/class_wifistation.PNG}
+\end{center}
+\caption{NodeMCU WifiStation class diagram.}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\begin{center}
+\includegraphics[scale=.8]{hinh/class_mqttclient.PNG}
+\end{center}
+\caption{NodeMCU MqttClient class diagram.}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\begin{center}
+\includegraphics[scale=.8]{hinh/class_usereeprom.PNG}
+\end{center}
+\caption{NodeMCU UserEEPROM class diagram.}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\begin{center}
+\includegraphics[scale=.8]{hinh/class_sensor.PNG}
+\end{center}
+\caption{NodeMCU Sensor class diagram.}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=.6]{hinh/class_serialtransport.PNG}
+\caption{NodeMCU SerialTransport class diagram.}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\begin{center}
+\includegraphics[scale=.8]{hinh/class_webserver.PNG}
+\end{center}
+\caption{NodeMCU Webserver class diagram.}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\begin{center}
+\includegraphics[scale=.8]{hinh/class_switchap.PNG}
+\end{center}
+\caption{NodeMCU SwitchAP class diagram.}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=.8]{hinh/class_nodeapplication.PNG}
+\caption{NodeMCU Application class diagram.}
+\end{figure}
+
+\noindent \textbf{Các class hoạt động trên board STM}\\
+\begin{figure}[H]
+\centering
+\begin{center}
+\includegraphics[scale=.8]{hinh/class_serialtransport.PNG}
+\end{center}
+\caption{STM SerialTransport class diagram.}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\begin{center}
+\includegraphics[scale=.7]{hinh/class_actuator.PNG}
+\end{center}
+\caption{STM Actuator class diagram.}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\begin{center}
+\includegraphics[scale=.8]{hinh/class_stmapplication.PNG}
+\end{center}
+\caption{STM Apllication class diagram.}
+\end{figure}
+
 \newpage
 \subsection{Ứng dụng web}
 \subsubsection{Sơ đồ use case}
@@ -2492,6 +2604,180 @@ client)
 \includegraphics[scale=0.8]{hinh/pcb.png}
 \end{center}
 \caption{Sơ đồ mạch in.}
+\end{figure}
+\end{itemize}
+
+\subsubsection{Mạch chức năng đo ppm}
+\noindent \textbf{Lý thuyết}\\
+
+\textbf{- Độ dẫn điện (EC):}\\
+Chỉ số EC (electro-conductivity) (tương đối) là chỉ số diễn tả tổng nồng độ ion hòa tan trong dung dịch. Độ dẫn điện có thể được thể hiện bằng một số đơn vị khác nhau, nhưng đơn vị tiêu biểu được dùng để đo lường EC là millisiemens trên centimet (mS / cm). Chỉ số EC không diễn tả nồng độ của từng chất trong dung dịch đồng thời cũng không thể hiện mức độ cân bằng của các chất dinh dưỡng trong dung dịch. EC là thước đo độ dẫn điện từ hai đầu dò 1cm.\\
+Trong suốt quá trình tăng trưởng, cây hấp thu khoáng chất mà chúng cần, do vậy duy trì EC ở một mức ổn định là rất quan trọng. Nếu dung dịch có chỉ số EC cao thì sự hấp thu nước của cây diễn ra nhanh hơn sự hấp thu khoáng chất. Điều này làm nồng độ dung dịch tăng cao và gây ngộ độc cho cây. Khi đó ta phải bổ sung thêm nước vào môi trường. Ngược lại, nếu EC thấp, cây sẽ hấp thu khoáng chất nhanh hơn hấp thu nước. Khi đó, nồng độ dung dịch giảm mạnh, cây sẽ không được cung cấp đầy đủ khoáng chất, chậm lớn và phát triển kém.\\
+
+\textbf{- Chỉ số TDS:}\\
+Chỉ số TDS (Total Dissolved Solids) là chỉ số đo tổng lượng chất rắn hoà tan, tổng số các ion mang điện tích bao gồm khoáng chất, muối hoặc kim loại tồn tại trong một khối lượng nước nhất định. TDS thường được biểu thị bằng hàm số ml/L hoặc ppm (Parts Per Million). 1 ppm tương ứng với 1mg chất rắn hòa tan trong một lít nước. Hầu hết nước máy sẽ có chỉ số PPM rơi vào khoảng từ 200 – 400ppm.\\
+Chỉ số TDS cũng ảnh hưởng lớn đến sự phát triển của cây: Nếu TDS lên quá cao, nồng độ dung dịch vượt mức cho phép sẽ gây ra hiện tượng ngộ độc cho cây. Ngược lại, khi chỉ số TDS xuống thấp, dung dịch thủy canh sẽ không đảm bảo cung cấp đủ chất dinh dưỡng cho cây trồng.\\
+
+\textbf{- Tương quan giữa EC và TDS:}\\
+Mặc dù có một mối tuơng quan giữa EC và TDS nhưng chúng không giống nhau. TDS và EC là 2 tham số riêng biệt. TDS là tổng lượng chất rắn hoà tan trong nước. EC là khả năng của các chất co thể gây ra dòng điện. Lượng chất rắn như muối trong phân bón tỉ lệ trực tiếp với độ dẫn điện của nó, vì vậy lượng chất rắn cao gây độ dẫn cao. Vì khi phân bón hoà tan trong nước chúng trở thành các "ion", có mang điện tích âm hoặc dương, nên chúng sinh ra dòng điện.\\
+Mối quan hệ của TDS và độ dẫn đặc hiệu của nước ngầm có thể được ước lượng bằng phương trình sau:
+\begin{center}
+		TDS = ke*EC
+\end{center}					
+Trong đó: TDS có đơn vị mg\/L và EC là độ dẫn điện ở microsiemens trên mỗi centimet ở 25\textdegree{}C. Yếu tố tương quan ke dao động từ 0,55 đến 0,8.\\
+Giới hạn với cây trồng:
+\begin{figure}[H]
+\centering
+\begin{center}
+\includegraphics[scale=.8]{hinh/PPM/ppm_thamkhao.PNG}
+\end{center}
+\caption{Giới hạn với cây trồng.}
+\end{figure}
+
+\textbf{- Tại sao lại dùng thiết bị này?}\\
+Nếu EC / PPM chỉ là đo điện dẫn (hoặc kháng) thì tại sao không sử dụng một đồng hồ volt / ohm trực tiếp? Bởi chúng đi qua dòng điện DC thông qua các đầu dò và bạn không thể đo độ dẫn của muối với dòng điện DC vì nó sẽ tách các phân tử ra ngoài, và vì các phân tử là điện dẫn điện,các phần tử điện sẽ thay đổi liên tục và sẽ không thu được kết quả gì. Bằng cách sử dụng một tín hiệu AC,với tần số đủ cao (> 1khz) các phân tử không có thời gian để di chuyển ra ngoài trước khi chúng được kéo theo hướng ngược lại.\\
+Các thành phần ion:
+\begin{figure}[H]
+\centering
+\begin{center}
+\includegraphics[scale=1]{hinh/PPM/ppm_ion.png}
+\end{center}
+\caption{Các thành phần ion.}
+\end{figure}
+
+Trường hợp sử dụng dòng AC:
+\begin{figure}[H]
+\centering
+\begin{center}
+\includegraphics[scale=1]{hinh/PPM/ppm_AC.png}
+\end{center}
+\caption{Trường hợp sử dụng dòng AC.}
+\end{figure}
+
+Trường hợp sử dụng dòng DC:
+\begin{figure}[H]
+\centering
+\begin{center}
+\includegraphics[scale=1]{hinh/PPM/ppm_DC.png}
+\end{center}
+\caption{Trường hợp sử dụng dòng DC.}
+\end{figure}
+
+\textbf{- Hoạt động:}\\
+Hai điện cực với một điện áp xoay chiều được đặt trong dung dịch. Điều này tạo ra một dòng điện phù thuộc vào bản chất dẫn điện của dung dịch. Thiết bị đọc dòng diện này và hiển thị theo đơn vị EC hoặc ppm.\\
+
+\noindent \textbf{Linh kiện, thiết kế}\\
+\textbf{- Schematic:}
+\begin{figure}[H]
+\centering
+\begin{center}
+\includegraphics[scale=.6]{hinh/PPM/ppmschematic.png}
+\end{center}
+\caption{Schematic.}
+\end{figure}
+\noindent Thành phần chính trong mạch:
+\begin{itemize}
+\item Oscillator cầu Wein: là mạch điện tử tạo ra tín hiệu điện tử dao động, thường là một sóng sin hay sóng vuông. Bộ tạo dao động chuyển đổi dòng điện một chiều (DC) từ nguồn điện sang tín hiệu dòng xoay chiều (AC). Ưu điểm của mạch là chỉ có một vài thành phần và sự ổn định tần số tốt. Phần nhược điểm của mạch là biên độ đầu ra biến dạng cao gây khó khăn trong việc thu thập. Có một vài cách để giảm thiểu tác động này.
+\begin{figure}[H]
+\centering
+\begin{center}
+\includegraphics[scale=1]{hinh/PPM/ppm_wein.png}
+\end{center}
+\caption{Oscillator cầu Wein.}
+\end{figure}
+Các giá trị được cung cấp để tạo ra mạch dao động có tần số là 10Khz.\\
+Ta có:
+\begin{center}
+R = 1k Ohms, C = 0.015uF, suy ra F = 1/(2*pi*R*C)
+\end{center}
+Chúng được sử dụng rộng rãi trong nhiều thiết bị điện tử. Ví dụ phổ biến của tín hiệu được tạo ra bởi dao động bao gồm các tín hiệu phát sóng của đài phát thanh và truyền hình , tín hiệu đồng hồ mà điều chỉnh máy tính và đồng hồ thạch anh ,âm thanh được tạo ra bởi beepers điện tử và trò chơi điện tử... Ta sử dụng một tín hiệu AC để đo độ dẫn của muối, có thể thay đổi giá trị R, C trong oscillator để đảm bảo rằng tần số đầu ra là trên 1kHz, tần số thấp hơn sẽ cung cấp các giá trị không ổn định.
+\item	Gain loop: mạch khuếch đại nguồn tín hiệu nhận được từ đầu dò 1cm đặt trong dung dịch
+\item	Bộ chuyển đổi AC thành DC:  Một mạch chỉnh lưu, một mạch điện bao gồm các linh kiện điện - điện tử dùng để biến đổi dòng điện xoay chiều thành dòng điện một chiều. Mạch chỉnh lưu cả chu kỳ thường dùng 4 Diode mắc theo hình cầu (còn gọi là mạch chỉnh lưu cầu). Mạch chỉnh lưu có thể được sử dụng trong các bộ nguồn cung cấp dòng điện một chiều, hoặc trong các mạch tách sóng tín hiệu vô tuyến điện trong các thiết bị vô tuyến, sử dụng mạch chỉnh lưu nhiều điốt (4 đi-ốt) để có thể biến đổi từ xoay chiều thành một chiều.
+\begin{figure}[H]
+\centering
+\begin{center}
+\includegraphics[scale=.6]{hinh/PPM/ppm_4diode.png}
+\end{center}
+\caption{4 đi-ốt.}
+\end{figure}
+Nửa chu kì đầu, khi điểm 1 dương so với điểm 2, dòng chạy từ 1 qua D3 qua tải R1 qua D1 về đầu âm. Nửa chu kì sau, khi điểm 2 dương so với điểm 1, dòng chạy từ 2 qua D4 qua tải R1 qua D2 về đầu âm. Cả chu kì đều có dòng điện chạy qua tải.
+\end{itemize}
+
+\textbf{- Linh kiện}
+\begin{itemize}
+\item	Nguồn đôi 12V: Mạch tạo nguồn đôi 12V có chức năng đổi từ nguồn đơn DC sang nguồn đôi +-12V. Với điện áp ngỏ vào từ 2.8V-5VDC.
+\begin{figure}[H]
+\centering
+\begin{center}
+\includegraphics[scale=.7]{hinh/PPM/ppm_12vtruoc.png}
+\end{center}
+\caption{Nguồn đôi 12V - Trước.}
+\end{figure}
+\begin{figure}[H]
+\centering
+\begin{center}
+\includegraphics[scale=.4]{hinh/PPM/ppm_12vsau.png}
+\end{center}
+\caption{Nguồn đôi 12V - Sau.}
+\end{figure}
+\item	Jack DC: kết nối với nguồn DC để cấp nguồn cho mạch
+\begin{figure}[H]
+\centering
+\begin{center}
+\includegraphics[scale=.3]{hinh/PPM/ppm_jackdc.jpg}
+\end{center}
+\caption{Jack DC.}
+\end{figure}
+\item	IC TL074: gồm 4 opamp trong 1 IC, dùng chung 1 nguồn đôi.
+\begin{figure}[H]
+\centering
+\begin{center}
+\includegraphics[scale=.3]{hinh/PPM/ppm_tl074.jpg}
+\end{center}
+\caption{IC TL074.}
+\end{figure}
+\begin{figure}[H]
+\centering
+\begin{center}
+\includegraphics[scale=1]{hinh/PPM/ppm_tl074_pin.jpg}
+\end{center}
+\caption{TL074 PIN.}
+\end{figure}
+\item	Diode Zener: diode ổn áp, nó được chế tạo sao cho khi phân cực ngược thì diode Zener sẽ ghim một mức điện áp gần cố định bằng giá trị ghi trên diode, làm ổn áp cho mạch điện.
+\begin{figure}[H]
+\centering
+\begin{center}
+\includegraphics[scale=.5]{hinh/PPM/ppm_zener.jpg}
+\end{center}
+\caption{Diode Zener.}
+\end{figure}
+\item	Tụ điện:
+\begin{figure}[H]
+\centering
+\begin{center}
+\includegraphics[scale=.5]{hinh/PPM/ppm_c015.jpg}
+\end{center}
+\caption{Tụ 0.015uF.}
+\end{figure}
+\begin{figure}[H]
+\centering
+\begin{center}
+\includegraphics[scale=.3]{hinh/PPM/ppm_c22.jpg}
+\end{center}
+\caption{Tụ 0.22uF.}
+\end{figure}
+\item	Cầu Diode: gồm 4 diode đơn mắc thành cầu chỉnh lưu được đóng gói trong một vỏ duy nhất, dùng để chỉnh lưu dòng điện xoay chiều thành một chiều.
+	\begin{itemize}
+	\item	Điện áp tối đa: 600V.
+	\item	Dòng điện định mức: 4A.
+	\item	Nhiệt độ hoạt động: -55\textdegree{}C đến 150\textdegree{}C.
+	\end{itemize}
+\begin{figure}[H]
+\centering
+\begin{center}
+\includegraphics[scale=.3]{hinh/PPM/ppm_caudiode.jpg}
+\end{center}
+\caption{Cầu Diode.}
 \end{figure}
 \end{itemize}
 
