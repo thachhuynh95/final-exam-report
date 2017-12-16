@@ -2671,10 +2671,20 @@ Hai điện cực với một điện áp xoay chiều được đặt trong dun
 \begin{figure}[H]
 \centering
 \begin{center}
-\includegraphics[scale=.6]{hinh/PPM/ppmschematic.png}
+\includegraphics[scale=.65]{hinh/PPM/schematic_ppm.PNG}
 \end{center}
-\caption{Schematic.}
+\caption{PPM schematic.}
 \end{figure}
+
+\textbf{- PCB:}
+\begin{figure}[H]
+\centering
+\begin{center}
+\includegraphics[scale=.7]{hinh/PPM/pcb_ppm.PNG}
+\end{center}
+\caption{PPM PCB.}
+\end{figure}
+
 \noindent Thành phần chính trong mạch:
 \begin{itemize}
 \item Oscillator cầu Wein: là mạch điện tử tạo ra tín hiệu điện tử dao động, thường là một sóng sin hay sóng vuông. Bộ tạo dao động chuyển đổi dòng điện một chiều (DC) từ nguồn điện sang tín hiệu dòng xoay chiều (AC). Ưu điểm của mạch là chỉ có một vài thành phần và sự ổn định tần số tốt. Phần nhược điểm của mạch là biên độ đầu ra biến dạng cao gây khó khăn trong việc thu thập. Có một vài cách để giảm thiểu tác động này.
@@ -3185,7 +3195,7 @@ Nửa chu kì đầu, khi điểm 1 dương so với điểm 2, dòng chạy t�
 			\begin{figure}[H]
 			\centering
 			\begin{center}
-			\includegraphics[scale=.9]{hinh/schematic.PNG}
+			\includegraphics[scale=.7]{hinh/schematic.PNG}
 			\end{center}
 			\caption{Schematic}
 			\end{figure}
@@ -3193,12 +3203,35 @@ Nửa chu kì đầu, khi điểm 1 dương so với điểm 2, dòng chạy t�
 			\begin{figure}[H]
 			\centering
 			\begin{center}
-			\includegraphics[scale=.9]{hinh/pcb.PNG}
+			\includegraphics[scale=.9]{hinh/pcb_board.PNG}
 			\end{center}
 			\caption{PCB}
 			\end{figure}
 	\end{itemize}
 	\item Mô hình thử nghiệm
+			\begin{figure}[H]
+			\centering
+			\begin{center}
+			\includegraphics[scale=.1]{hinh/mohinh_1.jpg}
+			\end{center}
+			\caption{Mô hình 1}
+			\end{figure}
+			
+			\begin{figure}[H]
+			\centering
+			\begin{center}
+			\includegraphics[scale=.15]{hinh/mohinh_2.jpg}
+			\end{center}
+			\caption{Mô hình 2}
+			\end{figure}
+			
+			\begin{figure}[H]
+			\centering
+			\begin{center}
+			\includegraphics[scale=.15]{hinh/mohinh_3.jpg}
+			\end{center}
+			\caption{Mô hình 3}
+			\end{figure}
 	\end{enumerate}
 
 \subsection{Ứng dụng web}
@@ -4135,13 +4168,77 @@ Các biểu đồ tuần tự sau sẽ thể hiện sự tương tác giữa ng�
 \subsection{Web server}
 
 \subsection{Board điều khiển}
-Hệ thống mạch điều khiển đã thực hiện được các chức năng:
+\subsubsection{Thiết bị}
+
 \begin{itemize}
-\item Lấy được dữ liệu từ các sensor nhiệt độ, độ ẩm.
-\item Lấy được dữ liệu từ module thời gian thực.
-\item Điều khiển được relay cho các bộ điều khiển.
-\item Chức năng Web server của Esp8266.
-\item Chức năng Mqtt client của Esp8266.
+\item Prototype
+	\begin{figure}[H]
+	\begin{center}
+	\includegraphics[scale=.15]{hinh/prototype_board.jpg}
+	\end{center}
+	\caption{Board prototype.}
+	\end{figure}
+	
+	\begin{figure}[H]
+	\begin{center}
+	\includegraphics[scale=.6]{hinh/Relay.jpg}
+	\end{center}
+	\caption{Relay prototype.}
+	\end{figure}
+	
+\item Đóng hộp
+	\begin{figure}[H]
+	\begin{center}
+	\includegraphics[scale=.15]{hinh/relay_box.jpg}
+	\end{center}
+	\caption{Đóng hộp.}
+	\end{figure}
+\end{itemize}
+
+\subsubsection{Các chức năng}
+\begin{itemize}
+\item Prototype
+	\begin{figure}[H]
+	\begin{center}
+	\includegraphics[scale=.6]{hinh/PPM/prototype_ppm.jpg}
+	\end{center}
+	\caption{PPM prototype.}
+	\end{figure}
+\item Tiến hành đo
+	\begin{figure}[H]
+	\begin{center}
+	\includegraphics[scale=.8]{hinh/PPM/nacl_1.PNG}
+	\end{center}
+	\caption{Đo ppm dung dịch NaCl 1.}
+	\end{figure}
+	
+	\begin{figure}[H]
+	\begin{center}
+	\includegraphics[scale=.8]{hinh/PPM/nacl_2.PNG}
+	\end{center}
+	\caption{Đo ppm dung dịch NaCl 2.}
+	\end{figure}
+	
+	\begin{figure}[H]
+	\begin{center}
+	\includegraphics[scale=.8]{hinh/PPM/nacl_3.PNG}
+	\end{center}
+	\caption{Đo ppm dung dịch NaCl 3.}
+	\end{figure}
+\item Kết quả
+	\begin{figure}[H]
+	\begin{center}
+	\includegraphics[scale=.8]{hinh/PPM/ppm_r2.PNG}
+	\end{center}
+	\caption{Kết quả đo ppm 1.}
+	\end{figure}
+	
+	\begin{figure}[H]
+	\begin{center}
+	\includegraphics[scale=.9]{hinh/PPM/ppm_r1.PNG}
+	\end{center}
+	\caption{Kết quả đo ppm 2.}
+	\end{figure}
 \end{itemize}
 
 \newpage
@@ -4241,17 +4338,9 @@ Hệ thống mạch điều khiển đã thực hiện được các chức năn
 
 \paragraph{Board điều khiển}
 \begin{itemize}
-\item Thay thế board Arduino + ESP8266 bằng một board khác tích hợp cả hai chức năng.
-\begin{figure}[H]
-\begin{center}
-\includegraphics[scale=.8]{hinh/nodeMCU.png}
-\end{center}
-\caption{Kit RF thu phát wifi Node MCU.}
-\end{figure}
-\item Cải tiến module đo pH, ppm
-\item Cải tiến tính năng điều khiển tự động của board.
-\item Cải thiện tính thời gian thực.
-\item Cải tiến chức năng web server của ESP8266.
+\item Hoàn thiện mạch chức năng ppm.
+\item Hoàn thiện board điều khiển.
+\item Phát triển mô hình, tiến hành thử nghiệm thực tế.
 \end{itemize}
 \newpage
 
