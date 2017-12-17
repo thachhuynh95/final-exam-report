@@ -19,6 +19,7 @@
 \usepackage{commath}
 \usepackage{amsmath}
 \usepackage{listings,xcolor}
+\usepackage{amssymb}
 
 \DeclareMathOperator*{\argmin}{arg\,min}
 %\usepackage[pdftex,bookmarks,raiselinks,pageanchor,hyperindex,colorlinks]{hyperref}
@@ -315,15 +316,12 @@ Sự phát triển của công nghệ trong thời đại hiện nay đã  mang 
 - Quản lý các thiết bị cá nhân.\\
 - Đồng hồ đo thông minh.\\
 - Tự động hóa ngôi nhà.
-\begin{center}
-\begin{figure}[htp]
-\begin{center}
+\begin{figure}[H]
+\centering
 \includegraphics[scale=.4]{hinh/IoT_ungdung.jpg}
-\end{center}
 \caption{Cả thế giới chìm trong Internet.}
 
 \end{figure}
-\end{center}
 
 \subsection{Giới thiệu về hệ thống thủy canh}
 
@@ -331,7 +329,7 @@ Sự phát triển của công nghệ trong thời đại hiện nay đã  mang 
 
 \noindent Hiện nay hầu hết các máng trồng đều được làm bằng nhựa, nhưng có thể làm bằng các vật liệu khác như bê tông, thủy tinh, kim loại và gỗ. Các máng trồng nên được che nắng để không cho tảo, rong rêu phát triển trong dung dịch thủy canh. Các mô hình dưới đây có thể nghiên cứu, biến tấu thành các kiểu khác nhau phù hợp với điều kiện từng nơi.
 
-\subsubsection{Hệ thống dạng bấc (wick system)}
+\subsubsection{Hệ thống dạng bấc (Wick System)}
 \noindent Hệ thống dạng bấc cho đến nay là dạng hệ thống thủy canh đơn giản nhất. Đúng như tên gọi, bí quyết của hệ thống này nằm ở chỗ sợi bấc. Đặt một đầu của sợi bấc hút sao cho chạm vào phần rễ cây. Đầu kia của bấc chìm trong dung dịch dinh dưỡng. Sợi bấc này sẽ làm nhiệm vụ hút nước và dung dịch dinh dưỡng lên cung cấp cho rễ cây (tương tự như sợi bấc trong đèn dầu, hút dầu lên để duy trì sự cháy). Như vậy cây sẽ có đủ nước và chất dinh dưỡng để phát triển.
 \begin{center}
 \begin{figure}[htp]
@@ -343,7 +341,7 @@ Sự phát triển của công nghệ trong thời đại hiện nay đã  mang 
 \end{figure}
 \end{center}
 
-\subsubsection{Hệ thống thủy canh tĩnh (water culture)}
+\subsubsection{Hệ thống thủy canh tĩnh (Water Culture)}
 \noindent Hệ thống thường thùng hay nước chứa dung dịch thủy canh, phần bệ giữ các cây thường làm bằng chất dẻo nhẹ như xốp và đặt nổi ngay trên dung dịch dinh dưỡng, rễ cây ngập chìm trong nước có chứa dung dịch dinh dưỡng. Vì môi trường thiếu khí oxy nên cần có 1 máy bơm bơm khí vào khối sủi bọt để cung cấp oxy cho rễ. Hệ thống thủy canh dạng này thường dùng phổ biến trong dạy học. Hệ thống ít tốn kém, có thể tận dụng bể chứa nước hay những bình chứa không rỉ khác.
 
 \begin{center}
@@ -356,7 +354,7 @@ Sự phát triển của công nghệ trong thời đại hiện nay đã  mang 
 \end{figure}
 \end{center}
 
-\subsubsection{Hệ thống ngập và rút định kỳ (ebb and flow system)}
+\subsubsection{Hệ thống ngập và rút định kỳ (EBB and Flow System)}
 
 \noindent Không giống như hệ thống thủy canh tĩnh ở trên, phần rễ cây luôn chìm trong nước chỉ thích hợp cho một số ít cây trồng. Hệ thống ngập và rút định kỳ có một máy bơm điều khiển để có thể bơm dung dịch dinh dưỡng vào khay trồng và rút ra theo chu kỳ đã được định sẵn. Như vậy rễ cây sẽ có những lúc không ngập trong nước để “thở” một cách tự nhiên, tránh bị ngập, úng. Hệ thống này thường được áp dụng cho mô hình aquaponics.
 \begin{center}
@@ -368,7 +366,7 @@ Sự phát triển của công nghệ trong thời đại hiện nay đã  mang 
 
 \end{figure}
 \end{center}
-\subsubsection{Hệ thống nhỏ giọt (Drip system)}
+\subsubsection{Hệ thống nhỏ giọt (Drip System)}
 \noindent Hệ thống nhỏ giọt là loại hệ thống thủy canh được sử dụng rộng rãi nhất trên thế giới. Máy bơm sẽ bơm dung dịch dinh dưỡng lên, nhỏ trực tiếp vào gốc của cây trồng bởi những đường ống nhỏ giọt theo định kỳ. Dung dịch dinh dưỡng dư chảy xuống sẽ được thu hồi trong bể tái sử dụng. Như vậy, hệ thống này sử dụng dung dịch dinh dưỡng khá hiệu quả, nước dư ra được tái sử dụng, không bị hao phí. Hệ thống này có thể dùng để trồng cây thảo mộc và các loại hoa, các loại cây ăn trái như cà chua, dưa leo, dưa lưới, ớt,...
 
 \begin{center}
@@ -499,8 +497,10 @@ Trường hợp sử dụng dòng DC:
 \item Array: kiểu mảng, gồm các phần tử phân cách nhau bởi dấu phẩy ‘,’ và mảng được bao bởi cặp dấu [ và ].
 \item Object: kiểu đối tượng, gồm những cặp giá trị đi cùng nhau, mỗi cặp phân cách bởi dấu phẩy’,’, đối tượng được bao bởi cặp dấu { và }, cặp giá trị bao gồm tên và giá trị được phân cách bởi dấu hai chấm’:’.
 \item Null: giá trị null.
+\end{itemize}
+
 \begin{center}
-\begin{figure}[!htp]
+\begin{figure}[H]
 \begin{center}
 \includegraphics[scale=.8]{hinh/json.png}
 \end{center}
@@ -508,15 +508,11 @@ Trường hợp sử dụng dòng DC:
 \end{figure}
 \end{center}
 
-\end{itemize}
-
-
 JSON được sử dụng rộng rãi vì những ưu điểm của nó:
 \begin{itemize}
-\item Có thể đọc hiểu được (human-readability).
-\item Là kiểu dữ liệu trên nền cơ sở Javascript nên dễ dàng tiếp cận.
+\item Có thể đọc hiểu được (human-readability), là kiểu dữ liệu trên nền cơ sở Javascript nên dễ dàng tiếp cận.
 \item Dữ liệu truyền tải ngắn gọn so với những định dạng dữ liệu khác như: xml, html…
-\item Dễ dàng chuyển đổi(parse) dữ liệu từ dạng chuỗi (nhận từ server) sang dữ liệu có thể sử dụng được (thành Object, Number, Array)…
+\item Dễ dàng chuyển đổi (parse) dữ liệu từ dạng chuỗi (nhận từ server) sang dữ liệu có thể sử dụng được (thành Object, Number, Array)…
 \item Dễ truy cập nội dung.
 \end{itemize}
 
@@ -600,7 +596,7 @@ PostgreSQL cũng là hệ quản trị cơ sở dữ liệu hỗ trợ mạnh tr
 
 \subsubsection{NodeBB}
 \noindent NodeBB là một nền tảng diễn đàn thế hệ mới sử dụng công nghệ web sockets để có thể tương tác ngay lập tức và thông báo thời gian thực. NodeBB có nhiều tính năng hiện đại với tư duy sáng tạo như tương tác mạng xã hội và dòng chảy thảo luận.\\
-\noindent NodeBB là một phần mềm mã nguồn mở được sử dụng khá rộng rãi.
+\noindent NodeBB là một phần mềm mã nguồn mở được sử dụng khá rộng rãi. Nhóm đã sử dụng nền tảng NodeBB để xây dựng diễn đàn trao đổi thông tin cho người dùng trong hệ thống. 
 \subsubsection{Git và GitHub}
 \noindent \textbf{Git:}\\
 Git là một hệ thống quản lý phiên bản cho những tập tin trên máy tính và các công việc chung cùng thực
@@ -650,7 +646,7 @@ Bởi vì giao thức này sử dụng băng thông thấp trong môi trường 
  MQTT là giao thức định hướng bản tin. Mỗi bản tin là một đoạn rời rạc của tín hiệu và broker không thể nhìn thấy.
 Mỗi bản tin được publish một địa chỉ, có thể hiểu như một kênh. Client đăng kí vào một vài kênh để nhận/gửi dữ liệu, gọi là subscribe. Client có thể subscribe vào nhiều kênh. Mỗi client sẽ nhận được dữ liệu khi bất kì trạm nào khác gửi dữ liệu vào kênh đã đăng kí. Khi một client gửi một bản tin đến một kênh vào đó, gọi là publish.
 \begin{center}
-\begin{figure}[htp]
+\begin{figure}[H]
 \begin{center}
 \includegraphics[height=7cm,width=11cm]{hinh/mqtt.png}
 \end{center}
@@ -665,7 +661,7 @@ Mỗi bản tin được publish một địa chỉ, có thể hiểu như một
 \begin{center}
 \begin{figure}[h]
 \begin{center}
-\includegraphics[height=7cm,width=11cm]{hinh/system.png}
+\includegraphics[height=9cm,width=13cm]{hinh/system.png}
 \end{center}
 \caption{Kiến trúc hệ thống.}
 \end{figure}
@@ -809,9 +805,9 @@ Thông tin kĩ thuật:
 \end{itemize}
 
 \subsubsection{Hoạt động, chức năng}
-\textbf{Sơ đồ hoạt động:}\\
+\noindent \textbf{Sơ đồ hoạt động:}\\
 \begin{center}
-\begin{figure}[h!]
+\begin{figure}[H]
 \begin{center}
 \includegraphics[scale=1]{hinh/mohinh.png}
 \end{center}
@@ -819,7 +815,7 @@ Thông tin kĩ thuật:
 \end{figure}
 \end{center}
 
-\textbf{Thu thập dữ liệu cảm biến:}\\
+\noindent \textbf{Thu thập dữ liệu cảm biến:}\\
 \noindent Các cảm biến được kết nối trực tiếp với board NodeMCU và lấy dữ liệu trực tiếp.
 \begin{itemize}
 	\item Nhiệt độ, độ ẩm: module DHT22 giao tiếp 1 wire với board NodeMCU. Dữ liệu nhiệt độ (C), độ ẩm (\%) được đọc sau mỗi (1s).
@@ -831,27 +827,27 @@ Thông tin kĩ thuật:
 \noindent Hoạt động đọc, quản lí dữ liệu cảm biến sẽ được thực hiện bởi 1 đối tượng:
 \begin{itemize}
 \item Quản lí các thông tin: nhiệt độ, độ ẩm, PPM, ánh sáng.
-\item Hoạt động độc lập, định thời đọc dữ liệu theo sơ đồ Hình 26
+\item Hoạt động độc lập, định thời đọc dữ liệu theo sơ đồ Hình 26.
 
-\begin{figure}[!htp]
+\begin{figure}[H]
 \begin{center}
-\includegraphics[scale=1]{hinh/sensor.PNG}
+\includegraphics[scale=0.9]{hinh/sensor.PNG}
 \end{center}
 \caption{Hoạt động độc lập, định thời đọc dữ liệu.}
 \end{figure}
 
 \end{itemize}
 
-\noindent \textbf{Điều khiển các actuators}\\
+\noindent \textbf{Điều khiển các actuators}
 
-\noindent \textbf{Thông số các actuator:}
+\textbf{Thông số các actuator:}
 
 \begin{itemize}
 
 \item Máy bơm nước:
-\begin{figure}[!h]
+\begin{figure}[H]
 \begin{center}
-\includegraphics[scale=0.1]{hinh/pump.jpg}
+\includegraphics[scale=0.2]{hinh/pump.jpg}
 \end{center}
 \caption{Máy bơm nước.}
 \end{figure}
@@ -863,9 +859,9 @@ Thông tin kĩ thuật:
 
 
 \item  Máy sục oxy:
-\begin{figure}[!h]
+\begin{figure}[H]
 \begin{center}
-\includegraphics[scale=0.7]{hinh/oxi.png}
+\includegraphics[scale=0.75]{hinh/oxi.png}
 \end{center}
 \caption{Máy sục oxy.}
 \end{figure}
@@ -877,7 +873,7 @@ Thông tin kĩ thuật:
 \item Đèn chiếu sáng:
 \begin{figure}[!h]
 \begin{center}
-\includegraphics[scale=0.2]{hinh/led.jpg}
+\includegraphics[scale=0.4]{hinh/led.jpg}
 \end{center}
 \caption{Đèn led.}
 \end{figure}
@@ -888,12 +884,13 @@ Thông tin kĩ thuật:
 
 \end{itemize}
 
-\noindent \textbf{Cách điều khiển:}
+\newpage
+\textbf{Cách điều khiển các actuator:}
 \begin{itemize}
 
 \item Hoạt động của thanh ghi dịch:
 
-\begin{figure}[!h]
+\begin{figure}[H]
 \begin{center}
 \includegraphics[scale=0.8]{hinh/stm_register.PNG}
 \end{center}
@@ -911,7 +908,7 @@ Thông tin kĩ thuật:
 
 \item Các actuators sẽ được kích hoạt trực tiếp thông qua relay:
 
-\begin{figure}[!h]
+\begin{figure}[H]
 \begin{center}
 \includegraphics[scale=0.8]{hinh/actuator.PNG}
 \end{center}
@@ -920,7 +917,7 @@ Thông tin kĩ thuật:
 
 \item Tín hiệu điều khiển relay sẽ lấy từ thanh ghi: \\
 
-\begin{figure}[!h]
+\begin{figure}[H]
 \begin{center}
 \includegraphics[scale=0.7]{hinh/register_relay.PNG}
 \end{center}
@@ -928,6 +925,7 @@ Thông tin kĩ thuật:
 \end{figure}
 
 \end{itemize}
+\newpage
 \noindent \textbf{Thời gian thực:}
 
 \begin{itemize}
@@ -1008,7 +1006,7 @@ Thời điểm bắt đầu hoạt động. & Thời lượng actuator được 
 	
 	\end{itemize}
 	\begin{center}
-\begin{figure}[h!]
+\begin{figure}[H]
 \begin{center}
 \includegraphics[scale=.6]{hinh/persistent_actuator.PNG}
 \end{center}
@@ -1018,7 +1016,7 @@ Thời điểm bắt đầu hoạt động. & Thời lượng actuator được 
 
 \end{itemize}
 
-\noindent \textbf{Truyền nhận dữ liệu với giao thức MQTT.}
+\noindent \textbf{Truyền nhận dữ liệu với giao thức MQTT}
 	\begin{itemize}
 	\item Đối tượng thực hiện công việc này hoạt động trên board NodeMCU với vai trò là một MQTT Client, bao gồm:
 		\begin{itemize}
@@ -1048,7 +1046,7 @@ Thời điểm bắt đầu hoạt động. & Thời lượng actuator được 
 			\end{figure}
 			\end{center}
 	\end{itemize}
-\noindent	\textbf{Cấu hình, hoạt động của các chế độ WiFi.}
+\noindent	\textbf{Cấu hình, hoạt động của các chế độ WiFi}
 
 	\begin{itemize}
 	\item	Board NodeMCU cho phép hoạt động ở 3 chế độ:
@@ -1075,27 +1073,27 @@ Thời điểm bắt đầu hoạt động. & Thời lượng actuator được 
 
 	\end{itemize}
 			\begin{center}
-			\begin{figure}[!h]
+			\begin{figure}[H]
 			\begin{center}
-			\includegraphics[scale=.7]{hinh/wifi_station.PNG}
+			\includegraphics[scale=.6]{hinh/wifi_station.PNG}
 			\end{center}
 			\caption{Wifi station.}
 			\end{figure}
 			\end{center}
 			\noindent \\
 			\begin{center}
-			\begin{figure}[!h]
+			\begin{figure}[H]
 			\begin{center}
-			\includegraphics[scale=.7]{hinh/wifi_ap.PNG}
+			\includegraphics[scale=.6]{hinh/wifi_ap.PNG}
 			\end{center}
 			\caption{Wifi AP.}
 			\end{figure}
 			\end{center}
 			\noindent \\
 			\begin{center}
-			\begin{figure}[!h]
+			\begin{figure}[H]
 			\begin{center}
-			\includegraphics[scale=.7]{hinh/wifi_application.PNG}
+			\includegraphics[scale=.6]{hinh/wifi_application.PNG}
 			\end{center}
 			\caption{Wifi application.}
 			\end{figure}
@@ -1117,7 +1115,7 @@ Thời điểm bắt đầu hoạt động. & Thời lượng actuator được 
 	\end{itemize}
 
 
-\noindent	\textbf{Lưu trữ dữ liệu.}
+\noindent	\textbf{Lưu trữ dữ liệu}
 	\begin{itemize}
 	\item	Các thông tin cần được lưu trữ trong EEPROM:
 		\begin{itemize}
@@ -1131,7 +1129,7 @@ Thời điểm bắt đầu hoạt động. & Thời lượng actuator được 
 
 	\end{itemize}
 
-\noindent	\textbf{Giao tiếp giữa NodeMCU và STM32F103C8T6.}
+\noindent	\textbf{Giao tiếp giữa NodeMCU và STM32F103C8T6}
 	\begin{itemize}
 	\item  Giao thức lớp dưới được sử dụng là UART.
 	\item	Một giao thức đơn giản được xây dựng trên lớp UART nhằm:
@@ -1140,9 +1138,9 @@ Thời điểm bắt đầu hoạt động. & Thời lượng actuator được 
 		\item	Đảm bảo tính toàn vẹn của gói tin.
 		\item Cấu trúc giao thức:
 			\begin{center}
-			\begin{figure}[h!]
+			\begin{figure}[H]
 			\begin{center}
-			\includegraphics[scale=.6]{hinh/uart_protocol.PNG}
+			\includegraphics[scale=1]{hinh/uart_protocol.PNG}
 			\end{center}
 			\caption{Cấu trúc giao thức UART.}
 			\end{figure}
@@ -1158,7 +1156,7 @@ Thời điểm bắt đầu hoạt động. & Thời lượng actuator được 
 		  	\end{itemize}
 		  	
 		  	\begin{center}
-			\begin{figure}[h!]
+			\begin{figure}[H]
 			\begin{center}
 			\includegraphics[scale=.6]{hinh/uart_flow.PNG}
 			\end{center}
@@ -1171,7 +1169,6 @@ Thời điểm bắt đầu hoạt động. & Thời lượng actuator được 
 		\end{itemize}
 	\end{itemize}
 
-\newpage
 \subsubsection{Kiến trúc phần mềm}
 
 \begin{itemize}
@@ -1202,10 +1199,11 @@ Thời điểm bắt đầu hoạt động. & Thời lượng actuator được 
 \caption{Truyền nhận dữ liệu.}
 \end{figure}
 
+\newpage
 \item Class diagram
 
 \begin{itemize}
-	\item Các class hoạt động trên board NodeMCU.
+	\item Các class hoạt động trên board NodeMCU:
 	
 	\begin{figure}[H]
 \centering
@@ -1256,18 +1254,19 @@ Thời điểm bắt đầu hoạt động. & Thời lượng actuator được 
 \begin{figure}[H]
 \centering
 \begin{center}
-\includegraphics[scale=.85]{hinh/class_switchap.PNG}
+\includegraphics[scale=.9]{hinh/class_switchap.PNG}
 \end{center}
 \caption{SwitchAP.}
 \end{figure}
 
 \begin{figure}[H]
 \centering
-\includegraphics[scale=.85]{hinh/class_nodeapplication.PNG}
+\includegraphics[scale=.9]{hinh/class_nodeapplication.PNG}
 \caption{ Application.}
 \end{figure}
 
-	\item Các class hoạt động trên board STM
+\newpage
+	\item Các class hoạt động trên board STM:
 
 \begin{figure}[H]
 \centering
@@ -1280,17 +1279,17 @@ Thời điểm bắt đầu hoạt động. & Thời lượng actuator được 
 \begin{figure}[H]
 \centering
 \begin{center}
-\includegraphics[scale=.75]{hinh/class_actuator.PNG}
+\includegraphics[scale=.85]{hinh/class_stmapplication.PNG}
 \end{center}
-\caption{Actuator.}
+\caption{Apllication.}
 \end{figure}
 
 \begin{figure}[H]
 \centering
 \begin{center}
-\includegraphics[scale=.85]{hinh/class_stmapplication.PNG}
+\includegraphics[scale=.75]{hinh/class_actuator.PNG}
 \end{center}
-\caption{Apllication.}
+\caption{Actuator.}
 \end{figure}
 
 \end{itemize}
@@ -2081,7 +2080,7 @@ UC\_CROP\_005 & Cài đặt ngưỡng dữ liệu & Tạ Chí Tây & 20/3/2017\\
 \end{center}
 
 \subsection{Ứng dụng di động}
-\noindent Ứng dụng được viết trên framework Ionic 2, sử dụng angular 2 và có thể chạy trên android hoặc iOS (hiện tại nhóm mới thử nghiệm trên android) 
+\noindent Ứng dụng được viết trên framework Ionic 2, sử dụng angular 2 và có thể chạy trên android hoặc iOS (hiện tại nhóm mới thử nghiệm trên android). 
 \begin{itemize}
 \item Ứng dụng nhằm mục đích giúp người dùng có thể theo dõi trạng thái của hệ thống một cách nhanh chóng.
 \item Chức năng chính:
@@ -2111,9 +2110,8 @@ UC\_CROP\_005 & Cài đặt ngưỡng dữ liệu & Tạ Chí Tây & 20/3/2017\\
 
 \noindent Sử dụng giao thức MQTT cho cả hai chiều tương tác là gửi dữ liệu từ thiết bị lên và từ server gửi xuống. Các gói tin đều được mã hóa XXTEA để đảm bảo tính bảo mật.
 \subsubsection{Cấu trúc các gói tin}
-\noindent Các bảng sau mô tả cụ thể cấu trúc các gói tin:\\
-\\
-\begin{table}[!htp]
+\noindent Các bảng sau mô tả cụ thể cấu trúc các gói tin:
+\begin{table}[H]
 \begin{tabular}{|c|c|c|c|c|c|}
 \hline 
  & Số thứ tự & \multicolumn{4}{|c|}{Cấu trúc gói tin} \\ 
@@ -2125,14 +2123,12 @@ Trường & SN & MAC & CMD\_ID & DATA\_LENGTH  & DATA \\
 Mô tả & \makecell{số thứ tự \\ gói tin\\ gửi và nhận} & địa chỉ MAC & định danh gói tin & độ dài gói tin & dữ liệu \\ 
 \hline 
 \end{tabular} 
-\caption{Cấu trúc chung của các gói tin}
+\caption{Cấu trúc chung của các gói tin.}
 \end{table}
-\\
-\\
-\noindent Chi tiết các gói tin
 
+\noindent Chi tiết các gói tin:
 
-\begin{table}[!htp]
+\begin{table}[H]
 \centering
 \begin{tabular}{|c|c|c|c|}
 \hline 
@@ -2152,10 +2148,10 @@ Mô tả, ví dụ & \makecell{yyyy: năm \\
 mm: tháng \\ dd: ngày \\ hh: giờ \\ mm: phút \\ ss: giây} &  &  \\ 
 \hline 
 \end{tabular} 
-\caption{Cấu hình}
+\caption{Cấu hình.}
 \end{table}
-
-\begin{table}[!htp]
+\noindent \\
+\begin{table}[H]
 \centering
 \begin{tabular}{|c|c|c|c|c|}
 \hline 
@@ -2174,10 +2170,10 @@ Cấu trúc & XX & XX & XX & 4x[hhmmss]xSCH\_NUM \\
 Mô tả, ví dụ & \makecell{số lượng \\actuator} & \makecell{ID actuator \\ trên board} & số lịch trình & hhmmss: 050000 \\ 
 \hline 
 \end{tabular} 
-\caption{Lịch trình cho actuator}
+\caption{Lịch trình cho actuator.}
 \end{table}
-
-\begin{table}[!htp]
+\noindent \\
+\begin{table}[H]
 \centering
 \begin{tabular}{|c|c|c|}
 \hline 
@@ -2196,10 +2192,10 @@ Cấu trúc & XX & X \\
 Mô tả, ví dụ &  & \makecell{giá trị: 0/1 \\ 0: tắt \\ 1: bật} \\ 
 \hline 
 \end{tabular} 
-\caption{Điều khiển actuator}
+\caption{Điều khiển actuator.}
 \end{table}
-
-\begin{table}[!htp]
+\noindent \\
+\begin{table}[H]
 \centering
 \begin{tabular}{|c|c|c|c|c|}
 \hline 
@@ -2216,10 +2212,10 @@ Kích thước (byte) & 2 & 2 & 4 & 4 \\
 Cấu trúc & XX & XX & XXXX & XXXX \\ 
 \hline 
 \end{tabular} 
-\caption{Dữ liệu gửi từ các cảm biến}
+\caption{Dữ liệu gửi từ các cảm biến.}
 \end{table}
-
-\begin{table}[!htp]
+\noindent \\
+\begin{table}[H]
 \centering
 \begin{tabular}{|c|c|}
 \hline 
@@ -2236,10 +2232,10 @@ Kích thước (byte) & 14 \\
 Cấu trúc & yyyymmddhhmmss \\ 
 \hline 
 \end{tabular} 
-\caption{Đồng bộ thời gian thực}
+\caption{Đồng bộ thời gian thực.}
 \end{table}
-
-\begin{table}[!htp]
+\noindent \\
+\begin{table}[H]
 \centering
 \begin{tabular}{|c|c|c|c|}
 \hline 
@@ -2258,10 +2254,10 @@ Cấu trúc & XX & X & X \\
 Mô tả, ví dụ & \makecell{11 - 19: bơm nước \\ 21 - 29: đèn \\ 31 - 39: quạt \\ 41 - 49: bơm oxy} & \makecell{0: thêm actuator \\ 1: xóa actuator} & \makecell{0: primary \\ 1: secondary} \\ 
 \hline 
 \end{tabular} 
-\caption{Thêm bớt actuator}
+\caption{Thêm bớt actuator.}
 \end{table}
-
-\begin{table}[!htp]
+\noindent \\
+\begin{table}[H]
 \centering
 \begin{tabular}{|c|c|}
 \hline 
@@ -2280,10 +2276,10 @@ Cấu trúc & X \\
 Mô tả, ví dụ & \makecell{0: gói tin sai, không nhận được \\ 1: xử lý thành công gói tin} \\ 
 \hline 
 \end{tabular} 
-    \caption{Gói tin phản hồi}
+    \caption{Gói tin phản hồi.}
 \end{table}
-
-\begin{table}[!htp]
+\noindent \\
+\begin{table}[H]
 \centering
 \begin{tabular}{|c|c|}
 \hline 
@@ -2302,7 +2298,7 @@ Cấu trúc & X \\
 Mô tả, ví dụ & \makecell{0: thêm board mới \\ 1: xóa board} \\ 
 \hline 
 \end{tabular} 
-\caption{Thêm, bớt một board điều khiển}
+\caption{Thêm, bớt một board điều khiển.}
 \end{table}
 
 \newpage
@@ -2355,12 +2351,12 @@ Các công cụ và môi trường phát triển được sử dụng để thi�
 \end{center}
 \caption{Oscillator cầu Wein.}
 \end{figure}
-Các giá trị được cung cấp để tạo ra mạch dao động có tần số là 10Khz.\\
+Các giá trị được cung cấp để tạo ra mạch dao động có tần số là 10 kHz.\\
 Ta có:
 \begin{center}
-R = 1k Ohms, C = 0.015uF, suy ra F = 1/(2*pi*R*C)
+R = 1 k$\Omega$, C = 0.015 $\mu$F, suy ra $F = \dfrac{1}{2\pi RC}$
 \end{center}
-Chúng được sử dụng rộng rãi trong nhiều thiết bị điện tử. Ví dụ phổ biến của tín hiệu được tạo ra bởi dao động bao gồm các tín hiệu phát sóng của đài phát thanh và truyền hình , tín hiệu đồng hồ mà điều chỉnh máy tính và đồng hồ thạch anh ,âm thanh được tạo ra bởi beepers điện tử và trò chơi điện tử... Ta sử dụng một tín hiệu AC để đo độ dẫn của muối, có thể thay đổi giá trị R, C trong oscillator để đảm bảo rằng tần số đầu ra là trên 1kHz, tần số thấp hơn sẽ cung cấp các giá trị không ổn định.
+Chúng được sử dụng rộng rãi trong nhiều thiết bị điện tử. Ví dụ phổ biến của tín hiệu được tạo ra bởi dao động bao gồm các tín hiệu phát sóng của đài phát thanh và truyền hình , tín hiệu đồng hồ mà điều chỉnh máy tính và đồng hồ thạch anh ,âm thanh được tạo ra bởi beepers điện tử và trò chơi điện tử... Ta sử dụng một tín hiệu AC để đo độ dẫn của muối, có thể thay đổi giá trị R, C trong oscillator để đảm bảo rằng tần số đầu ra là trên 1 kHz, tần số thấp hơn sẽ cung cấp các giá trị không ổn định.
 \item	Gain loop: mạch khuếch đại nguồn tín hiệu nhận được từ đầu dò 1cm đặt trong dung dịch
 \item	Bộ chuyển đổi AC thành DC:  Một mạch chỉnh lưu, một mạch điện bao gồm các linh kiện điện - điện tử dùng để biến đổi dòng điện xoay chiều thành dòng điện một chiều. Mạch chỉnh lưu cả chu kỳ thường dùng 4 Diode mắc theo hình cầu (còn gọi là mạch chỉnh lưu cầu). Mạch chỉnh lưu có thể được sử dụng trong các bộ nguồn cung cấp dòng điện một chiều, hoặc trong các mạch tách sóng tín hiệu vô tuyến điện trong các thiết bị vô tuyến, sử dụng mạch chỉnh lưu nhiều điốt (4 đi-ốt) để có thể biến đổi từ xoay chiều thành một chiều.
 \begin{figure}[H]
@@ -2378,15 +2374,13 @@ Nửa chu kì đầu, khi điểm 1 dương so với điểm 2, dòng chạy t�
 \item	Nguồn đôi 12V: Mạch tạo nguồn đôi 12V có chức năng đổi từ nguồn đơn DC sang nguồn đôi +-12V. Với điện áp ngõ vào từ 2.8V - 5VDC.
 \begin{figure}[H]
 \centering
-\begin{center}
-\includegraphics[scale=.7]{hinh/PPM/ppm_12vtruoc.png}
-\end{center}
+\includegraphics[scale=1]{hinh/PPM/ppm_12vtruoc.png}
 \caption{Nguồn đôi 12V - Trước.}
 \end{figure}
 \begin{figure}[H]
 \centering
 \begin{center}
-\includegraphics[scale=.4]{hinh/PPM/ppm_12vsau.png}
+\includegraphics[scale=.6]{hinh/PPM/ppm_12vsau.png}
 \end{center}
 \caption{Nguồn đôi 12V - Sau.}
 \end{figure}
@@ -2394,7 +2388,7 @@ Nửa chu kì đầu, khi điểm 1 dương so với điểm 2, dòng chạy t�
 \begin{figure}[H]
 \centering
 \begin{center}
-\includegraphics[scale=.3]{hinh/PPM/ppm_jackdc.jpg}
+\includegraphics[scale=.5]{hinh/PPM/ppm_jackdc.jpg}
 \end{center}
 \caption{Jack DC.}
 \end{figure}
@@ -2402,7 +2396,7 @@ Nửa chu kì đầu, khi điểm 1 dương so với điểm 2, dòng chạy t�
 \begin{figure}[H]
 \centering
 \begin{center}
-\includegraphics[scale=.3]{hinh/PPM/ppm_tl074.jpg}
+\includegraphics[scale=.5]{hinh/PPM/ppm_tl074.jpg}
 \end{center}
 \caption{IC TL074.}
 \end{figure}
@@ -2417,7 +2411,7 @@ Nửa chu kì đầu, khi điểm 1 dương so với điểm 2, dòng chạy t�
 \begin{figure}[H]
 \centering
 \begin{center}
-\includegraphics[scale=.5]{hinh/PPM/ppm_zener.jpg}
+\includegraphics[scale=.7]{hinh/PPM/ppm_zener.jpg}
 \end{center}
 \caption{Diode Zener.}
 \end{figure}
@@ -2425,14 +2419,14 @@ Nửa chu kì đầu, khi điểm 1 dương so với điểm 2, dòng chạy t�
 \begin{figure}[H]
 \centering
 \begin{center}
-\includegraphics[scale=.5]{hinh/PPM/ppm_c015.jpg}
+\includegraphics[scale=.7]{hinh/PPM/ppm_c015.jpg}
 \end{center}
 \caption{Tụ 0.015uF.}
 \end{figure}
 \begin{figure}[H]
 \centering
 \begin{center}
-\includegraphics[scale=.3]{hinh/PPM/ppm_c22.jpg}
+\includegraphics[scale=.4]{hinh/PPM/ppm_c22.jpg}
 \end{center}
 \caption{Tụ 0.22uF.}
 \end{figure}
@@ -2456,7 +2450,7 @@ Nửa chu kì đầu, khi điểm 1 dương so với điểm 2, dòng chạy t�
 	\item Nhiệt độ, độ ẩm
 		\begin{itemize}
 			\item Nối dây
-			\begin{table}[!htp]
+			\begin{table}[H]
 		    \centering
 				\begin{tabular}{|c|c|}
 				\hline 
@@ -2655,17 +2649,13 @@ Nửa chu kì đầu, khi điểm 1 dương so với điểm 2, dòng chạy t�
 			\item Thư viện
 			\begin{figure}[H]
 			\centering
-			\begin{center}
 			\includegraphics[scale=.7]{hinh/lib_register.PNG}
-			\end{center}
 			\caption{Thư viện thanh ghi dịch.}
 			\end{figure}
 			
 			\begin{figure}[H]
 			\centering
-			\begin{center}
 			\includegraphics[scale=.7]{hinh/path_register.PNG}
-			\end{center}
 			\caption{Đường dẫn thư viện thanh ghi dịch.}
 			\end{figure}
 			\end{itemize}
@@ -2675,9 +2665,7 @@ Nửa chu kì đầu, khi điểm 1 dương so với điểm 2, dòng chạy t�
 		
 			\begin{figure}[H]
 			\centering
-			\begin{center}
-			\includegraphics[scale=.7]{hinh/adapter.jpg}
-			\end{center}
+			\includegraphics[scale=.6]{hinh/adapter.jpg}
 			\caption{Nguồn cho các actuator.}
 			\end{figure}
 		
@@ -2695,17 +2683,13 @@ Nửa chu kì đầu, khi điểm 1 dương so với điểm 2, dòng chạy t�
 		\item Thư viện
 			\begin{figure}[H]
 			\centering
-			\begin{center}
 			\includegraphics[scale=.7]{hinh/lib_mqtt.PNG}
-			\end{center}
 			\caption{Thư viện MQTT.}
 			\end{figure}
 			
 			\begin{figure}[H]
 			\centering
-			\begin{center}
 			\includegraphics[scale=.7]{hinh/path_mqtt.PNG}
-			\end{center}
 			\caption{Đường dẫn thư viện MQTT.}
 			\end{figure}
 		
@@ -2741,17 +2725,13 @@ Nửa chu kì đầu, khi điểm 1 dương so với điểm 2, dòng chạy t�
 		
 			\begin{figure}[H]
 			\centering
-			\begin{center}
 			\includegraphics[scale=.7]{hinh/lib_datastructure.PNG}
-			\end{center}
 			\caption{Thư viện cấu trúc dữ liệu.}
 			\end{figure}
 			
 			\begin{figure}[H]
 			\centering
-			\begin{center}
 			\includegraphics[scale=.7]{hinh/path_datastructure.PNG}
-			\end{center}
 			\caption{Đường dẫn thư viện cấu trúc dữ liệu.}
 			\end{figure}
 		
@@ -2764,19 +2744,15 @@ Nửa chu kì đầu, khi điểm 1 dương so với điểm 2, dòng chạy t�
 		\item Board chuyển từ chế độ Station sang Access Point khi nhận tín hiệu nhấn liên tục nút nhấn trong vòng 3s.
 													\begin{figure}[H]
 			\centering
-			\begin{center}
 			\includegraphics[scale=.7]{hinh/node_button.PNG}
-			\end{center}
 			\caption{Nút nhấn.}
 			\end{figure}
-		\item Giao diện và chức năng
+		\item Giao diện và chức năng:
 		\begin{itemize}
-			\item Khi chuyển sang chế độ Access Point và hoạt động chức năng webserver, Node MCU sẽ phát ra wifi
+			\item Khi chuyển sang chế độ Access Point và hoạt động chức năng webserver, Node MCU sẽ phát ra wifi.
 													\begin{figure}[H]
 			\centering
-			\begin{center}
 			\includegraphics[scale=.7]{hinh/webserver_1.PNG}
-			\end{center}
 			\caption{Board web server 1.}
 			\end{figure}
 			
@@ -2784,7 +2760,7 @@ Nửa chu kì đầu, khi điểm 1 dương so với điểm 2, dòng chạy t�
 			\begin{figure}[H]
 			\centering
 			\begin{center}
-			\includegraphics[scale=.7]{hinh/webserver_2.PNG}
+			\includegraphics[scale=.9]{hinh/webserver_2.PNG}
 			\end{center}
 			\caption{Board web server 2.}
 			\end{figure}
@@ -2801,7 +2777,7 @@ Nửa chu kì đầu, khi điểm 1 dương so với điểm 2, dòng chạy t�
 			\begin{figure}[H]
 			\centering
 			\begin{center}
-			\includegraphics[scale=.9]{hinh/webserver_4.PNG}
+			\includegraphics[scale=1]{hinh/webserver_4.PNG}
 			\end{center}
 			\caption{Board web server 4.}
 			\end{figure}
@@ -2810,7 +2786,7 @@ Nửa chu kì đầu, khi điểm 1 dương so với điểm 2, dòng chạy t�
 			\begin{figure}[H]
 			\centering
 			\begin{center}
-			\includegraphics[scale=.9]{hinh/webserver_5.PNG}
+			\includegraphics[scale=1]{hinh/webserver_5.PNG}
 			\end{center}
 			\caption{Board web server 5.}
 			\end{figure}
@@ -2852,48 +2828,41 @@ Nửa chu kì đầu, khi điểm 1 dương so với điểm 2, dòng chạy t�
 	\item Thiết kế mạch
 	\begin{itemize}
 		\item Schematic
+    	\begin{landscape}
 			\begin{figure}[H]
 			\centering
-			\begin{center}
-			\includegraphics[scale=.7]{hinh/schematic.PNG}
-			\end{center}
-			\caption{Schematic}
+			\includegraphics[scale=1]{hinh/schematic.PNG}
+			\caption{Schematic.}
 			\end{figure}
+      \end{landscape}
 		\item PCB
 			\begin{figure}[H]
 			\centering
-			\begin{center}
 			\includegraphics[scale=.9]{hinh/pcb_board.PNG}
-			\end{center}
 			\caption{PCB}
 			\end{figure}
 	\end{itemize}
 	\item Mô hình thử nghiệm
 			\begin{figure}[H]
 			\centering
-			\begin{center}
 			\includegraphics[scale=.1]{hinh/mohinh_1.jpg}
-			\end{center}
-			\caption{Mô hình 1}
+			\caption{Mô hình thử nghiệm 1.}
 			\end{figure}
 			
 			\begin{figure}[H]
 			\centering
-			\begin{center}
-			\includegraphics[scale=.15]{hinh/mohinh_2.jpg}
-			\end{center}
-			\caption{Mô hình 2}
+			\includegraphics[scale=.125]{hinh/mohinh_2.jpg}
+			\caption{Mô hình thử nghiệm 2.}
 			\end{figure}
 			
 			\begin{figure}[H]
 			\centering
-			\begin{center}
-			\includegraphics[scale=.15]{hinh/mohinh_3.jpg}
-			\end{center}
-			\caption{Mô hình 3}
+			\includegraphics[scale=.1]{hinh/mohinh_3.jpg}
+			\caption{Mô hình thử nghiệm 3.}
 			\end{figure}
 	\end{enumerate}
 
+\newpage
 \subsection{Ứng dụng web}
 \subsubsection{Môi trường phát triển}
 Các công cụ và môi trường phát triển được sử dụng để phát triển trang web:
@@ -2911,14 +2880,14 @@ Các công cụ và môi trường phát triển được sử dụng để phá
 \begin{itemize}
 \item Không có data:\\
 \{\\
-\indent success: success,\\
-\indent message: message\\
+\hspace{\labelwidth}\phantom{\texttt{type}---}success: success,\\
+\hspace{\labelwidth}\phantom{\texttt{type}---}message: message\\
 \}
 \item Có data:\\
 \{\\
-\indent success: success,\\
-\indent data: data (*),\\
-\indent message: message\\
+\hspace{\labelwidth}\phantom{\texttt{type}---} success: success,\\
+\hspace{\labelwidth}\phantom{\texttt{type}---} data: data (*),\\
+\hspace{\labelwidth}\phantom{\texttt{type}---} message: message\\
 \}
 
 \end{itemize}
@@ -3614,11 +3583,11 @@ Trong đó success nhận giá trị true nếu request được xử lý thành
 
 
 \begin{center}
-\begin{figure}[htp]
+\begin{figure}[H]
 \begin{center}
 \includegraphics[scale=1.]{hinh/folder.png}
 \end{center}
-\caption{Cây thư mục}
+\caption{Cây thư mục mã nguồn.}
 \end{figure}
 \end{center}
 \subsubsection{Cấu trúc thư mục}
@@ -3640,19 +3609,8 @@ Ngoài ra, các thư mục khác:
 \item file package.js: các gói hỗ trợ trong ứng dụng dành cho nodejs.
 \end{itemize}
 \subsubsection{Xây dựng database}
-\noindent Sử dụng Sequelizejs để hiện thực database giống như sơ đồ sau:
-\begin{landscape}
-\begin{center}
-\begin{figure}[b]
-\begin{center}
-\includegraphics[scale=0.64]{hinh/class_diagram.jpg}
-\end{center}
-\caption{ Thiết kế class}
-\end{figure}
-\end{center}
-\end{landscape}
-\newpage
-Chú thích các đối tượng trong sơ đồ lớp trên:
+\noindent Sử dụng Sequelizejs để hiện thực database giống như sơ đồ sau.
+Chú thích các đối tượng trong sơ đồ lớp:
 \begin{itemize}
 \item User: người sử dụng.
 \item Device: board điều khiển.
@@ -3664,6 +3622,14 @@ Chú thích các đối tượng trong sơ đồ lớp trên:
 \item Actuator: các thực thể máy bơm, quạt, đèn.
 \item Schedule: lịch trình hoạt động của mỗi actuator.
 \end{itemize}
+\begin{landscape}
+\begin{figure}[b]
+\centering
+\includegraphics[scale=0.64]{hinh/class_diagram.jpg}
+\caption{Thiết kế sơ đồ lớp.}
+\end{figure}
+\end{landscape}
+
 \subsubsection{Một số hình ảnh}
 \begin{center}
 
@@ -3672,6 +3638,13 @@ Chú thích các đối tượng trong sơ đồ lớp trên:
 \includegraphics[scale=.5]{hinh/web_home.jpg}
 \end{center}
 \caption{Trang chủ.}
+\end{figure}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=.5]{hinh/search_page.png}
+\end{center}
+\caption{Trang tìm kiếm mùa vụ.}
 \end{figure}
 
 \begin{figure}[H]
@@ -3754,6 +3727,13 @@ Chú thích các đối tượng trong sơ đồ lớp trên:
 
 \begin{figure}[H]
 \begin{center}
+\includegraphics[scale=.5]{hinh/web_threshold.png}
+\end{center}
+\caption{Ngưỡng dữ liệu.}
+\end{figure}
+
+\begin{figure}[H]
+\begin{center}
 \includegraphics[scale=.5]{hinh/web_schedule.png}
 \end{center}
 \caption{Lịch trình hoạt động của các actuator.}
@@ -3766,12 +3746,6 @@ Chú thích các đối tượng trong sơ đồ lớp trên:
 \caption{Thêm lịch trình cho actuator.}
 \end{figure}
 
-\begin{figure}[H]
-\begin{center}
-\includegraphics[scale=.5]{hinh/web_threshold.png}
-\end{center}
-\caption{Ngưỡng dữ liệu.}
-\end{figure}
 
 \begin{figure}[H]
 \begin{center}
@@ -3780,7 +3754,12 @@ Chú thích các đối tượng trong sơ đồ lớp trên:
 \caption{Trang forum.}
 \end{figure}
 
-
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=.38]{hinh/admin_page.png}
+\end{center}
+\caption{Trang quản lý dành cho administrator/moderator.}
+\end{figure}
 
 \end{center}
 
@@ -3788,12 +3767,12 @@ Chú thích các đối tượng trong sơ đồ lớp trên:
 \subsubsection{Môi trường phát triển}
 Các môi trường và công cụ để phát triển ứng dụng di động:
 \begin{itemize}
-\item Hệ điều hành Manjaro
-\item Angular 4.4.3
-\item Ionic 2
-\item Visual studio code
-\item Android sdk 16 (hỗ trợ từ android 4.1 trở lên)
-\item Genymotion 2.11.0 để kiểm thử ứng dụng
+\item Hệ điều hành Manjaro.
+\item Angular 4.4.3.
+\item Ionic 2.
+\item Visual studio code.
+\item Android sdk 16 (hỗ trợ từ android 4.1 trở lên).
+\item Genymotion 2.11.0 để kiểm thử ứng dụng.
 \end{itemize}
 \subsubsection{Một số hình ảnh}
 
@@ -3829,25 +3808,21 @@ Các môi trường và công cụ để phát triển ứng dụng di động:
 \subsection{Tương tác hệ thống}
 Các biểu đồ tuần tự sau sẽ thể hiện sự tương tác giữa người dùng và hệ thống:
 
-
 \begin{figure}[H]
-\begin{center}
-\includegraphics[scale=.5]{hinh/seq-login.png}
-\end{center}
-\caption{Thao tác đăng nhập vào hệ thống sử dụng JWT.}
-\end{figure}
-
-\begin{figure}[H]
-\begin{center}
+\centering
 \includegraphics[scale=.65]{hinh/seq-CRUD.png}
-\end{center}
 \caption{Nhóm các thao tác CRUD.}
 \end{figure}
 
 \begin{figure}[H]
-\begin{center}
+\centering
+\includegraphics[scale=.55]{hinh/seq-login.png}
+\caption{Thao tác đăng nhập vào hệ thống sử dụng JWT.}
+\end{figure}
+
+\begin{figure}[H]
+\centering
 \includegraphics[scale=.6]{hinh/seq-board-communication.png}
-\end{center}
 \caption{Nhóm các thao tác tương tác với board điều khiển.}
 \end{figure}
 
@@ -3873,7 +3848,7 @@ Các biểu đồ tuần tự sau sẽ thể hiện sự tương tác giữa ng�
 	
 	\begin{figure}[H]
 	\begin{center}
-	\includegraphics[scale=.4]{hinh/relay_prototype.jpg}
+	\includegraphics[scale=.5]{hinh/relay_prototype.jpg}
 	\end{center}
 	\caption{Relay prototype.}
 	\end{figure}
@@ -3901,7 +3876,7 @@ Các biểu đồ tuần tự sau sẽ thể hiện sự tương tác giữa ng�
 \item Tiến hành đo:
 	\begin{figure}[H]
 	\begin{center}
-	\includegraphics[scale=.8]{hinh/PPM/nacl_1.PNG}
+	\includegraphics[scale=.7]{hinh/PPM/nacl_1.PNG}
 	\end{center}
 	\caption{Đo ppm dung dịch muối ăn 1.}
 	\end{figure}
@@ -3922,14 +3897,14 @@ Các biểu đồ tuần tự sau sẽ thể hiện sự tương tác giữa ng�
 \item Kết quả:
 	\begin{figure}[H]
 	\begin{center}
-	\includegraphics[scale=.8]{hinh/PPM/ppm_r2.PNG}
+	\includegraphics[scale=.75]{hinh/PPM/ppm_r2.PNG}
 	\end{center}
 	\caption{Kết quả đo ppm 1.}
 	\end{figure}
 	
 	\begin{figure}[H]
 	\begin{center}
-	\includegraphics[scale=.9]{hinh/PPM/ppm_r1.PNG}
+	\includegraphics[scale=.85]{hinh/PPM/ppm_r1.PNG}
 	\end{center}
 	\caption{Kết quả đo ppm 2.}
 	\end{figure}
@@ -3980,7 +3955,7 @@ Các biểu đồ tuần tự sau sẽ thể hiện sự tương tác giữa ng�
 \noindent Tại thời điểm làm bản thảo báo cáo, hệ thống mới chỉ được kiểm thử điều khiển bật tắt các relay theo lịch trình. Sắp tới nhóm sẽ kiểm thử trên các actuator và mô hình cây trồng thực tế trước khi hoàn thiện báo cáo và đưa ra phản biện.
 
 \newpage
-\section{TỔNG KẾT VÀ HƯỚNG PHÁT TRIỂN CHO TƯƠNG LAI}
+\section{TỔNG KẾT VÀ HƯỚNG PHÁT TRIỂN}
 \subsection{Tổng kết}
 	\subsubsection{Kết quả đạt được}
 	\begin{itemize}
@@ -4078,7 +4053,7 @@ Các biểu đồ tuần tự sau sẽ thể hiện sự tương tác giữa ng�
 \end{itemize}
 
 	
-\subsection{Hướng phát triển}
+\subsection{Hướng phát triển cho tương lai}
 \subsubsection{Ứng dụng web}
 \begin{itemize}
 \item Nghiên cứu kỹ hơn về ảnh hưởng của các nhân tố môi trường (nhiệt độ, độ ẩm, pH, ppm, ánh sáng, oxy) đến sự phát triển của các loại cây phổ biến trong từng thời kỳ, từ đó đưa ra các giải pháp tự động hóa việc chăm sóc cho từng giai đoạn phát triển của cây.
@@ -4101,7 +4076,6 @@ Các biểu đồ tuần tự sau sẽ thể hiện sự tương tác giữa ng�
 \item Hoàn thiện board điều khiển.
 \item Phát triển mô hình, tiến hành thử nghiệm thực tế.
 \end{itemize}
-\newpage
 
 \subsection{Quá trình làm việc của nhóm}
 \begin{landscape}
@@ -4140,7 +4114,7 @@ Các biểu đồ tuần tự sau sẽ thể hiện sự tương tác giữa ng�
   \makecell{Viết báo cáo} &  &  &  &  &  &  &  &  &  &  &  &  & x & x & x \\ 
   \hline 
   \end{tabular} 
-    \caption{Bảng công việc của Huỳnh Bá Thạch}
+    \caption{Bảng công việc của Huỳnh Bá Thạch.}
 \end{table}
 
 \end{landscape}
@@ -4175,7 +4149,7 @@ Các biểu đồ tuần tự sau sẽ thể hiện sự tương tác giữa ng�
   \makecell{Viết báo cáo} &  &  &  &  &  &  &  &  &  &  &  & x & x & x & x \\ 
   \hline 
   \end{tabular} 
-    \caption{Bảng công việc của Tạ Chí Tây}
+    \caption{Bảng công việc của Tạ Chí Tây.}
 \end{table}
 
 \end{landscape}
@@ -4211,7 +4185,7 @@ mạch đo ppm}
   \makecell{Viết báo cáo} &  &  &  &  &  &  &  &  &  &  & x & x & x & x & x \\ 
   \hline 
   \end{tabular} 
-    \caption{Bảng công việc của Nguyễn Lê Minh Khôi}
+    \caption{Bảng công việc của Nguyễn Lê Minh Khôi.}
 \end{table}
 
 \end{landscape}
@@ -4247,32 +4221,29 @@ mạch đo ppm}
   \makecell{Viết báo cáo} &  &  &  &  &  &  &  & x & x & x & x & x & x & x & x \\ 
   \hline 
   \end{tabular} 
-    \caption{Bảng công việc của Nguyễn Đình Dũng}
+    \caption{Bảng công việc của Nguyễn Đình Dũng.}
 \end{table}
 
 \end{landscape}
 
 
 \begin{thebibliography}{80}
-\bibitem{http://wikipedia:2012} http://vietjack.com/nodejs/nodejs\_la\_gi.jsp
+\bibitem{http://wikipedia:2012} Ovidiu Vermesan and Peter Friess, 2014, \textit{Internet of Things -  From Research and Innovation to Market Deployment}, River Pulishers.
+\bibitem{http://wikipedia:2012} Home Hydro Systems, \textit{The basic Hydroponic System types}, http://www.homehydrosystems.com/hydroponic-systems/systems.html [Online; Lastest updated in 2017]
+\bibitem{http://wikipedia:2012} Vietjack (2015), \textit{Nodejs là gì?}, http://vietjack.com/nodejs/nodejs\_la\_gi.jsp [Online; Lastest updated in 2017]
+\bibitem{http://wikipedia:2012} Freetuts.net, \textit{Javascript là gì? Viết ứng dụng Javascript đầu tiên}, https://freetuts.net/javascript-la-gi-viet-ung-dung-javascript-dau-tien-263.html [Online; Posted on 06 Jan 2015]
+\bibitem{http://wikipedia:2012} Sequelizejs.com, \textit{Sequelizejs documentation}, http://docs.sequelizejs.com/ [Online; Lastest updated in 2017]
+\bibitem{http://wikipedia:2012} Freetuts.net, \textit{JSON là gì? Cấu trúc chuỗi JSON}, https://freetuts.net/json-la-gi-cau-truc-chuoi-json-236.html [Online; Posted on 06 Dec 2014]
+\bibitem{http://wikipedia:2012} Freetuts.net, \textit{Tổng quan về AngularJS}, https://freetuts.net/tong-quan-ve-angularjs-200.html [Online; Posted on 14 Nov 2014]
+\bibitem{http://wikipedia:2012} Arduino.vn, \textit{Tìm hiểu giao thức MQTT}, http://arduino.vn/bai-viet/1236-tim-hieu-giao-thuc-mqtt [Online; Posted on 12 Sep 2016]
+\bibitem{http://wikipedia:2012} Viblo.asia, \textit{Giới thiệu về angular 2}, https://viblo.asia/p/gioi-thieu-ve-angular-2-APqzearpzVe [Online; Posted on 25 Feb 2017]
+\bibitem{http://wikipedia:2012} EnvatoTuts+, \textit{Giới thiệu Ionic 2}, https://code.tutsplus.com/vi/articles/introduction-to-ionic-2--cms-28193 [Online; Posted on 22 Feb 2017]
+\bibitem{http://wikipedia:2012} Wikipedia, \textit{Typescript}, https://vi.wikipedia.org/wiki/Typescript [Online; Lastest updated on 20 Apr 2016]
+\bibitem{http://wikipedia:2012} Wikipedia, \textit{PostgreSQL} , https://vi.wikipedia.org/wiki/PostgreSQL [Online; Lastest updated on 22 Aug 2017]
+\bibitem{http://wikipedia:2012} NodeBB.org, \textit{NodeBB framework}, https://docs.archive.nodebb.org/vi/latest/index.html [Online; Posted in 2014]
+\bibitem{http://wikipedia:2012} Wikipedia, \textit{XXTEA}, https://en.wikipedia.org/wiki/XXTEA [Online; Lastest updated on 13 Mar 2017]
+\bibitem{http://wikipedia:2012} Expressjs.com, \textit{ExpressJS Framework}, https://expressjs.com/ [Online; Lastest updated in 2017]
 
-\bibitem{http://wikipedia:2012} https://freetuts.net/javascript-la-gi-viet-ung-dung-javascript-dau-tien-263.html
-
-\bibitem{http://wikipedia:2012} http://docs.sequelizejs.com/
-
-\bibitem{http://wikipedia:2012} https://freetuts.net/json-la-gi-cau-truc-chuoi-json-236.html
-
-\bibitem{http://wikipedia:2012} https://freetuts.net/tong-quan-ve-angularjs-200.html
-
-\bibitem{http://wikipedia:2012} http://arduino.vn/bai-viet/1236-tim-hieu-giao-thuc-mqtt
-\bibitem{http://wikipedia:2012} https://viblo.asia/p/gioi-thieu-ve-angular-2-APqzearpzVe 
-\bibitem{http://wikipedia:2012} https://code.tutsplus.com/vi/articles/introduction-to-ionic-2--cms-28193 
-\bibitem{http://wikipedia:2012} https://vi.wikipedia.org/wiki/Typescript 
-\bibitem{http://wikipedia:2012} https://vi.wikipedia.org/wiki/PostgreSQL 
-\bibitem{http://wikipedia:2012} https://docs.archive.nodebb.org/vi/latest/index.html 
-\bibitem{http://wikipedia:2012} https://en.wikipedia.org/wiki/XXTEA
-\bibitem{http://wikipedia:2012} https://expressjs.com/
-\bibitem{http://wikipedia:2012} http://docs.sequelizejs.com/
 \end{thebibliography}
 
 \end{document}
