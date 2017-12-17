@@ -201,7 +201,9 @@ Sự phát triển của công nghệ trong thời đại hiện nay đã  mang 
 \item \textbf{MVC} Model - Controller - View
 \item \textbf{SPA} Single Page Application
 \item \textbf{UI} User Interface
-\item \textbf{IDE} Integrated Development Environment
+\item \textbf{IDE} Integrated Development
+ Environment
+ \item \textbf{CRUD} Create, Read, Update, Delete
 \end{enumerate}
 
 \newpage
@@ -227,7 +229,7 @@ Sự phát triển của công nghệ trong thời đại hiện nay đã  mang 
 	\item Tổng quan, khái niệm về thủy canh.
 	\item Các mô hình thủy canh và cách vận hành của từng mô hình.
 	\end{itemize}
-\item Học hỏi và biết cách sử dụng các công nghệ mới hiện nay.
+\item Học hỏi và biết cách sử dụng các công nghệ mới hiện nay như Nodejs, Angularjs, Angular 2, Ionic, ...
 \end{itemize}
 
 \subsubsection{Phần kết quả}
@@ -323,7 +325,7 @@ Sự phát triển của công nghệ trong thời đại hiện nay đã  mang 
 \end{figure}
 \end{center}
 
-\subsection{Giới thiệu về Hệ thống thủy canh}
+\subsection{Giới thiệu về hệ thống thủy canh}
 
 \noindent Trồng cây trong dung dịch ( thủy canh ) là kỹ thuật trồng cây không dùng đất mà trồng trực tiếp vào môi trường dinh dưỡng hoặc giá thể mà không phải là đất. Các giá thể có thể là cát, trấu, vỏ xơ dừa, than bùn, vermiculite perlite… Thường được định nghĩa như là “trồng cây trong nước” hoặc “trồng cây không cần đất”, kỹ thuật thủy canh là một trong những nghề làm vườn hiện đại. Bí quyết của kỹ thuật này là cung cấp đủ và đúng lúc cho cây trồng các nguyên tố khoáng cần thiết. Cung cấp đầy đủ cái ăn, bảo đảm đủ ánh sáng, CO2 cho quá trình quang hợp, O2 cho quá trình hô hấp, cây trồng có thể phát triển khỏe mạnh theo ý muốn của người trồng.\\
 
@@ -408,8 +410,70 @@ Sự phát triển của công nghệ trong thời đại hiện nay đã  mang 
 \caption{Mô hình hệ thống khí canh.}
 \end{figure}
 \end{center}
+
+\subsubsection{Các thông số trong dung dịch thủy canh, thiết bị đo ppm}
+
+\begin{itemize}
+\item Độ dẫn điện (EC)\\
+Chỉ số EC (electro-conductivity) (tương đối) là chỉ số diễn tả tổng nồng độ ion hòa tan trong dung dịch. Độ dẫn điện có thể được thể hiện bằng một số đơn vị khác nhau, nhưng đơn vị tiêu biểu được dùng để đo lường EC là millisiemens trên centimet (mS / cm). Chỉ số EC không diễn tả nồng độ của từng chất trong dung dịch đồng thời cũng không thể hiện mức độ cân bằng của các chất dinh dưỡng trong dung dịch. EC là thước đo độ dẫn điện từ hai đầu dò 1cm.\\
+Trong suốt quá trình tăng trưởng, cây hấp thu khoáng chất mà chúng cần, do vậy duy trì EC ở một mức ổn định là rất quan trọng. Nếu dung dịch có chỉ số EC cao thì sự hấp thu nước của cây diễn ra nhanh hơn sự hấp thu khoáng chất. Điều này làm nồng độ dung dịch tăng cao và gây ngộ độc cho cây. Khi đó ta phải bổ sung thêm nước vào môi trường. Ngược lại, nếu EC thấp, cây sẽ hấp thu khoáng chất nhanh hơn hấp thu nước. Khi đó, nồng độ dung dịch giảm mạnh, cây sẽ không được cung cấp đầy đủ khoáng chất, chậm lớn và phát triển kém.
+
+\item Chỉ số TDS\\
+Chỉ số TDS (Total Dissolved Solids) là chỉ số đo tổng lượng chất rắn hoà tan, tổng số các ion mang điện tích bao gồm khoáng chất, muối hoặc kim loại tồn tại trong một khối lượng nước nhất định. TDS thường được biểu thị bằng hàm số ml/L hoặc ppm (Parts Per Million). 1 ppm tương ứng với 1mg chất rắn hòa tan trong một lít nước. Hầu hết nước máy sẽ có chỉ số PPM rơi vào khoảng từ 200 – 400ppm.\\
+Chỉ số TDS cũng ảnh hưởng lớn đến sự phát triển của cây: Nếu TDS lên quá cao, nồng độ dung dịch vượt mức cho phép sẽ gây ra hiện tượng ngộ độc cho cây. Ngược lại, khi chỉ số TDS xuống thấp, dung dịch thủy canh sẽ không đảm bảo cung cấp đủ chất dinh dưỡng cho cây trồng.
+
+\item Tương quan giữa EC và TDS\\
+Mặc dù có một mối tuơng quan giữa EC và TDS nhưng chúng không giống nhau. TDS và EC là 2 tham số riêng biệt. TDS là tổng lượng chất rắn hoà tan trong nước. EC là khả năng của các chất co thể gây ra dòng điện. Lượng chất rắn như muối trong phân bón tỉ lệ trực tiếp với độ dẫn điện của nó, vì vậy lượng chất rắn cao gây độ dẫn cao. Vì khi phân bón hoà tan trong nước chúng trở thành các "ion", có mang điện tích âm hoặc dương, nên chúng sinh ra dòng điện.\\
+Mối quan hệ của TDS và độ dẫn đặc hiệu của nước ngầm có thể được ước lượng bằng phương trình sau:
+\begin{center}
+		TDS = ke*EC
+\end{center}					
+Trong đó: TDS có đơn vị mg\/L và EC là độ dẫn điện ở microsiemens trên mỗi centimet ở 25\textdegree{}C. Yếu tố tương quan ke dao động từ 0,55 đến 0,8.\\
+Giới hạn với cây trồng:
+\begin{figure}[H]
+\centering
+\begin{center}
+\includegraphics[scale=.8]{hinh/PPM/ppm_thamkhao.PNG}
+\end{center}
+\caption{Giới hạn với cây trồng.}
+\end{figure}
+
+\item Tại sao lại dùng thiết bị này?\\
+Nếu EC / PPM chỉ là đo điện dẫn (hoặc kháng) thì tại sao không sử dụng một đồng hồ volt / ohm trực tiếp? Bởi chúng đi qua dòng điện DC thông qua các đầu dò và bạn không thể đo độ dẫn của muối với dòng điện DC vì nó sẽ tách các phân tử ra ngoài, và vì các phân tử là điện dẫn điện,các phần tử điện sẽ thay đổi liên tục và sẽ không thu được kết quả gì. Bằng cách sử dụng một tín hiệu AC,với tần số đủ cao (> 1khz) các phân tử không có thời gian để di chuyển ra ngoài trước khi chúng được kéo theo hướng ngược lại.\\
+Các thành phần ion:
+\begin{figure}[H]
+\centering
+\begin{center}
+\includegraphics[scale=1]{hinh/PPM/ppm_ion.png}
+\end{center}
+\caption{Các thành phần ion.}
+\end{figure}
+
+Trường hợp sử dụng dòng AC:
+\begin{figure}[H]
+\centering
+\begin{center}
+\includegraphics[scale=1]{hinh/PPM/ppm_AC.png}
+\end{center}
+\caption{Trường hợp sử dụng dòng AC.}
+\end{figure}
+
+Trường hợp sử dụng dòng DC:
+\begin{figure}[H]
+\centering
+\begin{center}
+\includegraphics[scale=1]{hinh/PPM/ppm_DC.png}
+\end{center}
+\caption{Trường hợp sử dụng dòng DC.}
+\end{figure}
+
+\item Hoạt động\\
+Hai điện cực với một điện áp xoay chiều được đặt trong dung dịch. Điều này tạo ra một dòng điện phù thuộc vào bản chất dẫn điện của dung dịch. Thiết bị đọc dòng diện này và hiển thị theo đơn vị EC hoặc ppm.
+\end{itemize}
+
 \subsection{Hệ thống thủy canh với IoT}
 \noindent Việc kết hợp thủy canh và IoT ở nước ngoài đã trở nên khá phổ biến trong khi ở Việt Nam vẫn còn mới mẻ. Việc kết hợp IoT vào thủy canh giúp người trồng rau kiểm soát một cách dễ dàng tình trạng vườn trồng của mình thông qua số liệu về nhiệt độ, độ ẩm, pH ... mà các cảm biến gửi về qua mạng Internet. Đồng thời người dùng có thể chăm sóc vườn rau của mình mà không cần thiết phải tiếp xúc với nó. Tất cả mọi hoạt động tưới tiêu, bơm oxy, cung cấp ánh sáng, phân bón,... đều được tự động hóa theo quy trình có sẵn. Người dùng chỉ việc thiết lập thông số phù hợp cho từng cây trồng trong mỗi mùa vụ và chờ ngày thu hoạch. Kiểm soát thông qua mạng Internet cho phép người dùng quản lý vườn trồng của mình ở bất kỳ đâu, trong mọi thời điểm.  Thủy canh kết hợp với IoT là xu hướng mới và là tương lai của nông nghiệp đô thị nhờ tính tiện ích của nó.
+
 
 \subsection{Các hệ thống thủy canh tự động hiện có trên thị trường}
 \noindent Theo thông tin nhóm nghiên cứu thì hiện nay trên thị trường chưa có nhiều hệ thống thủy canh tự động mang tính thương mại. Một số công ty start up nổi tiếng trong lĩnh vực này như Hachi, Lisado nhưng những hệ thống này có các đặc điểm chung:
@@ -434,7 +498,7 @@ Sự phát triển của công nghệ trong thời đại hiện nay đã  mang 
 \end{itemize}
 \textbf{JSON (Javascript Object Notation)}\\
  Trong ứng dụng mà nhóm hiện thực sử dụng JSON để trao đổi dữ liệu.\\
- JSON là 1 định dạng hoán vị dữ liệu nhanh. Chúng là cơ sở dựa trên tập hợp của Ngôn Ngữ Lập Trình JavaScript, tiêu chuẩn ECMA-262 phiên bản 3 - tháng 12 năm 1999.\\
+ JSON là 1 định dạng hoán vị dữ liệu nhanh. Chúng là cơ sở dựa trên tập hợp của ngôn ngữ lập trình JavaScript, tiêu chuẩn ECMA-262 phiên bản 3 - tháng 12 năm 1999.\\
  JSON được biểu diễn dưới dạng cặp tên và giá trị name – value. Trong những ngôn ngữ khác nhau, đây được nhận thấy như là một đối tượng (object), bản ghi (record), cấu trúc (struct), từ điển (dictionary), bảng băm (hash table), danh sách khóa (keyed list), hay mảng liên hợp.\\
  JSON có 5 kiểu dữ liệu chính:
 \begin{itemize}
@@ -468,7 +532,7 @@ JSON được sử dụng rộng rãi vì những ưu điểm của nó:
 
 
 \subsubsection{Nodejs}
-\noindent Node.js là một phần mềm mã nguồn mở được viết dựa trên ngôn ngữ JavaScript cho phép lập trình viên có thể xây dựng các ứng dụng chạy trên máy chủ. Ban đầu, Node.js được phát triển bởi Ryan Dahl. Phiên bản đầu tiên của Node.js được cho ra mắt vào năm 2009.\\
+\noindent Nodejs là một phần mềm mã nguồn mở được viết dựa trên ngôn ngữ JavaScript cho phép lập trình viên có thể xây dựng các ứng dụng chạy trên máy chủ. Ban đầu, Node.js được phát triển bởi Ryan Dahl. Phiên bản đầu tiên của Nodejs được cho ra mắt vào năm 2009.\\
  Node.js có thể chạy được trên nhiều nền tảng khác nhau như Windows, Linux hay Mac OS. Node.js được phát triển sử dụng V8 Engine là bộ thư viện JavaScript được Google phát triển để viết trình duyệt web Chrome.\\
  Bản thân Node.js không phải là một ngôn ngữ lập trình mới, thay vào đó Node.js là một nền tảng mã nguồn mở được viết dựa trên ngôn ngữ JavaScript.
 
@@ -478,7 +542,7 @@ JSON được sử dụng rộng rãi vì những ưu điểm của nó:
 \caption{Cơ chế hoạt động của Nodejs.}
 \end{figure}
 
-Nodejs đang rất được ưa chuộng bởi tốc độ chạy rất nhanh của nó. Sở dĩ Nodejs chạy rất nhanh vì nó thực hiện cơ chế non-blocking I/O và asynchronous (bất đồng bộ). Khi một request đến, nó không dừng lại chờ cho request đó xử lý xong mà vòng lặp event loop sẽ tiếp nhận các request liên tục và xử lý chúng liên tục. Khi một request xử lý xong, hàm callback sẽ được gọi để trả về kết quả cho client hoặc thực hiện một tác vụ nào đó. Như vậy các request sẽ được xử lý song song với nhau, tiết kiệm được rất nhiều thời gian. Nhưng đây cũng là một điểm khó đòi hỏi người lập trình phải quản lý chặt chẽ thứ tự thực hiện các hành động vì không phải lúc nào các tác vụ cũng chạy song song nhau, có những tác vụ phải thực hiện theo tuần tự.
+\noindent Nodejs đang rất được ưa chuộng bởi tốc độ chạy rất nhanh của nó. Sở dĩ Nodejs chạy rất nhanh vì nó thực hiện cơ chế non-blocking I/O và asynchronous (bất đồng bộ). Khi một request đến, nó không dừng lại chờ cho request đó xử lý xong mà vòng lặp event loop sẽ tiếp nhận các request liên tục và xử lý chúng liên tục. Khi một request xử lý xong, hàm callback sẽ được gọi để trả về kết quả cho client hoặc thực hiện một tác vụ nào đó. Như vậy các request sẽ được xử lý song song với nhau, tiết kiệm được rất nhiều thời gian. Nhưng đây cũng là một điểm khó đòi hỏi người lập trình phải quản lý chặt chẽ thứ tự thực hiện các hành động vì không phải lúc nào các tác vụ cũng chạy song song nhau, có những tác vụ phải thực hiện theo tuần tự.
 \subsubsection{Framework Expressjs}
 \noindent Expressjs là một framework có thể coi là nhỏ gọn và đơn giản nhất của Nodejs. Với Expressjs, lập trình viên có thể tạo ra một RESTful web service một cách rất nhanh chóng, đơn giản và dễ dàng mở rộng.
 \subsubsection{Sequelizejs}
@@ -492,8 +556,10 @@ Nodejs đang rất được ưa chuộng bởi tốc độ chạy rất nhanh c�
 \item Tạo các ứng dụng client-side theo mô hình MVC.
 \item Khả năng tương thích cao, tự động xử lý mã javascript để phù hợp vứi mỗi trình duyệt.
 \item Mã nguồn mở, miễn phí hoàn toàn và được sủ dụng rộng rãi.
-
 \end{itemize}
+
+\noindent Single page application là một trang web hay một ứng dụng web, mà tất cả những thao tác xử lý của trang web đều được diễn ra trên một trang duy nhất. Với mục đích chính là nâng cao trải nghiệm người dùng tốt hơn, hiệu quả hơn, thoải mái hơn. 
+
 \subsubsection{Angular 2}
 \noindent Angular 2 là 1 framework UI để xây dựng ứng dụng web trên desktop và mobile. 
 Nó được xây dựng dựa trên Javascript. Chúng ta có thể dùng nó để xây dựng 1 ứng dụng client side thú vị dùng HTML, CSS và Javascript. 
@@ -576,27 +642,6 @@ repository công cộng, người dùng có thể tạo tài khoản trên GitHu
 \noindent XTEA là dạng mã hóa mật mã khối, kích thước khối 64 bit, khóa bí mật 128 bit. \\
 \noindent Đúng theo tên gọi Tiny, XTEA là 1 giải thuật cực kỳ đơn giản và rất dễ code. Nó vốn được thiết kế với mục đích áp dụng trong các hệ thống với cấu hình phần cứng hạn chế 
 
-\subsubsection{Arduino}
-\noindent Arduino là một board mạch vi xử lý, nhằm xây dựng các ứng dụng tương tác với nhau hoặc với môi trường được thuận lợi hơn. Phần cứng bao gồm một board mạch nguồn mở được thiết kế trên nền tảng vi xử lý AVR Atmel 8bit, hoặc ARM Atmel 32-bit. Những Model hiện tại được trang bị gồm 1 cổng giao tiếp USB, 6 chân đầu vào analog, 14 chân I/O kỹ thuật số tương thích với nhiều board mở rộng khác nhau. Nền tảng Arduino là mã nguồn mở bao gồm cả phần mềm và phần cứng \
-hướng tới việc 'easy to use' đới với những người mới bắt đầu.\
-Arduino cung cấp:
-\begin{itemize}
-\item Ngôn ngữ lập trình Arduino dựa trên C/C++.
-\item Môi trường phát triển ứng dụng (IDE) Arduino IDE,\
-ngoài ra rất nhiều phần mềm hỗ trợ lập trình arduino.
-\item Thư viện mã nguồn mở.
-\item Hệ thống các board tham chiếu như Arduino Uno, Due, Mega.
-\end{itemize}
-Tạo sao lại lựa chọn arduino:
-\begin{itemize}
-\item Chi phí: các board arduino có giá tương đối so với các board khác,\
-ngoài ra arduino còn là mã nguồn mở sẽ tiết kiệm được tiền bản quyền.
-\item Đa nền tảng: Arduino IDE được hỗ trỡ trên nhiều nền tảng như windows, linux, macOS.
-\item Môi trường lập trình, nghiên cứu đơn giản và dễ tiếp cận, tiết kiệm thời gian.
-\item Hệ thống phần mềm mã nguồn mở được xây dựng bởi cộng đồng người dùng lớn.
-\item Phần cứng có thể được phát triển theo mục đích người sử dụng dựa trên các board sẵn có.
-\end{itemize}
-
 \subsubsection{ARM}
 \noindent Cấu trúc ARM (viết tắt từ tên gốc là Advanced RISC Machine) là một loại cấu trúc vi xử lí kiểu RSIC được sử dụng rộng rãi trong các thiết kế nhúng. Do có đặc điểm tiết kiệm năng lượng, các bộ cpu ARM chiếm ưu thế trong các sản phẩm điện tử di động, mà với các sản phẩm này việc tiêu tán công suất thấp là một mục tiêu thiết kế quan trọng hàng đầu.\\
 \noindent Đi kèm với hệ thống vi xử lí là nền tảng lập trình đa dạng, các thư viện mã nguồn mở, hệ thống các board tham chiếu.
@@ -618,7 +663,7 @@ Mỗi bản tin được publish một địa chỉ, có thể hiểu như một
 \begin{center}
 \begin{figure}[htp]
 \begin{center}
-\includegraphics[scale=.7]{hinh/mqtt.png}
+\includegraphics[height=7cm,width=11cm]{hinh/mqtt.png}
 \end{center}
 \caption{Mô tả các thiết bị liên lạc với nhau thông qua MQTT broker.}
 \end{figure}
@@ -628,36 +673,26 @@ Mỗi bản tin được publish một địa chỉ, có thể hiểu như một
 \section{THIẾT KẾ HỆ THỐNG}
 \subsection{Kiến trúc mô hình hệ thống}
 \noindent Kiến trúc hệ thống bao gồm các thành phần: web server, web app, database và hệ thống board điều khiển. 
-
 \begin{center}
-\begin{figure}[htp]
+\begin{figure}[h]
 \begin{center}
-\includegraphics[scale=.5]{hinh/system.png}
+\includegraphics[height=7cm,width=11cm]{hinh/system.png}
 \end{center}
 \caption{Kiến trúc hệ thống.}
-
 \end{figure}
 \end{center}
-
-
 
 \subsection{Hệ thống board điều khiển}
 
 \subsubsection{Tổng quan mô hình board điều khiển}
 
-\noindent \textbf{Hệ thống Board điều khiển có các chức năng}
+\noindent \textbf{Hệ thống board điều khiển chia ra làm 3 thành phần chức năng chính:}
 \begin{itemize}
-\item Lấy dữ liệu, lưu trữ và xử lý từ các sensors được đặt trong môi trường thủy canh.
-\item Điều khiển các hệ thống: tưới tiêu, bơm, chiếu sáng thông qua relay.
-\item Liên kết với Web Server thông qua môi trường Wifi để trao đổi thông tin:
-\begin{itemize}
-\item Gửi dữ liệu sensor lên Server.
-\item Nhận dữ liệu, lịch trình hoạt động của các hệ thống điều khiển.
-\end{itemize}
+\item Thu thập dữ liệu các cảm biến 
+\item Định thời, điều khiển các actuator (máy bơm, xục oxi, đèn chiếu sáng...) theo thời gian thực.
+\item Truyền nhận dữ liệu với web-server thông qua môi trường wifi.
 
-\item Các chức năng liên quan đến Wifi được thực hiện bởi module ESP8266 v1.
 \end{itemize}
-
 
 \noindent \textbf{Các module, cảm biến của hệ thống}
 \begin{itemize}
@@ -685,22 +720,7 @@ Mỗi bản tin được publish một địa chỉ, có thể hiểu như một
 \item 3 chân, khoảng cách 0.1 inch.
 \end{itemize}
 
-
-\item Module PPM
-\begin{center}
-\begin{figure}[h!]
-\begin{center}
-\includegraphics[scale=.5]{hinh/tds.jpg}
-\end{center}
-\caption{Module đo ppm.}
-
-\end{figure}
-\end{center}
-PPM(parts per million) là đơn vị đo mật độ thường dành cho \
-các mật độ tương đối thấp. Nó thường chỉ tỷ lệ của lượng\
-một chất trong tổng số lượng của hỗn hợp chứa chất đó.\\
-
-\item Cường độ ánh sáng\\
+\item Cảm biến đo cường độ ánh sáng\\
 \noindent Cường độ ánh sáng được đo bởi module BH1750.
 \begin{figure}[h!]
 \centering
@@ -717,42 +737,8 @@ một chất trong tổng số lượng của hỗn hợp chứa chất đó.\\
 \item Kích cỡ: 21x16x3.3 mm.
 \end{itemize}
 
-\item Module Wifi
-\noindent Module ESP8266 V1 là module truyền nhận Wifi đơn giản dựa trên chip ESP8266 SoC (System on Chip) của hãng Espressif. Module này đã được nạp sẵn firmware giúp người dùng giao tiếp với Wifi rất dễ dàng qua tập lệnh AT thông qua giao tiếp UART.\\
-\noindent Thông tin kỹ thuật
-\begin{itemize}
-\item Hỗ trợ chuẩn 802.11 b/g/n.
-\item Wifi 2.4GHz, hỗ trợ WPA/WPA2.
-\item Chuẩn điện áp hoạt động: 3.3V
-\item Chuẩn giao tiếp nối tiếp UART với baudrate lên đến 115200.
-\item Có 3 chế độ hoạt động: Client, Access point, Both Client and Access point.
-\item Hỗ trợ các chuẩn bảo mật: OPEN, WEP, WPA...
-\item Hỗ trợ cả 2 giao tiếp TCP và UDP.
-\item Làm việc như các máy chủ có thể kết nối với 5 máy con.
-\end{itemize}
+\item Thời gian thực
 
-\begin{center}
-\begin{figure}[htp]
-\begin{center}
-\includegraphics[scale=.4]{hinh/ESP8266.png}
-\end{center}
-\caption{ESP8266.}
-
-\end{figure}
-\end{center}
-
-
-\item Module Realtime
-
-\begin{center}
-\begin{figure}[h!]
-\begin{center}
-\includegraphics[scale=.6]{hinh/rtc.png}
-\end{center}
-\caption{RTC-DS1307}
-
-\end{figure}
-\end{center}
 Thời gian thực được đo sử dụng module Realtime clock DS1307. Module có chức năng lưu trữ thông tin ngày tháng năm cũng như giờ phút giây, nó sẽ hoạt đông như một chiếc đồng hồ và có thể xuất dữ liệu ra ngoài qua giao thức I2C.Module được thiết kế kèm theo một viên pin có khả năng cung cấp năng lượng tới 10 năm. Module đi kèm với EEPROM AT14C32 có khả năng lưu trữ lên đến 32Kbit.\\
 \begin{center}
 \begin{figure}[h!]
@@ -773,39 +759,14 @@ Thông tin kĩ thuật:
 \item Kích thước 16x22x23mm.
 \end{itemize}
 
-
-\item Module Arduino UNO R3
-\begin{center}
-\begin{figure}[h!]
-\begin{center}
-\includegraphics[scale=.3]{hinh/arduino_r3.jpg}
-\end{center}
-\caption{Arduino UNO R3.}
-\end{figure}
-\end{center}
-
-\noindent Arduino UNO là board mạch rất phổ biến trong dòng Arduino hiện nay. Nó có ứng dụng rất mạnh mẽ từ đơn giản đến phức tạp như điều khiển đèn LED nhấp nháy, xử lý tín hiệu cho xe điều khiển từ xa, làm một trạm đo nhiệt độ, độ ẩm và hiển thị lên màn hình LCD...\\
-\noindent Thông tin kỹ thuật
-\begin{itemize}
-\item Chip điều khiển chính: ATmega328.
-\item Nguồn: 5VDC từ cổng USB được kết nối với PC.
-\item Số chân Digital: 14 (hỗ trợ 6 chân PWM).
-\item Số chân Analog: 6.
-\item Dòng ra trên chân Digital: 40mA max.
-\item Dòng ra trên chân 3.3V: 50mA.
-\item Dung lượng bộ nhớ FLASH: 32KB.
-\item SRAM: 2KB.
-\item EEPROM: 1KB.
-\item Tốc độ: 16MHz.
-\end{itemize}
-
-\item Relay\\
-\noindent Các actuators (Máy bơm nước, xục Oxi, led...) được kích thông qua relay.\\
+\item Relay
 \begin{figure}[h!]
 \centering
-\includegraphics[scale=.6]{hinh/Relay.jpg}
+\includegraphics[height=6cm,width=8cm]{hinh/Relay.jpg}
 \caption{Relay.}
 \end{figure}
+\noindent Các actuators (Máy bơm nước, xục Oxi, led...) được kích thông qua relay.\\
+
 \noindent Thông số kĩ thuật:
 \begin{itemize}
 	\item Nguồn: 5 VDC.
@@ -813,12 +774,13 @@ Thông tin kĩ thuật:
 \end{itemize}
 
 \item Thanh ghi dịch\\
-\noindent Thanh ghi dịch sử dụng chip 74HC595.\\
 \begin{figure}[h!]
 \centering
-\includegraphics[scale=.2]{hinh/Register.jpg}
+\includegraphics[height=6cm,width=8cm]{hinh/Register.jpg}
 \caption{Thanh ghi dịch.}
 \end{figure}
+\noindent Thanh ghi dịch sử dụng chip 74HC595.
+
 \noindent Thông số kĩ thuật:
 \begin{itemize}
 	\item Nguồn: 5 VDC.
@@ -826,32 +788,47 @@ Thông tin kĩ thuật:
 	\item Protocol giao tiếp: SPI.
 \end{itemize}
 
-\item Board ARM STM32F03C8T6\\
-\noindent Board ARM STM32F103C8T6 được sử dụng để làm board điều khiển các actuators.\\
+
+\item Board ARM STM32F03C8T6
+
+\noindent Board ARM STM32F103C8T6 được sử dụng để làm board điều khiển các actuators.
+
 \begin{figure}[h!]
 \centering
-\includegraphics[scale=.8]{hinh/stm32.jpg}
+\includegraphics[height=6cm,width=8cm]{hinh/stm32.jpg}
 \caption{Board ARM STM32F03C8T6.}
 \end{figure}
-\noindent Thông số kĩ thuật:\\
-\begin{center}
-\includegraphics[scale=.6]{hinh/stm32KT.png}
-\end{center}
-\item Board NodeMCU ESP8266\\
+
+\noindent Thông số kĩ thuật:
+\begin{itemize}
+\item RAM: 20KB
+\item Flash: 64KB/128KB
+\end{itemize}
+
+\item Board NodeMCU ESP8266
 \noindent Board NodeMCU được sử dụng để làm board truyền nhận dữ liệu qua wifi.\\
 \begin{figure}[h!]
 \centering
 \includegraphics[scale=.4]{hinh/NodeMCU.jpg}
 \caption{Board NodeMCU ESP8266}
 \end{figure}
-\noindent Thông số kĩ thuật:\\
-\begin{center}
-\includegraphics[scale=1]{hinh/NodeMCUKT.jpg}
-\end{center}
+\noindent Thông số kĩ thuật:
+	\begin{itemize}
+	\item IC chính: ESP8266 Wifi SoC
+	\item Phiên bản firmware: NodeMCU Lua
+	\item Chip nạp và giao tiếp UART: CP2102
+	\item GPIO tương thích hoàn toàn với firmware NodeMCU
+	\item Cấp nguồn: 5VDC MicroUSB hoặc Vin
+	\item GPIO giao tiếp mức 3.3VDC
+	\item Tích hợp LED báo trạng thái, nút Reset, Flash
+	\item Tương thích hoàn toàn với trình biên dịch Arduino
+	\item Kích thước: 25 x 50 mm
+	\end{itemize}
 
 \end{itemize}
 
-\subsubsection{Sơ đồ hoạt động}
+\subsubsection{Hoạt động, chức năng}
+\textbf{Sơ đồ hoạt động}\\
 \begin{center}
 \begin{figure}[h!]
 \begin{center}
@@ -860,25 +837,16 @@ Thông tin kĩ thuật:
 \caption{Mô hình tổng quan.}
 \end{figure}
 \end{center}
-\begin{itemize}
-\item Arduino Uno đóng vai trò là board điều khiển trung tâm, có nhiệm vụ lấy tin từ các\
-cảm biển và các module như: nhiệt độ, độ ẩm, pH và ppm.
-\item Các sensor được đặt trong môi trường thủy canh, lấy thông tin từ môi trường kết nối trực tiếp\
-với board điều khiển.
-\item Các thiết bị máy bơm, đèn chiếu sáng, quạt làm mát sẽ được điều khiển bởi board Arduino Uno\
-thông qua relay(chức năng của relay như là công tắc).
-\item Hệ thộng hoạt động theo thời gian thực được lấy từ module RTC-DS1307.
-\item Hệ thống sử dụng module wifi ESP8266 để kết nối với server thông qua internet,\
-Giao tiếp giữa ESP8266 với Arduino Uno là UART(Serial).
-\end{itemize}
+
 \textbf{Thu thập dữ liệu cảm biến}\\
 \noindent Các cảm biến được kết nối trực tiếp với board NodeMCU và lấy dữ liệu trực tiếp.
 \begin{itemize}
-	\item Nhiệt độ, độ ẩm: module DHT22 giao tiếp 1 wire với board NodeMCU. Dữ liệu nhiệt độ (C), độ ẩm (%) được đọc sau mỗi (1s).
+	\item Nhiệt độ, độ ẩm: module DHT22 giao tiếp 1 wire với board NodeMCU. Dữ liệu nhiệt độ (C), độ ẩm (\%) được đọc sau mỗi (1s).
 	\item Cường độ ánh sáng: module BH1750 giao tiếp I2C với board NodeMCU. Dữ liệu cường độ ánh sáng (lux) được đọc sau mỗi (1s).
 	\item Module ppm hoạt động độc lập, đọc dữ liệu từ môi trường dung dịch, xuất đầu ra analog được đọc bởi board NodeMCU sau mỗi (1s).
 	\item Định thời đọc dữ liệu cảm biến sử dụng timer, timeout là 1s.
 \end{itemize}
+
 \noindent Hoạt động đọc, quản lí dữ liệu cảm biến sẽ được thực hiện bởi 1 đối tượng:
 \begin{itemize}
 \item Quản lí các thông tin: nhiệt độ, độ ẩm, PPM, ánh sáng.
@@ -894,11 +862,15 @@ Giao tiếp giữa ESP8266 với Arduino Uno là UART(Serial).
 \end{itemize}
 
 \noindent \textbf{Điều khiển các actuators}\\
-\noindent \textbf{Thông số các actuator:}\\
-Máy bơm nước:
+\noindent \textbf{Thông số các actuator:}
+
+\begin{itemize}
+
+
+\item Máy bơm nước:
 \begin{itemize}
 \item Nguồn: 12 VDC.
-\item Công suất:
+\item Công suất: 500L/h
 \item Khả năng phun nước độ cao 2m phương thẳng đứng.
 \end{itemize}
 \begin{figure}[h!]
@@ -908,10 +880,9 @@ Máy bơm nước:
 \caption{Máy bơm nước.}
 \end{figure}
 
-Máy sục oxy:
+\item  Máy sục oxy:
 \begin{itemize}
 \item Nguồn: 12 VDC.
-\item Công suất:
 \end{itemize}
 \begin{figure}[h!]
 \begin{center}
@@ -920,10 +891,10 @@ Máy sục oxy:
 \caption{Máy sục oxy.}
 \end{figure}
 
-Đèn chiếu sáng:
+\item Đèn chiếu sáng:
 \begin{itemize}
 \item Nguồn: 12 VDC. 
-\item Công suất:
+\item Công suất: 15W/m
 \end{itemize}
 \begin{figure}[h!]
 \begin{center}
@@ -932,23 +903,14 @@ Máy sục oxy:
 \caption{Đèn led.}
 \end{figure}
 
-Quạt:
-\begin{itemize}
-\item Nguồn: 12 VDC. 
-\item Công suất: 
 \end{itemize}
 
-%\begin{center}
-%\begin{figure}[h!]
-%\begin{center}
-%\includegraphics[scale=1]{hinh/fan.jpg}
-%\end{center}
-%\caption{Quạt.}
-%\end{figure}
-%\end{center}
 
-\noindent \textbf{Cách điều khiển:}\\
-\noindent Hoạt động của thanh ghi dịch:\\
+\noindent \textbf{Cách điều khiển:}
+\begin{itemize}
+
+
+\item Hoạt động của thanh ghi dịch:
 \begin{center}
 \begin{figure}[h!]
 \begin{center}
@@ -974,7 +936,7 @@ Quạt:
 %\caption{Hoạt động của thanh ghi dịch.}
 %\end{figure}
 %\end{center}
-\noindent Các actuators sẽ được kích hoạt trực tiếp thông qua relay:
+\item Các actuators sẽ được kích hoạt trực tiếp thông qua relay:
 \begin{center}
 \begin{figure}[h!]
 \begin{center}
@@ -983,7 +945,7 @@ Quạt:
 \caption{Hoạt động của các actuators.}
 \end{figure}
 \end{center}
-\noindent Tín hiệu điều khiển relay sẽ lấy từ thanh ghi:
+\item Tín hiệu điều khiển relay sẽ lấy từ thanh ghi:
 \begin{center}
 \begin{figure}[h!]
 \begin{center}
@@ -992,9 +954,13 @@ Quạt:
 \caption{Hoạt động của tín hiệu điều khiển relay.}
 \end{figure}
 \end{center}
+\end{itemize}
+\noindent \textbf{Thời gian thực:}
 
-\noindent \textbf{Thời gian thực:}\\
-\noindent Module Realtime Clock DS1307 sẽ hoạt động độc lập với pin, cụ thể, các thông số thời gian thực trong module không bị ảnh hưởng bởi nguồn nuôi của toàn mạch. Thời gian thực (year, month, day, hour, min, sec) có thể được đọc và ghi bởi board điều khiển, cụ thể là NodeMCU.
+\begin{itemize}
+\item Module Realtime Clock DS1307 sẽ hoạt động độc lập với pin, cụ thể, các thông số thời gian thực trong module không bị ảnh hưởng bởi nguồn nuôi của toàn mạch.
+\item Thời gian thực (year, month, day, hour, min, sec) có thể được đọc và ghi bởi board điều khiển, cụ thể là NodeMCU.
+
 \begin{center}
 \begin{figure}[h!]
 \begin{center}
@@ -1003,11 +969,20 @@ Quạt:
 \caption{Hoạt động Thời gian thực.}
 \end{figure}
 \end{center}
-\noindent Định thời đọc dữ liệu thời gian thực sử dụng timer, timeout là 1/3s.\\
 
-\noindent \textbf{Tổ chức, quản lí hoạt động của các actuators.}\\
-\noindent Chân điều khiển: Các actuator được điểu khiển (tắt, mở) thông qua tín hiệu các chân của thanh ghi dịch (74HC595) và relay nên không phụ thuộc vào các pinout của board điều khiển (STM32F103C8T6). Có thể tăng số chân điều khiển (cũng như tăng số actuators) bằng cách thêm các thanh ghi dịch, số pinout sử dụng luôn là 3, cụ thể là các chân SPI (DATA, LATCH, CLOCK).\\
-\noindent Thời gian biểu: Mỗi actuator sẽ hoạt động theo một thời gian biểu, cụ thể trong thủy canh:
+\item Định thời đọc dữ liệu thời gian thực sử dụng timer, timeout là 1/3s.
+
+\end{itemize}
+
+
+
+\noindent \textbf{Tổ chức, quản lí hoạt động của các actuators.}
+
+\begin{itemize}
+\item Chân điều khiển: Các actuator được điểu khiển (tắt, mở) thông qua tín hiệu các chân của thanh ghi dịch (74HC595) và relay nên không phụ thuộc vào các pinout của board điều khiển (STM32F103C8T6). Có thể tăng số chân điều khiển (cũng như tăng số actuators) bằng cách thêm các thanh ghi dịch, số pinout sử dụng luôn là 3, cụ thể là các chân SPI (DATA, LATCH, CLOCK).
+
+\item Thời gian biểu:\\
+Mỗi actuator sẽ hoạt động theo một thời gian biểu, cụ thể trong thủy canh:
 
 \begin{center}
 \begin{tabularx}{\linewidth}{ |X|X|X|X| }
@@ -1019,28 +994,48 @@ Thời điểm bắt đầu hoạt động. & Thời lượng actuator được 
 \end{tabularx}
 \end{center}
 
-\noindent Định dạng thời gian cho mỗi kiểu như trên là hhmmss. Mỗi thời gian biểu cho mỗi ngày sẽ bao gồm nhiều mẫu như trên, ví dụ với máy bơm: Máy bơm sẽ bắt đầu bơm nước từ 08:00:00 (start), mỗi lần tưới sẽ kéo dài trong 15s (duration), sau đó sẽ tắt trong 10s (repeat interval), lại bật tiếp 15s, cứ thế cho đến 09:00:00 (stop).\\
-\noindent Lifetime của mỗi actuator (phần mềm).
+\noindent Định dạng thời gian cho mỗi kiểu như trên là hhmmss. Mỗi thời gian biểu cho mỗi ngày sẽ bao gồm nhiều mẫu như trên, ví dụ với máy bơm: Máy bơm sẽ bắt đầu bơm nước từ 08:00:00 (start), mỗi lần tưới sẽ kéo dài trong 15s (duration), sau đó sẽ tắt trong 10s (repeat interval), lại bật tiếp 15s, cứ thế cho đến 09:00:00 (stop).
+
+
+\item Lifetime của mỗi actuator (phần mềm).
 \begin{center}
 \begin{figure}[h!]
 \begin{center}
 \includegraphics[scale=0.7]{hinh/actuator_lifetime.PNG}
 \end{center}
-\caption{Hoạt động thời gian biểu.}
+\caption{Actuator lifetime.}
 \end{figure}
 \end{center}
-\noindent Mỗi actuator sẽ là một đối tượng (phần mềm), giải thích lifetime: Ban đầu, sẽ không có actuator nào, các actuator không được sét tĩnh. Khi nhận gói tin (Add) từ web-server, một đối tượng actuator sẽ được tạo ra, là một node trong danh sách liên kết (linked-list) các actuators. Mỗi đối tượng chứa các thông tin:
+
+\noindent Mỗi actuator sẽ là một đối tượng (phần mềm), giải thích lifetime:
+	\begin{itemize}
+	\item Ban đầu, sẽ không có actuator nào, các actuator không được sét tĩnh.
+	\item  Khi nhận gói tin (Add) từ web-server, một đối tượng actuator sẽ được tạo ra, là một node trong danh sách liên kết (linked-list) các actuators. Mỗi đối tượng chứa các thông tin:
 \begin{itemize}
 \item Actuator ID: định danh của actuator.
 \item Primary: là actuator chính hay phụ.
 \item Schedule: thời gian biểu hoạt động.
 \item Started: điều kiện để hoạt động.
 \end{itemize}
-Sau khi được add (Added), đối tượng sẽ chờ nhận thêm hai gói tin (thứ tự bất kì) là (Start) và (Schedule) để chuyển sang trạng thái (Actived). Nhận gói (Schedule): đối tượng sẽ lưu lại thông tin schedule. Nhận gói (Start): đối tượng sẽ cập nhập thông tin (Started). Ở trạng thái (Added) và (Actived) khi nhận được gói (Remove) , đối tượng sẽ bị xóa. Ở trạng thái (Actived), đối tượng actuator sẽ hoạt động với thông tin (Schedule) theo thời gian thực đọc được từ module Realtime Clock DS1307.
 
-\noindent Lưu trữ thông tin actuator.\\
-\noindent Để đáp ứng tính độc lập của board điều khiển, các thông tin của mỗi actuator sẽ được lưu lại trong bộ nhớ ROM, tránh trường hợp reset của board ( có thể do nhiều nguyên nhân khác nhau: mất điện, crash..). Thông tin actuator được thêm trong trong lúc board đang hoạt động ở thời điểm ngẫu nhiên (runtime), không sét tĩnh, đây là ưu điểm của giải pháp này, cho phép mở rộng, thay đổi các actuator. Bộ nhớ lưu trữ là EEPROM, phân vùng lưu trữ sẽ nêu cụ thể trong phần (Lưu trữ dữ liệu) nằm trên board NodeMCU. Cấu trúc dữ liệu lưu trữ được nêu cụ thể trong phần hiện thực.\\
-Dưới đây là cách hoạt động của việc lưu trữ (Save) và tải lại (Load). Qui ước: Các sự kiện (Add), (Start), (Schedule), (Update) (Remove) sẽ được gọi chung là (Update). Các trạng thái (Added), (Actived) được gọi chung là (Running).
+	\item Sau khi được add (Added), đối tượng sẽ chờ nhận thêm hai gói tin (thứ tự bất kì) là (Start) và (Schedule) để chuyển sang trạng thái (Actived).
+		\begin{itemize}
+			\item Nhận gói (Schedule): đối tượng sẽ lưu lại thông tin schedule.
+			\item Nhận gói (Start): đối tượng sẽ cập nhập thông tin (Started). 
+		\end{itemize}			
+
+	\item Ở trạng thái (Added) và (Actived) khi nhận được gói (Remove) , đối tượng sẽ bị xóa.
+	\item Ở trạng thái (Actived), đối tượng actuator sẽ hoạt động với thông tin (Schedule) theo thời gian thực đọc được từ module Realtime Clock DS1307.
+	\end{itemize}
+\item Lưu trữ thông tin actuator.
+
+	\begin{itemize}
+	\item Để đáp ứng tính độc lập của board điều khiển, các thông tin của mỗi actuator sẽ được lưu lại trong bộ nhớ ROM, tránh trường hợp reset của board ( có thể do nhiều nguyên nhân khác nhau: mất điện, crash..).
+	\item Thông tin actuator được thêm trong trong lúc board đang hoạt động ở thời điểm ngẫu nhiên (runtime), không sét tĩnh, đây là ưu điểm của giải pháp này, cho phép mở rộng, thay đổi các actuator.
+	\item Bộ nhớ lưu trữ là EEPROM, phân vùng lưu trữ sẽ nêu cụ thể trong phần (Lưu trữ dữ liệu) nằm trên board NodeMCU.
+	\item Cấu trúc dữ liệu lưu trữ được nêu cụ thể trong phần hiện thực.
+	\item Dưới đây là cách hoạt động của việc lưu trữ (Save) và tải lại (Load). Qui ước: Các sự kiện (Add), (Start), (Schedule), (Update) (Remove) sẽ được gọi chung là (Update). Các trạng thái (Added), (Actived) được gọi chung là (Running).
+	 
 \begin{center}
 \begin{figure}[h!]
 \begin{center}
@@ -1049,6 +1044,14 @@ Dưới đây là cách hoạt động của việc lưu trữ (Save) và tải 
 \caption{Hoạt động Lưu trữ thông tin actuator.}
 \end{figure}
 \end{center}
+	
+	\end{itemize}
+
+\end{itemize}
+
+
+  
+
 
 \noindent \textbf{Truyền nhận dữ liệu với giao thức MQTT.}
 	\begin{itemize}
@@ -1066,7 +1069,10 @@ Dưới đây là cách hoạt động của việc lưu trữ (Save) và tải 
 				\item Publish: truyền dữ liệu tới kênh web-server đăng kí( cũng đóng vai trò là một MQTT Client).
 				\item	Subcribe: đăng kí kênh nhận dữ liệu từ web-server.
 			\end{itemize}
-		\item Các thông tin của đối tượng MQTT Client cũng được lưu trữ trong ROM, nêu trong phần (Lưu trữ dữ liệu), và cho phép cấu hình (Cấu hình WiFi).
+
+		\end{itemize}
+		\item Các thông tin của đối tượng MQTT Client cũng được lưu trữ trong ROM, nêu trong phần (lưu trữ dữ liệu), và cho phép cấu hình (cấu hình WiFi).
+		\item Đối tượng hoạt động độc lập theo sơ đồ dưới:
 		
 			\begin{center}
 			\begin{figure}[h!]
@@ -1076,8 +1082,6 @@ Dưới đây là cách hoạt động của việc lưu trữ (Save) và tải 
 			\caption{MQTT client.}
 			\end{figure}
 			\end{center}
-
-		\end{itemize}
 	\end{itemize}
 \noindent	\textbf{Cấu hình, hoạt động của các chế độ WiFi.}
 
@@ -1203,154 +1207,131 @@ Dưới đây là cách hoạt động của việc lưu trữ (Save) và tải 
 		\end{itemize}
 	\end{itemize}
 
-
-%\subsubsection{Sơ đồ Use case}
-%\begin{center}
-%\begin{figure}[htp]
-%\begin{center}
-%\includegraphics[scale=.3]{hinh/D-usecase.jpg}
-%\end{center}
-%\caption{Device use case.}
-%\end{figure}
-%\end{center}
-
-%\newpage
-%\subsubsection{Class Diagram}
-%\begin{center}
-%\begin{figure}[h!]
-%\begin{center}
-%\includegraphics[scale=.3]{hinh/UnoClass.jpg}
-%\end{center}
-%\caption{Arduino Uno class diagram.}
-%\end{figure}
-
-
-%\begin{figure}[h!]
-%\begin{center}
-%\includegraphics[scale=.5]{hinh/EspClass.jpg}
-%\end{center}
-%\caption{Esp8266 class diagram.}
-%\end{figure}
-%\end{center}
-
-
 \newpage
-\subsection{Kiến trúc phần mềm}
-\subsubsection{Sequence diagram}
-\noindent \textbf{Cấu hình Wifi}
+\subsubsection{Kiến trúc phần mềm}
+
+\begin{itemize}
+
+\item Sequence diagram
+
 \begin{figure}[H]
 \centering
 \begin{center}
 \includegraphics[scale=.9]{hinh/sq_switch_wifi.PNG}
 \end{center}
-\caption{Wifi sequence diagram.}
+\caption{Cấu hình wifi.}
 \end{figure}
 
-\noindent \textbf{Hoạt động của web-server hoạt động trên board NodeMCU}
 \begin{figure}[H]
 \centering
 \begin{center}
 \includegraphics[scale=.8]{hinh/sq_web.PNG}
 \end{center}
-\caption{NodeMCU Server sequence diagram.}
+\caption{Hoạt động của web-server hoạt động trên board Node MCU.}
 \end{figure}
 
-\noindent \textbf{Truyền nhận dữ liệu}
 \begin{figure}[H]
 \centering
 \begin{center}
 \includegraphics[scale=.8]{hinh/sq_mqtt.PNG}
 \end{center}
-\caption{Mqtt sequence diagram.}
+\caption{Truyền nhận dữ liệu.}
 \end{figure}
 
-\subsubsection{Class diagram}
-\noindent \textbf{Các class hoạt động trên board NodeMCU}\\
-\begin{figure}[H]
-\centering
-\begin{center}
-\includegraphics[scale=.8]{hinh/class_wifistation.PNG}
-\end{center}
-\caption{NodeMCU WifiStation class diagram.}
-\end{figure}
+\item Class diagram
 
-\begin{figure}[H]
+\begin{itemize}
+	\item Các class hoạt động trên board NodeMCU.
+	
+	\begin{figure}[H]
 \centering
 \begin{center}
-\includegraphics[scale=.8]{hinh/class_mqttclient.PNG}
+\includegraphics[scale=.85]{hinh/class_wifistation.PNG}
 \end{center}
-\caption{NodeMCU MqttClient class diagram.}
+\caption{WifiStation.}
 \end{figure}
 
 \begin{figure}[H]
 \centering
 \begin{center}
-\includegraphics[scale=.8]{hinh/class_usereeprom.PNG}
+\includegraphics[scale=.85]{hinh/class_mqttclient.PNG}
 \end{center}
-\caption{NodeMCU UserEEPROM class diagram.}
+\caption{MqttClient.}
 \end{figure}
 
 \begin{figure}[H]
 \centering
 \begin{center}
-\includegraphics[scale=.8]{hinh/class_sensor.PNG}
+\includegraphics[scale=.85]{hinh/class_usereeprom.PNG}
 \end{center}
-\caption{NodeMCU Sensor class diagram.}
-\end{figure}
-
-\begin{figure}[H]
-\centering
-\includegraphics[scale=.6]{hinh/class_serialtransport.PNG}
-\caption{NodeMCU SerialTransport class diagram.}
+\caption{UserEEPROM.}
 \end{figure}
 
 \begin{figure}[H]
 \centering
 \begin{center}
-\includegraphics[scale=.8]{hinh/class_webserver.PNG}
+\includegraphics[scale=.85]{hinh/class_sensor.PNG}
 \end{center}
-\caption{NodeMCU Webserver class diagram.}
+\caption{Sensor.}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=.65]{hinh/class_serialtransport.PNG}
+\caption{SerialTransport.}
 \end{figure}
 
 \begin{figure}[H]
 \centering
 \begin{center}
-\includegraphics[scale=.8]{hinh/class_switchap.PNG}
+\includegraphics[scale=.85]{hinh/class_webserver.PNG}
 \end{center}
-\caption{NodeMCU SwitchAP class diagram.}
-\end{figure}
-
-\begin{figure}[H]
-\centering
-\includegraphics[scale=.8]{hinh/class_nodeapplication.PNG}
-\caption{NodeMCU Application class diagram.}
-\end{figure}
-
-\noindent \textbf{Các class hoạt động trên board STM}\\
-\begin{figure}[H]
-\centering
-\begin{center}
-\includegraphics[scale=.8]{hinh/class_serialtransport.PNG}
-\end{center}
-\caption{STM SerialTransport class diagram.}
+\caption{ Webserver.}
 \end{figure}
 
 \begin{figure}[H]
 \centering
 \begin{center}
-\includegraphics[scale=.7]{hinh/class_actuator.PNG}
+\includegraphics[scale=.85]{hinh/class_switchap.PNG}
 \end{center}
-\caption{STM Actuator class diagram.}
+\caption{SwitchAP.}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=.85]{hinh/class_nodeapplication.PNG}
+\caption{ Application.}
+\end{figure}
+
+	\item Các class hoạt động trên board STM
+
+\begin{figure}[H]
+\centering
+\begin{center}
+\includegraphics[scale=.85]{hinh/class_serialtransport.PNG}
+\end{center}
+\caption{SerialTransport.}
 \end{figure}
 
 \begin{figure}[H]
 \centering
 \begin{center}
-\includegraphics[scale=.8]{hinh/class_stmapplication.PNG}
+\includegraphics[scale=.75]{hinh/class_actuator.PNG}
 \end{center}
-\caption{STM Apllication class diagram.}
+\caption{Actuator.}
 \end{figure}
 
+\begin{figure}[H]
+\centering
+\begin{center}
+\includegraphics[scale=.85]{hinh/class_stmapplication.PNG}
+\end{center}
+\caption{Apllication.}
+\end{figure}
+
+\end{itemize}
+
+\end{itemize}
 \newpage
 \subsection{Ứng dụng web}
 \subsubsection{Sơ đồ use case}
@@ -2164,7 +2145,7 @@ UC\_CROP\_005 & Cài đặt ngưỡng dữ liệu & Tạ Chí Tây & 20/3/2017\\
 \end{figure}
 \end{center}
 
-\noindent Sử dụng giao thức MQTT cho cả hai chiều tương tác là gửi dữ liệu từ thiết bị lên và từ server gửi xuống.
+\noindent Sử dụng giao thức MQTT cho cả hai chiều tương tác là gửi dữ liệu từ thiết bị lên và từ server gửi xuống. Các gói tin đều được mã hóa XXTEA để đảm bảo tính bảo mật.
 \subsubsection{Cấu trúc các gói tin}
 \noindent Các bảng sau mô tả cụ thể cấu trúc các gói tin:\\
 \\
@@ -2364,310 +2345,20 @@ Mô tả, ví dụ & \makecell{0: thêm board mới \\ 1: xóa board} \\
 \section{HIỆN THỰC HỆ THỐNG}
 
 \subsection{Hệ thống Board điều khiển}
-\subsubsection{Cài đặt phần mềm}
-\begin{itemize}
-\item Môi trường lập trình ứng dụng (IDE) ở đây sử dụng Visual Studio 2017\
-download từ trang chủ Microsoft.
-\begin{center}
-\begin{figure}[h!]
-\begin{center}
-\includegraphics[scale=0.4]{hinh/vs.png}
-\end{center}
-\caption{ Visual Studio 2017}
-\end{figure}
-\end{center}
-Sau khi cài đặt Visual Studio, tải plugin Arduino từ https://marketplace.visualstudio.com/
-\item Cài đặt Sublime Text để lập trình giao diện web. \\
-Link download https://www.sublimetext.com/
-\begin{center}
-\begin{figure}[h!]
-\begin{center}
-\includegraphics[scale=0.4]{hinh/sublime.png}
-\end{center}
-\caption{Sublime Text 2}
-\end{figure}
-\end{center}
-\end{itemize}
-\newpage
-\subsubsection{Sử dụng cảm biến}
-\begin{itemize}
-\item Nhiệt độ, độ ẩm
-\begin{center}
-\begin{figure}[h!]
-\begin{center}
-\includegraphics[scale=0.4]{hinh/dht.png}
-\end{center}
-\caption{Sublime Text 2}
-\end{figure}
-\end{center}
 
+\subsubsection{Môi trường phát triển}
+Các công cụ và môi trường phát triển được sử dụng để thiết kế và hiện thực board điều khiển:
 \begin{itemize}
-\item Thư viện giao tiếp DHT có sẵn trên github.
-\item Như đã trình bày trong phần thiết kế,dòng cấp cho DHT 11 là 3-5V.
-\item Dữ liệu đầu ra là digital
-\item Thư viện tải về có kèm theo ví dụ, dưới đây là kết quả:
-\begin{center}
-\begin{figure}[h!]
-\begin{center}
-\includegraphics[scale=0.4]{hinh/dhtexample.png}
-\end{center}
-\caption{Kết quả đọc DHT}
-\end{figure}
-\end{center}
-\end{itemize}
-\subsubsection{Thời gian thực(RTC-DS1307)} 
-\begin{itemize}
-\item Nhắc lại về I2C: I2C là viết tắt của "Inter-Integrated Circuit", một chuẩn giao tiếp được phát minh bởi Philips’ semiconductor division (giờ là NXP) nhằm đơn giản hóa việc trao đổi dữ liệu giữa các ICs. Đôi khi nó cũng được gọi là Two Wire Interface (TWI) vì chỉ sử dụng 2 kết nối để truyền tải dữ liệu, 2 kết nối của giao tiếp I2C gồm: SDA (Serial Data Line) và SCL (Serial Clock Line).
-\item Trên board Arduino UNO, SDA là chân analog 4, SCL là chân analog 5.
-\begin{figure}[h!]
-\begin{center}
-\includegraphics[scale=0.5]{hinh/unoI2C.png}
-
-\end{center}
-\caption{Pin I2C trên board Arduino Uno.}
-\end{figure}
-\item Lưu ý: Vì Arduino sử dụng điện áp 5V nên các thiết bị khác cũng phải sử dụng mức này.
-\item Sử dụng thư viện I2C-\textbf{Wire.h}.
-\begin{figure}[h!]
-\begin{center}
-\includegraphics[scale=0.8]{hinh/wire.png}
-\end{center}
-\caption{Một số hàm trong thư viện \textbf{Wire.h}.}
-\end{figure}
-\item Chúng ta sẽ lắp module Real time clock với Arduino như sau:
-\begin{figure}[H]
-\begin{center}
-\includegraphics[scale=0.8]{hinh/lapdatRTC.png}
-\end{center}
-\caption{Sơ đồ lắp đặt RTC với board Uno}
-\end{figure}
-\item Đây là các Timekeeper registers của DS1307, chúng ta sẽ dựa vào bảng này để read/write IC  DS1307 qua I2C:
-\begin{figure}[H]
-\begin{center}
-\includegraphics[scale=0.8]{hinh/timekeeper.png}
-\end{center}
-\caption{DS1307 Timekeeper}
-\end{figure}
-\end{itemize}
-
-\subsubsection{Sử dụng Relay}
-\begin{itemize}
-\item Thông số của một relay\\
-Một module rơ-le được tạo nên bởi 2 linh kiện thụ động cơ bản là rơ-le và transistor, nên module rơ-le có những thông số của chúng:
-\begin{itemize}%1.2.3
-\item Hiệu điện thế kích tối ưu
-\item Các mức hiệu điện thế tối đa và cường độ dòng điện tối đa của đồ dùng điện khi nối vào module rơ-le
-\begin{figure}[H]
-\begin{center}
-\includegraphics[scale=0.8]{hinh/relay.png}
-\end{center}
-\caption{Thông số trên relay.}
-\end{figure}
-\begin{itemize}%1.2.3.4
-\item 10A - 250VAC: Cường độ dòng điện tối đa qua các tiếp điểm của rơ-le với hiệu điện thế <= 250V (AC) là 10A.
-\item 10A - 30VDC: Cường độ dòng điện tối đa qua các tiếp điểm của rơ-le với hiệu điện thế <= 30V (DC) là 10A.
-\item 10A - 30VDC: Cường độ dòng điện tối đa qua các tiếp điểm của rơ-le với hiệu điện thế <= 30V (DC) là 10A.
-\item 10A - 28VDC: Cường độ dòng điện tối đa qua các tiếp điểm của rơ-le với hiệu điện thế <= 28V (DC) là 10A.
-\item SRD-05VDC-SL-C: Hiện điện thế kích tối ưu là 5V.
-\end{itemize}%1.2.3.4
-
-\end{itemize}%1.2.3
-
-
-\item Cách sử dụng Relay
-\begin{itemize}
-\item Relay bình thường gồm có 6 chân. Trong đó có 3 chân để kích, 3 chân còn lại nối với đồ dùng điện công suất cao.
-\item 3 chân dùng để kích
-\begin{itemize}
-\item +: cấp hiệu điện thế kích tối ưu vào chân này.
-\item - : nối với cực âm
-\item S: chân tín hiệu, tùy vào loại module rơ-le mà nó sẽ làm nhiệm vụ kích rơ-le
-\end{itemize}
-
-\item 3 chân còn lại nối với đồ dùng điện công suất cao
-\begin{itemize}
-\item COM: chân nối với 1 chân bất kỳ của đồ dùng điện, nhưng mình khuyên bạn nên mắc vào đây chân lửa (nóng) nếu dùng hiệu điện thế xoay chiều và cực dương nếu là hiệu điện một chiều.
-\item ON hoặc NO: chân này bạn sẽ nối với chân lửa (nóng) nếu dùng điện xoay chiều và cực dương của nguồn nếu dòng điện một chiều.
-\item OFF hoặc NC: chân này bạn sẽ nối chân lạnh (trung hòa) nếu dùng điện xoay chiều và cực âm của nguồn nếu dùng điện một chiều.
-\end{itemize}
-\end{itemize}
-
-\end{itemize}%1.2
-\end{itemize}%1
-
-\subsubsection{Sử dụng module wifi ESP8266}
-\begin{itemize}
-\item Cách nạp firmware cho Esp8266V1.\\
-Để nạp firmware cho Esp8266, sử dụng module PL2102-USB2UART
-\begin{figure}[H]
-\begin{center}
-\includegraphics[scale=0.8]{hinh/cp2102.png}
-\end{center}
-\caption{Module CP2102-USB2UART.}
-\end{figure}
-Nối chân(pin) giữa Esp8266 với CP2102:
-\begin{figure}[H]
-\begin{center}
-\includegraphics[scale=0.8]{hinh/noichanesp.png}
-\end{center}
-\caption{Bảng nối chân Esp với CP2102.}
-\end{figure}
-\textbf{Lưu ý}:ESP8266V1 hoạt động ở mức điện áp 3.3V\\
-Sau khi nối chân ta tiến hành nạp code tương tự với board Arduino Uno.
-\item Lập trình Esp8266\\
-Để lập trình cho Esp8266, trước tiên phải cài gói thư viện dành cho board này\
-Đây là thư viện mã nguồn mở có sẵn trên github.\\
-%\textit{ http://arduino.esp8266.com/stable/package_esp8266com_index.json}
-\begin{figure}[H]
-\begin{center}
-\includegraphics[scale=0.8]{hinh/caidatesp.png}
-\end{center}
-\caption{Step 1.}
-\end{figure}
-
-Tiếp theo vào \textbf{Tool/BoardBoards/Manager}.
-\begin{figure}[H]
-\begin{center}
-\includegraphics[scale=1]{hinh/caidatesp2.png}
-\end{center}
-\caption{Step 2.}
-\end{figure}
-Đợi một lát để chương trình tìm kiếm. Ta kéo xuống và click vào ESP8266 by ESP8266 Community, click vào Install.\
-Chờ phần mềm tự động download và cài đặt.
-\begin{figure}[H]
-\begin{center}
-\includegraphics[scale=0.7]{hinh/caidatesp3.png}
-\end{center}
-\caption{Step 3.}
-\end{figure}
-Kết nối mudule USB-to-UART vào máy tính. Vào Tool/Board/Generic ESP8266 Module, chọn cổng COM tương ứng với module USB-to-UART tương ứng.
-\begin{figure}[H]
-\begin{center}
-\includegraphics[scale=0.7]{hinh/caidatesp4.png}
-\end{center}
-\caption{Step 4.}
-\end{figure}
-\end{itemize}
-\subsubsection{Cấu trúc thư mục mã nguồn}
-\begin{figure}[H]
-\begin{center}
-\includegraphics[scale=0.9]{hinh/structure.png}
-\end{center}
-\caption{Cấu trúc thư mục mã nguồn.}
-\end{figure}
-Mã nguồn được chia làm 2 thành phần chính:
-\begin{itemize}
-\item Thư mục Arduino Uno: chứa mã nguồn thực thi chương trình nạp lên board Arduino Uno
-\item Thư mục ESP8266: chứa mã nguồn thực thi chường trình nạp lên board ESP8266.
-\item Trong mỗi thư mục file có đuôi \textbf{ino} là file thực thi chính, còn lại là các lớp(class).
-\end{itemize}
-\subsubsection{Hoạt động của Esp8266}
-\begin{figure}[H]
-\begin{center}
-\includegraphics[scale=0.9]{hinh/espweb.png}
-\end{center}
-\caption{Giao diện web của esp8266.}
-\end{figure}
-\noindent Khi triển khai thiết bị, để thiết bị wifi Esp8266 cần được cấu hình để có thể\
-tham gia vào mạng internet.\\
-Để thực hiện chức năng này module Esp8266 cần hoạt động ở hai chế độ
-\begin{itemize}
-\item Mqtt Client-ở chế độ này nó thực hiện chức năng:
-\begin{itemize}
-\item Hoạt động ở chế độ STA (station): là một wifi client truy cập vào điểm phát wifi\
-gần đó.
-\item Là một \textbf{MQTT} client trao đổi thông tin với Web server (cũng là một MQTT\
-client)
-\item Kết nối với mạch điều khiển Arduino Uno thông qua UART để trao đổi một số thông tin: dữ liệu các sensor, dữ liệu về lịch trình hoạt đông các bộ điều khiển, thời gian thưc.
-\end{itemize}
-\item Web server-thực hiện các chức năng:
-\begin{itemize}
-\item Hoạt động ở chế độ AP(Access Point), nó sẽ phát wifi, laptop có thể truy cập wifi của nó.
-\item Là một Web server đơn giản cho mục đích cấu hình wifi để Esp8266 có thể tham gia vào internet.
-\end{itemize}
-\item Chế độ tự chuyển chế độ giữa STA và AP.
-\end{itemize}
-
-\subsubsection{Thiết kế mạch điều khiển}
-\begin{itemize}
-\item Sơ đồ nguyên lí (Schematic)
-\begin{figure}[H]
-\begin{center}
-\includegraphics[scale=0.8]{hinh/schematic.png}
-\end{center}
-\caption{Sơ đồ nguyên lí mạch điều khiển.}
-\end{figure}
-\newpage
-\item Sơ đồ mạch in 3D (PCB)
-\begin{figure}[H]
-\begin{center}
-\includegraphics[scale=0.8]{hinh/pcb.png}
-\end{center}
-\caption{Sơ đồ mạch in.}
-\end{figure}
+\item Windows 10, Linux (Ubuntu 16)
+\item Công cụ vẽ và thiết kế mạch: Altium
+\item IDE: Qt5, Visual studio code, Sublime Text
 \end{itemize}
 
 \subsubsection{Mạch chức năng đo ppm}
-\noindent \textbf{Lý thuyết}\\
 
-\textbf{- Độ dẫn điện (EC):}\\
-Chỉ số EC (electro-conductivity) (tương đối) là chỉ số diễn tả tổng nồng độ ion hòa tan trong dung dịch. Độ dẫn điện có thể được thể hiện bằng một số đơn vị khác nhau, nhưng đơn vị tiêu biểu được dùng để đo lường EC là millisiemens trên centimet (mS / cm). Chỉ số EC không diễn tả nồng độ của từng chất trong dung dịch đồng thời cũng không thể hiện mức độ cân bằng của các chất dinh dưỡng trong dung dịch. EC là thước đo độ dẫn điện từ hai đầu dò 1cm.\\
-Trong suốt quá trình tăng trưởng, cây hấp thu khoáng chất mà chúng cần, do vậy duy trì EC ở một mức ổn định là rất quan trọng. Nếu dung dịch có chỉ số EC cao thì sự hấp thu nước của cây diễn ra nhanh hơn sự hấp thu khoáng chất. Điều này làm nồng độ dung dịch tăng cao và gây ngộ độc cho cây. Khi đó ta phải bổ sung thêm nước vào môi trường. Ngược lại, nếu EC thấp, cây sẽ hấp thu khoáng chất nhanh hơn hấp thu nước. Khi đó, nồng độ dung dịch giảm mạnh, cây sẽ không được cung cấp đầy đủ khoáng chất, chậm lớn và phát triển kém.\\
+\begin{enumerate}
+\item Schematic
 
-\textbf{- Chỉ số TDS:}\\
-Chỉ số TDS (Total Dissolved Solids) là chỉ số đo tổng lượng chất rắn hoà tan, tổng số các ion mang điện tích bao gồm khoáng chất, muối hoặc kim loại tồn tại trong một khối lượng nước nhất định. TDS thường được biểu thị bằng hàm số ml/L hoặc ppm (Parts Per Million). 1 ppm tương ứng với 1mg chất rắn hòa tan trong một lít nước. Hầu hết nước máy sẽ có chỉ số PPM rơi vào khoảng từ 200 – 400ppm.\\
-Chỉ số TDS cũng ảnh hưởng lớn đến sự phát triển của cây: Nếu TDS lên quá cao, nồng độ dung dịch vượt mức cho phép sẽ gây ra hiện tượng ngộ độc cho cây. Ngược lại, khi chỉ số TDS xuống thấp, dung dịch thủy canh sẽ không đảm bảo cung cấp đủ chất dinh dưỡng cho cây trồng.\\
-
-\textbf{- Tương quan giữa EC và TDS:}\\
-Mặc dù có một mối tuơng quan giữa EC và TDS nhưng chúng không giống nhau. TDS và EC là 2 tham số riêng biệt. TDS là tổng lượng chất rắn hoà tan trong nước. EC là khả năng của các chất co thể gây ra dòng điện. Lượng chất rắn như muối trong phân bón tỉ lệ trực tiếp với độ dẫn điện của nó, vì vậy lượng chất rắn cao gây độ dẫn cao. Vì khi phân bón hoà tan trong nước chúng trở thành các "ion", có mang điện tích âm hoặc dương, nên chúng sinh ra dòng điện.\\
-Mối quan hệ của TDS và độ dẫn đặc hiệu của nước ngầm có thể được ước lượng bằng phương trình sau:
-\begin{center}
-		TDS = ke*EC
-\end{center}					
-Trong đó: TDS có đơn vị mg\/L và EC là độ dẫn điện ở microsiemens trên mỗi centimet ở 25\textdegree{}C. Yếu tố tương quan ke dao động từ 0,55 đến 0,8.\\
-Giới hạn với cây trồng:
-\begin{figure}[H]
-\centering
-\begin{center}
-\includegraphics[scale=.8]{hinh/PPM/ppm_thamkhao.PNG}
-\end{center}
-\caption{Giới hạn với cây trồng.}
-\end{figure}
-
-\textbf{- Tại sao lại dùng thiết bị này?}\\
-Nếu EC / PPM chỉ là đo điện dẫn (hoặc kháng) thì tại sao không sử dụng một đồng hồ volt / ohm trực tiếp? Bởi chúng đi qua dòng điện DC thông qua các đầu dò và bạn không thể đo độ dẫn của muối với dòng điện DC vì nó sẽ tách các phân tử ra ngoài, và vì các phân tử là điện dẫn điện,các phần tử điện sẽ thay đổi liên tục và sẽ không thu được kết quả gì. Bằng cách sử dụng một tín hiệu AC,với tần số đủ cao (> 1khz) các phân tử không có thời gian để di chuyển ra ngoài trước khi chúng được kéo theo hướng ngược lại.\\
-Các thành phần ion:
-\begin{figure}[H]
-\centering
-\begin{center}
-\includegraphics[scale=1]{hinh/PPM/ppm_ion.png}
-\end{center}
-\caption{Các thành phần ion.}
-\end{figure}
-
-Trường hợp sử dụng dòng AC:
-\begin{figure}[H]
-\centering
-\begin{center}
-\includegraphics[scale=1]{hinh/PPM/ppm_AC.png}
-\end{center}
-\caption{Trường hợp sử dụng dòng AC.}
-\end{figure}
-
-Trường hợp sử dụng dòng DC:
-\begin{figure}[H]
-\centering
-\begin{center}
-\includegraphics[scale=1]{hinh/PPM/ppm_DC.png}
-\end{center}
-\caption{Trường hợp sử dụng dòng DC.}
-\end{figure}
-
-\textbf{- Hoạt động:}\\
-Hai điện cực với một điện áp xoay chiều được đặt trong dung dịch. Điều này tạo ra một dòng điện phù thuộc vào bản chất dẫn điện của dung dịch. Thiết bị đọc dòng diện này và hiển thị theo đơn vị EC hoặc ppm.\\
-
-\noindent \textbf{Linh kiện, thiết kế}\\
-\textbf{- Schematic:}
 \begin{figure}[H]
 \centering
 \begin{center}
@@ -2676,7 +2367,8 @@ Hai điện cực với một điện áp xoay chiều được đặt trong dun
 \caption{PPM schematic.}
 \end{figure}
 
-\textbf{- PCB:}
+\item Mạch PCB
+
 \begin{figure}[H]
 \centering
 \begin{center}
@@ -2684,6 +2376,10 @@ Hai điện cực với một điện áp xoay chiều được đặt trong dun
 \end{center}
 \caption{PPM PCB.}
 \end{figure}
+
+\end{enumerate}
+
+
 
 \noindent Thành phần chính trong mạch:
 \begin{itemize}
@@ -3235,8 +2931,17 @@ Nửa chu kì đầu, khi điểm 1 dương so với điểm 2, dòng chạy t�
 	\end{enumerate}
 
 \subsection{Ứng dụng web}
+\subsubsection{Môi trường phát triển}
+Các công cụ và môi trường phát triển được sử dụng để phát triển trang web:
+\begin{itemize}
+\item Hệ điều hành: Windows 10, Linux (Manjaro)
+\item IDE: Visual studio code
+\item Nodejs 6.x
+\item Angularjs 1.6.4
+\item Git 2.15.1
+\item Google chrome 63.0.3239.84 để kiểm thử 
+\end{itemize}
 \subsubsection{Hiện thực server API}
-
 
 \noindent Mẫu dữ liệu trả về cho tất cả các API:
 \begin{itemize}
@@ -3943,33 +3648,32 @@ Trong đó success nhận giá trị true nếu request được xử lý thành
 
 \end{itemize}
 
-\paragraph{Mô hình cụm server}
 
 \begin{center}
 \begin{figure}[htp]
 \begin{center}
-\includegraphics[scale=.5]{hinh/folder.png}
+\includegraphics[scale=1.]{hinh/folder.png}
 \end{center}
 \caption{Cây thư mục}
-\label{refhinh1}
 \end{figure}
 \end{center}
-\paragraph{Cấu trúc thư mục}
+\subsubsection{Cấu trúc thư mục}
 
 Server được tổ chức theo mô hình MVC với các thư mục chính:
 \begin{itemize}
-\item Models: chứa các model cho các đối tượng tương ứng trong database
-\item Routes: controller tiếp nhận các request và xử lý
-\item Views : các file html hiển thị
+\item models: chứa các model cho các đối tượng tương ứng trong database
+\item routes: controller tiếp nhận các request và xử lý
+\item views : các file html hiển thị
 \end{itemize}
 
 Ngoài ra, các thư mục khác:
 \begin{itemize}
-\item Config: thiết lập thông tin database khi kết nối
-\item Public: chứa mã css, javascript, angularjs, images, các thư viện front-end cần dùng.
-\item Run: cấu hình cho server như port,…
-\item File app.js: file server chính
-\item File package.js: các gói hỗ trợ trong ứng dụng dành cho nodejs
+\item config: thiết lập thông tin database khi kết nối
+\item public: chứa mã css, javascript, angularjs, images, các thư viện front-end cần dùng.
+\item run: cấu hình cho server như port,…
+\item utils: các file chứa hàm hỗ trợ
+\item file app.js: file server chính
+\item file package.js: các gói hỗ trợ trong ứng dụng dành cho nodejs
 \end{itemize}
 \subsubsection{Xây đựng database}
 \noindent Sử dụng Sequelizejs để hiện thực database giống như sơ đồ sau:
@@ -3977,13 +3681,25 @@ Ngoài ra, các thư mục khác:
 \begin{center}
 \begin{figure}[b]
 \begin{center}
-\includegraphics[scale=0.62]{hinh/class_diagram.jpg}
+\includegraphics[scale=0.64]{hinh/class_diagram.jpg}
 \end{center}
 \caption{ Thiết kế class}
-\label{xyz}
 \end{figure}
 \end{center}
 \end{landscape}
+\newpage
+Chú thích các đối tượng trong sơ đồ lớp trên:
+\begin{itemize}
+\item User: người sử dụng
+\item Device: board điều khiển
+\item Article: bài viết do người dùng viết
+\item Comment: bình luận trong bài viết
+\item Crop: một mùa vụ
+\item Threshold: ngưỡng dữ liệu
+\item Data: dữ liệu cảm biến từ board điều khiển gửi lên
+\item Actuator: các thực thể máy bơm, quạt, đèn
+\item Schedule: lịch trình hoạt động của mỗi actuator
+\end{itemize}
 \subsubsection{Một số hình ảnh}
 \begin{center}
 
@@ -4105,6 +3821,16 @@ Ngoài ra, các thư mục khác:
 \end{center}
 
 \subsection{Ứng dụng di động}
+\subsubsection{Môi trường phát triển}
+Các môi trường và công cụ để phát triển ứng dụng di động:
+\begin{itemize}
+\item Hệ điều hành Manjaro
+\item Angular 4.4.3
+\item Ionic 2
+\item Visual studio code
+\item Android sdk 16 (hỗ trợ từ android 4.1 trở lên)
+\item Genymotion 2.11.0 để kiểm thử ứng dụng
+\end{itemize}
 \subsubsection{Một số hình ảnh}
 
 \begin{figure}[H]
@@ -4166,7 +3892,9 @@ Các biểu đồ tuần tự sau sẽ thể hiện sự tương tác giữa ng�
 \newpage
 \section{KIỂM THỬ HỆ THỐNG}
 \subsection{Web server}
-
+Web server được triển khai trên cloud Google engine ở địa chỉ http://35.197.152.184:3210/. Các tính năng CRUD trên các đối tượng User, Article, Comment, Device, Crop, Actuator, Schedule, Threshold hoạt động ổn định. 
+\subsection{Ứng dụng di động}
+Ứng dụng được kiểm thử trên máy ảo google nexus 5 chạy android 6.0 của Genymotion và máy thật samsung galaxy note 5 chạy android 7.0. Các chức năng đăng nhập, hiển thị thông tin và điều khiển các actuator hoạt động ổn định.
 \subsection{Board điều khiển}
 \subsubsection{Thiết bị}
 
@@ -4181,7 +3909,7 @@ Các biểu đồ tuần tự sau sẽ thể hiện sự tương tác giữa ng�
 	
 	\begin{figure}[H]
 	\begin{center}
-	\includegraphics[scale=.6]{hinh/Relay.jpg}
+	\includegraphics[scale=.4]{hinh/relay_prototype.jpg}
 	\end{center}
 	\caption{Relay prototype.}
 	\end{figure}
@@ -4197,6 +3925,8 @@ Các biểu đồ tuần tự sau sẽ thể hiện sự tương tác giữa ng�
 
 \subsubsection{Các chức năng}
 \begin{itemize}
+	\item Mạch đo chức năng PPM.
+		\begin{itemize}
 \item Prototype
 	\begin{figure}[H]
 	\begin{center}
@@ -4240,6 +3970,50 @@ Các biểu đồ tuần tự sau sẽ thể hiện sự tương tác giữa ng�
 	\caption{Kết quả đo ppm 2.}
 	\end{figure}
 \end{itemize}
+\item Thu thập dữ liệu cảm biến
+\begin{itemize}
+\item Đọc dữ liệu nhiệt độ, độ ẩm
+\item Đọc dữ liệu ánh sáng
+\item Đọc dữ liệu ppm
+\item Định thời
+\end{itemize}
+
+\item Điều khiển các actuators.
+	\begin{itemize}
+	\item Đọc thời gian thực
+	\item Hoạt động theo schedule
+	\item Lưu trữ trạng thái các actuator vào EEPROM
+	\item Tải lại trạng thái các actuator từ EEPROM
+	\item Đèn báo tín hiệu các actuator
+	\end{itemize}
+\item Giao tiếp với webserver
+	\begin{itemize}
+	\item Protocol hoạt động đúng
+	\item Protocol Mqtt truyền nhận đúng
+	\end{itemize}
+\item Cấu hình wifi, mqtt
+	\begin{itemize}
+	\item Chuyển chế độ từ Station sang Access Point
+	\item Webserver hoạt động ổn định.
+	\item Lưu trữ các thông số sau khi cấu hình vào EEPROM
+	\item Tải lại các thông số sau khi reset.
+
+	\end{itemize}
+\end{itemize}
+
+\subsection{Kết nối giữa ứng dụng web và board điều khiển}
+
+\subsubsection{Dữ liệu nhận từ cảm biến}
+\noindent Hệ thống tiếp nhận, xử lý và hiển thị các thông số môi trường, đồng thời hiển thị trạng thái dữ liệu nếu dữ liệu vượt ngưỡng định trước
+
+	\begin{figure}[H]
+	\begin{center}
+	\includegraphics[scale=.7]{hinh/data.PNG}
+	\end{center}
+	\caption{Dữ liệu gửi lên từ cảm biến.}
+	\end{figure}
+\subsubsection{Điều khiển các actuator}
+\noindent Tại thời điểm làm bản thảo báo cáo, hệ thống mới chỉ được kiểm thử điều khiển bật tắt các relay theo lịch trình. Sắp tới nhóm sẽ kiểm thử trên các actuator và mô hình cây trồng thực tế.
 
 \newpage
 \section{TỔNG KẾT VÀ HƯỚNG PHÁT TRIỂN CHO TƯƠNG LAI}
@@ -4305,7 +4079,15 @@ Các biểu đồ tuần tự sau sẽ thể hiện sự tương tác giữa ng�
 	\end{itemize}
 	\end{itemize}
 	
-	\subsubsection{Thuận lợi và khó khăn trong quá trình thực hiện đề tài}	
+	\subsubsection{Những hạn chế của hệ thống}
+	\begin{itemize}
+	\item Thiết bị đo ppm còn sai số lớn với những dung dịch có giá trị ppm lớn.
+	\item Giao diện web còn nhiều điểm chưa thuận tiện cho người dùng.
+	\item Mới dừng ở mức cảnh báo khi các thông số vượt ngưỡng.
+	\item Chưa hiện thực hoàn chỉnh giao thức giao tiếp giữa board điều khiển và web server đã thiết kế.
+	\end{itemize}		
+	
+	\subsubsection{Thuận lợi, khó khăn trong quá trình thực hiện đề tài}	
 	\paragraph{Thuận lợi}
 		\begin{itemize}
 		\item Được sự hỗ trợ về kinh phí và kiến thức từ giáo viên hướng dẫn. 
@@ -4320,30 +4102,6 @@ Các biểu đồ tuần tự sau sẽ thể hiện sự tương tác giữa ng�
 
 		\item  Khó khăn trong việc tìm thiết kế và hiện thực giao thức giao tiếp, gửi nhận các gói tin giữa board điều khiển và web api. 
 		\end{itemize}
-	
-	\subsubsection{Hướng phát triển}
-\paragraph{Ứng dụng web}
-\begin{itemize}
-\item Nghiên cứu kỹ hơn về ảnh hưởng của các nhân tố môi trường (nhiệt độ, độ ẩm, pH, ppm, ánh sáng, oxy) đến sự phát triển của các loại cây phổ biến trong từng thời kỳ, từ đó đưa ra các giải pháp tự động hóa việc chăm sóc cho từng giai đoạn phát triển của cây.
-\item Người dùng có thể upload ảnh đại diện, upload ảnh về các mùa vụ mà mình đang trồng và chia sẻ nó.
-\item Cho phép người dùng xuất ra các file setting của một mùa vụ nào đó và chia sẻ nó, người dùng khác có thể nạp file đó vào profile của mình và chạy trên thiết bị.
-\item Khắc phục thời gian chờ gói tin ACK từ board điều khiển bằng cách thiết lập một khoảng thời gian nhất định cho việc chờ gói tin ACK. Quá khoảng thời gian đó thì phản hồi về cho website là gói tin không đến được board điều khiển.
-\item Cải thiện hơn về giao diện.
-\end{itemize}
-
-\paragraph{Ứng dụng di động}
-\begin{itemize}
-\item Cải thiện hơn về giao diện.
-\end{itemize}
-
-\paragraph{Board điều khiển}
-\begin{itemize}
-\item Hoàn thiện mạch chức năng ppm.
-\item Hoàn thiện board điều khiển.
-\item Phát triển mô hình, tiến hành thử nghiệm thực tế.
-\end{itemize}
-\newpage
-
 
 \subsubsection{Kiến thức thu thập được}
 \begin{itemize}
@@ -4355,6 +4113,181 @@ Các biểu đồ tuần tự sau sẽ thể hiện sự tương tác giữa ng�
 
 \item Rèn luyện các kỹ năng thiết kế phần mềm, thiết kế CSDL đã học. 
 \end{itemize}
+
+	
+\subsection{Hướng phát triển}
+\subsubsection{Ứng dụng web}
+\begin{itemize}
+\item Nghiên cứu kỹ hơn về ảnh hưởng của các nhân tố môi trường (nhiệt độ, độ ẩm, pH, ppm, ánh sáng, oxy) đến sự phát triển của các loại cây phổ biến trong từng thời kỳ, từ đó đưa ra các giải pháp tự động hóa việc chăm sóc cho từng giai đoạn phát triển của cây.
+\item Người dùng có thể upload ảnh đại diện, upload ảnh về các mùa vụ mà mình đang trồng và chia sẻ nó.
+\item Cho phép người dùng xuất ra các file setting của một mùa vụ nào đó và chia sẻ nó, người dùng khác có thể nạp file đó vào profile của mình và chạy trên thiết bị.
+\item Khắc phục thời gian chờ gói tin ACK từ board điều khiển bằng cách thiết lập một khoảng thời gian nhất định cho việc chờ gói tin ACK. Quá khoảng thời gian đó thì phản hồi về cho website là gói tin không đến được board điều khiển.
+\item Cải thiện hơn về giao diện.
+\end{itemize}
+
+\subsubsection{Ứng dụng di động}
+\begin{itemize}
+\item Cải thiện hơn về giao diện.
+\item Xây dựng kênh tin tức trên ưng dụng.
+\end{itemize}
+
+\subsubsection{Board điều khiển}
+\begin{itemize}
+\item Hoàn thiện mạch chức năng ppm.
+\item Hoàn thiện board điều khiển.
+\item Phát triển mô hình, tiến hành thử nghiệm thực tế.
+\end{itemize}
+\newpage
+
+\subsection{Quá trình làm việc của nhóm}
+\begin{landscape}
+\begin{table}[!htp]
+\centering
+  \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+  \hline 
+  Công việc & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 & 12 & 13 & 14 & 15 \\ 
+  \hline 
+  \makecell{Tìm hiểu về thủy canh,\\ các loại thủy canh\\ và cách hoạt động của mỗi loại
+} & x &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\ 
+  \hline 
+  Tìm hiểu Nodejs
+ &  & x & x &  &  &  &  &  &  &  &  &  &  &  &  \\ 
+  \hline 
+  Tìm hiểu Angularjs
+ &  &  & x & x &  &  &  &  &  &  &  &  &  &  &  \\ 
+  \hline 
+  \makecell{Thiết kế database\\ (thiết kế, bổ sung)
+} &  &  & x & x & x & x & x & x & x &  &  &  &  &  &  \\ 
+  \hline 
+  \makecell{Thiết kế protocol \\ (thiết kế, bổ sung)} &  &  & x & x & x & x & x & x & x & x & x & x & x &  &  \\ 
+  \hline 
+  \makecell{Xây dựng server API\\ (xây dựng, cập nhật, sửa lỗi)
+} &  &  & x & x & x & x & x & x & x & x & x & x & x & x & x \\ 
+  \hline 
+ \makecell{Xây dựng front-end \\ (xây dựng, cập nhật, sửa lỗi)
+} &  &  & x & x & x & x & x & x &  &  &  &  &  &  &  \\ 
+  \hline 
+  \makecell{Tim hiểu angular 2,\\ framework ionic 2
+} &  &  &  &  &  &  &  &  & x & x &  &  &  &  &  \\ 
+  \hline 
+  \makecell{Xây dựng ứng dụng di động \\
+  (xây dựng, cập nhật, sửa lỗi)} &  &  &  &  &  &  &  &  &  & x & x & x & x & x &  \\ 
+  \hline 
+  \makecell{Viết báo cáo} &  &  &  &  &  &  &  &  &  &  &  &  & x & x & x \\ 
+  \hline 
+  \end{tabular} 
+    \caption{Bảng công việc của Huỳnh Bá Thạch}
+\end{table}
+
+\end{landscape}
+
+\begin{landscape}
+\begin{table}[!htp]
+\centering
+  \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+  \hline 
+  Công việc & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 & 12 & 13 & 14 & 15 \\ 
+  \hline 
+  \makecell{Tìm hiểu về thủy canh,\\ các loại thủy canh\\ và cách hoạt động của mỗi loại
+} & x & x &  &  &  &  &  &  &  &  &  &  &  &  &  \\ 
+  \hline 
+  \makecell{Tìm hiểu về các ứng dụng IoT \\ và các giao thức dùng cho IoT} & x & x & x &  &  &  &  &  &  &  &  &  &  &  &  \\ 
+  \hline 
+  Tìm hiểu Nodejs và Angularjs
+ &  & x & x & x & x &  &  &  &  &  &  &  &  &  &  \\ 
+  \hline 
+  \makecell{Thiết kế database\\ (thiết kế, bổ sung)
+} &  & x & x & x & x & x & x &  &  &  &  &  &  &  &  \\ 
+  \hline 
+  \makecell{Tìm hiểu và thiết kế \\xây dựng giao diện ứng dụng web \\(thiết kế, xây dựng, cập nhật)
+} &  &  & x & x & x & x & x & x & x & x & x &  &  &  &  \\ 
+  \hline 
+  \makecell{Xây dựng server API\\ (xây dựng, cập nhật, sửa lỗi)
+} &  &  & x & x & x & x & x & x & x & x & x & x & x &  &  \\ 
+  \hline 
+ \makecell{Xây dựng front-end \\ (xây dựng, cập nhật, sửa lỗi)
+} &  &  & x & x & x & x & x & x & x & x & x & x & x & x & x \\ 
+  \hline 
+  \makecell{Viết báo cáo} &  &  &  &  &  &  &  &  &  &  &  & x & x & x & x \\ 
+  \hline 
+  \end{tabular} 
+    \caption{Bảng công việc của Tạ Chí Tây}
+\end{table}
+
+\end{landscape}
+
+
+\begin{landscape}
+\begin{table}[!htp]
+\centering
+  \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+  \hline 
+  Công việc & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 & 12 & 13 & 14 & 15 \\ 
+  \hline 
+  \makecell{Định hình công việc} & x &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\ 
+  \hline 
+  \makecell{Tìm hiểu kiến thức về máy đo ppm
+}
+ & x & x &  &  &  &  &  &  &  &  &  &  &  &  &  \\ 
+  \hline 
+  \makecell{Thử nghiệm mô phỏng,\\ schematic 
+mạch đo ppm}
+ &  & x & x & x &  &  &  &  &  &  &  &  &  &  &  \\ 
+  \hline 
+  \makecell{Thiết kế prototype, làm mạch,\\ thử nghiệm máy đo ppm} &  &  & x & x & x &  & x & x &  &  &  &  &  &  &  \\ 
+  \hline 
+  \makecell{Tìm hiểu gitlab,\\ xây dựng cấu trúc project} &  &  &  &  & x & x & x &  &  &  &  &  &  &  &  \\ 
+  \hline 
+  \makecell{Thiết kế, hiện thực chức năng\\ web-server trên board Node MCU} &  &  &  &  &  & x & x & x & x & x &  &  &  &  &  \\ 
+  \hline 
+ \makecell{Thiết kế prototype, schematic và PCB cho board điều khiển} &  &  &  &  &  &  & x& x & x& x &  &  &  &  &  \\ 
+  \hline 
+  \makecell{Thiết kế, thực hiện mô hình thử nghiệm} &  &  &  &  &  &  &  &  & x & x & x & x &  &  &  \\ 
+  \hline 
+  \makecell{Viết báo cáo} &  &  &  &  &  &  &  &  &  &  & x & x & x & x & x \\ 
+  \hline 
+  \end{tabular} 
+    \caption{Bảng công việc của Nguyễn Lê Minh Khôi}
+\end{table}
+
+\end{landscape}
+
+
+\begin{landscape}
+\begin{table}[!htp]
+\centering
+  \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+  \hline 
+  Công việc & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 & 12 & 13 & 14 & 15 \\ 
+    \hline 
+  \makecell{Định hình công việc
+} & x &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\ 
+  \hline 
+  \makecell{Tìm hiểu, thử nghiệm Arduino} & x & x & x &  &  &  &  &  &  &  &  &  &  &  &  \\ 
+  \hline 
+  \makecell{Tìm hiểu, thử nghiệm Arm, Mbed}
+ &  & x & x & x &  &  &  &  &  &  &  &  &  &  &  \\ 
+  \hline 
+  Tìm hiểu gitlab, cấu trúc project
+ &  &  & x & x & x &  &  &  &  &  &  &  &  &  &  \\ 
+  \hline 
+  \makecell{Thiết kế phần mềm} &  &  & x & x &  &  &  &  &  &  &  &  &  &  &  \\ 
+  \hline 
+  \makecell{Hiện thực thiết kế\\ tái thiết kế
+} &  &  &  & x & x & x & x & x & x & x &  &  &  &  &  \\ 
+  \hline 
+ \makecell{Hiện thực mô hình thử nghiệm} &  &  &  &  &  &  &  &  & x & x & x & x &  &  &  \\ 
+  \hline 
+  \makecell{Chạy thử mô hình} &  &  &  &  &  &  &  &  &  & x & x & x & x &  &  \\ 
+  \hline 
+  \makecell{Viết báo cáo} &  &  &  &  &  &  &  & x & x & x & x & x & x & x & x \\ 
+  \hline 
+  \end{tabular} 
+    \caption{Bảng công việc của Nguyễn Đình Dũng}
+\end{table}
+
+\end{landscape}
+
 
 \begin{thebibliography}{80}
 \bibitem{http://wikipedia:2012} http://vietjack.com/nodejs/nodejs\_la\_gi.jsp
@@ -4374,6 +4307,8 @@ Các biểu đồ tuần tự sau sẽ thể hiện sự tương tác giữa ng�
 \bibitem{http://wikipedia:2012} https://vi.wikipedia.org/wiki/PostgreSQL 
 \bibitem{http://wikipedia:2012} https://docs.archive.nodebb.org/vi/latest/index.html 
 \bibitem{http://wikipedia:2012} https://en.wikipedia.org/wiki/XXTEA
+\bibitem{http://wikipedia:2012} https://expressjs.com/
+\bibitem{http://wikipedia:2012} http://docs.sequelizejs.com/
 \end{thebibliography}
 
 \end{document}

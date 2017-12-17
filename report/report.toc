@@ -12,84 +12,82 @@
 \contentsline {subsubsection}{\numberline {2.1.2}Kh\IeC {\h a} n\IeC {\u a}ng \IeC {\dj }\IeC {\d i}nh danh \IeC {\dj }\IeC {\d \ocircumflex }c nh\IeC {\'\acircumflex }t}{4}{subsubsection.2.1.2}
 \contentsline {subsubsection}{\numberline {2.1.3}Xu h\IeC {\uhorn }\IeC {\'\ohorn }ng v\IeC {\`a} t\IeC {\'\i }nh ch\IeC {\'\acircumflex }t}{4}{subsubsection.2.1.3}
 \contentsline {subsubsection}{\numberline {2.1.4}\IeC {\'\UHORN }ng d\IeC {\d u}ng}{5}{subsubsection.2.1.4}
-\contentsline {subsection}{\numberline {2.2}Gi\IeC {\'\ohorn }i thi\IeC {\d \ecircumflex }u v\IeC {\`\ecircumflex } H\IeC {\d \ecircumflex } th\IeC {\'\ocircumflex }ng th\IeC {\h u}y canh}{6}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.2}Gi\IeC {\'\ohorn }i thi\IeC {\d \ecircumflex }u v\IeC {\`\ecircumflex } h\IeC {\d \ecircumflex } th\IeC {\'\ocircumflex }ng th\IeC {\h u}y canh}{6}{subsection.2.2}
 \contentsline {subsubsection}{\numberline {2.2.1}H\IeC {\d \ecircumflex } th\IeC {\'\ocircumflex }ng d\IeC {\d a}ng b\IeC {\'\acircumflex }c (wick system)}{7}{subsubsection.2.2.1}
 \contentsline {subsubsection}{\numberline {2.2.2}H\IeC {\d \ecircumflex } th\IeC {\'\ocircumflex }ng th\IeC {\h u}y canh t\IeC {\~\i }nh (water culture)}{8}{subsubsection.2.2.2}
 \contentsline {subsubsection}{\numberline {2.2.3}H\IeC {\d \ecircumflex } th\IeC {\'\ocircumflex }ng ng\IeC {\d \acircumflex }p v\IeC {\`a} r\IeC {\'u}t \IeC {\dj }\IeC {\d i}nh k\IeC {\`y} (ebb and flow system)}{8}{subsubsection.2.2.3}
 \contentsline {subsubsection}{\numberline {2.2.4}H\IeC {\d \ecircumflex } th\IeC {\'\ocircumflex }ng nh\IeC {\h o} gi\IeC {\d o}t (Drip system)}{9}{subsubsection.2.2.4}
 \contentsline {subsubsection}{\numberline {2.2.5}H\IeC {\d \ecircumflex } th\IeC {\'\ocircumflex }ng m\IeC {\`a}ng dinh d\IeC {\uhorn }\IeC {\~\ohorn }ng NFT (Nutrient Film Technique)}{9}{subsubsection.2.2.5}
 \contentsline {subsubsection}{\numberline {2.2.6}Kh\IeC {\'\i } canh (Aeroponics)}{11}{subsubsection.2.2.6}
-\contentsline {subsection}{\numberline {2.3}H\IeC {\d \ecircumflex } th\IeC {\'\ocircumflex }ng th\IeC {\h u}y canh v\IeC {\'\ohorn }i IoT}{11}{subsection.2.3}
-\contentsline {subsection}{\numberline {2.4}C\IeC {\'a}c h\IeC {\d \ecircumflex } th\IeC {\'\ocircumflex }ng th\IeC {\h u}y canh t\IeC {\d \uhorn } \IeC {\dj }\IeC {\d \ocircumflex }ng hi\IeC {\d \ecircumflex }n c\IeC {\'o} tr\IeC {\^e}n th\IeC {\d i} tr\IeC {\uhorn }\IeC {\`\ohorn }ng}{12}{subsection.2.4}
-\contentsline {subsection}{\numberline {2.5}Gi\IeC {\'\ohorn }i thi\IeC {\d \ecircumflex }u v\IeC {\`\ecircumflex } c\IeC {\'a}c c\IeC {\^o}ng ngh\IeC {\d \ecircumflex } \IeC {\dj }\IeC {\uhorn }\IeC {\d \ohorn }c s\IeC {\h \uhorn } d\IeC {\d u}ng}{12}{subsection.2.5}
-\contentsline {subsubsection}{\numberline {2.5.1}RESTful web service}{12}{subsubsection.2.5.1}
-\contentsline {subsubsection}{\numberline {2.5.2}Nodejs}{14}{subsubsection.2.5.2}
-\contentsline {subsubsection}{\numberline {2.5.3}Framework Expressjs}{15}{subsubsection.2.5.3}
-\contentsline {subsubsection}{\numberline {2.5.4}Sequelizejs}{15}{subsubsection.2.5.4}
-\contentsline {subsubsection}{\numberline {2.5.5}Angularjs}{16}{subsubsection.2.5.5}
-\contentsline {subsubsection}{\numberline {2.5.6}Angular 2}{16}{subsubsection.2.5.6}
-\contentsline {subsubsection}{\numberline {2.5.7}Framework Ionic 2}{16}{subsubsection.2.5.7}
-\contentsline {subsubsection}{\numberline {2.5.8}Typescript}{17}{subsubsection.2.5.8}
-\contentsline {subsubsection}{\numberline {2.5.9}JWT}{17}{subsubsection.2.5.9}
-\contentsline {subsubsection}{\numberline {2.5.10}Postgresql}{18}{subsubsection.2.5.10}
-\contentsline {subsubsection}{\numberline {2.5.11}NodeBB}{19}{subsubsection.2.5.11}
-\contentsline {subsubsection}{\numberline {2.5.12}Git v\IeC {\`a} GitHub}{19}{subsubsection.2.5.12}
-\contentsline {subsubsection}{\numberline {2.5.13}XXTEA}{20}{subsubsection.2.5.13}
-\contentsline {subsubsection}{\numberline {2.5.14}Arduino}{20}{subsubsection.2.5.14}
-\contentsline {subsubsection}{\numberline {2.5.15}ARM}{21}{subsubsection.2.5.15}
-\contentsline {subsubsection}{\numberline {2.5.16}Mbed}{21}{subsubsection.2.5.16}
-\contentsline {subsubsection}{\numberline {2.5.17}MQTT}{22}{subsubsection.2.5.17}
-\contentsline {section}{\numberline {3}THI\IeC {\'\ECIRCUMFLEX }T K\IeC {\'\ECIRCUMFLEX } H\IeC {\d \ECIRCUMFLEX } TH\IeC {\'\OCIRCUMFLEX }NG}{23}{section.3}
-\contentsline {subsection}{\numberline {3.1}Ki\IeC {\'\ecircumflex }n tr\IeC {\'u}c m\IeC {\^o} h\IeC {\`\i }nh h\IeC {\d \ecircumflex } th\IeC {\'\ocircumflex }ng}{23}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2}H\IeC {\d \ecircumflex } th\IeC {\'\ocircumflex }ng board \IeC {\dj }i\IeC {\`\ecircumflex }u khi\IeC {\h \ecircumflex }n}{23}{subsection.3.2}
-\contentsline {subsubsection}{\numberline {3.2.1}T\IeC {\h \ocircumflex }ng quan m\IeC {\^o} h\IeC {\`\i }nh board \IeC {\dj }i\IeC {\`\ecircumflex }u khi\IeC {\h \ecircumflex }n}{23}{subsubsection.3.2.1}
-\contentsline {subsubsection}{\numberline {3.2.2}S\IeC {\ohorn } \IeC {\dj }\IeC {\`\ocircumflex } ho\IeC {\d a}t \IeC {\dj }\IeC {\d \ocircumflex }ng}{32}{subsubsection.3.2.2}
-\contentsline {subsection}{\numberline {3.3}Ki\IeC {\'\ecircumflex }n tr\IeC {\'u}c ph\IeC {\`\acircumflex }n m\IeC {\`\ecircumflex }m}{46}{subsection.3.3}
-\contentsline {subsubsection}{\numberline {3.3.1}Sequence diagram}{46}{subsubsection.3.3.1}
-\contentsline {subsubsection}{\numberline {3.3.2}Class diagram}{49}{subsubsection.3.3.2}
-\contentsline {subsection}{\numberline {3.4}\IeC {\'\UHORN }ng d\IeC {\d u}ng web}{56}{subsection.3.4}
-\contentsline {subsubsection}{\numberline {3.4.1}S\IeC {\ohorn } \IeC {\dj }\IeC {\`\ocircumflex } use case}{56}{subsubsection.3.4.1}
-\contentsline {subsubsection}{\numberline {3.4.2}Thi\IeC {\'\ecircumflex }t k\IeC {\'\ecircumflex } database}{74}{subsubsection.3.4.2}
-\contentsline {subsubsection}{\numberline {3.4.3}Thi\IeC {\'\ecircumflex }t k\IeC {\'\ecircumflex } API}{76}{subsubsection.3.4.3}
-\contentsline {subsection}{\numberline {3.5}\IeC {\'\UHORN }ng d\IeC {\d u}ng di \IeC {\dj }\IeC {\d \ocircumflex }ng}{76}{subsection.3.5}
-\contentsline {subsection}{\numberline {3.6}Giao ti\IeC {\'\ecircumflex }p gi\IeC {\~\uhorn }a Board \IeC {\dj }i\IeC {\`\ecircumflex }u khi\IeC {\h \ecircumflex }n v\IeC {\`a} Web}{77}{subsection.3.6}
-\contentsline {subsubsection}{\numberline {3.6.1}Giao th\IeC {\'\uhorn }c}{77}{subsubsection.3.6.1}
-\contentsline {subsubsection}{\numberline {3.6.2}C\IeC {\'\acircumflex }u tr\IeC {\'u}c c\IeC {\'a}c g\IeC {\'o}i tin}{78}{subsubsection.3.6.2}
-\contentsline {section}{\numberline {4}HI\IeC {\d \ECIRCUMFLEX }N TH\IeC {\d \UHORN }C H\IeC {\d \ECIRCUMFLEX } TH\IeC {\'\OCIRCUMFLEX }NG}{81}{section.4}
-\contentsline {subsection}{\numberline {4.1}H\IeC {\d \ecircumflex } th\IeC {\'\ocircumflex }ng Board \IeC {\dj }i\IeC {\`\ecircumflex }u khi\IeC {\h \ecircumflex }n}{81}{subsection.4.1}
-\contentsline {subsubsection}{\numberline {4.1.1}C\IeC {\`a}i \IeC {\dj }\IeC {\d \abreve }t ph\IeC {\`\acircumflex }n m\IeC {\`\ecircumflex }m}{81}{subsubsection.4.1.1}
-\contentsline {subsubsection}{\numberline {4.1.2}S\IeC {\h \uhorn } d\IeC {\d u}ng c\IeC {\h a}m bi\IeC {\'\ecircumflex }n}{82}{subsubsection.4.1.2}
-\contentsline {subsubsection}{\numberline {4.1.3}Th\IeC {\`\ohorn }i gian th\IeC {\d \uhorn }c(RTC-DS1307)}{83}{subsubsection.4.1.3}
-\contentsline {subsubsection}{\numberline {4.1.4}S\IeC {\h \uhorn } d\IeC {\d u}ng Relay}{85}{subsubsection.4.1.4}
-\contentsline {subsubsection}{\numberline {4.1.5}S\IeC {\h \uhorn } d\IeC {\d u}ng module wifi ESP8266}{87}{subsubsection.4.1.5}
-\contentsline {subsubsection}{\numberline {4.1.6}C\IeC {\'\acircumflex }u tr\IeC {\'u}c th\IeC {\uhorn } m\IeC {\d u}c m\IeC {\~a} ngu\IeC {\`\ocircumflex }n}{92}{subsubsection.4.1.6}
-\contentsline {subsubsection}{\numberline {4.1.7}Ho\IeC {\d a}t \IeC {\dj }\IeC {\d \ocircumflex }ng c\IeC {\h u}a Esp8266}{93}{subsubsection.4.1.7}
-\contentsline {subsubsection}{\numberline {4.1.8}Thi\IeC {\'\ecircumflex }t k\IeC {\'\ecircumflex } m\IeC {\d a}ch \IeC {\dj }i\IeC {\`\ecircumflex }u khi\IeC {\h \ecircumflex }n}{94}{subsubsection.4.1.8}
-\contentsline {subsubsection}{\numberline {4.1.9}M\IeC {\d a}ch ch\IeC {\'\uhorn }c n\IeC {\u a}ng \IeC {\dj }o ppm}{95}{subsubsection.4.1.9}
-\contentsline {subsubsection}{\numberline {4.1.10}S\IeC {\h \uhorn } d\IeC {\d u}ng, thu th\IeC {\d \acircumflex }p d\IeC {\~\uhorn } li\IeC {\d \ecircumflex }u t\IeC {\`\uhorn } c\IeC {\h a}m bi\IeC {\'\ecircumflex }n}{105}{subsubsection.4.1.10}
-\contentsline {subsection}{\numberline {4.2}\IeC {\'\UHORN }ng d\IeC {\d u}ng web}{120}{subsection.4.2}
-\contentsline {subsubsection}{\numberline {4.2.1}Hi\IeC {\d \ecircumflex }n th\IeC {\d \uhorn }c server API}{120}{subsubsection.4.2.1}
-\contentsline {paragraph}{M\IeC {\^o} h\IeC {\`\i }nh c\IeC {\d u}m server}{136}{section*.5}
-\contentsline {paragraph}{C\IeC {\'\acircumflex }u tr\IeC {\'u}c th\IeC {\uhorn } m\IeC {\d u}c}{136}{section*.6}
-\contentsline {subsubsection}{\numberline {4.2.2}X\IeC {\^a}y \IeC {\dj }\IeC {\d \uhorn }ng database}{138}{subsubsection.4.2.2}
-\contentsline {subsubsection}{\numberline {4.2.3}M\IeC {\d \ocircumflex }t s\IeC {\'\ocircumflex } h\IeC {\`\i }nh \IeC {\h a}nh}{140}{subsubsection.4.2.3}
-\contentsline {subsection}{\numberline {4.3}\IeC {\'\UHORN }ng d\IeC {\d u}ng di \IeC {\dj }\IeC {\d \ocircumflex }ng}{148}{subsection.4.3}
-\contentsline {subsubsection}{\numberline {4.3.1}M\IeC {\d \ocircumflex }t s\IeC {\'\ocircumflex } h\IeC {\`\i }nh \IeC {\h a}nh}{148}{subsubsection.4.3.1}
-\contentsline {subsection}{\numberline {4.4}T\IeC {\uhorn }\IeC {\ohorn }ng t\IeC {\'a}c h\IeC {\d \ecircumflex } th\IeC {\'\ocircumflex }ng}{151}{subsection.4.4}
-\contentsline {section}{\numberline {5}KI\IeC {\h \ECIRCUMFLEX }M TH\IeC {\h \UHORN } H\IeC {\d \ECIRCUMFLEX } TH\IeC {\'\OCIRCUMFLEX }NG}{155}{section.5}
-\contentsline {subsection}{\numberline {5.1}Web server}{155}{subsection.5.1}
-\contentsline {subsection}{\numberline {5.2}Board \IeC {\dj }i\IeC {\`\ecircumflex }u khi\IeC {\h \ecircumflex }n}{155}{subsection.5.2}
-\contentsline {subsubsection}{\numberline {5.2.1}Thi\IeC {\'\ecircumflex }t b\IeC {\d i}}{155}{subsubsection.5.2.1}
-\contentsline {subsubsection}{\numberline {5.2.2}C\IeC {\'a}c ch\IeC {\'\uhorn }c n\IeC {\u a}ng}{157}{subsubsection.5.2.2}
-\contentsline {section}{\numberline {6}T\IeC {\h \OCIRCUMFLEX }NG K\IeC {\'\ECIRCUMFLEX }T V\IeC {\`A} H\IeC {\UHORN }\IeC {\'\OHORN }NG PH\IeC {\'A}T TRI\IeC {\h \ECIRCUMFLEX }N CHO T\IeC {\UHORN }\IeC {\OHORN }NG LAI}{163}{section.6}
-\contentsline {subsection}{\numberline {6.1}T\IeC {\h \ocircumflex }ng k\IeC {\'\ecircumflex }t}{163}{subsection.6.1}
-\contentsline {subsubsection}{\numberline {6.1.1}K\IeC {\'\ecircumflex }t qu\IeC {\h a} \IeC {\dj }\IeC {\d a}t \IeC {\dj }\IeC {\uhorn }\IeC {\d \ohorn }c}{163}{subsubsection.6.1.1}
-\contentsline {subsubsection}{\numberline {6.1.2}Thu\IeC {\d \acircumflex }n l\IeC {\d \ohorn }i v\IeC {\`a} kh\IeC {\'o} kh\IeC {\u a}n trong qu\IeC {\'a} tr\IeC {\`\i }nh th\IeC {\d \uhorn }c hi\IeC {\d \ecircumflex }n \IeC {\dj }\IeC {\`\ecircumflex } t\IeC {\`a}i}{164}{subsubsection.6.1.2}
-\contentsline {paragraph}{Thu\IeC {\d \acircumflex }n l\IeC {\d \ohorn }i}{164}{section*.7}
-\contentsline {paragraph}{Kh\IeC {\'o} kh\IeC {\u a}n}{164}{section*.8}
-\contentsline {subsubsection}{\numberline {6.1.3}H\IeC {\uhorn }\IeC {\'\ohorn }ng ph\IeC {\'a}t tri\IeC {\h \ecircumflex }n}{165}{subsubsection.6.1.3}
-\contentsline {paragraph}{\IeC {\'\UHORN }ng d\IeC {\d u}ng web}{165}{section*.9}
-\contentsline {paragraph}{\IeC {\'\UHORN }ng d\IeC {\d u}ng di \IeC {\dj }\IeC {\d \ocircumflex }ng}{165}{section*.10}
-\contentsline {paragraph}{Board \IeC {\dj }i\IeC {\`\ecircumflex }u khi\IeC {\h \ecircumflex }n}{165}{section*.11}
-\contentsline {subsubsection}{\numberline {6.1.4}Ki\IeC {\'\ecircumflex }n th\IeC {\'\uhorn }c thu th\IeC {\d \acircumflex }p \IeC {\dj }\IeC {\uhorn }\IeC {\d \ohorn }c}{166}{subsubsection.6.1.4}
-\contentsline {section}{T\`ai li\d \ecircumflex u}{166}{section*.12}
+\contentsline {subsubsection}{\numberline {2.2.7}C\IeC {\'a}c th\IeC {\^o}ng s\IeC {\'\ocircumflex } trong dung d\IeC {\d i}ch th\IeC {\h u}y canh, thi\IeC {\'\ecircumflex }t b\IeC {\d i} \IeC {\dj }o ppm}{11}{subsubsection.2.2.7}
+\contentsline {subsection}{\numberline {2.3}H\IeC {\d \ecircumflex } th\IeC {\'\ocircumflex }ng th\IeC {\h u}y canh v\IeC {\'\ohorn }i IoT}{14}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.4}C\IeC {\'a}c h\IeC {\d \ecircumflex } th\IeC {\'\ocircumflex }ng th\IeC {\h u}y canh t\IeC {\d \uhorn } \IeC {\dj }\IeC {\d \ocircumflex }ng hi\IeC {\d \ecircumflex }n c\IeC {\'o} tr\IeC {\^e}n th\IeC {\d i} tr\IeC {\uhorn }\IeC {\`\ohorn }ng}{15}{subsection.2.4}
+\contentsline {subsection}{\numberline {2.5}Gi\IeC {\'\ohorn }i thi\IeC {\d \ecircumflex }u v\IeC {\`\ecircumflex } c\IeC {\'a}c c\IeC {\^o}ng ngh\IeC {\d \ecircumflex } \IeC {\dj }\IeC {\uhorn }\IeC {\d \ohorn }c s\IeC {\h \uhorn } d\IeC {\d u}ng}{15}{subsection.2.5}
+\contentsline {subsubsection}{\numberline {2.5.1}RESTful web service}{15}{subsubsection.2.5.1}
+\contentsline {subsubsection}{\numberline {2.5.2}Nodejs}{17}{subsubsection.2.5.2}
+\contentsline {subsubsection}{\numberline {2.5.3}Framework Expressjs}{18}{subsubsection.2.5.3}
+\contentsline {subsubsection}{\numberline {2.5.4}Sequelizejs}{18}{subsubsection.2.5.4}
+\contentsline {subsubsection}{\numberline {2.5.5}Angularjs}{19}{subsubsection.2.5.5}
+\contentsline {subsubsection}{\numberline {2.5.6}Angular 2}{19}{subsubsection.2.5.6}
+\contentsline {subsubsection}{\numberline {2.5.7}Framework Ionic 2}{20}{subsubsection.2.5.7}
+\contentsline {subsubsection}{\numberline {2.5.8}Typescript}{20}{subsubsection.2.5.8}
+\contentsline {subsubsection}{\numberline {2.5.9}JWT}{20}{subsubsection.2.5.9}
+\contentsline {subsubsection}{\numberline {2.5.10}Postgresql}{22}{subsubsection.2.5.10}
+\contentsline {subsubsection}{\numberline {2.5.11}NodeBB}{22}{subsubsection.2.5.11}
+\contentsline {subsubsection}{\numberline {2.5.12}Git v\IeC {\`a} GitHub}{22}{subsubsection.2.5.12}
+\contentsline {subsubsection}{\numberline {2.5.13}XXTEA}{23}{subsubsection.2.5.13}
+\contentsline {subsubsection}{\numberline {2.5.14}ARM}{23}{subsubsection.2.5.14}
+\contentsline {subsubsection}{\numberline {2.5.15}Mbed}{24}{subsubsection.2.5.15}
+\contentsline {subsubsection}{\numberline {2.5.16}MQTT}{24}{subsubsection.2.5.16}
+\contentsline {section}{\numberline {3}THI\IeC {\'\ECIRCUMFLEX }T K\IeC {\'\ECIRCUMFLEX } H\IeC {\d \ECIRCUMFLEX } TH\IeC {\'\OCIRCUMFLEX }NG}{25}{section.3}
+\contentsline {subsection}{\numberline {3.1}Ki\IeC {\'\ecircumflex }n tr\IeC {\'u}c m\IeC {\^o} h\IeC {\`\i }nh h\IeC {\d \ecircumflex } th\IeC {\'\ocircumflex }ng}{25}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}H\IeC {\d \ecircumflex } th\IeC {\'\ocircumflex }ng board \IeC {\dj }i\IeC {\`\ecircumflex }u khi\IeC {\h \ecircumflex }n}{26}{subsection.3.2}
+\contentsline {subsubsection}{\numberline {3.2.1}T\IeC {\h \ocircumflex }ng quan m\IeC {\^o} h\IeC {\`\i }nh board \IeC {\dj }i\IeC {\`\ecircumflex }u khi\IeC {\h \ecircumflex }n}{26}{subsubsection.3.2.1}
+\contentsline {subsubsection}{\numberline {3.2.2}Ho\IeC {\d a}t \IeC {\dj }\IeC {\d \ocircumflex }ng, ch\IeC {\'\uhorn }c n\IeC {\u a}ng}{31}{subsubsection.3.2.2}
+\contentsline {subsubsection}{\numberline {3.2.3}Ki\IeC {\'\ecircumflex }n tr\IeC {\'u}c ph\IeC {\`\acircumflex }n m\IeC {\`\ecircumflex }m}{45}{subsubsection.3.2.3}
+\contentsline {subsection}{\numberline {3.3}\IeC {\'\UHORN }ng d\IeC {\d u}ng web}{55}{subsection.3.3}
+\contentsline {subsubsection}{\numberline {3.3.1}S\IeC {\ohorn } \IeC {\dj }\IeC {\`\ocircumflex } use case}{55}{subsubsection.3.3.1}
+\contentsline {subsubsection}{\numberline {3.3.2}Thi\IeC {\'\ecircumflex }t k\IeC {\'\ecircumflex } database}{73}{subsubsection.3.3.2}
+\contentsline {subsubsection}{\numberline {3.3.3}Thi\IeC {\'\ecircumflex }t k\IeC {\'\ecircumflex } API}{75}{subsubsection.3.3.3}
+\contentsline {subsection}{\numberline {3.4}\IeC {\'\UHORN }ng d\IeC {\d u}ng di \IeC {\dj }\IeC {\d \ocircumflex }ng}{75}{subsection.3.4}
+\contentsline {subsection}{\numberline {3.5}Giao ti\IeC {\'\ecircumflex }p gi\IeC {\~\uhorn }a Board \IeC {\dj }i\IeC {\`\ecircumflex }u khi\IeC {\h \ecircumflex }n v\IeC {\`a} Web}{76}{subsection.3.5}
+\contentsline {subsubsection}{\numberline {3.5.1}Giao th\IeC {\'\uhorn }c}{76}{subsubsection.3.5.1}
+\contentsline {subsubsection}{\numberline {3.5.2}C\IeC {\'\acircumflex }u tr\IeC {\'u}c c\IeC {\'a}c g\IeC {\'o}i tin}{77}{subsubsection.3.5.2}
+\contentsline {section}{\numberline {4}HI\IeC {\d \ECIRCUMFLEX }N TH\IeC {\d \UHORN }C H\IeC {\d \ECIRCUMFLEX } TH\IeC {\'\OCIRCUMFLEX }NG}{80}{section.4}
+\contentsline {subsection}{\numberline {4.1}H\IeC {\d \ecircumflex } th\IeC {\'\ocircumflex }ng Board \IeC {\dj }i\IeC {\`\ecircumflex }u khi\IeC {\h \ecircumflex }n}{80}{subsection.4.1}
+\contentsline {subsubsection}{\numberline {4.1.1}M\IeC {\^o}i tr\IeC {\uhorn }\IeC {\`\ohorn }ng ph\IeC {\'a}t tri\IeC {\h \ecircumflex }n}{80}{subsubsection.4.1.1}
+\contentsline {subsubsection}{\numberline {4.1.2}M\IeC {\d a}ch ch\IeC {\'\uhorn }c n\IeC {\u a}ng \IeC {\dj }o ppm}{80}{subsubsection.4.1.2}
+\contentsline {subsubsection}{\numberline {4.1.3}S\IeC {\h \uhorn } d\IeC {\d u}ng, thu th\IeC {\d \acircumflex }p d\IeC {\~\uhorn } li\IeC {\d \ecircumflex }u t\IeC {\`\uhorn } c\IeC {\h a}m bi\IeC {\'\ecircumflex }n}{87}{subsubsection.4.1.3}
+\contentsline {subsection}{\numberline {4.2}\IeC {\'\UHORN }ng d\IeC {\d u}ng web}{102}{subsection.4.2}
+\contentsline {subsubsection}{\numberline {4.2.1}M\IeC {\^o}i tr\IeC {\uhorn }\IeC {\`\ohorn }ng ph\IeC {\'a}t tri\IeC {\h \ecircumflex }n}{102}{subsubsection.4.2.1}
+\contentsline {subsubsection}{\numberline {4.2.2}Hi\IeC {\d \ecircumflex }n th\IeC {\d \uhorn }c server API}{103}{subsubsection.4.2.2}
+\contentsline {subsubsection}{\numberline {4.2.3}C\IeC {\'\acircumflex }u tr\IeC {\'u}c th\IeC {\uhorn } m\IeC {\d u}c}{118}{subsubsection.4.2.3}
+\contentsline {subsubsection}{\numberline {4.2.4}X\IeC {\^a}y \IeC {\dj }\IeC {\d \uhorn }ng database}{120}{subsubsection.4.2.4}
+\contentsline {subsubsection}{\numberline {4.2.5}M\IeC {\d \ocircumflex }t s\IeC {\'\ocircumflex } h\IeC {\`\i }nh \IeC {\h a}nh}{122}{subsubsection.4.2.5}
+\contentsline {subsection}{\numberline {4.3}\IeC {\'\UHORN }ng d\IeC {\d u}ng di \IeC {\dj }\IeC {\d \ocircumflex }ng}{130}{subsection.4.3}
+\contentsline {subsubsection}{\numberline {4.3.1}M\IeC {\^o}i tr\IeC {\uhorn }\IeC {\`\ohorn }ng ph\IeC {\'a}t tri\IeC {\h \ecircumflex }n}{130}{subsubsection.4.3.1}
+\contentsline {subsubsection}{\numberline {4.3.2}M\IeC {\d \ocircumflex }t s\IeC {\'\ocircumflex } h\IeC {\`\i }nh \IeC {\h a}nh}{131}{subsubsection.4.3.2}
+\contentsline {subsection}{\numberline {4.4}T\IeC {\uhorn }\IeC {\ohorn }ng t\IeC {\'a}c h\IeC {\d \ecircumflex } th\IeC {\'\ocircumflex }ng}{134}{subsection.4.4}
+\contentsline {section}{\numberline {5}KI\IeC {\h \ECIRCUMFLEX }M TH\IeC {\h \UHORN } H\IeC {\d \ECIRCUMFLEX } TH\IeC {\'\OCIRCUMFLEX }NG}{138}{section.5}
+\contentsline {subsection}{\numberline {5.1}Web server}{138}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}\IeC {\'\UHORN }ng d\IeC {\d u}ng di \IeC {\dj }\IeC {\d \ocircumflex }ng}{138}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.3}Board \IeC {\dj }i\IeC {\`\ecircumflex }u khi\IeC {\h \ecircumflex }n}{138}{subsection.5.3}
+\contentsline {subsubsection}{\numberline {5.3.1}Thi\IeC {\'\ecircumflex }t b\IeC {\d i}}{138}{subsubsection.5.3.1}
+\contentsline {subsubsection}{\numberline {5.3.2}C\IeC {\'a}c ch\IeC {\'\uhorn }c n\IeC {\u a}ng}{141}{subsubsection.5.3.2}
+\contentsline {subsection}{\numberline {5.4}K\IeC {\'\ecircumflex }t n\IeC {\'\ocircumflex }i gi\IeC {\~\uhorn }a \IeC {\'\uhorn }ng d\IeC {\d u}ng web v\IeC {\`a} board \IeC {\dj }i\IeC {\`\ecircumflex }u khi\IeC {\h \ecircumflex }n}{147}{subsection.5.4}
+\contentsline {subsubsection}{\numberline {5.4.1}D\IeC {\~\uhorn } li\IeC {\d \ecircumflex }u nh\IeC {\d \acircumflex }n t\IeC {\`\uhorn } c\IeC {\h a}m bi\IeC {\'\ecircumflex }n}{147}{subsubsection.5.4.1}
+\contentsline {subsubsection}{\numberline {5.4.2}\IeC {\DJ }i\IeC {\`\ecircumflex }u khi\IeC {\h \ecircumflex }n c\IeC {\'a}c actuator}{147}{subsubsection.5.4.2}
+\contentsline {section}{\numberline {6}T\IeC {\h \OCIRCUMFLEX }NG K\IeC {\'\ECIRCUMFLEX }T V\IeC {\`A} H\IeC {\UHORN }\IeC {\'\OHORN }NG PH\IeC {\'A}T TRI\IeC {\h \ECIRCUMFLEX }N CHO T\IeC {\UHORN }\IeC {\OHORN }NG LAI}{148}{section.6}
+\contentsline {subsection}{\numberline {6.1}T\IeC {\h \ocircumflex }ng k\IeC {\'\ecircumflex }t}{148}{subsection.6.1}
+\contentsline {subsubsection}{\numberline {6.1.1}K\IeC {\'\ecircumflex }t qu\IeC {\h a} \IeC {\dj }\IeC {\d a}t \IeC {\dj }\IeC {\uhorn }\IeC {\d \ohorn }c}{148}{subsubsection.6.1.1}
+\contentsline {subsubsection}{\numberline {6.1.2}Nh\IeC {\~\uhorn }ng h\IeC {\d a}n ch\IeC {\'\ecircumflex } c\IeC {\h u}a h\IeC {\d \ecircumflex } th\IeC {\'\ocircumflex }ng}{149}{subsubsection.6.1.2}
+\contentsline {subsubsection}{\numberline {6.1.3}Thu\IeC {\d \acircumflex }n l\IeC {\d \ohorn }i, kh\IeC {\'o} kh\IeC {\u a}n trong qu\IeC {\'a} tr\IeC {\`\i }nh th\IeC {\d \uhorn }c hi\IeC {\d \ecircumflex }n \IeC {\dj }\IeC {\`\ecircumflex } t\IeC {\`a}i}{149}{subsubsection.6.1.3}
+\contentsline {paragraph}{Thu\IeC {\d \acircumflex }n l\IeC {\d \ohorn }i}{149}{section*.5}
+\contentsline {paragraph}{Kh\IeC {\'o} kh\IeC {\u a}n}{150}{section*.6}
+\contentsline {subsubsection}{\numberline {6.1.4}Ki\IeC {\'\ecircumflex }n th\IeC {\'\uhorn }c thu th\IeC {\d \acircumflex }p \IeC {\dj }\IeC {\uhorn }\IeC {\d \ohorn }c}{150}{subsubsection.6.1.4}
+\contentsline {subsection}{\numberline {6.2}H\IeC {\uhorn }\IeC {\'\ohorn }ng ph\IeC {\'a}t tri\IeC {\h \ecircumflex }n}{150}{subsection.6.2}
+\contentsline {subsubsection}{\numberline {6.2.1}\IeC {\'\UHORN }ng d\IeC {\d u}ng web}{150}{subsubsection.6.2.1}
+\contentsline {subsubsection}{\numberline {6.2.2}\IeC {\'\UHORN }ng d\IeC {\d u}ng di \IeC {\dj }\IeC {\d \ocircumflex }ng}{151}{subsubsection.6.2.2}
+\contentsline {subsubsection}{\numberline {6.2.3}Board \IeC {\dj }i\IeC {\`\ecircumflex }u khi\IeC {\h \ecircumflex }n}{151}{subsubsection.6.2.3}
+\contentsline {subsection}{\numberline {6.3}Qu\IeC {\'a} tr\IeC {\`\i }nh l\IeC {\`a}m vi\IeC {\d \ecircumflex }c c\IeC {\h u}a nh\IeC {\'o}m}{152}{subsection.6.3}
+\contentsline {section}{T\`ai li\d \ecircumflex u}{157}{section*.7}
