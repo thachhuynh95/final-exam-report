@@ -1006,7 +1006,6 @@ Thời điểm bắt đầu hoạt động. & Thời lượng actuator được 
 \caption{Actuator lifetime.}
 \end{figure}
 \end{center}
-
 \noindent Mỗi actuator sẽ là một đối tượng (phần mềm), giải thích lifetime:
 	\begin{itemize}
 	\item Ban đầu, sẽ không có actuator nào, các actuator không được sét tĩnh.
@@ -2411,7 +2410,7 @@ Nửa chu kì đầu, khi điểm 1 dương so với điểm 2, dòng chạy t�
 
 \textbf{- Linh kiện}
 \begin{itemize}
-\item	Nguồn đôi 12V: Mạch tạo nguồn đôi 12V có chức năng đổi từ nguồn đơn DC sang nguồn đôi +-12V. Với điện áp ngỏ vào từ 2.8V-5VDC.
+\item	Nguồn đôi 12V: Mạch tạo nguồn đôi 12V có chức năng đổi từ nguồn đơn DC sang nguồn đôi +-12V. Với điện áp ngõ vào từ 2.8V - 5VDC.
 \begin{figure}[H]
 \centering
 \begin{center}
@@ -2725,7 +2724,7 @@ Nửa chu kì đầu, khi điểm 1 dương so với điểm 2, dòng chạy t�
 		\begin{itemize}
 		\item Như đã đề cập giao thức truyền nhận giữa web-server là MQTT, cả thiết bị lần web-server đều đóng vai trò là một MQTT Client
 			\begin{itemize}
-			\item o	Thiết bị gửi tới broker (publish) các gói tin vào các kênh (channel) đã được cấu hình sẵn và thống nhất giữa thiết bị - webserver.
+			\item Thiết bị gửi tới broker (publish) các gói tin vào các kênh (channel) đã được cấu hình sẵn và thống nhất giữa thiết bị - webserver.
 			\item Thiết bị nhận các gói tin từ broker qua các kênh đã đăng kí (subcribe), khi webserver gửi gói tin vào các kênh đó.
 			\end{itemize}
 		\item Thư viện
@@ -3661,21 +3660,21 @@ Trong đó success nhận giá trị true nếu request được xử lý thành
 
 Server được tổ chức theo mô hình MVC với các thư mục chính:
 \begin{itemize}
-\item models: chứa các model cho các đối tượng tương ứng trong database
-\item routes: controller tiếp nhận các request và xử lý
-\item views : các file html hiển thị
+\item models: chứa các model cho các đối tượng tương ứng trong database.
+\item routes: controller tiếp nhận các request và xử lý.
+\item views : các file html hiển thị.
 \end{itemize}
 
 Ngoài ra, các thư mục khác:
 \begin{itemize}
-\item config: thiết lập thông tin database khi kết nối
+\item config: thiết lập thông tin database khi kết nối.
 \item public: chứa mã css, javascript, angularjs, images, các thư viện front-end cần dùng.
 \item run: cấu hình cho server như port,…
-\item utils: các file chứa hàm hỗ trợ
-\item file app.js: file server chính
-\item file package.js: các gói hỗ trợ trong ứng dụng dành cho nodejs
+\item utils: các file chứa hàm hỗ trợ.
+\item file app.js: file server chính.
+\item file package.js: các gói hỗ trợ trong ứng dụng dành cho nodejs.
 \end{itemize}
-\subsubsection{Xây đựng database}
+\subsubsection{Xây dựng database}
 \noindent Sử dụng Sequelizejs để hiện thực database giống như sơ đồ sau:
 \begin{landscape}
 \begin{center}
@@ -3690,15 +3689,15 @@ Ngoài ra, các thư mục khác:
 \newpage
 Chú thích các đối tượng trong sơ đồ lớp trên:
 \begin{itemize}
-\item User: người sử dụng
-\item Device: board điều khiển
-\item Article: bài viết do người dùng viết
-\item Comment: bình luận trong bài viết
-\item Crop: một mùa vụ
-\item Threshold: ngưỡng dữ liệu
-\item Data: dữ liệu cảm biến từ board điều khiển gửi lên
-\item Actuator: các thực thể máy bơm, quạt, đèn
-\item Schedule: lịch trình hoạt động của mỗi actuator
+\item User: người sử dụng.
+\item Device: board điều khiển.
+\item Article: bài viết do người dùng viết.
+\item Comment: bình luận trong bài viết.
+\item Crop: một mùa vụ.
+\item Threshold: ngưỡng dữ liệu.
+\item Data: dữ liệu cảm biến từ board điều khiển gửi lên.
+\item Actuator: các thực thể máy bơm, quạt, đèn.
+\item Schedule: lịch trình hoạt động của mỗi actuator.
 \end{itemize}
 \subsubsection{Một số hình ảnh}
 \begin{center}
@@ -3899,7 +3898,7 @@ Các biểu đồ tuần tự sau sẽ thể hiện sự tương tác giữa ng�
 \subsubsection{Thiết bị}
 
 \begin{itemize}
-\item Prototype
+\item Prototype:
 	\begin{figure}[H]
 	\begin{center}
 	\includegraphics[scale=.15]{hinh/prototype_board.jpg}
@@ -3914,7 +3913,7 @@ Các biểu đồ tuần tự sau sẽ thể hiện sự tương tác giữa ng�
 	\caption{Relay prototype.}
 	\end{figure}
 	
-\item Đóng hộp
+\item Đóng hộp:
 	\begin{figure}[H]
 	\begin{center}
 	\includegraphics[scale=.15]{hinh/relay_box.jpg}
@@ -3927,14 +3926,14 @@ Các biểu đồ tuần tự sau sẽ thể hiện sự tương tác giữa ng�
 \begin{itemize}
 	\item Mạch đo chức năng PPM.
 		\begin{itemize}
-\item Prototype
+\item Prototype:
 	\begin{figure}[H]
 	\begin{center}
 	\includegraphics[scale=.6]{hinh/PPM/prototype_ppm.jpg}
 	\end{center}
 	\caption{PPM prototype.}
 	\end{figure}
-\item Tiến hành đo
+\item Tiến hành đo:
 	\begin{figure}[H]
 	\begin{center}
 	\includegraphics[scale=.8]{hinh/PPM/nacl_1.PNG}
@@ -3955,7 +3954,7 @@ Các biểu đồ tuần tự sau sẽ thể hiện sự tương tác giữa ng�
 	\end{center}
 	\caption{Đo ppm dung dịch NaCl 3.}
 	\end{figure}
-\item Kết quả
+\item Kết quả:
 	\begin{figure}[H]
 	\begin{center}
 	\includegraphics[scale=.8]{hinh/PPM/ppm_r2.PNG}
@@ -3970,32 +3969,32 @@ Các biểu đồ tuần tự sau sẽ thể hiện sự tương tác giữa ng�
 	\caption{Kết quả đo ppm 2.}
 	\end{figure}
 \end{itemize}
-\item Thu thập dữ liệu cảm biến
+\item Thu thập dữ liệu cảm biến:
 \begin{itemize}
-\item Đọc dữ liệu nhiệt độ, độ ẩm
-\item Đọc dữ liệu ánh sáng
-\item Đọc dữ liệu ppm
-\item Định thời
+\item Đọc dữ liệu nhiệt độ, độ ẩm.
+\item Đọc dữ liệu ánh sáng.
+\item Đọc dữ liệu ppm.
+\item Định thời.
 \end{itemize}
 
-\item Điều khiển các actuators.
+\item Điều khiển các actuators:
 	\begin{itemize}
-	\item Đọc thời gian thực
-	\item Hoạt động theo schedule
-	\item Lưu trữ trạng thái các actuator vào EEPROM
-	\item Tải lại trạng thái các actuator từ EEPROM
-	\item Đèn báo tín hiệu các actuator
+	\item Đọc thời gian thực.
+	\item Hoạt động theo schedule.
+	\item Lưu trữ trạng thái các actuator vào EEPROM.
+	\item Tải lại trạng thái các actuator từ EEPROM.
+	\item Đèn báo tín hiệu các actuator.
 	\end{itemize}
-\item Giao tiếp với webserver
+\item Giao tiếp với webserver:
 	\begin{itemize}
-	\item Protocol hoạt động đúng
-	\item Protocol Mqtt truyền nhận đúng
+	\item Protocol hoạt động đúng.
+	\item Protocol Mqtt truyền nhận đúng.
 	\end{itemize}
-\item Cấu hình wifi, mqtt
+\item Cấu hình wifi, mqtt:
 	\begin{itemize}
-	\item Chuyển chế độ từ Station sang Access Point
+	\item Chuyển chế độ từ Station sang Access Point.
 	\item Webserver hoạt động ổn định.
-	\item Lưu trữ các thông số sau khi cấu hình vào EEPROM
+	\item Lưu trữ các thông số sau khi cấu hình vào EEPROM.
 	\item Tải lại các thông số sau khi reset.
 
 	\end{itemize}
@@ -4013,7 +4012,7 @@ Các biểu đồ tuần tự sau sẽ thể hiện sự tương tác giữa ng�
 	\caption{Dữ liệu gửi lên từ cảm biến.}
 	\end{figure}
 \subsubsection{Điều khiển các actuator}
-\noindent Tại thời điểm làm bản thảo báo cáo, hệ thống mới chỉ được kiểm thử điều khiển bật tắt các relay theo lịch trình. Sắp tới nhóm sẽ kiểm thử trên các actuator và mô hình cây trồng thực t trước khi hoàn thiện báo cáo và đưa ra phản biện.
+\noindent Tại thời điểm làm bản thảo báo cáo, hệ thống mới chỉ được kiểm thử điều khiển bật tắt các relay theo lịch trình. Sắp tới nhóm sẽ kiểm thử trên các actuator và mô hình cây trồng thực tế trước khi hoàn thiện báo cáo và đưa ra phản biện.
 
 \newpage
 \section{TỔNG KẾT VÀ HƯỚNG PHÁT TRIỂN CHO TƯƠNG LAI}
@@ -4048,32 +4047,31 @@ Các biểu đồ tuần tự sau sẽ thể hiện sự tương tác giữa ng�
 	\item Board điều khiển
 	\begin{itemize}
 	\item Mạch đo chức năng PPM.
-	\item Thu thập dữ liệu cảm biến
+	\item Thu thập dữ liệu cảm biến:
 	\begin{itemize}
-	\item Đọc dữ liệu nhiệt độ, độ ẩm
-	\item Đọc dữ liệu ánh sáng
-	\item Đọc dữ liệu ppm
-	\item Định thời
+	\item Đọc dữ liệu nhiệt độ, độ ẩm.
+	\item Đọc dữ liệu ánh sáng.
+	\item Đọc dữ liệu ppm.
+	\item Định thời.
 	\end{itemize}
-	\item Điều khiển các actuator
+	\item Điều khiển các actuator:
 	\begin{itemize}
-	\item Đọc thời gian thực
+	\item Đọc thời gian thực.
 	\item Hoạt động theo schedule
-	\item Lưu trữ trạng thái các actuator vào EEPROM
-	\item Tải lại trạng thái các actuator từ EEPROM
-	\item Đèn báo tín hiệu các actuator
+	\item Lưu trữ trạng thái các actuator vào EEPROM.
+	\item Tải lại trạng thái các actuator từ EEPROM.
+	\item Đèn báo tín hiệu các actuator.
 	\end{itemize}
-	\item Giao tiếp với webserver.
+	\item Giao tiếp với webserver:
 	\begin{itemize}
-	\item Protocol hoạt động đúng
-	\item Protocol Mqtt truyền nhận đúng
+	\item Protocol hoạt động đúng.
+	\item Protocol Mqtt truyền nhận đúng.
 	\end{itemize}
-	\item Cấu hình wifi, mqtt.
+	\item Cấu hình wifi, mqtt:
 	\begin{itemize}
-
-	\item Chuyển chế độ từ Station sang Access Point
+	\item Chuyển chế độ từ Station sang Access Point.
 	\item Webserver hoạt động ổn định.
-	\item Lưu trữ các thông số sau khi cấu hình vào EEPROM
+	\item Lưu trữ các thông số sau khi cấu hình vào EEPROM.
 	\item Tải lại các thông số sau khi reset.
 	\end{itemize}
 	\end{itemize}
@@ -4129,7 +4127,7 @@ Các biểu đồ tuần tự sau sẽ thể hiện sự tương tác giữa ng�
 \subsubsection{Ứng dụng di động}
 \begin{itemize}
 \item Cải thiện hơn về giao diện.
-\item Xây dựng kênh tin tức trên ưng dụng.
+\item Xây dựng kênh tin tức trên ứng dụng.
 \end{itemize}
 
 \subsubsection{Board điều khiển}

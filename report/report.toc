@@ -62,7 +62,7 @@
 \contentsline {subsubsection}{\numberline {4.2.1}M\IeC {\^o}i tr\IeC {\uhorn }\IeC {\`\ohorn }ng ph\IeC {\'a}t tri\IeC {\h \ecircumflex }n}{102}{subsubsection.4.2.1}
 \contentsline {subsubsection}{\numberline {4.2.2}Hi\IeC {\d \ecircumflex }n th\IeC {\d \uhorn }c server API}{103}{subsubsection.4.2.2}
 \contentsline {subsubsection}{\numberline {4.2.3}C\IeC {\'\acircumflex }u tr\IeC {\'u}c th\IeC {\uhorn } m\IeC {\d u}c}{118}{subsubsection.4.2.3}
-\contentsline {subsubsection}{\numberline {4.2.4}X\IeC {\^a}y \IeC {\dj }\IeC {\d \uhorn }ng database}{120}{subsubsection.4.2.4}
+\contentsline {subsubsection}{\numberline {4.2.4}X\IeC {\^a}y d\IeC {\d \uhorn }ng database}{120}{subsubsection.4.2.4}
 \contentsline {subsubsection}{\numberline {4.2.5}M\IeC {\d \ocircumflex }t s\IeC {\'\ocircumflex } h\IeC {\`\i }nh \IeC {\h a}nh}{122}{subsubsection.4.2.5}
 \contentsline {subsection}{\numberline {4.3}\IeC {\'\UHORN }ng d\IeC {\d u}ng di \IeC {\dj }\IeC {\d \ocircumflex }ng}{130}{subsection.4.3}
 \contentsline {subsubsection}{\numberline {4.3.1}M\IeC {\^o}i tr\IeC {\uhorn }\IeC {\`\ohorn }ng ph\IeC {\'a}t tri\IeC {\h \ecircumflex }n}{130}{subsubsection.4.3.1}
