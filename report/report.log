@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2017.5.20)  25 DEC 2017 15:32
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2017.5.20)  25 DEC 2017 15:52
 entering extended mode
 **report.tex
 (F:\final-exam-report\report\report.tex
@@ -2901,33 +2901,27 @@ Package hyperref Warning: Glyph not defined in PU encoding,
 (hyperref)                removing `\ecircumflex' on input line 4209.
 
 
-Underfull \hbox (badness 1033) in paragraph at lines 4212--4213
-[]\T5/cmr/m/n/12 eraweb.co, \T5/cmr/m/it/12 In-ter-net of Things (IoT) - Kàch b
-£n ho n h£o cõa th¸ giîi mîi
- []
-
-
-Underfull \hbox (badness 1033) in paragraph at lines 4214--4215
-[]\T5/cmr/m/n/12 eraweb.co, \T5/cmr/m/it/12 In-ter-net of Things (IoT) - Kàch b
-£n ho n h£o cõa th¸ giîi mîi
- []
-
-
-Overfull \hbox (1.90218pt too wide) in paragraph at lines 4226--4227
+Overfull \hbox (1.90218pt too wide) in paragraph at lines 4225--4226
 []\T5/cmr/m/n/12 EnvatoTuts+, \T5/cmr/m/it/12 Giîi thi»u Ionic 2\T5/cmr/m/n/12 
 , https://code.tutsplus.com/vi/articles/introduction-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4232--4233
+Underfull \hbox (badness 10000) in paragraph at lines 4230--4231
 []\T5/cmr/m/n/12 techmaster.vn, \T5/cmr/m/it/12 Kh¡i ni»m v· JSON Web To-ken\T5
 /cmr/m/n/12 ,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4236--4237
+Underfull \hbox (badness 10000) in paragraph at lines 4234--4235
 []\T5/cmr/m/n/12 atmarkcafe.org, \T5/cmr/m/it/12 Git v  Github l  g¼? T¤i sao n
 ¶n dòng? \T5/cmr/m/n/12 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4236--4237
+[]\T5/cmr/m/n/12 picvietnam.com, \T5/cmr/m/it/12 Gi£i thuªt mªt m¢ hâa XTEA vîi
+ ASM30 \T5/cmr/m/n/12 ,
  []
 
 [145
@@ -2992,50 +2986,44 @@ ttp://wikipedia:2012}) has been already used, duplicate ignored
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.4237 
+       pdfTeX warning (ext4): destination with the same identifier (name{cite.h
+ttp://wikipedia:2012}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.4237 
        ]pdfTeX warning (ext4): destination with the same identifier (name{cite.
 http://wikipedia:2012}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.4238 \bibitem{http://wikipedia:2012}
-                                       picvietnam.com, \textit{Giáº£i thuáº­...
-
-Underfull \hbox (badness 10000) in paragraph at lines 4238--4239
-[]\T5/cmr/m/n/12 picvietnam.com, \T5/cmr/m/it/12 Gi£i thuªt mªt m¢ hâa XTEA vîi
- ASM30 \T5/cmr/m/n/12 ,
- []
-
-pdfTeX warning (ext4): destination with the same identifier (name{cite.http://w
-ikipedia:2012}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.4240 \bibitem{http://wikipedia:2012}
                                        Wikipedia, \textit{Cáº¥u trÃºc ARM}, ...
 pdfTeX warning (ext4): destination with the same identifier (name{cite.http://w
 ikipedia:2012}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.4242 \bibitem{http://wikipedia:2012}
+l.4240 \bibitem{http://wikipedia:2012}
                                        Wikipedia, \textit{mbed}, https://en....
 pdfTeX warning (ext4): destination with the same identifier (name{cite.http://w
 ikipedia:2012}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.4244 \bibitem{http://wikipedia:2012}
+l.4242 \bibitem{http://wikipedia:2012}
                                        Wikipedia, \textit{Arduino}, https://...
 pdfTeX warning (ext4): destination with the same identifier (name{cite.http://w
 ikipedia:2012}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.4246 \bibitem{http://wikipedia:2012}
+l.4244 \bibitem{http://wikipedia:2012}
                                        hshop.vn, \textit{dht22}, http://hsho...
 pdfTeX warning (ext4): destination with the same identifier (name{cite.http://w
 ikipedia:2012}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.4248 \bibitem{http://wikipedia:2012}
+l.4246 \bibitem{http://wikipedia:2012}
                                        hshop.vn, \textit{bh1750}, http://hsh...
 
-Underfull \hbox (badness 10000) in paragraph at lines 4248--4249
+Underfull \hbox (badness 10000) in paragraph at lines 4246--4247
 []\T5/cmr/m/n/12 hshop.vn, \T5/cmr/m/it/12 bh1750\T5/cmr/m/n/12 , http://hshop.
 vn/products/cam-bien-cuong-do-onh-song-lux-
  []
@@ -3044,28 +3032,22 @@ pdfTeX warning (ext4): destination with the same identifier (name{cite.http://w
 ikipedia:2012}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.4250 \bibitem{http://wikipedia:2012}
+l.4248 \bibitem{http://wikipedia:2012}
                                        hshop.vn, \textit{ds1307}, http://hsh...
 pdfTeX warning (ext4): destination with the same identifier (name{cite.http://w
 ikipedia:2012}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.4252 \bibitem{http://wikipedia:2012}
-                                       hachi.com.vn, \textit{Chá»‰ sá»‘ EC v...
-pdfTeX warning (ext4): destination with the same identifier (name{cite.http://w
-ikipedia:2012}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.4255 \bibitem{http://wikipedia:2012}
+l.4251 \bibitem{http://wikipedia:2012}
                                        Home Hydro Systems, \textit{The basic...
 
-Underfull \hbox (badness 10000) in paragraph at lines 4255--4256
+Underfull \hbox (badness 10000) in paragraph at lines 4251--4252
 []\T5/cmr/m/n/12 Home Hy-dro Sys-tems, \T5/cmr/m/it/12 The ba-sic Hy-dro-ponic 
 Sys-tem types\T5/cmr/m/n/12 ,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4255--4256
+Underfull \hbox (badness 10000) in paragraph at lines 4251--4252
 \T5/cmr/m/n/12 http://www.homehydrosystems.com/hydroponic-systems/systems.html 
 [On-line;
  []
@@ -3074,16 +3056,16 @@ pdfTeX warning (ext4): destination with the same identifier (name{cite.http://w
 ikipedia:2012}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.4257 \bibitem{http://wikipedia:2012}
+l.4253 \bibitem{http://wikipedia:2012}
                                        Freetuts.net, \textit{Javascript lÃ  ...
 
-Underfull \hbox (badness 10000) in paragraph at lines 4257--4258
+Underfull \hbox (badness 10000) in paragraph at lines 4253--4254
 []\T5/cmr/m/n/12 Freetuts.net, \T5/cmr/m/it/12 Javascript l  g¼? Vi¸t ùng döng 
 Javascript ¦u ti¶n\T5/cmr/m/n/12 ,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4257--4258
+Underfull \hbox (badness 10000) in paragraph at lines 4253--4254
 \T5/cmr/m/n/12 https://freetuts.net/javascript-la-gi-viet-ung-dung-javascript-d
 au-tien-263.html
  []
@@ -3092,42 +3074,28 @@ pdfTeX warning (ext4): destination with the same identifier (name{cite.http://w
 ikipedia:2012}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.4259 \bibitem{http://wikipedia:2012}
+l.4255 \bibitem{http://wikipedia:2012}
                                        Sequelizejs.com, \textit{Sequelizejs ...
-[146pdfTeX warning (ext4): destination with the same identifier (name{cite.http
-://wikipedia:2012}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.4262 \bibitem{http://wikipedia:2012}
-                                       Arduino.vn, \textit{TÃ¬m hiá»ƒu giao ...
 pdfTeX warning (ext4): destination with the same identifier (name{cite.http://w
 ikipedia:2012}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.4262 \bibitem{http://wikipedia:2012}
-                                       Arduino.vn, \textit{TÃ¬m hiá»ƒu giao ...
-]pdfTeX warning (ext4): destination with the same identifier (name{cite.http://
-wikipedia:2012}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.4262 \bibitem{http://wikipedia:2012}
+l.4258 \bibitem{http://wikipedia:2012}
                                        Arduino.vn, \textit{TÃ¬m hiá»ƒu giao ...
 pdfTeX warning (ext4): destination with the same identifier (name{cite.http://w
 ikipedia:2012}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.4264 \bibitem{http://wikipedia:2012}
+l.4260 \bibitem{http://wikipedia:2012}
                                        Viblo.asia, \textit{Giá»›i thiá»‡u vá...
 pdfTeX warning (ext4): destination with the same identifier (name{cite.http://w
 ikipedia:2012}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.4269 \bibitem{http://wikipedia:2012}
+l.4265 \bibitem{http://wikipedia:2012}
                                        NodeBB.org, \textit{NodeBB framework}...
 
-Overfull \hbox (15.70882pt too wide) in paragraph at lines 4269--4270
+Overfull \hbox (15.70882pt too wide) in paragraph at lines 4265--4266
 []\T5/cmr/m/n/12 NodeBB.org, \T5/cmr/m/it/12 NodeBB frame-work\T5/cmr/m/n/12 , 
 https://docs.archive.nodebb.org/vi/latest/index.html
  []
@@ -3136,28 +3104,40 @@ pdfTeX warning (ext4): destination with the same identifier (name{cite.http://w
 ikipedia:2012}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.4271 \bibitem{http://wikipedia:2012}
+l.4267 \bibitem{http://wikipedia:2012}
                                        Wikipedia, \textit{XXTEA}, https://en...
-pdfTeX warning (ext4): destination with the same identifier (name{cite.http://w
-ikipedia:2012}) has been already used, duplicate ignored
+[146pdfTeX warning (ext4): destination with the same identifier (name{cite.http
+://wikipedia:2012}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.4268 
+       ]pdfTeX warning (ext4): destination with the same identifier (name{cite.
+http://wikipedia:2012}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.4273 \bibitem{http://wikipedia:2012}
+l.4269 \bibitem{http://wikipedia:2012}
                                        Expressjs.com, \textit{ExpressJS Fram...
 [147]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 4277.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 4277.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 4273.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 4273.
  (F:\final-exam-report\report\report.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 4277.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 4277.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 4273.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 4273.
 
-Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: 082C7DB2F0DE82A9A52939332DE098BB;17242.
 
+
+Package rerunfilecheck Warning: File `report.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `report.out':
+(rerunfilecheck)             Before: 082C7DB2F0DE82A9A52939332DE098BB;17242
+(rerunfilecheck)             After:  290037D7E0AE950A166D6EA2A79AD5D4;17201.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 4277.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 4273.
  ) 
 Here is how much of TeX's memory you used:
  27250 strings out of 493921
@@ -3174,7 +3154,7 @@ rogram Files/MiKTeX 2.9/fonts/type1/vntex/vnr/vnbx12.pfb><C:/Program Files/MiKT
 eX 2.9/fonts/type1/vntex/vnr/vnr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
 /vntex/vnr/vnr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/vntex/vnr/vnsl12.p
 fb><C:/Program Files/MiKTeX 2.9/fonts/type1/vntex/vnr/vnti12.pfb>
-Output written on report.pdf (164 pages, 12445705 bytes).
+Output written on report.pdf (164 pages, 12445168 bytes).
 PDF statistics:
  1983 PDF objects out of 2073 (max. 8388607)
  484 named destinations out of 1000 (max. 500000)
