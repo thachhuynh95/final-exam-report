@@ -36,10 +36,10 @@
 \contentsline {subsubsection}{\numberline {2.5.11}NodeBB}{21}{subsubsection.2.5.11}
 \contentsline {subsubsection}{\numberline {2.5.12}Git v\IeC {\`a} GitHub [12]}{21}{subsubsection.2.5.12}
 \contentsline {subsubsection}{\numberline {2.5.13}XXTEA [13]}{22}{subsubsection.2.5.13}
-\contentsline {subsubsection}{\numberline {2.5.14}ARM}{23}{subsubsection.2.5.14}
+\contentsline {subsubsection}{\numberline {2.5.14}ARM}{22}{subsubsection.2.5.14}
 \contentsline {subsubsection}{\numberline {2.5.15}Mbed}{23}{subsubsection.2.5.15}
 \contentsline {subsubsection}{\numberline {2.5.16}Arduino [16]}{23}{subsubsection.2.5.16}
-\contentsline {subsubsection}{\numberline {2.5.17}MQTT}{24}{subsubsection.2.5.17}
+\contentsline {subsubsection}{\numberline {2.5.17}MQTT}{23}{subsubsection.2.5.17}
 \contentsline {section}{\numberline {3}THI\IeC {\'\ECIRCUMFLEX }T K\IeC {\'\ECIRCUMFLEX } H\IeC {\d \ECIRCUMFLEX } TH\IeC {\'\OCIRCUMFLEX }NG}{25}{section.3}
 \contentsline {subsection}{\numberline {3.1}Ki\IeC {\'\ecircumflex }n tr\IeC {\'u}c m\IeC {\^o} h\IeC {\`\i }nh h\IeC {\d \ecircumflex } th\IeC {\'\ocircumflex }ng}{25}{subsection.3.1}
 \contentsline {subsection}{\numberline {3.2}H\IeC {\d \ecircumflex } th\IeC {\'\ocircumflex }ng board \IeC {\dj }i\IeC {\`\ecircumflex }u khi\IeC {\h \ecircumflex }n}{25}{subsection.3.2}
