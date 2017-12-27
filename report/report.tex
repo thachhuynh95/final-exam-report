@@ -435,10 +435,11 @@ Trường hợp sử dụng dòng DC:
 	\end{itemize} 
 \noindent Nhóm đang hướng tới sự khác biệt bằng cách tạo ra một hệ thống hỗ trợ các tính năng nói trên.
 \subsection{Giới thiệu về các công nghệ được sử dụng}
+
 \subsubsection{RESTful web service\cite{restful}}
-\noindent REST là viết tắt của cụm từ Representational State Transfer (đôi khi còn được viết là ReST) là một kiểu kiến trúc được sử dụng trong việc giao tiếp giữa các máy tính (máy tính cá nhân và máy chủ của trang web) trong việc quản lý các tài nguyên trên internet. Trong REST thì tất cả mọi thứ đều là tài nguyên và nguồn tài nguyên này sẽ được truy xuất thông qua giao thức HTTP.\\
-\noindent Một kiến trúc REST thường có một server cung cấp các API truy xuất tài nguyên và client truy xuất, chỉnh sửa các tài nguyên đó.\\
-\noindent REST cho phép các tài nguyên biểu diễn dưới dạng text, XML, JSON, … REST client có thể yêu cầu một kiểu dữ liệu cụ thể thông qua giao thức HTTP.\\
+\noindent REST là viết tắt của cụm từ Representational State Transfer (đôi khi còn được viết là ReST) là một kiểu kiến trúc được sử dụng trong việc giao tiếp giữa các máy tính (máy tính cá nhân và máy chủ của trang web) trong việc quản lý các tài nguyên trên internet.\\
+\noindent Một kiến trúc REST thường có một server cung cấp các API truy xuất tài nguyên (biểu diễn dưới dạng text, XML, JSON, …) và client truy xuất, chỉnh sửa các tài nguyên đó thông qua giao thức HTTP.\\
+
 \textbf{Các phương thức HTTP được sử dụng:}
 \begin{itemize}
 \item POST: sử dụng khi tạo một tài nguyên mới.
@@ -478,9 +479,9 @@ JSON được sử dụng rộng rãi vì những ưu điểm của nó:
 \end{itemize}
 
 \subsubsection{Nodejs\cite{nodejs}}
-\noindent Nodejs là một phần mềm mã nguồn mở được viết dựa trên ngôn ngữ JavaScript cho phép lập trình viên có thể xây dựng các ứng dụng chạy trên máy chủ. Ban đầu, Node.js được phát triển bởi Ryan Dahl. Phiên bản đầu tiên của Nodejs được cho ra mắt vào năm 2009.\\
+\noindent Nodejs là một phần mềm mã nguồn mở được viết dựa trên ngôn ngữ JavaScript cho phép lập trình viên có thể xây dựng các ứng dụng chạy trên máy chủ. Phiên bản đầu tiên của Nodejs được cho ra mắt vào năm 2009.\\
  Node.js có thể chạy được trên nhiều nền tảng khác nhau như Windows, Linux hay Mac OS. Node.js được phát triển sử dụng V8 Engine là bộ thư viện JavaScript được Google phát triển để viết trình duyệt web Chrome.\\
- Bản thân Node.js không phải là một ngôn ngữ lập trình mới, thay vào đó Node.js là một nền tảng mã nguồn mở được viết dựa trên ngôn ngữ JavaScript.
+ Bản thân Node.js không phải là một ngôn ngữ lập trình mới, thay vào đó Node.js là một nền tảng mã nguồn mở, một môi trường để thực thi mã JavaScript trên server. 
 
 \begin{figure}[H]
 	\centering
@@ -491,7 +492,7 @@ JSON được sử dụng rộng rãi vì những ưu điểm của nó:
 
 \noindent Nodejs đang rất được ưa chuộng bởi tốc độ chạy rất nhanh của nó. Sở dĩ Nodejs chạy rất nhanh vì nó thực hiện cơ chế non-blocking I/O và asynchronous (bất đồng bộ). Khi một request đến, nó không dừng lại chờ cho request đó xử lý xong mà vòng lặp event loop sẽ tiếp nhận các request liên tục và xử lý chúng liên tục. Khi một request xử lý xong, hàm callback sẽ được gọi để trả về kết quả cho client hoặc thực hiện một tác vụ nào đó. Như vậy các request sẽ được xử lý song song với nhau, tiết kiệm được rất nhiều thời gian. Nhưng đây cũng là một điểm khó đòi hỏi người lập trình phải quản lý chặt chẽ thứ tự thực hiện các hành động vì không phải lúc nào các tác vụ cũng chạy song song nhau, có những tác vụ phải thực hiện theo tuần tự.
 \subsubsection{Framework Expressjs}
-\noindent Expressjs là một framework có thể coi là nhỏ gọn và đơn giản nhất của Nodejs. Với Expressjs, lập trình viên có thể tạo ra một RESTful web service một cách rất nhanh chóng, đơn giản và dễ dàng mở rộng.
+\noindent Expressjs là một framework có thể coi là nhỏ gọn và đơn giản nhất của Nodejs. Expressjs cung cấp cấu trúc đơn giản nhất của một dự án Nodejs, giúp chúng ta có thể dựa trên đó phát triển một cách nhanh chóng một server RESTful API và có thể dễ dàng mở rộng nó.
 \subsubsection{Sequelizejs}
 \noindent Sequelize là một thư viện ORM dành cho Node.js. Nó hỗ trợ truy cập một cách dễ dàng đến PostgreSQL, MySQL, MariaDB, SQLite và MSSQL  …\\
  ORM (Object Relational Mapping) là một kỹ thuật lập trình để ánh xạ dữ liệu giữa các CSDL quan hệ và đối tượng trong các ngôn ngữ lập trình. Trong đó, các đối tượng ánh xạ với các bảng, các quan hệ của đối tượng ánh xạ với các ràng buộc liên quan giữa các bảng. Sequelizejs sẽ làm công việc này, nó giúp chúng ta gọi các hàm tương ứng thay vì viết những câu truy vấn bằng ngôn ngữ SQL. Đây là một module rất tiện lợi cho người lập trình web.
@@ -508,10 +509,10 @@ JSON được sử dụng rộng rãi vì những ưu điểm của nó:
 \noindent Single page application là một kiểu ứng dụng web mà trong đó, công việc xử lý các thao tác của người dùng đều diễn ra trên một trang duy nhất. Người dùng sẽ có cảm giác trang web hoạt động nhanh hơn do hạn chế tối đa thao tác chuyển trang hoặc tải lại trang.
 
 \subsubsection{Angular 2}
-\noindent Angular 2 là một framework để xây dựng các ứng dụng web và ứng dụng di động phía client. Angular 2 ra đời là một bước cải tiến so với Angular 1, nó đưa ra khái niệm "Component", hầu hết các thành phần trong ứng dụng đều quy về Component làm cho ứng dụng trở nên dễ quản lý và dễ phát triển hơn. Angular 2 cũng sử dụng Typescript thay vì Javascript như Angular 1. Điều đó có nghĩa là Angular 2 tận dụng được những ưu điểm của ES6 như class, ...
+\noindent Angular 2 là một framework để xây dựng các ứng dụng web và ứng dụng di động phía client. Angular 2 ra đời là một bước cải tiến so với Angular 1, nó đưa ra khái niệm "Component", hầu hết các thành phần trong ứng dụng đều quy về Component làm cho ứng dụng trở nên dễ quản lý và dễ phát triển hơn. Angular 2 cũng sử dụng Typescript thay vì Javascript như Angular 1. Điều đó có nghĩa là Angular 2 tận dụng được những ưu điểm của ES6 như class, đồng thời giúp cho những người đã quen với các ngôn ngữ ràng buộc kiểu như Java dễ dàng tiếp cận hơn.
 \subsubsection{Framework Ionic 2\cite{ionic}}
-\noindent Ionic là một framework dùng để xây dựng các ứng dụng lai bằng cách sử dụng HTML, CSS, và JavaScript. Nó đi kèm với một tập hợp các thành phần giao diện và các hàm mà bạn có thể sử dụng để tạo ra các ứng dụng di động đầy đủ chức năng và hấp dẫn. 
-Ionic được xây dựng trên Cordova stack. Bạn không thể tạo các ứng dụng di động với một mình Ionic bởi vì nó chỉ xử lý một phần giao diện người dùng. Nó cần phải làm việc với Angular, cái mà xử lý các logic của ứng dụng, và Cordova, framework ứng dụng đa nền tảng cho phép bạn biên dịch ứng dụng của bạn thành một tập tin có thể cài đặt và chạy nó bên trong web view của thiết bị di động. 
+\noindent Ionic là một framework dùng để xây dựng các ứng dụng di động bằng cách sử dụng HTML, CSS, và JavaScript. Nó đi kèm với một tập hợp các thành phần giao diện và các hàm mà chúng ta có thể sử dụng để tạo ra các ứng dụng di động đầy đủ chức năng. 
+Ionic được xây dựng trên Cordova - framework ứng dụng đa nền tảng cho phép biên dịch ứng dụng thành một tập tin có thể cài đặt và chạy nó bên trong web view của thiết bị di động. 
 Ứng dụng được xây dựng với Cordova và Ionic có thể chạy trên cả thiết bị Android và iOS.
 Điểm cải tiến so với phiên bản 1 là Ionic 2 sử dụng Angular 2 để phát triển các ứng dụng của mình.
 \subsubsection{Typescript\cite{typescript}}
@@ -547,14 +548,14 @@ Do bản thân Signature đã bao gồm cả header và payload nên Signature c
  
 \end{itemize}
 
+
 \subsubsection{Postgresql\cite{sql}}
-\noindent PostgreSQL là một hệ quản trị cơ sở dữ liệu quan hệ và đối tượng dựa trên POSTGRES, bản 4.2, được khoa điện toán của đại học California tại Berkeley phát triển. POSTGRES mở đường cho nhiều khái niệm quan trọng mà các hệ quản trị dữ liệu thương mại rất lâu sau mới có.\\
-PostgreSQL được phổ biến bằng giấy phép BSD cổ điển. Nó không quy định những hạn chế trong việc sử dụng mã nguồn của phần mềm. Bởi vậy PostgreSQL có thể được dùng, sửa đổi và phổ biến bởi bất kỳ ai cho bất kỳ mục đích nào.\\
-PostgreSQL cũng là hệ quản trị cơ sở dữ liệu hỗ trợ mạnh trong việc lưu trữ dữ liệu không gian. PostgreSQL kết hợp với module Postgis cho phép người dùng lưu trữ các lớp dữ liệu không gian. Khi sử dụng PostgreSQL, Postgis kết hợp với các phần mềm GIS hỗ trợ hiển thị, truy vấn, thống kê hoặc xử lý dữ liệu không gian.
+\noindent PostgreSQL là một hệ quản trị cơ sở dữ liệu quan hệ và đối tượng dựa trên POSTGRES, bản 4.2, được khoa điện toán của đại học California tại Berkeley phát triển.\\
+PostgreSQL được phổ biến bằng giấy phép BSD cổ điển. Bởi vậy PostgreSQL có thể được dùng, sửa đổi và phổ biến bởi bất kỳ ai cho bất kỳ mục đích nào.
 
 \subsubsection{NodeBB}
-\noindent NodeBB là một nền tảng diễn đàn thế hệ mới sử dụng công nghệ web sockets để có thể tương tác ngay lập tức và thông báo thời gian thực. NodeBB có nhiều tính năng hiện đại với tư duy sáng tạo như tương tác mạng xã hội và dòng chảy thảo luận.\\
-\noindent NodeBB là một phần mềm mã nguồn mở được sử dụng khá rộng rãi. Nhóm đã sử dụng nền tảng NodeBB để xây dựng diễn đàn trao đổi thông tin cho người dùng trong hệ thống. 
+\noindent NodeBB là một nền tảng diễn đàn thế hệ mới sử dụng công nghệ web sockets để có thể tương tác ngay lập tức và thông báo thời gian thực. NodeBB có nhiều tính năng hiện đại và có một cộng đồng phát triển khá lớn. Nhóm đã sử dụng NodeBB để xây dựng diễn đàn trao đổi thông tin cho người dùng trong hệ thống. 
+
 \subsubsection{Git và GitHub\cite{git}}
 \noindent \textbf{Git:}\\
 Git là một hệ thống quản lý phiên bản cho những tập tin trên máy tính và các công việc chung cùng thực
@@ -582,8 +583,7 @@ repository công cộng, người dùng có thể tạo tài khoản trên GitHu
 \subsubsection{XXTEA\cite{xxtea}}
 \noindent XXTEA là một thuật toán mã hóa nâng cấp của XTEA.\\
 \noindent XTEA viết tắt của Extended Tiny Encryption Aglorithm, được thiết kế bởi David Wheeler and Roger Needham của phòng thí nghiệm máy tính Cambridge. Giải thuật này không hề được đăng ký bản quyền do đó bất kỳ ai cũng có thể sử dụng nó một cách tự do. \\ 
-\noindent XTEA là dạng mã hóa mật mã khối, kích thước khối 64 bit, khóa bí mật 128 bit. \\
-\noindent Đúng theo tên gọi Tiny, XTEA là 1 giải thuật cực kỳ đơn giản và rất dễ code. Nó vốn được thiết kế với mục đích áp dụng trong các hệ thống với cấu hình phần cứng hạn chế 
+\noindent XTEA là dạng mã hóa mật mã khối, kích thước khối 64 bit, khóa bí mật 128 bit. XTEA là một thuật toán mã hóa đơn giản, dành cho các thiết bị phần cứng yếu, do đó nhóm đã sử dụng để mã hóa thông tin truyền tải giữa board điều khiển và server.
 
 \subsubsection{ARM}
 \noindent Cấu trúc ARM (viết tắt từ tên gốc là Advanced RISC Machine) là một loại cấu trúc vi xử lí kiểu RSIC được sử dụng rộng rãi trong các thiết kế nhúng. Do có đặc điểm tiết kiệm năng lượng, các bộ cpu ARM chiếm ưu thế trong các sản phẩm điện tử di động, mà với các sản phẩm này việc tiêu tán công suất thấp là một mục tiêu thiết kế quan trọng hàng đầu [14].\\
