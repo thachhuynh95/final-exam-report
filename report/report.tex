@@ -258,7 +258,7 @@ Sự phát triển của công nghệ trong thời đại hiện nay đã  mang 
 
 \subsubsection{Định danh}
 
-\noindent "Điểm quan trọng của IoT đó là các đối tượng phải có thể được nhận biết và định dạng (identifiable)"\cite{iot}. Trong môi trường Internet việc truyền nhận thông tin cần thiết nhất là địa chỉ IP. Hiện tại địa chỉ IP phổ biến thường dùng là IPv4 (mỗi địa chỉ có 32 bit). Với sự phát triển và tăng nhanh về mặt số lượng của các thiết bị thông minh kết nối với Internet làm cho địa chỉ IPv4 ngày càng ít. Sự xuất hiện của địa chỉ IPv6(mỗi địa chỉ có 128 bit) đã giải quyết vấn đề về việc định danh cho cái thiết bị tham gia vào mạng Internet. 
+\noindent "Điểm quan trọng của IoT đó là các đối tượng phải có thể được nhận biết và định dạng (identifiable)"\cite{iot}. Trong môi trường Internet việc truyền nhận thông tin cần thiết nhất là địa chỉ IP. Hiện tại địa chỉ IP phổ biến thường dùng là IPv4 (mỗi địa chỉ có 32 bit). Với sự phát triển và tăng nhanh về mặt số lượng của các thiết bị thông minh kết nối với Internet làm cho địa chỉ IPv4 ngày càng ít. Sự xuất hiện của địa chỉ IPv6 (mỗi địa chỉ có 128 bit) đã giải quyết vấn đề về việc định danh cho cái thiết bị tham gia vào mạng Internet. 
 
 \noindent Khi mọi đối tượng được đánh dấu sẽ làm cho việc quản lý trở nên dễ dàng hơn. Ta có thể đánh dấu bằng nhiều công nghệ khác nhau như RFID, mã vạch, NFC, mã QR... được kết nối thông qua WiFi, 3G, 4G, Bluetooth...
 
@@ -268,13 +268,23 @@ Sự phát triển của công nghệ trong thời đại hiện nay đã  mang 
 \noindent Các cảm biến có chức năng thu thập các tín hiệu analog từ môi trường thông qua việc quét các thông số sang tín hiệu digital.
 
 \noindent \textbf{Xử lý cục bộ và lưu trữ}\\
-\noindent Dữ liệu được lưu trữ và xử lý cục bộ thông qua các vi điều khiển , board mạch nhúng. Xử lý các tín hiệu thông tin nhận được từ cảm biến.
+\noindent Dữ liệu được lưu trữ và xử lý cục bộ thông qua các vi điều khiển , board mạch nhúng. Xử lý các tín hiệu thông tin nhận được từ cảm biến. Các thiết bị phần cứng có khả năng giao tiếp theo các quy tắc đã được định sẵn. Chúng rất đa dạng tùy vào mục đích sử dụng.
+
+\noindent Vi điều khiển là những thiết bị nhỏ, dễ dàng kết nối, có thể lập trình, nhiều mã nguồn mở đơn giản. Tuy nhiên vì có kích thước nhỏ nên khả năng, tốc độ xử lý không cao, RAM chỉ khoảng 2KB đối với Arduino. Chúng không chạy hệ điều hành, phần mềm chạy trên đó được gọi là Firmware, giống như một chương trình. Đối với loại máy tính mini như Raspberry Pi có thể chạy hệ điều hành đồng nghĩa với việc sức mạnh và tốc độ xử lý cao hơn, mạnh mẽ hơn.
+
+\noindent Có nhiều thiết bị phát triển trong công nghệ IoT, tùy nhu cầu yếu tố mà chọn thiết bị cho phù hợp với mục đích, chi phí sử dụng. Một số thiết bị như: 	STM32, ARM, Arduino, ChipKIT...
 
 \noindent \textbf{Network và Internet}\\
-\noindent Trong một thế giới mở, IoT sẽ mang tính chất phức tạp bởi nó bao gồm một lượng lớn các đường liên kết giữa những thiết bị, máy móc, dịch vụ với nhau, ngoài ra còn bởi khả năng thêm vào các nhân tố mới.
+\noindent Phần kết nối phần cứng kéo và gửi dữ liệu lên cloud để lưu trữ. Có 4 giao thức được sử dụng ở tầng này:
+\begin{itemize}
+	\item CoAP (Constrained Application Protocol)
+	\item MQTT (Message Queuing Telemetry Transport)
+	\item HTTP (HyperText Transfer Protocol)
+	\item XMPP (Extensible Messaging and Presence Protocol )
+\end{itemize}
 
-\noindent \textbf{Đám mây}\\
-\noindent Một mạng lưới IoT có thể chứa đến 50 đến 100 nghìn tỉ đối tượng được kết nối và mạng lưới này có thể theo dõi sự di chuyển của từng đối tượng. Một con người sống trong thành thị có thể bị bao bọc xung quanh bởi 1000 đến 5000 đối tượng có khả năng theo dõi.
+\noindent \textbf{Cloud (đám mây)}\\
+\noindent Nơi dữ liệu được thu thập, gồm hệ thống các máy chủ, hệ thống lưu trữ.
 
 \subsubsection{Ứng dụng}
 
@@ -2541,13 +2551,14 @@ Nửa chu kì đầu, khi điểm 1 dương so với điểm 2, dòng chạy t�
 		
 	\item Giao tiếp với web-server
 	\begin{enumerate}
-		\item Các gói tin trao đổi (truyền-nhận) gián tiếp với web-server (thông qua MQTT) sẽ được mã hóa sử dụng thư viện:
+		\item Mã hóa dữ liệu\\
+		- Các gói tin trao đổi (truyền-nhận) gián tiếp với web-server (thông qua MQTT) sẽ được mã hóa sử dụng thư viện:
 		\begin{figure}[H]
 			\centering
 			\includegraphics[scale=.7]{hinh/xxtea.PNG}
 			\caption{Thư viện mã hóa xxtea.}
 		\end{figure}
-		Đường dẫn:
+		- Đường dẫn:
 		\begin{figure}[H]
 			\centering
 			\includegraphics[scale=.7]{hinh/path_xxtea.PNG}
@@ -3676,6 +3687,18 @@ Các môi trường và công cụ để phát triển ứng dụng di động:
 \item Android sdk 16 (hỗ trợ từ android 4.1 trở lên).
 \item Genymotion 2.11.0 để kiểm thử ứng dụng.
 \end{itemize}
+
+\subsubsection{Các chức năng chính:}
+
+	\begin{itemize}
+		\item Đăng nhập.
+		\item Xem danh sách các board điểu khiển.
+		\item Quét mã QR để thêm nhanh board mới.
+		\item Xem thông tin môi trường từ cảm biến.
+		\item Theo dõi các actuator và điều khiển bật tắt chúng.
+		\item Hiển thị thông báo khi thông số môi trường vượt ngưỡng cho phép.
+	\end{itemize}
+
 \subsubsection{Một số hình ảnh}
 
 \begin{figure}[H]
