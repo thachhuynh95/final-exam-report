@@ -442,9 +442,9 @@ Trường hợp sử dụng dòng DC:
 \noindent Nhóm đang hướng tới sự khác biệt bằng cách tạo ra một hệ thống hỗ trợ các tính năng nói trên.
 \subsection{Giới thiệu về các công nghệ được sử dụng}
 
-\subsubsection{RESTful web service\cite{restful}}
-\noindent REST là viết tắt của cụm từ Representational State Transfer (đôi khi còn được viết là ReST) là một kiểu kiến trúc được sử dụng trong việc giao tiếp giữa các máy tính (máy tính cá nhân và máy chủ của trang web) trong việc quản lý các tài nguyên trên internet.\\
-\noindent Một kiến trúc REST thường có một server cung cấp các API truy xuất tài nguyên (biểu diễn dưới dạng text, XML, JSON, …) và client truy xuất, chỉnh sửa các tài nguyên đó thông qua giao thức HTTP.\\
+\subsubsection{RESTful web service}
+\noindent REST (Representational State Transfer)  là "một kiểu kiến trúc được sử dụng trong việc giao tiếp giữa các máy tính (máy tính cá nhân và máy chủ của trang web) trong việc quản lý các tài nguyên trên internet"\cite{restful}. REST là một kiến trúc thống nhất giúp website có thể dễ dàng quản lý tài nguyên, được sử dụng nhiều trong việc phát triển các ứng dụng Web Services sử dụng giao thức HTTP trong giao tiếp\\
+\noindent Một kiến trúc REST thường gồm một server cung cấp các API truy xuất tài nguyên và client truy xuất, chỉnh sửa các tài nguyên đó thông qua giao thức HTTP.\\
 
 \textbf{Các phương thức HTTP được sử dụng:}
 \begin{itemize}
@@ -453,20 +453,18 @@ Trường hợp sử dụng dòng DC:
 \item PUT: cập nhật tài nguyên.
 \item DELETE: dùng để xóa bỏ tài nguyên.
 \end{itemize}
-\textbf{JSON (Javascript Object Notation)\cite{json}}\\
- Trong ứng dụng mà nhóm hiện thực sử dụng JSON để trao đổi dữ liệu.\\
- JSON là 1 định dạng hoán vị dữ liệu nhanh. Chúng là cơ sở dựa trên tập hợp của ngôn ngữ lập trình JavaScript, tiêu chuẩn ECMA-262 phiên bản 3 - tháng 12 năm 1999.\\
- JSON được biểu diễn dưới dạng cặp tên và giá trị name – value. Trong những ngôn ngữ khác nhau, đây được nhận thấy như là một đối tượng (object), bản ghi (record), cấu trúc (struct), từ điển (dictionary), bảng băm (hash table), danh sách khóa (keyed list), hay mảng liên hợp.\\
- JSON có 5 kiểu dữ liệu chính:
+\textbf{JSON (Javascript Object Notation)}\\
+ Trong ứng dụng mà nhóm hiện thực sử dụng JSON để trao đổi dữ liệu. "JSON là 1 định dạng hoán vị dữ liệu nhanh. Chúng là cơ sở dựa trên tập hợp của ngôn ngữ lập trình JavaScript, tiêu chuẩn ECMA-262 phiên bản 3 - tháng 12 năm 1999"\cite{json}.\\
+ JSON có cấu trúc đơn giản, dễ sử dụng nên hiện nay nó trở nên rất phổ biến. Nó là "tập hợp của các cặp tên và giá trị name-value, tập hợp các giá trị đã được sắp xếp"\cite{json}.\\
+ JSON có 5 dạng dữ liệu chính:
 \begin{itemize}
-\item Number: kiểu số bao gồm số nguyên và số thực.
-\item String: kiểu chuỗi, nội dung bao bởi cặp dấu nháy kép “, những ký tự đặt biệt được escape bởi dấu \.Theo chuẩn JSON thì không sử dụng dấu nháy đơn như Javascript để bọc chuỗi.
-\item Boolean: kiểu luận lý bao gồm 2 giá trị là true và false.
-\item Array: kiểu mảng, gồm các phần tử phân cách nhau bởi dấu phẩy ‘,’ và mảng được bao bởi cặp dấu [ và ].
-\item Object: kiểu đối tượng, gồm những cặp giá trị đi cùng nhau, mỗi cặp phân cách bởi dấu phẩy’,’, đối tượng được bao bởi cặp dấu { và }, cặp giá trị bao gồm tên và giá trị được phân cách bởi dấu hai chấm’:’.
-\item Null: giá trị null.
+	\item Number: dạng số gồm số nguyên và số thực.
+	\item String: dạng chuỗi, nội dung được chứa trong cặp dấu nháy kép ( “ ), những ký tự đặt biệt được escape bởi dấu \.Theo chuẩn JSON thì không sử dụng dấu nháy đơn như Javascript để bọc chuỗi.
+	\item Boolean: dạng luận lý gồm 2 giá trị là true và false.
+	\item Array: dạng mảng, gồm các phần tử phân cách nhau bởi dấu phẩy ( , ) và mảng được bao bởi cặp dấu ( [ ) và ( ] ).
+	\item Object: dạng đối tượng, gồm những cặp giá trị đi cùng nhau, mỗi cặp phân cách bởi dấu phẩy ( , ), đối tượng được bao bởi cặp dấu ( { ) và ( } ), cặp giá trị bao gồm tên và giá trị được phân cách bởi dấu hai chấm ( : ).
+	\item Null: giá trị null.
 \end{itemize}
-
 
 \begin{figure}[H]
 	\centering
@@ -475,19 +473,17 @@ Trường hợp sử dụng dòng DC:
 	\label{fig:json}
 \end{figure}
 
-
-JSON được sử dụng rộng rãi vì những ưu điểm của nó:
+Ưu điểm của JSON:
 \begin{itemize}
-\item Có thể đọc hiểu được (human-readability), là kiểu dữ liệu trên nền cơ sở Javascript nên dễ dàng tiếp cận.
-\item Dữ liệu truyền tải ngắn gọn so với những định dạng dữ liệu khác như: xml, html…
-\item Dễ dàng chuyển đổi (parse) dữ liệu từ dạng chuỗi (nhận từ server) sang dữ liệu có thể sử dụng được (thành Object, Number, Array)…
+\item Dữ liệu trên nền cơ sở Javascript nên dễ dàng tiếp cận.
+\item Dữ liệu truyền tải ngắn gọn.
+\item Dễ chuyển đổi (parse) dữ liệu từ dạng chuỗi (nhận từ server) sang dữ liệu có thể sử dụng được (thành Object, Number, Array)…
 \item Dễ truy cập nội dung.
 \end{itemize}
 
-\subsubsection{Nodejs\cite{nodejs}}
-\noindent Nodejs là một phần mềm mã nguồn mở được viết dựa trên ngôn ngữ JavaScript cho phép lập trình viên có thể xây dựng các ứng dụng chạy trên máy chủ. Phiên bản đầu tiên của Nodejs được cho ra mắt vào năm 2009.\\
- Node.js có thể chạy được trên nhiều nền tảng khác nhau như Windows, Linux hay Mac OS. Node.js được phát triển sử dụng V8 Engine là bộ thư viện JavaScript được Google phát triển để viết trình duyệt web Chrome.\\
- Bản thân Node.js không phải là một ngôn ngữ lập trình mới, thay vào đó Node.js là một nền tảng mã nguồn mở, một môi trường để thực thi mã JavaScript trên server. 
+\subsubsection{Nodejs}
+\noindent Nodejs là "một phần mềm mã nguồn mở được viết dựa trên ngôn ngữ JavaScript cho phép lập trình viên có thể xây dựng các ứng dụng chạy trên máy chủ. Phiên bản đầu tiên của Nodejs được cho ra mắt vào năm 2009"\cite{nodejs}.\\
+Nodejs là mã nguồn mở, phát triển trên nhiều nền tảng, chạy trên hệ điều hành Window, Linux... Nó cung cấp cho ta các module đa dạng, đơn giản hóa sự phát triển của các ứng dụng web.
 
 \begin{figure}[H]
 	\centering
@@ -497,35 +493,40 @@ JSON được sử dụng rộng rãi vì những ưu điểm của nó:
 \end{figure}
 
 \noindent Nodejs đang rất được ưa chuộng bởi tốc độ chạy rất nhanh của nó. Sở dĩ Nodejs chạy rất nhanh vì nó thực hiện cơ chế non-blocking I/O và asynchronous (bất đồng bộ). Khi một request đến, nó không dừng lại chờ cho request đó xử lý xong mà vòng lặp event loop sẽ tiếp nhận các request liên tục và xử lý chúng liên tục. Khi một request xử lý xong, hàm callback sẽ được gọi để trả về kết quả cho client hoặc thực hiện một tác vụ nào đó. Như vậy các request sẽ được xử lý song song với nhau, tiết kiệm được rất nhiều thời gian. Nhưng đây cũng là một điểm khó đòi hỏi người lập trình phải quản lý chặt chẽ thứ tự thực hiện các hành động vì không phải lúc nào các tác vụ cũng chạy song song nhau, có những tác vụ phải thực hiện theo tuần tự.
+
 \subsubsection{Framework Expressjs}
 \noindent Expressjs là một framework có thể coi là nhỏ gọn và đơn giản nhất của Nodejs. Expressjs cung cấp cấu trúc đơn giản nhất của một dự án Nodejs, giúp chúng ta có thể dựa trên đó phát triển một cách nhanh chóng một server RESTful API và có thể dễ dàng mở rộng nó.
+
 \subsubsection{Sequelizejs}
 \noindent Sequelize là một thư viện ORM dành cho Node.js. Nó hỗ trợ truy cập một cách dễ dàng đến PostgreSQL, MySQL, MariaDB, SQLite và MSSQL  …\\
  ORM (Object Relational Mapping) là một kỹ thuật lập trình để ánh xạ dữ liệu giữa các CSDL quan hệ và đối tượng trong các ngôn ngữ lập trình. Trong đó, các đối tượng ánh xạ với các bảng, các quan hệ của đối tượng ánh xạ với các ràng buộc liên quan giữa các bảng. Sequelizejs sẽ làm công việc này, nó giúp chúng ta gọi các hàm tương ứng thay vì viết những câu truy vấn bằng ngôn ngữ SQL. Đây là một module rất tiện lợi cho người lập trình web.
-\subsubsection{Angularjs\cite{angular}}
-\noindent Angular là một bộ Javascript Framework rất mạnh và thường được sử dụng để xây dựng project Single Page Application (SPA).\\
+ 
+\subsubsection{Angularjs}
+\noindent Angular là "một bộ Javascript Framework rất mạnh và thường được sử dụng để xây dựng project Single Page Application (SPA)"\cite{angular}.\\
 Ưu điểm của Angularjs:
 \begin{itemize}
-\item Phát triển dự trên Javascript
-\item Tạo các ứng dụng client-side theo mô hình MVC.
-\item Khả năng tương thích cao, tự động xử lý mã javascript để phù hợp vứi mỗi trình duyệt.
-\item Mã nguồn mở, miễn phí hoàn toàn và được sủ dụng rộng rãi.
+	\item Phát triển dự trên Javascript
+	\item Tạo các ứng dụng client-side theo mô hình MVC.
+	\item Khả năng tương thích cao, tự động xử lý mã javascript để phù hợp vứi mỗi trình duyệt.
+	\item Mã nguồn mở, miễn phí hoàn toàn và được sủ dụng rộng rãi.
 \end{itemize}
 
 \noindent Single page application là một kiểu ứng dụng web mà trong đó, công việc xử lý các thao tác của người dùng đều diễn ra trên một trang duy nhất. Người dùng sẽ có cảm giác trang web hoạt động nhanh hơn do hạn chế tối đa thao tác chuyển trang hoặc tải lại trang.
 
 \subsubsection{Angular 2}
 \noindent Angular 2 là một framework để xây dựng các ứng dụng web và ứng dụng di động phía client. Angular 2 ra đời là một bước cải tiến so với Angular 1, nó đưa ra khái niệm "Component", hầu hết các thành phần trong ứng dụng đều quy về Component làm cho ứng dụng trở nên dễ quản lý và dễ phát triển hơn. Angular 2 cũng sử dụng Typescript thay vì Javascript như Angular 1. Điều đó có nghĩa là Angular 2 tận dụng được những ưu điểm của ES6 như class, đồng thời giúp cho những người đã quen với các ngôn ngữ ràng buộc kiểu như Java dễ dàng tiếp cận hơn.
-\subsubsection{Framework Ionic 2\cite{ionic}}
-\noindent Ionic là một framework dùng để xây dựng các ứng dụng di động bằng cách sử dụng HTML, CSS, và JavaScript. Nó đi kèm với một tập hợp các thành phần giao diện và các hàm mà chúng ta có thể sử dụng để tạo ra các ứng dụng di động đầy đủ chức năng. 
-Ionic được xây dựng trên Cordova - framework ứng dụng đa nền tảng cho phép biên dịch ứng dụng thành một tập tin có thể cài đặt và chạy nó bên trong web view của thiết bị di động. 
-Ứng dụng được xây dựng với Cordova và Ionic có thể chạy trên cả thiết bị Android và iOS.
+
+\subsubsection{Framework Ionic 2}
+\noindent Ionic là "một framework dùng để xây dựng các ứng dụng di động bằng cách sử dụng HTML, CSS, và JavaScript"\cite{ionic}. Nó cho phép gọi các API để tạo ra các ứng dung di động đầy đủ tính năng một cách dễ dàng.
+Ionic được xây dựng trên Cordova - framework ứng dụng đa nền tảng cho phép biên dịch ứng dụng thành một tập tin có thể cài đặt và chạy nó bên trong web view của thiết bị di động. Nó cần phải chạy với Angular, xử lý logic của ứng dụng và Cordova, framework ứng dụng đa nền tảng cho phép biên dịch ứng dụng thành một tập tin để cài đặt và chạy trên thiết bị di động. Ứng dụng được xây dựng với Cordova và Ionic có thể chạy trên cả thiết bị Android và iOS.
 Điểm cải tiến so với phiên bản 1 là Ionic 2 sử dụng Angular 2 để phát triển các ứng dụng của mình.
-\subsubsection{Typescript\cite{typescript}}
-\noindent TypeScript là một ngôn ngữ mã nguồn mở miễn phí hiện đang được phát triển và bảo trì bởi Microsoft. Nó là tập cha của JavaScript, với các bổ sung các tuỳ chọn kiểu tĩnh và lớp trên cơ sở lập trình hướng đối tượng cho ngôn ngữ này. TypeScript có thể sử dụng để phát triển ứng dụng chạy phía client, hay phía server (Node.js)  
-TypeScript được thiết kế để phát triển ứng dụng lớn và được biến đổi - biên dịch sang JavaScript. Vì TypeScript là tập cha của JavaScript nên bất kì chương trình JavaScript nào đã có cũng đều là chương trình TypeScript hợp lệ.  
-\subsubsection{JWT\cite{jwt}}
-\noindent JSON Web Token (JWT) là 1 tiêu chuẩn mở (RFC 7519) định nghĩa cách thức truyền tin an toàn giữa các thành viên bằng 1 đối tượng JSON. Thông tin này có thể được xác thực và đánh dấu tin cậy nhờ vào "chữ ký" của nó. Phần chữ ký của JWT sẽ được mã hóa bằng HMAC hoặc RSA.
+
+\subsubsection{Typescript}
+\noindent TypeScript là một dự án mã nguồn mở miễn phí hiện được phát triển và bảo trì bởi Microsoft. "Nó là tập cha của JavaScript, với các bổ sung các tuỳ chọn kiểu tĩnh và lớp trên cơ sở lập trình hướng đối tượng cho ngôn ngữ này"\cite{typescript}. TypeScript có thể sử dụng để phát triển ứng dụng chạy phía client, hay phía server (Node.js)  
+TypeScript được thiết kế để phát triển ứng dụng lớn và được biến đổi - biên dịch sang JavaScript. Vì TypeScript là tập cha của JavaScript nên bất kì chương trình JavaScript nào đã có cũng đều là chương trình TypeScript hợp lệ.
+  
+\subsubsection{JWT}
+\noindent JSON Web Token (JWT) là "một tiêu chuẩn mở (RFC 7519) định nghĩa cách thức truyền tin an toàn giữa các thành viên bằng 1 đối tượng JSON. Thông tin này có thể được xác thực và đánh dấu tin cậy nhờ vào "chữ ký" của nó. Phần chữ ký của JWT sẽ được mã hóa bằng HMAC hoặc RSA"\cite{jwt}.
 
 \begin{figure}[H]
 	\centering
@@ -554,41 +555,32 @@ Do bản thân Signature đã bao gồm cả header và payload nên Signature c
  
 \end{itemize}
 
-
-\subsubsection{Postgresql\cite{sql}}
-\noindent PostgreSQL là một hệ quản trị cơ sở dữ liệu quan hệ và đối tượng dựa trên POSTGRES, bản 4.2, được khoa điện toán của đại học California tại Berkeley phát triển.\\
-PostgreSQL được phổ biến bằng giấy phép BSD cổ điển. Bởi vậy PostgreSQL có thể được dùng, sửa đổi và phổ biến bởi bất kỳ ai cho bất kỳ mục đích nào.
+\subsubsection{Postgresql}
+\noindent PostgreSQL là "một hệ quản trị cơ sở dữ liệu quan hệ và đối tượng dựa trên POSTGRES"\cite{sql}. Hệ quản trị cơ sở dữ liệu này được kiểm chứng và tạo được lòng tin với người sử dụng về độ an toàn dữ liệu, đúng đắn, bảo mật. Nó có thể chạy trên các hệ điều hành như Linux, Unix, Window. \\
+Với việc tuân thủ các tiêu chuẩn của hệ quản trị cơ sở dữ liệu, nó có các tính năng phức tạp như kiểm soát truy cập đồng thời nhiều phiên bản, sao chép không đồng bộ, khôi phục dữ liệu tại từng thời điểm... Ngoài ra hệ quản trị này được sử dụng thông qua giao diện các ngôn ngữ C/C++, Python, Ruby...
 
 \subsubsection{NodeBB}
 \noindent NodeBB là một nền tảng diễn đàn thế hệ mới sử dụng công nghệ web sockets để có thể tương tác ngay lập tức và thông báo thời gian thực. NodeBB có nhiều tính năng hiện đại và có một cộng đồng phát triển khá lớn. Nhóm đã sử dụng NodeBB để xây dựng diễn đàn trao đổi thông tin cho người dùng trong hệ thống. 
 
-\subsubsection{Git và GitHub\cite{git}}
-\noindent \textbf{Git:}\\
-Git là một hệ thống quản lý phiên bản cho những tập tin trên máy tính và các công việc chung cùng thực
-hiện trên những tập tin này giữa nhiều người. Git là một trong những hệ thống quản lý phiên bản phân tán
-phổ biến nhất hiện nay. Nó giúp mỗi máy tính có thể lưu trữ nhiều phiên bản khác nhau của một mã nguồn được nhân bản (clone) từ một kho chứa mã nguồn (repository), mỗi thay đổi vào mã nguồn trên máy tính sẽ có thể ủy thác (commit) rồi đưa lên máy chủ nơi đặt kho chứa chính. Một máy tính khác (nếu họ có quyền
-truy cập) cũng có thể clone lại mã nguồn từ kho chứa.\\ 
-Do đó Git có nhiều ưu điểm:
+\subsubsection{Git}
+\noindent Git là một hệ thống quản lý những tập tin trên máy tính, các phiên bản phân tán, mã nguồn. Trên Git lưu lại lịch sử quá trình thay đổi tại các thời điểm nên tiện lợi trong việc kiểm soát quản lý tài nguyên.Ngoài ra còn cho biết ai là tác giả của mỗi lần thay đổi tài nguyên, thông báo lỗi khi tập tin bị ghi đè lên nhau hay tạo ra một nhánh mới với mục đích sử dụng khác những vẫn giữ được tài nguyên ban đầu.\\ 
+Ưu điểm:
 \begin{itemize}
-\item Giúp làm việc và quản lý mã nguồn của hệ thống đang xây dựng theo nhóm một cách đơn giản và hiệu quả.
-\item Dễ sử dụng và an toàn.
-\item Quản lý mã nguồn và tài liệu, có một host đóng vai trò là server làm kho chứa mã nguồn,
-các máy khác có thể clone mã nguồn từ server này ở bất kỳ đâu.
+\item Bảo mật, an toàn.
+\item Mọi người có thể chia sẽ tài nguyên lẫn nhau ở những nơi khác nhau.
+\item Dễ sử dụng, tăng hiệu quả trong công việc.
 \end{itemize}
 
-\noindent \textbf{GitHub:}\\
-Trong quá trình xây dựng hệ thống này, nhóm sử dụng GitHub làm công cụ để quản lý mã nguồn của hệ
-thống được xây dựng và các tài liệu thực hiện cho luận văn. GitHub là một dịch vụ máy chủ
-repository công cộng, người dùng có thể tạo tài khoản trên GitHub để tạo ra các kho chứa của riêng mình.\\
-Đường dẫn mã nguồn của hệ thống này trên GitHub:
+Đường dẫn mã nguồn của hệ thống:
 \begin{itemize}
-\item Mã nguồn web server: \href{https://github.com/bathach95/hydroponic}{https://github.com/bathach95/hydroponic}
-\item Mã nguồn mobile application: \href{https://github.com/bathach95/HydroponicMobileApp}{https://github.com/bathach95/HydroponicMobileApp}
+\item Mã nguồn web server: \url{https://github.com/bathach95/hydroponic}
+\item Mã nguồn mobile application: \url{https://github.com/bathach95/HydroponicMobileApp}
+\item Mã nguồn board điều khiển: \url{https://gitlab.com/dungnd2/hydroponic}
 \end{itemize}
 
-\subsubsection{XXTEA\cite{xxtea}}
+\subsubsection{XXTEA}
 \noindent XXTEA là một thuật toán mã hóa nâng cấp của XTEA.\\
-\noindent XTEA viết tắt của Extended Tiny Encryption Aglorithm, được thiết kế bởi David Wheeler and Roger Needham của phòng thí nghiệm máy tính Cambridge. Giải thuật này không hề được đăng ký bản quyền do đó bất kỳ ai cũng có thể sử dụng nó một cách tự do. \\ 
+\noindent XTEA (Extended Tiny Encryption Aglorithm), "được thiết kế bởi David Wheeler and Roger Needham của phòng thí nghiệm máy tính Cambridge. Giải thuật này không hề được đăng ký bản quyền do đó bất kỳ ai cũng có thể sử dụng nó một cách tự do"\cite{xxtea}.\\ 
 \noindent XTEA là dạng mã hóa mật mã khối, kích thước khối 64 bit, khóa bí mật 128 bit. XTEA là một thuật toán mã hóa đơn giản, dành cho các thiết bị phần cứng yếu, do đó nhóm đã sử dụng để mã hóa thông tin truyền tải giữa board điều khiển và server.
 
 \subsubsection{ARM}
@@ -603,10 +595,10 @@ repository công cộng, người dùng có thể tạo tài khoản trên GitHu
 	\item Offline: Lập trình trên nền tảng linux và make.
 \end{itemize}
 
-\subsubsection{Arduino\cite{arduino}}
+\subsubsection{Arduino}
 \begin{itemize}
-\item Arduino là một board mạch vi xử lý, nhằm xây dựng các ứng dụng tương tác với nhau hoặc với môi trường được thuận lợi hơn. Phần cứng bao gồm một board mạch nguồn mở được thiết kế trên nền tảng vi xử lý AVR Atmel 8bit, hoặc ARM Atmel 32-bit. Những Model hiện tại được trang bị gồm 1 cổng giao tiếp USB, 6 chân đầu vào analog, 14 chân I/O kỹ thuật số tương thích với nhiều board mở rộng khác nhau.
-\item Arduino đồng thời là nền tảng mã nguồn mở được phát triển rộng rãi, dễ tiếp cận cho người mới bắt đầu.
+\item Arduino là "một board mạch vi xử lý, nhằm xây dựng các ứng dụng tương tác với nhau hoặc với môi trường được thuận lợi hơn. Phần cứng bao gồm một board mạch nguồn mở được thiết kế trên nền tảng vi xử lý AVR Atmel 8bit, hoặc ARM Atmel 32-bit. Những Model hiện tại được trang bị gồm 1 cổng giao tiếp USB, 6 chân đầu vào analog, 14 chân I/O kỹ thuật số tương thích với nhiều board mở rộng khác nhau"\cite{arduino}.
+\item Arduino cói là nền tảng mã nguồn mở được cộng đồng phát triển rộng rãi, dễ tiếp cận cho người mới bắt đầu.
 \end{itemize}
 
 \subsubsection{MQTT}
@@ -1082,8 +1074,42 @@ Thời điểm bắt đầu hoạt động. & Thời lượng actuator được 
 
 \noindent	\textbf{Giao tiếp giữa NodeMCU và STM32F103C8T6}
 	\begin{itemize}
-	\item  Giao thức lớp dưới được sử dụng là UART.
-	\item	Một giao thức đơn giản được xây dựng trên lớp UART nhằm:
+	\item Các gói tin trao đổi giữa STM và Node MCU:
+		\begin{table}[H]
+		\centering
+		\begin{tabular}{|l|l|}
+		\hline
+		Packet & Send\\
+		\hline
+		Web-server packets (1) & NodeMCU\\
+		\hline
+		Actuators Info (2) & STM, NodeMCU\\
+		\hline
+		Load actuators request (3) & STM\\
+		\hline
+		Load done (4) & Node MCU\\
+		\hline
+		Setting (5) & STM\\
+		\hline
+		\end{tabular}
+		\caption{Các gói tin trao đổi giữa STM và Node MCU.}
+		\end{table}
+		
+		\begin{itemize}
+			\item (1) Các gói tin NodeMCU nhận được từ web - server sẽ được chuyển cho STM.
+			\item (2) Dữ liệu trạng thái các actuators: 
+			\begin{itemize}
+				\item STM gửi NodeMCU: Actuator nào thay đổi trạng thái (update) sẽ được gửi từ STM để cập nhật trạng thái tại bộ nhớ EEPROM trên NodeMCU.
+				\item NodeMCU gửi STM: khi nhận được yêu cầu tải lại (load) từ STM, NodeMCU sẽ tải lại dữ liệu trên EEPROM và gửi cho STM.
+			\end{itemize}
+			
+			\item (3) Mỗi khi reset, board STM sẽ tải lại dữ liệu trạng thái các actuator bằng cách gửi gói tin này.
+			\item (4) NodeMCU thông báo đã tải hết dữ liệu các actuators.
+			\item (5) STM thông báo nếu đang trong thời gian hoạt động mùa vụ cho NodeMCU, khi nằm ngoài thời gian hoạt động, NodeMCU sẽ không gửi dữ liệu các cảm biến cho web - server.
+		\end{itemize}
+	
+	\item Giao thức lớp dưới được sử dụng là UART.
+	\item Một giao thức đơn giản được xây dựng trên lớp UART nhằm:
 		\begin{itemize}
 		\item	Truyền, nhận các gói tin lớn.
 		\item	Đảm bảo tính toàn vẹn của gói tin.
