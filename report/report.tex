@@ -265,10 +265,10 @@ Sự phát triển của công nghệ trong thời đại hiện nay đã  mang 
 \subsubsection{Cấu trúc của hệ thống IoT}
 
 \noindent \textbf{Cảm biến}\\
-\noindent Các cảm biến có chức năng thu thập các dữ liệu analog từ môi trường
+\noindent Các cảm biến có chức năng thu thập các tín hiệu analog từ môi trường thông qua việc quét các thông số sang tín hiệu digital.
 
 \noindent \textbf{Xử lý cục bộ và lưu trữ}\\
-\noindent Các thực thể, máy móc trong IoT sẽ phản hồi dựa theo các sự kiện diễn ra trong lúc chúng hoạt động theo thời gian thực. Một số nhà nghiên cứu từng nói rằng một mạng lưới các sensor chính là một thành phần đơn giản của IoT.
+\noindent Dữ liệu được lưu trữ và xử lý cục bộ thông qua các vi điều khiển , board mạch nhúng. Xử lý các tín hiệu thông tin nhận được từ cảm biến.
 
 \noindent \textbf{Network và Internet}\\
 \noindent Trong một thế giới mở, IoT sẽ mang tính chất phức tạp bởi nó bao gồm một lượng lớn các đường liên kết giữa những thiết bị, máy móc, dịch vụ với nhau, ngoài ra còn bởi khả năng thêm vào các nhân tố mới.
@@ -2541,6 +2541,19 @@ Nửa chu kì đầu, khi điểm 1 dương so với điểm 2, dòng chạy t�
 		
 	\item Giao tiếp với web-server
 	\begin{enumerate}
+		\item Các gói tin trao đổi (truyền-nhận) gián tiếp với web-server (thông qua MQTT) sẽ được mã hóa sử dụng thư viện:
+		\begin{figure}[H]
+			\centering
+			\includegraphics[scale=.7]{hinh/xxtea.PNG}
+			\caption{Thư viện mã hóa xxtea.}
+		\end{figure}
+		Đường dẫn:
+		\begin{figure}[H]
+			\centering
+			\includegraphics[scale=.7]{hinh/path_xxtea.PNG}
+			\caption{Đường dẫn thư viện xxtea.}
+		\end{figure}
+		
 		\item Giao thức tầng dưới – thư viện MQTT
 		\begin{itemize}
 		\item Như đã đề cập giao thức truyền nhận giữa web-server là MQTT, cả thiết bị lần web-server đều đóng vai trò là một MQTT Client
