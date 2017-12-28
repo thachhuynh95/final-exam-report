@@ -13,7 +13,7 @@
 \contentsline {figure}{\numberline {13}{\ignorespaces C\IeC {\'\acircumflex }u tr\IeC {\'u}c m\IeC {\d \ocircumflex }t JSON\cite {json}.}}{16}{figure.13}
 \contentsline {figure}{\numberline {14}{\ignorespaces C\IeC {\ohorn } ch\IeC {\'\ecircumflex } ho\IeC {\d a}t \IeC {\dj }\IeC {\d \ocircumflex }ng c\IeC {\h u}a Nodejs\cite {nodejs}.}}{17}{figure.14}
 \contentsline {figure}{\numberline {15}{\ignorespaces Qu\IeC {\'a} tr\IeC {\`\i }nh \IeC {\dj }\IeC {\u a}ng nh\IeC {\d \acircumflex }p b\IeC {\`\abreve }ng JWT\cite {jwt}.}}{20}{figure.15}
-\contentsline {figure}{\numberline {16}{\ignorespaces M\IeC {\^o} t\IeC {\h a} c\IeC {\'a}c thi\IeC {\'\ecircumflex }t b\IeC {\d i} li\IeC {\^e}n l\IeC {\d a}c v\IeC {\'\ohorn }i nhau th\IeC {\^o}ng qua MQTT broker\cite {mqtt}.}}{24}{figure.16}
+\contentsline {figure}{\numberline {16}{\ignorespaces M\IeC {\d \ocircumflex }t v\IeC {\'\i } d\IeC {\d u} m\IeC {\^o} t\IeC {\h a} c\IeC {\'a}c thi\IeC {\'\ecircumflex }t b\IeC {\d i} li\IeC {\^e}n l\IeC {\d a}c v\IeC {\'\ohorn }i nhau th\IeC {\^o}ng qua MQTT broker\cite {mqtt}.}}{24}{figure.16}
 \contentsline {figure}{\numberline {17}{\ignorespaces Ki\IeC {\'\ecircumflex }n tr\IeC {\'u}c h\IeC {\d \ecircumflex } th\IeC {\'\ocircumflex }ng.}}{25}{figure.17}
 \contentsline {figure}{\numberline {18}{\ignorespaces C\IeC {\h a}m bi\IeC {\'\ecircumflex }n nhi\IeC {\d \ecircumflex }t \IeC {\dj }\IeC {\d \ocircumflex }, \IeC {\dj }\IeC {\d \ocircumflex } \IeC {\h \acircumflex }m\cite {dht22}.}}{26}{figure.18}
 \contentsline {figure}{\numberline {19}{\ignorespaces Module BH1750\cite {bh1750}.}}{26}{figure.19}
@@ -37,114 +37,116 @@
 \contentsline {figure}{\numberline {37}{\ignorespaces Wifi station.}}{41}{figure.37}
 \contentsline {figure}{\numberline {38}{\ignorespaces Wifi AP.}}{41}{figure.38}
 \contentsline {figure}{\numberline {39}{\ignorespaces Wifi application.}}{42}{figure.39}
-\contentsline {figure}{\numberline {40}{\ignorespaces C\IeC {\'\acircumflex }u tr\IeC {\'u}c giao th\IeC {\'\uhorn }c UART.}}{43}{figure.40}
-\contentsline {figure}{\numberline {41}{\ignorespaces C\IeC {\'a}ch ho\IeC {\d a}t \IeC {\dj }\IeC {\d \ocircumflex }ng c\IeC {\h u}a giao th\IeC {\'\uhorn }c UART.}}{44}{figure.41}
-\contentsline {figure}{\numberline {42}{\ignorespaces C\IeC {\'\acircumflex }u h\IeC {\`\i }nh wifi.}}{44}{figure.42}
-\contentsline {figure}{\numberline {43}{\ignorespaces Ho\IeC {\d a}t \IeC {\dj }\IeC {\d \ocircumflex }ng c\IeC {\h u}a web-server ho\IeC {\d a}t \IeC {\dj }\IeC {\d \ocircumflex }ng tr\IeC {\^e}n board Node MCU.}}{45}{figure.43}
-\contentsline {figure}{\numberline {44}{\ignorespaces Truy\IeC {\`\ecircumflex }n nh\IeC {\d \acircumflex }n d\IeC {\~\uhorn } li\IeC {\d \ecircumflex }u.}}{45}{figure.44}
-\contentsline {figure}{\numberline {45}{\ignorespaces WifiStation.}}{46}{figure.45}
-\contentsline {figure}{\numberline {46}{\ignorespaces MqttClient.}}{46}{figure.46}
-\contentsline {figure}{\numberline {47}{\ignorespaces UserEEPROM.}}{47}{figure.47}
-\contentsline {figure}{\numberline {48}{\ignorespaces Sensor.}}{47}{figure.48}
-\contentsline {figure}{\numberline {49}{\ignorespaces SerialTransport.}}{48}{figure.49}
-\contentsline {figure}{\numberline {50}{\ignorespaces Webserver.}}{48}{figure.50}
-\contentsline {figure}{\numberline {51}{\ignorespaces SwitchAP.}}{49}{figure.51}
-\contentsline {figure}{\numberline {52}{\ignorespaces Application.}}{49}{figure.52}
-\contentsline {figure}{\numberline {53}{\ignorespaces SerialTransport.}}{50}{figure.53}
-\contentsline {figure}{\numberline {54}{\ignorespaces Apllication.}}{50}{figure.54}
-\contentsline {figure}{\numberline {55}{\ignorespaces Actuator.}}{51}{figure.55}
-\contentsline {figure}{\numberline {56}{\ignorespaces C\IeC {\'a}c ch\IeC {\'\uhorn }c n\IeC {\u a}ng c\IeC {\h u}a kh\IeC {\'a}ch.}}{52}{figure.56}
-\contentsline {figure}{\numberline {57}{\ignorespaces \IeC {\DJ }\IeC {\u a}ng k\IeC {\'y}.}}{53}{figure.57}
-\contentsline {figure}{\numberline {58}{\ignorespaces \IeC {\DJ }\IeC {\u a}ng nh\IeC {\d \acircumflex }p.}}{54}{figure.58}
-\contentsline {figure}{\numberline {59}{\ignorespaces C\IeC {\'a}c ch\IeC {\'\uhorn }c n\IeC {\u a}ng c\IeC {\h u}a th\IeC {\`a}nh vi\IeC {\^e}n.}}{55}{figure.59}
-\contentsline {figure}{\numberline {60}{\ignorespaces Use case thay \IeC {\dj }\IeC {\h \ocircumflex }i th\IeC {\^o}ng tin.}}{56}{figure.60}
-\contentsline {figure}{\numberline {61}{\ignorespaces Use case th\IeC {\^e}m thi\IeC {\'\ecircumflex }t b\IeC {\d i}.}}{58}{figure.61}
-\contentsline {figure}{\numberline {62}{\ignorespaces Use case t\IeC {\uhorn }\IeC {\ohorn }ng t\IeC {\'a}c v\IeC {\'\ohorn }i di\IeC {\~\ecircumflex }n \IeC {\dj }\IeC {\`a}n.}}{59}{figure.62}
-\contentsline {figure}{\numberline {63}{\ignorespaces Use case t\IeC {\`\i }m ki\IeC {\'\ecircumflex }m m\IeC {\`u}a v\IeC {\d u}.}}{61}{figure.63}
-\contentsline {figure}{\numberline {64}{\ignorespaces Use case xem th\IeC {\^o}ng tin thi\IeC {\'\ecircumflex }t b\IeC {\d i}.}}{62}{figure.64}
-\contentsline {figure}{\numberline {65}{\ignorespaces Use case s\IeC {\h \uhorn }a th\IeC {\^o}ng tin thi\IeC {\'\ecircumflex }t b\IeC {\d i}.}}{63}{figure.65}
-\contentsline {figure}{\numberline {66}{\ignorespaces Use case t\IeC {\d a}o relay.}}{64}{figure.66}
-\contentsline {figure}{\numberline {67}{\ignorespaces Use case th\IeC {\^e}m m\IeC {\`u}a v\IeC {\d u} m\IeC {\'\ohorn }i.}}{66}{figure.67}
-\contentsline {figure}{\numberline {68}{\ignorespaces Use case s\IeC {\h \uhorn }a th\IeC {\^o}ng tin m\IeC {\`u}a v\IeC {\d u}.}}{67}{figure.68}
-\contentsline {figure}{\numberline {69}{\ignorespaces Use case c\IeC {\`a}i \IeC {\dj }\IeC {\d \abreve }t ch\IeC {\uhorn }\IeC {\ohorn }ng tr\IeC {\`\i }nh m\IeC {\`u}a v\IeC {\d u}.}}{68}{figure.69}
-\contentsline {figure}{\numberline {70}{\ignorespaces Use case c\IeC {\`a}i \IeC {\dj }\IeC {\d \abreve }t ng\IeC {\uhorn }\IeC {\~\ohorn }ng d\IeC {\~\uhorn } li\IeC {\d \ecircumflex }u.}}{69}{figure.70}
-\contentsline {figure}{\numberline {71}{\ignorespaces Thi\IeC {\'\ecircumflex }t k\IeC {\'\ecircumflex } database}}{71}{figure.71}
-\contentsline {figure}{\numberline {72}{\ignorespaces M\IeC {\^o} h\IeC {\`\i }nh c\IeC {\d u}m server}}{72}{figure.72}
-\contentsline {figure}{\numberline {73}{\ignorespaces M\IeC {\^o} h\IeC {\`\i }nh RESTful API}}{72}{figure.73}
-\contentsline {figure}{\numberline {74}{\ignorespaces M\IeC {\^o} h\IeC {\`\i }nh c\IeC {\'a}c giao th\IeC {\'\uhorn }c trong h\IeC {\d \ecircumflex } th\IeC {\'\ocircumflex }ng}}{73}{figure.74}
-\contentsline {figure}{\numberline {75}{\ignorespaces PPM schematic.}}{78}{figure.75}
-\contentsline {figure}{\numberline {76}{\ignorespaces PPM PCB.}}{78}{figure.76}
-\contentsline {figure}{\numberline {77}{\ignorespaces Oscillator c\IeC {\`\acircumflex }u Wein.}}{79}{figure.77}
-\contentsline {figure}{\numberline {78}{\ignorespaces 4 \IeC {\dj }i-\IeC {\'\ocircumflex }t.}}{80}{figure.78}
-\contentsline {figure}{\numberline {79}{\ignorespaces Ngu\IeC {\`\ocircumflex }n \IeC {\dj }\IeC {\^o}i 12V - Tr\IeC {\uhorn }\IeC {\'\ohorn }c.}}{81}{figure.79}
-\contentsline {figure}{\numberline {80}{\ignorespaces Ngu\IeC {\`\ocircumflex }n \IeC {\dj }\IeC {\^o}i 12V - Sau.}}{81}{figure.80}
-\contentsline {figure}{\numberline {81}{\ignorespaces Jack DC.}}{81}{figure.81}
-\contentsline {figure}{\numberline {82}{\ignorespaces IC TL074.}}{82}{figure.82}
-\contentsline {figure}{\numberline {83}{\ignorespaces TL074 PIN.}}{82}{figure.83}
-\contentsline {figure}{\numberline {84}{\ignorespaces Diode Zener.}}{82}{figure.84}
-\contentsline {figure}{\numberline {85}{\ignorespaces T\IeC {\d u} 0.015uF.}}{83}{figure.85}
-\contentsline {figure}{\numberline {86}{\ignorespaces T\IeC {\d u} 0.22uF.}}{83}{figure.86}
-\contentsline {figure}{\numberline {87}{\ignorespaces C\IeC {\`\acircumflex }u Diode.}}{84}{figure.87}
-\contentsline {figure}{\numberline {88}{\ignorespaces Th\IeC {\uhorn } vi\IeC {\d \ecircumflex }n DHT.}}{84}{figure.88}
-\contentsline {figure}{\numberline {89}{\ignorespaces \IeC {\DJ }\IeC {\uhorn }\IeC {\`\ohorn }ng d\IeC {\~\acircumflex }n th\IeC {\uhorn } vi\IeC {\d \ecircumflex }n DHT.}}{84}{figure.89}
-\contentsline {figure}{\numberline {90}{\ignorespaces K\IeC {\'\ecircumflex }t qu\IeC {\h a} \IeC {\dj }o nhi\IeC {\d \ecircumflex }t \IeC {\dj }\IeC {\d \ocircumflex }, \IeC {\dj }\IeC {\d \ocircumflex } \IeC {\h \acircumflex }m DHT.}}{85}{figure.90}
-\contentsline {figure}{\numberline {91}{\ignorespaces Th\IeC {\uhorn } vi\IeC {\d \ecircumflex }n BH1750 .}}{85}{figure.91}
-\contentsline {figure}{\numberline {92}{\ignorespaces \IeC {\DJ }\IeC {\uhorn }\IeC {\`\ohorn }ng d\IeC {\~\acircumflex }n th\IeC {\uhorn } vi\IeC {\d \ecircumflex }n BH1750.}}{86}{figure.92}
-\contentsline {figure}{\numberline {93}{\ignorespaces K\IeC {\'\ecircumflex }t qu\IeC {\h a} \IeC {\dj }o c\IeC {\uhorn }\IeC {\`\ohorn }ng \IeC {\dj }\IeC {\d \ocircumflex } \IeC {\'a}nh s\IeC {\'a}ng BH1750.}}{86}{figure.93}
-\contentsline {figure}{\numberline {94}{\ignorespaces Th\IeC {\uhorn } vi\IeC {\d \ecircumflex }n th\IeC {\`\ohorn }i gian th\IeC {\d \uhorn }c.}}{87}{figure.94}
-\contentsline {figure}{\numberline {95}{\ignorespaces \IeC {\DJ }\IeC {\uhorn }\IeC {\`\ohorn }ng d\IeC {\~\acircumflex }n th\IeC {\uhorn } vi\IeC {\d \ecircumflex }n th\IeC {\`\ohorn }i gian th\IeC {\d \uhorn }c.}}{87}{figure.95}
-\contentsline {figure}{\numberline {96}{\ignorespaces Th\IeC {\uhorn } vi\IeC {\d \ecircumflex }n thanh ghi d\IeC {\d i}ch.}}{87}{figure.96}
-\contentsline {figure}{\numberline {97}{\ignorespaces \IeC {\DJ }\IeC {\uhorn }\IeC {\`\ohorn }ng d\IeC {\~\acircumflex }n th\IeC {\uhorn } vi\IeC {\d \ecircumflex }n thanh ghi d\IeC {\d i}ch.}}{88}{figure.97}
-\contentsline {figure}{\numberline {98}{\ignorespaces Ngu\IeC {\`\ocircumflex }n cho c\IeC {\'a}c actuator.}}{88}{figure.98}
-\contentsline {figure}{\numberline {99}{\ignorespaces Th\IeC {\uhorn } vi\IeC {\d \ecircumflex }n MQTT.}}{88}{figure.99}
-\contentsline {figure}{\numberline {100}{\ignorespaces \IeC {\DJ }\IeC {\uhorn }\IeC {\`\ohorn }ng d\IeC {\~\acircumflex }n th\IeC {\uhorn } vi\IeC {\d \ecircumflex }n MQTT.}}{89}{figure.100}
-\contentsline {figure}{\numberline {101}{\ignorespaces Th\IeC {\uhorn } vi\IeC {\d \ecircumflex }n c\IeC {\'\acircumflex }u tr\IeC {\'u}c d\IeC {\~\uhorn } li\IeC {\d \ecircumflex }u.}}{89}{figure.101}
-\contentsline {figure}{\numberline {102}{\ignorespaces \IeC {\DJ }\IeC {\uhorn }\IeC {\`\ohorn }ng d\IeC {\~\acircumflex }n th\IeC {\uhorn } vi\IeC {\d \ecircumflex }n c\IeC {\'\acircumflex }u tr\IeC {\'u}c d\IeC {\~\uhorn } li\IeC {\d \ecircumflex }u.}}{89}{figure.102}
-\contentsline {figure}{\numberline {103}{\ignorespaces N\IeC {\'u}t nh\IeC {\'\acircumflex }n.}}{90}{figure.103}
-\contentsline {figure}{\numberline {104}{\ignorespaces Web server - 1.}}{90}{figure.104}
-\contentsline {figure}{\numberline {105}{\ignorespaces Web server - 2.}}{91}{figure.105}
-\contentsline {figure}{\numberline {106}{\ignorespaces Web server - 3.}}{91}{figure.106}
-\contentsline {figure}{\numberline {107}{\ignorespaces Web server - 4.}}{92}{figure.107}
-\contentsline {figure}{\numberline {108}{\ignorespaces Web server - 5.}}{92}{figure.108}
-\contentsline {figure}{\numberline {109}{\ignorespaces Schematic.}}{94}{figure.109}
-\contentsline {figure}{\numberline {110}{\ignorespaces PCB}}{95}{figure.110}
-\contentsline {figure}{\numberline {111}{\ignorespaces M\IeC {\^o} h\IeC {\`\i }nh th\IeC {\h \uhorn } nghi\IeC {\d \ecircumflex }m - 1.}}{95}{figure.111}
-\contentsline {figure}{\numberline {112}{\ignorespaces M\IeC {\^o} h\IeC {\`\i }nh th\IeC {\h \uhorn } nghi\IeC {\d \ecircumflex }m - 2.}}{96}{figure.112}
-\contentsline {figure}{\numberline {113}{\ignorespaces M\IeC {\^o} h\IeC {\`\i }nh th\IeC {\h \uhorn } nghi\IeC {\d \ecircumflex }m - 3.}}{96}{figure.113}
-\contentsline {figure}{\numberline {114}{\ignorespaces C\IeC {\^a}y th\IeC {\uhorn } m\IeC {\d u}c m\IeC {\~a} ngu\IeC {\`\ocircumflex }n.}}{113}{figure.114}
-\contentsline {figure}{\numberline {115}{\ignorespaces Thi\IeC {\'\ecircumflex }t k\IeC {\'\ecircumflex } s\IeC {\ohorn } \IeC {\dj }\IeC {\`\ocircumflex } l\IeC {\'\ohorn }p.}}{115}{figure.115}
-\contentsline {figure}{\numberline {116}{\ignorespaces Trang ch\IeC {\h u}.}}{116}{figure.116}
-\contentsline {figure}{\numberline {117}{\ignorespaces Trang t\IeC {\`\i }m ki\IeC {\'\ecircumflex }m m\IeC {\`u}a v\IeC {\d u}.}}{116}{figure.117}
-\contentsline {figure}{\numberline {118}{\ignorespaces Trang \IeC {\dj }\IeC {\u a}ng k\IeC {\'y}.}}{117}{figure.118}
-\contentsline {figure}{\numberline {119}{\ignorespaces Trang \IeC {\dj }\IeC {\u a}ng nh\IeC {\d \acircumflex }p.}}{117}{figure.119}
-\contentsline {figure}{\numberline {120}{\ignorespaces Trang c\IeC {\'a} nh\IeC {\^a}n.}}{118}{figure.120}
-\contentsline {figure}{\numberline {121}{\ignorespaces Th\IeC {\^e}m m\IeC {\d \ocircumflex }t board m\IeC {\'\ohorn }i.}}{118}{figure.121}
-\contentsline {figure}{\numberline {122}{\ignorespaces Danh s\IeC {\'a}ch c\IeC {\'a}c board \IeC {\dj }i\IeC {\`\ecircumflex }u khi\IeC {\h \ecircumflex }n.}}{119}{figure.122}
-\contentsline {figure}{\numberline {123}{\ignorespaces Danh s\IeC {\'a}ch c\IeC {\'a}c actuator c\IeC {\h u}a m\IeC {\d \ocircumflex }t board.}}{119}{figure.123}
-\contentsline {figure}{\numberline {124}{\ignorespaces Th\IeC {\^e}m m\IeC {\d \ocircumflex }t actuator.}}{120}{figure.124}
-\contentsline {figure}{\numberline {125}{\ignorespaces Danh s\IeC {\'a}ch c\IeC {\'a}c m\IeC {\`u}a v\IeC {\d u}.}}{120}{figure.125}
-\contentsline {figure}{\numberline {126}{\ignorespaces Th\IeC {\^e}m m\IeC {\d \ocircumflex }t m\IeC {\`u}a v\IeC {\d u}.}}{121}{figure.126}
-\contentsline {figure}{\numberline {127}{\ignorespaces Th\IeC {\^o}ng tin m\IeC {\`u}a v\IeC {\d u}.}}{121}{figure.127}
-\contentsline {figure}{\numberline {128}{\ignorespaces Chi ti\IeC {\'\ecircumflex }t m\IeC {\`u}a v\IeC {\d u}.}}{122}{figure.128}
-\contentsline {figure}{\numberline {129}{\ignorespaces Ng\IeC {\uhorn }\IeC {\~\ohorn }ng d\IeC {\~\uhorn } li\IeC {\d \ecircumflex }u.}}{122}{figure.129}
-\contentsline {figure}{\numberline {130}{\ignorespaces L\IeC {\d i}ch tr\IeC {\`\i }nh ho\IeC {\d a}t \IeC {\dj }\IeC {\d \ocircumflex }ng c\IeC {\h u}a c\IeC {\'a}c actuator.}}{122}{figure.130}
-\contentsline {figure}{\numberline {131}{\ignorespaces Th\IeC {\^e}m l\IeC {\d i}ch tr\IeC {\`\i }nh cho actuator.}}{123}{figure.131}
-\contentsline {figure}{\numberline {132}{\ignorespaces Trang forum.}}{123}{figure.132}
-\contentsline {figure}{\numberline {133}{\ignorespaces Trang qu\IeC {\h a}n l\IeC {\'y} d\IeC {\`a}nh cho administrator/moderator.}}{124}{figure.133}
-\contentsline {figure}{\numberline {134}{\ignorespaces Trang \IeC {\dj }\IeC {\u a}ng nh\IeC {\d \acircumflex }p.}}{125}{figure.134}
-\contentsline {figure}{\numberline {135}{\ignorespaces Trang ch\IeC {\h u} sau khi \IeC {\dj }\IeC {\u a}ng nh\IeC {\d \acircumflex }p.}}{126}{figure.135}
-\contentsline {figure}{\numberline {136}{\ignorespaces Th\IeC {\^o}ng tin m\IeC {\`u}a v\IeC {\d u} v\IeC {\`a} d\IeC {\~\uhorn } li\IeC {\d \ecircumflex }u.}}{127}{figure.136}
-\contentsline {figure}{\numberline {137}{\ignorespaces Danh s\IeC {\'a}ch c\IeC {\'a}c actuator.}}{128}{figure.137}
-\contentsline {figure}{\numberline {138}{\ignorespaces Nh\IeC {\'o}m c\IeC {\'a}c thao t\IeC {\'a}c CRUD.}}{128}{figure.138}
-\contentsline {figure}{\numberline {139}{\ignorespaces Thao t\IeC {\'a}c \IeC {\dj }\IeC {\u a}ng nh\IeC {\d \acircumflex }p v\IeC {\`a}o h\IeC {\d \ecircumflex } th\IeC {\'\ocircumflex }ng s\IeC {\h \uhorn } d\IeC {\d u}ng JWT.}}{129}{figure.139}
-\contentsline {figure}{\numberline {140}{\ignorespaces Nh\IeC {\'o}m c\IeC {\'a}c thao t\IeC {\'a}c t\IeC {\uhorn }\IeC {\ohorn }ng t\IeC {\'a}c v\IeC {\'\ohorn }i board \IeC {\dj }i\IeC {\`\ecircumflex }u khi\IeC {\h \ecircumflex }n.}}{129}{figure.140}
-\contentsline {figure}{\numberline {141}{\ignorespaces Board prototype.}}{130}{figure.141}
-\contentsline {figure}{\numberline {142}{\ignorespaces Relay prototype.}}{131}{figure.142}
-\contentsline {figure}{\numberline {143}{\ignorespaces \IeC {\DJ }\IeC {\'o}ng h\IeC {\d \ocircumflex }p.}}{131}{figure.143}
-\contentsline {figure}{\numberline {144}{\ignorespaces PPM prototype.}}{132}{figure.144}
-\contentsline {figure}{\numberline {145}{\ignorespaces \IeC {\DJ }o ppm dung d\IeC {\d i}ch mu\IeC {\'\ocircumflex }i \IeC {\u a}n 1.}}{132}{figure.145}
-\contentsline {figure}{\numberline {146}{\ignorespaces \IeC {\DJ }o ppm dung d\IeC {\d i}ch mu\IeC {\'\ocircumflex }i \IeC {\u a}n 2.}}{133}{figure.146}
-\contentsline {figure}{\numberline {147}{\ignorespaces \IeC {\DJ }o ppm dung d\IeC {\d i}ch mu\IeC {\'\ocircumflex }i \IeC {\u a}n 3.}}{133}{figure.147}
-\contentsline {figure}{\numberline {148}{\ignorespaces K\IeC {\'\ecircumflex }t qu\IeC {\h a} \IeC {\dj }o ppm 1.}}{134}{figure.148}
-\contentsline {figure}{\numberline {149}{\ignorespaces K\IeC {\'\ecircumflex }t qu\IeC {\h a} \IeC {\dj }o ppm 2.}}{134}{figure.149}
-\contentsline {figure}{\numberline {150}{\ignorespaces D\IeC {\~\uhorn } li\IeC {\d \ecircumflex }u g\IeC {\h \uhorn }i l\IeC {\^e}n t\IeC {\`\uhorn } c\IeC {\h a}m bi\IeC {\'\ecircumflex }n.}}{136}{figure.150}
+\contentsline {figure}{\numberline {40}{\ignorespaces C\IeC {\'\acircumflex }u tr\IeC {\'u}c giao th\IeC {\'\uhorn }c UART.}}{44}{figure.40}
+\contentsline {figure}{\numberline {41}{\ignorespaces C\IeC {\'a}ch ho\IeC {\d a}t \IeC {\dj }\IeC {\d \ocircumflex }ng c\IeC {\h u}a giao th\IeC {\'\uhorn }c UART.}}{45}{figure.41}
+\contentsline {figure}{\numberline {42}{\ignorespaces C\IeC {\'\acircumflex }u h\IeC {\`\i }nh wifi.}}{45}{figure.42}
+\contentsline {figure}{\numberline {43}{\ignorespaces Ho\IeC {\d a}t \IeC {\dj }\IeC {\d \ocircumflex }ng c\IeC {\h u}a web-server ho\IeC {\d a}t \IeC {\dj }\IeC {\d \ocircumflex }ng tr\IeC {\^e}n board Node MCU.}}{46}{figure.43}
+\contentsline {figure}{\numberline {44}{\ignorespaces Truy\IeC {\`\ecircumflex }n nh\IeC {\d \acircumflex }n d\IeC {\~\uhorn } li\IeC {\d \ecircumflex }u.}}{46}{figure.44}
+\contentsline {figure}{\numberline {45}{\ignorespaces WifiStation.}}{47}{figure.45}
+\contentsline {figure}{\numberline {46}{\ignorespaces MqttClient.}}{47}{figure.46}
+\contentsline {figure}{\numberline {47}{\ignorespaces UserEEPROM.}}{48}{figure.47}
+\contentsline {figure}{\numberline {48}{\ignorespaces Sensor.}}{48}{figure.48}
+\contentsline {figure}{\numberline {49}{\ignorespaces SerialTransport.}}{49}{figure.49}
+\contentsline {figure}{\numberline {50}{\ignorespaces Webserver.}}{49}{figure.50}
+\contentsline {figure}{\numberline {51}{\ignorespaces SwitchAP.}}{50}{figure.51}
+\contentsline {figure}{\numberline {52}{\ignorespaces Application.}}{50}{figure.52}
+\contentsline {figure}{\numberline {53}{\ignorespaces SerialTransport.}}{51}{figure.53}
+\contentsline {figure}{\numberline {54}{\ignorespaces Apllication.}}{51}{figure.54}
+\contentsline {figure}{\numberline {55}{\ignorespaces Actuator.}}{52}{figure.55}
+\contentsline {figure}{\numberline {56}{\ignorespaces C\IeC {\'a}c ch\IeC {\'\uhorn }c n\IeC {\u a}ng c\IeC {\h u}a kh\IeC {\'a}ch.}}{53}{figure.56}
+\contentsline {figure}{\numberline {57}{\ignorespaces \IeC {\DJ }\IeC {\u a}ng k\IeC {\'y}.}}{54}{figure.57}
+\contentsline {figure}{\numberline {58}{\ignorespaces \IeC {\DJ }\IeC {\u a}ng nh\IeC {\d \acircumflex }p.}}{55}{figure.58}
+\contentsline {figure}{\numberline {59}{\ignorespaces C\IeC {\'a}c ch\IeC {\'\uhorn }c n\IeC {\u a}ng c\IeC {\h u}a th\IeC {\`a}nh vi\IeC {\^e}n.}}{56}{figure.59}
+\contentsline {figure}{\numberline {60}{\ignorespaces Use case thay \IeC {\dj }\IeC {\h \ocircumflex }i th\IeC {\^o}ng tin.}}{57}{figure.60}
+\contentsline {figure}{\numberline {61}{\ignorespaces Use case th\IeC {\^e}m thi\IeC {\'\ecircumflex }t b\IeC {\d i}.}}{59}{figure.61}
+\contentsline {figure}{\numberline {62}{\ignorespaces Use case t\IeC {\uhorn }\IeC {\ohorn }ng t\IeC {\'a}c v\IeC {\'\ohorn }i di\IeC {\~\ecircumflex }n \IeC {\dj }\IeC {\`a}n.}}{60}{figure.62}
+\contentsline {figure}{\numberline {63}{\ignorespaces Use case t\IeC {\`\i }m ki\IeC {\'\ecircumflex }m m\IeC {\`u}a v\IeC {\d u}.}}{62}{figure.63}
+\contentsline {figure}{\numberline {64}{\ignorespaces Use case xem th\IeC {\^o}ng tin thi\IeC {\'\ecircumflex }t b\IeC {\d i}.}}{63}{figure.64}
+\contentsline {figure}{\numberline {65}{\ignorespaces Use case s\IeC {\h \uhorn }a th\IeC {\^o}ng tin thi\IeC {\'\ecircumflex }t b\IeC {\d i}.}}{64}{figure.65}
+\contentsline {figure}{\numberline {66}{\ignorespaces Use case t\IeC {\d a}o relay.}}{65}{figure.66}
+\contentsline {figure}{\numberline {67}{\ignorespaces Use case th\IeC {\^e}m m\IeC {\`u}a v\IeC {\d u} m\IeC {\'\ohorn }i.}}{67}{figure.67}
+\contentsline {figure}{\numberline {68}{\ignorespaces Use case s\IeC {\h \uhorn }a th\IeC {\^o}ng tin m\IeC {\`u}a v\IeC {\d u}.}}{68}{figure.68}
+\contentsline {figure}{\numberline {69}{\ignorespaces Use case c\IeC {\`a}i \IeC {\dj }\IeC {\d \abreve }t ch\IeC {\uhorn }\IeC {\ohorn }ng tr\IeC {\`\i }nh m\IeC {\`u}a v\IeC {\d u}.}}{69}{figure.69}
+\contentsline {figure}{\numberline {70}{\ignorespaces Use case c\IeC {\`a}i \IeC {\dj }\IeC {\d \abreve }t ng\IeC {\uhorn }\IeC {\~\ohorn }ng d\IeC {\~\uhorn } li\IeC {\d \ecircumflex }u.}}{70}{figure.70}
+\contentsline {figure}{\numberline {71}{\ignorespaces Thi\IeC {\'\ecircumflex }t k\IeC {\'\ecircumflex } database.}}{72}{figure.71}
+\contentsline {figure}{\numberline {72}{\ignorespaces M\IeC {\^o} h\IeC {\`\i }nh c\IeC {\d u}m server.}}{73}{figure.72}
+\contentsline {figure}{\numberline {73}{\ignorespaces M\IeC {\^o} h\IeC {\`\i }nh RESTful API \cite {restfultech}.}}{73}{figure.73}
+\contentsline {figure}{\numberline {74}{\ignorespaces M\IeC {\^o} h\IeC {\`\i }nh c\IeC {\'a}c giao th\IeC {\'\uhorn }c trong h\IeC {\d \ecircumflex } th\IeC {\'\ocircumflex }ng.}}{74}{figure.74}
+\contentsline {figure}{\numberline {75}{\ignorespaces PPM schematic.}}{79}{figure.75}
+\contentsline {figure}{\numberline {76}{\ignorespaces PPM PCB.}}{79}{figure.76}
+\contentsline {figure}{\numberline {77}{\ignorespaces Oscillator c\IeC {\`\acircumflex }u Wein\cite {electrical}.}}{80}{figure.77}
+\contentsline {figure}{\numberline {78}{\ignorespaces C\IeC {\`\acircumflex }u diode\cite {actodc}.}}{81}{figure.78}
+\contentsline {figure}{\numberline {79}{\ignorespaces Ngu\IeC {\`\ocircumflex }n \IeC {\dj }\IeC {\^o}i 12V - Tr\IeC {\uhorn }\IeC {\'\ohorn }c\cite {dientuachau}.}}{82}{figure.79}
+\contentsline {figure}{\numberline {80}{\ignorespaces Ngu\IeC {\`\ocircumflex }n \IeC {\dj }\IeC {\^o}i 12V - Sau\cite {dientuachau}.}}{82}{figure.80}
+\contentsline {figure}{\numberline {81}{\ignorespaces Jack DC\cite {dientuachau}.}}{82}{figure.81}
+\contentsline {figure}{\numberline {82}{\ignorespaces IC TL074\cite {dientuachau}.}}{83}{figure.82}
+\contentsline {figure}{\numberline {83}{\ignorespaces TL074 PIN\cite {tl074}.}}{83}{figure.83}
+\contentsline {figure}{\numberline {84}{\ignorespaces Diode Zener\cite {dientuachau}.}}{83}{figure.84}
+\contentsline {figure}{\numberline {85}{\ignorespaces T\IeC {\d u} 0.015uF\cite {dientuachau}.}}{84}{figure.85}
+\contentsline {figure}{\numberline {86}{\ignorespaces T\IeC {\d u} 0.22uF\cite {dientuachau}.}}{84}{figure.86}
+\contentsline {figure}{\numberline {87}{\ignorespaces C\IeC {\`\acircumflex }u Diode\cite {dientuachau}.}}{85}{figure.87}
+\contentsline {figure}{\numberline {88}{\ignorespaces Th\IeC {\uhorn } vi\IeC {\d \ecircumflex }n DHT.}}{85}{figure.88}
+\contentsline {figure}{\numberline {89}{\ignorespaces \IeC {\DJ }\IeC {\uhorn }\IeC {\`\ohorn }ng d\IeC {\~\acircumflex }n th\IeC {\uhorn } vi\IeC {\d \ecircumflex }n DHT.}}{85}{figure.89}
+\contentsline {figure}{\numberline {90}{\ignorespaces K\IeC {\'\ecircumflex }t qu\IeC {\h a} \IeC {\dj }o nhi\IeC {\d \ecircumflex }t \IeC {\dj }\IeC {\d \ocircumflex }, \IeC {\dj }\IeC {\d \ocircumflex } \IeC {\h \acircumflex }m DHT.}}{86}{figure.90}
+\contentsline {figure}{\numberline {91}{\ignorespaces Th\IeC {\uhorn } vi\IeC {\d \ecircumflex }n BH1750 .}}{86}{figure.91}
+\contentsline {figure}{\numberline {92}{\ignorespaces \IeC {\DJ }\IeC {\uhorn }\IeC {\`\ohorn }ng d\IeC {\~\acircumflex }n th\IeC {\uhorn } vi\IeC {\d \ecircumflex }n BH1750.}}{87}{figure.92}
+\contentsline {figure}{\numberline {93}{\ignorespaces K\IeC {\'\ecircumflex }t qu\IeC {\h a} \IeC {\dj }o c\IeC {\uhorn }\IeC {\`\ohorn }ng \IeC {\dj }\IeC {\d \ocircumflex } \IeC {\'a}nh s\IeC {\'a}ng BH1750.}}{87}{figure.93}
+\contentsline {figure}{\numberline {94}{\ignorespaces Th\IeC {\uhorn } vi\IeC {\d \ecircumflex }n th\IeC {\`\ohorn }i gian th\IeC {\d \uhorn }c.}}{88}{figure.94}
+\contentsline {figure}{\numberline {95}{\ignorespaces \IeC {\DJ }\IeC {\uhorn }\IeC {\`\ohorn }ng d\IeC {\~\acircumflex }n th\IeC {\uhorn } vi\IeC {\d \ecircumflex }n th\IeC {\`\ohorn }i gian th\IeC {\d \uhorn }c.}}{88}{figure.95}
+\contentsline {figure}{\numberline {96}{\ignorespaces Th\IeC {\uhorn } vi\IeC {\d \ecircumflex }n thanh ghi d\IeC {\d i}ch.}}{88}{figure.96}
+\contentsline {figure}{\numberline {97}{\ignorespaces \IeC {\DJ }\IeC {\uhorn }\IeC {\`\ohorn }ng d\IeC {\~\acircumflex }n th\IeC {\uhorn } vi\IeC {\d \ecircumflex }n thanh ghi d\IeC {\d i}ch.}}{89}{figure.97}
+\contentsline {figure}{\numberline {98}{\ignorespaces Ngu\IeC {\`\ocircumflex }n cho c\IeC {\'a}c actuator.}}{89}{figure.98}
+\contentsline {figure}{\numberline {99}{\ignorespaces Th\IeC {\uhorn } vi\IeC {\d \ecircumflex }n m\IeC {\~a} h\IeC {\'o}a xxtea.}}{89}{figure.99}
+\contentsline {figure}{\numberline {100}{\ignorespaces \IeC {\DJ }\IeC {\uhorn }\IeC {\`\ohorn }ng d\IeC {\~\acircumflex }n th\IeC {\uhorn } vi\IeC {\d \ecircumflex }n xxtea.}}{89}{figure.100}
+\contentsline {figure}{\numberline {101}{\ignorespaces Th\IeC {\uhorn } vi\IeC {\d \ecircumflex }n MQTT.}}{90}{figure.101}
+\contentsline {figure}{\numberline {102}{\ignorespaces \IeC {\DJ }\IeC {\uhorn }\IeC {\`\ohorn }ng d\IeC {\~\acircumflex }n th\IeC {\uhorn } vi\IeC {\d \ecircumflex }n MQTT.}}{90}{figure.102}
+\contentsline {figure}{\numberline {103}{\ignorespaces Th\IeC {\uhorn } vi\IeC {\d \ecircumflex }n c\IeC {\'\acircumflex }u tr\IeC {\'u}c d\IeC {\~\uhorn } li\IeC {\d \ecircumflex }u.}}{91}{figure.103}
+\contentsline {figure}{\numberline {104}{\ignorespaces \IeC {\DJ }\IeC {\uhorn }\IeC {\`\ohorn }ng d\IeC {\~\acircumflex }n th\IeC {\uhorn } vi\IeC {\d \ecircumflex }n c\IeC {\'\acircumflex }u tr\IeC {\'u}c d\IeC {\~\uhorn } li\IeC {\d \ecircumflex }u.}}{91}{figure.104}
+\contentsline {figure}{\numberline {105}{\ignorespaces N\IeC {\'u}t nh\IeC {\'\acircumflex }n.}}{91}{figure.105}
+\contentsline {figure}{\numberline {106}{\ignorespaces Node MCU ph\IeC {\'a}t ra wifi.}}{92}{figure.106}
+\contentsline {figure}{\numberline {107}{\ignorespaces Truy c\IeC {\d \acircumflex }p v\IeC {\`a}o \IeC {\dj }\IeC {\d i}a ch\IeC {\h i} \IeC {\dj }\IeC {\h \ecircumflex } k\IeC {\'\ecircumflex }t n\IeC {\'\ocircumflex }i v\IeC {\'\ohorn }i webserver.}}{92}{figure.107}
+\contentsline {figure}{\numberline {108}{\ignorespaces Thi\IeC {\'\ecircumflex }t l\IeC {\d \acircumflex }p k\IeC {\'\ecircumflex }t n\IeC {\'\ocircumflex }i.}}{93}{figure.108}
+\contentsline {figure}{\numberline {109}{\ignorespaces Thi\IeC {\'\ecircumflex }t l\IeC {\d \acircumflex }p k\IeC {\'\ecircumflex }t n\IeC {\'\ocircumflex }i.}}{93}{figure.109}
+\contentsline {figure}{\numberline {110}{\ignorespaces C\IeC {\'\acircumflex }u h\IeC {\`\i }nh giao th\IeC {\'\uhorn }c MQTT.}}{94}{figure.110}
+\contentsline {figure}{\numberline {111}{\ignorespaces Schematic.}}{96}{figure.111}
+\contentsline {figure}{\numberline {112}{\ignorespaces PCB}}{97}{figure.112}
+\contentsline {figure}{\numberline {113}{\ignorespaces M\IeC {\^o} h\IeC {\`\i }nh th\IeC {\h \uhorn } nghi\IeC {\d \ecircumflex }m - 1.}}{97}{figure.113}
+\contentsline {figure}{\numberline {114}{\ignorespaces M\IeC {\^o} h\IeC {\`\i }nh th\IeC {\h \uhorn } nghi\IeC {\d \ecircumflex }m - 2.}}{98}{figure.114}
+\contentsline {figure}{\numberline {115}{\ignorespaces M\IeC {\^o} h\IeC {\`\i }nh th\IeC {\h \uhorn } nghi\IeC {\d \ecircumflex }m - 3.}}{98}{figure.115}
+\contentsline {figure}{\numberline {116}{\ignorespaces Thao t\IeC {\'a}c \IeC {\dj }\IeC {\u a}ng nh\IeC {\d \acircumflex }p v\IeC {\`a}o h\IeC {\d \ecircumflex } th\IeC {\'\ocircumflex }ng s\IeC {\h \uhorn } d\IeC {\d u}ng JWT.}}{100}{figure.116}
+\contentsline {figure}{\numberline {117}{\ignorespaces Nh\IeC {\'o}m c\IeC {\'a}c thao t\IeC {\'a}c t\IeC {\uhorn }\IeC {\ohorn }ng t\IeC {\'a}c v\IeC {\'\ohorn }i board \IeC {\dj }i\IeC {\`\ecircumflex }u khi\IeC {\h \ecircumflex }n.}}{101}{figure.117}
+\contentsline {figure}{\numberline {118}{\ignorespaces Nh\IeC {\'o}m c\IeC {\'a}c thao t\IeC {\'a}c CRUD.}}{101}{figure.118}
+\contentsline {figure}{\numberline {119}{\ignorespaces C\IeC {\^a}y th\IeC {\uhorn } m\IeC {\d u}c m\IeC {\~a} ngu\IeC {\`\ocircumflex }n.}}{118}{figure.119}
+\contentsline {figure}{\numberline {120}{\ignorespaces Thi\IeC {\'\ecircumflex }t k\IeC {\'\ecircumflex } s\IeC {\ohorn } \IeC {\dj }\IeC {\`\ocircumflex } l\IeC {\'\ohorn }p.}}{120}{figure.120}
+\contentsline {figure}{\numberline {121}{\ignorespaces Trang ch\IeC {\h u}.}}{121}{figure.121}
+\contentsline {figure}{\numberline {122}{\ignorespaces Trang t\IeC {\`\i }m ki\IeC {\'\ecircumflex }m m\IeC {\`u}a v\IeC {\d u}.}}{121}{figure.122}
+\contentsline {figure}{\numberline {123}{\ignorespaces Trang \IeC {\dj }\IeC {\u a}ng k\IeC {\'y}.}}{122}{figure.123}
+\contentsline {figure}{\numberline {124}{\ignorespaces Trang \IeC {\dj }\IeC {\u a}ng nh\IeC {\d \acircumflex }p.}}{122}{figure.124}
+\contentsline {figure}{\numberline {125}{\ignorespaces Trang c\IeC {\'a} nh\IeC {\^a}n.}}{123}{figure.125}
+\contentsline {figure}{\numberline {126}{\ignorespaces Th\IeC {\^e}m m\IeC {\d \ocircumflex }t board m\IeC {\'\ohorn }i.}}{123}{figure.126}
+\contentsline {figure}{\numberline {127}{\ignorespaces Danh s\IeC {\'a}ch c\IeC {\'a}c board \IeC {\dj }i\IeC {\`\ecircumflex }u khi\IeC {\h \ecircumflex }n.}}{124}{figure.127}
+\contentsline {figure}{\numberline {128}{\ignorespaces Danh s\IeC {\'a}ch c\IeC {\'a}c actuator c\IeC {\h u}a m\IeC {\d \ocircumflex }t board.}}{124}{figure.128}
+\contentsline {figure}{\numberline {129}{\ignorespaces Th\IeC {\^e}m m\IeC {\d \ocircumflex }t actuator.}}{125}{figure.129}
+\contentsline {figure}{\numberline {130}{\ignorespaces Danh s\IeC {\'a}ch c\IeC {\'a}c m\IeC {\`u}a v\IeC {\d u}.}}{125}{figure.130}
+\contentsline {figure}{\numberline {131}{\ignorespaces Th\IeC {\^e}m m\IeC {\d \ocircumflex }t m\IeC {\`u}a v\IeC {\d u}.}}{126}{figure.131}
+\contentsline {figure}{\numberline {132}{\ignorespaces Th\IeC {\^o}ng tin m\IeC {\`u}a v\IeC {\d u}.}}{126}{figure.132}
+\contentsline {figure}{\numberline {133}{\ignorespaces Chi ti\IeC {\'\ecircumflex }t m\IeC {\`u}a v\IeC {\d u}.}}{127}{figure.133}
+\contentsline {figure}{\numberline {134}{\ignorespaces Ng\IeC {\uhorn }\IeC {\~\ohorn }ng d\IeC {\~\uhorn } li\IeC {\d \ecircumflex }u.}}{127}{figure.134}
+\contentsline {figure}{\numberline {135}{\ignorespaces L\IeC {\d i}ch tr\IeC {\`\i }nh ho\IeC {\d a}t \IeC {\dj }\IeC {\d \ocircumflex }ng c\IeC {\h u}a c\IeC {\'a}c actuator.}}{127}{figure.135}
+\contentsline {figure}{\numberline {136}{\ignorespaces Th\IeC {\^e}m l\IeC {\d i}ch tr\IeC {\`\i }nh cho actuator.}}{128}{figure.136}
+\contentsline {figure}{\numberline {137}{\ignorespaces Trang forum.}}{128}{figure.137}
+\contentsline {figure}{\numberline {138}{\ignorespaces Trang qu\IeC {\h a}n l\IeC {\'y} d\IeC {\`a}nh cho administrator/moderator.}}{129}{figure.138}
+\contentsline {figure}{\numberline {139}{\ignorespaces Trang \IeC {\dj }\IeC {\u a}ng nh\IeC {\d \acircumflex }p.}}{130}{figure.139}
+\contentsline {figure}{\numberline {140}{\ignorespaces Trang ch\IeC {\h u} sau khi \IeC {\dj }\IeC {\u a}ng nh\IeC {\d \acircumflex }p.}}{131}{figure.140}
+\contentsline {figure}{\numberline {141}{\ignorespaces Th\IeC {\^o}ng tin m\IeC {\`u}a v\IeC {\d u} v\IeC {\`a} d\IeC {\~\uhorn } li\IeC {\d \ecircumflex }u.}}{132}{figure.141}
+\contentsline {figure}{\numberline {142}{\ignorespaces Danh s\IeC {\'a}ch c\IeC {\'a}c actuator.}}{133}{figure.142}
+\contentsline {figure}{\numberline {143}{\ignorespaces Board prototype.}}{134}{figure.143}
+\contentsline {figure}{\numberline {144}{\ignorespaces Relay prototype.}}{135}{figure.144}
+\contentsline {figure}{\numberline {145}{\ignorespaces \IeC {\DJ }\IeC {\'o}ng h\IeC {\d \ocircumflex }p.}}{135}{figure.145}
+\contentsline {figure}{\numberline {146}{\ignorespaces PPM prototype.}}{136}{figure.146}
+\contentsline {figure}{\numberline {147}{\ignorespaces \IeC {\DJ }o ppm dung d\IeC {\d i}ch mu\IeC {\'\ocircumflex }i \IeC {\u a}n 1.}}{136}{figure.147}
+\contentsline {figure}{\numberline {148}{\ignorespaces \IeC {\DJ }o ppm dung d\IeC {\d i}ch mu\IeC {\'\ocircumflex }i \IeC {\u a}n 2.}}{137}{figure.148}
+\contentsline {figure}{\numberline {149}{\ignorespaces \IeC {\DJ }o ppm dung d\IeC {\d i}ch mu\IeC {\'\ocircumflex }i \IeC {\u a}n 3.}}{137}{figure.149}
+\contentsline {figure}{\numberline {150}{\ignorespaces K\IeC {\'\ecircumflex }t qu\IeC {\h a} \IeC {\dj }o ppm 1.}}{138}{figure.150}
+\contentsline {figure}{\numberline {151}{\ignorespaces K\IeC {\'\ecircumflex }t qu\IeC {\h a} \IeC {\dj }o ppm 2.}}{138}{figure.151}
+\contentsline {figure}{\numberline {152}{\ignorespaces D\IeC {\~\uhorn } li\IeC {\d \ecircumflex }u g\IeC {\h \uhorn }i l\IeC {\^e}n t\IeC {\`\uhorn } c\IeC {\h a}m bi\IeC {\'\ecircumflex }n.}}{140}{figure.152}

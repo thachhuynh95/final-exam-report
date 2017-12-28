@@ -195,7 +195,7 @@ Sự phát triển của công nghệ trong thời đại hiện nay đã  mang 
 
 \noindent Công nghệ thủy canh đã được nghiên cứu từ thế kỷ 17. Đến nay, công nghệ này đã hoàn thiện và hướng tới việc sản xuất ra những sản phẩm nông nghiệp sạch. Công nghệ thủy canh có thể áp dụng với quy mô lớn trong các nông trại hoặc với quy mô nhỏ trong các hộ gia đình. Nhóm đang hướng tới đối tượng là các hộ gia đình ở thành phố, nơi diện tích chật hẹp và không có đất để trồng trọt. Họ có thể tận dụng các khoảng không nhỏ trong nhà như sân thượng, lan can,… để đặt một giàn thủy canh nhỏ với năng suất cao, cung cấp nguồn nông sản sạch cho gia đình. Đồng thời hướng đến việc tự động hóa các công việc chăm sóc, người dùng không phải mất nhiều thời gian để chăm sóc cho cây trồng nhưng chúng vẫn có thể tự phát triển và cho năng suất cao.
 
-\noindent Trên thế giới hiện đã có những ứng dụng sử dụng IoT để tự động hóa hoàn toàn quy trình trồng rau sạch thủy canh nhà phố, trong khi ở Việt Nam còn khá mới mẻ. Với những yếu tố trên, nhóm đã hiện thực và phát triển Hệ thống thủy canh theo hướng IoT với mục đích tạo ra nông sản sạch, không ô nhiễm cho mọi người.
+\noindent Trên thế giới hiện đã có những ứng dụng sử dụng IoT để tự động hóa hoàn toàn quy trình trồng rau sạch thủy canh nhà phố, trong khi ở Việt Nam còn khá mới mẻ. Với những yếu tố trên, nhóm đã hiện thực và phát triển hệ thống hỗ trợ cho mô hình thủy canh theo hướng kết hợp IoT với mục đích giúp người dùng tạo ra nông sản sạch, không ô nhiễm.
 
 
 \subsection{Mục tiêu}
@@ -205,7 +205,7 @@ Sự phát triển của công nghệ trong thời đại hiện nay đã  mang 
 \item Tìm hiểu nắm vững các nên tảng, thư viện cũng như các công cụ để thực hiện dự án này.
 \item Áp dụng các kiến thức về thiết kế mềm, kĩ thuật lập trình vào dự án.
 \item Tổ chức dự án cho phép dễ dàng bảo trì, mở rộng.
-\item Tìm hiểu về Hệ thống thủy canh Hydroponics: 
+\item Tìm hiểu về hệ thống các mô hình thủy canh: 
 	\begin{itemize}
 	\item Tổng quan, khái niệm về thủy canh.
 	\item Các mô hình thủy canh và cách vận hành của từng mô hình.
@@ -248,11 +248,11 @@ Sự phát triển của công nghệ trong thời đại hiện nay đã  mang 
 
 \noindent Internet of Things - "Mạng lưới vạn vật kết nối Internet là một kịch bản của thế giới, khi mà mỗi đồ vật, con người được cung cấp một định danh của riêng mình, và tất cả có khả năng truyền tải, trao đổi thông tin, dữ liệu qua một mạng duy nhất mà không cần đến sự tương tác trực tiếp giữa người với người, hay người với máy tính"\cite{iot}. Tất cả mọi thứ được kết nối với nhau qua mạng Internet, người dùng có thể quản lý mọi thiết bị thông qua mạng bằng các thiết bị như PC, smartphone, tablet...Các thiết bị sẽ giao tiếp với nhau, hạn chế sự tác động của con người. Sự giao tiếp chủ yếu là việc thu thập, xử lý thông tin từ các thiết bị rồi tự đưa ra quyết định, hành động phù hợp với những thông tin thu thập được. Với sự phát triển của các thiết bị thông minh ngày càng gia tăng thì IoT được xem như tương lai của thế giới.
 
-\noindent Chúng ta có thể hình dung rằng mọi thiết bị trong hệ thống kết nối, hoạt động cùng với nhau. Khi ta bước gần về đến cửa nhà, cơ chế điều khiển sẽ tự động mở cửa từ xa, đèn cửa và hành lang được kích hoạt. Hệ thống điều hòa đang từ trạng thái chờ sẽ chuyển sang trạng thái hoạt động. Mọi thứ điều hoạt động một cách tự động, hài hòa. Đó chính là những gì IoT mang lại cho chúng ta.
+\noindent Chúng ta có thể hình dung rằng mọi thiết bị trong hệ thống kết nối, hoạt động cùng với nhau. Khi ta bước gần về đến cửa nhà, cơ chế điều khiển sẽ tự động mở cửa từ xa, đèn cửa và hành lang được kích hoạt. Hệ thống điều hòa đang từ trạng thái chờ sẽ chuyển sang trạng thái hoạt động. Mọi thứ điều hoạt động một cách tự động, hài hòa nhờ sự kết nối với nhau thông qua mạng Internet. Đó chính là những gì IoT mang lại cho chúng ta.
 
 \begin{figure}[H]
 \centering
-\includegraphics[scale=1]{hinh/IoT_intro.jpg}
+\includegraphics[scale=.7]{hinh/IoT_intro.jpg}
 \caption{Mô hình tương tác của mạng lưới thiết bị kết nối Internet\cite{iot}.}
 \end{figure}
 
@@ -260,7 +260,7 @@ Sự phát triển của công nghệ trong thời đại hiện nay đã  mang 
 
 \noindent "Điểm quan trọng của IoT đó là các đối tượng phải có thể được nhận biết và định dạng (identifiable)"\cite{iot}. Trong môi trường Internet việc truyền nhận thông tin cần thiết nhất là địa chỉ IP. Hiện tại địa chỉ IP phổ biến thường dùng là IPv4 (mỗi địa chỉ có 32 bit). Với sự phát triển và tăng nhanh về mặt số lượng của các thiết bị thông minh kết nối với Internet làm cho địa chỉ IPv4 ngày càng ít. Sự xuất hiện của địa chỉ IPv6 (mỗi địa chỉ có 128 bit) đã giải quyết vấn đề về việc định danh cho cái thiết bị tham gia vào mạng Internet. 
 
-\noindent Khi mọi đối tượng được đánh dấu sẽ làm cho việc quản lý trở nên dễ dàng hơn. Ta có thể đánh dấu bằng nhiều công nghệ khác nhau như RFID, mã vạch, NFC, mã QR... được kết nối thông qua WiFi, 3G, 4G, Bluetooth...
+\noindent Khi mọi đối tượng được định danh sẽ làm cho việc quản lý các đối tượng trong mạng IoT trở nên dễ dàng hơn.
 
 \subsubsection{Cấu trúc của hệ thống IoT\cite{cautruciot}}
 
@@ -268,35 +268,37 @@ Sự phát triển của công nghệ trong thời đại hiện nay đã  mang 
 \noindent Các cảm biến có chức năng thu thập các tín hiệu analog từ môi trường thông qua việc quét các thông số sang tín hiệu digital.
 
 \noindent \textbf{Xử lý cục bộ và lưu trữ}\\
-\noindent Dữ liệu được lưu trữ và xử lý cục bộ thông qua các vi điều khiển , board mạch nhúng. Xử lý các tín hiệu thông tin nhận được từ cảm biến. Các thiết bị phần cứng có khả năng giao tiếp theo các quy tắc đã được định sẵn. Chúng rất đa dạng tùy vào mục đích sử dụng.
+\noindent Dữ liệu được lưu trữ và xử lý cục bộ thông qua các vi điều khiển, board mạch nhúng. Xử lý các tín hiệu thông tin nhận được từ cảm biến. Các thiết bị phần cứng có khả năng giao tiếp theo các quy tắc đã được định sẵn. Chúng rất đa dạng tùy vào mục đích sử dụng.
 
 \noindent Vi điều khiển là những thiết bị nhỏ, dễ dàng kết nối, có thể lập trình, nhiều mã nguồn mở đơn giản. Tuy nhiên vì có kích thước nhỏ nên khả năng, tốc độ xử lý không cao, RAM chỉ khoảng 2KB đối với Arduino. Chúng không chạy hệ điều hành, phần mềm chạy trên đó được gọi là Firmware, giống như một chương trình. Đối với loại máy tính mini như Raspberry Pi có thể chạy hệ điều hành đồng nghĩa với việc sức mạnh và tốc độ xử lý cao hơn, mạnh mẽ hơn.
 
-\noindent Có nhiều thiết bị phát triển trong công nghệ IoT, tùy nhu cầu yếu tố mà chọn thiết bị cho phù hợp với mục đích, chi phí sử dụng. Một số thiết bị như: 	STM32, ARM, Arduino, ChipKIT...
+\noindent Có nhiều thiết bị được phát triển dành cho công nghệ IoT, tùy nhu cầu mà chọn thiết bị cho phù hợp với mục đích, chi phí sử dụng. Một số thiết bị như: STM32, ARM, Arduino, ChipKIT, v.v...
 
 \noindent \textbf{Network và Internet}\\
-\noindent Phần kết nối phần cứng kéo và gửi dữ liệu lên cloud để lưu trữ. Có 4 giao thức được sử dụng ở tầng này:
+\noindent Các thiết bị phần cứng thu thập dữ liệu cục bộ và đẩy dữ liệu lên cloud để lưu trữ. Những giao thức giao tiếp giữa thiết bị phần cứng và cloud thường được sử dụng ở tầng này:
 \begin{itemize}
 	\item CoAP (Constrained Application Protocol)
 	\item MQTT (Message Queuing Telemetry Transport)
 	\item HTTP (HyperText Transfer Protocol)
-	\item XMPP (Extensible Messaging and Presence Protocol )
+	\item XMPP (Extensible Messaging and Presence Protocol)
 \end{itemize}
 
 \noindent \textbf{Cloud (đám mây)}\\
-\noindent Nơi dữ liệu được thu thập, gồm hệ thống các máy chủ, hệ thống lưu trữ.
+\noindent Nơi dữ liệu được thu thập, bao gồm hệ thống các máy chủ, hệ thống lưu trữ.
 
 \subsubsection{Ứng dụng}
 
-\noindent IoT có ứng dụng rộng vô cùng, có thể kể ra một số thứ như sau:\\
-- Nhà thông minh.\\
-- Thành phố thông minh.\\
-- Xe hơi tự hành.\\
-- Vườn tự chăm sóc.\\
-- Máy bay không người lái.\\
-- Thiết bị theo dõi sức khỏe.\\
-- Hệ thống chiếu sáng tự động.\\
-- Chuỗi cung ứng thông minh.\\
+\noindent IoT có ứng dụng vô cùng rộng, trong rất nhiều lĩnh vực, có thể kể ra một số ứng dụng nổi bật hiện nay như sau:
+\begin{itemize}
+\item Nhà thông minh.
+\item Thành phố thông minh.
+\item Xe hơi tự hành.
+\item Vườn tự chăm sóc.
+\item Máy bay không người lái.
+\item Thiết bị theo dõi sức khỏe.
+\item Hệ thống chiếu sáng tự động.
+\item Chuỗi cung ứng thông minh.
+\end{itemize}
 
 \begin{figure}[H]
 	\centering
@@ -309,7 +311,7 @@ Sự phát triển của công nghệ trong thời đại hiện nay đã  mang 
 
 \noindent Thủy canh là một kỹ thuật trồng cây trong môi trường dung dịch dinh dưỡng, có thể hiểu là trồng cây trong nước, do có rất nhiều môi trường tổng hợp được sử dụng để trồng cây nên có thể định nghĩa thủy canh là "Trồng cây không sử dụng đất"\cite{thuycanh}, thay vào đó rễ được giữ trong các giá thể như xơ dừa, trấu, sỏi nhẹ, mút xốp… Đây là phương pháp dùng nước làm môi trường cung cấp đầy đủ các chất dinh dưỡng cần thiết cho sự phát triễn của cây. Ngoài ra vẫn đảm bảo các yếu tố như ánh sáng cho quá trình quang hợp, oxi cho quá trình hô hấp để cây phát triển tốt, năng suất cao. 
 
-\noindent Đối với phương pháp thủy canh có thể điều chỉnh nồng độ dinh dưỡng ít hay nhiều tùy vào từng giai đoạn phát triển của cây một cách nhanh chóng. Thủy canh thích hợp cho các khu vực có diện tích nhỏ hẹp, trật trội như sân thường, ban công nhà cửa thành phố… Khi dân số ngày càng tăng, diện tích đất đai bị thu hẹp thì kỹ thuật thủy canh sẽ mang lại lợi ích to lớn cho đời sống, kỹ thuật này không gây ô nhiễm môi trường là mục tiêu hàng đầu nâng cao chất lượng cuộc sống.
+\noindent Đối với phương pháp thủy canh có thể điều chỉnh nồng độ dinh dưỡng ít hay nhiều tùy vào từng giai đoạn phát triển của cây một cách nhanh chóng. Thủy canh thích hợp cho các khu vực có diện tích nhỏ hẹp, chật chội như sân thượng, ban công nhà cửa thành phố… Quá trình đô thị hóa, dân số ngày càng tăng, diện tích đất đai bị thu hẹp thì kỹ thuật thủy canh sẽ mang lại lợi ích to lớn cho đời sống, hơn thế nữa kỹ thuật này không gây ô nhiễm môi trường, tạo ra nông sản sạch, giúp chất lượng cuộc sống nâng cao.
 
 \subsubsection{Hệ thống dạng bấc (Wick System)}
 \noindent Hệ thống dạng bấc là dạng hệ thống đơn giản nhất, đây là hệ thống bị động. “Đặt một đầu của sợi bấc hút sao cho chạm vào phần rễ cây. Đầu kia của bấc chìm trong dung dịch dinh dưỡng”\cite{thuycanh}. Dung dịch dinh dưỡng và nước sẽ được hút thông qua các sợi bấc.
@@ -322,7 +324,7 @@ Sự phát triển của công nghệ trong thời đại hiện nay đã  mang 
 \end{figure}
 
 \subsubsection{Hệ thống thủy canh tĩnh (Water Culture)}
-\noindent Hệ thống thủy canh tĩnh gồm thùng nước chứa dung dịch dinh dưỡng, ”phần bệ giữ cây thường làm bằng chất dẻo nhẹ như xốp và đặt nổi ngay trên dung dịch dinh dưỡng”\cite{thuycanh}. Dùng máy bơm cung cấp khí và khối sủi bọt dung dịch dinh dưỡng , cung cấp oxi cho rễ cây. Hệ thống này thường được dùng phổ biến trong môi trường giảng dạy vì ít tốn kém, có thể tận dụng các vật chứa nước hoặc những bình chứa không rỉ khác.
+\noindent Hệ thống thủy canh tĩnh gồm thùng nước chứa dung dịch dinh dưỡng, ”phần bệ giữ cây thường làm bằng chất dẻo nhẹ như xốp và đặt nổi ngay trên dung dịch dinh dưỡng”\cite{thuycanh}. Dùng máy bơm cung cấp khí và khối sủi bọt dung dịch dinh dưỡng, cung cấp oxy cho rễ cây. Hệ thống này thường được dùng phổ biến trong môi trường giảng dạy vì ít tốn kém, có thể tận dụng các vật chứa nước hoặc những bình chứa không rỉ khác.
 
 \begin{figure}[H]
 	\centering
@@ -333,7 +335,7 @@ Sự phát triển của công nghệ trong thời đại hiện nay đã  mang 
 
 \subsubsection{Hệ thống ngập và rút định kỳ (EBB and Flow System)}
 
-\noindent Hệ thống ngập và rút định kì là làm khay trồng ngập tạm thời trong dung dịch dinh dưỡng sau đó rút dung dịch này trở lại vào bồn chứa. Hoạt động được thực hiện bởi máy bơm có kết nối với bộ đếm thời gian bật tắt máy bơm để dung dịch vào khay và trở lại bồn chứa theo chu kì. Tùy thuộc vào từng loại cây mà sẽ có chu kì ngập rút dài ngắn khác nhau.
+\noindent Hệ thống ngập và rút định kì hoạt động bằng cách làm khay trồng ngập trong dung dịch dinh dưỡng trong một khoảng thời gian, sau đó rút dung dịch này trở lại vào bồn chứa. Hoạt động được thực hiện bởi máy bơm có kết nối với bộ đếm thời gian bật tắt máy bơm để dung dịch vào khay và trở lại bồn chứa theo chu kì. Tùy thuộc vào từng loại cây mà sẽ có chu kì ngập rút dài ngắn khác nhau.
 
 \begin{figure}[H]
 	\centering
@@ -343,7 +345,7 @@ Sự phát triển của công nghệ trong thời đại hiện nay đã  mang 
 \end{figure}
 
 \subsubsection{Hệ thống nhỏ giọt (Drip System)}
-\noindent Hệ thống nhỏ giọt là hệ thống hoạt động bằng cách dùng máy bơm dung dịch lên nhỏ giọt trực tiếp vào các giá thể thông qua các đường ống dẫn, sau đó dung dịch dinh dưỡng dư sẽ quay trở lại vào bể chứa để chuẩn bị cho một chu kì mới. Hệ thống này hoạt động khá hiểu quả dựa vào việc tái sử dụng dung dịch dinh dưỡng dư, không bị lãng phí.
+\noindent Hệ thống nhỏ giọt là hệ thống hoạt động bằng cách dùng máy bơm dung dịch lên nhỏ giọt trực tiếp vào các giá thể thông qua các đường ống dẫn, sau đó dung dịch dinh dưỡng dư sau khi thấm qua các giá thể sẽ quay trở lại vào bể chứa để chuẩn bị được bơm lên lần kế tiếp. Quá trình này được tiếp diễn liên tục. Hệ thống này hoạt động khá hiểu quả dựa vào việc tái sử dụng dung dịch dinh dưỡng dư, không bị lãng phí.
 
 \begin{figure}[H]
 	\centering
@@ -354,7 +356,7 @@ Sự phát triển của công nghệ trong thời đại hiện nay đã  mang 
 
 
 \subsubsection{Hệ thống màng dinh dưỡng NFT (Nutrient Film Technique)}
-\noindent Hệ thống màng dinh dưỡng NFT là hệ thống hoạt động bằng việc dùng máy bơm liên tục dung dịch dinh dưỡng vào khay trồng để chảy qua rễ rồi trở lại bể chứa, hoạt động này diễn ra liên tục. Đối với kỹ thuật này thì thường không sử dụng thêm giá thể, giúp tiết kiệm về mặt chi phí giá thể.
+\noindent Hệ thống màng dinh dưỡng NFT là hệ thống hoạt động bằng việc dùng máy bơm liên tục dung dịch dinh dưỡng vào khay trồng để chảy qua rễ rồi trở lại bể chứa, quá trình này được diễn ra liên tục. Đối với kỹ thuật này thì thường không sử dụng thêm giá thể, giúp tiết kiệm về mặt chi phí giá thể.
 
 
 \begin{figure}[H]
@@ -367,7 +369,7 @@ Sự phát triển của công nghệ trong thời đại hiện nay đã  mang 
 
 \subsubsection{Khí canh (Aeroponics)}
 
-\noindent Hệ thống khí canh hoạt động theo phương pháp tạo sương dung dịch dinh dưỡng để phun rễ cây được phơi trong không khí. Hoạt động tạo sương được thực hiện định kì mỗi vài phút. Đối với kỹ thuật này cây được cung cấp đầy đủ dinh dưỡng, nước, không khí cho sự phát triển của cây."Hiện nay khí canh được ứng dụng trong mô hình trồng khoai tây."\cite{thuycanh}
+\noindent Hệ thống khí canh hoạt động bằng cách phun sương dung dịch dinh dưỡng vào rễ cây được phơi trong không khí. Quá trình tạo sương được thực hiện định kì mỗi vài phút. Đối với kỹ thuật này cây được cung cấp đầy đủ dinh dưỡng, nước và không khí. "Hiện nay khí canh thường được ứng dụng trong mô hình trồng khoai tây."\cite{thuycanh}
 
 
 \begin{figure}[H]
@@ -381,7 +383,7 @@ Sự phát triển của công nghệ trong thời đại hiện nay đã  mang 
 \subsubsection{Các thông số trong dung dịch thủy canh, thiết bị đo ppm}
 
 \begin{itemize}
-\item Độ dẫn điện EC (electro-conductivity) (tương đối) là ""chỉ số diễn tả tổng nồng độ ion hòa tan trong dung dịch. Độ dẫn điện có thể được thể hiện bằng một số đơn vị khác nhau, nhưng đơn vị tiêu biểu được dùng để đo lường EC là millisiemens trên centimet (mS / cm)"\cite{ec}. Chỉ số EC không diễn tả nồng độ của từng chất trong dung dịch đồng thời cũng không thể hiện mức độ cân bằng của các chất dinh dưỡng trong dung dịch. EC là thước đo độ dẫn điện từ hai đầu dò 1cm.\\
+\item Độ dẫn điện EC (electro-conductivity) (tương đối) là "chỉ số diễn tả tổng nồng độ ion hòa tan trong dung dịch. Độ dẫn điện có thể được thể hiện bằng một số đơn vị khác nhau, nhưng đơn vị tiêu biểu được dùng để đo lường EC là millisiemens trên centimet (mS / cm)"\cite{ec}. Chỉ số EC không diễn tả nồng độ của từng chất trong dung dịch đồng thời cũng không thể hiện mức độ cân bằng của các chất dinh dưỡng trong dung dịch. EC là thước đo độ dẫn điện từ hai đầu dò 1cm.\\
 Trong suốt quá trình tăng trưởng, cây hấp thu khoáng chất mà chúng cần, do vậy duy trì EC ở một mức ổn định là rất quan trọng. Nếu dung dịch có chỉ số EC cao thì sự hấp thu nước của cây diễn ra nhanh hơn sự hấp thu khoáng chất. Điều này làm nồng độ dung dịch tăng cao và gây ngộ độc cho cây. Khi đó ta phải bổ sung thêm nước vào môi trường. Ngược lại, nếu EC thấp, cây sẽ hấp thu khoáng chất nhanh hơn hấp thu nước. Khi đó, nồng độ dung dịch giảm mạnh, cây sẽ không được cung cấp đầy đủ khoáng chất, chậm lớn và phát triển kém.
 
 \item Chỉ số TDS (Total Dissolved Solids) là "chỉ số đo tổng lượng chất rắn hoà tan, tổng số các ion mang điện tích bao gồm khoáng chất, muối hoặc kim loại tồn tại trong một khối lượng nước nhất định. TDS thường được biểu thị bằng hàm số ml/L hoặc ppm (Parts Per Million). 1 ppm tương ứng với 1mg chất rắn hòa tan trong một lít nước. Hầu hết nước máy sẽ có chỉ số PPM rơi vào khoảng từ 200 – 400ppm"\cite{ec}. Chỉ số TDS cũng ảnh hưởng lớn đến sự phát triển của cây: Nếu TDS lên quá cao, nồng độ dung dịch vượt mức cho phép sẽ gây ra hiện tượng ngộ độc cho cây. Ngược lại, khi chỉ số TDS xuống thấp, dung dịch thủy canh sẽ không đảm bảo cung cấp đủ chất dinh dưỡng cho cây trồng.
@@ -401,7 +403,7 @@ Giới hạn với cây trồng:
 \end{figure}
 
 \item Tại sao lại dùng thiết bị này?\\
-Nếu EC / PPM chỉ là đo điện dẫn (hoặc kháng) thì tại sao không sử dụng một đồng hồ volt / ohm trực tiếp? Bởi chúng đi qua dòng điện DC thông qua các đầu dò và bạn không thể đo độ dẫn của muối với dòng điện DC vì nó sẽ tách các phân tử ra ngoài, và vì các phân tử là điện dẫn điện,các phần tử điện sẽ thay đổi liên tục và sẽ không thu được kết quả gì. Bằng cách sử dụng một tín hiệu AC,với tần số đủ cao (> 1khz) các phân tử không có thời gian để di chuyển ra ngoài trước khi chúng được kéo theo hướng ngược lại.\\
+Nếu EC / PPM chỉ là đo điện dẫn (hoặc kháng) thì tại sao không sử dụng một đồng hồ volt / ohm trực tiếp? Bởi chúng đi qua dòng điện DC thông qua các đầu dò và bạn không thể đo độ dẫn của muối với dòng điện DC vì nó sẽ tách các phân tử ra ngoài, và vì các phân tử là điện dẫn điện, các phần tử điện sẽ thay đổi liên tục và sẽ không thu được kết quả gì. Bằng cách sử dụng một tín hiệu AC,với tần số đủ cao (> 1khz) các phân tử không có thời gian để di chuyển ra ngoài trước khi chúng được kéo theo hướng ngược lại.\\
 Các thành phần ion:
 \begin{figure}[H]
 	\centering
@@ -430,24 +432,24 @@ Trường hợp sử dụng dòng DC:
 \end{itemize}
 
 \subsection{Hệ thống thủy canh với IoT}
-\noindent Việc kết hợp thủy canh và IoT ở nước ngoài đã trở nên khá phổ biến trong khi ở Việt Nam vẫn còn mới mẻ. Việc kết hợp IoT vào thủy canh giúp người trồng rau kiểm soát một cách dễ dàng tình trạng vườn trồng của mình thông qua số liệu về nhiệt độ, độ ẩm, pH ... mà các cảm biến gửi về qua mạng Internet. Đồng thời người dùng có thể chăm sóc vườn rau của mình mà không cần thiết phải tiếp xúc với nó. Tất cả mọi hoạt động tưới tiêu, bơm oxy, cung cấp ánh sáng, phân bón,... đều được tự động hóa theo quy trình có sẵn. Người dùng chỉ việc thiết lập thông số phù hợp cho từng cây trồng trong mỗi mùa vụ và chờ ngày thu hoạch. Kiểm soát thông qua mạng Internet cho phép người dùng quản lý vườn trồng của mình ở bất kỳ đâu, trong mọi thời điểm.  Thủy canh kết hợp với IoT là xu hướng mới và là tương lai của nông nghiệp đô thị nhờ tính tiện ích của nó.
+\noindent Việc kết hợp thủy canh và IoT ở nước ngoài đã trở nên khá phổ biến trong khi ở Việt Nam vẫn còn mới mẻ. Việc kết hợp IoT vào thủy canh giúp người sử dụng mô hình có thể kiểm soát một cách dễ dàng tình trạng của vườn trồng thủy canh thông qua số liệu về nhiệt độ, độ ẩm, pH, v.v... mà các cảm biến gửi về qua mạng Internet. Đồng thời người dùng có thể chăm sóc vườn rau của mình mà không cần thiết phải tiếp xúc với nó nhờ các hoạt động như tưới nước, bơm oxy, cung cấp ánh sáng, quạt, v.v... đều được thiết lập theo lịch trình thông qua các ứng dụng. Người dùng chỉ việc thiết lập thông số lịch trình phù hợp cho từng cây trồng trong mỗi mùa vụ và chờ ngày thu hoạch. Kiểm soát thông qua mạng Internet cho phép người dùng quản lý vườn trồng của mình ở bất kỳ đâu, trong mọi thời điểm.  Chính vì vậy mà thủy canh kết hợp với IoT là xu hướng mới và là tương lai của nông nghiệp đô thị nhờ tính tiện ích của nó.
 
 \subsection{Các hệ thống thủy canh tự động hiện có trên thị trường}
-\noindent Theo thông tin nhóm nghiên cứu thì hiện nay trên thị trường chưa có nhiều hệ thống thủy canh tự động mang tính thương mại. Một số công ty start up nổi tiếng trong lĩnh vực này như Hachi, Lisado nhưng những hệ thống này có các đặc điểm chung:
+\noindent Theo quá trình nghiên cứu của nhóm thì hiện nay trên thị trường chưa có nhiều hệ thống thủy canh tự động mang tính thương mại. Một số công ty start-up nổi tiếng trong lĩnh vực này như Hachi, Lisado nhưng những hệ thống này có các đặc điểm chung:
 	\begin{itemize}
 		\item Mới chỉ phát triển ở khu vực phía Bắc.
 		\item Chỉ hỗ trợ nền tảng di động, chưa hỗ trợ môi trường web trên PC hay laptop.
-		\item Chưa có một hệ thống forum để cộng đồng có thể chia sẻ kinh nghiệm với nhau.
+		\item Chưa có một hệ thống để cộng đồng có thể chia sẻ kinh nghiệm về thủy canh với nhau.
 		\item Chưa hỗ trợ tự động đo nồng độ dinh dưỡng ppm.
+		\item Chưa hỗ trợ tính năng cài đặt lịch trình tự động cho các hoạt động chăm sóc vườn.
 	\end{itemize} 
-\noindent Nhóm đang hướng tới sự khác biệt bằng cách tạo ra một hệ thống hỗ trợ các tính năng nói trên.
+\noindent Sản phẩm của nhóm đang hướng tới sự khác biệt bằng cách tạo ra một hệ thống hỗ trợ các tính năng nói trên.
 \subsection{Giới thiệu về các công nghệ được sử dụng}
 
-\subsubsection{RESTful web service}
-\noindent REST (Representational State Transfer)  là "một kiểu kiến trúc được sử dụng trong việc giao tiếp giữa các máy tính (máy tính cá nhân và máy chủ của trang web) trong việc quản lý các tài nguyên trên internet"\cite{restful}. REST là một kiến trúc thống nhất giúp website có thể dễ dàng quản lý tài nguyên, được sử dụng nhiều trong việc phát triển các ứng dụng Web Services sử dụng giao thức HTTP trong giao tiếp\\
+\subsubsection{RESTful web service \cite{restful}}
+\noindent REST (Representational State Transfer) là một kiến trúc giao tiếp giữa client và server giúp hệ thống server có thể dễ dàng quản lý tài nguyên, được sử dụng nhiều trong việc phát triển các ứng dụng Web Services sử dụng giao thức HTTP.\\
 \noindent Một kiến trúc REST thường gồm một server cung cấp các API truy xuất tài nguyên và client truy xuất, chỉnh sửa các tài nguyên đó thông qua giao thức HTTP.\\
-
-\textbf{Các phương thức HTTP được sử dụng:}
+Các phương thức HTTP được sử dụng:
 \begin{itemize}
 \item POST: sử dụng khi tạo một tài nguyên mới.
 \item GET: dùng để truy xuất tài nguyên.
@@ -455,8 +457,8 @@ Trường hợp sử dụng dòng DC:
 \item DELETE: dùng để xóa bỏ tài nguyên.
 \end{itemize}
 \textbf{JSON (Javascript Object Notation)}\\
- Trong ứng dụng mà nhóm hiện thực sử dụng JSON để trao đổi dữ liệu. "JSON là 1 định dạng hoán vị dữ liệu nhanh. Chúng là cơ sở dựa trên tập hợp của ngôn ngữ lập trình JavaScript, tiêu chuẩn ECMA-262 phiên bản 3 - tháng 12 năm 1999"\cite{json}.\\
- JSON có cấu trúc đơn giản, dễ sử dụng nên hiện nay nó trở nên rất phổ biến. Nó là "tập hợp của các cặp tên và giá trị name-value, tập hợp các giá trị đã được sắp xếp"\cite{json}.\\
+ Trong hệ thống mà nhóm hiện thực sử dụng cấu trúc JSON để trao đổi dữ liệu. "JSON là 1 định dạng hoán vị dữ liệu nhanh. Chúng là cơ sở dựa trên tập hợp của ngôn ngữ lập trình JavaScript, tiêu chuẩn ECMA-262 phiên bản 3 - tháng 12 năm 1999"\cite{json}.\\
+ JSON có cấu trúc đơn giản, dễ sử dụng nên hiện nay nó trở nên rất phổ biến. Cấu trúc một JSON bao gồm nhiều cặp tên và giá trị đi kèm với nhau.
  JSON có 5 dạng dữ liệu chính:
 \begin{itemize}
 	\item Number: dạng số gồm số nguyên và số thực.
@@ -484,7 +486,7 @@ Trường hợp sử dụng dòng DC:
 
 \subsubsection{Nodejs}
 \noindent Nodejs là "một phần mềm mã nguồn mở được viết dựa trên ngôn ngữ JavaScript cho phép lập trình viên có thể xây dựng các ứng dụng chạy trên máy chủ. Phiên bản đầu tiên của Nodejs được cho ra mắt vào năm 2009"\cite{nodejs}.\\
-Nodejs là mã nguồn mở, phát triển trên nhiều nền tảng, chạy trên hệ điều hành Window, Linux... Nó cung cấp cho ta các module đa dạng, đơn giản hóa sự phát triển của các ứng dụng web.
+Nodejs là mã nguồn mở, được phát triển trên nhiều nền tảng, chạy trên hệ điều hành như Window, Linux, v.v...  hỗ trợ cung cấp các module đa dạng, giúp phát triển của ứng dụng web một cách đơn giản và dễ dàng.
 
 \begin{figure}[H]
 	\centering
@@ -493,20 +495,20 @@ Nodejs là mã nguồn mở, phát triển trên nhiều nền tảng, chạy tr
 	\label{fig:nodejs}
 \end{figure}
 
-\noindent Nodejs đang rất được ưa chuộng bởi tốc độ chạy rất nhanh của nó. Sở dĩ Nodejs chạy rất nhanh vì nó thực hiện cơ chế non-blocking I/O và asynchronous (bất đồng bộ). Khi một request đến, nó không dừng lại chờ cho request đó xử lý xong mà vòng lặp event loop sẽ tiếp nhận các request liên tục và xử lý chúng liên tục. Khi một request xử lý xong, hàm callback sẽ được gọi để trả về kết quả cho client hoặc thực hiện một tác vụ nào đó. Như vậy các request sẽ được xử lý song song với nhau, tiết kiệm được rất nhiều thời gian. Nhưng đây cũng là một điểm khó đòi hỏi người lập trình phải quản lý chặt chẽ thứ tự thực hiện các hành động vì không phải lúc nào các tác vụ cũng chạy song song nhau, có những tác vụ phải thực hiện theo tuần tự.
+\noindent Nodejs đang được sử dụng rộng rãi bởi tốc độ chạy rất nhanh của nó. Sở dĩ Nodejs chạy rất nhanh vì nó thực hiện cơ chế non-blocking I/O và asynchronous (bất đồng bộ). Khi một request đến, nó không dừng lại chờ cho request đó xử lý xong mà vòng lặp event loop sẽ tiếp nhận các request liên tục và xử lý chúng liên tục. Khi một request xử lý xong, hàm callback sẽ được gọi để trả về kết quả cho client hoặc thực hiện một tác vụ nào đó. Như vậy các request sẽ được xử lý song song với nhau, tiết kiệm được rất nhiều thời gian. Nhưng đây cũng là một điểm khó đòi hỏi người lập trình phải quản lý chặt chẽ thứ tự thực hiện các hành động vì không phải lúc nào các tác vụ cũng chạy song song nhau, có những tác vụ phải thực hiện theo tuần tự.
 
 \subsubsection{Framework Expressjs}
-\noindent Expressjs là một framework có thể coi là nhỏ gọn và đơn giản nhất của Nodejs. Expressjs cung cấp cấu trúc đơn giản nhất của một dự án Nodejs, giúp chúng ta có thể dựa trên đó phát triển một cách nhanh chóng một server RESTful API và có thể dễ dàng mở rộng nó.
+\noindent Expressjs là một framework của Nodejs. Expressjs cung cấp cấu trúc đơn giản nhất của một dự án Nodejs (một khung sườn), giúp chúng ta có thể dựa trên đó phát triển một cách nhanh chóng một server RESTful API và có thể dễ dàng từ đó mở rộng nó.
 
 \subsubsection{Sequelizejs}
-\noindent Sequelize là một thư viện ORM dành cho Node.js. Nó hỗ trợ truy cập một cách dễ dàng đến PostgreSQL, MySQL, MariaDB, SQLite và MSSQL  …\\
- ORM (Object Relational Mapping) là một kỹ thuật lập trình để ánh xạ dữ liệu giữa các CSDL quan hệ và đối tượng trong các ngôn ngữ lập trình. Trong đó, các đối tượng ánh xạ với các bảng, các quan hệ của đối tượng ánh xạ với các ràng buộc liên quan giữa các bảng. Sequelizejs sẽ làm công việc này, nó giúp chúng ta gọi các hàm tương ứng thay vì viết những câu truy vấn bằng ngôn ngữ SQL. Đây là một module rất tiện lợi cho người lập trình web.
+\noindent Sequelize là một thư viện ORM dành cho Node.js. Nó hỗ trợ truy cập một cách dễ dàng đến PostgreSQL, MySQL, MariaDB, SQLite và MSSQL, v.v...\\
+ ORM (Object Relational Mapping) là một kỹ thuật lập trình để ánh xạ dữ liệu giữa các CSDL quan hệ và đối tượng trong các ngôn ngữ lập trình. Trong đó, các đối tượng ánh xạ với các bảng, các quan hệ của đối tượng ánh xạ với các ràng buộc liên quan giữa các bảng. Sequelizejs sẽ giúp chúng ta làm công việc này, nó hỗ trợ các hàm tương ứng thay vì phải viết những câu truy vấn bằng ngôn ngữ SQL. Đây là một module rất tiện lợi cho người lập trình web.
  
 \subsubsection{Angularjs}
 \noindent Angular là "một bộ Javascript Framework rất mạnh và thường được sử dụng để xây dựng project Single Page Application (SPA)"\cite{angular}.\\
 Ưu điểm của Angularjs:
 \begin{itemize}
-	\item Phát triển dự trên Javascript
+	\item Phát triển dự trên Javascript.
 	\item Tạo các ứng dụng client-side theo mô hình MVC.
 	\item Khả năng tương thích cao, tự động xử lý mã javascript để phù hợp vứi mỗi trình duyệt.
 	\item Mã nguồn mở, miễn phí hoàn toàn và được sủ dụng rộng rãi.
@@ -515,7 +517,7 @@ Nodejs là mã nguồn mở, phát triển trên nhiều nền tảng, chạy tr
 \noindent Single page application là một kiểu ứng dụng web mà trong đó, công việc xử lý các thao tác của người dùng đều diễn ra trên một trang duy nhất. Người dùng sẽ có cảm giác trang web hoạt động nhanh hơn do hạn chế tối đa thao tác chuyển trang hoặc tải lại trang.
 
 \subsubsection{Angular 2}
-\noindent Angular 2 là một framework để xây dựng các ứng dụng web và ứng dụng di động phía client. Angular 2 ra đời là một bước cải tiến so với Angular 1, nó đưa ra khái niệm "Component", hầu hết các thành phần trong ứng dụng đều quy về Component làm cho ứng dụng trở nên dễ quản lý và dễ phát triển hơn. Angular 2 cũng sử dụng Typescript thay vì Javascript như Angular 1. Điều đó có nghĩa là Angular 2 tận dụng được những ưu điểm của ES6 như class, đồng thời giúp cho những người đã quen với các ngôn ngữ ràng buộc kiểu như Java dễ dàng tiếp cận hơn.
+\noindent Angular 2 là một framework để xây dựng các ứng dụng web và ứng dụng di động phía client. Angular 2 ra đời là một bước cải tiến so với Angular 1, nó đưa ra khái niệm "Component", hầu hết các thành phần trong ứng dụng đều quy về Component làm cho ứng dụng trở nên dễ quản lý và dễ phát triển hơn. Angular 2 cũng sử dụng ngôn ngữ Typescript thay vì Javascript như Angular 1. Điều đó có nghĩa là Angular 2 tận dụng được những ưu điểm của ES6 như class, đồng thời giúp cho những người đã quen với các ngôn ngữ kiểu như Java dễ dàng tiếp cận hơn.
 
 \subsubsection{Framework Ionic 2}
 \noindent Ionic là "một framework dùng để xây dựng các ứng dụng di động bằng cách sử dụng HTML, CSS, và JavaScript"\cite{ionic}. Nó cho phép gọi các API để tạo ra các ứng dung di động đầy đủ tính năng một cách dễ dàng.
@@ -523,11 +525,10 @@ Ionic được xây dựng trên Cordova - framework ứng dụng đa nền tả
 Điểm cải tiến so với phiên bản 1 là Ionic 2 sử dụng Angular 2 để phát triển các ứng dụng của mình.
 
 \subsubsection{Typescript}
-\noindent TypeScript là một dự án mã nguồn mở miễn phí hiện được phát triển và bảo trì bởi Microsoft. "Nó là tập cha của JavaScript, với các bổ sung các tuỳ chọn kiểu tĩnh và lớp trên cơ sở lập trình hướng đối tượng cho ngôn ngữ này"\cite{typescript}. TypeScript có thể sử dụng để phát triển ứng dụng chạy phía client, hay phía server (Node.js)  
-TypeScript được thiết kế để phát triển ứng dụng lớn và được biến đổi - biên dịch sang JavaScript. Vì TypeScript là tập cha của JavaScript nên bất kì chương trình JavaScript nào đã có cũng đều là chương trình TypeScript hợp lệ.
+\noindent TypeScript là một dự án mã nguồn mở miễn phí hiện được phát triển và bảo trì bởi Microsoft. "Nó là tập cha của JavaScript, với các bổ sung các tuỳ chọn kiểu tĩnh và lớp trên cơ sở lập trình hướng đối tượng cho ngôn ngữ này"\cite{typescript}. TypeScript có thể sử dụng để phát triển ứng dụng chạy phía client, hay phía server (Node.js). TypeScript là tập cha của JavaScript nên bất kì chương trình JavaScript nào đã có cũng đều là chương trình TypeScript hợp lệ.
   
 \subsubsection{JWT}
-\noindent JSON Web Token (JWT) là "một tiêu chuẩn mở (RFC 7519) định nghĩa cách thức truyền tin an toàn giữa các thành viên bằng 1 đối tượng JSON. Thông tin này có thể được xác thực và đánh dấu tin cậy nhờ vào "chữ ký" của nó. Phần chữ ký của JWT sẽ được mã hóa bằng HMAC hoặc RSA"\cite{jwt}.
+\noindent JSON Web Token (JWT) là "một tiêu chuẩn mở (RFC 7519) định nghĩa cách thức truyền dữ liệu an toàn giữa các thành phần trong hệ thống thông qua 1 đối tượng JSON. Các dữ liệu này có thể được xác thực độ tin cậy nhờ vào "chữ ký" của nó. Phần chữ ký của JWT sẽ được mã hóa bằng HMAC hoặc RSA"\cite{jwt}.
 
 \begin{figure}[H]
 	\centering
@@ -545,9 +546,9 @@ Header bao gồm hai phần chính: loại token (mặc định là JWT - Thông
 \{ "alg": "HS256", "typ": "JWT" \} 
 \end{center}
 
-\item Payload 
+\item Payload\\ 
 Payload chứa các claims. Claims là một các biểu thức về một thực thể (chẳng hạn user) và một số metadata phụ trợ. Có 3 loại claims thường gặp trong Payload: reserved, public và private claims. 
-\item Signature 
+\item Signature\\ 
 Chữ ký Signature trong JWT là một chuỗi được mã hóa bởi header, payload cùng với một chuỗi bí mật theo nguyên tắc sau: 
 \begin{center}
 HMACSHA256(  base64UrlEncode(header) + "." +  base64UrlEncode(payload),  secret) 
@@ -557,14 +558,14 @@ Do bản thân Signature đã bao gồm cả header và payload nên Signature c
 \end{itemize}
 
 \subsubsection{Postgresql}
-\noindent PostgreSQL là "một hệ quản trị cơ sở dữ liệu quan hệ và đối tượng dựa trên POSTGRES"\cite{sql}. Hệ quản trị cơ sở dữ liệu này được kiểm chứng và tạo được lòng tin với người sử dụng về độ an toàn dữ liệu, đúng đắn, bảo mật. Nó có thể chạy trên các hệ điều hành như Linux, Unix, Window. \\
-Với việc tuân thủ các tiêu chuẩn của hệ quản trị cơ sở dữ liệu, nó có các tính năng phức tạp như kiểm soát truy cập đồng thời nhiều phiên bản, sao chép không đồng bộ, khôi phục dữ liệu tại từng thời điểm... Ngoài ra hệ quản trị này được sử dụng thông qua giao diện các ngôn ngữ C/C++, Python, Ruby...
+\noindent PostgreSQL là một hệ quản trị cơ sở dữ liệu quan hệ. Hệ quản trị cơ sở dữ liệu này đã được kiểm chứng và được sử dụng rộng rãi nhờ độ an toàn dữ liệu, đúng đắn, bảo mật. Nó có thể chạy trên các hệ điều hành khác nhau như Linux, Unix, Window. \\
+Với việc tuân thủ các tiêu chuẩn của hệ quản trị cơ sở dữ liệu, nó có các tính năng phức tạp như kiểm soát truy cập đồng thời nhiều phiên bản, sao chép không đồng bộ, khôi phục dữ liệu tại từng thời điểm\cite{sql}.
 
 \subsubsection{NodeBB}
-\noindent NodeBB là một nền tảng diễn đàn thế hệ mới sử dụng công nghệ web sockets để có thể tương tác ngay lập tức và thông báo thời gian thực. NodeBB có nhiều tính năng hiện đại và có một cộng đồng phát triển khá lớn. Nhóm đã sử dụng NodeBB để xây dựng diễn đàn trao đổi thông tin cho người dùng trong hệ thống. 
+\noindent NodeBB là một nền tảng diễn đàn mã nguồn mở thế hệ mới. NodeBB có nhiều tính năng hiện đại và có một cộng đồng hỗ trợ phát triển khá lớn, hỗ trợ xây dựng lên diễn đàn một cách nhanh chóng. Nhóm đã sử dụng framework NodeBB để xây dựng diễn đàn kết hợp với ứng dụng web để tạo nơi trao đổi thông tin cho người dùng trong hệ thống. 
 
 \subsubsection{Git}
-\noindent Git là một hệ thống quản lý những tập tin trên máy tính, các phiên bản phân tán, mã nguồn. Trên Git lưu lại lịch sử quá trình thay đổi tại các thời điểm nên tiện lợi trong việc kiểm soát quản lý tài nguyên.Ngoài ra còn cho biết ai là tác giả của mỗi lần thay đổi tài nguyên, thông báo lỗi khi tập tin bị ghi đè lên nhau hay tạo ra một nhánh mới với mục đích sử dụng khác những vẫn giữ được tài nguyên ban đầu.\\ 
+\noindent Git là một hệ thống quản lý những tập tin trên máy tính, các phiên bản phân tán, mã nguồn (gọi là tài nguyên). Git sẽ lưu lại lịch sử quá trình thay đổi tại các thời điểm nên tiện lợi trong việc kiểm soát quản lý tài nguyên. Ngoài ra nó còn cho biết ai là tác giả của mỗi lần thay đổi tài nguyên, thông báo lỗi khi tập tin bị ghi đè lên nhau bởi nhiều người hay tạo ra một nhánh mới với mục đích sử dụng khác những vẫn giữ được tài nguyên ban đầu.\\ 
 Ưu điểm:
 \begin{itemize}
 \item Bảo mật, an toàn.
@@ -572,7 +573,7 @@ Với việc tuân thủ các tiêu chuẩn của hệ quản trị cơ sở d�
 \item Dễ sử dụng, tăng hiệu quả trong công việc.
 \end{itemize}
 
-Đường dẫn mã nguồn của hệ thống:
+\noindent Nhóm sử dụng Git và GitLab là những server git miễn phí để quản lý mã nguồn của hệ thống. Đường dẫn các mã nguồn của hệ thống:
 \begin{itemize}
 \item Mã nguồn web server: \url{https://github.com/bathach95/hydroponic}
 \item Mã nguồn mobile application: \url{https://github.com/bathach95/HydroponicMobileApp}
@@ -582,7 +583,7 @@ Với việc tuân thủ các tiêu chuẩn của hệ quản trị cơ sở d�
 \subsubsection{XXTEA}
 \noindent XXTEA là một thuật toán mã hóa nâng cấp của XTEA.\\
 \noindent XTEA (Extended Tiny Encryption Aglorithm), "được thiết kế bởi David Wheeler and Roger Needham của phòng thí nghiệm máy tính Cambridge. Giải thuật này không hề được đăng ký bản quyền do đó bất kỳ ai cũng có thể sử dụng nó một cách tự do"\cite{xxtea}.\\ 
-\noindent XTEA là dạng mã hóa mật mã khối, kích thước khối 64 bit, khóa bí mật 128 bit. XTEA là một thuật toán mã hóa đơn giản, dành cho các thiết bị phần cứng yếu, do đó nhóm đã sử dụng để mã hóa thông tin truyền tải giữa board điều khiển và server.
+\noindent XTEA là dạng mã hóa mật mã theo khối, kích thước khối 64 bit, khóa bí mật 128 bit. Nó là một thuật toán mã hóa đơn giản, dành cho các thiết bị phần cứng yếu, do đó nhóm đã sử dụng để mã hóa thông tin truyền tải giữa board điều khiển và server.
 
 \subsubsection{ARM}
 \noindent Cấu trúc ARM (viết tắt từ tên gốc là Advanced RISC Machine) là một loại cấu trúc vi xử lí kiểu RSIC được sử dụng rộng rãi trong các thiết kế nhúng. Do có đặc điểm tiết kiệm năng lượng, các bộ cpu ARM chiếm ưu thế trong các sản phẩm điện tử di động, mà với các sản phẩm này việc tiêu tán công suất thấp là một mục tiêu thiết kế quan trọng hàng đầu [14].\\
@@ -603,16 +604,15 @@ Với việc tuân thủ các tiêu chuẩn của hệ quản trị cơ sở d�
 \end{itemize}
 
 \subsubsection{MQTT}
-\noindent MQTT (Message Queuing Telemetry Transport) là một giao thức gởi dạng publish/subscribe sử dụng cho các thiết bị Internet of Things với băng thông thấp, độ tin cậy cao và khả năng được sử dụng trong mạng lưới không ổn định.
-Bởi vì giao thức này sử dụng băng thông thấp trong môi trường có độ trễ cao nên nó là một giao thức lý tưởng cho các ứng dụng M2M (Machine to Machine).\\
- MQTT có mô hình client/server, nơi mà mỗi cảm biến là một khách hàng (client) và kết nối đến một máy chủ, có thể hiểu như một nhà môi giới (broker), thông qua giao thức TCP (Transmission Control Protocol).\\
- MQTT là giao thức định hướng bản tin. Mỗi bản tin là một đoạn rời rạc của tín hiệu và broker không thể nhìn thấy.
-Mỗi bản tin được publish một địa chỉ, có thể hiểu như một kênh. Client đăng kí vào một vài kênh để nhận/gửi dữ liệu, gọi là subscribe. Client có thể subscribe vào nhiều kênh. Mỗi client sẽ nhận được dữ liệu khi bất kì trạm nào khác gửi dữ liệu vào kênh đã đăng kí. Khi một client gửi một bản tin đến một kênh vào đó, gọi là publish.
+\noindent MQTT (Message Queuing Telemetry Transport) là một giao thức thường được sử dụng cho các thiết bị Internet of Things.\\
+MQTT hoạt động theo mô hình gồm có các client kết nối và truyền tải dữ liệu với nhau thông qua một thành phần nằm ở giữa gọi là broker, thông qua giao thức TCP (Transmission Control Protocol).\\
+Dữ liệu từ một client sẽ được gửi (publish) vào một địa chỉ trong broker (một kênh trong broker). Các client khác nếu muốn nhận dữ liệu từ client này thì đăng ký (subscribe) vào kênh mà client đó gửi để nhận dữ liệu. Một client có thể subscribe vào nhiều kênh khác nhau. Mỗi client đã đăng ký vào một kênh sẽ nhận được dữ liệu khi bất kì client nào khác gửi dữ liệu vào kênh đó.\\
+Trong hệ thống được xây dựng, nhóm sử dụng giao thức MQTT để kết nối board và server. Với board và server đóng vai trò client và broker (mã nguồn mở) được dựng trên một máy cloud.
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[height=7cm,width=11cm]{hinh/mqtt.png}
-	\caption{Mô tả các thiết bị liên lạc với nhau thông qua MQTT broker\cite{mqtt}.}
+	\caption{Một ví dụ mô tả các thiết bị liên lạc với nhau thông qua MQTT broker\cite{mqtt}.}
 	\label{fig:mqtt}
 \end{figure}
 
@@ -2002,7 +2002,7 @@ UC\_CROP\_005 & Cài đặt ngưỡng dữ liệu & Tạ Chí Tây & 20/3/2017\\
 \begin{landscape}
 \begin{figure}[b]
 	\includegraphics[scale=1.1]{hinh/database.jpg}
-	\caption{ Thiết kế database}
+	\caption{Thiết kế database.}
 	\label{xyz}
 \end{figure}
 \end{landscape}
@@ -2012,7 +2012,7 @@ UC\_CROP\_005 & Cài đặt ngưỡng dữ liệu & Tạ Chí Tây & 20/3/2017\\
 \begin{figure}[H]
 	\centering
 	\includegraphics[scale=.9]{hinh/server.png}
-	\caption{Mô hình cụm server}
+	\caption{Mô hình cụm server.}
 \end{figure}
 
 
@@ -2021,7 +2021,7 @@ UC\_CROP\_005 & Cài đặt ngưỡng dữ liệu & Tạ Chí Tây & 20/3/2017\\
 \begin{figure}[htp]
 	\centering
 	\includegraphics[scale=.5]{hinh/RESTful-API-design.jpg}
-	\caption{Mô hình RESTful API}
+	\caption{Mô hình RESTful API \cite{restfultech}.}
 \end{figure}
 
 
@@ -2045,7 +2045,7 @@ UC\_CROP\_005 & Cài đặt ngưỡng dữ liệu & Tạ Chí Tây & 20/3/2017\\
 \begin{figure}[H]
 	\centering
 	\includegraphics[scale=.5]{hinh/system-protocol.png}
-	\caption{Mô hình các giao thức trong hệ thống}
+	\caption{Mô hình các giao thức trong hệ thống.}
 \end{figure}
 
 \noindent Sử dụng giao thức MQTT cho cả hai chiều tương tác là gửi dữ liệu từ thiết bị lên và từ server gửi xuống. Các gói tin đều được mã hóa XXTEA để đảm bảo tính bảo mật.
@@ -2663,7 +2663,7 @@ Nửa chu kì đầu, khi điểm 1 dương so với điểm 2, dòng chạy t�
 		\item Board chuyển từ chế độ Station sang Access Point khi nhận tín hiệu nhấn liên tục nút nhấn trong vòng 3s.
 			\begin{figure}[H]
 			\centering
-			\includegraphics[scale=.7]{hinh/node_button.PNG}
+			\includegraphics[scale=.9]{hinh/node_button.PNG}
 			\caption{Nút nhấn.}
 			\end{figure}
 		\item Giao diện và chức năng:
@@ -2671,35 +2671,35 @@ Nửa chu kì đầu, khi điểm 1 dương so với điểm 2, dòng chạy t�
 			\item Khi chuyển sang chế độ Access Point và hoạt động chức năng webserver, Node MCU sẽ phát ra wifi.
 			\begin{figure}[H]
 			\centering
-			\includegraphics[scale=.7]{hinh/webserver_1.PNG}
-			\caption{Web server - 1.}
+			\includegraphics[scale=.9]{hinh/webserver_1.PNG}
+			\caption{Node MCU phát ra wifi.}
 			\end{figure}
 			
 			\item Sau khi kết nối vào Access Point của Node MCU, mở trình duyệt, truy cập vào địa chỉ (192.168.4.1) ta sẽ kết nối với webserver.
 			\begin{figure}[H]
 			\centering
 			\includegraphics[scale=.9]{hinh/webserver_2.PNG}
-			\caption{Web server - 2.}
+			\caption{Truy cập vào địa chỉ để kết nối với webserver.}
 			\end{figure}
 			
 			\item Sau khi chọn (wifi name) và nhập (password), trình duyệt sẽ gửi 2 giá trị này về board và được lưu lại trong bộ nhớ eeprom.
 			\begin{figure}[H]
 			\centering
-			\includegraphics[scale=.7]{hinh/webserver_3.PNG}
-			\caption{Web server - 3.}
+			\includegraphics[scale=.8]{hinh/webserver_3.PNG}
+			\caption{Thiết lập kết nối.}
 			\end{figure}
 			
 			\begin{figure}[H]
 			\centering
 			\includegraphics[scale=1]{hinh/webserver_4.PNG}
-			\caption{Web server - 4.}
+			\caption{Thiết lập kết nối.}
 			\end{figure}
 			
 			\item Ngoài ra webserver còn cung cấp chức năng cấu hình các thông tin của giao thức MQTT, truy cập vào (192.168.4.1/config)
 			\begin{figure}[H]
 			\centering
 			\includegraphics[scale=1]{hinh/webserver_5.PNG}
-			\caption{Web server - 5.}
+			\caption{Cấu hình giao thức MQTT.}
 			\end{figure}
 		\end{itemize}
 	\end{itemize}
@@ -3583,7 +3583,7 @@ Chú thích các đối tượng trong sơ đồ lớp:
 \begin{landscape}
 \begin{figure}[b]
 \centering
-\includegraphics[scale=0.64]{hinh/class_diagram.jpg}
+\includegraphics[scale=0.62]{hinh/class_diagram.jpg}
 \caption{Thiết kế sơ đồ lớp.}
 \end{figure}
 \end{landscape}
@@ -3605,7 +3605,7 @@ Chú thích các đối tượng trong sơ đồ lớp:
 
 \begin{figure}[H]
 \centering
-\includegraphics[scale=.6]{hinh/web_register.jpg}
+\includegraphics[scale=.48]{hinh/web_register.jpg}
 \caption{Trang đăng ký.}
 \end{figure}
 
@@ -3617,7 +3617,7 @@ Chú thích các đối tượng trong sơ đồ lớp:
 
 \begin{figure}[H]
 \centering
-\includegraphics[scale=.5]{hinh/web_profile.jpg}
+\includegraphics[scale=.45]{hinh/web_profile.png}
 \caption{Trang cá nhân.}
 \end{figure}
 
@@ -3629,13 +3629,13 @@ Chú thích các đối tượng trong sơ đồ lớp:
 
 \begin{figure}[H]
 \centering
-\includegraphics[scale=.5]{hinh/web_devices.jpg}
+\includegraphics[scale=.52]{hinh/web_devices.jpg}
 \caption{Danh sách các board điều khiển.}
 \end{figure}
 
 \begin{figure}[H]
 \centering
-\includegraphics[scale=.55]{hinh/web_actuator_list.png}
+\includegraphics[scale=.45]{hinh/web_actuator_list.png}
 \caption{Danh sách các actuator của một board.}
 \end{figure}
 
@@ -3730,26 +3730,26 @@ Các môi trường và công cụ để phát triển ứng dụng di động:
 
 \begin{figure}[H]
 \centering
-\includegraphics[scale=.25]{hinh/mobile_login.png}
+\includegraphics[scale=1]{hinh/mobile_login.png}
 \caption{Trang đăng nhập.}
 \end{figure}
 
 \begin{figure}[H]
 \centering
-\includegraphics[scale=.25]{hinh/mobile_home.png}
+\includegraphics[scale=1]{hinh/mobile_home.png}
 \caption{Trang chủ sau khi đăng nhập.}
 \end{figure}
 
 
 \begin{figure}[H]
 \centering
-\includegraphics[scale=.7]{hinh/mobile_crop.png}
+\includegraphics[scale=1]{hinh/mobile_crop.png}
 \caption{Thông tin mùa vụ và dữ liệu.}
 \end{figure}
 
 \begin{figure}[H]
 \centering
-\includegraphics[scale=.7]{hinh/mobile_actuator_list.png}
+\includegraphics[scale=1]{hinh/mobile_actuator_list.png}
 \caption{Danh sách các actuator.}
 \end{figure}
 
@@ -3971,28 +3971,27 @@ Các môi trường và công cụ để phát triển ứng dụng di động:
 \end{itemize}
 
 	
-\subsection{Hướng phát triển cho tương lai}
+\subsection{Hướng mở rộng hệ thống}
 \subsubsection{Ứng dụng web}
 \begin{itemize}
 \item Nghiên cứu kỹ hơn về ảnh hưởng của các nhân tố môi trường (nhiệt độ, độ ẩm, pH, ppm, ánh sáng, oxy) đến sự phát triển của các loại cây phổ biến trong từng thời kỳ, từ đó đưa ra các giải pháp tự động hóa việc chăm sóc cho từng giai đoạn phát triển của cây.
-\item Người dùng có thể upload ảnh đại diện, upload ảnh về các mùa vụ mà mình đang trồng và chia sẻ nó.
-\item Cho phép người dùng xuất ra các file setting của một mùa vụ nào đó và chia sẻ nó, người dùng khác có thể nạp file đó vào profile của mình và chạy trên thiết bị.
-\item Khắc phục thời gian chờ gói tin ACK từ board điều khiển bằng cách thiết lập một khoảng thời gian nhất định cho việc chờ gói tin ACK. Quá khoảng thời gian đó thì phản hồi về cho website là gói tin không đến được board điều khiển.
+\item Mở rộng chức năng chia sẻ cộng đồng: Người dùng có thể upload ảnh đại diện, upload ảnh về các mùa vụ mà mình đang trồng và chia sẻ nó. Cho phép người dùng xuất ra các file setting của một mùa vụ nào đó và chia sẻ nó, người dùng khác có thể nạp file đó vào profile của mình và chạy trên thiết bị.
+\item Cải thiện kết nối giữa server và board điều khiển: Khắc phục thời gian chờ gói tin ACK từ board điều khiển bằng cách thiết lập một khoảng thời gian nhất định cho việc chờ gói tin ACK. Quá khoảng thời gian đó thì phản hồi về cho website là gói tin không đến được board điều khiển.
 \item Xây dựng giao diện đa ngôn ngữ, có thể chuyển đổi qua lại.
-\item Cải thiện hơn về giao diện.
+\item Cải thiện hơn về giao diện và trải nghiệm.
 \end{itemize}
 
 \subsubsection{Ứng dụng di động}
 \begin{itemize}
-\item Cải thiện hơn về giao diện.
+\item Cải thiện hơn về giao diện và trải nghiệm người dùng.
 \item Xây dựng kênh tin tức trên ứng dụng.
 \end{itemize}
 
 \subsubsection{Board điều khiển}
 \begin{itemize}
 \item Hoàn thiện mạch chức năng ppm.
-\item Hoàn thiện board điều khiển.
-\item Phát triển mô hình, tiến hành thử nghiệm thực tế.
+\item Hoàn thiện board điều khiển: nghiên cứu xây dựng mạch đo pH và các thông số khác.
+\item Phát triển mô hình hệ thống theo hướng thương mại hóa, tiến hành thử nghiệm thực tế.
 \end{itemize}
 
 \subsection{Quá trình làm việc của nhóm}
@@ -4242,7 +4241,7 @@ mạch đo ppm}
 \textit{PPM}, http://www.octiva.net/projects/ppm/
 
 \bibitem{electrical} vlabs.iitb.ac.in,
-\textit{Wien Bridge Oscillator}, http://vlabs.iitb.ac.in/vlab/electrical/exp7/Theory.pdf
+\textit{Wien Bridge Oscillator}, http://vlabs.iitb.ac.in/vlab/electrical/exp7/ Theory.pdf
 
 \bibitem{actodc} instructables.com,
 \textit{AC to DC Converter}, http://www.instructables.com/id/AC-to-DC-converterdiode-bridge/
@@ -4252,6 +4251,10 @@ mạch đo ppm}
 
 \bibitem{cautruciot} devlog.vn,
 \textit{Giới thiệu tổng quát về IoT}, https://devlog.vn/chuong-1-gioi-thieu-tong-quat-ve-internet-things/
+
+\bibitem{restfultech} techtalk.vn,
+\textit{Thiết kế RESTful APIs}, https://techtalk.vn/thiet-ke-restful-apis.html
+
 
 \end{thebibliography}
 
