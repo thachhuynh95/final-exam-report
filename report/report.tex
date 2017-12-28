@@ -248,49 +248,45 @@ Sự phát triển của công nghệ trong thời đại hiện nay đã  mang 
 
 \noindent Internet of Things - "Mạng lưới vạn vật kết nối Internet là một kịch bản của thế giới, khi mà mỗi đồ vật, con người được cung cấp một định danh của riêng mình, và tất cả có khả năng truyền tải, trao đổi thông tin, dữ liệu qua một mạng duy nhất mà không cần đến sự tương tác trực tiếp giữa người với người, hay người với máy tính"\cite{iot}. Tất cả mọi thứ được kết nối với nhau qua mạng Internet, người dùng có thể quản lý mọi thiết bị thông qua mạng bằng các thiết bị như PC, smartphone, tablet...Các thiết bị sẽ giao tiếp với nhau, hạn chế sự tác động của con người. Sự giao tiếp chủ yếu là việc thu thập, xử lý thông tin từ các thiết bị rồi tự đưa ra quyết định, hành động phù hợp với những thông tin thu thập được. Với sự phát triển của các thiết bị thông minh ngày càng gia tăng thì IoT được xem như tương lai của thế giới.
 
+\noindent Chúng ta có thể hình dung rằng mọi thiết bị trong hệ thống kết nối, hoạt động cùng với nhau. Khi ta bước gần về đến cửa nhà, cơ chế điều khiển sẽ tự động mở cửa từ xa, đèn cửa và hành lang được kích hoạt. Hệ thống điều hòa đang từ trạng thái chờ sẽ chuyển sang trạng thái hoạt động. Mọi thứ điều hoạt động một cách tự động, hài hòa. Đó chính là những gì IoT mang lại cho chúng ta.
+
 \begin{figure}[H]
 \centering
 \includegraphics[scale=1]{hinh/IoT_intro.jpg}
 \caption{Mô hình tương tác của mạng lưới thiết bị kết nối Internet\cite{iot}.}
 \end{figure}
 
-\subsubsection{Khả năng định danh độc nhất}
+\subsubsection{Định danh}
 
-\noindent Điểm quan trọng của IoT đó là các đối tượng phải có thể được nhận biết và định dạng (identifiable). Nếu mọi đối tượng, kể cả con người, được "đánh dấu" để phân biệt bản thân đối tượng đó với những thứ xung quanh thì chúng ta có thể hoàn toàn quản lý được nó thông qua máy tính. Việc đánh dấu (tagging) có thể được thực hiện thông qua nhiều công nghệ, chẳng hạn như RFID, NFC, mã vạch, mã QR, watermark kĩ thuật số... Việc kết nối thì có thể thực hiện qua Wi-Fi, mạng viễn thông băng rộng (3G, 4G), Bluetooth, ZigBee, hồng ngoại...
+\noindent "Điểm quan trọng của IoT đó là các đối tượng phải có thể được nhận biết và định dạng (identifiable)"\cite{iot}. Trong môi trường Internet việc truyền nhận thông tin cần thiết nhất là địa chỉ IP. Hiện tại địa chỉ IP phổ biến thường dùng là IPv4 (mỗi địa chỉ có 32 bit). Với sự phát triển và tăng nhanh về mặt số lượng của các thiết bị thông minh kết nối với Internet làm cho địa chỉ IPv4 ngày càng ít. Sự xuất hiện của địa chỉ IPv6(mỗi địa chỉ có 128 bit) đã giải quyết vấn đề về việc định danh cho cái thiết bị tham gia vào mạng Internet. 
 
-\noindent Ngoài những kĩ thuật nói trên, nếu nhìn từ thế giới web, chúng ta có thể sử dụng các địa chỉ độc nhất để xác định từng vật, chẳng hạn như địa chỉ IP. Mỗi thiết bị sẽ có một IP riêng biệt không nhầm lẫn. Sự xuất hiện của IPv6 với không gian địa chỉ cực kì rộng lớn sẽ giúp mọi thứ có thể dễ dàng kết nối vào Internet cũng như kết nối với nhau.
+\noindent Khi mọi đối tượng được đánh dấu sẽ làm cho việc quản lý trở nên dễ dàng hơn. Ta có thể đánh dấu bằng nhiều công nghệ khác nhau như RFID, mã vạch, NFC, mã QR... được kết nối thông qua WiFi, 3G, 4G, Bluetooth...
 
-\subsubsection{Xu hướng và tính chất}
+\subsubsection{Cấu trúc của hệ thống IoT}
 
-\noindent \textbf{Thông minh}\\
-\noindent Sự thông minh và tự động trong điều khiển thực chất không phải là một phần trong ý tưởng về IoT. Các máy móc có thể dễ dàng nhận biết và phản hồi lại môi trường xung quanh (ambient intelligence), chúng cũng có thể tự điều khiển bản thân (autonomous control) mà không cần đến kết nối mạng. Tuy nhiên, trong thời gian gần đây người ta bắt đầu nghiên cứu kết hợp hai khái niệm IoT và autonomous control lại với nhau. Tương lai của IoT có thể là một mạng lưới các thực thể thông minh có khả năng tự tổ chức và hoạt động riêng lẻ tùy theo tình huống, môi trường, đồng thời chúng cũng có thể liên lạc với nhau để trao đổi thông tin, dữ liệu.
+\noindent \textbf{Cảm biến}\\
+\noindent Các cảm biến có chức năng thu thập các dữ liệu analog từ môi trường
 
-\noindent \textbf{Kiến trúc dựa trên sự kiện}\\
+\noindent \textbf{Xử lý cục bộ và lưu trữ}\\
 \noindent Các thực thể, máy móc trong IoT sẽ phản hồi dựa theo các sự kiện diễn ra trong lúc chúng hoạt động theo thời gian thực. Một số nhà nghiên cứu từng nói rằng một mạng lưới các sensor chính là một thành phần đơn giản của IoT.
 
-\noindent \textbf{Là một hệ thống phức tạp}\\
+\noindent \textbf{Network và Internet}\\
 \noindent Trong một thế giới mở, IoT sẽ mang tính chất phức tạp bởi nó bao gồm một lượng lớn các đường liên kết giữa những thiết bị, máy móc, dịch vụ với nhau, ngoài ra còn bởi khả năng thêm vào các nhân tố mới.
 
-\noindent \textbf{Kích thước}\\
+\noindent \textbf{Đám mây}\\
 \noindent Một mạng lưới IoT có thể chứa đến 50 đến 100 nghìn tỉ đối tượng được kết nối và mạng lưới này có thể theo dõi sự di chuyển của từng đối tượng. Một con người sống trong thành thị có thể bị bao bọc xung quanh bởi 1000 đến 5000 đối tượng có khả năng theo dõi.
-
-\noindent \textbf{Vấn đề không gian, thời gian}\\
-\noindent Trong IoT, vị trí địa lý chính xác của một vật nào đó là rất quan trọng. Hiện nay, Internet chủ yếu được sử dụng để quản lý thông tin được xử lý bởi con người. Do đó những thông tin như địa điểm, thời gian, không gian của đối tượng không mấy quan trọng bởi người xử lý thông tin có thể quyết định các thông tin này có cần thiết hay không, và nếu cần thì họ có thể bổ sung thêm. Trong khi đó, IoT về lý thuyết sẽ thu thập rất nhiều dữ liệu, trong đó có thể có dữ liệu thừa về địa điểm, và việc xử lý dữ liệu đó được xem như không hiệu quả. Ngoài ra, việc xử lý một khối lượng lớn dữ liệu trong thời gian ngắn đủ để đáp ứng cho hoạt động của các đối tượng cũng là một thách thức hiện nay.
-
-\noindent \textbf{Luồng năng lượng mới}\\
-\noindent Hiện nay, IoT đang trải qua giai đoạn phát triển "bộc phát" và điều này xảy ra nhờ vào một số nhân tố, trong đó gồm IPv6, 4G, chi phí, tính sẵn có của công nghệ.
 
 \subsubsection{Ứng dụng}
 
 \noindent IoT có ứng dụng rộng vô cùng, có thể kể ra một số thứ như sau:\\
-- Quản lý chất thải.\\
-- Quản lý và lập kế hoạch quản lý đô thị.\\
-- Quản lý môi trường.\\
-- Phản hồi trong các tinh huống khẩn cấp.\\
-- Mua sắm thông minh.\\
-- Quản lý các thiết bị cá nhân.\\
-- Đồng hồ đo thông minh.\\
-- Tự động hóa ngôi nhà.
+- Nhà thông mình.\\
+- Thành phố thông minh.\\
+- Xe hơi tự hành.\\
+- Vườn tự chăm sóc.\\
+- Máy bay không người lái.\\
+- Thiết bị theo dõi sức khỏe.\\
+- Hệ thống chiếu sáng tự động.\\
+- Chuỗi cung ứng thông minh.\\
 \begin{figure}[H]
 	\centering
 	\includegraphics[scale=.4]{hinh/IoT_ungdung.jpg}
@@ -2738,6 +2734,53 @@ Các công cụ và môi trường phát triển được sử dụng để phá
 \item Git 2.15.1
 \item Google chrome 63.0.3239.84 để kiểm thử 
 \end{itemize}
+
+\subsubsection{Các chức năng chính}
+
+\begin{itemize}
+	\item \textbf{Đăng k}í\\
+	Người dùng có thể đăng ký tài khoản thông qua trang Đăng ký (Sign up) để có thể bắt đầu sử dụng các chức năng trong hệ thống. Sau khi đăng ký thành công, hệ thống sẽ gửi một email cùng đường link xác nhận email có thật đến email người dùng vừa đăng ký. Người dùng phải nhấn vào đường link để kích hoạt tài khoản của mình. Tài khoản chưa kích hoạt sẽ không thể viết các bài viết chia sẻ trên trang Article.
+	\item \textbf{Đăng nhập}\\
+	Quá trình đăng nhập sử dụng JWT được thể hiện ở sơ đồ tuần tự sau:
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=.55]{hinh/seq-login.png}
+		\caption{Thao tác đăng nhập vào hệ thống sử dụng JWT.}
+	\end{figure}	
+	
+	Sau khi người dùng đăng nhập thành công và hệ thống gửi trả về JWT, JWT sẽ được lưu trong cookie và được thêm vào header của mỗi request được gửi đi trong các lần sau. Khi người dùng đăng xuất khỏi hệ thống, JWT trong cookie sẽ được xóa đi.
+	
+	\item \textbf{Phần quyền người dùng}\\
+	Hệ thống sử dụng module acl của Nodejs để phân ra 3 quyền người dùng: admin, mod và member
+	
+	\begin{itemize}
+		\item Member: người dùng bình thường, với các chức năng cơ bản như: quản lý các board điều khiển của mình, quản lý các mùa vụ, …
+		\item Mod: có tất cả các quyền của member, đồng thời có khả năng quản lý các bài viết (xóa, kiểm định) và các bình luận trong bài viết.
+		\item Admin: có tất cả các quyền của mod, đồng thời có khả năng quản lý các người dùng trong hệ thống (xóa, nâng cấp quyền hạn).
+	\end{itemize}
+	
+	\item \textbf{Tương tác với board điều khiển}\\
+	Đây là chức năng quan trọng và được nhóm đặt làm trọng tâm. Quá trình tương tác với board điều khiển thông quác các gói tin (message) đã được nhóm thiết kế trong phần Thiết kế hệ thống được thể hiện trong sơ đồ tuần tự sau:
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=.6]{hinh/seq-board-communication.png}
+		\caption{Nhóm các thao tác tương tác với board điều khiển.}
+	\end{figure}
+	
+	\item \textbf{Các chức năng CRUD khác}\\
+	Quá trình thực hiện các thao tác CRUD khác được thể hiện chung qua sơ đồ tuần tự sau:
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=.65]{hinh/seq-CRUD.png}
+		\caption{Nhóm các thao tác CRUD.}
+	\end{figure}
+	
+	Trên đây trình bày tóm tắt các chức năng đã hiện thực trong hệ thống, cụ thể và chi tiết hơn sẽ được mô tả cho từng API trong phần Hiện thực server API phía dưới.
+\end{itemize}
+
 \subsubsection{Hiện thực server API}
 
 \noindent Mẫu dữ liệu trả về cho tất cả các API:
@@ -3646,29 +3689,6 @@ Các môi trường và công cụ để phát triển ứng dụng di động:
 \includegraphics[scale=.7]{hinh/mobile_actuator_list.png}
 \caption{Danh sách các actuator.}
 \end{figure}
-
-\subsection{Tương tác hệ thống}
-Các biểu đồ tuần tự sau sẽ thể hiện sự tương tác giữa người dùng và hệ thống:
-
-\begin{figure}[H]
-\centering
-\includegraphics[scale=.65]{hinh/seq-CRUD.png}
-\caption{Nhóm các thao tác CRUD.}
-\end{figure}
-
-\begin{figure}[H]
-\centering
-\includegraphics[scale=.55]{hinh/seq-login.png}
-\caption{Thao tác đăng nhập vào hệ thống sử dụng JWT.}
-\end{figure}
-
-\begin{figure}[H]
-\centering
-\includegraphics[scale=.6]{hinh/seq-board-communication.png}
-\caption{Nhóm các thao tác tương tác với board điều khiển.}
-\end{figure}
-
-\noindent Toàn bộ các gói tin truyền giữa board điều khiển và web server đều được mã hóa XXTEA.
 
 \newpage
 \section{KIỂM THỬ HỆ THỐNG}
