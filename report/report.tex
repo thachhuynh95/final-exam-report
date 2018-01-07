@@ -20,7 +20,7 @@
 \usepackage{amsmath}
 \usepackage{listings,xcolor}
 \usepackage{amssymb}
-
+\usepackage{hyperref}
 \DeclareMathOperator*{\argmin}{arg\,min}
 %\usepackage[pdftex,bookmarks,raiselinks,pageanchor,hyperindex,colorlinks]{hyperref}
 \definecolor{highlight}{RGB}{230, 230, 230}
@@ -2126,7 +2126,7 @@ Các công cụ và môi trường phát triển được sử dụng để phá
 \subsubsection{Các chức năng chính}
 
 \begin{itemize}
-	\item \textbf{Đăng k}í\\
+	\item \textbf{Đăng kí}\\
 	Người dùng có thể đăng ký tài khoản thông qua trang Đăng ký (Sign up) để có thể bắt đầu sử dụng các chức năng trong hệ thống. Sau khi đăng ký thành công, hệ thống sẽ gửi một email cùng đường link xác nhận email có thật đến email người dùng vừa đăng ký. Người dùng phải nhấn vào đường link để kích hoạt tài khoản của mình. Tài khoản chưa kích hoạt sẽ không thể viết các bài viết chia sẻ trên trang Article.
 	\item \textbf{Đăng nhập}\\
 	Quá trình đăng nhập sử dụng JWT được thể hiện ở sơ đồ tuần tự sau:
@@ -2156,7 +2156,19 @@ Các công cụ và môi trường phát triển được sử dụng để phá
 		\includegraphics[scale=.6]{hinh/seq-board-communication.png}
 		\caption{Nhóm các thao tác tương tác với board điều khiển.}
 	\end{figure}
-	Thao tác của người sử dụng phía client được thực hiện ở thành phần UI (web/mobile), thao tác sẽ gửi yêu cầu đến server. Phía server nhận yêu cầu, nếu yêu cầu có tương tác gửi dữ liệu xuống phía board điều khiển thì server sẽ thực hiện gửi dữ liệu xuống board theo giao thức MQTT (server gửi dữ liệu xuống broker trung gian, board nhận dữ liệu từ broker). Board điều khiển nhận được dữ liệu, kiểm tra tính hợp lệ của dữ liệu và thực hiện thay đổi chức năng của board theo dữ liệu rồi gửi gói tin ACK phản hồi về cho phía server qua giao thức MQTT. Phía server sau khi nhận gói ACK phản hồi thì mới thực hiện thao tác cập nhật thông tin trên cơ sở dữ liệu để đồng bộ, rồi gửi phản hồi về cho phía người dùng, kết thúc một yêu cầu.
+	Các thao tác tương tác với board điểu khiển bao gồm:
+	\begin{itemize}
+ 	\item Thêm, xóa board điều khiển.
+	\item Thêm, xóa, sửa mùa vụ.
+	\item Thêm, xóa, sửa actuator.
+	\item Gửi lịch trình hoạt động.
+	\item Nhận dữ liệu cảm biến từ board điều khiển.
+	\end{itemize}
+
+	Thao tác của người sử dụng phía client được thực hiện ở thành phần UI (web/mobile), thao tác sẽ gửi yêu cầu đến server. Phía server nhận yêu cầu, nếu yêu cầu có tương tác gửi dữ liệu xuống phía board điều khiển thì server sẽ thực hiện gửi dữ liệu xuống board theo giao thức MQTT (server gửi dữ liệu xuống broker trung gian, board nhận dữ liệu từ broker). Board điều khiển nhận được dữ liệu, kiểm tra tính hợp lệ của dữ liệu và thực hiện thay đổi chức năng của board theo dữ liệu rồi gửi gói tin ACK phản hồi về cho phía server qua giao thức MQTT. Phía server sau khi nhận gói ACK phản hồi thì mới thực hiện thao tác cập nhật thông tin trên cơ sở dữ liệu để đồng bộ, rồi gửi phản hồi về cho phía người dùng, kết thúc một yêu cầu. Mỗi thao tác tương tác với board điều khiển có một khoảng thời gian timeout nhất định (hiện tại thiết lập là 5 giây) để chờ gói tin ACK. Nếu sau khoảng thời gian timeout mà server không nhận được gói tin ACK từ board, server sẽ trả về cho web app là thao tác tương tác không thực hiện được và người dùng phải thực hiện lại.\\
+	\\
+	\noindent Gói tin dữ liệu cảm biến gửi từ board điều khiển cũng đóng vai trò là tín hiệu xác định board điều khiển có còn hoạt động hay không. Ngay khi thêm board điều khiển mới vào hệ thống, board sẽ lập tức gửi gói tin dữ liệu cảm biến để thông báo board đã hoạt động. Nếu sau một khoảng thời gian timeout nhất định (hiện tại được thiết lập là 10 giây) mà server không nhận được gói tin dữ liệu cảm biến, server sẽ chuyển trạng thái của board từ “running” sang  “no connection”, đồng thời gửi thông báo đến thiết bị di động của người dùng. Khi dữ liệu cảm biến vượt ngưỡng cho phép do người dùng thiết lập, server cũng gửi thông báo xuống thiết bị di động của người dùng.
+	
 	\item \textbf{Các chức năng CRUD khác}\\
 	Quá trình thực hiện các thao tác CRUD khác được thể hiện chung qua sơ đồ tuần tự sau:
 	
@@ -2547,7 +2559,26 @@ Các môi trường và công cụ để phát triển ứng dụng di động:
 	\end{figure}
 	
 \subsubsection{Điều khiển các actuator}
-\noindent Tại thời điểm làm bản thảo báo cáo, hệ thống mới chỉ được kiểm thử điều khiển bật tắt các relay theo lịch trình. Sắp tới nhóm sẽ kiểm thử trên các actuator và mô hình cây trồng thực tế trước khi hoàn thiện báo cáo và đưa ra phản biện.
+\noindent Đã tiến hành thử nghiệm chức năng hẹn giờ và hoạt động theo giời gian biểu của actuators:
+\begin{itemize}
+	\item Các actuator được thêm và kích hoạt từ webserver
+	\item Người sử dụng lên lịch và gửi cho board điều khiển.
+	\item Sau khi nhận gói tin lịch trình từ webserver board điều khiển có thể hoạt động độc lập theo thời gian chính xác.
+\end{itemize}
+	
+Chức năng được tiến hành thử nghiệm và liên tục cải thiện tính năng và độ chính xác trong quá trình làm. Chi tiết demo tính năng đã được quay lại, xem tại các đường dẫn online sau:
+
+	\begin{itemize}
+	\item	Quá trình thêm board điều khiển, actuator và lịch trình:\\ 
+	\url{https://www.youtube.com/watch?v=1S7umkosvZ0&feature=youtu.be}
+
+	\item	Quá trình chạy actuator (đèn, máy sục oxy) theo lịch trình:\\
+	\url{https://www.youtube.com/watch?v=uav8kdqJhKw&feature=youtu.be}
+
+	\item	Quá trình nhận dữ liệu cảm biến từ board điều khiển:\\
+	\url{https://www.youtube.com/watch?v=RCdho_9JA1c&feature=youtu.be}
+
+	\end{itemize}
 
 \newpage
 \section{TỔNG KẾT VÀ HƯỚNG PHÁT TRIỂN}
