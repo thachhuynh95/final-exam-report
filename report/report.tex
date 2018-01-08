@@ -613,9 +613,9 @@ Do bản thân Signature đã bao gồm cả header và payload nên Signature c
 \end{itemize}
 \item Nhóm sử dụng Git và GitLab là những server git miễn phí để quản lý mã nguồn của hệ thống. Đường dẫn các mã nguồn của hệ thống:
 \begin{itemize}
-\item Mã nguồn web server: \url{https://github.com/bathach95/hydroponic}
-\item Mã nguồn mobile application: \url{https://github.com/bathach95/HydroponicMobileApp}
-\item Mã nguồn board điều khiển: \url{https://gitlab.com/dungnd2/hydroponic}
+\item Web server: \url{https://github.com/bathach95/hydroponic}
+\item Mobile application: \url{https://github.com/bathach95/HydroponicMobileApp}
+\item Board điều khiển: \url{https://gitlab.com/dungnd2/hydroponic}
 \end{itemize}
 \end{itemize}
 
@@ -669,7 +669,7 @@ Do bản thân Signature đã bao gồm cả header và payload nên Signature c
 \newpage
 \section{THIẾT KẾ HỆ THỐNG}
 \subsection{Kiến trúc mô hình hệ thống}
-\noindent Kiến trúc hệ thống bao gồm các thành phần: web server, web app, database và hệ thống board điều khiển. 
+\noindent Kiến trúc hệ thống bao gồm các thành phần: web server, ứng dụng web, ứng dụng mobile, database và hệ thống board điều khiển với các cảm biến thu thập dữ liệu về nhiệt độ, độ ẩm, nồng độ dinh dưỡng và ánh sáng, cùng với các relay điều khiển các actuator như máy bơm nước, sục oxy, đèn và quạt. 
 
 \begin{figure}[H]
 	\centering
@@ -686,7 +686,7 @@ Do bản thân Signature đã bao gồm cả header và payload nên Signature c
 \noindent \textbf{Hệ thống board điều khiển chia ra làm 3 thành phần chức năng chính:}
 \begin{itemize}
 \item Thu thập dữ liệu các cảm biến.
-\item Định thời, điều khiển các actuator (máy bơm, sục oxi, đèn chiếu sáng...) theo thời gian thực.
+\item Định thời, điều khiển các actuator (máy bơm, sục oxy, đèn chiếu sáng...) theo thời gian thực.
 \item Truyền nhận dữ liệu với web-server thông qua môi trường wifi.
 
 \end{itemize}
@@ -847,6 +847,7 @@ Thông tin kĩ thuật \cite{ds1307}:
 
 \end{itemize}
 
+\newpage
 \noindent \textbf{Điều khiển các actuators}
 
 \textbf{Thông số các actuator:}
@@ -894,7 +895,6 @@ Thông tin kĩ thuật \cite{ds1307}:
 
 \end{itemize}
 
-\newpage
 \textbf{Cách điều khiển các actuator:}
 \begin{itemize}
 
@@ -932,7 +932,6 @@ Thông tin kĩ thuật \cite{ds1307}:
 \end{figure}
 
 \end{itemize}
-\newpage
 \noindent \textbf{Thời gian thực:}
 
 \begin{itemize}
@@ -941,8 +940,8 @@ Thông tin kĩ thuật \cite{ds1307}:
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.8]{hinh/Node_Realtime.PNG}
-	\caption{Hoạt động Thời gian thực.}
+	\includegraphics[scale=0.8]{hinh/stm_realtime.PNG}
+	\caption{Hoạt động thời gian thực.}
 \end{figure}
 
 \item Định thời đọc dữ liệu thời gian thực sử dụng timer, timeout là 1/3s.
@@ -1005,13 +1004,13 @@ Thời điểm bắt đầu hoạt động. & Thời lượng actuator được 
 	\item Thông tin actuator được thêm trong trong lúc board đang hoạt động ở thời điểm ngẫu nhiên (runtime), không sét tĩnh, đây là ưu điểm của giải pháp này, cho phép mở rộng, thay đổi các actuator.
 	\item Bộ nhớ lưu trữ là EEPROM, phân vùng lưu trữ sẽ nêu cụ thể trong phần (Lưu trữ dữ liệu) nằm trên board NodeMCU.
 	\item Cấu trúc dữ liệu lưu trữ được nêu cụ thể trong phần hiện thực.
-	\item Dưới đây là cách hoạt động của việc lưu trữ (Save) và tải lại (Load). Qui ước: Các sự kiện (Add), (Start), (Schedule), (Update), (Remove) sẽ được gọi chung là (Update). Các trạng thái (Added), (Actived) được gọi chung là (Running).\\\\
+	\item Dưới đây là cách hoạt động của việc lưu trữ (Save) và tải lại (Load). Qui ước: Các sự kiện (Add), (Start), (Schedule), (Update), (Remove) sẽ được gọi chung là (Update). Các trạng thái (Added), (Actived) được gọi chung là (Running).
 	
 	\end{itemize}
 	
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=.6]{hinh/persistent_actuator.PNG}
+	\includegraphics[scale=.7]{hinh/persistent_actuator.PNG}
 	\caption{Hoạt động lưu trữ thông tin actuator.}
 \end{figure}
 
@@ -1041,7 +1040,7 @@ Thời điểm bắt đầu hoạt động. & Thời lượng actuator được 
 		
 			\begin{figure}[H]
 				\centering
-				\includegraphics[scale=.6]{hinh/mqtt_client.PNG}		
+				\includegraphics[scale=.7]{hinh/mqtt_client.PNG}		
 				\caption{MQTT client.}
 			\end{figure}
 			
@@ -1051,7 +1050,7 @@ Thời điểm bắt đầu hoạt động. & Thời lượng actuator được 
 	\begin{itemize}
 	\item	Board NodeMCU cho phép hoạt động ở 3 chế độ:
 		\begin{itemize}
-		\item	Station: đóng vai trò là một thiết bị kết nối vào mạng wifi tương tự như điện thoại.
+		\item	Station: đóng vai trò là thiết bị kết nối vào mạng wifi tương tự như điện thoại.
 		\item	Access Point: Phát wifi, cho phép thiết bị khác kết nối vào.
 		\item	Both: cả hai chức năng trên.
 		\end{itemize}
@@ -1075,19 +1074,17 @@ Thời điểm bắt đầu hoạt động. & Thời lượng actuator được 
 		
 			\begin{figure}[H]
 				\centering
-				\includegraphics[scale=.6]{hinh/wifi_station.PNG}
-				\caption{Wifi station.}
-			\end{figure}
-		
-			\begin{figure}[H]
-				\centering
-				\includegraphics[scale=.6]{hinh/wifi_ap.PNG}			
+				\includegraphics[scale=.75]{hinh/wifi_ap.PNG}		
 				\caption{Wifi AP.}
 			\end{figure}
-			
 			\begin{figure}[H]
 				\centering
-				\includegraphics[scale=.6]{hinh/wifi_application.PNG}
+				\includegraphics[scale=.8]{hinh/wifi_station.PNG}
+				\caption{Wifi station.}
+			\end{figure}
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=.8]{hinh/wifi_application.PNG}
 				\caption{Wifi application.}
 			\end{figure}
 
@@ -1183,7 +1180,7 @@ Thời điểm bắt đầu hoạt động. & Thời lượng actuator được 
 		  	
 			\begin{figure}[H]
 				\centering
-				\includegraphics[scale=.6]{hinh/uart_flow.PNG}
+				\includegraphics[scale=.8]{hinh/uart_flow.PNG}
 				\caption{Cách hoạt động của giao thức UART.}
 			\end{figure}	  	
 		  	
@@ -2002,14 +1999,14 @@ Nửa chu kì đầu, khi điểm 1 dương so với điểm 2, dòng chạy t�
 			\item Khi chuyển sang chế độ Access Point và hoạt động chức năng webserver, Node MCU sẽ phát ra wifi.
 			\begin{figure}[H]
 			\centering
-			\includegraphics[scale=.9]{hinh/webserver_1.PNG}
+			\includegraphics[scale=.85]{hinh/webserver_1.PNG}
 			\caption{Node MCU phát ra wifi.}
 			\end{figure}
 			
 			\item Sau khi kết nối vào Access Point của Node MCU, mở trình duyệt, truy cập vào địa chỉ (192.168.4.1) ta sẽ kết nối với webserver.
 			\begin{figure}[H]
 			\centering
-			\includegraphics[scale=.9]{hinh/webserver_2.PNG}
+			\includegraphics[scale=.85]{hinh/webserver_2.PNG}
 			\caption{Truy cập vào địa chỉ để kết nối với webserver.}
 			\end{figure}
 			
