@@ -210,7 +210,7 @@ Sự phát triển của công nghệ trong thời đại hiện nay đã  mang 
 	\item Tổng quan, khái niệm về thủy canh.
 	\item Các mô hình thủy canh và cách vận hành của từng mô hình.
 	\end{itemize}
-\item Học hỏi và biết cách sử dụng các công nghệ mới hiện nay như Nodejs, Angularjs, Angular 2, Ionic, ...
+\item Học hỏi và biết cách sử dụng các công nghệ mới hiện nay như NodeJS, AngularJS, Angular 2, Ionic, ...
 \end{itemize}
 
 \subsubsection{Phần kết quả}
@@ -502,19 +502,19 @@ Trường hợp sử dụng dòng DC:
 \item Nodejs có ưu điểm chạy rất nhanh vì nó thực hiện cơ chế non-blocking I/O và asynchronous (bất đồng bộ). Khi một request đến, nó không dừng lại chờ cho request đó xử lý xong mà vòng lặp event loop sẽ tiếp nhận các request liên tục và xử lý chúng liên tục. Khi một request xử lý xong, hàm callback sẽ được gọi để trả về kết quả cho client hoặc thực hiện một tác vụ nào đó. Như vậy các request sẽ được xử lý song song với nhau, tiết kiệm được rất nhiều thời gian. Nhưng đây cũng là một điểm khó đòi hỏi người lập trình phải quản lý chặt chẽ thứ tự thực hiện các hành động vì không phải lúc nào các tác vụ cũng chạy song song nhau, có những tác vụ phải thực hiện theo tuần tự.
 \end{itemize}
 
-\subsubsection{Framework Expressjs \cite{expressjs}}
+\subsubsection{ExpressJS \cite{expressjs}}
 \begin{itemize}
 \item Expressjs là một framework của Nodejs.
 \item Hỗ trợ cung cấp cấu trúc đơn giản nhất của một dự án Nodejs (một khung sườn), giúp chúng ta có thể dựa trên đó phát triển một cách nhanh chóng một server RESTful API và có thể dễ dàng từ đó mở rộng nó.
 \end{itemize}
 
-\subsubsection{Sequelizejs \cite{sequelize}}
+\subsubsection{SequelizeJS \cite{sequelize}}
 \begin{itemize}
 \item Sequelize là một thư viện ORM dành cho Node.js. Nó hỗ trợ truy cập một cách dễ dàng đến PostgreSQL, MySQL, MariaDB, SQLite và MSSQL, v.v...
 \item ORM (Object Relational Mapping) là một kỹ thuật lập trình để ánh xạ dữ liệu giữa các CSDL quan hệ và đối tượng trong các ngôn ngữ lập trình. Trong đó, các đối tượng ánh xạ với các bảng, các quan hệ của đối tượng ánh xạ với các ràng buộc liên quan giữa các bảng. \item Sequelizejs sẽ giúp chúng ta ánh xạ dữ liệu từ cơ sở dữ liệu sang các đối tượng, hỗ trợ các hàm tương ứng để làm việc này thay vì phải viết những câu truy vấn bằng ngôn ngữ SQL. 
 \end{itemize}
 
-\subsubsection{Angularjs \cite{angular}}
+\subsubsection{AngularJS \cite{angular}}
 \begin{itemize}
 \item Angular là framework dựa trên ngôn ngữ JavaScript, thường được sử dụng để xây dựng các ứng dụng Single Page Application (SPA).
 \item Ưu điểm của Angularjs:
@@ -538,7 +538,7 @@ Trường hợp sử dụng dòng DC:
 \end{itemize}
 \end{itemize}
 
-\subsubsection{Framework Ionic 2 \cite{ionic}}
+\subsubsection{Ionic 2 \cite{ionic}}
 \begin{itemize}
 \item Ionic là một framework dùng để xây dựng các ứng dụng di động trên ngôn ngữ HTML, CSS, và JavaScript, cho phép gọi các API để tạo ra các ứng dung di động.
 \item Nó cần phải chạy với Angular để xử lý logic của ứng dụng và Cordova - một framework ứng dụng đa nền tảng cho phép biên dịch ứng dụng thành một tập tin có thể cài đặt và chạy nó bên trong web view của thiết bị di động. 
@@ -584,7 +584,7 @@ Do bản thân Signature đã bao gồm cả header và payload nên Signature c
 \end{itemize}
 \end{itemize}
 
-\subsubsection{Postgresql \cite{sql}}
+\subsubsection{PostgreSQL \cite{sql}}
 \begin{itemize}
 \item PostgreSQL là một hệ quản trị cơ sở dữ liệu quan hệ, có thể chạy trên các hệ điều hành khác nhau như Linux, Unix, Window.
 \item Với đặc điểm của một hệ quản trị cơ sở dữ liệu, nó có các tính năng phức tạp như:
@@ -1336,10 +1336,10 @@ Thời điểm bắt đầu hoạt động. & Thời lượng actuator được 
 \end{figure}
 
 \begin{itemize}
-\item Server được nhóm xây dựng trên nền tảng Nodejs sử dụng framework Expressjs. 
-\item Cơ sở dữ liệu bên dưới để lưu trữ toàn bộ dữ dữ liệu của hệ thống là Postgresql.
-\item Server tương tác với cơ sở dữ liệu Postgresql nhờ thư viện Sequelize hỗ trợ, giúp cho việc truy xuất dữ liệu một cách dễ dàng, không cần phải viết ra câu lệnh SQL tường minh.
-\item Phía client giao diện được xây dựng trên ngôn ngữ HTML, CSS và JavaScript, sử dụng framework Angularjs.
+\item Server được nhóm xây dựng trên nền tảng NodeJS sử dụng framework ExpressJS 
+\item PostgreSQL là hệ quản trị cơ sở dữ liệu được sử dụng để lưu trữ toàn bộ dữ dữ liệu của hệ thống.
+\item Server tương tác với PostgreSQL nhờ thư viện Sequelize hỗ trợ, giúp cho việc truy xuất dữ liệu một cách dễ dàng, không cần phải viết ra câu lệnh SQL tường minh.
+\item Phía client giao diện được xây dựng trên ngôn ngữ HTML, CSS và JavaScript, sử dụng framework AngularJS.
 \item Các API được thiết kế theo chuẩn RESTful với các phương thức được sử dụng bao gồm: GET, POST, PUT và DELETE.
 \end{itemize}
 
@@ -2117,8 +2117,8 @@ Các công cụ và môi trường phát triển được sử dụng để phá
 \begin{itemize}
 \item Hệ điều hành: Windows 10, Linux (Manjaro)
 \item IDE: Visual studio code
-\item Nodejs 6.x
-\item Angularjs 1.6.4
+\item NodeJS 6.x
+\item AngularJS 1.6.4
 \item Git 2.15.1
 \item Google chrome 63.0.3239.84 để kiểm thử 
 \end{itemize}
@@ -2126,7 +2126,7 @@ Các công cụ và môi trường phát triển được sử dụng để phá
 \subsubsection{Các chức năng chính}
 
 \begin{itemize}
-	\item \textbf{Đăng kí}\\
+	\item \textbf{Đăng ký}\\
 	Người dùng có thể đăng ký tài khoản thông qua trang Đăng ký (Sign up) để có thể bắt đầu sử dụng các chức năng trong hệ thống. Sau khi đăng ký thành công, hệ thống sẽ gửi một email cùng đường link xác nhận email có thật đến email người dùng vừa đăng ký. Người dùng phải nhấn vào đường link để kích hoạt tài khoản của mình. Tài khoản chưa kích hoạt sẽ không thể viết các bài viết chia sẻ trên trang Article.
 	\item \textbf{Đăng nhập}\\
 	Quá trình đăng nhập sử dụng JWT được thể hiện ở sơ đồ tuần tự sau:
@@ -2221,7 +2221,7 @@ Server được tổ chức theo mô hình MVC với các thư mục chính:
 Ngoài ra, các thư mục khác:
 \begin{itemize}
 \item config: thiết lập thông tin database khi kết nối.
-\item public: chứa mã css, javascript, angularjs, images, các thư viện front-end cần dùng.
+\item public: chứa mã css, javascript, angularJS, images, các thư viện front-end cần dùng.
 \item run: cấu hình cho server như port,…
 \item utils: các file chứa hàm hỗ trợ.
 \item file app.js: file server chính.
@@ -2585,10 +2585,10 @@ Chức năng được tiến hành thử nghiệm và liên tục cải thiện 
 \subsection{Tổng kết}
 	\subsubsection{Kết quả đạt được}
 	\begin{itemize}
-	\item Web server API và web app: \\
-	Sử dụng Nodejs và Angularjs hiện thực thành công các chức năng: 
+	\item Web server API và ứng dụng web: \\
+	Sử dụng NodeJS và AngularJS hiện thực thành công các chức năng: 
 		\begin{itemize}
-			\item Cung cấp hệ thống API cho web app và mobile app. 
+			\item Cung cấp hệ thống API cho ứng dụng web và ứng dụng mobile. 
 
 			\item Phân quyền người dùng: member, mod và admin. 
 
@@ -2671,7 +2671,7 @@ Chức năng được tiến hành thử nghiệm và liên tục cải thiện 
 \begin{itemize}
 \item Có được những hiểu biết nhất định về thủy canh. 
 
-\item Học hỏi được các công nghệ mới như Nodejs, Angularjs, Angular 2, Ionic. 
+\item Học hỏi được các công nghệ mới như NodeJS, AngularJS, Angular 2, Ionic. 
 
 \item Biết thêm về các giao thức thường dùng trong IoT. 
 
@@ -2713,10 +2713,10 @@ Chức năng được tiến hành thử nghiệm và liên tục cải thiện 
   \makecell{Tìm hiểu về thủy canh,\\ các loại thủy canh\\ và cách hoạt động của mỗi loại
 } & x &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\ 
   \hline 
-  Tìm hiểu Nodejs
+  Tìm hiểu NodeJS
  &  & x & x &  &  &  &  &  &  &  &  &  &  &  &  \\ 
   \hline 
-  Tìm hiểu Angularjs
+  Tìm hiểu AngularJS
  &  &  & x & x &  &  &  &  &  &  &  &  &  &  &  \\ 
   \hline 
   \makecell{Thiết kế database\\ (thiết kế, bổ sung)
@@ -2756,7 +2756,7 @@ Chức năng được tiến hành thử nghiệm và liên tục cải thiện 
   \hline 
   \makecell{Tìm hiểu về các ứng dụng IoT \\ và các giao thức dùng cho IoT} & x & x & x &  &  &  &  &  &  &  &  &  &  &  &  \\ 
   \hline 
-  Tìm hiểu Nodejs và Angularjs
+  Tìm hiểu NodeJS và AngularJS
  &  & x & x & x & x &  &  &  &  &  &  &  &  &  &  \\ 
   \hline 
   \makecell{Thiết kế database\\ (thiết kế, bổ sung)

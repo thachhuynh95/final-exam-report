@@ -25,14 +25,14 @@
 \contentsline {subsection}{\numberline {2.5}Gi\IeC {\'\ohorn }i thi\IeC {\d \ecircumflex }u v\IeC {\`\ecircumflex } c\IeC {\'a}c c\IeC {\^o}ng ngh\IeC {\d \ecircumflex } \IeC {\dj }\IeC {\uhorn }\IeC {\d \ohorn }c s\IeC {\h \uhorn } d\IeC {\d u}ng}{15}{subsection.2.5}
 \contentsline {subsubsection}{\numberline {2.5.1}RESTful web service \cite {restful}}{15}{subsubsection.2.5.1}
 \contentsline {subsubsection}{\numberline {2.5.2}Nodejs \cite {nodejs}}{16}{subsubsection.2.5.2}
-\contentsline {subsubsection}{\numberline {2.5.3}Framework Expressjs \cite {expressjs}}{17}{subsubsection.2.5.3}
-\contentsline {subsubsection}{\numberline {2.5.4}Sequelizejs \cite {sequelize}}{17}{subsubsection.2.5.4}
-\contentsline {subsubsection}{\numberline {2.5.5}Angularjs \cite {angular}}{18}{subsubsection.2.5.5}
+\contentsline {subsubsection}{\numberline {2.5.3}ExpressJS \cite {expressjs}}{17}{subsubsection.2.5.3}
+\contentsline {subsubsection}{\numberline {2.5.4}SequelizeJS \cite {sequelize}}{17}{subsubsection.2.5.4}
+\contentsline {subsubsection}{\numberline {2.5.5}AngularJS \cite {angular}}{18}{subsubsection.2.5.5}
 \contentsline {subsubsection}{\numberline {2.5.6}Angular 2 \cite {angular2}}{18}{subsubsection.2.5.6}
-\contentsline {subsubsection}{\numberline {2.5.7}Framework Ionic 2 \cite {ionic}}{19}{subsubsection.2.5.7}
+\contentsline {subsubsection}{\numberline {2.5.7}Ionic 2 \cite {ionic}}{19}{subsubsection.2.5.7}
 \contentsline {subsubsection}{\numberline {2.5.8}Typescript \cite {typescript}}{19}{subsubsection.2.5.8}
 \contentsline {subsubsection}{\numberline {2.5.9}JSON Web Token \cite {jwt}}{19}{subsubsection.2.5.9}
-\contentsline {subsubsection}{\numberline {2.5.10}Postgresql \cite {sql}}{21}{subsubsection.2.5.10}
+\contentsline {subsubsection}{\numberline {2.5.10}PostgreSQL \cite {sql}}{21}{subsubsection.2.5.10}
 \contentsline {subsubsection}{\numberline {2.5.11}NodeBB \cite {nodebb}}{21}{subsubsection.2.5.11}
 \contentsline {subsubsection}{\numberline {2.5.12}Git \cite {git}}{21}{subsubsection.2.5.12}
 \contentsline {subsubsection}{\numberline {2.5.13}XXTEA \cite {xxtea}}{22}{subsubsection.2.5.13}

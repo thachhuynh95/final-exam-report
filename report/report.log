@@ -1,22 +1,13 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2017.5.20)  7 JAN 2018 16:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2017.12.13)  8 JAN 2018 12:50
 entering extended mode
-**report.tex
-(F:\final-exam-report\report\report.tex
-LaTeX2e <2011/06/27>
-Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
-abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
-croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, ga
-lician, german, german-x-2012-05-30, greek, gujarati, hindi, hungarian, iceland
-ic, indonesian, interlingua, irish, italian, kannada, kurmanji, latin, latvian,
- lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerman, n
-german-x-2012-05-30, nynorsk, oriya, panjabi, pinyin, polish, portuguese, roman
-ian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swissgerm
-an, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usengl
-ishmax, welsh, loaded.
+**./report.tex
+(report.tex
+LaTeX2e <2017-04-15>
+Babel <3.15> and hyphenation patterns for 75 language(s) loaded.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\article.cls"
-Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\size12.clo"
-File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
 \c@section=\count80
@@ -30,40 +21,42 @@ File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\vntex\vietnam.sty"
+("C:\Program Files\MiKTeX 2.9\vntex\tex\latex\vntex\vietnam.sty"
 Package: vietnam 2009/07/12 v1.3 support for Vietnamese
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\ifthen.sty"
-Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\fontenc.sty"
-Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
+Package: fontenc 2017/04/05 v2.0i Standard LaTeX package
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\vntex\t5enc.def"
+("C:\Program Files\MiKTeX 2.9\vntex\tex\latex\vntex\t5enc.def"
 File: t5enc.def 2006/11/21 v1.4 Vietnamese T5 encoding
 )
-LaTeX Font Info:    Try loading font information for T5+cmr on input line 100.
+LaTeX Font Info:    Try loading font information for T5+cmr on input line 105.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\vntex\t5cmr.fd"
+("C:\Program Files\MiKTeX 2.9\vntex\tex\latex\vntex\t5cmr.fd"
 File: t5cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 ))
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\inputenc.sty"
-Package: inputenc 2008/03/30 v1.1d Input encoding file
+Package: inputenc 2015/03/17 v1.2c Input encoding file
 \inpenc@prehook=\toks14
 \inpenc@posthook=\toks15
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\utf8.def"
-File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
+File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 Now handling font encoding OML ...
 ... no UTF-8 mapping file for font encoding OML
 Now handling font encoding T1 ...
 ... processing UTF-8 mapping file for font encoding T1
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1enc.dfu"
-File: t1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
+File: t1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
+   defining Unicode char U+00A0 (decimal 160)
    defining Unicode char U+00A1 (decimal 161)
    defining Unicode char U+00A3 (decimal 163)
    defining Unicode char U+00AB (decimal 171)
+   defining Unicode char U+00AD (decimal 173)
    defining Unicode char U+00BB (decimal 187)
    defining Unicode char U+00BF (decimal 191)
    defining Unicode char U+00C0 (decimal 192)
@@ -128,50 +121,94 @@ File: t1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00FD (decimal 253)
    defining Unicode char U+00FE (decimal 254)
    defining Unicode char U+00FF (decimal 255)
+   defining Unicode char U+0100 (decimal 256)
+   defining Unicode char U+0101 (decimal 257)
    defining Unicode char U+0102 (decimal 258)
    defining Unicode char U+0103 (decimal 259)
    defining Unicode char U+0104 (decimal 260)
    defining Unicode char U+0105 (decimal 261)
    defining Unicode char U+0106 (decimal 262)
    defining Unicode char U+0107 (decimal 263)
+   defining Unicode char U+0108 (decimal 264)
+   defining Unicode char U+0109 (decimal 265)
+   defining Unicode char U+010A (decimal 266)
+   defining Unicode char U+010B (decimal 267)
    defining Unicode char U+010C (decimal 268)
    defining Unicode char U+010D (decimal 269)
    defining Unicode char U+010E (decimal 270)
    defining Unicode char U+010F (decimal 271)
    defining Unicode char U+0110 (decimal 272)
    defining Unicode char U+0111 (decimal 273)
+   defining Unicode char U+0112 (decimal 274)
+   defining Unicode char U+0113 (decimal 275)
+   defining Unicode char U+0114 (decimal 276)
+   defining Unicode char U+0115 (decimal 277)
+   defining Unicode char U+0116 (decimal 278)
+   defining Unicode char U+0117 (decimal 279)
    defining Unicode char U+0118 (decimal 280)
    defining Unicode char U+0119 (decimal 281)
    defining Unicode char U+011A (decimal 282)
    defining Unicode char U+011B (decimal 283)
+   defining Unicode char U+011C (decimal 284)
+   defining Unicode char U+011D (decimal 285)
    defining Unicode char U+011E (decimal 286)
    defining Unicode char U+011F (decimal 287)
+   defining Unicode char U+0120 (decimal 288)
+   defining Unicode char U+0121 (decimal 289)
+   defining Unicode char U+0122 (decimal 290)
+   defining Unicode char U+0123 (decimal 291)
+   defining Unicode char U+0124 (decimal 292)
+   defining Unicode char U+0125 (decimal 293)
+   defining Unicode char U+0128 (decimal 296)
+   defining Unicode char U+0129 (decimal 297)
+   defining Unicode char U+012A (decimal 298)
+   defining Unicode char U+012B (decimal 299)
+   defining Unicode char U+012C (decimal 300)
+   defining Unicode char U+012D (decimal 301)
+   defining Unicode char U+012E (decimal 302)
+   defining Unicode char U+012F (decimal 303)
    defining Unicode char U+0130 (decimal 304)
    defining Unicode char U+0131 (decimal 305)
    defining Unicode char U+0132 (decimal 306)
    defining Unicode char U+0133 (decimal 307)
+   defining Unicode char U+0134 (decimal 308)
+   defining Unicode char U+0135 (decimal 309)
+   defining Unicode char U+0136 (decimal 310)
+   defining Unicode char U+0137 (decimal 311)
    defining Unicode char U+0139 (decimal 313)
    defining Unicode char U+013A (decimal 314)
+   defining Unicode char U+013B (decimal 315)
+   defining Unicode char U+013C (decimal 316)
    defining Unicode char U+013D (decimal 317)
    defining Unicode char U+013E (decimal 318)
    defining Unicode char U+0141 (decimal 321)
    defining Unicode char U+0142 (decimal 322)
    defining Unicode char U+0143 (decimal 323)
    defining Unicode char U+0144 (decimal 324)
+   defining Unicode char U+0145 (decimal 325)
+   defining Unicode char U+0146 (decimal 326)
    defining Unicode char U+0147 (decimal 327)
    defining Unicode char U+0148 (decimal 328)
    defining Unicode char U+014A (decimal 330)
    defining Unicode char U+014B (decimal 331)
+   defining Unicode char U+014C (decimal 332)
+   defining Unicode char U+014D (decimal 333)
+   defining Unicode char U+014E (decimal 334)
+   defining Unicode char U+014F (decimal 335)
    defining Unicode char U+0150 (decimal 336)
    defining Unicode char U+0151 (decimal 337)
    defining Unicode char U+0152 (decimal 338)
    defining Unicode char U+0153 (decimal 339)
    defining Unicode char U+0154 (decimal 340)
    defining Unicode char U+0155 (decimal 341)
+   defining Unicode char U+0156 (decimal 342)
+   defining Unicode char U+0157 (decimal 343)
    defining Unicode char U+0158 (decimal 344)
    defining Unicode char U+0159 (decimal 345)
    defining Unicode char U+015A (decimal 346)
    defining Unicode char U+015B (decimal 347)
+   defining Unicode char U+015C (decimal 348)
+   defining Unicode char U+015D (decimal 349)
    defining Unicode char U+015E (decimal 350)
    defining Unicode char U+015F (decimal 351)
    defining Unicode char U+0160 (decimal 352)
@@ -180,10 +217,22 @@ File: t1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+0163 (decimal 355)
    defining Unicode char U+0164 (decimal 356)
    defining Unicode char U+0165 (decimal 357)
+   defining Unicode char U+0168 (decimal 360)
+   defining Unicode char U+0169 (decimal 361)
+   defining Unicode char U+016A (decimal 362)
+   defining Unicode char U+016B (decimal 363)
+   defining Unicode char U+016C (decimal 364)
+   defining Unicode char U+016D (decimal 365)
    defining Unicode char U+016E (decimal 366)
    defining Unicode char U+016F (decimal 367)
    defining Unicode char U+0170 (decimal 368)
    defining Unicode char U+0171 (decimal 369)
+   defining Unicode char U+0172 (decimal 370)
+   defining Unicode char U+0173 (decimal 371)
+   defining Unicode char U+0174 (decimal 372)
+   defining Unicode char U+0175 (decimal 373)
+   defining Unicode char U+0176 (decimal 374)
+   defining Unicode char U+0177 (decimal 375)
    defining Unicode char U+0178 (decimal 376)
    defining Unicode char U+0179 (decimal 377)
    defining Unicode char U+017A (decimal 378)
@@ -191,9 +240,40 @@ File: t1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+017C (decimal 380)
    defining Unicode char U+017D (decimal 381)
    defining Unicode char U+017E (decimal 382)
+   defining Unicode char U+01CD (decimal 461)
+   defining Unicode char U+01CE (decimal 462)
+   defining Unicode char U+01CF (decimal 463)
+   defining Unicode char U+01D0 (decimal 464)
+   defining Unicode char U+01D1 (decimal 465)
+   defining Unicode char U+01D2 (decimal 466)
+   defining Unicode char U+01D3 (decimal 467)
+   defining Unicode char U+01D4 (decimal 468)
+   defining Unicode char U+01E2 (decimal 482)
+   defining Unicode char U+01E3 (decimal 483)
+   defining Unicode char U+01E6 (decimal 486)
+   defining Unicode char U+01E7 (decimal 487)
+   defining Unicode char U+01E8 (decimal 488)
+   defining Unicode char U+01E9 (decimal 489)
+   defining Unicode char U+01EA (decimal 490)
+   defining Unicode char U+01EB (decimal 491)
+   defining Unicode char U+01F0 (decimal 496)
+   defining Unicode char U+01F4 (decimal 500)
+   defining Unicode char U+01F5 (decimal 501)
+   defining Unicode char U+0218 (decimal 536)
+   defining Unicode char U+0219 (decimal 537)
+   defining Unicode char U+021A (decimal 538)
+   defining Unicode char U+021B (decimal 539)
+   defining Unicode char U+0232 (decimal 562)
+   defining Unicode char U+0233 (decimal 563)
+   defining Unicode char U+1E02 (decimal 7682)
+   defining Unicode char U+1E03 (decimal 7683)
    defining Unicode char U+200C (decimal 8204)
+   defining Unicode char U+2010 (decimal 8208)
+   defining Unicode char U+2011 (decimal 8209)
+   defining Unicode char U+2012 (decimal 8210)
    defining Unicode char U+2013 (decimal 8211)
    defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2015 (decimal 8213)
    defining Unicode char U+2018 (decimal 8216)
    defining Unicode char U+2019 (decimal 8217)
    defining Unicode char U+201A (decimal 8218)
@@ -205,14 +285,18 @@ File: t1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+2039 (decimal 8249)
    defining Unicode char U+203A (decimal 8250)
    defining Unicode char U+2423 (decimal 9251)
+   defining Unicode char U+1E20 (decimal 7712)
+   defining Unicode char U+1E21 (decimal 7713)
 )
 Now handling font encoding OT1 ...
 ... processing UTF-8 mapping file for font encoding OT1
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\ot1enc.dfu"
-File: ot1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
+File: ot1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
+   defining Unicode char U+00A0 (decimal 160)
    defining Unicode char U+00A1 (decimal 161)
    defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00AD (decimal 173)
    defining Unicode char U+00B8 (decimal 184)
    defining Unicode char U+00BF (decimal 191)
    defining Unicode char U+00C5 (decimal 197)
@@ -230,6 +314,14 @@ File: ot1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+0142 (decimal 322)
    defining Unicode char U+0152 (decimal 338)
    defining Unicode char U+0153 (decimal 339)
+   defining Unicode char U+0174 (decimal 372)
+   defining Unicode char U+0175 (decimal 373)
+   defining Unicode char U+0176 (decimal 374)
+   defining Unicode char U+0177 (decimal 375)
+   defining Unicode char U+0218 (decimal 536)
+   defining Unicode char U+0219 (decimal 537)
+   defining Unicode char U+021A (decimal 538)
+   defining Unicode char U+021B (decimal 539)
    defining Unicode char U+2013 (decimal 8211)
    defining Unicode char U+2014 (decimal 8212)
    defining Unicode char U+2018 (decimal 8216)
@@ -241,7 +333,7 @@ Now handling font encoding OMS ...
 ... processing UTF-8 mapping file for font encoding OMS
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omsenc.dfu"
-File: omsenc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
+File: omsenc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
    defining Unicode char U+00A7 (decimal 167)
    defining Unicode char U+00B6 (decimal 182)
    defining Unicode char U+00B7 (decimal 183)
@@ -256,7 +348,7 @@ Now handling font encoding U ...
 Now handling font encoding T5 ...
 ... processing UTF-8 mapping file for font encoding T5
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\vntex\t5enc.dfu"
+("C:\Program Files\MiKTeX 2.9\vntex\tex\latex\vntex\t5enc.dfu"
 File: t5enc.dfu 2006/08/19 v1.1 UTF8 support for Vietnamese
    defining Unicode char U+00AB (decimal 171)
    defining Unicode char U+00BB (decimal 187)
@@ -421,70 +513,62 @@ File: t5enc.dfu 2006/08/19 v1.1 UTF8 support for Vietnamese
    defining Unicode char U+2122 (decimal 8482)
    defining Unicode char U+2423 (decimal 9251)
 ))
-("C:\Program Files\MiKTeX 2.9\tex\latex\vntex\vncaps.tex"
+("C:\Program Files\MiKTeX 2.9\vntex\tex\latex\vntex\vncaps.tex"
 File: vncaps.tex 2006/06/07 v1.1 Captions in Vietnamese
 ))
 ("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
-Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
-Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks16
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
-Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\trig.sty"
-Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
-File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-cfg\graphics.cfg"
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
-Package graphics Info: Driver file: pdftex.def on input line 91.
+Package graphics Info: Driver file: pdftex.def on input line 99.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
-File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
-
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
-Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
-)
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
-Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
-)
-\Gread@gobject=\count87
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-def\pdftex.def"
+File: pdftex.def 2017/06/24 v1.0g Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen103
 \Gin@req@width=\dimen104
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\fancyhdr\fancyhdr.sty"
-Package: fancyhdr 2016/09/06 3.8 Extensive control of page headers and footers
-\fancy@headwidth=\skip43
-\f@ncyO@elh=\skip44
-\f@ncyO@erh=\skip45
-\f@ncyO@olh=\skip46
-\f@ncyO@orh=\skip47
-\f@ncyO@elf=\skip48
-\f@ncyO@erf=\skip49
-\f@ncyO@olf=\skip50
-\f@ncyO@orf=\skip51
+Package: fancyhdr 2017/06/30 v3.9a Extensive control of page headers and footer
+s
+\f@nch@headwidth=\skip43
+\f@nch@O@elh=\skip44
+\f@nch@O@erh=\skip45
+\f@nch@O@olh=\skip46
+\f@nch@O@orh=\skip47
+\f@nch@O@elf=\skip48
+\f@nch@O@erf=\skip49
+\f@nch@O@olf=\skip50
+\f@nch@O@orf=\skip51
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\geometry\geometry.sty"
 Package: geometry 2010/09/12 v5.6 Page Geometry
 
 ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
-Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
-Package ifpdf Info: pdfTeX in PDF mode is detected.
+Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
 )
 ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifvtex.sty"
-Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
+Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
 )
 ("C:\Program Files\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-\Gm@cnth=\count88
-\Gm@cntv=\count89
-\c@Gm@tempcnt=\count90
+\Gm@cnth=\count87
+\Gm@cntv=\count88
+\c@Gm@tempcnt=\count89
 \Gm@bindingoffset=\dimen105
 \Gm@wd@mp=\dimen106
 \Gm@odd@mp=\dimen107
@@ -497,7 +581,7 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\geometry\geometry.cfg"))
 ("C:\Program Files\MiKTeX 2.9\tex\latex\tools\array.sty"
-Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
+Package: array 2016/10/06 v2.4d Tabular extension package (FMi)
 \col@sep=\dimen113
 \extrarowheight=\dimen114
 \NC@list=\toks18
@@ -506,7 +590,7 @@ Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\float\float.sty"
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count91
+\c@float@type=\count90
 \float@exts=\toks19
 \float@box=\box26
 \@float@everytoks=\toks20
@@ -516,16 +600,22 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 Package: morefloats 2015/07/22 v1.0h Raise limit of unprocessed floats (HMM)
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
-Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)
 ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\kvsetkeys.sty"
-Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
 
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
 ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\etexcmds.sty"
-Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
 
 ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifluatex.sty"
-Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
 )
 Package etexcmds Info: Could not find \expanded.
@@ -537,23 +627,12 @@ Package morefloats Info: Maximum number of possible floats asked for: 36
 (morefloats)             (i.e. 18 more floats).
 (morefloats)             LaTeX might run out of memory before this
 (morefloats)             (in which case it will notify you).
-
-
-Package morefloats Warning: LaTeX2e <2011/06/27> patch level 0
-(morefloats)                found. At least
-(morefloats)                LaTeX2e <2015/01/01> patch level 2
-(morefloats)                is now available
-(morefloats)                and can handle even more floats.
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\ifetex\ifetex.sty"
-Package: ifetex 2011/12/15 v1.2 ifetex
-
-("C:\Program Files\MiKTeX 2.9\tex\plain\ifetex\ifetex.tex")))
+)
 ("C:\Program Files\MiKTeX 2.9\tex\latex\footmisc\footmisc.sty"
 Package: footmisc 2011/06/06 v5.5b a miscellany of footnote facilities
 \FN@temptoken=\toks21
 \footnotemargin=\dimen115
-\c@pp@next@reset=\count92
+\c@pp@next@reset=\count91
 Package footmisc Info: Declaring symbol style bringhurst on input line 855.
 Package footmisc Info: Declaring symbol style chicago on input line 863.
 Package footmisc Info: Declaring symbol style wiley on input line 872.
@@ -564,7 +643,7 @@ Package footmisc Info: Declaring symbol style lamport*-robust on input line 924
 .
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\tools\afterpage.sty"
-Package: afterpage 1995/10/27 v1.08 After-Page Package (DPC)
+Package: afterpage 2014/10/28 v1.08 After-Page Package (DPC)
 \AP@output=\toks22
 \AP@partial=\box28
 \AP@footins=\box29
@@ -572,32 +651,36 @@ Package: afterpage 1995/10/27 v1.08 After-Page Package (DPC)
 ("C:\Program Files\MiKTeX 2.9\tex\latex\makecell\makecell.sty"
 Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
 \rotheadsize=\dimen116
-\c@nlinenum=\count93
+\c@nlinenum=\count92
 \TeXr@lab=\toks23
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\multirow\multirow.sty"
+Package: multirow 2016/11/25 v2.2 Span multiple rows of a table
+\multirow@colwidth=\skip54
+\multirow@cntb=\count93
+\multirow@dima=\skip55
 \bigstrutjot=\dimen117
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\pdflscape.sty"
-Package: pdflscape 2008/08/11 v0.10 Display of landscape pages in PDF (HO)
+Package: pdflscape 2016/05/14 v0.11 Display of landscape pages in PDF (HO)
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\lscape.sty"
 Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 )
-Package pdflscape Info: Auto-detected driver: pdftex on input line 80.
+Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\xcolor\xcolor.sty"
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
-File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-cfg\color.cfg"
+File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 225.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\colortbl\colortbl.sty"
 Package: colortbl 2012/02/13 v1.0a Color table columns (DPC)
 \everycr=\toks24
-\minrowclearance=\skip54
+\minrowclearance=\skip56
 )
 \rownum=\count94
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
@@ -614,55 +697,55 @@ Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hyperref.sty"
-Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
+Package: hyperref 2017/03/14 v6.85a Hypertext links for LaTeX
 
 ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\hobsub-hyperref.sty"
-Package: hobsub-hyperref 2012/04/25 v1.12 Bundle oberdiek, subset hyperref (HO)
+Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
 
 
 ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\hobsub-generic.sty"
-Package: hobsub-generic 2012/04/25 v1.12 Bundle oberdiek, subset generic (HO)
-Package: hobsub 2012/04/25 v1.12 Construct package bundles (HO)
+Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
 Package hobsub Info: Skipping package `infwarerr' (already loaded).
 Package hobsub Info: Skipping package `ltxcmds' (already loaded).
 Package hobsub Info: Skipping package `ifluatex' (already loaded).
 Package hobsub Info: Skipping package `ifvtex' (already loaded).
-Package: intcalc 2007/09/27 v1.1 Expandable calculations with integers (HO)
+Package: intcalc 2016/05/16 v1.2 Expandable calculations with integers (HO)
 Package hobsub Info: Skipping package `ifpdf' (already loaded).
 Package hobsub Info: Skipping package `etexcmds' (already loaded).
 Package hobsub Info: Skipping package `kvsetkeys' (already loaded).
-Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
-Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+Package: pdftexcmds 2017/03/19 v0.25 Utility functions of pdfTeX for LuaTeX (HO
 )
 Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
-Package: pdfescape 2011/11/25 v1.13 Implements pdfTeX's escape features (HO)
-Package: bigintcalc 2012/04/08 v1.3 Expandable calculations on big integers (HO
+Package: pdfescape 2016/05/16 v1.14 Implements pdfTeX's escape features (HO)
+Package: bigintcalc 2016/05/16 v1.4 Expandable calculations on big integers (HO
 )
-Package: bitset 2011/01/30 v1.1 Handle bit-vector datatype (HO)
-Package: uniquecounter 2011/01/30 v1.2 Provide unlimited unique counter (HO)
+Package: bitset 2016/05/16 v1.2 Handle bit-vector datatype (HO)
+Package: uniquecounter 2016/05/16 v1.3 Provide unlimited unique counter (HO)
 )
 Package hobsub Info: Skipping package `hobsub' (already loaded).
-Package: letltxmacro 2010/09/02 v1.4 Let assignment for LaTeX macros (HO)
-Package: hopatch 2011/06/24 v1.1 Wrapper for package hooks (HO)
-Package: xcolor-patch 2011/01/30 xcolor patch
-Package: atveryend 2011/06/30 v1.8 Hooks at the very end of document (HO)
+Package: letltxmacro 2016/05/16 v1.5 Let assignment for LaTeX macros (HO)
+Package: hopatch 2016/05/16 v1.3 Wrapper for package hooks (HO)
+Package: xcolor-patch 2016/05/16 xcolor patch
+Package: atveryend 2016/05/16 v1.9 Hooks at the very end of document (HO)
 Package atveryend Info: \AP@enddocument detected (standard20110627).
-Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
-Package: refcount 2011/10/16 v3.4 Data extraction from label references (HO)
-Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
+Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
+Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
+Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\auxhook.sty"
-Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
+Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 )
 \@linkdim=\dimen118
 \Hy@linkcounter=\count95
 \Hy@pagecounter=\count96
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\pd1enc.def"
-File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
+File: pd1enc.def 2017/03/14 v6.85a Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
@@ -671,40 +754,40 @@ Now handling font encoding PD1 ...
 ("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\hyperref.cfg"
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
-Package hyperref Info: Option `unicode' set `true' on input line 4319.
+Package hyperref Info: Option `unicode' set `true' on input line 4374.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\puenc.def"
-File: puenc.def 2012/11/06 v6.83m Hyperref: PDF Unicode definition (HO)
+File: puenc.def 2017/03/14 v6.85a Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
 ... no UTF-8 mapping file for font encoding PU
 )
-Package hyperref Info: Hyper figures OFF on input line 4443.
-Package hyperref Info: Link nesting OFF on input line 4448.
-Package hyperref Info: Hyper index ON on input line 4451.
-Package hyperref Info: Plain pages OFF on input line 4458.
-Package hyperref Info: Backreferencing OFF on input line 4463.
+Package hyperref Info: Hyper figures OFF on input line 4498.
+Package hyperref Info: Link nesting OFF on input line 4503.
+Package hyperref Info: Hyper index ON on input line 4506.
+Package hyperref Info: Plain pages OFF on input line 4513.
+Package hyperref Info: Backreferencing OFF on input line 4518.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
-Package hyperref Info: Bookmarks ON on input line 4688.
+Package hyperref Info: Bookmarks ON on input line 4751.
 \c@Hy@tempcnt=\count98
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\ltxmisc\url.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\url\url.sty"
 \Urlmuskip=\muskip10
-Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-LaTeX Info: Redefining \url on input line 5041.
+LaTeX Info: Redefining \url on input line 5104.
 \XeTeXLinkMargin=\dimen119
 \Fld@menulength=\count99
 \Field@Width=\dimen120
 \Fld@charsize=\dimen121
-Package hyperref Info: Hyper figures OFF on input line 6295.
-Package hyperref Info: Link nesting OFF on input line 6300.
-Package hyperref Info: Hyper index ON on input line 6303.
-Package hyperref Info: backreferencing OFF on input line 6310.
-Package hyperref Info: Link coloring OFF on input line 6315.
-Package hyperref Info: Link coloring with OCG OFF on input line 6320.
-Package hyperref Info: PDF/A mode OFF on input line 6325.
-LaTeX Info: Redefining \ref on input line 6365.
-LaTeX Info: Redefining \pageref on input line 6369.
+Package hyperref Info: Hyper figures OFF on input line 6358.
+Package hyperref Info: Link nesting OFF on input line 6363.
+Package hyperref Info: Hyper index ON on input line 6366.
+Package hyperref Info: backreferencing OFF on input line 6373.
+Package hyperref Info: Link coloring OFF on input line 6378.
+Package hyperref Info: Link coloring with OCG OFF on input line 6383.
+Package hyperref Info: PDF/A mode OFF on input line 6388.
+LaTeX Info: Redefining \ref on input line 6428.
+LaTeX Info: Redefining \pageref on input line 6432.
 \Hy@abspage=\count100
 \c@Item=\count101
 \c@Hfootnote=\count102
@@ -713,55 +796,55 @@ LaTeX Info: Redefining \pageref on input line 6369.
 Package hyperref Message: Driver (autodetected): hpdftex.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hpdftex.def"
-File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
+File: hpdftex.def 2017/03/14 v6.85a Hyperref driver for pdfTeX
 \Fld@listcount=\count103
 \c@bookmark@seq@number=\count104
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\rerunfilecheck.sty"
-Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
+Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 )
-\Hy@SectionHShift=\skip55
+\Hy@SectionHShift=\skip57
 )
 Package hyperref Info: Option `colorlinks' set `true' on input line 18.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\commath\commath.sty"
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
-Package: amsmath 2013/01/14 v2.14 AMS math features
-\@mathmargin=\skip56
+Package: amsmath 2017/09/02 v2.17a AMS math features
+\@mathmargin=\skip58
 
 For additional information on amsmath, use the `?' option.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amstext.sty"
-Package: amstext 2000/06/29 v2.01
+Package: amstext 2000/06/29 v2.01 AMS text
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty"
-File: amsgen.sty 1999/11/30 v2.0
+File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks25
 \ex@=\dimen122
 ))
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty"
-Package: amsbsy 1999/11/29 v1.2d
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen123
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty"
-Package: amsopn 1999/12/14 v2.01 operator names
+Package: amsopn 2016/03/08 v2.02 operator names
 )
 \inf@bad=\count105
-LaTeX Info: Redefining \frac on input line 210.
+LaTeX Info: Redefining \frac on input line 213.
 \uproot@=\count106
 \leftroot@=\count107
-LaTeX Info: Redefining \overline on input line 306.
+LaTeX Info: Redefining \overline on input line 375.
 \classnum@=\count108
 \DOTSCASE@=\count109
-LaTeX Info: Redefining \ldots on input line 378.
-LaTeX Info: Redefining \dots on input line 381.
-LaTeX Info: Redefining \cdots on input line 466.
+LaTeX Info: Redefining \ldots on input line 472.
+LaTeX Info: Redefining \dots on input line 475.
+LaTeX Info: Redefining \cdots on input line 596.
 \Mathstrutbox@=\box30
 \strutbox@=\box31
 \big@size=\dimen124
-LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
+LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
 \macc@depth=\count110
 \c@MaxMatrixCols=\count111
 \dotsspace@=\muskip11
@@ -779,11 +862,11 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
 \totwidth@=\dimen129
 \lineht@=\dimen130
 \@envbody=\toks28
-\multlinegap=\skip57
-\multlinetaggap=\skip58
+\multlinegap=\skip59
+\multlinetaggap=\skip60
 \mathdisplay@stack=\toks29
-LaTeX Info: Redefining \[ on input line 2665.
-LaTeX Info: Redefining \] on input line 2666.
+LaTeX Info: Redefining \[ on input line 2817.
+LaTeX Info: Redefining \] on input line 2818.
 ))
 ("C:\Program Files\MiKTeX 2.9\tex\latex\listings\listings.sty"
 \lst@mode=\count117
@@ -821,7 +904,7 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\textcomp.sty"
-Package: textcomp 2005/09/27 v1.99g Standard LaTeX package
+Package: textcomp 2017/04/05 v2.0i Standard LaTeX package
 Package textcomp Info: Sub-encoding information:
 (textcomp)               5 = only ISO-Adobe without \textcurrency
 (textcomp)               4 = 5 + \texteuro
@@ -833,7 +916,7 @@ Package textcomp Info: Sub-encoding information:
 (textcomp)             only a restricted character set as indicated.
 (textcomp)             Family '?' is the default used for unknown fonts.
 (textcomp)             See the documentation for details.
-Package textcomp Info: Setting ? sub-encoding to TS1/1 on input line 71.
+Package textcomp Info: Setting ? sub-encoding to TS1/1 on input line 79.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\ts1enc.def"
 File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
@@ -841,7 +924,7 @@ Now handling font encoding TS1 ...
 ... processing UTF-8 mapping file for font encoding TS1
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\ts1enc.dfu"
-File: ts1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
+File: ts1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
    defining Unicode char U+00A2 (decimal 162)
    defining Unicode char U+00A3 (decimal 163)
    defining Unicode char U+00A4 (decimal 164)
@@ -912,71 +995,72 @@ File: ts1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+25EF (decimal 9711)
    defining Unicode char U+266A (decimal 9834)
 ))
-LaTeX Info: Redefining \oldstylenums on input line 266.
-Package textcomp Info: Setting cmr sub-encoding to TS1/0 on input line 281.
-Package textcomp Info: Setting cmss sub-encoding to TS1/0 on input line 282.
-Package textcomp Info: Setting cmtt sub-encoding to TS1/0 on input line 283.
-Package textcomp Info: Setting cmvtt sub-encoding to TS1/0 on input line 284.
-Package textcomp Info: Setting cmbr sub-encoding to TS1/0 on input line 285.
-Package textcomp Info: Setting cmtl sub-encoding to TS1/0 on input line 286.
-Package textcomp Info: Setting ccr sub-encoding to TS1/0 on input line 287.
-Package textcomp Info: Setting ptm sub-encoding to TS1/4 on input line 288.
-Package textcomp Info: Setting pcr sub-encoding to TS1/4 on input line 289.
-Package textcomp Info: Setting phv sub-encoding to TS1/4 on input line 290.
-Package textcomp Info: Setting ppl sub-encoding to TS1/3 on input line 291.
-Package textcomp Info: Setting pag sub-encoding to TS1/4 on input line 292.
-Package textcomp Info: Setting pbk sub-encoding to TS1/4 on input line 293.
-Package textcomp Info: Setting pnc sub-encoding to TS1/4 on input line 294.
-Package textcomp Info: Setting pzc sub-encoding to TS1/4 on input line 295.
-Package textcomp Info: Setting bch sub-encoding to TS1/4 on input line 296.
-Package textcomp Info: Setting put sub-encoding to TS1/5 on input line 297.
-Package textcomp Info: Setting uag sub-encoding to TS1/5 on input line 298.
-Package textcomp Info: Setting ugq sub-encoding to TS1/5 on input line 299.
-Package textcomp Info: Setting ul8 sub-encoding to TS1/4 on input line 300.
-Package textcomp Info: Setting ul9 sub-encoding to TS1/4 on input line 301.
-Package textcomp Info: Setting augie sub-encoding to TS1/5 on input line 302.
-Package textcomp Info: Setting dayrom sub-encoding to TS1/3 on input line 303.
-Package textcomp Info: Setting dayroms sub-encoding to TS1/3 on input line 304.
+LaTeX Info: Redefining \oldstylenums on input line 334.
+Package textcomp Info: Setting cmr sub-encoding to TS1/0 on input line 349.
+Package textcomp Info: Setting cmss sub-encoding to TS1/0 on input line 350.
+Package textcomp Info: Setting cmtt sub-encoding to TS1/0 on input line 351.
+Package textcomp Info: Setting cmvtt sub-encoding to TS1/0 on input line 352.
+Package textcomp Info: Setting cmbr sub-encoding to TS1/0 on input line 353.
+Package textcomp Info: Setting cmtl sub-encoding to TS1/0 on input line 354.
+Package textcomp Info: Setting ccr sub-encoding to TS1/0 on input line 355.
+Package textcomp Info: Setting ptm sub-encoding to TS1/4 on input line 356.
+Package textcomp Info: Setting pcr sub-encoding to TS1/4 on input line 357.
+Package textcomp Info: Setting phv sub-encoding to TS1/4 on input line 358.
+Package textcomp Info: Setting ppl sub-encoding to TS1/3 on input line 359.
+Package textcomp Info: Setting pag sub-encoding to TS1/4 on input line 360.
+Package textcomp Info: Setting pbk sub-encoding to TS1/4 on input line 361.
+Package textcomp Info: Setting pnc sub-encoding to TS1/4 on input line 362.
+Package textcomp Info: Setting pzc sub-encoding to TS1/4 on input line 363.
+Package textcomp Info: Setting bch sub-encoding to TS1/4 on input line 364.
+Package textcomp Info: Setting put sub-encoding to TS1/5 on input line 365.
+Package textcomp Info: Setting uag sub-encoding to TS1/5 on input line 366.
+Package textcomp Info: Setting ugq sub-encoding to TS1/5 on input line 367.
+Package textcomp Info: Setting ul8 sub-encoding to TS1/4 on input line 368.
+Package textcomp Info: Setting ul9 sub-encoding to TS1/4 on input line 369.
+Package textcomp Info: Setting augie sub-encoding to TS1/5 on input line 370.
+Package textcomp Info: Setting dayrom sub-encoding to TS1/3 on input line 371.
+Package textcomp Info: Setting dayroms sub-encoding to TS1/3 on input line 372.
 
-Package textcomp Info: Setting pxr sub-encoding to TS1/0 on input line 305.
-Package textcomp Info: Setting pxss sub-encoding to TS1/0 on input line 306.
-Package textcomp Info: Setting pxtt sub-encoding to TS1/0 on input line 307.
-Package textcomp Info: Setting txr sub-encoding to TS1/0 on input line 308.
-Package textcomp Info: Setting txss sub-encoding to TS1/0 on input line 309.
-Package textcomp Info: Setting txtt sub-encoding to TS1/0 on input line 310.
-Package textcomp Info: Setting lmr sub-encoding to TS1/0 on input line 311.
-Package textcomp Info: Setting lmdh sub-encoding to TS1/0 on input line 312.
-Package textcomp Info: Setting lmss sub-encoding to TS1/0 on input line 313.
-Package textcomp Info: Setting lmssq sub-encoding to TS1/0 on input line 314.
-Package textcomp Info: Setting lmvtt sub-encoding to TS1/0 on input line 315.
-Package textcomp Info: Setting qhv sub-encoding to TS1/0 on input line 316.
-Package textcomp Info: Setting qag sub-encoding to TS1/0 on input line 317.
-Package textcomp Info: Setting qbk sub-encoding to TS1/0 on input line 318.
-Package textcomp Info: Setting qcr sub-encoding to TS1/0 on input line 319.
-Package textcomp Info: Setting qcs sub-encoding to TS1/0 on input line 320.
-Package textcomp Info: Setting qpl sub-encoding to TS1/0 on input line 321.
-Package textcomp Info: Setting qtm sub-encoding to TS1/0 on input line 322.
-Package textcomp Info: Setting qzc sub-encoding to TS1/0 on input line 323.
-Package textcomp Info: Setting qhvc sub-encoding to TS1/0 on input line 324.
-Package textcomp Info: Setting futs sub-encoding to TS1/4 on input line 325.
-Package textcomp Info: Setting futx sub-encoding to TS1/4 on input line 326.
-Package textcomp Info: Setting futj sub-encoding to TS1/4 on input line 327.
-Package textcomp Info: Setting hlh sub-encoding to TS1/3 on input line 328.
-Package textcomp Info: Setting hls sub-encoding to TS1/3 on input line 329.
-Package textcomp Info: Setting hlst sub-encoding to TS1/3 on input line 330.
-Package textcomp Info: Setting hlct sub-encoding to TS1/5 on input line 331.
-Package textcomp Info: Setting hlx sub-encoding to TS1/5 on input line 332.
-Package textcomp Info: Setting hlce sub-encoding to TS1/5 on input line 333.
-Package textcomp Info: Setting hlcn sub-encoding to TS1/5 on input line 334.
-Package textcomp Info: Setting hlcw sub-encoding to TS1/5 on input line 335.
-Package textcomp Info: Setting hlcf sub-encoding to TS1/5 on input line 336.
-Package textcomp Info: Setting pplx sub-encoding to TS1/3 on input line 337.
-Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 338.
-Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 339.
-Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 340.
+Package textcomp Info: Setting pxr sub-encoding to TS1/0 on input line 373.
+Package textcomp Info: Setting pxss sub-encoding to TS1/0 on input line 374.
+Package textcomp Info: Setting pxtt sub-encoding to TS1/0 on input line 375.
+Package textcomp Info: Setting txr sub-encoding to TS1/0 on input line 376.
+Package textcomp Info: Setting txss sub-encoding to TS1/0 on input line 377.
+Package textcomp Info: Setting txtt sub-encoding to TS1/0 on input line 378.
+Package textcomp Info: Setting lmr sub-encoding to TS1/0 on input line 379.
+Package textcomp Info: Setting lmdh sub-encoding to TS1/0 on input line 380.
+Package textcomp Info: Setting lmss sub-encoding to TS1/0 on input line 381.
+Package textcomp Info: Setting lmssq sub-encoding to TS1/0 on input line 382.
+Package textcomp Info: Setting lmvtt sub-encoding to TS1/0 on input line 383.
+Package textcomp Info: Setting lmtt sub-encoding to TS1/0 on input line 384.
+Package textcomp Info: Setting qhv sub-encoding to TS1/0 on input line 385.
+Package textcomp Info: Setting qag sub-encoding to TS1/0 on input line 386.
+Package textcomp Info: Setting qbk sub-encoding to TS1/0 on input line 387.
+Package textcomp Info: Setting qcr sub-encoding to TS1/0 on input line 388.
+Package textcomp Info: Setting qcs sub-encoding to TS1/0 on input line 389.
+Package textcomp Info: Setting qpl sub-encoding to TS1/0 on input line 390.
+Package textcomp Info: Setting qtm sub-encoding to TS1/0 on input line 391.
+Package textcomp Info: Setting qzc sub-encoding to TS1/0 on input line 392.
+Package textcomp Info: Setting qhvc sub-encoding to TS1/0 on input line 393.
+Package textcomp Info: Setting futs sub-encoding to TS1/4 on input line 394.
+Package textcomp Info: Setting futx sub-encoding to TS1/4 on input line 395.
+Package textcomp Info: Setting futj sub-encoding to TS1/4 on input line 396.
+Package textcomp Info: Setting hlh sub-encoding to TS1/3 on input line 397.
+Package textcomp Info: Setting hls sub-encoding to TS1/3 on input line 398.
+Package textcomp Info: Setting hlst sub-encoding to TS1/3 on input line 399.
+Package textcomp Info: Setting hlct sub-encoding to TS1/5 on input line 400.
+Package textcomp Info: Setting hlx sub-encoding to TS1/5 on input line 401.
+Package textcomp Info: Setting hlce sub-encoding to TS1/5 on input line 402.
+Package textcomp Info: Setting hlcn sub-encoding to TS1/5 on input line 403.
+Package textcomp Info: Setting hlcw sub-encoding to TS1/5 on input line 404.
+Package textcomp Info: Setting hlcf sub-encoding to TS1/5 on input line 405.
+Package textcomp Info: Setting pplx sub-encoding to TS1/3 on input line 406.
+Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 407.
+Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 408.
+Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\tools\tabularx.sty"
-Package: tabularx 1999/01/07 v2.07 `tabularx' package (DPC)
+Package: tabularx 2016/02/03 v2.11 `tabularx' package (DPC)
 \TX@col@width=\dimen135
 \TX@old@table=\dimen136
 \TX@old@col=\dimen137
@@ -1379,10 +1463,10 @@ Package: booktabs 2005/04/14 v1.61803 publication quality tables
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\libraries\pgflibraryarrows.meta.c
 ode.tex"
 File: pgflibraryarrows.meta.code.tex 2015/05/13 v3.0.1a (rcs-revision 1.13)
-\pgfarrowinset=\dimen200
-\pgfarrowlength=\dimen201
-\pgfarrowwidth=\dimen202
-\pgfarrowlinewidth=\dimen203
+\pgfarrowinset=\dimen256
+\pgfarrowlength=\dimen257
+\pgfarrowwidth=\dimen258
+\pgfarrowlinewidth=\dimen259
 )
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikz
 libraryspy.code.tex"
@@ -1399,7 +1483,9 @@ Package tocbibind Info: The document has section divisions on input line 50.
 
 Package tocbibind Note: Using section or other style headings.
 
-) (F:\final-exam-report\report\report.aux)
+) (report.aux)
+\openout1 = `report.aux'.
+
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 80.
 LaTeX Font Info:    ... okay on input line 80.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 80.
@@ -1420,25 +1506,36 @@ LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 80.
 LaTeX Font Info:    ... okay on input line 80.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 80.
 LaTeX Font Info:    Try loading font information for TS1+cmr on input line 80.
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
-File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
+File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 80.
 
 ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count149
-\scratchdimen=\dimen204
+\scratchdimen=\dimen260
 \scratchbox=\box66
 \nofMPsegments=\count150
 \nofMParguments=\count151
 \everyMPshowfont=\toks44
 \MPscratchCnt=\count152
-\MPscratchDim=\dimen205
+\MPscratchDim=\dimen261
 \MPnumerator=\count153
 \makeMPintoPDFobject=\count154
 \everyMPtoPDFconversion=\toks45
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\grfext.sty"
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+38.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
 )
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1477,10 +1574,10 @@ LaTeX Font Info:    ... okay on input line 80.
 \AtBeginShipoutBox=\box67
 Package hyperref Info: Link coloring ON on input line 80.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
-Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
+Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
 ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
-Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
+Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count155
 )
@@ -1488,47 +1585,50 @@ LaTeX Info: Redefining \ref on input line 80.
 LaTeX Info: Redefining \pageref on input line 80.
 LaTeX Info: Redefining \nameref on input line 80.
 
-(F:\final-exam-report\report\report.out)
-(F:\final-exam-report\report\report.out)
+(report.out) (report.out)
 \@outlinefile=\write4
+\openout4 = `report.out'.
+
 \c@lstlisting=\count156
  ABD: EveryShipout initializing macros
 <hinh/logo.png, id=410, 755.82375pt x 770.88pt>
 File: hinh/logo.png Graphic file (type png)
- <use hinh/logo.png>
-Package pdftex.def Info: hinh/logo.png used on input line 96.
-(pdftex.def)             Requested size: 75.58679pt x 77.09251pt.
-
+<use hinh/logo.png>
+Package pdftex.def Info: hinh/logo.png  used on input line 96. on input line 96
+.
+Package pdftex.def Info: Requested size: 75.58679pt x 77.09251pt on input line 
+96.
 <hinh/background.jpg, id=412, 469.755pt x 764.748pt>
 File: hinh/background.jpg Graphic file (type jpg)
- <use hinh/background.jpg>
-Package pdftex.def Info: hinh/background.jpg used on input line 128.
-(pdftex.def)             Requested size: 478.01125pt x 760.59192pt.
+<use hinh/background.jpg>
+Package pdftex.def Info: hinh/background.jpg  used on input line 128. on input 
+line 128.
+Package pdftex.def Info: Requested size: 478.01125pt x 760.59192pt on input lin
+e 128.
+ [1
 
-[1
-
-{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <F:/final-exam-report/repo
-rt/hinh/background.jpg> <F:/final-exam-report/report/hinh/logo.png>]
+{C:/Users/Chi Tay Ta/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./hinh
+/background.jpg> <./hinh/logo.png>]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[2] [3] [4] (F:\final-exam-report\report\report.toc
+[2] [3] [4] (report.toc
 LaTeX Font Info:    Try loading font information for U+msa on input line 5.
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 5.
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [5] [6] [7])
 \tf@toc=\write5
+\openout5 = `report.toc'.
 
-[8] (F:\final-exam-report\report\report.lof
+
+[8] (report.lof
 
 Package Fancyhdr Warning: \headheight is too small (14.49998pt): 
  Make it at least 17.97171pt.
@@ -1537,115 +1637,127 @@ Package Fancyhdr Warning: \headheight is too small (14.49998pt):
 
 [9] [10] [11] [12] [13])
 \tf@lof=\write6
+\openout6 = `report.lof'.
+
  [14]
 
 Package hyperref Warning: Glyph not defined in PU encoding,
 (hyperref)                removing `\h' on input line 167.
 
-(F:\final-exam-report\report\report.lot [15])
+(report.lot [15])
 \tf@lot=\write7
+\openout7 = `report.lot'.
+
  [16] [17] [1] [2]
 <hinh/IoT_intro.jpg, id=1087, 286.82156pt x 276.28218pt>
 File: hinh/IoT_intro.jpg Graphic file (type jpg)
-
 <use hinh/IoT_intro.jpg>
-Package pdftex.def Info: hinh/IoT_intro.jpg used on input line 255.
-(pdftex.def)             Requested size: 200.77371pt x 193.3962pt.
- [3 <F:/final-exam-report/report/hinh/IoT_intro.jpg>]
+Package pdftex.def Info: hinh/IoT_intro.jpg  used on input line 255. on input l
+ine 255.
+Package pdftex.def Info: Requested size: 200.77371pt x 193.3962pt on input line
+ 255.
+ [3 <./hinh/IoT_intro.jpg>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\@ifnextchar' on input line 265.
 
-[4] <hinh/IoT_ungdung.jpg, id=1100, 803.0pt x 770.88pt>
+[4]
+<hinh/IoT_ungdung.jpg, id=1100, 803.0pt x 770.88pt>
 File: hinh/IoT_ungdung.jpg Graphic file (type jpg)
-
 <use hinh/IoT_ungdung.jpg>
-Package pdftex.def Info: hinh/IoT_ungdung.jpg used on input line 305.
-(pdftex.def)             Requested size: 321.1943pt x 308.34654pt.
- [5] [6 <F:/final-exam-report/report/hinh/IoT_ungdung.jpg>] <hinh/Wick_system.j
-pg, id=1112, 401.5pt x 250.9375pt>
+Package pdftex.def Info: hinh/IoT_ungdung.jpg  used on input line 305. on input
+ line 305.
+Package pdftex.def Info: Requested size: 321.1943pt x 308.34654pt on input line
+ 305.
+ [5] [6 <./hinh/IoT_ungdung.jpg>]
+<hinh/Wick_system.jpg, id=1112, 401.5pt x 250.9375pt>
 File: hinh/Wick_system.jpg Graphic file (type jpg)
-
 <use hinh/Wick_system.jpg>
-Package pdftex.def Info: hinh/Wick_system.jpg used on input line 321.
-(pdftex.def)             Requested size: 321.20042pt x 200.75026pt.
-
+Package pdftex.def Info: hinh/Wick_system.jpg  used on input line 321. on input
+ line 321.
+Package pdftex.def Info: Requested size: 321.20042pt x 200.75026pt on input lin
+e 321.
 <hinh/Water_culture.jpg, id=1115, 401.5pt x 250.9375pt>
 File: hinh/Water_culture.jpg Graphic file (type jpg)
-
 <use hinh/Water_culture.jpg>
-Package pdftex.def Info: hinh/Water_culture.jpg used on input line 331.
-(pdftex.def)             Requested size: 321.20042pt x 200.75026pt.
- [7 <F:/final-exam-report/report/hinh/Wick_system.jpg>] <hinh/ebb_flow.jpg, id=
-1122, 401.5pt x 250.9375pt>
+Package pdftex.def Info: hinh/Water_culture.jpg  used on input line 331. on inp
+ut line 331.
+Package pdftex.def Info: Requested size: 321.20042pt x 200.75026pt on input lin
+e 331.
+ [7 <./hinh/Wick_system.jpg>]
+<hinh/ebb_flow.jpg, id=1122, 401.5pt x 250.9375pt>
 File: hinh/ebb_flow.jpg Graphic file (type jpg)
-
 <use hinh/ebb_flow.jpg>
-Package pdftex.def Info: hinh/ebb_flow.jpg used on input line 342.
-(pdftex.def)             Requested size: 361.34665pt x 225.84164pt.
- [8 <F:/final-exam-report/report/hinh/Water_culture.jpg> <F:/final-exam-report/
-report/hinh/ebb_flow.jpg>]
+Package pdftex.def Info: hinh/ebb_flow.jpg  used on input line 342. on input li
+ne 342.
+Package pdftex.def Info: Requested size: 361.34665pt x 225.84164pt on input lin
+e 342.
+ [8 <./hinh/Water_culture.jpg> <./hinh/ebb_flow.jpg>]
 <hinh/Drip_system.jpg, id=1130, 401.5pt x 250.9375pt>
 File: hinh/Drip_system.jpg Graphic file (type jpg)
-
 <use hinh/Drip_system.jpg>
-Package pdftex.def Info: hinh/Drip_system.jpg used on input line 352.
-(pdftex.def)             Requested size: 361.34665pt x 225.84164pt.
-
+Package pdftex.def Info: hinh/Drip_system.jpg  used on input line 352. on input
+ line 352.
+Package pdftex.def Info: Requested size: 361.34665pt x 225.84164pt on input lin
+e 352.
 <hinh/NFT_system.jpg, id=1133, 401.5pt x 250.9375pt>
 File: hinh/NFT_system.jpg Graphic file (type jpg)
- <use hinh/NFT_system.jpg>
-Package pdftex.def Info: hinh/NFT_system.jpg used on input line 363.
-(pdftex.def)             Requested size: 321.20042pt x 200.75026pt.
-
-[9 <F:/final-exam-report/report/hinh/Drip_system.jpg>]
+<use hinh/NFT_system.jpg>
+Package pdftex.def Info: hinh/NFT_system.jpg  used on input line 363. on input 
+line 363.
+Package pdftex.def Info: Requested size: 321.20042pt x 200.75026pt on input lin
+e 363.
+ [9 <./hinh/Drip_system.jpg>]
 <hinh/aeroponics.jpg, id=1140, 401.5pt x 250.9375pt>
 File: hinh/aeroponics.jpg Graphic file (type jpg)
- <use hinh/aeroponics.jpg>
-Package pdftex.def Info: hinh/aeroponics.jpg used on input line 375.
-(pdftex.def)             Requested size: 361.34665pt x 225.84164pt.
-
-[10 <F:/final-exam-report/report/hinh/NFT_system.jpg> <F:/final-exam-report/rep
-ort/hinh/aeroponics.jpg>] [11]
+<use hinh/aeroponics.jpg>
+Package pdftex.def Info: hinh/aeroponics.jpg  used on input line 375. on input 
+line 375.
+Package pdftex.def Info: Requested size: 361.34665pt x 225.84164pt on input lin
+e 375.
+ [10 <./hinh/NFT_system.jpg> <./hinh/aeroponics.jpg>] [11]
 <hinh/PPM/ppm_thamkhao.PNG, id=1152, 207.77625pt x 188.20313pt>
 File: hinh/PPM/ppm_thamkhao.PNG Graphic file (type png)
-
 <use hinh/PPM/ppm_thamkhao.PNG>
-Package pdftex.def Info: hinh/PPM/ppm_thamkhao.PNG used on input line 398.
-(pdftex.def)             Requested size: 166.2212pt x 150.56268pt.
-
+Package pdftex.def Info: hinh/PPM/ppm_thamkhao.PNG  used on input line 398. on 
+input line 398.
+Package pdftex.def Info: Requested size: 166.2212pt x 150.56268pt on input line
+ 398.
 <hinh/PPM/ppm_ion.png, id=1154, 88.83188pt x 88.07906pt>
 File: hinh/PPM/ppm_ion.png Graphic file (type png)
-
 <use hinh/PPM/ppm_ion.png>
-Package pdftex.def Info: hinh/PPM/ppm_ion.png used on input line 408.
-(pdftex.def)             Requested size: 88.83165pt x 88.07883pt.
- [12 <F:/final-exam-report/report/hinh/PPM/ppm_thamkhao.PNG>] <hinh/PPM/ppm_AC.
-png, id=1160, 261.22594pt x 146.79843pt>
+Package pdftex.def Info: hinh/PPM/ppm_ion.png  used on input line 408. on input
+ line 408.
+Package pdftex.def Info: Requested size: 88.83165pt x 88.07883pt on input line 
+408.
+ [12 <./hinh/PPM/ppm_thamkhao.PNG>]
+<hinh/PPM/ppm_AC.png, id=1160, 261.22594pt x 146.79843pt>
 File: hinh/PPM/ppm_AC.png Graphic file (type png)
-
 <use hinh/PPM/ppm_AC.png>
-Package pdftex.def Info: hinh/PPM/ppm_AC.png used on input line 416.
-(pdftex.def)             Requested size: 261.22528pt x 146.79807pt.
-
+Package pdftex.def Info: hinh/PPM/ppm_AC.png  used on input line 416. on input 
+line 416.
+Package pdftex.def Info: Requested size: 261.22528pt x 146.79807pt on input lin
+e 416.
 <hinh/PPM/ppm_DC.png, id=1162, 264.23718pt x 148.30406pt>
 File: hinh/PPM/ppm_DC.png Graphic file (type png)
-
 <use hinh/PPM/ppm_DC.png>
-Package pdftex.def Info: hinh/PPM/ppm_DC.png used on input line 424.
-(pdftex.def)             Requested size: 264.23653pt x 148.30368pt.
- [13 <F:/final-exam-report/report/hinh/PPM/ppm_ion.png> <F:/final-exam-report/r
-eport/hinh/PPM/ppm_AC.png> <F:/final-exam-report/report/hinh/PPM/ppm_DC.png>]
+Package pdftex.def Info: hinh/PPM/ppm_DC.png  used on input line 424. on input 
+line 424.
+Package pdftex.def Info: Requested size: 264.23653pt x 148.30368pt on input lin
+e 424.
+ [13 <./hinh/PPM/ppm_ion.png> <./hinh/PPM/ppm_AC.png> <./hinh/PPM/ppm_DC.png>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\@ifnextchar' on input line 447.
 
-[14] [15] <hinh/json.png, id=1179, 476.53032pt x 246.1697pt>
+[14] [15]
+<hinh/json.png, id=1179, 476.53032pt x 246.1697pt>
 File: hinh/json.png Graphic file (type png)
-
 <use hinh/json.png>
-Package pdftex.def Info: hinh/json.png used on input line 476.
-(pdftex.def)             Requested size: 381.22478pt x 196.936pt.
+Package pdftex.def Info: hinh/json.png  used on input line 476. on input line 4
+76.
+Package pdftex.def Info: Requested size: 381.22478pt x 196.936pt on input line 
+476.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
@@ -1653,11 +1765,12 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 <hinh/nodejs.png, id=1182, 480.29437pt x 234.1247pt>
 File: hinh/nodejs.png Graphic file (type png)
- <use hinh/nodejs.png>
-Package pdftex.def Info: hinh/nodejs.png used on input line 497.
-(pdftex.def)             Requested size: 384.23601pt x 187.3pt.
-
-[16 <F:/final-exam-report/report/hinh/json.png>]
+<use hinh/nodejs.png>
+Package pdftex.def Info: hinh/nodejs.png  used on input line 497. on input line
+ 497.
+Package pdftex.def Info: Requested size: 384.23601pt x 187.3pt on input line 49
+7.
+[16 <./hinh/json.png>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\@ifnextchar' on input line 505.
@@ -1666,7 +1779,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\@ifnextchar' on input line 511.
 
-[17 <F:/final-exam-report/report/hinh/nodejs.png>]
+[17 <./hinh/nodejs.png>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\@ifnextchar' on input line 517.
@@ -1690,15 +1803,17 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 <hinh/jwt2.png, id=1205, 1339.0025pt x 750.805pt>
 File: hinh/jwt2.png Graphic file (type png)
- <use hinh/jwt2.png>
-Package pdftex.def Info: hinh/jwt2.png used on input line 562.
-(pdftex.def)             Requested size: 468.6579pt x 262.78568pt.
+<use hinh/jwt2.png>
+Package pdftex.def Info: hinh/jwt2.png  used on input line 562. on input line 5
+62.
+Package pdftex.def Info: Requested size: 468.6579pt x 262.78568pt on input line
+ 562.
 
 Overfull \hbox (13.41379pt too wide) in paragraph at lines 562--563
  [][] 
  []
 
-[19] [20 <F:/final-exam-report/report/hinh/jwt2.png>]
+[19] [20 <./hinh/jwt2.png>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\@ifnextchar' on input line 587.
@@ -1714,7 +1829,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 [21]
 LaTeX Font Info:    Try loading font information for T5+cmtt on input line 616.
 
- ("C:\Program Files\MiKTeX 2.9\tex\latex\vntex\t5cmtt.fd"
+ ("C:\Program Files\MiKTeX 2.9\vntex\tex\latex\vntex\t5cmtt.fd"
 File: t5cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 Overfull \hbox (48.69011pt too wide) in paragraph at lines 617--618
@@ -1743,153 +1858,171 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\@ifnextchar' on input line 652.
 
-[23] <hinh/mqtt.png, id=1241, 551.1792pt x 361.8318pt>
+[23]
+<hinh/mqtt.png, id=1241, 551.1792pt x 361.8318pt>
 File: hinh/mqtt.png Graphic file (type png)
- <use hinh/mqtt.png>
-Package pdftex.def Info: hinh/mqtt.png used on input line 663.
-(pdftex.def)             Requested size: 312.98955pt x 199.16821pt.
-
-[24 <F:/final-exam-report/report/hinh/mqtt.png>]
+<use hinh/mqtt.png>
+Package pdftex.def Info: hinh/mqtt.png  used on input line 663. on input line 6
+63.
+Package pdftex.def Info: Requested size: 312.98955pt x 199.16821pt on input lin
+e 663.
+ [24 <./hinh/mqtt.png>]
 <hinh/system.png, id=1248, 688.82344pt x 386.94562pt>
 File: hinh/system.png Graphic file (type png)
- <use hinh/system.png>
-Package pdftex.def Info: hinh/system.png used on input line 676.
-(pdftex.def)             Requested size: 369.88853pt x 256.0757pt.
-
+<use hinh/system.png>
+Package pdftex.def Info: hinh/system.png  used on input line 676. on input line
+ 676.
+Package pdftex.def Info: Requested size: 369.88853pt x 256.0757pt on input line
+ 676.
 <hinh/DHT22.jpg, id=1249, 481.8pt x 481.8pt>
 File: hinh/DHT22.jpg Graphic file (type jpg)
- <use hinh/DHT22.jpg>
-Package pdftex.def Info: hinh/DHT22.jpg used on input line 701.
-(pdftex.def)             Requested size: 144.5411pt x 144.5411pt.
- [25 <F:/final-exam-report/report/hinh/system.png>]
+<use hinh/DHT22.jpg>
+Package pdftex.def Info: hinh/DHT22.jpg  used on input line 701. on input line 
+701.
+Package pdftex.def Info: Requested size: 144.5411pt x 144.5411pt on input line 
+701.
+ [25 <./hinh/system.png>]
 <hinh/BH175.png, id=1257, 265.74281pt x 225.84375pt>
 File: hinh/BH175.png Graphic file (type png)
- <use hinh/BH175.png>
-Package pdftex.def Info: hinh/BH175.png used on input line 721.
-(pdftex.def)             Requested size: 212.59453pt x 180.67523pt.
-
-[26 <F:/final-exam-report/report/hinh/DHT22.jpg> <F:/final-exam-report/report/h
-inh/BH175.png>] <hinh/DS1307.PNG, id=1268, 365.11406pt x 268.00125pt>
+<use hinh/BH175.png>
+Package pdftex.def Info: hinh/BH175.png  used on input line 721. on input line 
+721.
+Package pdftex.def Info: Requested size: 212.59453pt x 180.67523pt on input lin
+e 721.
+ [26 <./hinh/DHT22.jpg> <./hinh/BH175.png>]
+<hinh/DS1307.PNG, id=1268, 365.11406pt x 268.00125pt>
 File: hinh/DS1307.PNG Graphic file (type png)
-
 <use hinh/DS1307.PNG>
-Package pdftex.def Info: hinh/DS1307.PNG used on input line 738.
-(pdftex.def)             Requested size: 146.04303pt x 107.1986pt.
- <hinh/Relay.jpg, id=1271, 702.625pt x 702.625pt>
+Package pdftex.def Info: hinh/DS1307.PNG  used on input line 738. on input line
+ 738.
+Package pdftex.def Info: Requested size: 146.04303pt x 107.1986pt on input line
+ 738.
+<hinh/Relay.jpg, id=1271, 702.625pt x 702.625pt>
 File: hinh/Relay.jpg Graphic file (type jpg)
-
 <use hinh/Relay.jpg>
-Package pdftex.def Info: hinh/Relay.jpg used on input line 757.
-(pdftex.def)             Requested size: 227.62137pt x 170.71335pt.
- [27 <F:/final-exam-report/report/hinh/DS1307.PNG>]
+Package pdftex.def Info: hinh/Relay.jpg  used on input line 757. on input line 
+757.
+Package pdftex.def Info: Requested size: 227.62137pt x 170.71335pt on input lin
+e 757.
+ [27 <./hinh/DS1307.PNG>]
 <hinh/Register.jpg, id=1279, 803.0pt x 602.25pt>
 File: hinh/Register.jpg Graphic file (type jpg)
- <use hinh/Register.jpg>
-Package pdftex.def Info: hinh/Register.jpg used on input line 771.
-(pdftex.def)             Requested size: 227.61984pt x 170.71487pt.
-
+<use hinh/Register.jpg>
+Package pdftex.def Info: hinh/Register.jpg  used on input line 771. on input li
+ne 771.
+Package pdftex.def Info: Requested size: 227.61984pt x 170.71487pt on input lin
+e 771.
 <hinh/stm32.jpg, id=1282, 279.0425pt x 181.67876pt>
 File: hinh/stm32.jpg Graphic file (type jpg)
- <use hinh/stm32.jpg>
-Package pdftex.def Info: hinh/stm32.jpg used on input line 787.
-(pdftex.def)             Requested size: 227.62839pt x 170.71982pt.
-
-[28 <F:/final-exam-report/report/hinh/Relay.jpg> <F:/final-exam-report/report/h
-inh/Register.jpg>] <hinh/NodeMCU.jpg, id=1289, 702.625pt x 526.96875pt>
+<use hinh/stm32.jpg>
+Package pdftex.def Info: hinh/stm32.jpg  used on input line 787. on input line 
+787.
+Package pdftex.def Info: Requested size: 227.62839pt x 170.71982pt on input lin
+e 787.
+ [28 <./hinh/Relay.jpg> <./hinh/Register.jpg>]
+<hinh/NodeMCU.jpg, id=1289, 702.625pt x 526.96875pt>
 File: hinh/NodeMCU.jpg Graphic file (type jpg)
-
 <use hinh/NodeMCU.jpg>
-Package pdftex.def Info: hinh/NodeMCU.jpg used on input line 800.
-(pdftex.def)             Requested size: 281.04501pt x 210.78375pt.
- [29 <F:/final-exam-report/report/hinh/stm32.jpg> <F:/final-exam-report/report/
-hinh/NodeMCU.jpg>]
+Package pdftex.def Info: hinh/NodeMCU.jpg  used on input line 800. on input lin
+e 800.
+Package pdftex.def Info: Requested size: 281.04501pt x 210.78375pt on input lin
+e 800.
+ [29 <./hinh/stm32.jpg> <./hinh/NodeMCU.jpg>]
 Underfull \hbox (badness 10000) in paragraph at lines 819--820
 
  []
 
 <hinh/mohinh.png, id=1296, 359.09157pt x 311.66437pt>
 File: hinh/mohinh.png Graphic file (type png)
- <use hinh/mohinh.png>
-Package pdftex.def Info: hinh/mohinh.png used on input line 823.
-(pdftex.def)             Requested size: 359.09068pt x 311.6636pt.
-
-[30 <F:/final-exam-report/report/hinh/mohinh.png>]
+<use hinh/mohinh.png>
+Package pdftex.def Info: hinh/mohinh.png  used on input line 823. on input line
+ 823.
+Package pdftex.def Info: Requested size: 359.09068pt x 311.6636pt on input line
+ 823.
+[30 <./hinh/mohinh.png>]
 <hinh/sensor.PNG, id=1302, 282.30469pt x 195.73125pt>
 File: hinh/sensor.PNG Graphic file (type png)
- <use hinh/sensor.PNG>
-Package pdftex.def Info: hinh/sensor.PNG used on input line 844.
-(pdftex.def)             Requested size: 254.07185pt x 176.15648pt.
-
+<use hinh/sensor.PNG>
+Package pdftex.def Info: hinh/sensor.PNG  used on input line 844. on input line
+ 844.
+Package pdftex.def Info: Requested size: 254.07185pt x 176.15648pt on input lin
+e 844.
 <hinh/pump.jpg, id=1303, 944.02687pt x 822.07124pt>
 File: hinh/pump.jpg Graphic file (type jpg)
- <use hinh/pump.jpg>
-Package pdftex.def Info: hinh/pump.jpg used on input line 860.
-(pdftex.def)             Requested size: 188.80202pt x 164.41133pt.
-
-[31 <F:/final-exam-report/report/hinh/sensor.PNG>]
+<use hinh/pump.jpg>
+Package pdftex.def Info: hinh/pump.jpg  used on input line 860. on input line 8
+60.
+Package pdftex.def Info: Requested size: 188.80202pt x 164.41133pt on input lin
+e 860.
+ [31 <./hinh/sensor.PNG>]
 <hinh/oxi.png, id=1309, 271.0125pt x 213.04594pt>
 File: hinh/oxi.png Graphic file (type png)
- <use hinh/oxi.png>
-Package pdftex.def Info: hinh/oxi.png used on input line 875.
-(pdftex.def)             Requested size: 203.25887pt x 159.78406pt.
-
+<use hinh/oxi.png>
+Package pdftex.def Info: hinh/oxi.png  used on input line 875. on input line 87
+5.
+Package pdftex.def Info: Requested size: 203.25887pt x 159.78406pt on input lin
+e 875.
 <hinh/led.jpg, id=1310, 692.5875pt x 355.3275pt>
 File: hinh/led.jpg Graphic file (type jpg)
- <use hinh/led.jpg>
-Package pdftex.def Info: hinh/led.jpg used on input line 887.
-(pdftex.def)             Requested size: 277.03009pt x 142.12846pt.
- [32 <F:/final-exam-report/report/hinh/pump.jpg> <F:/final-exam-report/report/h
-inh/oxi.png>] [33 <F:/final-exam-report/report/hinh/led.jpg>]
+<use hinh/led.jpg>
+Package pdftex.def Info: hinh/led.jpg  used on input line 887. on input line 88
+7.
+Package pdftex.def Info: Requested size: 277.03009pt x 142.12846pt on input lin
+e 887.
+ [32 <./hinh/pump.jpg> <./hinh/oxi.png>] [33 <./hinh/led.jpg>]
 <hinh/stm_register.PNG, id=1321, 507.39563pt x 317.68687pt>
 File: hinh/stm_register.PNG Graphic file (type png)
-
 <use hinh/stm_register.PNG>
-Package pdftex.def Info: hinh/stm_register.PNG used on input line 905.
-(pdftex.def)             Requested size: 405.91705pt x 254.14983pt.
-
+Package pdftex.def Info: hinh/stm_register.PNG  used on input line 905. on inpu
+t line 905.
+Package pdftex.def Info: Requested size: 405.91705pt x 254.14983pt on input lin
+e 905.
 <hinh/actuator.PNG, id=1322, 328.97906pt x 294.34969pt>
 File: hinh/actuator.PNG Graphic file (type png)
-
 <use hinh/actuator.PNG>
-Package pdftex.def Info: hinh/actuator.PNG used on input line 922.
-(pdftex.def)             Requested size: 263.1836pt x 235.48006pt.
- [34 <F:/final-exam-report/report/hinh/stm_register.PNG>]
+Package pdftex.def Info: hinh/actuator.PNG  used on input line 922. on input li
+ne 922.
+Package pdftex.def Info: Requested size: 263.1836pt x 235.48006pt on input line
+ 922.
+ [34 <./hinh/stm_register.PNG>]
 Underfull \hbox (badness 10000) in paragraph at lines 926--927
 
  []
 
 <hinh/register_relay.PNG, id=1328, 505.13719pt x 364.36125pt>
 File: hinh/register_relay.PNG Graphic file (type png)
-
 <use hinh/register_relay.PNG>
-Package pdftex.def Info: hinh/register_relay.PNG used on input line 930.
-(pdftex.def)             Requested size: 353.59361pt x 255.05113pt.
- [35 <F:/final-exam-report/report/hinh/actuator.PNG> <F:/final-exam-report/repo
-rt/hinh/register_relay.PNG>]
+Package pdftex.def Info: hinh/register_relay.PNG  used on input line 930. on in
+put line 930.
+Package pdftex.def Info: Requested size: 353.59361pt x 255.05113pt on input lin
+e 930.
+[35 <./hinh/actuator.PNG> <./hinh/register_relay.PNG>]
 <hinh/Node_Realtime.PNG, id=1335, 367.3725pt x 332.24126pt>
 File: hinh/Node_Realtime.PNG Graphic file (type png)
-
 <use hinh/Node_Realtime.PNG>
-Package pdftex.def Info: hinh/Node_Realtime.PNG used on input line 944.
-(pdftex.def)             Requested size: 293.89838pt x 265.79335pt.
+Package pdftex.def Info: hinh/Node_Realtime.PNG  used on input line 944. on inp
+ut line 944.
+Package pdftex.def Info: Requested size: 293.89838pt x 265.79335pt on input lin
+e 944.
 
 Underfull \hbox (badness 10000) in paragraph at lines 967--967
 []|\T5/cmr/m/n/12 Thíi iºm t­t
  []
 
-[36 <F:/final-exam-report/report/hinh/Node_Realtime.PNG>]
+[36 <./hinh/Node_Realtime.PNG>]
 <hinh/actuator_lifetime.PNG, id=1341, 654.19406pt x 342.5297pt>
 File: hinh/actuator_lifetime.PNG Graphic file (type png)
-
 <use hinh/actuator_lifetime.PNG>
-Package pdftex.def Info: hinh/actuator_lifetime.PNG used on input line 977.
-(pdftex.def)             Requested size: 457.93272pt x 239.76915pt.
+Package pdftex.def Info: hinh/actuator_lifetime.PNG  used on input line 977. on
+ input line 977.
+Package pdftex.def Info: Requested size: 457.93272pt x 239.76915pt on input lin
+e 977.
 
 Overfull \hbox (2.68861pt too wide) in paragraph at lines 977--978
  [][] 
  []
 
-[37 <F:/final-exam-report/report/hinh/actuator_lifetime.PNG>]
+[37 <./hinh/actuator_lifetime.PNG>]
 Underfull \hbox (badness 10000) in paragraph at lines 1008--1009
 
  []
@@ -1901,229 +2034,237 @@ Underfull \hbox (badness 10000) in paragraph at lines 1008--1009
 
 <hinh/persistent_actuator.PNG, id=1347, 320.69812pt x 353.06906pt>
 File: hinh/persistent_actuator.PNG Graphic file (type png)
-
 <use hinh/persistent_actuator.PNG>
-Package pdftex.def Info: hinh/persistent_actuator.PNG used on input line 1014.
-(pdftex.def)             Requested size: 192.42035pt x 211.84306pt.
- [38]
+Package pdftex.def Info: hinh/persistent_actuator.PNG  used on input line 1014.
+ on input line 1014.
+Package pdftex.def Info: Requested size: 192.42035pt x 211.84306pt on input lin
+e 1014.
+[38]
 <hinh/mqtt_client.PNG, id=1353, 453.94594pt x 368.87813pt>
 File: hinh/mqtt_client.PNG Graphic file (type png)
-
 <use hinh/mqtt_client.PNG>
-Package pdftex.def Info: hinh/mqtt_client.PNG used on input line 1044.
-(pdftex.def)             Requested size: 272.36966pt x 221.32857pt.
- [39 <F:/final-exam-report/report/hinh/persistent_actuator.PNG>]
+Package pdftex.def Info: hinh/mqtt_client.PNG  used on input line 1044. on inpu
+t line 1044.
+Package pdftex.def Info: Requested size: 272.36966pt x 221.32857pt on input lin
+e 1044.
+ [39 <./hinh/persistent_actuator.PNG>]
 Underfull \hbox (badness 10000) in paragraph at lines 1072--1073
 
  []
 
 <hinh/wifi_station.PNG, id=1359, 517.935pt x 365.86688pt>
 File: hinh/wifi_station.PNG Graphic file (type png)
-
 <use hinh/wifi_station.PNG>
-Package pdftex.def Info: hinh/wifi_station.PNG used on input line 1078.
-(pdftex.def)             Requested size: 310.76338pt x 219.52182pt.
- [40 <F:/final-exam-report/report/hinh/mqtt_client.PNG>] <hinh/wifi_ap.PNG, id=
-1365, 412.54124pt x 365.86688pt>
+Package pdftex.def Info: hinh/wifi_station.PNG  used on input line 1078. on inp
+ut line 1078.
+Package pdftex.def Info: Requested size: 310.76338pt x 219.52182pt on input lin
+e 1078.
+[40 <./hinh/mqtt_client.PNG>]
+<hinh/wifi_ap.PNG, id=1365, 412.54124pt x 365.86688pt>
 File: hinh/wifi_ap.PNG Graphic file (type png)
-
 <use hinh/wifi_ap.PNG>
-Package pdftex.def Info: hinh/wifi_ap.PNG used on input line 1084.
-(pdftex.def)             Requested size: 247.52666pt x 219.52182pt.
-
+Package pdftex.def Info: hinh/wifi_ap.PNG  used on input line 1084. on input li
+ne 1084.
+Package pdftex.def Info: Requested size: 247.52666pt x 219.52182pt on input lin
+e 1084.
 <hinh/wifi_application.PNG, id=1366, 499.8675pt x 367.3725pt>
 File: hinh/wifi_application.PNG Graphic file (type png)
-
 <use hinh/wifi_application.PNG>
-Package pdftex.def Info: hinh/wifi_application.PNG used on input line 1090.
-(pdftex.def)             Requested size: 299.9228pt x 220.42519pt.
- [41 <F:/final-exam-report/report/hinh/wifi_station.PNG> <F:/final-exam-report/
-report/hinh/wifi_ap.PNG>] [42 <F:/final-exam-report/report/hinh/wifi_applicatio
-n.PNG>]
+Package pdftex.def Info: hinh/wifi_application.PNG  used on input line 1090. on
+ input line 1090.
+Package pdftex.def Info: Requested size: 299.9228pt x 220.42519pt on input line
+ 1090.
+ [41 <./hinh/wifi_station.PNG> <./hinh/wifi_ap.PNG>] [42 <./hinh/wifi_applicati
+on.PNG>]
 Overfull \hbox (8.26797pt too wide) in paragraph at lines 1152--1153
 []\T5/cmr/m/n/12 NodeMCU gûi STM: khi nhªn ÷ñc y¶u c¦u t£i l¤i (load) tø STM, 
 NodeMCU
  []
 
-[43] <hinh/uart_protocol.PNG, id=1382, 281.55188pt x 156.585pt>
+[43]
+<hinh/uart_protocol.PNG, id=1382, 281.55188pt x 156.585pt>
 File: hinh/uart_protocol.PNG Graphic file (type png)
-
 <use hinh/uart_protocol.PNG>
-Package pdftex.def Info: hinh/uart_protocol.PNG used on input line 1169.
-(pdftex.def)             Requested size: 281.55118pt x 156.58461pt.
-
+Package pdftex.def Info: hinh/uart_protocol.PNG  used on input line 1169. on in
+put line 1169.
+Package pdftex.def Info: Requested size: 281.55118pt x 156.58461pt on input lin
+e 1169.
 <hinh/uart_flow.PNG, id=1383, 388.45125pt x 366.61969pt>
 File: hinh/uart_flow.PNG Graphic file (type png)
-
 <use hinh/uart_flow.PNG>
-Package pdftex.def Info: hinh/uart_flow.PNG used on input line 1186.
-(pdftex.def)             Requested size: 233.07254pt x 219.97351pt.
- [44 <F:/final-exam-report/report/hinh/uart_protocol.PNG>] <hinh/sq_switch_wifi
-.PNG, id=1390, 494.59781pt x 232.61906pt>
+Package pdftex.def Info: hinh/uart_flow.PNG  used on input line 1186. on input 
+line 1186.
+Package pdftex.def Info: Requested size: 233.07254pt x 219.97351pt on input lin
+e 1186.
+ [44 <./hinh/uart_protocol.PNG>]
+<hinh/sq_switch_wifi.PNG, id=1390, 494.59781pt x 232.61906pt>
 File: hinh/sq_switch_wifi.PNG Graphic file (type png)
-
 <use hinh/sq_switch_wifi.PNG>
-Package pdftex.def Info: hinh/sq_switch_wifi.PNG used on input line 1202.
-(pdftex.def)             Requested size: 445.1339pt x 209.35521pt.
-
+Package pdftex.def Info: hinh/sq_switch_wifi.PNG  used on input line 1202. on i
+nput line 1202.
+Package pdftex.def Info: Requested size: 445.1339pt x 209.35521pt on input line
+ 1202.
 <hinh/sq_web.PNG, id=1391, 507.39563pt x 166.37157pt>
 File: hinh/sq_web.PNG Graphic file (type png)
- <use hinh/sq_web.PNG>
-Package pdftex.def Info: hinh/sq_web.PNG used on input line 1208.
-(pdftex.def)             Requested size: 405.91705pt x 133.09741pt.
-
-[45 <F:/final-exam-report/report/hinh/uart_flow.PNG> <F:/final-exam-report/repo
-rt/hinh/sq_switch_wifi.PNG>]
+<use hinh/sq_web.PNG>
+Package pdftex.def Info: hinh/sq_web.PNG  used on input line 1208. on input lin
+e 1208.
+Package pdftex.def Info: Requested size: 405.91705pt x 133.09741pt on input lin
+e 1208.
+ [45 <./hinh/uart_flow.PNG> <./hinh/sq_switch_wifi.PNG>]
 <hinh/sq_mqtt.PNG, id=1398, 526.21594pt x 231.11343pt>
 File: hinh/sq_mqtt.PNG Graphic file (type png)
- <use hinh/sq_mqtt.PNG>
-Package pdftex.def Info: hinh/sq_mqtt.PNG used on input line 1214.
-(pdftex.def)             Requested size: 420.97333pt x 184.89099pt.
-
-[46 <F:/final-exam-report/report/hinh/sq_web.PNG> <F:/final-exam-report/report/
-hinh/sq_mqtt.PNG>]
+<use hinh/sq_mqtt.PNG>
+Package pdftex.def Info: hinh/sq_mqtt.PNG  used on input line 1214. on input li
+ne 1214.
+Package pdftex.def Info: Requested size: 420.97333pt x 184.89099pt on input lin
+e 1214.
+ [46 <./hinh/sq_web.PNG> <./hinh/sq_mqtt.PNG>]
 <hinh/class_wifistation.PNG, id=1405, 507.39563pt x 210.03468pt>
 File: hinh/class_wifistation.PNG Graphic file (type png)
-
 <use hinh/class_wifistation.PNG>
-Package pdftex.def Info: hinh/class_wifistation.PNG used on input line 1226.
-(pdftex.def)             Requested size: 431.28833pt x 178.53032pt.
-
+Package pdftex.def Info: hinh/class_wifistation.PNG  used on input line 1226. o
+n input line 1226.
+Package pdftex.def Info: Requested size: 431.28833pt x 178.53032pt on input lin
+e 1226.
 <hinh/class_mqttclient.PNG, id=1406, 514.92375pt x 302.63063pt>
 File: hinh/class_mqttclient.PNG Graphic file (type png)
-
 <use hinh/class_mqttclient.PNG>
-Package pdftex.def Info: hinh/class_mqttclient.PNG used on input line 1232.
-(pdftex.def)             Requested size: 437.68724pt x 257.23724pt.
-
+Package pdftex.def Info: hinh/class_mqttclient.PNG  used on input line 1232. on
+ input line 1232.
+Package pdftex.def Info: Requested size: 437.68724pt x 257.23724pt on input lin
+e 1232.
 <hinh/class_usereeprom.PNG, id=1407, 373.395pt x 280.79906pt>
 File: hinh/class_usereeprom.PNG Graphic file (type png)
-
 <use hinh/class_usereeprom.PNG>
-Package pdftex.def Info: hinh/class_usereeprom.PNG used on input line 1238.
-(pdftex.def)             Requested size: 317.38725pt x 238.68033pt.
- [47 <F:/final-exam-report/report/hinh/class_wifistation.PNG> <F:/final-exam-re
-port/report/hinh/class_mqttclient.PNG>]
+Package pdftex.def Info: hinh/class_usereeprom.PNG  used on input line 1238. on
+ input line 1238.
+Package pdftex.def Info: Requested size: 317.38725pt x 238.68033pt on input lin
+e 1238.
+ [47 <./hinh/class_wifistation.PNG> <./hinh/class_mqttclient.PNG>]
 <hinh/class_sensor.PNG, id=1414, 403.5075pt x 266.49562pt>
 File: hinh/class_sensor.PNG Graphic file (type png)
-
 <use hinh/class_sensor.PNG>
-Package pdftex.def Info: hinh/class_sensor.PNG used on input line 1244.
-(pdftex.def)             Requested size: 342.98299pt x 226.52234pt.
-
+Package pdftex.def Info: hinh/class_sensor.PNG  used on input line 1244. on inp
+ut line 1244.
+Package pdftex.def Info: Requested size: 342.98299pt x 226.52234pt on input lin
+e 1244.
 <hinh/class_serialtransport.PNG, id=1415, 470.50781pt x 397.485pt>
 File: hinh/class_serialtransport.PNG Graphic file (type png)
-
 <use hinh/class_serialtransport.PNG>
-Package pdftex.def Info: hinh/class_serialtransport.PNG used on input line 1250
-.
-(pdftex.def)             Requested size: 305.82645pt x 258.36218pt.
- [48 <F:/final-exam-report/report/hinh/class_usereeprom.PNG> <F:/final-exam-rep
-ort/report/hinh/class_sensor.PNG>]
+Package pdftex.def Info: hinh/class_serialtransport.PNG  used on input line 125
+0. on input line 1250.
+Package pdftex.def Info: Requested size: 305.82645pt x 258.36218pt on input lin
+e 1250.
+ [48 <./hinh/class_usereeprom.PNG> <./hinh/class_sensor.PNG>]
 <hinh/class_webserver.PNG, id=1422, 294.34969pt x 213.04594pt>
 File: hinh/class_webserver.PNG Graphic file (type png)
-
 <use hinh/class_webserver.PNG>
-Package pdftex.def Info: hinh/class_webserver.PNG used on input line 1256.
-(pdftex.def)             Requested size: 250.1984pt x 181.08989pt.
-
+Package pdftex.def Info: hinh/class_webserver.PNG  used on input line 1256. on 
+input line 1256.
+Package pdftex.def Info: Requested size: 250.1984pt x 181.08989pt on input line
+ 1256.
 <hinh/class_switchap.PNG, id=1423, 243.91125pt x 197.98969pt>
 File: hinh/class_switchap.PNG Graphic file (type png)
-
 <use hinh/class_switchap.PNG>
-Package pdftex.def Info: hinh/class_switchap.PNG used on input line 1262.
-(pdftex.def)             Requested size: 219.51808pt x 178.18906pt.
- [49 <F:/final-exam-report/report/hinh/class_serialtransport.PNG> <F:/final-exa
-m-report/report/hinh/class_webserver.PNG>]
+Package pdftex.def Info: hinh/class_switchap.PNG  used on input line 1262. on i
+nput line 1262.
+Package pdftex.def Info: Requested size: 219.51808pt x 178.18906pt on input lin
+e 1262.
+ [49 <./hinh/class_serialtransport.PNG> <./hinh/class_webserver.PNG>]
 <hinh/class_nodeapplication.PNG, id=1430, 401.24907pt x 235.63031pt>
 File: hinh/class_nodeapplication.PNG Graphic file (type png)
-
 <use hinh/class_nodeapplication.PNG>
-Package pdftex.def Info: hinh/class_nodeapplication.PNG used on input line 1268
-.
-(pdftex.def)             Requested size: 361.12082pt x 212.0653pt.
- [50 <F:/final-exam-report/report/hinh/class_switchap.PNG> <F:/final-exam-repor
-t/report/hinh/class_nodeapplication.PNG>]
+Package pdftex.def Info: hinh/class_nodeapplication.PNG  used on input line 126
+8. on input line 1268.
+Package pdftex.def Info: Requested size: 361.12082pt x 212.0653pt on input line
+ 1268.
+ [50 <./hinh/class_switchap.PNG> <./hinh/class_nodeapplication.PNG>]
 File: hinh/class_serialtransport.PNG Graphic file (type png)
-
 <use hinh/class_serialtransport.PNG>
-Package pdftex.def Info: hinh/class_serialtransport.PNG used on input line 1277
-.
-(pdftex.def)             Requested size: 399.93352pt x 337.86385pt.
-
+Package pdftex.def Info: hinh/class_serialtransport.PNG  used on input line 127
+7. on input line 1277.
+Package pdftex.def Info: Requested size: 399.93352pt x 337.86385pt on input lin
+e 1277.
 <hinh/class_stmapplication.PNG, id=1438, 293.59688pt x 216.81pt>
 File: hinh/class_stmapplication.PNG Graphic file (type png)
-
 <use hinh/class_stmapplication.PNG>
-Package pdftex.def Info: hinh/class_stmapplication.PNG used on input line 1283.
-
-(pdftex.def)             Requested size: 249.5585pt x 184.28935pt.
-
+Package pdftex.def Info: hinh/class_stmapplication.PNG  used on input line 1283
+. on input line 1283.
+Package pdftex.def Info: Requested size: 249.5585pt x 184.28935pt on input line
+ 1283.
 <hinh/class_actuator.PNG, id=1439, 585.68813pt x 432.11438pt>
 File: hinh/class_actuator.PNG Graphic file (type png)
-
 <use hinh/class_actuator.PNG>
-Package pdftex.def Info: hinh/class_actuator.PNG used on input line 1289.
-(pdftex.def)             Requested size: 439.26501pt x 324.08498pt.
- [51 <F:/final-exam-report/report/hinh/class_stmapplication.PNG>] [52 <F:/final
--exam-report/report/hinh/class_actuator.PNG>]
+Package pdftex.def Info: hinh/class_actuator.PNG  used on input line 1289. on i
+nput line 1289.
+Package pdftex.def Info: Requested size: 439.26501pt x 324.08498pt on input lin
+e 1289.
+ [51 <./hinh/class_stmapplication.PNG>] [52 <./hinh/class_actuator.PNG>]
 Underfull \hbox (badness 10000) in paragraph at lines 1299--1300
 
  []
 
 <hinh/uc_web1.png, id=1450, 426.84468pt x 331.99031pt>
 File: hinh/uc_web1.png Graphic file (type png)
- <use hinh/uc_web1.png>
-Package pdftex.def Info: hinh/uc_web1.png used on input line 1303.
-(pdftex.def)             Requested size: 384.15666pt x 298.7885pt.
-
-[53 <F:/final-exam-report/report/hinh/uc_web1.png>]
+<use hinh/uc_web1.png>
+Package pdftex.def Info: hinh/uc_web1.png  used on input line 1303. on input li
+ne 1303.
+Package pdftex.def Info: Requested size: 384.15666pt x 298.7885pt on input line
+ 1303.
+[53 <./hinh/uc_web1.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 1310--1311
 
  []
 
 <hinh/cntv.png, id=1456, 501.37312pt x 404.26031pt>
 File: hinh/cntv.png Graphic file (type png)
- <use hinh/cntv.png>
-Package pdftex.def Info: hinh/cntv.png used on input line 1314.
-(pdftex.def)             Requested size: 451.23163pt x 363.83092pt.
-
-[54 <F:/final-exam-report/report/hinh/cntv.png>]
+<use hinh/cntv.png>
+Package pdftex.def Info: hinh/cntv.png  used on input line 1314. on input line 
+1314.
+Package pdftex.def Info: Requested size: 451.23163pt x 363.83092pt on input lin
+e 1314.
+[54 <./hinh/cntv.png>]
 <hinh/database.jpg, id=1462, 599.99156pt x 355.3275pt>
 File: hinh/database.jpg Graphic file (type jpg)
- <use hinh/database.jpg>
-Package pdftex.def Info: hinh/database.jpg used on input line 1324.
-(pdftex.def)             Requested size: 659.99277pt x 390.86143pt.
-
-[55 <F:/final-exam-report/report/hinh/database.jpg>]
+<use hinh/database.jpg>
+Package pdftex.def Info: hinh/database.jpg  used on input line 1324. on input l
+ine 1324.
+Package pdftex.def Info: Requested size: 659.99277pt x 390.86143pt on input lin
+e 1324.
+ [55 <./hinh/database.jpg>]
 <hinh/server.png, id=1467, 212.29312pt x 249.93375pt>
 File: hinh/server.png Graphic file (type png)
- <use hinh/server.png>
-Package pdftex.def Info: hinh/server.png used on input line 1334.
-(pdftex.def)             Requested size: 191.06204pt x 224.9383pt.
-
+<use hinh/server.png>
+Package pdftex.def Info: hinh/server.png  used on input line 1334. on input lin
+e 1334.
+Package pdftex.def Info: Requested size: 191.06204pt x 224.9383pt on input line
+ 1334.
 <hinh/RESTful-API-design.jpg, id=1468, 877.2775pt x 372.39125pt>
 File: hinh/RESTful-API-design.jpg Graphic file (type jpg)
-
 <use hinh/RESTful-API-design.jpg>
-Package pdftex.def Info: hinh/RESTful-API-design.jpg used on input line 1348.
-(pdftex.def)             Requested size: 438.63768pt x 186.19516pt.
+Package pdftex.def Info: hinh/RESTful-API-design.jpg  used on input line 1348. 
+on input line 1348.
+Package pdftex.def Info: Requested size: 438.63768pt x 186.19516pt on input lin
+e 1348.
  [56
 
 
- <F:/final-exam-report/report/hinh/server.png>] <hinh/system-protocol.png, id=1
-476, 542.025pt x 300.3722pt>
+ <./hinh/server.png>]
+<hinh/system-protocol.png, id=1476, 542.025pt x 300.3722pt>
 File: hinh/system-protocol.png Graphic file (type png)
-
 <use hinh/system-protocol.png>
-Package pdftex.def Info: hinh/system-protocol.png used on input line 1372.
-(pdftex.def)             Requested size: 271.01183pt x 150.18571pt.
- [57 <F:/final-exam-report/report/hinh/RESTful-API-design.jpg>]
+Package pdftex.def Info: hinh/system-protocol.png  used on input line 1372. on 
+input line 1372.
+Package pdftex.def Info: Requested size: 271.01183pt x 150.18571pt on input lin
+e 1372.
+
+[57 <./hinh/RESTful-API-design.jpg>]
 Overfull \hbox (19.81897pt too wide) in paragraph at lines 1380--1391
 [][] 
  []
 
-[58 <F:/final-exam-report/report/hinh/system-protocol.png>]
+[58 <./hinh/system-protocol.png>]
 Overfull \hbox (0.572pt too wide) in paragraph at lines 1421--1438
  [][] 
  []
@@ -2163,305 +2304,318 @@ Underfull \hbox (badness 10000) in paragraph at lines 1546--1567
 
  []
 
-[61] <hinh/PPM/schematic_ppm.PNG, id=1501, 715.92468pt x 356.0803pt>
+[61]
+<hinh/PPM/schematic_ppm.PNG, id=1501, 715.92468pt x 356.0803pt>
 File: hinh/PPM/schematic_ppm.PNG Graphic file (type png)
-
 <use hinh/PPM/schematic_ppm.PNG>
-Package pdftex.def Info: hinh/PPM/schematic_ppm.PNG used on input line 1596.
-(pdftex.def)             Requested size: 465.34552pt x 231.44945pt.
+Package pdftex.def Info: hinh/PPM/schematic_ppm.PNG  used on input line 1596. o
+n input line 1596.
+Package pdftex.def Info: Requested size: 465.34552pt x 231.44945pt on input lin
+e 1596.
 
 Overfull \hbox (10.10141pt too wide) in paragraph at lines 1596--1597
  [][] 
  []
 
-[62] <hinh/PPM/ppm_2d.PNG, id=1509, 337.26pt x 281.55188pt>
+[62]
+<hinh/PPM/ppm_2d.PNG, id=1509, 337.26pt x 281.55188pt>
 File: hinh/PPM/ppm_2d.PNG Graphic file (type png)
-
 <use hinh/PPM/ppm_2d.PNG>
-Package pdftex.def Info: hinh/PPM/ppm_2d.PNG used on input line 1604.
-(pdftex.def)             Requested size: 236.08038pt x 197.08496pt.
-
+Package pdftex.def Info: hinh/PPM/ppm_2d.PNG  used on input line 1604. on input
+ line 1604.
+Package pdftex.def Info: Requested size: 236.08038pt x 197.08496pt on input lin
+e 1604.
 <hinh/PPM/ppm_3d.PNG, id=1510, 325.96782pt x 275.52937pt>
 File: hinh/PPM/ppm_3d.PNG Graphic file (type png)
-
 <use hinh/PPM/ppm_3d.PNG>
-Package pdftex.def Info: hinh/PPM/ppm_3d.PNG used on input line 1610.
-(pdftex.def)             Requested size: 228.1759pt x 192.86923pt.
- [63 <F:/final-exam-report/report/hinh/PPM/schematic_ppm.PNG> <F:/final-exam-re
-port/report/hinh/PPM/ppm_2d.PNG>]
+Package pdftex.def Info: hinh/PPM/ppm_3d.PNG  used on input line 1610. on input
+ line 1610.
+Package pdftex.def Info: Requested size: 228.1759pt x 192.86923pt on input line
+ 1610.
+ [63 <./hinh/PPM/schematic_ppm.PNG> <./hinh/PPM/ppm_2d.PNG>]
 <hinh/PPM/ppm_wein.png, id=1516, 173.14688pt x 170.88844pt>
 File: hinh/PPM/ppm_wein.png Graphic file (type png)
-
 <use hinh/PPM/ppm_wein.png>
-Package pdftex.def Info: hinh/PPM/ppm_wein.png used on input line 1620.
-(pdftex.def)             Requested size: 173.14645pt x 170.88802pt.
- [64 <F:/final-exam-report/report/hinh/PPM/ppm_3d.PNG> <F:/final-exam-report/re
-port/hinh/PPM/ppm_wein.png>]
+Package pdftex.def Info: hinh/PPM/ppm_wein.png  used on input line 1620. on inp
+ut line 1620.
+Package pdftex.def Info: Requested size: 173.14645pt x 170.88802pt on input lin
+e 1620.
+ [64 <./hinh/PPM/ppm_3d.PNG> <./hinh/PPM/ppm_wein.png>]
 <hinh/PPM/ppm_4diode.png, id=1522, 560.0925pt x 266.49562pt>
 File: hinh/PPM/ppm_4diode.png Graphic file (type png)
-
 <use hinh/PPM/ppm_4diode.png>
-Package pdftex.def Info: hinh/PPM/ppm_4diode.png used on input line 1634.
-(pdftex.def)             Requested size: 336.05809pt x 159.89859pt.
- [65 <F:/final-exam-report/report/hinh/PPM/ppm_4diode.png>] <hinh/PPM/ppm_12vtr
-uoc.png, id=1530, 422.32782pt x 187.45032pt>
+Package pdftex.def Info: hinh/PPM/ppm_4diode.png  used on input line 1634. on i
+nput line 1634.
+Package pdftex.def Info: Requested size: 336.05809pt x 159.89859pt on input lin
+e 1634.
+ [65 <./hinh/PPM/ppm_4diode.png>]
+<hinh/PPM/ppm_12vtruoc.png, id=1530, 422.32782pt x 187.45032pt>
 File: hinh/PPM/ppm_12vtruoc.png Graphic file (type png)
-
 <use hinh/PPM/ppm_12vtruoc.png>
-Package pdftex.def Info: hinh/PPM/ppm_12vtruoc.png used on input line 1645.
-(pdftex.def)             Requested size: 422.32678pt x 187.44984pt.
-
+Package pdftex.def Info: hinh/PPM/ppm_12vtruoc.png  used on input line 1645. on
+ input line 1645.
+Package pdftex.def Info: Requested size: 422.32678pt x 187.44984pt on input lin
+e 1645.
 <hinh/PPM/ppm_12vsau.png, id=1532, 453.94594pt x 244.66406pt>
 File: hinh/PPM/ppm_12vsau.png Graphic file (type png)
-
 <use hinh/PPM/ppm_12vsau.png>
-Package pdftex.def Info: hinh/PPM/ppm_12vsau.png used on input line 1651.
-(pdftex.def)             Requested size: 272.36966pt x 146.79956pt.
-
+Package pdftex.def Info: hinh/PPM/ppm_12vsau.png  used on input line 1651. on i
+nput line 1651.
+Package pdftex.def Info: Requested size: 272.36966pt x 146.79956pt on input lin
+e 1651.
 <hinh/PPM/ppm_jackdc.jpg, id=1534, 292.09125pt x 252.945pt>
 File: hinh/PPM/ppm_jackdc.jpg Graphic file (type jpg)
-
 <use hinh/PPM/ppm_jackdc.jpg>
-Package pdftex.def Info: hinh/PPM/ppm_jackdc.jpg used on input line 1658.
-(pdftex.def)             Requested size: 146.04526pt x 126.47218pt.
- [66 <F:/final-exam-report/report/hinh/PPM/ppm_12vtruoc.png> <F:/final-exam-rep
-ort/report/hinh/PPM/ppm_12vsau.png>]
+Package pdftex.def Info: hinh/PPM/ppm_jackdc.jpg  used on input line 1658. on i
+nput line 1658.
+Package pdftex.def Info: Requested size: 146.04526pt x 126.47218pt on input lin
+e 1658.
+
+[66 <./hinh/PPM/ppm_12vtruoc.png> <./hinh/PPM/ppm_12vsau.png>]
 <hinh/PPM/ppm_tl074.jpg, id=1541, 294.34969pt x 241.65282pt>
 File: hinh/PPM/ppm_tl074.jpg Graphic file (type jpg)
-
 <use hinh/PPM/ppm_tl074.jpg>
-Package pdftex.def Info: hinh/PPM/ppm_tl074.jpg used on input line 1665.
-(pdftex.def)             Requested size: 147.17447pt x 120.82611pt.
-
+Package pdftex.def Info: hinh/PPM/ppm_tl074.jpg  used on input line 1665. on in
+put line 1665.
+Package pdftex.def Info: Requested size: 147.17447pt x 120.82611pt on input lin
+e 1665.
 <hinh/PPM/ppm_tl074_pin.jpg, id=1543, 343.2825pt x 176.15813pt>
 File: hinh/PPM/ppm_tl074_pin.jpg Graphic file (type jpg)
-
 <use hinh/PPM/ppm_tl074_pin.jpg>
-Package pdftex.def Info: hinh/PPM/ppm_tl074_pin.jpg used on input line 1671.
-(pdftex.def)             Requested size: 343.28165pt x 176.15768pt.
-
+Package pdftex.def Info: hinh/PPM/ppm_tl074_pin.jpg  used on input line 1671. o
+n input line 1671.
+Package pdftex.def Info: Requested size: 343.28165pt x 176.15768pt on input lin
+e 1671.
 <hinh/PPM/ppm_zener.jpg, id=1545, 197.98969pt x 152.06813pt>
 File: hinh/PPM/ppm_zener.jpg Graphic file (type jpg)
-
 <use hinh/PPM/ppm_zener.jpg>
-Package pdftex.def Info: hinh/PPM/ppm_zener.jpg used on input line 1678.
-(pdftex.def)             Requested size: 138.59183pt x 106.44695pt.
- [67 <F:/final-exam-report/report/hinh/PPM/ppm_jackdc.jpg> <F:/final-exam-repor
-t/report/hinh/PPM/ppm_tl074.jpg> <F:/final-exam-report/report/hinh/PPM/ppm_tl07
-4_pin.jpg>]
+Package pdftex.def Info: hinh/PPM/ppm_zener.jpg  used on input line 1678. on in
+put line 1678.
+Package pdftex.def Info: Requested size: 138.59183pt x 106.44695pt on input lin
+e 1678.
+ [67 <./hinh/PPM/ppm_jackdc.jpg> <./hinh/PPM/ppm_tl074.jpg> <./hinh/PPM/ppm_tl0
+74_pin.jpg>]
 <hinh/PPM/ppm_c015.jpg, id=1551, 204.765pt x 170.13562pt>
 File: hinh/PPM/ppm_c015.jpg Graphic file (type jpg)
-
 <use hinh/PPM/ppm_c015.jpg>
-Package pdftex.def Info: hinh/PPM/ppm_c015.jpg used on input line 1685.
-(pdftex.def)             Requested size: 143.3345pt x 119.0941pt.
-
+Package pdftex.def Info: hinh/PPM/ppm_c015.jpg  used on input line 1685. on inp
+ut line 1685.
+Package pdftex.def Info: Requested size: 143.3345pt x 119.0941pt on input line 
+1685.
 <hinh/PPM/ppm_c22.jpg, id=1553, 157.58875pt x 487.8225pt>
 File: hinh/PPM/ppm_c22.jpg Graphic file (type jpg)
-
 <use hinh/PPM/ppm_c22.jpg>
-Package pdftex.def Info: hinh/PPM/ppm_c22.jpg used on input line 1692.
-(pdftex.def)             Requested size: 63.03436pt x 195.12553pt.
- [68 <F:/final-exam-report/report/hinh/PPM/ppm_zener.jpg> <F:/final-exam-report
-/report/hinh/PPM/ppm_c015.jpg> <F:/final-exam-report/report/hinh/PPM/ppm_c22.jp
+Package pdftex.def Info: hinh/PPM/ppm_c22.jpg  used on input line 1692. on inpu
+t line 1692.
+Package pdftex.def Info: Requested size: 63.03436pt x 195.12553pt on input line
+ 1692.
+
+[68 <./hinh/PPM/ppm_zener.jpg> <./hinh/PPM/ppm_c015.jpg> <./hinh/PPM/ppm_c22.jp
 g>]
 <hinh/PPM/ppm_caudiode.jpg, id=1560, 402.75468pt x 493.0922pt>
 File: hinh/PPM/ppm_caudiode.jpg Graphic file (type jpg)
-
 <use hinh/PPM/ppm_caudiode.jpg>
-Package pdftex.def Info: hinh/PPM/ppm_caudiode.jpg used on input line 1705.
-(pdftex.def)             Requested size: 120.82733pt x 147.92879pt.
-
+Package pdftex.def Info: hinh/PPM/ppm_caudiode.jpg  used on input line 1705. on
+ input line 1705.
+Package pdftex.def Info: Requested size: 120.82733pt x 147.92879pt on input lin
+e 1705.
 <hinh/lib_DHT.PNG, id=1562, 514.17094pt x 136.25906pt>
 File: hinh/lib_DHT.PNG Graphic file (type png)
- <use hinh/lib_DHT.PNG>
-Package pdftex.def Info: hinh/lib_DHT.PNG used on input line 1736.
-(pdftex.def)             Requested size: 359.9172pt x 95.38068pt.
-
+<use hinh/lib_DHT.PNG>
+Package pdftex.def Info: hinh/lib_DHT.PNG  used on input line 1736. on input li
+ne 1736.
+Package pdftex.def Info: Requested size: 359.9172pt x 95.38068pt on input line 
+1736.
 <hinh/path_DHT.PNG, id=1563, 224.33812pt x 52.69687pt>
 File: hinh/path_DHT.PNG Graphic file (type png)
- <use hinh/path_DHT.PNG>
-Package pdftex.def Info: hinh/path_DHT.PNG used on input line 1744.
-(pdftex.def)             Requested size: 157.03561pt x 36.88754pt.
-
-[69 <F:/final-exam-report/report/hinh/PPM/ppm_caudiode.jpg> <F:/final-exam-repo
-rt/report/hinh/lib_DHT.PNG>]
+<use hinh/path_DHT.PNG>
+Package pdftex.def Info: hinh/path_DHT.PNG  used on input line 1744. on input l
+ine 1744.
+Package pdftex.def Info: Requested size: 157.03561pt x 36.88754pt on input line
+ 1744.
+ [69 <./hinh/PPM/ppm_caudiode.jpg> <./hinh/lib_DHT.PNG>]
 <hinh/result_DHT.PNG, id=1570, 521.95pt x 498.86375pt>
 File: hinh/result_DHT.PNG Graphic file (type png)
-
 <use hinh/result_DHT.PNG>
-Package pdftex.def Info: hinh/result_DHT.PNG used on input line 1754.
-(pdftex.def)             Requested size: 313.17241pt x 299.32056pt.
-
+Package pdftex.def Info: hinh/result_DHT.PNG  used on input line 1754. on input
+ line 1754.
+Package pdftex.def Info: Requested size: 313.17241pt x 299.32056pt on input lin
+e 1754.
 <hinh/lib_light.PNG, id=1571, 304.13625pt x 57.96657pt>
 File: hinh/lib_light.PNG Graphic file (type png)
-
 <use hinh/lib_light.PNG>
-Package pdftex.def Info: hinh/lib_light.PNG used on input line 1789.
-(pdftex.def)             Requested size: 212.8939pt x 40.57631pt.
- [70 <F:/final-exam-report/report/hinh/path_DHT.PNG> <F:/final-exam-report/repo
-rt/hinh/result_DHT.PNG>]
+Package pdftex.def Info: hinh/lib_light.PNG  used on input line 1789. on input 
+line 1789.
+Package pdftex.def Info: Requested size: 212.8939pt x 40.57631pt on input line 
+1789.
+ [70 <./hinh/path_DHT.PNG> <./hinh/result_DHT.PNG>]
 <hinh/path_light.PNG, id=1578, 252.19218pt x 36.88782pt>
 File: hinh/path_light.PNG Graphic file (type png)
-
 <use hinh/path_light.PNG>
-Package pdftex.def Info: hinh/path_light.PNG used on input line 1795.
-(pdftex.def)             Requested size: 176.53331pt x 25.82127pt.
-
+Package pdftex.def Info: hinh/path_light.PNG  used on input line 1795. on input
+ line 1795.
+Package pdftex.def Info: Requested size: 176.53331pt x 25.82127pt on input line
+ 1795.
 <hinh/result_light.PNG, id=1579, 520.94624pt x 453.695pt>
 File: hinh/result_light.PNG Graphic file (type png)
-
 <use hinh/result_light.PNG>
-Package pdftex.def Info: hinh/result_light.PNG used on input line 1803.
-(pdftex.def)             Requested size: 312.57016pt x 272.2191pt.
-
+Package pdftex.def Info: hinh/result_light.PNG  used on input line 1803. on inp
+ut line 1803.
+Package pdftex.def Info: Requested size: 312.57016pt x 272.2191pt on input line
+ 1803.
 <hinh/lib_realtime.PNG, id=1580, 436.63126pt x 137.7647pt>
 File: hinh/lib_realtime.PNG Graphic file (type png)
-
 <use hinh/lib_realtime.PNG>
-Package pdftex.def Info: hinh/lib_realtime.PNG used on input line 1853.
-(pdftex.def)             Requested size: 305.63979pt x 96.43462pt.
- [71 <F:/final-exam-report/report/hinh/lib_light.PNG> <F:/final-exam-report/rep
-ort/hinh/path_light.PNG> <F:/final-exam-report/report/hinh/result_light.PNG>]
+Package pdftex.def Info: hinh/lib_realtime.PNG  used on input line 1853. on inp
+ut line 1853.
+Package pdftex.def Info: Requested size: 305.63979pt x 96.43462pt on input line
+ 1853.
+ [71 <./hinh/lib_light.PNG> <./hinh/path_light.PNG> <./hinh/result_light.PNG>]
 <hinh/path_realtime.PNG, id=1589, 291.33844pt x 55.70813pt>
 File: hinh/path_realtime.PNG Graphic file (type png)
-
 <use hinh/path_realtime.PNG>
-Package pdftex.def Info: hinh/path_realtime.PNG used on input line 1859.
-(pdftex.def)             Requested size: 203.93552pt x 38.9954pt.
-
+Package pdftex.def Info: hinh/path_realtime.PNG  used on input line 1859. on in
+put line 1859.
+Package pdftex.def Info: Requested size: 203.93552pt x 38.9954pt on input line 
+1859.
 <hinh/lib_register.PNG, id=1590, 398.99063pt x 76.03406pt>
 File: hinh/lib_register.PNG Graphic file (type png)
-
 <use hinh/lib_register.PNG>
-Package pdftex.def Info: hinh/lib_register.PNG used on input line 1888.
-(pdftex.def)             Requested size: 279.29153pt x 53.22346pt.
- [72 <F:/final-exam-report/report/hinh/lib_realtime.PNG> <F:/final-exam-report/
-report/hinh/path_realtime.PNG>]
+Package pdftex.def Info: hinh/lib_register.PNG  used on input line 1888. on inp
+ut line 1888.
+Package pdftex.def Info: Requested size: 279.29153pt x 53.22346pt on input line
+ 1888.
+ [72 <./hinh/lib_realtime.PNG> <./hinh/path_realtime.PNG>]
 <hinh/path_register.PNG, id=1599, 297.36093pt x 51.94406pt>
 File: hinh/path_register.PNG Graphic file (type png)
-
 <use hinh/path_register.PNG>
-Package pdftex.def Info: hinh/path_register.PNG used on input line 1894.
-(pdftex.def)             Requested size: 208.15123pt x 36.36058pt.
-
+Package pdftex.def Info: hinh/path_register.PNG  used on input line 1894. on in
+put line 1894.
+Package pdftex.def Info: Requested size: 208.15123pt x 36.36058pt on input line
+ 1894.
 <hinh/adapter.jpg, id=1600, 292.09125pt x 216.05719pt>
 File: hinh/adapter.jpg Graphic file (type jpg)
- <use hinh/adapter.jpg>
-Package pdftex.def Info: hinh/adapter.jpg used on input line 1904.
-(pdftex.def)             Requested size: 175.25609pt x 129.6353pt.
-
+<use hinh/adapter.jpg>
+Package pdftex.def Info: hinh/adapter.jpg  used on input line 1904. on input li
+ne 1904.
+Package pdftex.def Info: Requested size: 175.25609pt x 129.6353pt on input line
+ 1904.
 <hinh/xxtea.PNG, id=1601, 450.9347pt x 74.52844pt>
 File: hinh/xxtea.PNG Graphic file (type png)
- <use hinh/xxtea.PNG>
-Package pdftex.def Info: hinh/xxtea.PNG used on input line 1916.
-(pdftex.def)             Requested size: 315.65213pt x 52.16954pt.
-
+<use hinh/xxtea.PNG>
+Package pdftex.def Info: hinh/xxtea.PNG  used on input line 1916. on input line
+ 1916.
+Package pdftex.def Info: Requested size: 315.65213pt x 52.16954pt on input line
+ 1916.
 <hinh/path_xxtea.PNG, id=1602, 295.1025pt x 45.92157pt>
 File: hinh/path_xxtea.PNG Graphic file (type png)
-
 <use hinh/path_xxtea.PNG>
-Package pdftex.def Info: hinh/path_xxtea.PNG used on input line 1922.
-(pdftex.def)             Requested size: 206.57033pt x 32.14487pt.
- [73 <F:/final-exam-report/report/hinh/lib_register.PNG> <F:/final-exam-report/
-report/hinh/path_register.PNG> <F:/final-exam-report/report/hinh/adapter.jpg> <
-F:/final-exam-report/report/hinh/xxtea.PNG>]
+Package pdftex.def Info: hinh/path_xxtea.PNG  used on input line 1922. on input
+ line 1922.
+Package pdftex.def Info: Requested size: 206.57033pt x 32.14487pt on input line
+ 1922.
+ [73 <./hinh/lib_register.PNG> <./hinh/path_register.PNG> <./hinh/adapter.jpg> 
+<./hinh/xxtea.PNG>]
 <hinh/lib_mqtt.PNG, id=1613, 408.77719pt x 82.80937pt>
 File: hinh/lib_mqtt.PNG Graphic file (type png)
- <use hinh/lib_mqtt.PNG>
-Package pdftex.def Info: hinh/lib_mqtt.PNG used on input line 1936.
-(pdftex.def)             Requested size: 286.14207pt x 57.96616pt.
-
+<use hinh/lib_mqtt.PNG>
+Package pdftex.def Info: hinh/lib_mqtt.PNG  used on input line 1936. on input l
+ine 1936.
+Package pdftex.def Info: Requested size: 286.14207pt x 57.96616pt on input line
+ 1936.
 <hinh/path_mqtt.PNG, id=1614, 330.48468pt x 57.21375pt>
 File: hinh/path_mqtt.PNG Graphic file (type png)
-
 <use hinh/path_mqtt.PNG>
-Package pdftex.def Info: hinh/path_mqtt.PNG used on input line 1942.
-(pdftex.def)             Requested size: 231.33769pt x 40.04933pt.
- [74 <F:/final-exam-report/report/hinh/path_xxtea.PNG> <F:/final-exam-report/re
-port/hinh/lib_mqtt.PNG> <F:/final-exam-report/report/hinh/path_mqtt.PNG>]
+Package pdftex.def Info: hinh/path_mqtt.PNG  used on input line 1942. on input 
+line 1942.
+Package pdftex.def Info: Requested size: 231.33769pt x 40.04933pt on input line
+ 1942.
+ [74 <./hinh/path_xxtea.PNG> <./hinh/lib_mqtt.PNG> <./hinh/path_mqtt.PNG>]
 <hinh/lib_datastructure.PNG, id=1625, 388.45125pt x 82.80937pt>
 File: hinh/lib_datastructure.PNG Graphic file (type png)
-
 <use hinh/lib_datastructure.PNG>
-Package pdftex.def Info: hinh/lib_datastructure.PNG used on input line 1978.
-(pdftex.def)             Requested size: 271.914pt x 57.96616pt.
-
+Package pdftex.def Info: hinh/lib_datastructure.PNG  used on input line 1978. o
+n input line 1978.
+Package pdftex.def Info: Requested size: 271.914pt x 57.96616pt on input line 1
+978.
 <hinh/path_datastructure.PNG, id=1626, 334.24875pt x 57.21375pt>
 File: hinh/path_datastructure.PNG Graphic file (type png)
-
 <use hinh/path_datastructure.PNG>
-Package pdftex.def Info: hinh/path_datastructure.PNG used on input line 1984.
-(pdftex.def)             Requested size: 233.97252pt x 40.04933pt.
-
+Package pdftex.def Info: hinh/path_datastructure.PNG  used on input line 1984. 
+on input line 1984.
+Package pdftex.def Info: Requested size: 233.97252pt x 40.04933pt on input line
+ 1984.
 <hinh/node_button.PNG, id=1627, 430.60875pt x 293.59688pt>
 File: hinh/node_button.PNG Graphic file (type png)
-
 <use hinh/node_button.PNG>
-Package pdftex.def Info: hinh/node_button.PNG used on input line 1997.
-(pdftex.def)             Requested size: 387.54428pt x 264.23473pt.
- [75 <F:/final-exam-report/report/hinh/lib_datastructure.PNG> <F:/final-exam-re
-port/report/hinh/path_datastructure.PNG>]
+Package pdftex.def Info: hinh/node_button.PNG  used on input line 1997. on inpu
+t line 1997.
+Package pdftex.def Info: Requested size: 387.54428pt x 264.23473pt on input lin
+e 1997.
+ [75 <./hinh/lib_datastructure.PNG> <./hinh/path_datastructure.PNG>]
 <hinh/webserver_1.PNG, id=1638, 432.86719pt x 275.52937pt>
 File: hinh/webserver_1.PNG Graphic file (type png)
-
 <use hinh/webserver_1.PNG>
-Package pdftex.def Info: hinh/webserver_1.PNG used on input line 2005.
-(pdftex.def)             Requested size: 389.57686pt x 247.97412pt.
-
+Package pdftex.def Info: hinh/webserver_1.PNG  used on input line 2005. on inpu
+t line 2005.
+Package pdftex.def Info: Requested size: 389.57686pt x 247.97412pt on input lin
+e 2005.
 <hinh/webserver_2.PNG, id=1639, 456.95718pt x 274.77657pt>
 File: hinh/webserver_2.PNG Graphic file (type png)
-
 <use hinh/webserver_2.PNG>
-Package pdftex.def Info: hinh/webserver_2.PNG used on input line 2012.
-(pdftex.def)             Requested size: 411.25766pt x 247.2966pt.
- [76 <F:/final-exam-report/report/hinh/node_button.PNG> <F:/final-exam-report/r
-eport/hinh/webserver_1.PNG>]
+Package pdftex.def Info: hinh/webserver_2.PNG  used on input line 2012. on inpu
+t line 2012.
+Package pdftex.def Info: Requested size: 411.25766pt x 247.2966pt on input line
+ 2012.
+ [76 <./hinh/node_button.PNG> <./hinh/webserver_1.PNG>]
 <hinh/webserver_3.PNG, id=1646, 517.18219pt x 310.91156pt>
 File: hinh/webserver_3.PNG Graphic file (type png)
-
 <use hinh/webserver_3.PNG>
-Package pdftex.def Info: hinh/webserver_3.PNG used on input line 2019.
-(pdftex.def)             Requested size: 413.7463pt x 248.72957pt.
- [77 <F:/final-exam-report/report/hinh/webserver_2.PNG>] <hinh/webserver_4.PNG,
- id=1652, 433.62pt x 262.73157pt>
+Package pdftex.def Info: hinh/webserver_3.PNG  used on input line 2019. on inpu
+t line 2019.
+Package pdftex.def Info: Requested size: 413.7463pt x 248.72957pt on input line
+ 2019.
+ [77 <./hinh/webserver_2.PNG>]
+<hinh/webserver_4.PNG, id=1652, 433.62pt x 262.73157pt>
 File: hinh/webserver_4.PNG Graphic file (type png)
-
 <use hinh/webserver_4.PNG>
-Package pdftex.def Info: hinh/webserver_4.PNG used on input line 2025.
-(pdftex.def)             Requested size: 433.61894pt x 262.73091pt.
-
+Package pdftex.def Info: hinh/webserver_4.PNG  used on input line 2025. on inpu
+t line 2025.
+Package pdftex.def Info: Requested size: 433.61894pt x 262.73091pt on input lin
+e 2025.
 <hinh/webserver_5.PNG, id=1653, 439.6425pt x 260.47313pt>
 File: hinh/webserver_5.PNG Graphic file (type png)
-
 <use hinh/webserver_5.PNG>
-Package pdftex.def Info: hinh/webserver_5.PNG used on input line 2032.
-(pdftex.def)             Requested size: 439.64142pt x 260.47249pt.
- [78 <F:/final-exam-report/report/hinh/webserver_3.PNG> <F:/final-exam-report/r
-eport/hinh/webserver_4.PNG>] [79 <F:/final-exam-report/report/hinh/webserver_5.
-PNG>] [80]
+Package pdftex.def Info: hinh/webserver_5.PNG  used on input line 2032. on inpu
+t line 2032.
+Package pdftex.def Info: Requested size: 439.64142pt x 260.47249pt on input lin
+e 2032.
+ [78 <./hinh/webserver_3.PNG> <./hinh/webserver_4.PNG>]
+[79 <./hinh/webserver_5.PNG>] [80]
 <hinh/schematic.PNG, id=1672, 642.90187pt x 404.26031pt>
 File: hinh/schematic.PNG Graphic file (type png)
-
 <use hinh/schematic.PNG>
-Package pdftex.def Info: hinh/schematic.PNG used on input line 2076.
-(pdftex.def)             Requested size: 642.9003pt x 404.25932pt.
+Package pdftex.def Info: hinh/schematic.PNG  used on input line 2076. on input 
+line 2076.
+Package pdftex.def Info: Requested size: 642.9003pt x 404.25932pt on input line
+ 2076.
  [81
 
- <F:/final-exam-report/report/hinh/schematic.PNG>]
+ <./hinh/schematic.PNG>]
 <hinh/PPM/source_2d.PNG, id=1677, 505.89pt x 263.48438pt>
 File: hinh/PPM/source_2d.PNG Graphic file (type png)
-
 <use hinh/PPM/source_2d.PNG>
-Package pdftex.def Info: hinh/PPM/source_2d.PNG used on input line 2083.
-(pdftex.def)             Requested size: 455.29678pt x 237.13373pt.
-
+Package pdftex.def Info: hinh/PPM/source_2d.PNG  used on input line 2083. on in
+put line 2083.
+Package pdftex.def Info: Requested size: 455.29678pt x 237.13373pt on input lin
+e 2083.
 <hinh/PPM/source_3d.PNG, id=1678, 511.9125pt x 252.19218pt>
 File: hinh/PPM/source_3d.PNG Graphic file (type png)
-
 <use hinh/PPM/source_3d.PNG>
-Package pdftex.def Info: hinh/PPM/source_3d.PNG used on input line 2089.
-(pdftex.def)             Requested size: 460.717pt x 226.97086pt.
+Package pdftex.def Info: hinh/PPM/source_3d.PNG  used on input line 2089. on in
+put line 2089.
+Package pdftex.def Info: Requested size: 460.717pt x 226.97086pt on input line 
+2089.
 
 Overfull \hbox (5.47289pt too wide) in paragraph at lines 2089--2090
  [][] 
@@ -2469,68 +2623,74 @@ Overfull \hbox (5.47289pt too wide) in paragraph at lines 2089--2090
 
 <hinh/mohinh_1.jpg, id=1679, 3276.24pt x 2457.18pt>
 File: hinh/mohinh_1.jpg Graphic file (type jpg)
- <use hinh/mohinh_1.jpg>
-Package pdftex.def Info: hinh/mohinh_1.jpg used on input line 2096.
-(pdftex.def)             Requested size: 327.64319pt x 245.73239pt.
-
+<use hinh/mohinh_1.jpg>
+Package pdftex.def Info: hinh/mohinh_1.jpg  used on input line 2096. on input l
+ine 2096.
+Package pdftex.def Info: Requested size: 327.64319pt x 245.73239pt on input lin
+e 2096.
 [82
 
- <F:/final-exam-report/report/hinh/PPM/source_2d.PNG> <F:/final-exam-report/rep
-ort/hinh/PPM/source_3d.PNG>]
+ <./hinh/PPM/source_2d.PNG> <./hinh/PPM/source_3d.PNG>]
 <hinh/mohinh_2.jpg, id=1685, 1842.885pt x 2050.66125pt>
 File: hinh/mohinh_2.jpg Graphic file (type jpg)
-
 <use hinh/mohinh_2.jpg>
-Package pdftex.def Info: hinh/mohinh_2.jpg used on input line 2102.
-(pdftex.def)             Requested size: 230.36006pt x 256.33203pt.
- <hinh/mohinh_3.jpg, id=1686, 2457.18pt x 3276.24pt>
+Package pdftex.def Info: hinh/mohinh_2.jpg  used on input line 2102. on input l
+ine 2102.
+Package pdftex.def Info: Requested size: 230.36006pt x 256.33203pt on input lin
+e 2102.
+<hinh/mohinh_3.jpg, id=1686, 2457.18pt x 3276.24pt>
 File: hinh/mohinh_3.jpg Graphic file (type jpg)
-
 <use hinh/mohinh_3.jpg>
-Package pdftex.def Info: hinh/mohinh_3.jpg used on input line 2108.
-(pdftex.def)             Requested size: 245.73239pt x 327.64319pt.
- [83 <F:/final-exam-report/report/hinh/mohinh_1.jpg> <F:/final-exam-report/repo
-rt/hinh/mohinh_2.jpg>] [84 <F:/final-exam-report/report/hinh/mohinh_3.jpg>] <hi
-nh/seq-login.png, id=1695, 586.44093pt x 571.38469pt>
+Package pdftex.def Info: hinh/mohinh_3.jpg  used on input line 2108. on input l
+ine 2108.
+Package pdftex.def Info: Requested size: 245.73239pt x 327.64319pt on input lin
+e 2108.
+ [83 <./hinh/mohinh_1.jpg> <./hinh/mohinh_2.jpg>] [84 <./hinh/mohinh_3.jpg>]
+<hinh/seq-login.png, id=1695, 586.44093pt x 571.38469pt>
 File: hinh/seq-login.png Graphic file (type png)
-
 <use hinh/seq-login.png>
-Package pdftex.def Info: hinh/seq-login.png used on input line 2136.
-(pdftex.def)             Requested size: 322.5435pt x 314.26254pt.
- [85] [86 <F:/final-exam-report/report/hinh/seq-login.png>] <hinh/seq-board-com
-munication.png, id=1706, 536.75531pt x 365.11406pt>
+Package pdftex.def Info: hinh/seq-login.png  used on input line 2136. on input 
+line 2136.
+Package pdftex.def Info: Requested size: 322.5435pt x 314.26254pt on input line
+ 2136.
+ [85] [86 <./hinh/seq-login.png>]
+<hinh/seq-board-communication.png, id=1706, 536.75531pt x 365.11406pt>
 File: hinh/seq-board-communication.png Graphic file (type png)
-
 <use hinh/seq-board-communication.png>
-Package pdftex.def Info: hinh/seq-board-communication.png used on input line 21
-56.
-(pdftex.def)             Requested size: 322.05566pt x 219.07011pt.
+Package pdftex.def Info: hinh/seq-board-communication.png  used on input line 2
+156. on input line 2156.
+Package pdftex.def Info: Requested size: 322.05566pt x 219.07011pt on input lin
+e 2156.
 
 Underfull \hbox (badness 10000) in paragraph at lines 2168--2171
 
  []
 
-[87 <F:/final-exam-report/report/hinh/seq-board-communication.png>]
+[87 <./hinh/seq-board-communication.png>]
 <hinh/seq-CRUD.png, id=1712, 499.8675pt x 267.24844pt>
 File: hinh/seq-CRUD.png Graphic file (type png)
- <use hinh/seq-CRUD.png>
-Package pdftex.def Info: hinh/seq-CRUD.png used on input line 2177.
-(pdftex.def)             Requested size: 324.91002pt x 173.70943pt.
-
-[88 <F:/final-exam-report/report/hinh/seq-CRUD.png>]
+<use hinh/seq-CRUD.png>
+Package pdftex.def Info: hinh/seq-CRUD.png  used on input line 2177. on input l
+ine 2177.
+Package pdftex.def Info: Requested size: 324.91002pt x 173.70943pt on input lin
+e 2177.
+ [88 <./hinh/seq-CRUD.png>]
 <hinh/folder.png, id=1718, 103.13531pt x 347.04657pt>
 File: hinh/folder.png Graphic file (type png)
- <use hinh/folder.png>
-Package pdftex.def Info: hinh/folder.png used on input line 2207.
-(pdftex.def)             Requested size: 103.13504pt x 347.04572pt.
-
-[89] [90 <F:/final-exam-report/report/hinh/folder.png>] [91]
+<use hinh/folder.png>
+Package pdftex.def Info: hinh/folder.png  used on input line 2207. on input lin
+e 2207.
+Package pdftex.def Info: Requested size: 103.13504pt x 347.04572pt on input lin
+e 2207.
+ [89]
+[90 <./hinh/folder.png>] [91]
 <hinh/class_diagram.jpg, id=1732, 1075.76906pt x 744.53156pt>
 File: hinh/class_diagram.jpg Graphic file (type jpg)
-
 <use hinh/class_diagram.jpg>
-Package pdftex.def Info: hinh/class_diagram.jpg used on input line 2247.
-(pdftex.def)             Requested size: 666.96992pt x 461.6048pt.
+Package pdftex.def Info: hinh/class_diagram.jpg  used on input line 2247. on in
+put line 2247.
+Package pdftex.def Info: Requested size: 666.96992pt x 461.6048pt on input line
+ 2247.
 
 Overfull \hbox (2.73409pt too wide) in paragraph at lines 2247--2248
  [][] 
@@ -2539,98 +2699,99 @@ Overfull \hbox (2.73409pt too wide) in paragraph at lines 2247--2248
 
 LaTeX Warning: Float too large for page by 33.19345pt on input line 2249.
 
-[92 <F:/final-exam-report/report/hinh/class_diagram.jpg>]
+[92 <./hinh/class_diagram.jpg>]
 <hinh/web_home.jpg, id=1738, 880.79062pt x 475.02469pt>
 File: hinh/web_home.jpg Graphic file (type jpg)
-
 <use hinh/web_home.jpg>
-Package pdftex.def Info: hinh/web_home.jpg used on input line 2257.
-(pdftex.def)             Requested size: 396.35211pt x 213.75912pt.
-
+Package pdftex.def Info: hinh/web_home.jpg  used on input line 2257. on input l
+ine 2257.
+Package pdftex.def Info: Requested size: 396.35211pt x 213.75912pt on input lin
+e 2257.
 <hinh/search_page.png, id=1739, 904.88063pt x 520.19344pt>
 File: hinh/search_page.png Graphic file (type png)
-
 <use hinh/search_page.png>
-Package pdftex.def Info: hinh/search_page.png used on input line 2264.
-(pdftex.def)             Requested size: 407.19252pt x 234.08487pt.
-
+Package pdftex.def Info: hinh/search_page.png  used on input line 2264. on inpu
+t line 2264.
+Package pdftex.def Info: Requested size: 407.19252pt x 234.08487pt on input lin
+e 2264.
 <hinh/web_register.jpg, id=1740, 922.19531pt x 626.34pt>
 File: hinh/web_register.jpg Graphic file (type jpg)
-
 <use hinh/web_register.jpg>
-Package pdftex.def Info: hinh/web_register.jpg used on input line 2271.
-(pdftex.def)             Requested size: 414.98405pt x 281.85039pt.
+Package pdftex.def Info: hinh/web_register.jpg  used on input line 2271. on inp
+ut line 2271.
+Package pdftex.def Info: Requested size: 414.98405pt x 281.85039pt on input lin
+e 2271.
  [93
 
 
- <F:/final-exam-report/report/hinh/web_home.jpg> <F:/final-exam-report/report/h
-inh/search_page.png>]
+ <./hinh/web_home.jpg> <./hinh/search_page.png>]
 <hinh/web_login.jpg, id=1746, 883.04906pt x 508.90125pt>
 File: hinh/web_login.jpg Graphic file (type jpg)
-
 <use hinh/web_login.jpg>
-Package pdftex.def Info: hinh/web_login.jpg used on input line 2278.
-(pdftex.def)             Requested size: 397.3684pt x 229.00345pt.
-
+Package pdftex.def Info: hinh/web_login.jpg  used on input line 2278. on input 
+line 2278.
+Package pdftex.def Info: Requested size: 397.3684pt x 229.00345pt on input line
+ 2278.
 <hinh/web_profile.png, id=1747, 959.08313pt x 450.9347pt>
 File: hinh/web_profile.png Graphic file (type png)
-
 <use hinh/web_profile.png>
-Package pdftex.def Info: hinh/web_profile.png used on input line 2285.
-(pdftex.def)             Requested size: 431.58342pt x 202.91873pt.
- [94 <F:/final-exam-report/report/hinh/web_register.jpg> <F:/final-exam-report/
-report/hinh/web_login.jpg>]
+Package pdftex.def Info: hinh/web_profile.png  used on input line 2285. on inpu
+t line 2285.
+Package pdftex.def Info: Requested size: 431.58342pt x 202.91873pt on input lin
+e 2285.
+ [94 <./hinh/web_register.jpg> <./hinh/web_login.jpg>]
 <hinh/web_add_device.jpg, id=1752, 846.91406pt x 486.31688pt>
 File: hinh/web_add_device.jpg Graphic file (type jpg)
-
 <use hinh/web_add_device.jpg>
-Package pdftex.def Info: hinh/web_add_device.jpg used on input line 2292.
-(pdftex.def)             Requested size: 423.456pt x 243.15784pt.
-
+Package pdftex.def Info: hinh/web_add_device.jpg  used on input line 2292. on i
+nput line 2292.
+Package pdftex.def Info: Requested size: 423.456pt x 243.15784pt on input line 
+2292.
 <hinh/web_devices.jpg, id=1753, 832.61063pt x 447.17062pt>
 File: hinh/web_devices.jpg Graphic file (type jpg)
-
 <use hinh/web_devices.jpg>
-Package pdftex.def Info: hinh/web_devices.jpg used on input line 2299.
-(pdftex.def)             Requested size: 374.67133pt x 201.22491pt.
- [95 <F:/final-exam-report/report/hinh/web_profile.png> <F:/final-exam-report/r
-eport/hinh/web_add_device.jpg>]
+Package pdftex.def Info: hinh/web_devices.jpg  used on input line 2299. on inpu
+t line 2299.
+Package pdftex.def Info: Requested size: 374.67133pt x 201.22491pt on input lin
+e 2299.
+ [95 <./hinh/web_profile.png> <./hinh/web_add_device.jpg>]
 <hinh/web_actuator_list.png, id=1759, 975.645pt x 615.0478pt>
 File: hinh/web_actuator_list.png Graphic file (type png)
-
 <use hinh/web_actuator_list.png>
-Package pdftex.def Info: hinh/web_actuator_list.png used on input line 2306.
-(pdftex.def)             Requested size: 390.25108pt x 246.01476pt.
-
+Package pdftex.def Info: hinh/web_actuator_list.png  used on input line 2306. o
+n input line 2306.
+Package pdftex.def Info: Requested size: 390.25108pt x 246.01476pt on input lin
+e 2306.
 <hinh/web_add_actuator.png, id=1760, 399.74344pt x 308.65312pt>
 File: hinh/web_add_actuator.png Graphic file (type png)
-
 <use hinh/web_add_actuator.png>
-Package pdftex.def Info: hinh/web_add_actuator.png used on input line 2313.
-(pdftex.def)             Requested size: 219.85956pt x 169.75974pt.
- [96 <F:/final-exam-report/report/hinh/web_devices.jpg> <F:/final-exam-report/r
-eport/hinh/web_actuator_list.png>]
+Package pdftex.def Info: hinh/web_add_actuator.png  used on input line 2313. on
+ input line 2313.
+Package pdftex.def Info: Requested size: 219.85956pt x 169.75974pt on input lin
+e 2313.
+ [96 <./hinh/web_devices.jpg> <./hinh/web_actuator_list.png>]
 <hinh/web_crop_list.png, id=1766, 1093.08376pt x 556.0775pt>
 File: hinh/web_crop_list.png Graphic file (type png)
-
 <use hinh/web_crop_list.png>
-Package pdftex.def Info: hinh/web_crop_list.png used on input line 2320.
-(pdftex.def)             Requested size: 437.22575pt x 222.42705pt.
-
+Package pdftex.def Info: hinh/web_crop_list.png  used on input line 2320. on in
+put line 2320.
+Package pdftex.def Info: Requested size: 437.22575pt x 222.42705pt on input lin
+e 2320.
 <hinh/web_add_crop.png, id=1767, 402.75468pt x 392.96812pt>
 File: hinh/web_add_crop.png Graphic file (type png)
-
 <use hinh/web_add_crop.png>
-Package pdftex.def Info: hinh/web_add_crop.png used on input line 2327.
-(pdftex.def)             Requested size: 221.51575pt x 216.13312pt.
- [97 <F:/final-exam-report/report/hinh/web_add_actuator.png> <F:/final-exam-rep
-ort/report/hinh/web_crop_list.png>]
+Package pdftex.def Info: hinh/web_add_crop.png  used on input line 2327. on inp
+ut line 2327.
+Package pdftex.def Info: Requested size: 221.51575pt x 216.13312pt on input lin
+e 2327.
+ [97 <./hinh/web_add_actuator.png> <./hinh/web_crop_list.png>]
 <hinh/web_crop_overview.png, id=1774, 1158.3275pt x 441.65pt>
 File: hinh/web_crop_overview.png Graphic file (type png)
-
 <use hinh/web_crop_overview.png>
-Package pdftex.def Info: hinh/web_crop_overview.png used on input line 2334.
-(pdftex.def)             Requested size: 463.3228pt x 176.65686pt.
+Package pdftex.def Info: hinh/web_crop_overview.png  used on input line 2334. o
+n input line 2334.
+Package pdftex.def Info: Requested size: 463.3228pt x 176.65686pt on input line
+ 2334.
 
 Overfull \hbox (8.07869pt too wide) in paragraph at lines 2334--2335
  [][] 
@@ -2638,160 +2799,168 @@ Overfull \hbox (8.07869pt too wide) in paragraph at lines 2334--2335
 
 <hinh/web_crop_detail.png, id=1775, 1045.9075pt x 493.845pt>
 File: hinh/web_crop_detail.png Graphic file (type png)
-
 <use hinh/web_crop_detail.png>
-Package pdftex.def Info: hinh/web_crop_detail.png used on input line 2341.
-(pdftex.def)             Requested size: 418.35559pt x 197.53448pt.
- [98 <F:/final-exam-report/report/hinh/web_add_crop.png> <F:/final-exam-report/
-report/hinh/web_crop_overview.png>]
+Package pdftex.def Info: hinh/web_crop_detail.png  used on input line 2341. on 
+input line 2341.
+Package pdftex.def Info: Requested size: 418.35559pt x 197.53448pt on input lin
+e 2341.
+[98 <./hinh/web_add_crop.png> <./hinh/web_crop_overview.png>]
 <hinh/web_threshold.png, id=1783, 840.13875pt x 285.065pt>
 File: hinh/web_threshold.png Graphic file (type png)
-
 <use hinh/web_threshold.png>
-Package pdftex.def Info: hinh/web_threshold.png used on input line 2348.
-(pdftex.def)             Requested size: 420.06834pt x 142.53215pt.
-
+Package pdftex.def Info: hinh/web_threshold.png  used on input line 2348. on in
+put line 2348.
+Package pdftex.def Info: Requested size: 420.06834pt x 142.53215pt on input lin
+e 2348.
 <hinh/web_schedule.png, id=1784, 847.66687pt x 306.39468pt>
 File: hinh/web_schedule.png Graphic file (type png)
-
 <use hinh/web_schedule.png>
-Package pdftex.def Info: hinh/web_schedule.png used on input line 2355.
-(pdftex.def)             Requested size: 423.8324pt x 153.19696pt.
- [99 <F:/final-exam-report/report/hinh/web_crop_detail.png> <F:/final-exam-repo
-rt/report/hinh/web_threshold.png>]
+Package pdftex.def Info: hinh/web_schedule.png  used on input line 2355. on inp
+ut line 2355.
+Package pdftex.def Info: Requested size: 423.8324pt x 153.19696pt on input line
+ 2355.
+ [99 <./hinh/web_crop_detail.png> <./hinh/web_threshold.png>]
 <hinh/web_add_schedule.png, id=1791, 446.41782pt x 319.94531pt>
 File: hinh/web_add_schedule.png Graphic file (type png)
-
 <use hinh/web_add_schedule.png>
-Package pdftex.def Info: hinh/web_add_schedule.png used on input line 2362.
-(pdftex.def)             Requested size: 223.20836pt x 159.97226pt.
-
+Package pdftex.def Info: hinh/web_add_schedule.png  used on input line 2362. on
+ input line 2362.
+Package pdftex.def Info: Requested size: 223.20836pt x 159.97226pt on input lin
+e 2362.
 <hinh/web_forum.jpg, id=1792, 870.25125pt x 374.90062pt>
 File: hinh/web_forum.jpg Graphic file (type jpg)
-
 <use hinh/web_forum.jpg>
-Package pdftex.def Info: hinh/web_forum.jpg used on input line 2369.
-(pdftex.def)             Requested size: 435.12456pt x 187.44984pt.
- [100 <F:/final-exam-report/report/hinh/web_schedule.png> <F:/final-exam-report
-/report/hinh/web_add_schedule.png>]
+Package pdftex.def Info: hinh/web_forum.jpg  used on input line 2369. on input 
+line 2369.
+Package pdftex.def Info: Requested size: 435.12456pt x 187.44984pt on input lin
+e 2369.
+ [100 <./hinh/web_schedule.png> <./hinh/web_add_schedule.png>]
 <hinh/admin_page.png, id=1799, 1193.96063pt x 391.4625pt>
 File: hinh/admin_page.png Graphic file (type png)
-
 <use hinh/admin_page.png>
-Package pdftex.def Info: hinh/admin_page.png used on input line 2376.
-(pdftex.def)             Requested size: 453.70976pt x 148.7573pt.
- [101 <F:/final-exam-report/report/hinh/web_forum.jpg> <F:/final-exam-report/re
-port/hinh/admin_page.png>] [102]
+Package pdftex.def Info: hinh/admin_page.png  used on input line 2376. on input
+ line 2376.
+Package pdftex.def Info: Requested size: 453.70976pt x 148.7573pt on input line
+ 2376.
+ [101 <./hinh/web_forum.jpg> <./hinh/admin_page.png>] [102]
 <hinh/mobile_login.png, id=1809, 193.47281pt x 362.10281pt>
 File: hinh/mobile_login.png Graphic file (type png)
-
 <use hinh/mobile_login.png>
-Package pdftex.def Info: hinh/mobile_login.png used on input line 2410.
-(pdftex.def)             Requested size: 193.47234pt x 362.10191pt.
- [103 <F:/final-exam-report/report/hinh/mobile_login.png>] <hinh/mobile_home.pn
-g, id=1814, 207.02344pt x 353.82187pt>
+Package pdftex.def Info: hinh/mobile_login.png  used on input line 2410. on inp
+ut line 2410.
+Package pdftex.def Info: Requested size: 193.47234pt x 362.10191pt on input lin
+e 2410.
+ [103 <./hinh/mobile_login.png>]
+<hinh/mobile_home.png, id=1814, 207.02344pt x 353.82187pt>
 File: hinh/mobile_home.png Graphic file (type png)
-
 <use hinh/mobile_home.png>
-Package pdftex.def Info: hinh/mobile_home.png used on input line 2418.
-(pdftex.def)             Requested size: 207.02292pt x 353.821pt.
- [104 <F:/final-exam-report/report/hinh/mobile_home.png>] <hinh/mobile_crop.png
-, id=1820, 199.49532pt x 351.56343pt>
+Package pdftex.def Info: hinh/mobile_home.png  used on input line 2418. on inpu
+t line 2418.
+Package pdftex.def Info: Requested size: 207.02292pt x 353.821pt on input line 
+2418.
+ [104 <./hinh/mobile_home.png>]
+<hinh/mobile_crop.png, id=1820, 199.49532pt x 351.56343pt>
 File: hinh/mobile_crop.png Graphic file (type png)
-
 <use hinh/mobile_crop.png>
-Package pdftex.def Info: hinh/mobile_crop.png used on input line 2426.
-(pdftex.def)             Requested size: 199.49481pt x 351.56256pt.
- [105 <F:/final-exam-report/report/hinh/mobile_crop.png>] <hinh/mobile_actuator
-_list.png, id=1825, 196.48407pt x 341.02406pt>
+Package pdftex.def Info: hinh/mobile_crop.png  used on input line 2426. on inpu
+t line 2426.
+Package pdftex.def Info: Requested size: 199.49481pt x 351.56256pt on input lin
+e 2426.
+ [105 <./hinh/mobile_crop.png>]
+<hinh/mobile_actuator_list.png, id=1825, 196.48407pt x 341.02406pt>
 File: hinh/mobile_actuator_list.png Graphic file (type png)
-
 <use hinh/mobile_actuator_list.png>
-Package pdftex.def Info: hinh/mobile_actuator_list.png used on input line 2434.
-
-(pdftex.def)             Requested size: 196.48358pt x 341.02322pt.
- [106 <F:/final-exam-report/report/hinh/mobile_actuator_list.png>] <hinh/PPM/so
-urce_pro.jpg, id=1830, 722.7pt x 542.025pt>
+Package pdftex.def Info: hinh/mobile_actuator_list.png  used on input line 2434
+. on input line 2434.
+Package pdftex.def Info: Requested size: 196.48358pt x 341.02322pt on input lin
+e 2434.
+ [106 <./hinh/mobile_actuator_list.png>]
+<hinh/PPM/source_pro.jpg, id=1830, 722.7pt x 542.025pt>
 File: hinh/PPM/source_pro.jpg Graphic file (type jpg)
-
 <use hinh/PPM/source_pro.jpg>
-Package pdftex.def Info: hinh/PPM/source_pro.jpg used on input line 2452.
-(pdftex.def)             Requested size: 361.3491pt x 271.01183pt.
-
+Package pdftex.def Info: hinh/PPM/source_pro.jpg  used on input line 2452. on i
+nput line 2452.
+Package pdftex.def Info: Requested size: 361.3491pt x 271.01183pt on input line
+ 2452.
 <hinh/relay_prototype.jpg, id=1831, 594.72188pt x 487.8225pt>
 File: hinh/relay_prototype.jpg Graphic file (type jpg)
-
 <use hinh/relay_prototype.jpg>
-Package pdftex.def Info: hinh/relay_prototype.jpg used on input line 2458.
-(pdftex.def)             Requested size: 297.36021pt x 243.91064pt.
- [107 <F:/final-exam-report/report/hinh/PPM/source_pro.jpg>] <hinh/relay_box.jp
-g, id=1836, 1824.8175pt x 1764.5925pt>
+Package pdftex.def Info: hinh/relay_prototype.jpg  used on input line 2458. on 
+input line 2458.
+Package pdftex.def Info: Requested size: 297.36021pt x 243.91064pt on input lin
+e 2458.
+ [107 <./hinh/PPM/source_pro.jpg>]
+<hinh/relay_box.jpg, id=1836, 1824.8175pt x 1764.5925pt>
 File: hinh/relay_box.jpg Graphic file (type jpg)
-
 <use hinh/relay_box.jpg>
-Package pdftex.def Info: hinh/relay_box.jpg used on input line 2465.
-(pdftex.def)             Requested size: 273.71082pt x 264.67746pt.
- [108 <F:/final-exam-report/report/hinh/relay_prototype.jpg> <F:/final-exam-rep
-ort/report/hinh/relay_box.jpg>]
+Package pdftex.def Info: hinh/relay_box.jpg  used on input line 2465. on input 
+line 2465.
+Package pdftex.def Info: Requested size: 273.71082pt x 264.67746pt on input lin
+e 2465.
+ [108 <./hinh/relay_prototype.jpg> <./hinh/relay_box.jpg>]
 <hinh/PPM/ppm_pro.jpg, id=1841, 963.6pt x 722.7pt>
 File: hinh/PPM/ppm_pro.jpg Graphic file (type jpg)
- <use hinh/PPM/ppm_pro.jpg>
-Package pdftex.def Info: hinh/PPM/ppm_pro.jpg used on input line 2477.
-(pdftex.def)             Requested size: 289.08223pt x 216.81166pt.
-
+<use hinh/PPM/ppm_pro.jpg>
+Package pdftex.def Info: hinh/PPM/ppm_pro.jpg  used on input line 2477. on inpu
+t line 2477.
+Package pdftex.def Info: Requested size: 289.08223pt x 216.81166pt on input lin
+e 2477.
 <hinh/PPM/ppm_inf.jpg, id=1842, 963.6pt x 722.7pt>
 File: hinh/PPM/ppm_inf.jpg Graphic file (type jpg)
- <use hinh/PPM/ppm_inf.jpg>
-Package pdftex.def Info: hinh/PPM/ppm_inf.jpg used on input line 2483.
-(pdftex.def)             Requested size: 289.08223pt x 216.81166pt.
-
+<use hinh/PPM/ppm_inf.jpg>
+Package pdftex.def Info: hinh/PPM/ppm_inf.jpg  used on input line 2483. on inpu
+t line 2483.
+Package pdftex.def Info: Requested size: 289.08223pt x 216.81166pt on input lin
+e 2483.
 <hinh/PPM/nacl_1.PNG, id=1843, 418.56375pt x 298.11375pt>
 File: hinh/PPM/nacl_1.PNG Graphic file (type png)
-
 <use hinh/PPM/nacl_1.PNG>
-Package pdftex.def Info: hinh/PPM/nacl_1.PNG used on input line 2489.
-(pdftex.def)             Requested size: 292.99261pt x 208.67819pt.
- [109 <F:/final-exam-report/report/hinh/PPM/ppm_pro.jpg> <F:/final-exam-report/
-report/hinh/PPM/ppm_inf.jpg>]
+Package pdftex.def Info: hinh/PPM/nacl_1.PNG  used on input line 2489. on input
+ line 2489.
+Package pdftex.def Info: Requested size: 292.99261pt x 208.67819pt on input lin
+e 2489.
+
+[109 <./hinh/PPM/ppm_pro.jpg> <./hinh/PPM/ppm_inf.jpg>]
 <hinh/PPM/nacl_2.PNG, id=1848, 396.7322pt x 341.02406pt>
 File: hinh/PPM/nacl_2.PNG Graphic file (type png)
-
 <use hinh/PPM/nacl_2.PNG>
-Package pdftex.def Info: hinh/PPM/nacl_2.PNG used on input line 2495.
-(pdftex.def)             Requested size: 317.38617pt x 272.81961pt.
-
+Package pdftex.def Info: hinh/PPM/nacl_2.PNG  used on input line 2495. on input
+ line 2495.
+Package pdftex.def Info: Requested size: 317.38617pt x 272.81961pt on input lin
+e 2495.
 <hinh/PPM/nacl_3.PNG, id=1849, 313.17pt x 345.54094pt>
 File: hinh/PPM/nacl_3.PNG Graphic file (type png)
-
 <use hinh/PPM/nacl_3.PNG>
-Package pdftex.def Info: hinh/PPM/nacl_3.PNG used on input line 2501.
-(pdftex.def)             Requested size: 250.53633pt x 276.43312pt.
- [110 <F:/final-exam-report/report/hinh/PPM/nacl_1.PNG> <F:/final-exam-report/r
-eport/hinh/PPM/nacl_2.PNG>]
+Package pdftex.def Info: hinh/PPM/nacl_3.PNG  used on input line 2501. on input
+ line 2501.
+Package pdftex.def Info: Requested size: 250.53633pt x 276.43312pt on input lin
+e 2501.
+ [110 <./hinh/PPM/nacl_1.PNG> <./hinh/PPM/nacl_2.PNG>]
 <hinh/PPM/ppm_r2.PNG, id=1857, 601.4972pt x 344.78813pt>
 File: hinh/PPM/ppm_r2.PNG Graphic file (type png)
-
 <use hinh/PPM/ppm_r2.PNG>
-Package pdftex.def Info: hinh/PPM/ppm_r2.PNG used on input line 2507.
-(pdftex.def)             Requested size: 451.1218pt x 258.59045pt.
-
+Package pdftex.def Info: hinh/PPM/ppm_r2.PNG  used on input line 2507. on input
+ line 2507.
+Package pdftex.def Info: Requested size: 451.1218pt x 258.59045pt on input line
+ 2507.
 <hinh/PPM/ppm_r1.PNG, id=1858, 520.94624pt x 313.17pt>
 File: hinh/PPM/ppm_r1.PNG Graphic file (type png)
-
 <use hinh/PPM/ppm_r1.PNG>
-Package pdftex.def Info: hinh/PPM/ppm_r1.PNG used on input line 2513.
-(pdftex.def)             Requested size: 442.8064pt x 266.19574pt.
- [111 <F:/final-exam-report/report/hinh/PPM/nacl_3.PNG> <F:/final-exam-report/r
-eport/hinh/PPM/ppm_r2.PNG>] [112 <F:/final-exam-report/report/hinh/PPM/ppm_r1.P
-NG>]
+Package pdftex.def Info: hinh/PPM/ppm_r1.PNG  used on input line 2513. on input
+ line 2513.
+Package pdftex.def Info: Requested size: 442.8064pt x 266.19574pt on input line
+ 2513.
+ [111 <./hinh/PPM/nacl_3.PNG> <./hinh/PPM/ppm_r2.PNG>] [112 <./hinh/PPM/ppm_r1.
+PNG>]
 <hinh/data.PNG, id=1870, 595.47469pt x 175.40532pt>
 File: hinh/data.PNG Graphic file (type png)
- <use hinh/data.PNG>
-Package pdftex.def Info: hinh/data.PNG used on input line 2557.
-(pdftex.def)             Requested size: 416.82944pt x 122.78287pt.
-
-[113 <F:/final-exam-report/report/hinh/data.PNG>] [114] [115] [116] [117]
-[118] [119
+<use hinh/data.PNG>
+Package pdftex.def Info: hinh/data.PNG  used on input line 2557. on input line 
+2557.
+Package pdftex.def Info: Requested size: 416.82944pt x 122.78287pt on input lin
+e 2557.
+ [113 <./hinh/data.PNG>] [114] [115]
+[116] [117] [118] [119
 
 ] [120
 
@@ -2827,133 +2996,156 @@ Underfull \hbox (badness 2012) in paragraph at lines 2922--2924
 ipedia.org/, [On-line; Cªp nhªt l¦n cuèi v o
  []
 
-[124] [125] <hinh/reg.png, id=1936, 427.5975pt x 314.67563pt>
+[124] [125]
+<hinh/reg.png, id=1936, 427.5975pt x 314.67563pt>
 File: hinh/reg.png Graphic file (type png)
-
 <use hinh/reg.png>
-Package pdftex.def Info: hinh/reg.png used on input line 2977.
-(pdftex.def)             Requested size: 384.83418pt x 283.20544pt.
- <hinh/login.png, id=1937, 377.91188pt x 262.73157pt>
+Package pdftex.def Info: hinh/reg.png  used on input line 2977. on input line 2
+977.
+Package pdftex.def Info: Requested size: 384.83418pt x 283.20544pt on input lin
+e 2977.
+<hinh/login.png, id=1937, 377.91188pt x 262.73157pt>
 File: hinh/login.png Graphic file (type png)
-
 <use hinh/login.png>
-Package pdftex.def Info: hinh/login.png used on input line 3016.
-(pdftex.def)             Requested size: 340.11754pt x 236.4562pt.
- [126 <F:/final-exam-report/report/hinh/reg.png> <F:/final-exam-report/report/h
-inh/login.png>]
+Package pdftex.def Info: hinh/login.png  used on input line 3016. on input line
+ 3016.
+Package pdftex.def Info: Requested size: 340.11754pt x 236.4562pt on input line
+ 3016.
+ [126 <./hinh/reg.png> <./hinh/login.png>]
 <hinh/tdtt.png, id=1944, 732.48656pt x 338.76563pt>
 File: hinh/tdtt.png Graphic file (type png)
- <use hinh/tdtt.png>
-Package pdftex.def Info: hinh/tdtt.png used on input line 3056.
-(pdftex.def)             Requested size: 439.49532pt x 203.26093pt.
-
-[127] <hinh/adddevice.png, id=1949, 468.24937pt x 285.31593pt>
+<use hinh/tdtt.png>
+Package pdftex.def Info: hinh/tdtt.png  used on input line 3056. on input line 
+3056.
+Package pdftex.def Info: Requested size: 439.49532pt x 203.26093pt on input lin
+e 3056.
+ [127]
+<hinh/adddevice.png, id=1949, 468.24937pt x 285.31593pt>
 File: hinh/adddevice.png Graphic file (type png)
-
 <use hinh/adddevice.png>
-Package pdftex.def Info: hinh/adddevice.png used on input line 3159.
-(pdftex.def)             Requested size: 421.42053pt x 256.78195pt.
- [128 <F:/final-exam-report/report/hinh/tdtt.png>]
-[129] <hinh/newthread.png, id=1960, 566.86781pt x 297.36093pt>
+Package pdftex.def Info: hinh/adddevice.png  used on input line 3159. on input 
+line 3159.
+Package pdftex.def Info: Requested size: 421.42053pt x 256.78195pt on input lin
+e 3159.
+ [128 <./hinh/tdtt.png>] [129]
+<hinh/newthread.png, id=1960, 566.86781pt x 297.36093pt>
 File: hinh/newthread.png Graphic file (type png)
-
 <use hinh/newthread.png>
-Package pdftex.def Info: hinh/newthread.png used on input line 3201.
-(pdftex.def)             Requested size: 453.49486pt x 237.88905pt.
- [130 <F:/final-exam-report/report/hinh/adddevice.png>] <hinh/TimKiemMuaVu.png,
- id=1966, 517.18219pt x 314.67563pt>
+Package pdftex.def Info: hinh/newthread.png  used on input line 3201. on input 
+line 3201.
+Package pdftex.def Info: Requested size: 453.49486pt x 237.88905pt on input lin
+e 3201.
+ [130 <./hinh/adddevice.png>]
+<hinh/TimKiemMuaVu.png, id=1966, 517.18219pt x 314.67563pt>
 File: hinh/TimKiemMuaVu.png Graphic file (type png)
-
 <use hinh/TimKiemMuaVu.png>
-Package pdftex.def Info: hinh/TimKiemMuaVu.png used on input line 3316.
-(pdftex.def)             Requested size: 465.45967pt x 283.20544pt.
+Package pdftex.def Info: hinh/TimKiemMuaVu.png  used on input line 3316. on inp
+ut line 3316.
+Package pdftex.def Info: Requested size: 465.45967pt x 283.20544pt on input lin
+e 3316.
 
 Overfull \hbox (10.21556pt too wide) in paragraph at lines 3316--3317
  [][] 
  []
 
-[131 <F:/final-exam-report/report/hinh/newthread.png>] [132]
+[131 <./hinh/newthread.png>] [132]
 <hinh/tttb.png, id=1976, 448.67625pt x 317.68687pt>
 File: hinh/tttb.png Graphic file (type png)
- <use hinh/tttb.png>
-Package pdftex.def Info: hinh/tttb.png used on input line 3382.
-(pdftex.def)             Requested size: 403.8049pt x 285.91553pt.
-
-[133 <F:/final-exam-report/report/hinh/TimKiemMuaVu.png>]
+<use hinh/tttb.png>
+Package pdftex.def Info: hinh/tttb.png  used on input line 3382. on input line 
+3382.
+Package pdftex.def Info: Requested size: 403.8049pt x 285.91553pt on input line
+ 3382.
+ [133 <./hinh/TimKiemMuaVu.png>]
 <hinh/stttb.png, id=1982, 420.06938pt x 272.51813pt>
 File: hinh/stttb.png Graphic file (type png)
- <use hinh/stttb.png>
-Package pdftex.def Info: hinh/stttb.png used on input line 3388.
-(pdftex.def)             Requested size: 378.05894pt x 245.26404pt.
-
-[134 <F:/final-exam-report/report/hinh/tttb.png>]
+<use hinh/stttb.png>
+Package pdftex.def Info: hinh/stttb.png  used on input line 3388. on input line
+ 3388.
+Package pdftex.def Info: Requested size: 378.05894pt x 245.26404pt on input lin
+e 3388.
+ [134 <./hinh/tttb.png>]
 <hinh/addrelay.png, id=1989, 371.13657pt x 205.5178pt>
 File: hinh/addrelay.png Graphic file (type png)
- <use hinh/addrelay.png>
-Package pdftex.def Info: hinh/addrelay.png used on input line 3429.
-(pdftex.def)             Requested size: 371.13565pt x 205.5173pt.
-
-[135 <F:/final-exam-report/report/hinh/stttb.png>]
+<use hinh/addrelay.png>
+Package pdftex.def Info: hinh/addrelay.png  used on input line 3429. on input l
+ine 3429.
+Package pdftex.def Info: Requested size: 371.13565pt x 205.5173pt on input line
+ 3429.
+ [135 <./hinh/stttb.png>]
 <hinh/sttmv.png, id=1995, 514.92375pt x 350.05782pt>
 File: hinh/sttmv.png Graphic file (type png)
- <use hinh/sttmv.png>
-Package pdftex.def Info: hinh/sttmv.png used on input line 3519.
-(pdftex.def)             Requested size: 360.44417pt x 245.03879pt.
-
-[136 <F:/final-exam-report/report/hinh/addrelay.png>] [137]
-File: hinh/sttmv.png Graphic file (type png)
-
 <use hinh/sttmv.png>
-Package pdftex.def Info: hinh/sttmv.png used on input line 3559.
-(pdftex.def)             Requested size: 411.93954pt x 280.04662pt.
- [138 <F:/final-exam-report/report/hinh/sttmv.png>]
+Package pdftex.def Info: hinh/sttmv.png  used on input line 3519. on input line
+ 3519.
+Package pdftex.def Info: Requested size: 360.44417pt x 245.03879pt on input lin
+e 3519.
+ [136 <./hinh/addrelay.png>] [137]
+File: hinh/sttmv.png Graphic file (type png)
+<use hinh/sttmv.png>
+Package pdftex.def Info: hinh/sttmv.png  used on input line 3559. on input line
+ 3559.
+Package pdftex.def Info: Requested size: 411.93954pt x 280.04662pt on input lin
+e 3559.
+ [138 <./hinh/sttmv.png>]
 <hinh/cdctmv.png, id=2010, 571.38469pt x 323.70938pt>
 File: hinh/cdctmv.png Graphic file (type png)
- <use hinh/cdctmv.png>
-Package pdftex.def Info: hinh/cdctmv.png used on input line 3634.
-(pdftex.def)             Requested size: 457.10837pt x 258.96785pt.
+<use hinh/cdctmv.png>
+Package pdftex.def Info: hinh/cdctmv.png  used on input line 3634. on input lin
+e 3634.
+Package pdftex.def Info: Requested size: 457.10837pt x 258.96785pt on input lin
+e 3634.
 
 Overfull \hbox (1.86426pt too wide) in paragraph at lines 3634--3635
  [][] 
  []
 
-[139] <hinh/cdtn.png, id=2015, 530.73282pt x 306.39468pt>
+[139]
+<hinh/cdtn.png, id=2015, 530.73282pt x 306.39468pt>
 File: hinh/cdtn.png Graphic file (type png)
- <use hinh/cdtn.png>
-Package pdftex.def Info: hinh/cdtn.png used on input line 3670.
-(pdftex.def)             Requested size: 424.58682pt x 245.11607pt.
-
-[140 <F:/final-exam-report/report/hinh/cdctmv.png>] [141 <F:/final-exam-report/
-report/hinh/cdtn.png>] [142] [143] [144] [145] [146] [147] [148] [149] [150]
-[151] [152] [153] [154] [155] [156] [157]
+<use hinh/cdtn.png>
+Package pdftex.def Info: hinh/cdtn.png  used on input line 3670. on input line 
+3670.
+Package pdftex.def Info: Requested size: 424.58682pt x 245.11607pt on input lin
+e 3670.
+ [140 <./hinh/cdctmv.png>] [141 <./hinh/cdtn.png>] [142] [143] [144]
+[145] [146] [147] [148] [149] [150] [151] [152] [153] [154] [155] [156]
+[157]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 4394.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 4394.
-
-(F:\final-exam-report\report\report.aux)
+ (report.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 4394.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 4394.
 
-Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: 5B2949678371CC86F2BCE316F4E75E5F;18083.
+
+
+Package rerunfilecheck Warning: File `report.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `report.out':
+(rerunfilecheck)             Before: 5B2949678371CC86F2BCE316F4E75E5F;18083
+(rerunfilecheck)             After:  D5A58332E2DFD1E859D08817BB00D640;17977.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 4394.
  ) 
 Here is how much of TeX's memory you used:
- 27391 strings out of 493921
- 500598 string characters out of 3147282
- 564402 words of memory out of 3000000
- 29493 multiletter control sequences out of 15000+200000
+ 27591 strings out of 493312
+ 503171 string characters out of 3138881
+ 570899 words of memory out of 3000000
+ 29944 multiletter control sequences out of 15000+200000
  24465 words of font info for 50 fonts, out of 3000000 for 9000
- 841 hyphenation exceptions out of 8191
- 55i,18n,82p,1566b,629s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\thach\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\
-tcrm1200.pk><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.
-pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/P
-rogram Files/MiKTeX 2.9/fonts/type1/vntex/vnr/vnbx12.pfb><C:/Program Files/MiKT
-eX 2.9/fonts/type1/vntex/vnr/vnr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
-/vntex/vnr/vnr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/vntex/vnr/vnsl12.p
-fb><C:/Program Files/MiKTeX 2.9/fonts/type1/vntex/vnr/vnti12.pfb><C:/Program Fi
-les/MiKTeX 2.9/fonts/type1/vntex/vnr/vntt12.pfb>
-Output written on report.pdf (174 pages, 11953874 bytes).
+ 1141 hyphenation exceptions out of 8191
+ 55i,18n,82p,1568b,627s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\Chi Tay Ta\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dp
+i600\tcrm1200.pk><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
+mi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb>
+<C:/Program Files/MiKTeX 2.9/vntex/fonts/type1/vntex/vnr/vnbx12.pfb><C:/Program
+ Files/MiKTeX 2.9/vntex/fonts/type1/vntex/vnr/vnr12.pfb><C:/Program Files/MiKTe
+X 2.9/vntex/fonts/type1/vntex/vnr/vnr8.pfb><C:/Program Files/MiKTeX 2.9/vntex/f
+onts/type1/vntex/vnr/vnsl12.pfb><C:/Program Files/MiKTeX 2.9/vntex/fonts/type1/
+vntex/vnr/vnti12.pfb><C:/Program Files/MiKTeX 2.9/vntex/fonts/type1/vntex/vnr/v
+ntt12.pfb>
+Output written on report.pdf (174 pages, 11910725 bytes).
 PDF statistics:
  2242 PDF objects out of 2487 (max. 8388607)
  540 named destinations out of 1000 (max. 500000)
