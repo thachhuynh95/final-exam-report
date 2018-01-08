@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2017.12.13)  8 JAN 2018 23:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2017.12.13)  9 JAN 2018 00:47
 entering extended mode
 **./report.tex
 (report.tex
@@ -1927,13 +1927,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 819--820
 
  []
 
-<hinh/mohinh.png, id=1296, 359.09157pt x 311.66437pt>
+<hinh/mohinh.png, id=1296, 576.65437pt x 368.87813pt>
 File: hinh/mohinh.png Graphic file (type png)
 <use hinh/mohinh.png>
 Package pdftex.def Info: hinh/mohinh.png  used on input line 823. on input line
  823.
-Package pdftex.def Info: Requested size: 359.09068pt x 311.6636pt on input line
- 823.
+Package pdftex.def Info: Requested size: 490.15852pt x 313.54788pt on input lin
+e 823.
+
+Overfull \hbox (34.91441pt too wide) in paragraph at lines 823--824
+ [][] 
+ []
+
 [30 <./hinh/mohinh.png>]
 <hinh/sensor.PNG, id=1302, 255.20343pt x 225.84375pt>
 File: hinh/sensor.PNG Graphic file (type png)
@@ -2039,8 +2044,8 @@ File: hinh/wifi_ap.PNG Graphic file (type png)
 <use hinh/wifi_ap.PNG>
 Package pdftex.def Info: hinh/wifi_ap.PNG  used on input line 1077. on input li
 ne 1077.
-Package pdftex.def Info: Requested size: 219.06789pt x 262.54271pt on input lin
-e 1077.
+Package pdftex.def Info: Requested size: 233.6733pt x 280.04662pt on input line
+ 1077.
 <hinh/wifi_station.PNG, id=1361, 538.26094pt x 368.1253pt>
 File: hinh/wifi_station.PNG Graphic file (type png)
 <use hinh/wifi_station.PNG>
@@ -3105,7 +3110,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 4391.
 Here is how much of TeX's memory you used:
  27589 strings out of 493312
  503150 string characters out of 3138881
- 570902 words of memory out of 3000000
+ 570900 words of memory out of 3000000
  29944 multiletter control sequences out of 15000+200000
  24465 words of font info for 50 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -3119,7 +3124,7 @@ X 2.9/vntex/fonts/type1/vntex/vnr/vnr8.pfb><C:/Program Files/MiKTeX 2.9/vntex/f
 onts/type1/vntex/vnr/vnsl12.pfb><C:/Program Files/MiKTeX 2.9/vntex/fonts/type1/
 vntex/vnr/vnti12.pfb><C:/Program Files/MiKTeX 2.9/vntex/fonts/type1/vntex/vnr/v
 ntt12.pfb>
-Output written on report.pdf (172 pages, 11900895 bytes).
+Output written on report.pdf (172 pages, 11906315 bytes).
 PDF statistics:
  2234 PDF objects out of 2487 (max. 8388607)
  538 named destinations out of 1000 (max. 500000)
