@@ -1,6 +1,6 @@
 \contentsline {section}{Danh s\'ach h\`inh v\~e}{ix}{section*.2}
-\contentsline {section}{Danh s\'ach b\h {a}ng}{xv}{section*.3}
-\contentsline {section}{\nameref {sec:dsvt}}{xvii}{section*.4}
+\contentsline {section}{Danh s\'ach b\h {a}ng}{xiv}{section*.3}
+\contentsline {section}{\nameref {sec:dsvt}}{xvi}{section*.4}
 \contentsline {section}{\numberline {1}GI\IeC {\'\OHORN }I THI\IeC {\d \ECIRCUMFLEX }U \IeC {\DJ }\IeC {\`\ECIRCUMFLEX } T\IeC {\`A}I}{1}{section.1}
 \contentsline {subsection}{\numberline {1.1}\IeC {\'Y} t\IeC {\uhorn }\IeC {\h \ohorn }ng}{1}{subsection.1.1}
 \contentsline {subsection}{\numberline {1.2}M\IeC {\d u}c ti\IeC {\^e}u}{1}{subsection.1.2}
@@ -94,4 +94,4 @@
 \contentsline {subsection}{\numberline {6.3}Qu\IeC {\'a} tr\IeC {\`\i }nh l\IeC {\`a}m vi\IeC {\d \ecircumflex }c c\IeC {\h u}a nh\IeC {\'o}m}{116}{subsection.6.3}
 \contentsline {section}{T\`ai li\d \ecircumflex u}{121}{section*.7}
 \contentsline {section}{\numberline {A}PH\IeC {\d U} L\IeC {\d U}C A: CHI TI\IeC {\'\ECIRCUMFLEX }T C\IeC {\'A}C USE CASE}{124}{appendix.A}
-\contentsline {section}{\numberline {B}PH\IeC {\d U} L\IeC {\d U}C B: CHI TI\IeC {\'\ECIRCUMFLEX }T C\IeC {\'A}C API}{141}{appendix.B}
+\contentsline {section}{\numberline {B}PH\IeC {\d U} L\IeC {\d U}C B: CHI TI\IeC {\'\ECIRCUMFLEX }T C\IeC {\'A}C API}{136}{appendix.B}

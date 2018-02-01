@@ -2971,8 +2971,8 @@ mạch đo ppm}
 \noindent Chi tiết các use case và các mô tả use case cho các chức năng của khách và thành viên:
 \begin{figure}[H]
 \centering
-\includegraphics[scale=.9]{hinh/reg.png}
-\caption{Đăng ký.}
+\includegraphics[scale=.7]{hinh/usecase-guess.png}
+\caption{Các use case của khách.}
 \end{figure}
 
 \begin{table}[!htp]
@@ -2998,21 +2998,10 @@ UC\_REG\_001 & Đăng ký tài khoản & Tạ Chí Tây & 20/3/2017\\
 \multicolumn{4}{|X|}{\textbf{Kịch bản phụ:}}\\
 \multicolumn{4}{|X|}{2.1. Các ô thông tin bị để trống hoặc nhập sai định dạng, mật khẩu không khớp, email đã đăng ký thì hệ thống sẽ thông báo.}\\
 \hline
-\multicolumn{4}{|X|}{\textbf{Các quan hệ khác:}}\\
-\multicolumn{4}{|X|}{- Include: nhập họ tên}\\
-\multicolumn{4}{|X|}{- Include: nhập email}\\
-\multicolumn{4}{|X|}{- Include: nhập mật khẩu}\\
-\multicolumn{4}{|X|}{- Include: nhập số điện thoại}\\
-\hline
+
 \end{tabularx}
 \caption{Mô tả use case đăng ký.}
 \end{table}
-
-\begin{figure}[H]	
-	\centering
-	\includegraphics[scale=.9]{hinh/login.png}
-	\caption{Đăng nhập.}
-\end{figure}
 
 \begin{table}[!htp]
 \centering
@@ -3040,19 +3029,10 @@ UC\_LOGIN\_001 & Đăng nhập & Tạ Chí Tây & 20/3/2017\\
 \multicolumn{4}{|X|}{2.1 Tên truy cập không tồn tại trong cơ sở dữ liệu hoặc mật khẩu không chính xác. Hệ thống hiển thị lại biểu mẫu Đăng nhập và hiển thị thông báo lỗi trên màn hình và yêu cầu nhập lại.}\\
 \multicolumn{4}{|X|}{5. Nhấn vào nút "Quên mật khẩu". Hệ thống sẽ gửi đường link reset mật khẩu đến email của người dùng và thông báo cho người dùng biết.}\\
 \hline
-\multicolumn{4}{|X|}{\textbf{Các quan hệ khác:}}\\
-\multicolumn{4}{|X|}{- Include: nhập email}\\
-\multicolumn{4}{|X|}{- Include: nhập mật khẩu}\\
-\hline
+
 \end{tabularx}
 \caption{Mô tả use case đăng nhập.}
 \end{table}
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[scale=.6]{hinh/tdtt.png}
-	\caption{Use case thay đổi thông tin.}
-\end{figure}
 
 \begin{table}[!htp]
 \centering
@@ -3079,10 +3059,7 @@ UC\_CHANGEINFO\_001 & Thay đổi thông tin cá nhân & Tạ Chí Tây & 20/3/2
 \multicolumn{4}{|X|}{\textbf{Kịch bản phụ:}}\\
 \multicolumn{4}{|X|}{\makecell[l]{2.1    Người dùng để các ô nhập rỗng, hệ thống sẽ báo lỗi.}}\\
 \hline
-\multicolumn{4}{|X|}{\textbf{Các quan hệ khác:}}\\
-\multicolumn{4}{|X|}{- Include: nhập tên}\\
-\multicolumn{4}{|X|}{- Include: nhập số điện thoại}\\
-\hline
+
 \end{tabularx}
 \caption{Mô tả use case hay đổi thông tin cá nhân.}
 \end{table}
@@ -3143,18 +3120,14 @@ UC\_CHANGEINFO\_003 & Thay đổi mật khẩu & Tạ Chí Tây & 20/3/2017\\
 \hline
 \multicolumn{4}{|X|}{\textbf{Các ràng buộc:} thông tin hiển thị dưới dạng ký tự *.}\\
 \hline
-\multicolumn{4}{|X|}{\textbf{Các quan hệ khác:}}\\
-\multicolumn{4}{|X|}{- Include: nhập mật khẩu cũ}\\
-\multicolumn{4}{|X|}{- Include: nhập mật khẩu mới}\\
-\hline
 \end{tabularx}
 \caption{Mô tả use case thay đổi mật khẩu.}
 \end{table}
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=.9]{hinh/adddevice.png}
-	\caption{Use case thêm thiết bị.}
+	\includegraphics[scale=.7]{hinh/usecase-member.png}
+	\caption{Use case cho thành viên.}
 \end{figure}
 
 \begin{table}[!htp]
@@ -3184,20 +3157,10 @@ UC\_ADDDEVICE\_001 & Thêm board điều khiển & Tạ Chí Tây & 20/3/2017\\
 \hline
 \multicolumn{4}{|X|}{\textbf{Các ràng buộc:} địa chỉ MAC phải đúng định dạng.}\\
 \hline
-\multicolumn{4}{|X|}{\textbf{Các quan hệ khác:}}\\
-\multicolumn{4}{|X|}{- Include: nhập MAC}\\
-\multicolumn{4}{|X|}{- Include: nhập tên board điều khiển}\\
-\multicolumn{4}{|X|}{- Include: nhập tên nhà sản xuất}\\
-\hline
+
 \end{tabularx}
 \caption{Mô tả use case thêm thiết bị.}
 \end{table}
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[scale=.8]{hinh/newthread.png}
-	\caption{Use case tương tác với diễn đàn.}
-\end{figure}
 
 \begin{table}[!htp]
 \centering
@@ -3380,12 +3343,6 @@ UC\_FIND\_002 & Gửi bình luận mùa vụ & Tạ Chí Tây & 20/3/2017\\
 	\caption{Use case xem thông tin thiết bị.}
 \end{figure}
 
-\begin{figure}[H]	
-	\centering
-	\includegraphics[scale=.9]{hinh/stttb.png}
-	\caption{Use case sửa thông tin thiết bị.}
-\end{figure}
-
 \begin{table}[!htp]
 \centering
 \begin{tabularx}{\linewidth}{ |c||c|c|c| }
@@ -3411,21 +3368,10 @@ UC\_DEVICE\_001 & Sửa thông tin board điều khiển & Tạ Chí Tây & 20/3
 \multicolumn{4}{|X|}{\textbf{Kịch bản phụ:}}\\
 \multicolumn{4}{|X|}{2.1    Người dùng nhập thông tin sai hệ thống sẽ báo lỗi.}\\
 \hline
-\multicolumn{4}{|X|}{\textbf{Các quan hệ khác:}}\\
-\multicolumn{4}{|X|}{- Include: nhập MAC}\\
-\multicolumn{4}{|X|}{- Include: nhập tên thiết bị}\\
-\multicolumn{4}{|X|}{- Include: nhập tên nhà sản xuất}\\
-\hline
 
 \end{tabularx}
 \caption{Mô tả use case sửa thông tin thiết bị.}
 \end{table}
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[scale=1]{hinh/addrelay.png}
-	\caption{Use case tạo relay.}
-\end{figure}
 
 \begin{table}[!htp]
 \centering
@@ -3511,12 +3457,6 @@ UC\_RELAY\_003 & Sửa relay & Tạ Chí Tây & 20/3/2017\\
 \caption{Mô tả use case sửa relay.}
 \end{table}
 
-\begin{figure}[H]
-	\centering
-	\includegraphics[scale=.7]{hinh/sttmv.png}
-	\caption{Use case thêm mùa vụ mới.}
-\end{figure}
-
 \begin{table}[!htp]
 \centering
 \begin{tabularx}{\linewidth}{ |c||c|c|c| }
@@ -3543,19 +3483,11 @@ UC\_CROP\_001 & Tạo mùa vụ mới & Tạ Chí Tây & 20/3/2017\\
 \multicolumn{4}{|X|}{
 2.1    Người dùng nhập thông tin sai hệ thống sẽ báo lỗi.}\\
 \hline
-\multicolumn{4}{|X|}{\textbf{Các quan hệ khác:}}\\
-\multicolumn{4}{|X|}{- Include: nhập tên mùa vụ. / - Include: nhập loại vây trồng. / - Include: nhập ngày bắt đầu. / - Include: nhập ngày kết thúc. / - Include: nhập thời gian gửi dữ liệu. / - Include: nhập kiểu thủy canh.}\\
-\hline
 
 \end{tabularx}
 \caption{Mô tả use case tạo mùa vụ mới.}
 \end{table}
 
-\begin{figure}[H]
-	\centering
-	\includegraphics[scale=.8]{hinh/sttmv.png}
-	\caption{Use case sửa thông tin mùa vụ.}
-\end{figure}
 
 \begin{table}[!htp]
 \centering
@@ -3580,9 +3512,6 @@ UC\_CROP\_003 & Sửa thông tin mùa vụ & Tạ Chí Tây & 20/3/2017\\
 \hline
 \multicolumn{4}{|X|}{\textbf{Kịch bản phụ:}}\\
 \multicolumn{4}{|X|}{2.1    Người dùng nhập thông tin sai hệ thống sẽ báo lỗi.}\\
-\hline
-\multicolumn{4}{|X|}{\textbf{Các quan hệ khác:}}\\
-\multicolumn{4}{|X|}{- Include: nhập tên mùa vụ. / - Include: nhập loại vây trồng. / - Include: nhập ngày bắt đầu. / - Include: nhập ngày kết thúc./ - Include: nhập thời gian gửi dữ liệu. / - Include: nhập kiểu thủy canh}\\
 \hline
 
 \end{tabularx}
@@ -3628,8 +3557,8 @@ UC\_CROP\_002 & Xóa mùa vụ & Tạ Chí Tây & 20/3/2017\\
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=.8]{hinh/cdctmv.png}
-	\caption{Use case cài đặt chương trình mùa vụ.}
+	\includegraphics[scale=.7]{hinh/usecase-add-crop.png}
+	\caption{Use case thêm mùa vụ.}
 \end{figure}
 
 \begin{table}[!htp]
@@ -3662,13 +3591,7 @@ UC\_CROP\_004 & Cài đặt chương trình & Tạ Chí Tây & 20/3/2017\\
 \caption{Mô tả use case cài đặt chương trình cho mùa vụ.}
 \end{table}
 
-\begin{figure}[H]
-	\centering
-	\includegraphics[scale=.8]{hinh/cdtn.png}
-	\caption{Use case cài đặt ngưỡng dữ liệu.}
-\end{figure}
 
-\newpage
 \begin{table}[!htp]
 \centering
 \begin{tabularx}{\linewidth}{ |c||c|c|c| }
