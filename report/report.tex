@@ -968,12 +968,6 @@ Thời điểm bắt đầu hoạt động. & Thời lượng actuator được 
 
 \item Lifetime của mỗi actuator (phần mềm).
 
-\begin{figure}[H]
-	\centering
-	\includegraphics[scale=0.7]{hinh/actuator_lifetime.PNG}
-	\caption{Actuator lifetime.}
-\end{figure}
-
 \noindent Mỗi actuator sẽ là một đối tượng (phần mềm), giải thích lifetime:
 	\begin{itemize}
 	\item Ban đầu, sẽ không có actuator nào, các actuator không được sét tĩnh.
@@ -1001,17 +995,8 @@ Thời điểm bắt đầu hoạt động. & Thời lượng actuator được 
 	\item Thông tin actuator được thêm trong trong lúc board đang hoạt động ở thời điểm ngẫu nhiên (runtime), không sét tĩnh, đây là ưu điểm của giải pháp này, cho phép mở rộng, thay đổi các actuator.
 	\item Bộ nhớ lưu trữ là EEPROM, phân vùng lưu trữ sẽ nêu cụ thể trong phần (Lưu trữ dữ liệu) nằm trên board NodeMCU.
 	\item Cấu trúc dữ liệu lưu trữ được nêu cụ thể trong phần hiện thực.
-	\item Dưới đây là cách hoạt động của việc lưu trữ (Save) và tải lại (Load). Qui ước: Các sự kiện (Add), (Start), (Schedule), (Update), (Remove) sẽ được gọi chung là (Update). Các trạng thái (Added), (Actived) được gọi chung là (Running).
-	
 	\end{itemize}
 	
-\begin{figure}[H]
-	\centering
-	\includegraphics[scale=.7]{hinh/persistent_actuator.PNG}
-	\caption{Hoạt động lưu trữ thông tin actuator.}
-\end{figure}
-
-
 \end{itemize}
 
 \noindent \textbf{Truyền nhận dữ liệu với giao thức MQTT}
@@ -1033,13 +1018,6 @@ Thời điểm bắt đầu hoạt động. & Thời lượng actuator được 
 
 		\end{itemize}
 		\item Các thông tin của đối tượng MQTT Client cũng được lưu trữ trong ROM, nêu trong phần (lưu trữ dữ liệu), và cho phép cấu hình (cấu hình WiFi).
-		\item Đối tượng hoạt động độc lập theo sơ đồ dưới:
-		
-			\begin{figure}[H]
-				\centering
-				\includegraphics[scale=.7]{hinh/mqtt_client.PNG}		
-				\caption{MQTT client.}
-			\end{figure}
 			
 	\end{itemize}
 \noindent	\textbf{Cấu hình, hoạt động của các chế độ WiFi}
@@ -1065,26 +1043,9 @@ Thời điểm bắt đầu hoạt động. & Thời lượng actuator được 
 
 
 	\item	Chức năng chuyển chế độ sẽ được thực hiện bởi một nút nhấn.
-	\item	Các chế độ hoạt động như sau:\\
 
 	\end{itemize}
-		
-			\begin{figure}[H]
-				\centering
-				\includegraphics[scale=.8]{hinh/wifi_ap.PNG}		
-				\caption{Wifi AP.}
-			\end{figure}
-			\begin{figure}[H]
-				\centering
-				\includegraphics[scale=.8]{hinh/wifi_station.PNG}
-				\caption{Wifi station.}
-			\end{figure}
-			\begin{figure}[H]
-				\centering
-				\includegraphics[scale=.8]{hinh/wifi_application.PNG}
-				\caption{Wifi application.}
-			\end{figure}
-
+				
 \noindent	\textbf{Đệm dữ liệu (FIFO)}
 	\begin{itemize}
 	\item Chức năng:
@@ -1175,12 +1136,6 @@ Thời điểm bắt đầu hoạt động. & Thời lượng actuator được 
 		  	\end{itemize}
 		  	
 		  	
-			\begin{figure}[H]
-				\centering
-				\includegraphics[scale=.8]{hinh/uart_flow.PNG}
-				\caption{Cách hoạt động của giao thức UART.}
-			\end{figure}	  	
-		  	
 		  \end{itemize}
 		\end{itemize}
 	\end{itemize}
@@ -1190,6 +1145,30 @@ Thời điểm bắt đầu hoạt động. & Thời lượng actuator được 
 \begin{itemize}
 
 \item Sequence diagram
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=.7]{hinh/actuatorSequence.PNG}
+	\caption{Hoạt động của Actuator.}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=.8]{hinh/saveactuator.PNG}
+	\caption{Hoạt động lưu trữ của actuator.}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=.8]{hinh/sensorSequence.PNG}
+	\caption{sensorSequence.}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=.8]{hinh/wifiapp.PNG}
+	\caption{wifiapp.}
+\end{figure}
 
 \begin{figure}[H]
 	\centering
