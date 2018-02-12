@@ -4287,4 +4287,127 @@ UC\_CROP\_005 & Cài đặt ngưỡng dữ liệu & Tạ Chí Tây & 20/3/2017\\
 
 \end{itemize}
 
+\section{PHỤ LỤC C: HƯỚNG DẪN TRIỂN KHAI VÀ SỬ DỤNG}
+\subsection{Board điều khiển}
+	\begin{figure}[H]
+	\centering
+	\includegraphics[scale=1]{hinh/board-guide.png}
+	\caption{Các thành phần của board điều khiển.}
+	\end{figure}
+\noindent Sau khi lắp đặt thiết bị, thì để sử dụng ta cấu hình WiFi để thiết bị truy cập vào internet:
+
+\begin{enumerate}
+\item Nhấn button(5) cho đến khi 2 led (6), (7) cùng nhấp nháy liên tục, khi đó thiết bị đã chuyển sang chế độ phát WiFi.
+\item Truy cập điểm phát WiFi của thiết bị, mật khẩu mặc định là “12341234”.
+
+	\begin{figure}[H]
+	\centering
+	\includegraphics[scale=.7]{hinh/wifi-config-1.png}
+	\caption{Điểm phát wifi của thiết bị.}
+	\end{figure}
+\item Vào trình duyệt, truy cập địa chỉ 192.168.1.4 (địa chỉ webserver mà thiết bị cung cấp), sau đó tiến hành cấu hình WiFi cho thiết bị tương tự như điện thoại của chúng ta.
+	
+	\begin{figure}[H]
+	\centering
+	\includegraphics[scale=.7]{hinh/wifi-config-2.png}
+	\caption{Cài đặt thông tin truy cập wifi cho thiết bị.}
+	\end{figure}
+	
+	\begin{figure}[H]
+	\centering
+	\includegraphics[scale=.6]{hinh/after-config-wifi.png}
+	\caption{Sau khi thiết lập xong.}
+	\end{figure}
+	
+	\begin{figure}[H]
+	\centering
+	\includegraphics[scale=.75]{hinh/mqtt-config.png}
+	\caption{Ngoài ra board còn cung cấp thiết lập MQTT.}
+	\end{figure}
+\item Sau khi cấu hình, ta reset thiết bị, lúc này các thông số đã được lưu lại, thiết bị sẽ sử dụng thông số vừa cấu hình để kết nối vào điểm phát WiFi.
+\end{enumerate}
+
+
+\subsection{Web server}
+\subsubsection{Máy chủ VPS}
+\noindent Hiện tại nhóm đang sử dụng VPS free 12 tháng của amazon tại địa chỉ IP 13.58.114.56. Cách ssh vào server này để điều khiển:
+
+\begin{enumerate}
+\item Copy file key bathach1.pem từ đĩa CD đính kèm vào máy tính.
+\item Dùng màn hình terminal (trên hệ điều hành Linux) tại thư mục tải file key trên về, gõ lệnh
+sau để đăng nhập và remote máy server:
+	\begin{enumerate}
+	\item chmod 400 bathach1.pem
+	\item ssh -i "bathach1.pem" ubuntu@13.58.114.56
+	\end{enumerate}
+\end{enumerate}
+\subsubsection{Triển khai web server}
+
+\noindent Trên máy VPS Amazon ở trên đã triển khai sẵn hệ thống, thông tin như sau:
+
+\begin{itemize}
+\item Địa chỉ IP máy VPS: 13.58.114.56
+\item Địa chỉ trang ứng dụng web: http://13.58.114.56:3210/
+\item Postgres database:
+	\begin{itemize}
+	\item Host: 13.58.114.56
+	\item Port: 5432
+	\item Manteinance DB: postgres
+	\item Username: postgres
+	\item Password: 123
+	\end{itemize}
+\item Địa chỉ broker MQTT: mqtt://13.58.114.56:1883
+\end{itemize}
+
+
+\noindent Nếu muốn triển khai trên một máy khác, các bước như sau:
+	\begin{enumerate}
+	\item Cài đặt Nodejs version 6.x.
+	\item Cài đặt PostgreSQL. Tạo database mới với tên tùy chọn. Ví dụ: hydroponic. Lưu ý tên
+của user tạo database.
+	\item Clone source code từ nhánh Develop trên GitHub theo địa chỉ:\\
+https://github.com/bathach95/hydroponic.git \\
+câu lệnh git: git clone –b Develop https://github.com/bathach95/hydroponic.git
+	\item Sau khi clone về, ta được tư mục source code hydroponic. Mở file config/config.json,
+chỉnh sửa các thông số sau: \\
+"development":\\
+\{\\
+"dialect": "postgres",\\
+"username": "postgres",\\
+"password": "123",\\
+"database": "hydroponic",\\
+"host": "127.0.0.1",\\
+"pool": \{\\
+"max": 5,\\
+"min": 0,\\
+"idle": 10000\\
+\},\\
+"logging": false\\
+\} 
+	\begin{itemize}
+	\item username: tên người dùng đã tạo trong Postgre.
+	\item password: mật khẩu của người dùng trên.
+	\item database: tên database đã tạo ở bước 2. Lưu ý database này phải được tạo dưới
+tên người dùng đã nhập ở trường username.
+	\item host: host của postgres đã cài đặt. Nếu cài đặt trên cùng máy với web server thì để
+mặc định là “localhost” hay IP “127.0.0.1”.
+	\end{itemize}
+	
+	\item Web server sử dụng giao thức MQTT để giao tiếp với board nên cần phải thiết lập
+MQTT broker. Thiết lập trong file mã nguồn utils/protocolConstant.js ở dòng: \\
+MQTT\_BROKER: 'mqtt://13.58.114.56:1883'
+	
+	\item Mở cửa sổ terminal (Linux) hoặc cmd (Windows) ngay tại thư mục hydroponic vừa
+clone về, chạy lệnh : \textbf{npm install} và chờ cho đến khi cài đặt xong các package.
+
+	\item Tiếp tục chạy lệnh \textbf{npm start}, web server sẽ khởi động trên địa chỉ localhost:3210. Có
+thể thay đổi port 3210 bằng port khác trong file run/www ở dòng \\
+var port = normalizePort(process.env.PORT || '3210');
+
+	\item Lúc này ứng dụng web đã hoạt động. Truy cập địa chỉ localhost:3210 (nếu server ở tại
+trên máy local) hay http://[host]:3210/ (nếu server đặt trên máy có địa chỉ là host), giao
+diện trang web sẽ hiện ra
+	
+	\end{enumerate}
+
 \end{document}
