@@ -4409,5 +4409,168 @@ trên máy local) hay http://[host]:3210/ (nếu server đặt trên máy có đ
 diện trang web sẽ hiện ra
 	
 	\end{enumerate}
+\subsubsection{Sử dụng trang web}
+
+\noindent  \textbf{Các chức năng sau được thực hiện sau khi board điều khiển đã được bật và sẵn sàng hoạt
+động. Vì phần giao tiếp giữa server và board yêu cầu đồng bộ bằng các gói tin ACK, nên board điều
+khiển phải sẵn sàng hoạt động thì mới sử dụng được các chức năng của ứng dụng.}
+
+\begin{enumerate}
+	\item Đăng ký tài khoản mới
+	\begin{figure}[H]
+	\centering
+	\includegraphics[scale=.5]{hinh/web_register.JPG}
+	\caption{Đăng ký một tài khoản mới.}
+	\end{figure}
+	
+	\item Kiểm tra email và xác nhận tài khoản thông qua email. Tài khoản không kích hoạt vẫn có thể sử dụng nhưng bị hạn chế một số chức năng.
+	
+	\item Đăng nhập vào hệ thống
+	\begin{figure}[H]
+	\centering
+	\includegraphics[scale=.5]{hinh/web_login.JPG}
+	\caption{Đăng nhập vào hệ thống.}
+	\end{figure}
+	
+	\item Truy cập vào trang thêm board điều khiển: vào trang Profile và nhấn nút Add new device
+	
+	\begin{figure}[H]
+	\centering
+	\includegraphics[scale=1]{hinh/add-device-button.png}
+	\caption{Thêm board điều khiển mới.}
+	\end{figure}
+	
+	\begin{figure}[H]
+	\centering
+	\includegraphics[scale=.5]{hinh/web_add_device.JPG}
+	\caption{Thêm board điều khiển mới.}
+	\end{figure}
+	
+	\item Truy cập vào trang quản lý board điều khiển và nhấn nút thêm mùa vụ mới Add new crop.
+	
+	\begin{figure}[H]
+	\centering
+	\includegraphics[scale=1]{hinh/add-crop-button.png}
+	\caption{Thêm mùa vụ mới.}
+	\end{figure}
+	
+	\begin{figure}[H]
+	\centering
+	\includegraphics[scale=1]{hinh/web_add_crop.png}
+	\caption{Thêm mùa vụ mới.}
+	\end{figure}
+	
+	\item Truy cập vào trang quản lý board điều khiển và nhấn nút Add new actuator.
+	
+	\begin{figure}[H]
+	\centering
+	\includegraphics[scale=1]{hinh/add-actuator-button.png}
+	\caption{Thêm actuator mới.}
+	\end{figure}
+	
+	\begin{figure}[H]
+	\centering
+	\includegraphics[scale=1]{hinh/web_add_actuator.png}
+	\caption{Thêm actuator mới.}
+	\end{figure}
+	
+	\item Tại một thời điểm, người dùng có thể bật/tắt một actuator trên board điều khiển để kích hoạt actuator
+hoạt động hay không hoạt động. Có nghĩa là các actuator sẽ chạy theo lịch trình được cài đặt, nhưng nếu
+ở đây chúng ta tắt actuator, ngay lập tức actuator sẽ ngừng hoạt động. Khi được kích hoạt lại, actuator
+vẫn hoạt động lại theo lịch trình cài đặt.
+Để bật tắt, người dùng vào mục danh sách các actuators trong giao diện chi tiết board điều khiển.
+
+	\begin{figure}[H]
+	\centering
+	\includegraphics[scale=1]{hinh/active-actuator.png}
+	\caption{Bật/tắt actuator.}
+	\end{figure}
+	
+	\item Truy cập vào trang quản lý mùa vụ, phần Settings. Nhấn nút New schedule.
+	
+	\begin{figure}[H]
+	\centering
+	\includegraphics[scale=1]{hinh/new-schedule-button.png}
+	\caption{Thêm lịch trình mới.}
+	\end{figure}
+	
+	\begin{figure}[H]
+	\centering
+	\includegraphics[scale=1]{hinh/web_add_schedule.png}
+	\caption{Thêm lịch trình mới.}
+	\end{figure}
+	
+	\item Danh sách lịch trình trên server và thiết bị lúc này không đồng bộ. Nhấn nút đồng bộ để thực hiện
+gửi danh sách các lịch trình đã được thêm vào/sửa chữa này xuống thiết bị.
+	
+	\begin{figure}[H]
+	\centering
+	\includegraphics[scale=1]{hinh/sync-schedule.png}
+	\caption{Đồng bộ lịch trình xuống board điều khiển.}
+	\end{figure}
+	
+	\item Truy cập vào trang quản lý mùa vụ, phần Current Data. Nhấn nút Set Threshold.
+	
+	\begin{figure}[H]
+	\centering
+	\includegraphics[scale=.7]{hinh/add-threshold.png}
+	\caption{Thiết lập ngưỡng dữ liệu.}
+	\end{figure}
+	
+	\begin{figure}[H]
+	\centering
+	\includegraphics[scale=1]{hinh/set-threshold.png}
+	\caption{Thiết lập ngưỡng dữ liệu.}
+	\end{figure}
+	
+	\item Ngưỡng dữ liệu và dữ liệu với cảnh báo:
+	
+	\begin{figure}[H]
+	\centering
+	\includegraphics[scale=.9]{hinh/data-with-threshold.png}
+	\caption{Dữ liệu và ngưỡng cảnh báo.}
+	\end{figure}
+	
+	\item Các chức năng của admin: \\
+	Tài khoản admin mặc định:
+	\begin{itemize}
+	\item Email: hbathach@gmail.com
+	\item Password:123
+	\end{itemize}
+	
+	\begin{figure}[H]
+	\centering
+	\includegraphics[scale=1]{hinh/admin-enter.png}
+	\caption{Vào trang admin.}
+	\end{figure}
+	
+	\begin{figure}[H]
+	\centering
+	\includegraphics[scale=.7]{hinh/admin-function.png}
+	\caption{Các chức năng của admin: quản lý user, quản lý bài viết.}
+	\end{figure}
+
+	
+\end{enumerate}
+\subsection{Ứng dụng di động}
+\subsubsection{Triển khai ứng dụng trên thiết bị di động}
+
+\begin{enumerate}
+
+\item	Cài đặt Nodejs 6.x.
+\item	Cài đặt framework Ionic và cordova theo hướng dẫn trong liên kết \\ https://ionicframework.com/docs/v1/guide/installation.html
+\item	Clone thư mục source code từ địa chỉ: \\
+https://github.com/bathach95/HydroponicMobileApp.git \\
+câu lệnh git: git clone https://github.com/bathach95/HydroponicMobileApp.git \\
+Thư mục source code HydroponicMobileApp xuất hiện.
+\item	Vì app di động kết nối với web server nên phải thiết lập địa chỉ của web server để app có thể kết nối. Thiết lập trong src/services/constant.service.ts ở dòng: \\
+public HOST = 'http://13.58.114.56:3210'
+\item	Mở cửa sổ terminal (Linux) hoặc cmd (Windows) trong thư mục vừa clone về và gõ lệnh npm install để cài đặt các package.
+\item	Lúc này kết nối điện thoại vào máy tính thông qua cổng USB. Chắc chắn rằng máy tính đã nhận diện được điện thoại.
+\item	Chạy lệnh: ionic cordova run android để chạy app trên thiết bị Android. Cách chạy trên các hệ điều hành khác có thể tham khảo chi tiết tại \\ https://ionicframework.com/docs/intro/deploying/.
+
+\end{enumerate}
+
+\subsubsection{Sử dụng ứng dụng}
 
 \end{document}

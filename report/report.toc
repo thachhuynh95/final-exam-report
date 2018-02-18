@@ -1,6 +1,6 @@
 \contentsline {section}{Danh s\'ach h\`inh v\~e}{ix}{section*.2}
-\contentsline {section}{Danh s\'ach b\h {a}ng}{xiv}{section*.3}
-\contentsline {section}{\nameref {sec:dsvt}}{xvi}{section*.4}
+\contentsline {section}{Danh s\'ach b\h {a}ng}{xv}{section*.3}
+\contentsline {section}{\nameref {sec:dsvt}}{xvii}{section*.4}
 \contentsline {section}{\numberline {1}GI\IeC {\'\OHORN }I THI\IeC {\d \ECIRCUMFLEX }U \IeC {\DJ }\IeC {\`\ECIRCUMFLEX } T\IeC {\`A}I}{1}{section.1}
 \contentsline {subsection}{\numberline {1.1}\IeC {\'Y} t\IeC {\uhorn }\IeC {\h \ohorn }ng}{1}{subsection.1.1}
 \contentsline {subsection}{\numberline {1.2}M\IeC {\d u}c ti\IeC {\^e}u}{1}{subsection.1.2}
@@ -100,3 +100,6 @@
 \contentsline {subsection}{\numberline {C.2}Web server}{153}{subsection.C.2}
 \contentsline {subsubsection}{\numberline {C.2.1}M\IeC {\'a}y ch\IeC {\h u} VPS}{153}{subsubsection.C.2.1}
 \contentsline {subsubsection}{\numberline {C.2.2}Tri\IeC {\h \ecircumflex }n khai web server}{153}{subsubsection.C.2.2}
+\contentsline {subsubsection}{\numberline {C.2.3}S\IeC {\h \uhorn } d\IeC {\d u}ng trang web}{155}{subsubsection.C.2.3}
+\contentsline {subsection}{\numberline {C.3}\IeC {\'\UHORN }ng d\IeC {\d u}ng di \IeC {\dj }\IeC {\d \ocircumflex }ng}{165}{subsection.C.3}
+\contentsline {subsubsection}{\numberline {C.3.1}Tri\IeC {\h \ecircumflex }n khai \IeC {\'\uhorn }ng d\IeC {\d u}ng tr\IeC {\^e}n thi\IeC {\'\ecircumflex }t b\IeC {\d i} di \IeC {\dj }\IeC {\d \ocircumflex }ng}{165}{subsubsection.C.3.1}
