@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.2.4)  18 FEB 2018 22:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.2.4)  27 FEB 2018 14:00
 entering extended mode
 **./report.tex
 (report.tex
@@ -1483,7 +1483,12 @@ Package tocbibind Info: The document has section divisions on input line 50.
 
 Package tocbibind Note: Using section or other style headings.
 
-) (report.aux)
+)
+
+LaTeX Warning: Unused global option(s):
+    [numbered,print,index,times].
+
+(report.aux)
 \openout1 = `report.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 82.
@@ -1598,17 +1603,17 @@ Package pdftex.def Info: hinh/logo.png  used on input line 93. on input line 93
 .
 Package pdftex.def Info: Requested size: 75.58679pt x 77.09251pt on input line 
 93.
-<hinh/background.jpg, id=448, 469.755pt x 764.748pt>
-File: hinh/background.jpg Graphic file (type jpg)
-<use hinh/background.jpg>
-Package pdftex.def Info: hinh/background.jpg  used on input line 125. on input 
-line 125.
-Package pdftex.def Info: Requested size: 478.01125pt x 760.59192pt on input lin
-e 125.
+<hinh/background2.JPG, id=448, 266.49562pt x 388.45125pt>
+File: hinh/background2.JPG Graphic file (type jpg)
+<use hinh/background2.JPG>
+Package pdftex.def Info: hinh/background2.JPG  used on input line 125. on input
+ line 125.
+Package pdftex.def Info: Requested size: 478.053pt x 760.55905pt on input line 
+125.
  [1
 
 {C:/Users/thach/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./hinh/back
-ground.jpg> <./hinh/logo.png>]
+ground2.JPG> <./hinh/logo.png>]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -3261,10 +3266,10 @@ Package rerunfilecheck Info: File `report.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 4617.
  ) 
 Here is how much of TeX's memory you used:
- 27725 strings out of 493312
- 505510 string characters out of 3138900
- 579788 words of memory out of 3000000
- 29992 multiletter control sequences out of 15000+200000
+ 27749 strings out of 493312
+ 505873 string characters out of 3138900
+ 579847 words of memory out of 3000000
+ 30016 multiletter control sequences out of 15000+200000
  23484 words of font info for 49 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,18n,82p,1568b,627s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -3283,7 +3288,7 @@ h\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\vntex\vnr\dpi900\vnbx12.pk> <C:\User
 s\thach\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\vntex\vnr\dpi750\vnbx12.pk><C:
 /Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program
  Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb>
-Output written on report.pdf (187 pages, 13538571 bytes).
+Output written on report.pdf (187 pages, 13403371 bytes).
 PDF statistics:
  3252 PDF objects out of 3580 (max. 8388607)
  618 named destinations out of 1000 (max. 500000)
